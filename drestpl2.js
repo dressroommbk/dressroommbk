@@ -10710,7 +10710,7 @@ window.onunload = saveHistory;
 
 function isOfflineMode()
 {
-	return (location.protocol != 'http:');
+	return (['http:', 'https:'].indexOf(location.protocol) == -1);
 }
 
 function isEmbeddedMode()

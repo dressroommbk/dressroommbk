@@ -1961,23 +1961,23 @@ function getASChooserHtml(sloti,numb)
     html += '<input type="text" id="alst" class="ABTextAA" value="'+numb+'" READONLY></div></td><tr><td>';
 
     html += '<input class="ABTextAA" id="add_strength" type="text" maxlength="3" value="0" READONLY/>   Сила</td><td>'
-    html += '<a onclick="item_ad_p(\'add_strength\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
-    html += '<a onclick="item_ad_m(\'add_strength\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a>';
+    html += '<a onclick="item_ad_p(\'add_strength\')" href="javascript:;"><img src="images/plus.gif" alt="увеличить" border=0> </a>';
+    html += '<a onclick="item_ad_m(\'add_strength\')" href="javascript:;"><img src="images/minus.gif" alt="уменшить" border=0> </a>';
     html += '</td></tr><tr><td>';
 
     html += '<input class="ABTextAA" id="add_dexterity" type="text" maxlength="3" value="0" READONLY />   Ловкость</td><td>';
-    html += '<a onclick="item_ad_p(\'add_dexterity\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
-    html += '<a onclick="item_ad_m(\'add_dexterity\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a>';
+    html += '<a onclick="item_ad_p(\'add_dexterity\')" href="javascript:;"><img src="images/plus.gif" alt="увеличить" border=0> </a>';
+    html += '<a onclick="item_ad_m(\'add_dexterity\')" href="javascript:;"><img src="images/minus.gif" alt="уменшить" border=0> </a>';
     html += '</td></tr><tr><td>';
 
     html += '<input class="ABTextAA" id="add_intuition" type="text" maxlength="3" value="0" READONLY/>   Интуиция</td><td>';
-    html += '<a onclick="item_ad_p(\'add_intuition\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
-    html += '<a onclick="item_ad_m(\'add_intuition\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a>';
+    html += '<a onclick="item_ad_p(\'add_intuition\')" href="javascript:;"><img src="images/plus.gif" alt="увеличить" border=0> </a>';
+    html += '<a onclick="item_ad_m(\'add_intuition\')" href="javascript:;"><img src="images/minus.gif" alt="уменшить" border=0> </a>';
     html += '</td></tr><tr><td>';
 
     html += '<input class="ABTextAA" id="add_intellect" type="text" maxlength="3" value="0" READONLY />   Интеллект</td><td>';
-    html += '<a onclick="item_ad_p(\'add_intellect\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> <a>';
-    html += '<a onclick="item_ad_m(\'add_intellect\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> <a>';
+    html += '<a onclick="item_ad_p(\'add_intellect\')" href="javascript:;"><img src="images/plus.gif" alt="увеличить" border=0> <a>';
+    html += '<a onclick="item_ad_m(\'add_intellect\')" href="javascript:;"><img src="images/minus.gif" alt="уменшить" border=0> <a>';
     html += '</td></tr></table>';
     html += '</div>';
     html += '</td></tr></table>';
@@ -4137,8 +4137,8 @@ function getDresserNaturalEditors(state)
 		html += '</td>';
 		html += '<td>';
 		var fiop = 'edit'+state.id+name;
-		html += '<a onclick="adm(\''+fiop+'\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a></td>';
-		html += '<td><a onclick="adp(\''+fiop+'\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
+		html += '<a onclick="adm(\''+fiop+'\')" href="javascript:;"><img src="images/minus.gif" alt="уменшить" border=0> </a></td>';
+		html += '<td><a onclick="adp(\''+fiop+'\')" href="javascript:;"><img src="images/plus.gif" alt="увеличить" border=0> </a>';
 		html += '</td>';
 		html += '</tr>';
 	}
@@ -10755,7 +10755,7 @@ function prepareOfflineMode()
 		baseImgPath = '';
 		itemImgPath = '';
 		hereItemImgPath = '';
-		charImgPath = '/images/';
+		charImgPath = 'images/';
 		clanImgPath = '';
 		zodiacImgPath = '';
 		brandImgPath = 'brand/';
@@ -11437,7 +11437,7 @@ function initializeDresserForBenderOmsk()
 {
 	dressOptions.benderOmskMode = true;
 	hereItemImgPath = '';
-	charImgPath = '/images/';
+	charImgPath = 'images/';
 	brandImgPath = 'brand/';
  brand2ImgPath = 'misc/';
 	infospaceImgPath = 'images/infospace/';

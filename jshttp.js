@@ -202,7 +202,7 @@ function getInfoSpaceTabsHtml()
         i++;
     }
     tabs += '<td class="tab-none" align="right" valign="top" width="100%">';
-    tabs += '<a href="#" onclick="return closeInfoSpace()"><img alt="Закрыть" src="/images/infospace/close.gif" width="16" height="16" border="0" /></a>';
+    tabs += '<a href="#" onclick="return closeInfoSpace()"><img alt="Закрыть" src="images/infospace/close.gif" width="16" height="16" border="0" /></a>';
     tabs += '</td>';
     tabs += '</tr></table>';
     return tabs;

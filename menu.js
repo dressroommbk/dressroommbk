@@ -297,7 +297,7 @@ function genMenu(MA,MI,MU)
 		var icheck = i % 2 == 0 ? 1 : 0
 		icheck == 1 ? bgcolor = 'bgcolor=#dcdcdc' : bgcolor = 'bgcolor=#dcdcdc'
 
-		document.write('<tr><td '+bgcolor+' onMouseOver="this.style.backgroundColor=\'A9A9A9\'" onMouseOut="this.style.backgroundColor=\'dcdcdc\'" nowrap><div id=n1><div id=n2><a href="'+URL[i]+'" class="LayerNavLink"><img src=/images/pixel.gif height=13 width=100% border=0></div></div><font color="#464646">•</font>&nbsp;'+ITEM[i]+'</a></td></tr>');
+		document.write('<tr><td '+bgcolor+' onMouseOver="this.style.backgroundColor=\'A9A9A9\'" onMouseOut="this.style.backgroundColor=\'dcdcdc\'" nowrap><div id=n1><div id=n2><a href="'+URL[i]+'" class="LayerNavLink"><img src=images/pixel.gif height=13 width=100% border=0></div></div><font color="#464646">•</font>&nbsp;'+ITEM[i]+'</a></td></tr>');
 	}
 
 	document.write('</table></td></table></DIV>');
@@ -307,9 +307,9 @@ function VHMenu (name)
 { 
     var type_old = document.getElementById(name).style.display 
     if (type_old == "block"){ 
-         type='none';text_td='/images/open.gif'; 
+         type='none';text_td='images/open.gif'; 
      }else{ 
-         type='block';text_td='/images/close.gif'; 
+         type='block';text_td='images/close.gif'; 
     }; 
     document.getElementById(name).style.display=type; 
     document.getElementById("img_"+name).src=text_td;
@@ -322,9 +322,9 @@ function VHMenuSet (name)
     var type_old = GetCookie (name);
     if (type_old!=null){
       if (type_old == "block"){ 
-           type='block';text_td='/images/close.gif'; 
+           type='block';text_td='images/close.gif'; 
       }else{ 
-           type='none';text_td='/images/open.gif';
+           type='none';text_td='images/open.gif';
       }; 
       document.getElementById(name).style.display=type; 
       document.getElementById("img_"+name).src=text_td;

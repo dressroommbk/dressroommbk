@@ -4622,7 +4622,7 @@ upgrade: {
 	}}
 
 	},
-	roba_s4: {id:'roba_s4',category:'shirts',slot:'wshirt',width:60,height:80,caption:'Футболка Темных Глубин',description:'<img src="/images/align3.99.gif"/><b>Верховные Тарманы</b>',old:true,
+	roba_s4: {id:'roba_s4',category:'shirts',slot:'wshirt',width:60,height:80,caption:'Футболка Темных Глубин',description:'<img src="images/align3.99.gif"/><b>Верховные Тарманы</b>',old:true,
 		common: {weight:1,durability:200},
 		modify: {hitpoints:99,bodyarmor1:4,bodyarmor2:18,bodyarmorf:3,bodyarmorm:1,bodyarmord:15}
 	},
@@ -9849,12 +9849,12 @@ upgrade: {
 	weddingring: {id:'weddingring',category:'rings',slot:'w6',width:20,height:20,caption:'Обручальное кольцо',
 		common: {price:0,weight:1,durability:1}
 	},
-	ring127: {id:'ring127',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Крови',description:'Создает Эссенцию Крови за 15 <img src="/images/hp.gif" width="8" height="8" />',
+	ring127: {id:'ring127',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Крови',description:'Создает Эссенцию Крови за 15 <img src="images/hp.gif" width="8" height="8" />',
 		common: {weight:1,price:1,durability:50,intermediatecast:'yes'},
 		required: {level:6},
 		magic: {name:'invoke_create_lesserbloodstone',caption:'Кровавый Сбор',description:'1 шт. на бой'}
 	},
-	ring126: {id:'ring126',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Алтаря',description:'В хаотичном бою поможет создать Кровавый Рубин за 5 <img src="/images/hp.gif" width="8" height="8" />',requireditems:{baltar:{exchanger:'baltar', items: {mater32:{id:'mater32',caption:'Эссенция Крови',count:30},ring127:{id:'ring127',caption:'Кольцо Крови',count:1}}}},
+	ring126: {id:'ring126',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Алтаря',description:'В хаотичном бою поможет создать Кровавый Рубин за 5 <img src="images/hp.gif" width="8" height="8" />',requireditems:{baltar:{exchanger:'baltar', items: {mater32:{id:'mater32',caption:'Эссенция Крови',count:30},ring127:{id:'ring127',caption:'Кольцо Крови',count:1}}}},
 		common: {weight:1,price:1,durability:50,intermediatecast:'yes'},
 		required: {level:7},
 		magic: {name:'invoke_create_bloodstone',caption:'Поглотить Кровь',description:'6 шт. в сутки'}
@@ -11797,7 +11797,7 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:0.1,durability:1},
 		required: {level:10},
 	},
-	abook1: {id:'abook1',category:'books',slot:'wbook',width:40,height:25,caption:'Бронзовая Книга Саныча',description:'Каждая страница этой книги позволяет мгновенно получить +1 <img width=8 height=8 src=/images/hit.gif> <img width=7 height=8 src=/images/krit.gif> <img width=8 height=8 src=/images/counter.gif> <img width=8 height=8 src=/images/block.gif> <img width=8 height=8 src=/images/parry.gif><br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {abook1_reg:{id:'abook1_reg',caption:'Бронзовая Квитанция',count:1}}}},	
+	abook1: {id:'abook1',category:'books',slot:'wbook',width:40,height:25,caption:'Бронзовая Книга Саныча',description:'Каждая страница этой книги позволяет мгновенно получить +1 <img width=8 height=8 src=images/hit.gif> <img width=7 height=8 src="images/krit.gif"> <img width=8 height=8 src="images/counter.gif"> <img width=8 height=8 src="images/block.gif"> <img width=8 height=8 src="images/parry.gif"><br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {abook1_reg:{id:'abook1_reg',caption:'Бронзовая Квитанция',count:1}}}},	
 		common: {weight:1,price:15,pages:50,expirationdate:360,timeout:'3 мин.',intermediatecast:'yes'},
 		modify: {intellect:1,hitpoints:10}
 	},
@@ -13737,7 +13737,7 @@ var dressSets = {
 	morningsun10: {id: 'morningsun10', caption: 'Комплект Утреннего Солнца [10]', count: 12,
 		required: {level:10},
 		details: {
-			morningsun10_12: {id: 'morningsun10_12',description: 'С вероятностью 5% на два хода увеличивает ваш мф. против критического удара и <br> мф. против увертывания на 300 при <img src="/images/parry.gif" border="0"/><b> парировании</b>.', required: {minitemscount:12,maxitemscount:14}, modify: {magicdefence:100,power:28,parry:10,anticriticalhit:180}},
+			morningsun10_12: {id: 'morningsun10_12',description: 'С вероятностью 5% на два хода увеличивает ваш мф. против критического удара и <br> мф. против увертывания на 300 при <img src="images/parry.gif" border="0"/><b> парировании</b>.', required: {minitemscount:12,maxitemscount:14}, modify: {magicdefence:100,power:28,parry:10,anticriticalhit:180}},
 			morningsun10_10: {id: 'morningsun10_10', required: {minitemscount:10,maxitemscount:11}, modify: {magicdefence:75,power:22,parry:3,anticriticalhit:120}},
 			morningsun10_8: {id: 'morningsun10_8', required: {minitemscount:8,maxitemscount:9},	modify: {power:12,anticriticalhit:60}},
 			morningsun10_5: {id: 'morningsun10_5', required: {minitemscount:5,maxitemscount:7},	modify: {anticriticalhit:60}}
@@ -13765,7 +13765,7 @@ var dressSets = {
 	bloodmoon10: {id: 'bloodmoon10', caption: 'Комплект Кровавой Луны [10]', count: 12,
 		required: {level:10},
 		details: {
-			bloodmoon10_12: {id: 'bloodmoon10_12',description: 'Добавляет 1 <img src="/images/hit.gif" border="0"/> <b>тактику атаки</b> при критическом ударе.', required: {minitemscount:12,maxitemscount:14}, modify: {anticriticalhit:30,criticalhit:35,magicdefence:30,hitpoints:80,antijumpaway:45}},
+			bloodmoon10_12: {id: 'bloodmoon10_12',description: 'Добавляет 1 <img src="images/hit.gif" border="0"/> <b>тактику атаки</b> при критическом ударе.', required: {minitemscount:12,maxitemscount:14}, modify: {anticriticalhit:30,criticalhit:35,magicdefence:30,hitpoints:80,antijumpaway:45}},
 			bloodmoon10_10: {id: 'bloodmoon10_10', required: {minitemscount:10,maxitemscount:11}, modify: {anticriticalhit:30,criticalhit:35,magicdefence:30,hitpoints:80,antijumpaway:45}},
 			bloodmoon10_9: {id: 'bloodmoon10_9', required: {minitemscount:8,maxitemscount:9}, modify: {anticriticalhit:30,criticalhit:35,antijumpaway:45}},
 			bloodmoon10_5: {id: 'bloodmoon10_5', required: {minitemscount:5,maxitemscount:7}, modify: {antijumpaway:45}}
@@ -13774,7 +13774,7 @@ var dressSets = {
 	scorpion10: {id: 'scorpion10', caption: 'Комплект Скорпиона [10]', count: 12,
 		required: {level:10},
 		details: {
-			scorpion10_12: {id: 'scorpion10_12',description: 'С вероятностью <b>33%</b> добавляет 1 <img src="/images/krit.gif" border="0"/> <b>тактику крови</b> при ударе.', required: {minitemscount:12,maxitemscount:14}, modify: {hitpoints:70,criticalhit:60,anticriticalhit:60,magicdefence:35}},
+			scorpion10_12: {id: 'scorpion10_12',description: 'С вероятностью <b>33%</b> добавляет 1 <img src="images/krit.gif" border="0"/> <b>тактику крови</b> при ударе.', required: {minitemscount:12,maxitemscount:14}, modify: {hitpoints:70,criticalhit:60,anticriticalhit:60,magicdefence:35}},
 			scorpion10_10: {id: 'scorpion10_10', required: {minitemscount:10,maxitemscount:11}, modify: {hitpoints:70,criticalhit:60,anticriticalhit:60,magicdefence:30}},
 			scorpion10_8: {id: 'scorpion10_8', required: {minitemscount:8,maxitemscount:9}, modify: {hitpoints:30,anticriticalhit:60,magicdefence:30}},
 			scorpion10_5: {id: 'scorpion10_5', required: {minitemscount:5,maxitemscount:7}, modify: {magicdefence:30}}
@@ -13795,7 +13795,7 @@ var dressSets = {
 	misdeed10: {id: 'misdeed10', caption: 'Комплект Злодеяний [10]', count: 12,
 		required: {level:10},
 		details: {
-			misdeed10_12: {id: 'misdeed10_12',description: 'Добавляет 1 <img src="/images/counter.gif" border="0"/> <b>тактику контрудара</b> при критическом ударе.', required: {minitemscount:12,maxitemscount:14}, modify: {hitpoints:80,anticriticalhit:60,jumpaway:60,weaponskill:2}},
+			misdeed10_12: {id: 'misdeed10_12',description: 'Добавляет 1 <img src="images/counter.gif" border="0"/> <b>тактику контрудара</b> при критическом ударе.', required: {minitemscount:12,maxitemscount:14}, modify: {hitpoints:80,anticriticalhit:60,jumpaway:60,weaponskill:2}},
 			misdeed10_10: {id: 'misdeed10_10', required: {minitemscount:10,maxitemscount:11}, modify: {hitpoints:80,anticriticalhit:60,jumpaway:60,weaponskill:2}},
 			misdeed10_8: {id: 'misdeed10_8', required: {minitemscount:8,maxitemscount:9}, modify: {anticriticalhit:60,jumpaway:60,hitpoints:80}},
 			misdeed10_5: {id: 'misdeed10_5', required: {minitemscount:5,maxitemscount:7}, modify: {jumpaway:60,hitpoints:40}}

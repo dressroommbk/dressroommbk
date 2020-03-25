@@ -17,8 +17,8 @@ var cityhash = {
     emeralds: 'Emeralds city'
     };
 
-var stateshop = "Государственный";
-var privateshop = "Комиссионный";
+var stateshop = "Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№";
+var privateshop = "РљРѕРјРёСЃСЃРёРѕРЅРЅС‹Р№";
 
 var moz = (document.getElementById && !document.all);
 
@@ -79,10 +79,10 @@ function handleResponse(response)
 	var html = '';
 	html += imgHtml + '<b>' + response.caption + '</b><br />';
 	html += '<table border="0" cellspacing="8">';
-	html += '<tr><td><b>Местонахождение</b></td><td>';
-	html += '<b>Тип</b></td><td align="right">';
-	html += '<b>Количество</b></td><td align="right">';
-	html += '<b>Цена</b></td></tr>';
+	html += '<tr><td><b>РњРµСЃС‚РѕРЅР°С…РѕР¶РґРµРЅРёРµ</b></td><td>';
+	html += '<b>РўРёРї</b></td><td align="right">';
+	html += '<b>РљРѕР»РёС‡РµСЃС‚РІРѕ</b></td><td align="right">';
+	html += '<b>Р¦РµРЅР°</b></td></tr>';
 	for (var shopi = 0; shopi < response.shops.length; shopi++)
 	{
 		var shop = response.shops[shopi];
@@ -112,20 +112,20 @@ function handleResponse(response)
 	    if (ahtml != '')
 	    {
 	        html2 += '<table border="0" cellspacing="8">';
-	        html2 += '<tr><td><b>Информация о предмете</b></td><td>';
-	        html2 += '<b>От кого</b></td>';
-	        html2 += '<td align="right"><b>Цена</b></td></tr>';
+	        html2 += '<tr><td><b>РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїСЂРµРґРјРµС‚Рµ</b></td><td>';
+	        html2 += '<b>РћС‚ РєРѕРіРѕ</b></td>';
+	        html2 += '<td align="right"><b>Р¦РµРЅР°</b></td></tr>';
 	        html2 += '<b>' + cityhash[auc.where] + '</b><br />' + ahtml;
            	html2 += '</table>';
 	    }
 	}
 	var isr = {
 		shops: {
-			caption: 'Магазины',
+			caption: 'РњР°РіР°Р·РёРЅС‹',
 			content: html
 			},
 		auctions: {
-			caption: 'Аукционы',
+			caption: 'РђСѓРєС†РёРѕРЅС‹',
 			content: html2
 			}
 		};
@@ -157,7 +157,7 @@ function recreateInfoSpace()
     var div = document.getElementById(dcInfoSpaceOutputId);
     if (infoSpaceRequest.response == null)
     {
-        div.innerHTML = '<font color="red">Данных нет</font>';
+        div.innerHTML = '<font color="red">Р”Р°РЅРЅС‹С… РЅРµС‚</font>';
         return;
     }
     var i = 0;
@@ -202,7 +202,7 @@ function getInfoSpaceTabsHtml()
         i++;
     }
     tabs += '<td class="tab-none" align="right" valign="top" width="100%">';
-    tabs += '<a href="#" onclick="return closeInfoSpace()"><img alt="Закрыть" src="/images/infospace/close.gif" width="16" height="16" border="0" /></a>';
+    tabs += '<a href="#" onclick="return closeInfoSpace()"><img alt="Р—Р°РєСЂС‹С‚СЊ" src="/images/infospace/close.gif" width="16" height="16" border="0" /></a>';
     tabs += '</td>';
     tabs += '</tr></table>';
     return tabs;

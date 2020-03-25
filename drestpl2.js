@@ -623,10 +623,10 @@ function showPetProps(e)
 	var pet = pets[state.pet.n];
 	var pl = pet.levels['L' + state.pet.level];
 	var html = '<b>' + pet.caption2 + ' [' + pl.level + ']</b><br />';
-	html += 'Имя: ' + state.pet.name + '<br />';
+	html += 'РРјСЏ: ' + state.pet.name + '<br />';
 	if ('skill' in pl)
 	{
-		html += '<b>Освоенные навыки</b><br />';
+		html += '<b>РћСЃРІРѕРµРЅРЅС‹Рµ РЅР°РІС‹РєРё</b><br />';
 		html += pl.skill.caption + ' [' + pl.skill.level + ']';
 	}
 	showPopup(html);
@@ -836,7 +836,7 @@ function changePersName()
 	{
 		return;
 	}
-	var name = window.prompt('Введите имя этого персонажа', state.name);
+	var name = window.prompt('Р’РІРµРґРёС‚Рµ РёРјСЏ СЌС‚РѕРіРѕ РїРµСЂСЃРѕРЅР°Р¶Р°', state.name);
 	if (name == null)
 	{
 	    return;
@@ -909,7 +909,7 @@ function changePersClan()
 	{
 		return;
 	}
-	var clan = window.prompt('Введите название клана', state.clan);
+	var clan = window.prompt('Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РєР»Р°РЅР°', state.clan);
 	if (clan == null)
 	{
 	    return;
@@ -1398,7 +1398,7 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 	html += '</span>';
 	if (battlemf != 0)
 	{
-		html += '<span title="от зверя только в бою">';
+		html += '<span title="РѕС‚ Р·РІРµСЂСЏ С‚РѕР»СЊРєРѕ РІ Р±РѕСЋ">';
 		html += (battlemf >= 0) ? '+' : '';
 		html += getItemPropFormattedValue(mf, battlemf);
 		html += '</span>';
@@ -1750,17 +1750,17 @@ function getDresserInfoPaneCombatTrickHtml(ctrick)
 	}
 	if (targeter != null)
 	{
-	    var count = 'Одна цель';
+	    var count = 'РћРґРЅР° С†РµР»СЊ';
 	    if ('mincount' in targeter)
 	    {
-	        count = targeter.mincount + ' - ' + targeter.maxcount + ' целей';
+	        count = targeter.mincount + ' - ' + targeter.maxcount + ' С†РµР»РµР№';
 	    }
 	    else if ('count' in targeter)
 	    {
-	        count = targeter.count + ' целей';
+	        count = targeter.count + ' С†РµР»РµР№';
 	    }
 	    chapterHtml += '<tr><td valign="top">';
-	    chapterHtml += 'Количество целей';
+	    chapterHtml += 'РљРѕР»РёС‡РµСЃС‚РІРѕ С†РµР»РµР№';
 	    chapterHtml += ': </td><td valign="top">';
 	    chapterHtml += count;
 	}
@@ -1847,8 +1847,8 @@ function getDresserPetPaneHtml()
 	html += '<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab-content"><tr><td colspan="2">';
 	html += '<table width="100%" border="0" cellspacing="0" class="tcontent" style="padding: 2px 8px 0px 0px;">';
 	html += '<tr><td>';
-	html += '<b>Информация о выбранном питомце</b><br />';
-	html += 'Тип: ' + pet.caption;
+	html += '<b>РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РІС‹Р±СЂР°РЅРЅРѕРј РїРёС‚РѕРјС†Рµ</b><br />';
+	html += 'РўРёРї: ' + pet.caption;
 	for (var name in pl)
 	{
 		if (name in item_props)
@@ -1859,7 +1859,7 @@ function getDresserPetPaneHtml()
 	if ('foods' in pet)
 	{
 		html += '<hr class="dashed" />';
-		html += '<small>Еда</small><br />';
+		html += '<small>Р•РґР°</small><br />';
 		for (var foodn in pet.foods)
 		{
 			var food = pet.foods[foodn];
@@ -1904,7 +1904,7 @@ function getCharmChooserHtml(sloti)
 				continue;
 			}
 		}
-		var text = '<img border="0" width="40" height="25" src="' + itemImgPath + charm.id + '.gif" + title="Наложить ' + charm.caption + '" />';
+		var text = '<img border="0" width="40" height="25" src="' + itemImgPath + charm.id + '.gif" + title="РќР°Р»РѕР¶РёС‚СЊ ' + charm.caption + '" />';
 		var action = "doPredefinedCharm('" + sloti + "', '" + charm.v + "')";
 		html += getCellMenuItemHtml(text, action);
 	}
@@ -1928,7 +1928,7 @@ function getCharmChooserHtml(sloti)
 	html += '<label for="charm_mf_replace">' + localizer.charmReplace + '.</label><br />';
 	if (!('canCharm' in slot))
 	{
-		html += '<div style="color: red; font-size: x-small;">Зачарование этого слота в БК невозможно.</div>';
+		html += '<div style="color: red; font-size: x-small;">Р—Р°С‡Р°СЂРѕРІР°РЅРёРµ СЌС‚РѕРіРѕ СЃР»РѕС‚Р° РІ Р‘Рљ РЅРµРІРѕР·РјРѕР¶РЅРѕ.</div>';
 	}
 	if ('artefact' in o)
 	{
@@ -1937,7 +1937,7 @@ function getCharmChooserHtml(sloti)
 		if ('level' in o.required)
 			{
 			if (o.required.level < 10)
-				{ html += '<div style="color: red; font-size: x-small;">Зачарование артефактов менее 10-го уровня в БК невозможно.</div>'; }
+				{ html += '<div style="color: red; font-size: x-small;">Р—Р°С‡Р°СЂРѕРІР°РЅРёРµ Р°СЂС‚РµС„Р°РєС‚РѕРІ РјРµРЅРµРµ 10-РіРѕ СѓСЂРѕРІРЅСЏ РІ Р‘Рљ РЅРµРІРѕР·РјРѕР¶РЅРѕ.</div>'; }
 			}
 		}
 	}
@@ -1956,28 +1956,28 @@ function getASChooserHtml(sloti,numb)
 	html += format(localizer.addstatsHint, clanImgPath);
 	html += '<div style="text-align: left;">';
 	html += '<table cellspacing="0" cellpadding="0" border="0"><tr>';
-    html += '<td><div id="awsdstats">Количество увеличений:';
+    html += '<td><div id="awsdstats">РљРѕР»РёС‡РµСЃС‚РІРѕ СѓРІРµР»РёС‡РµРЅРёР№:';
     html += '<input type="hidden" id="itemstat" class="ABTextAA" value="'+numb+'">';
     html += '<input type="text" id="alst" class="ABTextAA" value="'+numb+'" READONLY></div></td><tr><td>';
 
-    html += '<input class="ABTextAA" id="add_strength" type="text" maxlength="3" value="0" READONLY/>   Сила</td><td>'
-    html += '<a onclick="item_ad_p(\'add_strength\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
-    html += '<a onclick="item_ad_m(\'add_strength\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a>';
+    html += '<input class="ABTextAA" id="add_strength" type="text" maxlength="3" value="0" READONLY/>   РЎРёР»Р°</td><td>'
+    html += '<a onclick="item_ad_p(\'add_strength\')" href="javascript:;"><img src="/images/plus.gif" alt="СѓРІРµР»РёС‡РёС‚СЊ" border=0> </a>';
+    html += '<a onclick="item_ad_m(\'add_strength\')" href="javascript:;"><img src="/images/minus.gif" alt="СѓРјРµРЅС€РёС‚СЊ" border=0> </a>';
     html += '</td></tr><tr><td>';
 
-    html += '<input class="ABTextAA" id="add_dexterity" type="text" maxlength="3" value="0" READONLY />   Ловкость</td><td>';
-    html += '<a onclick="item_ad_p(\'add_dexterity\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
-    html += '<a onclick="item_ad_m(\'add_dexterity\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a>';
+    html += '<input class="ABTextAA" id="add_dexterity" type="text" maxlength="3" value="0" READONLY />   Р›РѕРІРєРѕСЃС‚СЊ</td><td>';
+    html += '<a onclick="item_ad_p(\'add_dexterity\')" href="javascript:;"><img src="/images/plus.gif" alt="СѓРІРµР»РёС‡РёС‚СЊ" border=0> </a>';
+    html += '<a onclick="item_ad_m(\'add_dexterity\')" href="javascript:;"><img src="/images/minus.gif" alt="СѓРјРµРЅС€РёС‚СЊ" border=0> </a>';
     html += '</td></tr><tr><td>';
 
-    html += '<input class="ABTextAA" id="add_intuition" type="text" maxlength="3" value="0" READONLY/>   Интуиция</td><td>';
-    html += '<a onclick="item_ad_p(\'add_intuition\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
-    html += '<a onclick="item_ad_m(\'add_intuition\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a>';
+    html += '<input class="ABTextAA" id="add_intuition" type="text" maxlength="3" value="0" READONLY/>   РРЅС‚СѓРёС†РёСЏ</td><td>';
+    html += '<a onclick="item_ad_p(\'add_intuition\')" href="javascript:;"><img src="/images/plus.gif" alt="СѓРІРµР»РёС‡РёС‚СЊ" border=0> </a>';
+    html += '<a onclick="item_ad_m(\'add_intuition\')" href="javascript:;"><img src="/images/minus.gif" alt="СѓРјРµРЅС€РёС‚СЊ" border=0> </a>';
     html += '</td></tr><tr><td>';
 
-    html += '<input class="ABTextAA" id="add_intellect" type="text" maxlength="3" value="0" READONLY />   Интеллект</td><td>';
-    html += '<a onclick="item_ad_p(\'add_intellect\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> <a>';
-    html += '<a onclick="item_ad_m(\'add_intellect\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> <a>';
+    html += '<input class="ABTextAA" id="add_intellect" type="text" maxlength="3" value="0" READONLY />   РРЅС‚РµР»Р»РµРєС‚</td><td>';
+    html += '<a onclick="item_ad_p(\'add_intellect\')" href="javascript:;"><img src="/images/plus.gif" alt="СѓРІРµР»РёС‡РёС‚СЊ" border=0> <a>';
+    html += '<a onclick="item_ad_m(\'add_intellect\')" href="javascript:;"><img src="/images/minus.gif" alt="СѓРјРµРЅС€РёС‚СЊ" border=0> <a>';
     html += '</td></tr></table>';
     html += '</div>';
     html += '</td></tr></table>';
@@ -2095,7 +2095,7 @@ function getDresserListPaneHtml(state)
 		html += "'" + o2.id + "', 'goodies'";
 		html += ')" >';
 		html += htmlstring(o.caption);
-		html += '&nbsp;<img alt="Информация" src="' + infospaceImgPath + 'info.gif" width="12" height="11" border="0" /></a>';
+		html += '&nbsp;<img alt="РРЅС„РѕСЂРјР°С†РёСЏ" src="' + infospaceImgPath + 'info.gif" width="12" height="11" border="0" /></a>';
 		html += '<br />';
 	}
 	html += '<hr class="dashed" />';
@@ -2339,9 +2339,9 @@ function getDresserComponentsPaneHtml(state)
 	}
 	if (chtml != '')
 	{
-		html += '<br /><b><i>' + 'Создание' + '</i></b>';
+		html += '<br /><b><i>' + 'РЎРѕР·РґР°РЅРёРµ' + '</i></b>';
 		html += chtml;
-		html += '<br /><i><b>Всего</b></i>: ';
+		html += '<br /><i><b>Р’СЃРµРіРѕ</b></i>: ';
 		html +- '<ul>';
 		var firstc = true;
 		for (var cn in totals)
@@ -2377,7 +2377,7 @@ function getDresserComponentsPaneHtml(state)
 		{
 			html += '<br /><b title="' + ep.description + '"><i>' + ep.caption + '</i></b><br />';
 			html += ephtml;
-			html += '<i>Всего</i>: ';
+			html += '<i>Р’СЃРµРіРѕ</i>: ';
 			var firstc = true;
 			for (var ci in totals)
 			{
@@ -2538,7 +2538,7 @@ function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
 	if (waddo != null)
 	{
 		chapterHtml += '<tr><td valign="top">';
-		chapterHtml += localizer.waddInfo;      //Продукты - Подарок
+		chapterHtml += localizer.waddInfo;      //РџСЂРѕРґСѓРєС‚С‹ - РџРѕРґР°СЂРѕРє
 		chapterHtml += ': </td><td valign="top">';
 		chapterHtml += format(
 					   '<u onmouseout="hidePopup()" onmouseover="showItemProps2({1}, {2})">{0}</u></td></tr>',
@@ -2604,7 +2604,7 @@ function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
 		var caption = damageelix.caption;
 		if ('buylink' in damageelix)
 		{
-			caption += '&nbsp;<a title="Купить" target="_blank" class="TLink" href="' + damageelix.buylink + '">&gt;&gt;</a>';
+			caption += '&nbsp;<a title="РљСѓРїРёС‚СЊ" target="_blank" class="TLink" href="' + damageelix.buylink + '">&gt;&gt;</a>';
 		}
 		chapterHtml += format(
 					   '<tr><td valign="top">{1}: </td><td valign="top">{0}</td></tr>',
@@ -2616,7 +2616,7 @@ function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
 	{
 		var defelix = knownDefElix[defelixn];
 		chapterHtml += format(
-					   '<tr><td valign="top">{3}: </td><td valign="top">{0}: {2} на <i>{1} ед.</i></td></tr>',
+					   '<tr><td valign="top">{3}: </td><td valign="top">{0}: {2} РЅР° <i>{1} РµРґ.</i></td></tr>',
 					   defelix.caption,
 					   state.defElixes[defelixn],
 					   getItemPropLabel(defelix.makeUp),
@@ -2625,7 +2625,7 @@ function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
 		if ('makeUp2' in defelix)
 		{
 			chapterHtml += format(
-						'<tr><td valign="top">{3}: </td><td valign="top">{0}: {2} на <i>{1} ед.</i></td></tr>',
+						'<tr><td valign="top">{3}: </td><td valign="top">{0}: {2} РЅР° <i>{1} РµРґ.</i></td></tr>',
 						defelix.caption,
 						getDefElixSecondValue(defelix, state.defElixes[defelixn]),
 						getItemPropLabel(defelix.makeUp2),
@@ -2703,7 +2703,7 @@ function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
 		var caption = spell.caption;
 		if ('buylink' in spell)
 		{
-			caption += '&nbsp;<a title="Купить" target="_blank" class="TLink" href="' + spell.buylink + '">&gt;&gt;</a>';
+			caption += '&nbsp;<a title="РљСѓРїРёС‚СЊ" target="_blank" class="TLink" href="' + spell.buylink + '">&gt;&gt;</a>';
 		}
         if (spell.id in knownPowerUps)
         {
@@ -2718,7 +2718,7 @@ function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
 		chapterHtml += localizer.appliedSpell;
 		chapterHtml += ': </td><td valign="top">';
 		chapterHtml += format(
-					   '{0} на <i>{1} ед.</i>'+link+'</td></tr>',
+					   '{0} РЅР° <i>{1} РµРґ.</i>'+link+'</td></tr>',
 					   caption,
 					   state.spellPowerUps[powerupn]
 					   );
@@ -3449,7 +3449,7 @@ function onSpellMenu()
 	for (var powerupn in knownECRPowerUps)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp; Наложить {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp; РќР°Р»РѕР¶РёС‚СЊ {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onECRPowerUp('{0}')", powerupn));
 	}
 	menuHtml += '</table></td></tr><tr><td colspan="2" valign="top"><table width="480px" border="0">';
@@ -3509,7 +3509,7 @@ function onConcretePetMenu(petn)
 		var level = pet.levels[leveln];
 		if (level.level <= state.natural.level)
 			{
-			var text = format('[{0}] Уровень', level.level);
+			var text = format('[{0}] РЈСЂРѕРІРµРЅСЊ', level.level);
 			menuHtml += getRowMenuItemHtml(text, format("summonPet('{0}', {1})", petn, level.level));
 			}
 	}
@@ -3779,7 +3779,7 @@ function handleCharInfo(state, text)
 		{
 			if (parseInt(propVal) === 0)
 			{
-				alert('Персонаж с такими ником не найден');
+				alert('РџРµСЂСЃРѕРЅР°Р¶ СЃ С‚Р°РєРёРјРё РЅРёРєРѕРј РЅРµ РЅР°Р№РґРµРЅ');
 				return;
 			}
 		}
@@ -3891,7 +3891,7 @@ function onDressFromCombatsMenu(stateid)
 	{
 		return;
 	}
-	var menuHtml  ='<table width="260px" border="0"><tr><td><img src="' + clanImgPath + 'DarkClan.gif" width="24" height="15" border="0" align="right" /><b>Загрузка манекена с персонажа БК</b><form name="dfc" method="GET" onreset="hideMenu()" onsubmit="return false"><center>';
+	var menuHtml  ='<table width="260px" border="0"><tr><td><img src="' + clanImgPath + 'DarkClan.gif" width="24" height="15" border="0" align="right" /><b>Р—Р°РіСЂСѓР·РєР° РјР°РЅРµРєРµРЅР° СЃ РїРµСЂСЃРѕРЅР°Р¶Р° Р‘Рљ</b><form name="dfc" method="GET" onreset="hideMenu()" onsubmit="return false"><center>';
 	menuHtml += localizer.FCPlayerNick + ': <input id="dfcnick" name="dfcnick" type="text" value="';
 	menuHtml += state.name;
 	menuHtml += '" class="ABText80" />';
@@ -4137,8 +4137,8 @@ function getDresserNaturalEditors(state)
 		html += '</td>';
 		html += '<td>';
 		var fiop = 'edit'+state.id+name;
-		html += '<a onclick="adm(\''+fiop+'\')" href="javascript:;"><img src="/images/minus.gif" alt="уменшить" border=0> </a></td>';
-		html += '<td><a onclick="adp(\''+fiop+'\')" href="javascript:;"><img src="/images/plus.gif" alt="увеличить" border=0> </a>';
+		html += '<a onclick="adm(\''+fiop+'\')" href="javascript:;"><img src="/images/minus.gif" alt="СѓРјРµРЅС€РёС‚СЊ" border=0> </a></td>';
+		html += '<td><a onclick="adp(\''+fiop+'\')" href="javascript:;"><img src="/images/plus.gif" alt="СѓРІРµР»РёС‡РёС‚СЊ" border=0> </a>';
 		html += '</td>';
 		html += '</tr>';
 	}
@@ -4817,7 +4817,7 @@ function showExpTable()
 	var expTableDiv = document.getElementById(expTableDivId);
 	if (!expTableBuilt)
 	{
-		expTableDiv.innerHTML = 'Подождите, пока идёт форматирование таблицы опыта...';
+		expTableDiv.innerHTML = 'РџРѕРґРѕР¶РґРёС‚Рµ, РїРѕРєР° РёРґС‘С‚ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ РѕРїС‹С‚Р°...';
 	}
 	expTableDiv.style.display = '';
 	if (!expTableBuilt)
@@ -4910,45 +4910,45 @@ function evaluateHealerPrice()
 	var sourceState = dressStates[document.getElementById('sourcecab').value];
 	if (sourceState == null)
 	{
-		html += '<p><font color="red">Не выбрана исходная кабинка.</font></p>';
+		html += '<p><font color="red">РќРµ РІС‹Р±СЂР°РЅР° РёСЃС…РѕРґРЅР°СЏ РєР°Р±РёРЅРєР°.</font></p>';
 		errorsFound = true;
 	}
 	var targetState = dressStates[document.getElementById('targetcab').value];
 	if (targetState == null)
 	{
-		html += '<p><font color="red">Не выбрана целевая кабинка.</font></p>';
+		html += '<p><font color="red">РќРµ РІС‹Р±СЂР°РЅР° С†РµР»РµРІР°СЏ РєР°Р±РёРЅРєР°.</font></p>';
 		errorsFound = true;
 	}
 	var freeSwapsCount = parseInt(document.getElementById('freeswaps').value);
 	if (isNaN(freeSwapsCount) || freeSwapsCount < 0)
 	{
-		html += '<p><font color="red">Количество оставшихся бесплатных перекидок статов должно быть целым неотрицательным числом.</font></p>';
+		html += '<p><font color="red">РљРѕР»РёС‡РµСЃС‚РІРѕ РѕСЃС‚Р°РІС€РёС…СЃСЏ Р±РµСЃРїР»Р°С‚РЅС‹С… РїРµСЂРµРєРёРґРѕРє СЃС‚Р°С‚РѕРІ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С†РµР»С‹Рј РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј С‡РёСЃР»РѕРј.</font></p>';
 		errorsFound = true;
 	}
 	if (freeSwapsCount > 15)
 	{
-		html += '<p><font color="red">Количество оставшихся бесплатных перекидок статов не может быть выше 15.</font></p>';
+		html += '<p><font color="red">РљРѕР»РёС‡РµСЃС‚РІРѕ РѕСЃС‚Р°РІС€РёС…СЃСЏ Р±РµСЃРїР»Р°С‚РЅС‹С… РїРµСЂРµРєРёРґРѕРє СЃС‚Р°С‚РѕРІ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІС‹С€Рµ 15.</font></p>';
 		errorsFound = true;
 	}
 	if (sourceState == targetState)
 	{
-		html += '<p><font color="red">Вы выбрали одну и ту же кабинку в качестве исходной и целевой. Стоимость перекидки равна 0кр.</font></p>';
+		html += '<p><font color="red">Р’С‹ РІС‹Р±СЂР°Р»Рё РѕРґРЅСѓ Рё С‚Сѓ Р¶Рµ РєР°Р±РёРЅРєСѓ РІ РєР°С‡РµСЃС‚РІРµ РёСЃС…РѕРґРЅРѕР№ Рё С†РµР»РµРІРѕР№. РЎС‚РѕРёРјРѕСЃС‚СЊ РїРµСЂРµРєРёРґРєРё СЂР°РІРЅР° 0РєСЂ.</font></p>';
 		errorsFound = true;
 	}
 	recalcDresserState(sourceState);
 	recalcDresserState(targetState);
 	if (sourceState.natural.totalstats != targetState.natural.totalstats)
 	{
-		html += '<p><font color="red">Общая сумма родных статов в выбранных кабинках не совпадает.';
-		html += ' Для исходной кабинки сумма родных статов равна ' + sourceState.natural.totalstats;
-		html += ', а для целевой кабинки сумма родных статов равна ' + targetState.natural.totalstats;
-		html += '. Пожалуйста, выровняйте количество родных статов в этих кабинках.</font></p>';
+		html += '<p><font color="red">РћР±С‰Р°СЏ СЃСѓРјРјР° СЂРѕРґРЅС‹С… СЃС‚Р°С‚РѕРІ РІ РІС‹Р±СЂР°РЅРЅС‹С… РєР°Р±РёРЅРєР°С… РЅРµ СЃРѕРІРїР°РґР°РµС‚.';
+		html += ' Р”Р»СЏ РёСЃС…РѕРґРЅРѕР№ РєР°Р±РёРЅРєРё СЃСѓРјРјР° СЂРѕРґРЅС‹С… СЃС‚Р°С‚РѕРІ СЂР°РІРЅР° ' + sourceState.natural.totalstats;
+		html += ', Р° РґР»СЏ С†РµР»РµРІРѕР№ РєР°Р±РёРЅРєРё СЃСѓРјРјР° СЂРѕРґРЅС‹С… СЃС‚Р°С‚РѕРІ СЂР°РІРЅР° ' + targetState.natural.totalstats;
+		html += '. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹СЂРѕРІРЅСЏР№С‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂРѕРґРЅС‹С… СЃС‚Р°С‚РѕРІ РІ СЌС‚РёС… РєР°Р±РёРЅРєР°С….</font></p>';
 		errorsFound = true;
 	}
 	if (sourceState.natural.spirituality < targetState.natural.spirituality)
 	{
-		html += '<p><font color="red">Значение духовности в целевой кабинке больше, чем в исходной.';
-		html += '. К сожалению, Администрация БК пока не предоставила нам информацию о стоимости перекидки статов в Духовность.</font></p>';
+		html += '<p><font color="red">Р—РЅР°С‡РµРЅРёРµ РґСѓС…РѕРІРЅРѕСЃС‚Рё РІ С†РµР»РµРІРѕР№ РєР°Р±РёРЅРєРµ Р±РѕР»СЊС€Рµ, С‡РµРј РІ РёСЃС…РѕРґРЅРѕР№.';
+		html += '. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ Р‘Рљ РїРѕРєР° РЅРµ РїСЂРµРґРѕСЃС‚Р°РІРёР»Р° РЅР°Рј РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃС‚РѕРёРјРѕСЃС‚Рё РїРµСЂРµРєРёРґРєРё СЃС‚Р°С‚РѕРІ РІ Р”СѓС…РѕРІРЅРѕСЃС‚СЊ.</font></p>';
 		errorsFound = true;
 	}
 	var freeStats = '';
@@ -4959,14 +4959,14 @@ function evaluateHealerPrice()
 		var tval = targetState.natural[mfname];
 		if (tval > sval && tval > dressHealerData.length)
 		{
-			html += '<p><font color="red">' + getItemPropLabel(mfname) + ': Значение в целевой кабинке больше, чем мы можем обработать.';
-			html += 'Для перекидки больше ' + dressHealerData.length + ' статов дешевле воспользоватся кнопкой "Скинуть все" в комнате знахаря.</font></p>';
+			html += '<p><font color="red">' + getItemPropLabel(mfname) + ': Р—РЅР°С‡РµРЅРёРµ РІ С†РµР»РµРІРѕР№ РєР°Р±РёРЅРєРµ Р±РѕР»СЊС€Рµ, С‡РµРј РјС‹ РјРѕР¶РµРј РѕР±СЂР°Р±РѕС‚Р°С‚СЊ.';
+			html += 'Р”Р»СЏ РїРµСЂРµРєРёРґРєРё Р±РѕР»СЊС€Рµ ' + dressHealerData.length + ' СЃС‚Р°С‚РѕРІ РґРµС€РµРІР»Рµ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЃСЏ РєРЅРѕРїРєРѕР№ "РЎРєРёРЅСѓС‚СЊ РІСЃРµ" РІ РєРѕРјРЅР°С‚Рµ Р·РЅР°С…Р°СЂСЏ.</font></p>';
 			errorsFound = true;
 		}
 		if (tval > sval && tval < 0)
 		{
-			html += '<p><font color="red">' + getItemPropLabel(mfname) + ': Значение в целевой кабинке меньше нуля, и больше значения в исходной кабинке.';
-			html += '. Значения родных статов не могут быть меньше 0.</font></p>';
+			html += '<p><font color="red">' + getItemPropLabel(mfname) + ': Р—РЅР°С‡РµРЅРёРµ РІ С†РµР»РµРІРѕР№ РєР°Р±РёРЅРєРµ РјРµРЅСЊС€Рµ РЅСѓР»СЏ, Рё Р±РѕР»СЊС€Рµ Р·РЅР°С‡РµРЅРёСЏ РІ РёСЃС…РѕРґРЅРѕР№ РєР°Р±РёРЅРєРµ.';
+			html += '. Р—РЅР°С‡РµРЅРёСЏ СЂРѕРґРЅС‹С… СЃС‚Р°С‚РѕРІ РЅРµ РјРѕРіСѓС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ 0.</font></p>';
 			errorsFound = true;
 		}
 		if (sval > tval)
@@ -4999,7 +4999,7 @@ function evaluateHealerPrice()
 					if (freeSwapsCount > 0)
 					{
 						freeSwapsCount--;
-						history += 'Перекидываем один стат из [' + freeStats + '] в ' + getItemPropLabel(mfname) + ' бесплатно <i>(' + getItemPropLabel(mfname) + ': было ' + (sval + j).toString() + ', стало ' + (sval + j + 1).toString() + ')</i>.<br />';
+						history += 'РџРµСЂРµРєРёРґС‹РІР°РµРј РѕРґРёРЅ СЃС‚Р°С‚ РёР· [' + freeStats + '] РІ ' + getItemPropLabel(mfname) + ' Р±РµСЃРїР»Р°С‚РЅРѕ <i>(' + getItemPropLabel(mfname) + ': Р±С‹Р»Рѕ ' + (sval + j).toString() + ', СЃС‚Р°Р»Рѕ ' + (sval + j + 1).toString() + ')</i>.<br />';
 					}
 					else
 					{
@@ -5008,12 +5008,12 @@ function evaluateHealerPrice()
 						if (m2 < 0) m2 = 0;
 						var stepPrice = dressHealerData[m2][i];
 						price += stepPrice;
-						history += 'Перекидываем один стат из [' + freeStats + '] в ' + getItemPropLabel(mfname) + ' за ' + stepPrice + 'кр. <i>(' + getItemPropLabel(mfname) + ': было ' + m.toString() + ', стало ' + (m + 1).toString() + ')</i>.<br />';
+						history += 'РџРµСЂРµРєРёРґС‹РІР°РµРј РѕРґРёРЅ СЃС‚Р°С‚ РёР· [' + freeStats + '] РІ ' + getItemPropLabel(mfname) + ' Р·Р° ' + stepPrice + 'РєСЂ. <i>(' + getItemPropLabel(mfname) + ': Р±С‹Р»Рѕ ' + m.toString() + ', СЃС‚Р°Р»Рѕ ' + (m + 1).toString() + ')</i>.<br />';
 					}
 				}
 			}
 		}
-		html += '<p>Общая стоимость перекидки статов: <b>' + price + '</b>кр.</p>';
+		html += '<p>РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РїРµСЂРµРєРёРґРєРё СЃС‚Р°С‚РѕРІ: <b>' + price + '</b>РєСЂ.</p>';
 		html += '<hr class="dashed" />';
 		html += history;
 	}
@@ -5024,15 +5024,15 @@ function evaluateHealerPrice()
 function getHealerInnerHtml()
 {
 	var html = '<table class="tcontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td  align="left" valign="top">';
-	html += '<p>Комната Знахаря позволит Вам оценить затраты на перекидку статов.</p>';
-	html += '<p>1. Выберите кабинку с исходным комплектом: <select id="sourcecab" name="sourcecab" class="ABTextR">';
+	html += '<p>РљРѕРјРЅР°С‚Р° Р—РЅР°С…Р°СЂСЏ РїРѕР·РІРѕР»РёС‚ Р’Р°Рј РѕС†РµРЅРёС‚СЊ Р·Р°С‚СЂР°С‚С‹ РЅР° РїРµСЂРµРєРёРґРєСѓ СЃС‚Р°С‚РѕРІ.</p>';
+	html += '<p>1. Р’С‹Р±РµСЂРёС‚Рµ РєР°Р±РёРЅРєСѓ СЃ РёСЃС…РѕРґРЅС‹Рј РєРѕРјРїР»РµРєС‚РѕРј: <select id="sourcecab" name="sourcecab" class="ABTextR">';
 	html += getCabsAsOptions();
 	html += '</select><br />';
-	html += '2. Выберите кабинку с целевым комплектом: <select id="targetcab" name="targetcab" class="ABTextR">';
+	html += '2. Р’С‹Р±РµСЂРёС‚Рµ РєР°Р±РёРЅРєСѓ СЃ С†РµР»РµРІС‹Рј РєРѕРјРїР»РµРєС‚РѕРј: <select id="targetcab" name="targetcab" class="ABTextR">';
 	html += getCabsAsOptions();
 	html += '</select><br />';
-	html += '3. Укажите количество оставшихся бесплатных перекидок статов: <input type="text" id="freeswaps" name="freeswaps" value="0" class="ABTextR" size="2" maxlength="2" /><br />';
-	html += '4. И нажмите на эту кнопку: <input class="inpButton" type="button" id="evaluatehealerprice" name="evaluatehealerprice" value="Рассчитать стоимость перекидки статов" onclick="evaluateHealerPrice(); return false" /></p>';
+	html += '3. РЈРєР°Р¶РёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕСЃС‚Р°РІС€РёС…СЃСЏ Р±РµСЃРїР»Р°С‚РЅС‹С… РїРµСЂРµРєРёРґРѕРє СЃС‚Р°С‚РѕРІ: <input type="text" id="freeswaps" name="freeswaps" value="0" class="ABTextR" size="2" maxlength="2" /><br />';
+	html += '4. Р РЅР°Р¶РјРёС‚Рµ РЅР° СЌС‚Сѓ РєРЅРѕРїРєСѓ: <input class="inpButton" type="button" id="evaluatehealerprice" name="evaluatehealerprice" value="Р Р°СЃСЃС‡РёС‚Р°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ РїРµСЂРµРєРёРґРєРё СЃС‚Р°С‚РѕРІ" onclick="evaluateHealerPrice(); return false" /></p>';
 	html += '<div id="evaluatedHealerInfo"></div>';
 	html += '</td></tr></table>';
 	return html;
@@ -5184,7 +5184,7 @@ function blockChosen(id)
 
 function doBattleTurn()
 {
-	document.getElementById('battlechoose').innerHTML = 'Ожидаем ответа';
+	document.getElementById('battlechoose').innerHTML = 'РћР¶РёРґР°РµРј РѕС‚РІРµС‚Р°';
 	battleRequest();
 }
 
@@ -5306,7 +5306,7 @@ function getStrikeBlockSelector(attackCount, blockCount)
 	for (azi = 0; azi < attackCount; azi++)
 	{
 		html += '<td valign="top">';
-		html += '<label>Удар</label>';
+		html += '<label>РЈРґР°СЂ</label>';
 		var rn = 'atck' + azi;
 		for (var i = 0; i < localizer.attackZone.length; i++)
 		{
@@ -5317,7 +5317,7 @@ function getStrikeBlockSelector(attackCount, blockCount)
 		}
 	}
 	html += '</td><td valign="top">';
-	html += '<label>Блок</label>';
+	html += '<label>Р‘Р»РѕРє</label>';
 	var rn = 'blck0';
 	for (var i = 0; i < bzd.length; i++)
 	{
@@ -5388,15 +5388,15 @@ function startBattle()
 function getBattlesInnerHtml()
 {
 	var html = '<table class="tcontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td  align="left" valign="top">';
-	html += '<p>Здесь Вы можете провести тестовые поединки.</p>';
-	html += '<p><font color="red">Вплоть до официального релиза поединков оные будут лимитированы. Сперва появятся только поединки бойцов, и только потом появится магия.</font></p>';
-	html += '<p>1. Выберите кабинку со своим комплектом: <select id="bcab1" name="bcab1" class="ABTextR">';
+	html += '<p>Р—РґРµСЃСЊ Р’С‹ РјРѕР¶РµС‚Рµ РїСЂРѕРІРµСЃС‚Рё С‚РµСЃС‚РѕРІС‹Рµ РїРѕРµРґРёРЅРєРё.</p>';
+	html += '<p><font color="red">Р’РїР»РѕС‚СЊ РґРѕ РѕС„РёС†РёР°Р»СЊРЅРѕРіРѕ СЂРµР»РёР·Р° РїРѕРµРґРёРЅРєРѕРІ РѕРЅС‹Рµ Р±СѓРґСѓС‚ Р»РёРјРёС‚РёСЂРѕРІР°РЅС‹. РЎРїРµСЂРІР° РїРѕСЏРІСЏС‚СЃСЏ С‚РѕР»СЊРєРѕ РїРѕРµРґРёРЅРєРё Р±РѕР№С†РѕРІ, Рё С‚РѕР»СЊРєРѕ РїРѕС‚РѕРј РїРѕСЏРІРёС‚СЃСЏ РјР°РіРёСЏ.</font></p>';
+	html += '<p>1. Р’С‹Р±РµСЂРёС‚Рµ РєР°Р±РёРЅРєСѓ СЃРѕ СЃРІРѕРёРј РєРѕРјРїР»РµРєС‚РѕРј: <select id="bcab1" name="bcab1" class="ABTextR">';
 	html += getCabsAsOptions();
 	html += '</select><br />';
-	html += '2. Выберите кабинку с комплектом противника: <select id="bcab2" name="bcab2" class="ABTextR">';
+	html += '2. Р’С‹Р±РµСЂРёС‚Рµ РєР°Р±РёРЅРєСѓ СЃ РєРѕРјРїР»РµРєС‚РѕРј РїСЂРѕС‚РёРІРЅРёРєР°: <select id="bcab2" name="bcab2" class="ABTextR">';
 	html += getCabsAsOptions();
 	html += '</select><br />';
-	html += '3. И нажмите на эту кнопку: <input class="inpButton" type="button" id="startbattle" name="startbattle" value="Начать поединок один на один" onclick="startBattle(); return false" /></p>';
+	html += '3. Р РЅР°Р¶РјРёС‚Рµ РЅР° СЌС‚Сѓ РєРЅРѕРїРєСѓ: <input class="inpButton" type="button" id="startbattle" name="startbattle" value="РќР°С‡Р°С‚СЊ РїРѕРµРґРёРЅРѕРє РѕРґРёРЅ РЅР° РѕРґРёРЅ" onclick="startBattle(); return false" /></p>';
 	html += '</td></tr></table>';
 	return html;
 }
@@ -5453,7 +5453,7 @@ function applyFakeParam(id)
 	var value = parseFloat(document.getElementById('fakeParamValue').value);
 	if (isNaN(value))
 	{
-		alert('Введите число.');
+		alert('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ.');
 		return;
 	}
 	var o = getObjectById(id);
@@ -5483,7 +5483,7 @@ function addFakeParam(id)
 	var html = '';
 	html += getSelectItemListHtml('cmn', getCommonItemList());
 	html += '<br /><input id="fakeParamValue" type="text" value="0" />';
-	html += '<br /><input class="inpButton" type="button" value="Добавить" onclick="applyFakeParam(' + "'" + id + "'" + ')" /></div>';
+	html += '<br /><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ" onclick="applyFakeParam(' + "'" + id + "'" + ')" /></div>';
 	document.getElementById('param_newline').innerHTML = html;
 }
 
@@ -5511,7 +5511,7 @@ function applyFakeReq(id)
 	var value = document.getElementById('fakeReqValue').value;
 	if (isNaN(value))
 	{
-		alert('Введите число.');
+		alert('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ.');
 		return;
 	}
 	var o = getObjectById(id);
@@ -5540,7 +5540,7 @@ function addFakeReq(id)
 	var html = '';
 	html += getSelectItemListHtml('req', getRequiredItemList());
 	html += '<br /><input id="fakeReqValue" type="text" value="0" />';
-	html += '<br /><input class="inpButton" type="button" value="Добавить" onclick="applyFakeReq(' + "'" + id + "'" + ')" /></div>';
+	html += '<br /><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ" onclick="applyFakeReq(' + "'" + id + "'" + ')" /></div>';
 	document.getElementById('req_newline').innerHTML = html;
 }
 
@@ -5554,7 +5554,7 @@ function applyFakeCleanMf(id)
 	var value = document.getElementById('fakeMfValue').value;
 	if (isNaN(value))
 	{
-		alert('Введите число.');
+		alert('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ.');
 		return;
 	}
 	var o = getObjectById(id);
@@ -5583,7 +5583,7 @@ function addFakeCleanMf(id)
 	var html = '';
 	html += getSelectItemListHtml('cmf', getCleanModifyItemList());
 	html += '<br /><input id="fakeMfValue" type="text" value="0" />';
-	html += '<br /><input class="inpButton" type="button" value="Добавить" onclick="applyFakeCleanMf(' + "'" + id + "'" + ')" /></div>';
+	html += '<br /><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ" onclick="applyFakeCleanMf(' + "'" + id + "'" + ')" /></div>';
 	document.getElementById('mf_newline').innerHTML = html;
 }
 
@@ -5597,7 +5597,7 @@ function applyFakeCleanPrp(id)
 	var value = document.getElementById('fakePrpValue').value;
 	if (isNaN(value))
 	{
-		alert('Введите число.');
+		alert('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ.');
 		return;
 	}
 	var o = getObjectById(id);
@@ -5626,7 +5626,7 @@ function addFakeCleanPrp(id)
 	var html = '';
 	html += getSelectItemListHtml('prp', getCleanPropertiesItemList());
 	html += '<br /><input id="fakePrpValue" type="text" value="0" />';
-	html += '<br /><input class="inpButton" type="button" value="Добавить" onclick="applyFakeCleanPrp(' + "'" + id + "'" + ')" /></div>';
+	html += '<br /><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ" onclick="applyFakeCleanPrp(' + "'" + id + "'" + ')" /></div>';
 	document.getElementById('prp_newline').innerHTML = html;
 }
 
@@ -5639,7 +5639,7 @@ function renameFake(id)
 	{
 		caption = fake.caption;
 	}
-	caption = window.prompt('Введите имя предмета', caption);
+	caption = window.prompt('Р’РІРµРґРёС‚Рµ РёРјСЏ РїСЂРµРґРјРµС‚Р°', caption);
 	if (caption != null)
 	{
 		if (caption == o.caption)
@@ -5670,7 +5670,7 @@ function getFakeItemEditor(id)
 
 	html += format('<img border="0" align="right" src="{0}{1}.gif" width="{2}" height="{3}" />', itemImgPath, id, fake.width, fake.height);
 	html += '<b>' + getUpgradeCaption(getObjectById(id), fake) + '</b> ';
-	html += '<input class="inpButton" type="button" value="Переименовать" onclick="renameFake(' + "'" + id + "'" + ')" /><br />';
+	html += '<input class="inpButton" type="button" value="РџРµСЂРµРёРјРµРЅРѕРІР°С‚СЊ" onclick="renameFake(' + "'" + id + "'" + ')" /><br />';
 	if ('common' in fake)
 	{
 		for (var mf in fake.common)
@@ -5678,7 +5678,7 @@ function getFakeItemEditor(id)
 			html += getHtmlOfProp(null, fake.common, common_props[mf], mf);
 		}
 	}
-	html += '<div id="param_newline"><input class="inpButton" type="button" value="Добавить в Параметры" onclick="addFakeParam(' + "'" + id + "'" + ')" /></div>';
+	html += '<div id="param_newline"><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ РІ РџР°СЂР°РјРµС‚СЂС‹" onclick="addFakeParam(' + "'" + id + "'" + ')" /></div>';
 	html += localizer.itemRequiredGroup.bold() + '<br />';
 	if ('required' in fake)
 	{
@@ -5687,7 +5687,7 @@ function getFakeItemEditor(id)
 			html += getHtmlOfProp(null, fake.required, item_props[mf], mf);
 		}
 	}
-	html += '<div id="req_newline"><input class="inpButton" type="button" value="Добавить в Требования" onclick="addFakeReq(' + "'" + id + "'" + ')" /></div>';
+	html += '<div id="req_newline"><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ РІ РўСЂРµР±РѕРІР°РЅРёСЏ" onclick="addFakeReq(' + "'" + id + "'" + ')" /></div>';
 	html += localizer.itemModifyGroup.bold() + '<br />';
 	if ('modify' in fake)
 	{
@@ -5704,7 +5704,7 @@ function getFakeItemEditor(id)
 			html += getHtmlOfArmorProp(fake.modify, armorn, getItemPropLabel(armorn));
 		}
 	}
-	html += '<div id="mf_newline"><input class="inpButton" type="button" value="Добавить в Действует на" onclick="addFakeCleanMf(' + "'" + id + "'" + ')" /></div>';
+	html += '<div id="mf_newline"><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ РІ Р”РµР№СЃС‚РІСѓРµС‚ РЅР°" onclick="addFakeCleanMf(' + "'" + id + "'" + ')" /></div>';
 	html += localizer.itemPropertiesGroup.bold() + '<br />';
 	if ('properties' in fake)
 	{
@@ -5713,7 +5713,7 @@ function getFakeItemEditor(id)
 			html += getHtmlOfSignedProp(fake.properties, item_props[mf], mf, null, null, null);
 		}
 	}
-	html += '<div id="prp_newline"><input class="inpButton" type="button" value="Добавить в Свойства предмета" onclick="addFakeCleanPrp(' + "'" + id + "'" + ')" /></div>';
+	html += '<div id="prp_newline"><input class="inpButton" type="button" value="Р”РѕР±Р°РІРёС‚СЊ РІ РЎРІРѕР№СЃС‚РІР° РїСЂРµРґРјРµС‚Р°" onclick="addFakeCleanPrp(' + "'" + id + "'" + ')" /></div>';
 
 	return html;
 }
@@ -5757,7 +5757,7 @@ function builderEditItem(isNewItem)
 		}
 		if (getObjectById(id) != null)
 		{
-			alert('Предмет с таким кодом уже существует!');
+			alert('РџСЂРµРґРјРµС‚ СЃ С‚Р°РєРёРј РєРѕРґРѕРј СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!');
 			return;
 		}
 	}
@@ -5767,13 +5767,13 @@ function builderEditItem(isNewItem)
 	}
 	if (id == '')
 	{
-		alert('Пустое имя предмета');
+		alert('РџСѓСЃС‚РѕРµ РёРјСЏ РїСЂРµРґРјРµС‚Р°');
 		return;
 	}
 	var oidx = getJSName(id);
 	if (!(oidx in dressItems))
 	{
-		dressItems[oidx] = {id: id, fakebase: true, caption: 'Новый предмет', category: c.id, slot: c.slot, width: slot.width, height: slot.height};
+		dressItems[oidx] = {id: id, fakebase: true, caption: 'РќРѕРІС‹Р№ РїСЂРµРґРјРµС‚', category: c.id, slot: c.slot, width: slot.width, height: slot.height};
 		c.items.push(dressItems[oidx]);
 		for (var ci in categories)
 		{
@@ -5819,14 +5819,14 @@ function rebuildItems()
 		html += '<option value="' + it.id + '">' + htmlstring(it.caption) + '</option>';
 	}
 	html += '</select>';
-	html += '<br /><input class="inpButton" type="button" value="Открыть в конструкторе" onclick="builderEditItem(false);" />';
+	html += '<br /><input class="inpButton" type="button" value="РћС‚РєСЂС‹С‚СЊ РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ" onclick="builderEditItem(false);" />';
 	document.getElementById('builderItemChooserDiv').innerHTML = html;
 }
 
 function builderChooseItem()
 {
 	var html = '';
-	html += 'Выберите предмет для начала конструирования<br />';
+	html += 'Р’С‹Р±РµСЂРёС‚Рµ РїСЂРµРґРјРµС‚ РґР»СЏ РЅР°С‡Р°Р»Р° РєРѕРЅСЃС‚СЂСѓРёСЂРѕРІР°РЅРёСЏ<br />';
 	html += '<select id="builderCategoryChooser" onchange="rebuildItems()">';
 	for (var ci in categories)
 	{
@@ -5849,7 +5849,7 @@ function builderChooseItem()
 function builderComposeItem()
 {
 	var html = '';
-	html += 'Введите код предмета или ссылку на его изображение<br />';
+	html += 'Р’РІРµРґРёС‚Рµ РєРѕРґ РїСЂРµРґРјРµС‚Р° РёР»Рё СЃСЃС‹Р»РєСѓ РЅР° РµРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёРµ<br />';
 	html += '<select id="builderCategoryChooser">';
 	for (var ci in categories)
 	{
@@ -5864,7 +5864,7 @@ function builderComposeItem()
 	}
 	html += '</select>';
 	html += '<br /><input id="builderItemComposeName" type="text" value="" />';
-	html += '<br /><input class="inpButton" type="button" value="Открыть в конструкторе" onclick="builderEditItem(true);" />';
+	html += '<br /><input class="inpButton" type="button" value="РћС‚РєСЂС‹С‚СЊ РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ" onclick="builderEditItem(true);" />';
 
 	document.getElementById('buildings').innerHTML = html;
 }
@@ -5917,7 +5917,7 @@ function builderDropItem()
 function builderForgotItem()
 {
 	var html = '';
-	html += 'Выберите предмет для забывания<br />';
+	html += 'Р’С‹Р±РµСЂРёС‚Рµ РїСЂРµРґРјРµС‚ РґР»СЏ Р·Р°Р±С‹РІР°РЅРёСЏ<br />';
 	html += '<select id="builderItemChooser">';
 
 	var items = [];
@@ -5931,7 +5931,7 @@ function builderForgotItem()
 		html += '<option value="' + it.id + '">' + htmlstring(it.caption) + '</option>';
 	}
 	html += '</select>';
-	html += '<br /><input class="inpButton" type="button" value="Забыть в конструкторе" onclick="builderDropItem();" />';
+	html += '<br /><input class="inpButton" type="button" value="Р—Р°Р±С‹С‚СЊ РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ" onclick="builderDropItem();" />';
 
 	document.getElementById('buildings').innerHTML = html;
 }
@@ -5939,11 +5939,11 @@ function builderForgotItem()
 function getBuilderCommands()
 {
 	var html = '<table cellpadding="0" cellspacing="0" border="0"><tr>';
-	html += getCell2MenuItemHtml('Модифицировать известный предмет', 'builderChooseItem()');
+	html += getCell2MenuItemHtml('РњРѕРґРёС„РёС†РёСЂРѕРІР°С‚СЊ РёР·РІРµСЃС‚РЅС‹Р№ РїСЂРµРґРјРµС‚', 'builderChooseItem()');
 	html += getCell2MenuSeparatorHtml();
-	html += getCell2MenuItemHtml('Создать новый предмет', 'builderComposeItem()');
+	html += getCell2MenuItemHtml('РЎРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ РїСЂРµРґРјРµС‚', 'builderComposeItem()');
 	html += getCell2MenuSeparatorHtml();
-	html += getCell2MenuItemHtml('Забыть сконструированный предмет', 'builderForgotItem()');
+	html += getCell2MenuItemHtml('Р—Р°Р±С‹С‚СЊ СЃРєРѕРЅСЃС‚СЂСѓРёСЂРѕРІР°РЅРЅС‹Р№ РїСЂРµРґРјРµС‚', 'builderForgotItem()');
 	html += '</table>';
 	return html;
 }
@@ -5954,9 +5954,9 @@ function getBuilderInnerHtml()
 
 	html += getBuilderCommands();
 	html += '<div id="buildings">';
-	html += '<p><font color="red">Конструктор в режиме тестирования и реализации, использовать пока не рекомендуется.</font></p>';
-	html += '<p>Здесь Вы можете конструировать свои предметы или модифицировать существующие.</p>';
-	html += '<p>Ресурс полезен при изменениях в мире БК любым игрокам, а также перед оными для гейм-мастеров.</p>';
+	html += '<p><font color="red">РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РІ СЂРµР¶РёРјРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ Рё СЂРµР°Р»РёР·Р°С†РёРё, РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїРѕРєР° РЅРµ СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ.</font></p>';
+	html += '<p>Р—РґРµСЃСЊ Р’С‹ РјРѕР¶РµС‚Рµ РєРѕРЅСЃС‚СЂСѓРёСЂРѕРІР°С‚СЊ СЃРІРѕРё РїСЂРµРґРјРµС‚С‹ РёР»Рё РјРѕРґРёС„РёС†РёСЂРѕРІР°С‚СЊ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ.</p>';
+	html += '<p>Р РµСЃСѓСЂСЃ РїРѕР»РµР·РµРЅ РїСЂРё РёР·РјРµРЅРµРЅРёСЏС… РІ РјРёСЂРµ Р‘Рљ Р»СЋР±С‹Рј РёРіСЂРѕРєР°Рј, Р° С‚Р°РєР¶Рµ РїРµСЂРµРґ РѕРЅС‹РјРё РґР»СЏ РіРµР№Рј-РјР°СЃС‚РµСЂРѕРІ.</p>';
 	html += '</div>';
 
 	return html;
@@ -6793,7 +6793,7 @@ function applyCommonSkills(state)
 
 function isEmpty(obj) {
   for (let key in obj) {
-    // если тело цикла начнет выполняться - значит в объекте есть свойства
+    // РµСЃР»Рё С‚РµР»Рѕ С†РёРєР»Р° РЅР°С‡РЅРµС‚ РІС‹РїРѕР»РЅСЏС‚СЊСЃСЏ - Р·РЅР°С‡РёС‚ РІ РѕР±СЉРµРєС‚Рµ РµСЃС‚СЊ СЃРІРѕР№СЃС‚РІР°
     return false;
   }
   return true;
@@ -7551,7 +7551,7 @@ function getFittedArmor(armorObject)
 	var armorLevel = (('required' in fittedArmor) && ('level' in fittedArmor.required)) ? parseInt(fittedArmor.required.level) : 0;
 	fittedArmor.modify.hitpoints += ((armorLevel + 1) * 6);
 	fittedArmor.armorWasFit = true;
-	fittedArmor.destiny = 'Броня подогнана под персонажа';
+	fittedArmor.destiny = 'Р‘СЂРѕРЅСЏ РїРѕРґРѕРіРЅР°РЅР° РїРѕРґ РїРµСЂСЃРѕРЅР°Р¶Р°';
 	return fittedArmor;
 }
 
@@ -7999,7 +7999,7 @@ function getSharpenWeapon(weaponObject, sharp)
 
 	if ((sharp > 5 && oldmode == 1) || (oldmode != 1))
 	{
-	    sharpenWeapon.destiny = 'Связано судьбой с персонажем, заточившим это оружие';
+	    sharpenWeapon.destiny = 'РЎРІСЏР·Р°РЅРѕ СЃСѓРґСЊР±РѕР№ СЃ РїРµСЂСЃРѕРЅР°Р¶РµРј, Р·Р°С‚РѕС‡РёРІС€РёРј СЌС‚Рѕ РѕСЂСѓР¶РёРµ';
 	}
 	return sharpenWeapon;
 }
@@ -8147,7 +8147,7 @@ function getUpgradeCaption(o, upgrade)
 	}
 	if ('fake' in upgrade)
 	{
-		caption = caption + '&nbsp;[конструктор]';
+		caption = caption + '&nbsp;[РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ]';
 	}
 	return caption;
 }
@@ -9119,7 +9119,7 @@ function getItemSortHtml()
 {
 	var html = '';
 	html += getFilterHeaderHtml();
-	html += 'Пока не реализовано.';
+	html += 'РџРѕРєР° РЅРµ СЂРµР°Р»РёР·РѕРІР°РЅРѕ.';
 	html += getFilterFooterHtml();
 	return html;
 }
@@ -9335,8 +9335,8 @@ function onCategorySelect(stateid, slotid, catId)
 		menuHtml += '<input type="hidden" id="chosenCategory" value="' + catId + '" />';
 
 		menuHtml += '<table width="' + tableWidth + '" style="cellspacing="0" cellpadding="0" border="0"><tr><td valign="top">';
-		//menuHtml += '<div id="itemsView" style="width: 500px; height:250px; overflow:auto; filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1,enabled=false) progid:DXImageTransform.Microsoft.Alpha(opacity=50,style=0,enabled=false);"><center>Идёт фильтрация...</center></div>';
-        menuHtml += '<div id="itemsView" style="width: 100%; filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1,enabled=false) progid:DXImageTransform.Microsoft.Alpha(opacity=50,style=0,enabled=false);"><center>Идёт фильтрация...</center></div>';
+		//menuHtml += '<div id="itemsView" style="width: 500px; height:250px; overflow:auto; filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1,enabled=false) progid:DXImageTransform.Microsoft.Alpha(opacity=50,style=0,enabled=false);"><center>РРґС‘С‚ С„РёР»СЊС‚СЂР°С†РёСЏ...</center></div>';
+        menuHtml += '<div id="itemsView" style="width: 100%; filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1,enabled=false) progid:DXImageTransform.Microsoft.Alpha(opacity=50,style=0,enabled=false);"><center>РРґС‘С‚ С„РёР»СЊС‚СЂР°С†РёСЏ...</center></div>';
 		menuHtml += '</td></tr><tr><td valign="bottom"><hr class="dashed" />';
 		menuHtml += '</td></tr>';
 		menuHtml += getRowMenuItemHtml(localizer.closeMenu, 'hideMenu()');
@@ -10003,7 +10003,7 @@ function loadEnteredSet()
 	}
 	if (text == '')
 	{
-		alert('Введите сперва текст, описывающий состав комплекта.');
+		alert('Р’РІРµРґРёС‚Рµ СЃРїРµСЂРІР° С‚РµРєСЃС‚, РѕРїРёСЃС‹РІР°СЋС‰РёР№ СЃРѕСЃС‚Р°РІ РєРѕРјРїР»РµРєС‚Р°.');
 		return;
 	}
 	var dstate = deserializeObject(text);
@@ -10435,7 +10435,7 @@ function removeCab2(cabId)
 	}
 	if (stateCount < 2)
 	{
-		alert('Удаление единственной кабинки не разрешается');
+		alert('РЈРґР°Р»РµРЅРёРµ РµРґРёРЅСЃС‚РІРµРЅРЅРѕР№ РєР°Р±РёРЅРєРё РЅРµ СЂР°Р·СЂРµС€Р°РµС‚СЃСЏ');
 		return;
 	}
 	if (activeState.id == cabId)
@@ -10495,13 +10495,13 @@ function getTabsHtml(tabActive)
 	}
 	if (dressOptions.showHealer)
 	{
-		html += format('<li id="tabx_healer"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.healerCab, 'Комната Знахаря позволит рассчитать порядок и стоимость перекидки статов в комнате Знахаря для перехода от одного комплекта к другому.', "'healer'");
+		html += format('<li id="tabx_healer"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.healerCab, 'РљРѕРјРЅР°С‚Р° Р—РЅР°С…Р°СЂСЏ РїРѕР·РІРѕР»РёС‚ СЂР°СЃСЃС‡РёС‚Р°С‚СЊ РїРѕСЂСЏРґРѕРє Рё СЃС‚РѕРёРјРѕСЃС‚СЊ РїРµСЂРµРєРёРґРєРё СЃС‚Р°С‚РѕРІ РІ РєРѕРјРЅР°С‚Рµ Р—РЅР°С…Р°СЂСЏ РґР»СЏ РїРµСЂРµС…РѕРґР° РѕС‚ РѕРґРЅРѕРіРѕ РєРѕРјРїР»РµРєС‚Р° Рє РґСЂСѓРіРѕРјСѓ.', "'healer'");
 	}
 	if (dressOptions.showBuilder)
 	{
-		//html += format('<li id="tabx_builder"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.designerCab, 'Конструктор позволит Вам создать уникальные предметы и их модификации.', "'builder'");
+		//html += format('<li id="tabx_builder"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.designerCab, 'РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕР·РІРѕР»РёС‚ Р’Р°Рј СЃРѕР·РґР°С‚СЊ СѓРЅРёРєР°Р»СЊРЅС‹Рµ РїСЂРµРґРјРµС‚С‹ Рё РёС… РјРѕРґРёС„РёРєР°С†РёРё.', "'builder'");
 	}
-	//html += format('<li id="tabx_battles"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.battlesCab, 'Позволяет провести тестовые поединки.', "'battles'");
+	//html += format('<li id="tabx_battles"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.battlesCab, 'РџРѕР·РІРѕР»СЏРµС‚ РїСЂРѕРІРµСЃС‚Рё С‚РµСЃС‚РѕРІС‹Рµ РїРѕРµРґРёРЅРєРё.', "'battles'");
 	return html;
 }
 
@@ -10875,7 +10875,7 @@ function getSetVariants(set)
 	return set.variants;
 }
 
-function cloneScrolls()   //свитки в слоты
+function cloneScrolls()   //СЃРІРёС‚РєРё РІ СЃР»РѕС‚С‹
 {
 	for (var i = 101; i <= 109; i++)
 	{
@@ -10907,7 +10907,7 @@ function cloneScrolls()   //свитки в слоты
 				basecat: categories.tacticalscrolls                                     
 				};
 		categories['tacticalscrolls' + i] = tscrolls;
-// var escrolls = {                                  //зачарование
+// var escrolls = {                                  //Р·Р°С‡Р°СЂРѕРІР°РЅРёРµ
 //				caption: categories.enchantscrolls.caption,
 //				slot: ('w' + i),
 //				items: categories.enchantscrolls.items,
@@ -10941,7 +10941,7 @@ function initializeDresserAfterItemsLoaded()
 			cat.statBonuses = { strength: 100 };
 		}
 	}
-// зависимость урона от типа пушки?
+// Р·Р°РІРёСЃРёРјРѕСЃС‚СЊ СѓСЂРѕРЅР° РѕС‚ С‚РёРїР° РїСѓС€РєРё?
 	categories.legendaryweapon.canBeSharpen = true;
 	categories.knives.canBeSharpen = true;
 	categories.knives.skillname = 'knifeskill';
@@ -10959,7 +10959,7 @@ function initializeDresserAfterItemsLoaded()
 	categories.staffs.statBonuses = { intellect: 33 };
 	categories.staffs.canBeSharpen = true;
 
-	dressStrengthenings.neutralPower = {id: 'neutralPower', caption: 'Сила Нейтрала',
+	dressStrengthenings.neutralPower = {id: 'neutralPower', caption: 'РЎРёР»Р° РќРµР№С‚СЂР°Р»Р°',
 		required: {noWeapon: 1, neutralAlign: 1},
 		modify: {mindamage: 0, maxdamage: 1}
 	};

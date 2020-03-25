@@ -1,6 +1,6 @@
 var expd = {
 	L0: {
-		id: 0, count: 4, body: 'Физическое', baseExp: 18, ups: {
+		id: 0, count: 4, body: 'Р¤РёР·РёС‡РµСЃРєРѕРµ', baseExp: 18, ups: {
 			U0: {id: 0, sexp: 0, aendurance: 3, amastery: 1, sstats: 15, astats: 3, scredits: 50, acredits: 50},
 			U1: {id: 1, sexp: 20, aendurance: 0, amastery: 0, sstats: 16, astats: 1, scredits: 50, acredits: 0},
 			U2: {id: 2, sexp: 45, aendurance: 0, amastery: 0, sstats: 17, astats: 1, scredits: 51, acredits: 1},
@@ -8,7 +8,7 @@ var expd = {
 		}
 	},
 	L1: {
-		id: 1, count: 5, body: 'Физическое', baseExp: 34, description: 'Физические бои', ups: {
+		id: 1, count: 5, body: 'Р¤РёР·РёС‡РµСЃРєРѕРµ', baseExp: 34, description: 'Р¤РёР·РёС‡РµСЃРєРёРµ Р±РѕРё', ups: {
 			U0: {id: 0, sexp: 110, aendurance: 1, amastery: 1, sstats: 22, astats: 3, scredits: 57, acredits: 4},
 			U1: {id: 1, sexp: 160, aendurance: 0, amastery: 0, sstats: 23, astats: 1, scredits: 57, acredits: 0},
 			U2: {id: 2, sexp: 215, aendurance: 0, amastery: 0, sstats: 24, astats: 1, scredits: 58, acredits: 1},
@@ -17,7 +17,7 @@ var expd = {
 		}
 	},
 	L2: {
-		id: 2, count: 6, body: 'Физическое', baseExp: 50, description: 'Групповые и Хаотические бои', ups: {
+		id: 2, count: 6, body: 'Р¤РёР·РёС‡РµСЃРєРѕРµ', baseExp: 50, description: 'Р“СЂСѓРїРїРѕРІС‹Рµ Рё РҐР°РѕС‚РёС‡РµСЃРєРёРµ Р±РѕРё', ups: {
 			U0: {id: 0, sexp: 410, aendurance: 1, amastery: 1, sstats: 30, astats: 3, scredits: 72, acredits: 8},
 			U1: {id: 1, sexp: 530, aendurance: 0, amastery: 0, sstats: 31, astats: 1, scredits: 72, acredits: 0},
 			U2: {id: 2, sexp: 670, aendurance: 0, amastery: 0, sstats: 32, astats: 1, scredits: 74, acredits: 2},
@@ -27,7 +27,7 @@ var expd = {
 		}
 	},
 	L3: {
-		id: 3, count: 6, body: 'Физическое', baseExp: 80, description: 'Настройка комплектов одежды', ups: {
+		id: 3, count: 6, body: 'Р¤РёР·РёС‡РµСЃРєРѕРµ', baseExp: 80, description: 'РќР°СЃС‚СЂРѕР№РєР° РєРѕРјРїР»РµРєС‚РѕРІ РѕРґРµР¶РґС‹', ups: {
 			U0: {id: 0, sexp: 1300, aendurance: 1, amastery: 1, sstats: 39, astats: 3, scredits: 114, acredits: 16},
 			U1: {id: 1, sexp: 1450, aendurance: 0, amastery: 0, sstats: 40, astats: 1, scredits: 115, acredits: 1},
 			U2: {id: 2, sexp: 1650, aendurance: 0, amastery: 0, sstats: 41, astats: 1, scredits: 120, acredits: 5},
@@ -37,7 +37,7 @@ var expd = {
 		}
 	},
 	L4: {
-		id: 4, count: 6, body: 'Эмоций', baseExp: 100, description: 'Развитие интеллекта (чтение свитков), доступ в Рыцарский Зал и Торговый Зал, в подземелье "Водосток"', ups: {
+		id: 4, count: 6, body: 'Р­РјРѕС†РёР№', baseExp: 100, description: 'Р Р°Р·РІРёС‚РёРµ РёРЅС‚РµР»Р»РµРєС‚Р° (С‡С‚РµРЅРёРµ СЃРІРёС‚РєРѕРІ), РґРѕСЃС‚СѓРї РІ Р С‹С†Р°СЂСЃРєРёР№ Р—Р°Р» Рё РўРѕСЂРіРѕРІС‹Р№ Р—Р°Р», РІ РїРѕРґР·РµРјРµР»СЊРµ "Р’РѕРґРѕСЃС‚РѕРє"', ups: {
 			U0: {id: 0, sexp: 2500, aendurance: 1, amastery: 1, sstats: 50, astats: 5, scredits: 190, acredits: 25},
 			U1: {id: 1, sexp: 2900, aendurance: 0, amastery: 0, sstats: 51, astats: 1, scredits: 193, acredits: 3},
 			U2: {id: 2, sexp: 3350, aendurance: 0, amastery: 0, sstats: 52, astats: 1, scredits: 203, acredits: 10},
@@ -47,7 +47,7 @@ var expd = {
 		}
 	},
 	L5: {
-		id: 5, count: 8, body: 'Эмоций', baseExp: 120, ups: {
+		id: 5, count: 8, body: 'Р­РјРѕС†РёР№', baseExp: 120, ups: {
 			U0: {id: 0, sexp: 5000, aendurance: 1, amastery: 1, sstats: 59, astats: 3, scredits: 303, acredits: 40},
 			U1: {id: 1, sexp: 6000, aendurance: 0, amastery: 0, sstats: 60, astats: 1, scredits: 309, acredits: 6},
 			U2: {id: 2, sexp: 7000, aendurance: 0, amastery: 0, sstats: 61, astats: 1, scredits: 329, acredits: 20},
@@ -59,7 +59,7 @@ var expd = {
 		}
 	},
 	L6: {
-		id: 6, count: 8, body: 'Эмоций', baseExp: 300, ups: {
+		id: 6, count: 8, body: 'Р­РјРѕС†РёР№', baseExp: 300, ups: {
 			U0: {id: 0, sexp: 12500, aendurance: 1, amastery: 1, sstats: 70, astats: 3, scredits: 609, acredits: 80},
 			U1: {id: 1, sexp: 14000, aendurance: 0, amastery: 0, sstats: 71, astats: 1, scredits: 618, acredits: 9},
 			U2: {id: 2, sexp: 15500, aendurance: 0, amastery: 0, sstats: 72, astats: 1, scredits: 643, acredits: 25},
@@ -71,7 +71,7 @@ var expd = {
 		}
 	},
 	L7: {
-		id: 7, count: 10, body: 'Мысли', baseExp: 700, description : 'Развитие мудрости (использование Магии), доступ в Башню Рыцарей - Магов. Доступ в Башню Смерти', ups: {
+		id: 7, count: 10, body: 'РњС‹СЃР»Рё', baseExp: 700, description : 'Р Р°Р·РІРёС‚РёРµ РјСѓРґСЂРѕСЃС‚Рё (РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РњР°РіРёРё), РґРѕСЃС‚СѓРї РІ Р‘Р°С€РЅСЋ Р С‹С†Р°СЂРµР№ - РњР°РіРѕРІ. Р”РѕСЃС‚СѓРї РІ Р‘Р°С€РЅСЋ РЎРјРµСЂС‚Рё', ups: {
 			U0: {id: 0, sexp: 30000, aendurance: 1, amastery: 1, sstats: 83, astats: 5, scredits: 968, acredits: 90},
 			U1: {id: 1, sexp: 60000, aendurance: 0, amastery: 0, sstats: 84, astats: 1, scredits: 969, acredits: 1},
 			U2: {id: 2, sexp: 75000, aendurance: 0, amastery: 0, sstats: 85, astats: 1, scredits: 1319, acredits: 350},
@@ -85,7 +85,7 @@ var expd = {
 		}
 	},
 	L8: {
-		id: 8, count: 18, body: 'Мысли', baseExp: 2500, description : 'Доступ в Подземелья, возможность передачи предметов/кредитов', ups: {
+		id: 8, count: 18, body: 'РњС‹СЃР»Рё', baseExp: 2500, description : 'Р”РѕСЃС‚СѓРї РІ РџРѕРґР·РµРјРµР»СЊСЏ, РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРµСЂРµРґР°С‡Рё РїСЂРµРґРјРµС‚РѕРІ/РєСЂРµРґРёС‚РѕРІ', ups: {
 			U0: {id: 0, sexp: 300000, aendurance: 1, amastery: 1, sstats: 98, astats: 5, scredits: 2619, acredits: 700},
 			U1: {id: 1, sexp: 400000, aendurance: 0, amastery: 0, sstats: 98, astats: 0, scredits: 2869, acredits: 250},
 			U2: {id: 2, sexp: 500000, aendurance: 0, amastery: 0, sstats: 98, astats: 0, scredits: 3119, acredits: 250},
@@ -107,7 +107,7 @@ var expd = {
 		}
 	},
 	L9: {
-		id: 9, count: 10, body: 'Мысли', baseExp: 3000, description : 'Доступ в Подземелья, возможность передачи предметов/кредитов', ups: {
+		id: 9, count: 10, body: 'РњС‹СЃР»Рё', baseExp: 3000, description : 'Р”РѕСЃС‚СѓРї РІ РџРѕРґР·РµРјРµР»СЊСЏ, РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРµСЂРµРґР°С‡Рё РїСЂРµРґРјРµС‚РѕРІ/РєСЂРµРґРёС‚РѕРІ', ups: {
 			U0: {id: 0, sexp: 3000000, aendurance: 2, amastery: 1, sstats: 116, astats: 7, scredits: 8720, acredits: 2400},
 			U1: {id: 1, sexp: 6000000, aendurance: 0, amastery: 0, sstats: 117, astats: 1, scredits: 9220, acredits: 500},
 			U2: {id: 2, sexp: 6500000, aendurance: 0, amastery: 0, sstats: 118, astats: 1, scredits: 9420, acredits: 200},
@@ -121,7 +121,7 @@ var expd = {
 		}
 	},
 	L10: {
-		id: 10, count: 24, body: 'Мысли', baseExp: 7800, description : 'Развитие духовности, доступ в Колдовской мир', ups: {
+		id: 10, count: 24, body: 'РњС‹СЃР»Рё', baseExp: 7800, description : 'Р Р°Р·РІРёС‚РёРµ РґСѓС…РѕРІРЅРѕСЃС‚Рё, РґРѕСЃС‚СѓРї РІ РљРѕР»РґРѕРІСЃРєРѕР№ РјРёСЂ', ups: {
 			U0: {id: 0, sexp: 10000000, aendurance: 3, amastery: 1, sstats: 137, astats: 9, scredits: 13771, acredits: 2400},
 			U1: {id: 1, sexp: 13000000, aendurance: 0, amastery: 0, sstats: 139, astats: 2, scredits: 13971, acredits: 200},
 			U2: {id: 2, sexp: 14000000, aendurance: 0, amastery: 0, sstats: 141, astats: 2, scredits: 14171, acredits: 200},
@@ -149,7 +149,7 @@ var expd = {
 		}
 	},
 	L11: {
-		id: 11, count: 22, body: 'Мысли', baseExp: 10000, ups: {
+		id: 11, count: 22, body: 'РњС‹СЃР»Рё', baseExp: 10000, ups: {
 			U0: {id: 0, sexp: 52000000, aendurance: 5, amastery: 1, sstats: 203, astats: 10, scredits: 19872, acredits: 1500},
 			U1: {id: 1, sexp: 55000000, aendurance: 1, amastery: 0, sstats: 206, astats: 1, scredits: 20372, acredits: 500},
 			U2: {id: 2, sexp: 60000000, aendurance: 1, amastery: 0, sstats: 209, astats: 1, scredits: 21072, acredits: 700},
@@ -175,7 +175,7 @@ var expd = {
 		}
 	},
 	L12: {
-		id: 12, count: 8, body: 'Мысли', baseExp: 12500 , ups: {
+		id: 12, count: 8, body: 'РњС‹СЃР»Рё', baseExp: 12500 , ups: {
 			U0: {id: 0, sexp: 240000000, aendurance: 25, amastery: 1, sstats: 328, astats: 8, scredits: 33022, acredits: 3000},
 			U1: {id: 1, sexp: 300000000, aendurance: 1, amastery: 0, sstats: 330, astats: 1, scredits: 36022, acredits: 3000},
 			U2: {id: 2, sexp: 400000000, aendurance: 1, amastery: 0, sstats: 334, astats: 3, scredits: 41022, acredits: 5000},

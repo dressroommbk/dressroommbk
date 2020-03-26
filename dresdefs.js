@@ -1199,10 +1199,10 @@ var knownPowerUps = {
 var knownECRPowerUps = {
 	/*spell_godstat_str: {modify: 'strength', v: 100},
 	spell_godstat_dex: {modify: 'dexterity', v: 100},
-	spell_godstat_inst: {modify: 'intuition', v: 100},
+	spell_godstat_inst: {modify: 'intuition', v: 100},*/
 	spell_godprotect10: {modify: 'defence', v: 300},
 	spell_godprotect: {modify: 'magicdefence', v: 300},
-	invoke_spell_godintel100: {modify: 'intellect', v: 100},
+	/*invoke_spell_godintel100: {modify: 'intellect', v: 100},
 	invoke_spell_godmana100: {modify: 'mana', v: 2000},
  spell_startenacity: {modify: 'hitpoints', v: 300},
 spell_starshine: {modify: 'strength', v: 10, 'dexterity', v: 10, 'intuition', v: 10},

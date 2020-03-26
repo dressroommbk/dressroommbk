@@ -3215,7 +3215,8 @@ function onElixMenu()
 	{
 		return;
 	}
-	var menuHtml  = '<table width="640" border="0"><tr><td>';
+	//var menuHtml  = '<table width="640" border="0"><tr><td>';
+	var menuHtml  = '<table width="480" border="0"><tr><td>';
 	menuHtml += '<table width="240" border="0">';
 	menuHtml += getRowMenuItemHtml(localizer.noElix, "onApplyConcreteElix(null, 0)");
 	menuHtml += getRowMenuSeparatorHtml();
@@ -3262,7 +3263,7 @@ function onElixMenu()
 			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu('{0}')", elixn));
 			}
 	}
-	menuHtml += '</table></td><td><table width="240" border="0">';
+	/*menuHtml += '</table></td><td><table width="240" border="0">';
 	var a=0;
 	for (var elixn in knownDefElix)
 	{
@@ -3283,7 +3284,13 @@ function onElixMenu()
 	menuHtml += '</table></td></tr><tr><td colspan="3"><table width="640" border="0">';
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
-	menuHtml += '</table></td></tr></table>';
+	menuHtml += '</table></td></tr></table>';*/
+	
+	menuHtml += '</table></td></tr><tr><td colspan="2"><table width="480" border="0">';
+	menuHtml += getRowMenuSeparatorHtml();
+	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
+	menuHtml += '</table></td></tr></table>';	
+	
 	menuhash.onElixMenu = menuHtml;
 	showMenu(menuHtml);
 }

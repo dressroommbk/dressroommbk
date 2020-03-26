@@ -1218,13 +1218,14 @@ spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}*/
 	club_defender: {modify: 'hitpoints', v: 120}, 
 	/*quenching: {modify: 'hitpoints', v:120},
 	bulls_breath_warrior: {modify: 'hitpoints', v:500},
-	bulls_breath_mage: {modify: 'hitpoints', v:200},*/
+	bulls_breath_mage: {modify: 'hitpoints', v:200},
 	catbaff_strength: {modify: 'strength', v : 5},
 	catbaff_dexterity: {modify: 'dexterity', v: 5},
 	catbaff_intuition: {modify: 'intuition', v: 5},
-	catbaff_regen: {modify: 'hpspeed', v: 30},//???
+	catbaff_regen: {modify: 'hpspeed', v: 30},
 	catbaff_life: {modify: 'hitpoints', v: 30},
-	catbaff_damage: {modify: 'maxdamage', v: 25},
+	catbaff_damage: {modify: 'maxdamage', v: 25},*/
+	catbaff_full: {v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30/*,maxdamage:25*/}},
 	mrbaff_makropus: {modify: 'hitpoints', v: 250},
 	mrbaff_gribnica: {v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
 	glbaff_ghost_1: {v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},

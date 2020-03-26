@@ -11028,7 +11028,7 @@ upgrade: {
   bulls_breath_mage: {id:'bulls_breath_mage',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Дыхание отмороженного Бугая (маг)',fixless:true,
   modify: {hitpoints:200}
   },*/  
-	catbaff_strength: {id:'catbaff_strength',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Мощь',fixless:true,
+	/*catbaff_strength: {id:'catbaff_strength',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Мощь',fixless:true,
   modify: {strength:5}
 	},
 	catbaff_dexterity: {id:'catbaff_dexterity',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Скорость',fixless:true,
@@ -11045,6 +11045,9 @@ upgrade: {
 	},
 	catbaff_damage: {id:'catbaff_damage',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Печать Хаоса',fixless:true,
   modify: {maxdamage:25}
+	},*/
+	catbaff_full: {id:'catbaff_full',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин',fixless:true,
+		modify: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}
 	},
 	mrbaff_makropus: {id:'mrbaff_makropus',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Макропуса',fixless:true,
   modify: {hitpoints:250}

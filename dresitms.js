@@ -3766,13 +3766,13 @@ upgrade: {
 	}*/}
 
 	},
-	/*boots25_1: {id:'boots25_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Решимости [10]',requireditems:{shop:{exchanger:'shop', items: {boots25:{id:'boots25',caption:'Сапоги Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	boots25_1: {id:'boots25_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Решимости [10]',requireditems:{shop:{exchanger:'shop', items: {boots25:{id:'boots25',caption:'Сапоги Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
 		common: {weight:5,price:180,durability:50},
 		required: {intellect:50,level:10,wisdom:60,angelsreputation:10000},
 		modify: {magicdefencereduce:1,magicpower:7,hitpoints:29,mana:70,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15},
 		properties: {defence:55},
 		setlink: {name:'determination10'}
-	},*/
+	},
 	boots26: {id:'boots26',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater29:{id:'mater29',caption:'Лучистый топаз',count:1},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:5}}}},
 		common: {weight:10,price:150,durability:50},
 		required: {dexterity:50,intuition:40,level:9,endurance:30,strength:25},
@@ -5628,14 +5628,13 @@ upgrade: {
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
 	 }}
 	},
-	/*armor109_1: {id:'armor109_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor109:{id:'armor109',caption:'Броня Скорпиона',count:1}}}},
+	armor109_1: {id:'armor109_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor109:{id:'armor109',caption:'Броня Скорпиона',count:1}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,demonsreputation:10000},
-		modify: {anticriticalhit:110,antijumpaway:80,criticalhit:80,parry:4,magicdefence:30,hitpoints:99,strength:3,bodyarmor1:21,bodyarmor2:60,bodyarmorf:20,bodyarmorm:1,bodyarmord:40},
-		properties: {defence:130},
+		modify: {anticriticalhit:110,antijumpaway:80,criticalhit:80,parry:4,magicdefence:30,hitpoints:99,strength:3,bodyarmor1:21,bodyarmor2:60,bodyarmorf:20,bodyarmorm:1,bodyarmord:40,defence:130},
 		setlink: {name:'scorpion10'},
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
-	},*/
+	 },
 	armor109_ppwa: {id:'armor109_ppwa',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Повелителя',fixless:true,binding:'boe',
 		common: {weight:45,price:525,durability:100},
 		required: {level:10,endurance:40,strength:45},
@@ -7939,13 +7938,12 @@ upgrade: {
 	}}
 
 	},
-	/*leg11_1: {id:'leg11_1',category:'pants',slot:'w19',caption:'Поножи Забытых Времен [10]',binding:'bop',baseitem:'leg11',requireditems:{baltar:{exchanger:'baltar', items: {leg11:{id:'leg11',caption:'Поножи Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
-		required: {dexterity:15,intuition:15,level:9,endurance:65,strength:45,baltarreputation:100},
-		modify: {magicdefence:25,hitpoints:57,waistarmor1:16,waistarmor2:55,waistarmorf:15,waistarmorm:1,waistarmord:40,legarmor1:16,legarmor2:55,legarmorf:15,legarmorm:1,legarmord:40,jumpaway:-100,criticalhit:-100},
-		properties: {defence:55},
+	leg11_1: {id:'leg11_1',category:'pants',slot:'w19',caption:'Поножи Забытых Времен [10]',binding:'bop',baseitem:'leg11',requireditems:{baltar:{exchanger:'baltar', items: {leg11:{id:'leg11',caption:'Поножи Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
+		common: {weight:10,price:250,durability:50},
+		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,baltarreputation:100},
+		modify: {magicdefence:25,hitpoints:57,waistarmor1:66,waistarmor2:105,waistarmorf:15,waistarmorm:1,waistarmord:40,legarmor1:66,legarmor2:105,legarmorf:15,legarmorm:1,legarmord:40,jumpaway:-100,criticalhit:-100,defence:55},
 		setlink: {name:'losttime10'}
-	},*/
+	},
 	leg12: {id:'leg12',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater5:{id:'mater5',caption:'Мифрил',count:5}}}},
 		common: {weight:10,price:150,durability:50},
 		required: {dexterity:15,intuition:50,level:9,endurance:30,strength:30},

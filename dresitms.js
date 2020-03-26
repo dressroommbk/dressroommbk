@@ -5562,8 +5562,7 @@ upgrade: {
 	armor107: {id:'armor107',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater31:{id:'mater31',caption:'Эссенция праведного гнева',count:1},mater6:{id:'mater6',caption:'Железное дерево',count:8}}}},
 		common: {weight:60,price:380,durability:100},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45},
-		modify: {anticriticalhit:50,antijumpaway:25,intellect:1,magicdefence:30,hitpoints:99,strength:6,bodyarmor1:31,bodyarmor2:90,bodyarmorf:30,bodyarmorm:1,bodyarmord:60,jumpaway:-75,criticalhit:-75},
-		properties: {defence:150},
+		modify: {anticriticalhit:50,antijumpaway:25,intellect:1,magicdefence:30,hitpoints:99,strength:6,bodyarmor1:31,bodyarmor2:90,bodyarmorf:30,bodyarmorm:1,bodyarmord:60,jumpaway:-75,criticalhit:-75,defence:150},
 		setlink: {name:'losttime'},
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'mediocre'}
 	, upgrade: {
@@ -6392,8 +6391,7 @@ upgrade: {
 	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items: {mater15:{id:'mater15',caption:'Сгусток астрала',count:5},mater5:{id:'mater5',caption:'Мифрил',count:6}}}},
 		common: {weight:15,price:210,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,capitalreputation:10000},
-		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:60,magicdefence:60,hitpoints:40,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
-		properties: {defence:55},
+		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:60,magicdefence:60,hitpoints:40,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,defence:55},
 		setlink: {name:'bloodmoon10'}
      },
 	helmet82_du2: {id:'helmet82_du2',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater2:{id:'mater2',caption:'Золото',count:6}}}},
@@ -6462,8 +6460,7 @@ upgrade: {
 	helmet81: {id:'helmet81',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
 		common: {weight:20,price:215,durability:100},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45},
-		modify: {anticriticalhit:20,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,magicdefence:50,hitpoints:66,headarmor1:36,headarmor2:85,headarmorf:35,headarmorm:1,headarmord:50,jumpaway:-75,criticalhit:-75},
-		properties: {defence:25},
+		modify: {anticriticalhit:20,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,magicdefence:50,hitpoints:66,headarmor1:36,headarmor2:85,headarmorf:35,headarmorm:1,headarmord:50,jumpaway:-75,criticalhit:-75,defence:25},
 		setlink: {name:'losttime'}
 	,upgrade: {
 	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {helmet81:{id:'helmet81',caption:'Шлем Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},

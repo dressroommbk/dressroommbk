@@ -2488,50 +2488,74 @@ function createVirtualSets()
 
 }
 
-var catRunes={
-earrings: {
-   lv4: ['rune_0_0_1', 'rune_0_1_1', 'rune_0_2_1', 'rune_0_3_1'
-], lv7: ['rune_1_0_1', 'rune_1_1_1', 'rune_1_2_1', 'rune_1_3_1'
-], lv9: ['rune_2_0_1', 'rune_2_1_10', 'rune_2_2_1', 'rune_2_3_1'] },
-necklaces: {
-   lv4: ['rune_0_0_2', 'rune_0_1_2', 'rune_0_2_2', 'rune_0_3_2'
-], lv7: ['rune_1_0_2', 'rune_1_1_2', 'rune_1_2_2', 'rune_1_3_2'
-], lv9: ['rune_2_0_2', 'rune_2_1_1', 'rune_2_2_2', 'rune_2_3_2'] },
-rings: {
-   lv4: ['rune_0_0_3', 'rune_0_1_3', 'rune_0_2_3', 'rune_0_3_3'
-], lv7: ['rune_1_0_3', 'rune_1_1_3', 'rune_1_2_3', 'rune_1_3_3'
-], lv9: ['rune_2_0_3', 'rune_2_1_2', 'rune_2_2_3', 'rune_2_3_3'] },
-gauntlets: {
-   lv4: ['rune_0_0_4', 'rune_0_1_4', 'rune_0_2_4', 'rune_0_3_4'
-], lv7: ['rune_1_0_4', 'rune_1_1_4', 'rune_1_2_4', 'rune_1_3_4'
-], lv9: ['rune_2_0_4', 'rune_2_1_3', 'rune_2_2_4', 'rune_2_3_4'] },
-pants: {
-   lv4: ['rune_0_0_5', 'rune_0_1_5', 'rune_0_2_5', 'rune_0_3_5'
-], lv7: ['rune_1_0_5', 'rune_1_1_5', 'rune_1_2_5', 'rune_1_3_5'
-], lv9: ['rune_2_0_5', 'rune_2_1_4', 'rune_2_2_5', 'rune_2_3_5'] },
-boots: {
-   lv4: ['rune_0_0_6', 'rune_0_1_6', 'rune_0_2_6', 'rune_0_3_6'
-], lv7: ['rune_1_0_6', 'rune_1_1_6', 'rune_1_2_6', 'rune_1_3_6'
-], lv9: ['rune_2_0_6', 'rune_2_1_5', 'rune_2_2_6', 'rune_2_3_6'] },
-helmets: {
-   lv4: ['rune_0_0_7', 'rune_0_1_7', 'rune_0_2_7', 'rune_0_3_7'
-], lv7: ['rune_1_0_7', 'rune_1_1_7', 'rune_1_2_7', 'rune_1_3_7'
-], lv9: ['rune_2_0_7', 'rune_2_1_6', 'rune_2_2_7', 'rune_2_3_7'] },
-bracelets: {
-   lv4: ['rune_0_0_8', 'rune_0_1_8', 'rune_0_2_8', 'rune_0_3_8'
-], lv7: ['rune_1_0_8', 'rune_1_1_8', 'rune_1_2_8', 'rune_1_3_8'
-], lv9: ['rune_2_0_8', 'rune_2_1_7', 'rune_2_2_8', 'rune_2_3_8'] },
-heavyarmors: {
-   lv4: ['rune_0_0_9', 'rune_0_1_9', 'rune_0_2_9', 'rune_0_3_9'
-], lv7: ['rune_1_0_9', 'rune_1_1_9', 'rune_1_2_9', 'rune_1_3_9'
-], lv9: ['rune_2_0_9', 'rune_2_1_8', 'rune_2_2_9', 'rune_2_3_9'] },
-lightarmors: {
-   lv4: ['rune_0_0_9', 'rune_0_1_9', 'rune_0_2_9', 'rune_0_3_9'
-], lv7: ['rune_1_0_9', 'rune_1_1_9', 'rune_1_2_9', 'rune_1_3_9'
-], lv9: ['rune_2_0_9', 'rune_2_1_8', 'rune_2_2_9', 'rune_2_3_9'] },
-belts: {
-   lv4: ['rune_0_0_10', 'rune_0_1_10', 'rune_0_2_10', 'rune_0_3_10'
-], lv7: ['rune_1_0_10', 'rune_1_1_10', 'rune_1_2_10', 'rune_1_3_10'
-], lv9: ['rune_2_0_10', 'rune_2_1_9', 'rune_2_2_10', 'rune_2_3_10']}};
+var catRunes = {
+	earrings: {
+	   lv4: ['rune_0_0_1', 'rune_0_1_1', 'rune_0_2_1', 'rune_0_3_1'],
+	   lv7: ['rune_1_0_1', 'rune_1_1_1', 'rune_1_2_1', 'rune_1_3_1'],
+	   lv9: ['rune_2_0_1', 'rune_2_1_10', 'rune_2_2_1', 'rune_2_3_1'] 
+	},
 
-var superRunes=['rune_super_1', 'rune_super_2', 'rune_super_3', 'rune_super_4', 'rune_super_5', 'rune_super_6', 'rune_super_7', 'rune_super_8', 'rune_super_9', 'rune_super_10'];
+	necklaces: {
+	   lv4: ['rune_0_0_2', 'rune_0_1_2', 'rune_0_2_2', 'rune_0_3_2'],
+	   lv7: ['rune_1_0_2', 'rune_1_1_2', 'rune_1_2_2', 'rune_1_3_2'],
+	   lv9: ['rune_2_0_2', 'rune_2_1_1', 'rune_2_2_2', 'rune_2_3_2'] 
+	},
+
+	rings: {
+	   lv4: ['rune_0_0_3', 'rune_0_1_3', 'rune_0_2_3', 'rune_0_3_3'],
+	   lv7: ['rune_1_0_3', 'rune_1_1_3', 'rune_1_2_3', 'rune_1_3_3'],
+	   lv9: ['rune_2_0_3', 'rune_2_1_2', 'rune_2_2_3', 'rune_2_3_3'] 
+	},
+
+	gauntlets: {
+	   lv4: ['rune_0_0_4', 'rune_0_1_4', 'rune_0_2_4', 'rune_0_3_4'],
+	   lv7: ['rune_1_0_4', 'rune_1_1_4', 'rune_1_2_4', 'rune_1_3_4'],
+	   lv9: ['rune_2_0_4', 'rune_2_1_3', 'rune_2_2_4', 'rune_2_3_4'] 
+	},
+	   
+	pants: {
+	   lv4: ['rune_0_0_5', 'rune_0_1_5', 'rune_0_2_5', 'rune_0_3_5'],
+	   lv7: ['rune_1_0_5', 'rune_1_1_5', 'rune_1_2_5', 'rune_1_3_5'],
+	   lv9: ['rune_2_0_5', 'rune_2_1_4', 'rune_2_2_5', 'rune_2_3_5'] 
+	},
+	
+	boots: {
+	   lv4: ['rune_0_0_6', 'rune_0_1_6', 'rune_0_2_6', 'rune_0_3_6'],
+	   lv7: ['rune_1_0_6', 'rune_1_1_6', 'rune_1_2_6', 'rune_1_3_6'],
+	   lv9: ['rune_2_0_6', 'rune_2_1_5', 'rune_2_2_6', 'rune_2_3_6'] 
+	},	
+	
+	helmets: {
+		lv4: ['rune_0_0_7', 'rune_0_1_7', 'rune_0_2_7', 'rune_0_3_7'],
+		lv7: ['rune_1_0_7', 'rune_1_1_7', 'rune_1_2_7', 'rune_1_3_7'], 
+		lv9: ['rune_2_0_7', 'rune_2_1_6', 'rune_2_2_7', 'rune_2_3_7'] 
+	},
+	
+	bracelets: {
+	   lv4: ['rune_0_0_8', 'rune_0_1_8', 'rune_0_2_8', 'rune_0_3_8'],
+	   lv7: ['rune_1_0_8', 'rune_1_1_8', 'rune_1_2_8', 'rune_1_3_8'],
+	   lv9: ['rune_2_0_8', 'rune_2_1_7', 'rune_2_2_8', 'rune_2_3_8'] 
+	},
+	
+	heavyarmors: {
+	   lv4: ['rune_0_0_9', 'rune_0_1_9', 'rune_0_2_9', 'rune_0_3_9'],
+	   lv7: ['rune_1_0_9', 'rune_1_1_9', 'rune_1_2_9', 'rune_1_3_9'],
+	   lv9: ['rune_2_0_9', 'rune_2_1_8', 'rune_2_2_9', 'rune_2_3_9'] 
+	},
+	
+	lightarmors: {
+	   lv4: ['rune_0_0_9', 'rune_0_1_9', 'rune_0_2_9', 'rune_0_3_9'],
+	   lv7: ['rune_1_0_9', 'rune_1_1_9', 'rune_1_2_9', 'rune_1_3_9'],
+	   lv9: ['rune_2_0_9', 'rune_2_1_8', 'rune_2_2_9', 'rune_2_3_9'] 
+	},
+	
+	belts: {
+	   lv4: ['rune_0_0_10', 'rune_0_1_10', 'rune_0_2_10', 'rune_0_3_10'],
+	   lv7: ['rune_1_0_10', 'rune_1_1_10', 'rune_1_2_10', 'rune_1_3_10'],
+	   lv9: ['rune_2_0_10', 'rune_2_1_9', 'rune_2_2_10', 'rune_2_3_10']
+	}
+};
+
+var superRunes = ['rune_super_1', 'rune_super_2', 'rune_super_3', 'rune_super_4', 'rune_super_5', 'rune_super_6', 'rune_super_7', 'rune_super_8', 'rune_super_9', 'rune_super_10'];
+
+var canBeRunedBySuperRunes = ['earrings', 'necklaces', ,'gauntlets', 'bracelets', 'belts'];

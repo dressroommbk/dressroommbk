@@ -9199,14 +9199,15 @@ for (var subCatRune in subRunes)
 	html += '<td>&nbsp;</td></tr>';
 	}
 
-for (var i=0; i<=superRunes.length-1; i++)
-	{
-	if (i==0) { html += '<tr>'; }
-	if (i>0 && ((i/5)==Math.floor(i/5))) { html += '</tr><tr>'; }
-	var onclick = format("onSetRune('{0}', '{1}', '{2}', '0')", state.id, slot.id, superRunes[i]);
-	html += '<td>' + getPersObjectImageHtml(state, slot, superRunes[i], dressOptions.showImages, onclick, 1) + '</td>';
-	if (i==superRunes.length-1) { html += '</tr>'; }
+if (canBeRunedBySuperRunes.indexOf(catid) != -1) {
+	for (var i=0; i<=superRunes.length-1; i++) {
+		if (i==0) { html += '<tr>'; }
+		if (i>0 && ((i/5)==Math.floor(i/5))) { html += '</tr><tr>'; }
+		var onclick = format("onSetRune('{0}', '{1}', '{2}', '0')", state.id, slot.id, superRunes[i]);
+		html += '<td>' + getPersObjectImageHtml(state, slot, superRunes[i], dressOptions.showImages, onclick, 1) + '</td>';
+		if (i==superRunes.length-1) { html += '</tr>'; }
 	}
+}
 
 html += '</table></td>';
 html += '<td width="1"><img src="' + blankImgPath + '" width="1" height="100" border="0" /></td></tr>';

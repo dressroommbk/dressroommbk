@@ -4247,6 +4247,9 @@ function onChangeEdit(field, stateId, propName)
 			}
 		}
 	}
+	if (propName == 'level') {
+		if (v > 12) v = 12;
+	}
 	if (propName == 'levelup')
 	{
 		if (('L' + state.natural.level) in expd)
@@ -4268,7 +4271,7 @@ function onChangeEdit(field, stateId, propName)
 				}
 			}
 		}
-	}
+	}	
 	state.natural[propName] = v;
 	updateEnduranceLimit(state.natural.level, state.natural.levelup);
 	for (propName in knownStatLimits)

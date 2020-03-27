@@ -3618,9 +3618,9 @@ function onFriendLink(stateid)
 	}
 }
 
-function updateEnduranceLimit(level)
+function updateEnduranceLimit(level, up)
 {
-	var end = 0;
+	var end = 0, spirituality_limit = 0;
 	for (var i = 0; i <= level; i++)
 	{
 		var leveln = 'L' + i;
@@ -3633,9 +3633,20 @@ function updateEnduranceLimit(level)
 		{
 			break;
 		}
-		end += ld.ups.U0.aendurance;
+		
+		var ups = (i == level) ? ((('U' + up) in expd[leveln].ups) ? (up + 1) : Object.keys(expd[leveln].ups).length) : Object.keys(expd[leveln].ups).length;
+		
+		for (var j = 0; j < ups; j++) {
+			let key = 'U' + j, nextup = ld.ups[key];
+			end += nextup.aendurance;
+			spirituality_limit += nextup.aspirituality;
+		}		
+	
+	//	end += ld.ups.U0.aendurance;
 	}
+	
 	knownStatLimits.endurance = end;
+	knownStatLimits.spirituality = spirituality_limit;
 }
 
 function onFitStats(stateid)
@@ -3645,7 +3656,7 @@ function onFitStats(stateid)
 	{
 		return;
 	}
-	updateEnduranceLimit(state.natural.level);
+	updateEnduranceLimit(state.natural.level, state.natural.levelup);
 	for (var name in state.required)
 	{
 		var newnv = state.required[name];
@@ -4259,7 +4270,7 @@ function onChangeEdit(field, stateId, propName)
 		}
 	}
 	state.natural[propName] = v;
-	updateEnduranceLimit(state.natural.level);
+	updateEnduranceLimit(state.natural.level, state.natural.levelup);
 	for (propName in knownStatLimits)
 	{
 		if (!(propName in state.natural) || (state.natural[propName] < knownStatLimits[propName]))

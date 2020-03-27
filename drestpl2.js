@@ -3620,7 +3620,7 @@ function onFriendLink(stateid)
 
 function updateEnduranceLimit(level)
 {
-	var end = 3;
+	var end = 0;
 	for (var i = 0; i <= level; i++)
 	{
 		var leveln = 'L' + i;
@@ -4727,7 +4727,7 @@ function getExpTableHeaderHtml(separator)
 		html += '<tr><th width="33%" rowspan="2"' + cattr + '>' + item_props.level.lbl + '</th>';
 		html += '<th rowspan="2"' + cattr + '>' + item_props.levelup.lbl + '</th>';
 		html += '<th width="1%"' + cattr + '>|</th>';
-		html += '<th colspan="4"' + cattr + '>' + localizer.expIncrement + '</th>';
+		html += '<th colspan="5"' + cattr + '>' + localizer.expIncrement + '</th>';
 		html += '<th width="1%"' + cattr + '>|</th>';
 		html += '<th colspan="3"' + cattr + '>' + localizer.expTotal + '</th>';
 		html += '</tr><tr>';
@@ -4736,6 +4736,7 @@ function getExpTableHeaderHtml(separator)
 	html += '<th' + cattr + '>' + localizer.expStats + '</th>';
 	html += '<th' + cattr + '>' + localizer.expSkills + '</th>';
 	html += '<th' + cattr + '>' + localizer.expEndurance + '</th>';
+	html += '<th' + cattr + '>' + localizer.expSpirituality + '</th>';
 	html += '<th' + cattr + '>' + localizer.expCredits + '</th>';
 	html += '<th width="1%"' + cattr + '>|</th>';
 	html += '<th' + cattr + '>' + localizer.expStats + '</th>';
@@ -4797,6 +4798,7 @@ function getExpTableInnerHtml()
 				html += getCellHtml(up.astats, odd)
 				html += getCellHtml(up.amastery || '', odd)
 				html += getCellHtml(up.aendurance || '', odd)
+				html += getCellHtml(up.aspirituality || '', odd)
 				html += getCellHtml(up.acredits || '', odd)
 				html += getCellHtml('|', odd)
 				html += getCellHtml(up.sstats, odd)

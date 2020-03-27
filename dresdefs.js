@@ -236,6 +236,7 @@ var localizer =
 	expStats: 'статов',
 	expSkills: 'умений',
 	expEndurance: 'выносливости',
+	expSpirituality: 'духовности',
 	expCredits: 'кредитов',
 	expExperience: 'опыта',
 	expBaseExperience: 'Базовый опыт',

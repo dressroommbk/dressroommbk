@@ -1930,7 +1930,7 @@ function getCharmChooserHtml(sloti)
 	{
 		html += '<div style="color: red; font-size: x-small;">Зачарование этого слота в БК невозможно.</div>';
 	}
-	if ('artefact' in o)
+	/*if ('artefact' in o)
 	{
 	if ('required' in o)
 		{
@@ -1940,7 +1940,7 @@ function getCharmChooserHtml(sloti)
 				{ html += '<div style="color: red; font-size: x-small;">Зачарование артефактов менее 10-го уровня в БК невозможно.</div>'; }
 			}
 		}
-	}
+	}*/
 	html += '<input class="inpButton" type="button" value="' + localizer.charmObject + '" onclick="doCharm(' + sloti + ')" />';
 	html += ' <input class="inpButton" type="button" value="' + localizer.cancel + '" onclick="hideMenu()" />';
 	html += '</td></tr></table>';
@@ -3943,8 +3943,8 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.fitStats, format("onFitStats('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
-/*	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
-	html += getCell2MenuSeparatorHtml();*/
+	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
+	html += getCell2MenuSeparatorHtml();
 	var s = localizer.dressFromCombats;
 	html += getCell2MenuItemHtml(localizer.dressCombatsSet, 'onDressAnyCombatsSet()');
 	html += getCell2MenuSeparatorHtml();	
@@ -7161,6 +7161,20 @@ function recalcDresserState(state)
 		if ('magicdefencereduce' in delix.modify) {
 			state.modify.magicdefencereduce += delix.modify.magicdefencereduce;
 		}
+		
+		/* Another stupid fixes for ambra */
+		if ('antijumpaway' in delix.modify) {
+			state.natural.antijumpaway += delix.modify.antijumpaway;
+		}
+		if ('anticriticalhit' in delix.modify) {
+			state.natural.anticriticalhit += delix.modify.anticriticalhit;
+		}
+		if ('defence' in delix.modify) {//??? wtf
+			state.modify.defence += delix.modify.defence;
+		}
+		if ('magicdefence' in delix.modify) {
+			state.natural.magicdefence += delix.modify.magicdefence;
+		}		
 	}	
 	
 	for (var strgn in dressStrengthenings)
@@ -10511,7 +10525,7 @@ function getTabsHtml(tabActive)
 		stateCount++;
 		i++;
 	}
-	//html += format('<li id="tabx_newcab"><a title="{1}" onclick="createCab()" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.newCab, localizer.newCabHint);
+	html += format('<li id="tabx_newcab"><a title="{1}" onclick="createCab()" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.newCab, localizer.newCabHint);
 	html += format('<li id="tabx_summary"><a title="{1}" onclick="changeCab({2})" href="javascript:;"><nobr>{0}</nobr></a></li>', localizer.summaryTableCab, localizer.summaryTableHint, "'summary'");
 	if (dressOptions.showExp)
 	{

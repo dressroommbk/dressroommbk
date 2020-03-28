@@ -1140,6 +1140,7 @@ var knownAdds = {
 
 var knownDamageElix = {
 	pot_base_100_master: {id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, damage1: 25, damage2: 50, magicpower:50, magicdefencereduce:10}},
+	pot_base_1000_gl_absolute: {id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}},
 /*	pot_base_0_strup: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {power: 33, damage1: 25, damage2: 50}},
 	pot_base_0_strup_1: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {magicpower: 50, magicdefencereduce: 10}},
 	pot_base_0_ny3: {id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}},
@@ -2072,10 +2073,12 @@ function getObjectDescHtml(state, obj)
 	}
 	if (('artefact' in obj) && obj.artefact)
 	{
-		addinfo += localizer.fixless;
-		addinfo += '<br />';
-		addinfo += localizer.charmless;
-		addinfo += '<br />';
+		if (('required' in obj) && ('level' in obj.required) && (obj.required.level >= 10)) {
+			addinfo += localizer.fixless;
+			addinfo += '<br />';
+		}
+		/*addinfo += localizer.charmless;
+		addinfo += '<br />';*/
 	}
 	if ('description' in obj)
 	{

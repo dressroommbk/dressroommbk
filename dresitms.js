@@ -6403,14 +6403,14 @@ upgrade: {
 	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {helmet82_du2:{id:'helmet82_du2',caption:'Шлем Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
 		common: {weight:15,price:245,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,capitalreputation:10000},
-		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:-5,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
+		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:0,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
     }}
 	},
 	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater2:{id:'mater2',caption:'Золото',count:6}}}},
 		common: {weight:15,price:245,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,capitalreputation:10000},
-		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:-5,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
+		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:0,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
 	},
 	helmet84: {id:'helmet84',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater14:{id:'mater14',caption:'Сгусток эфира',count:5},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:6}}}},
@@ -6445,7 +6445,7 @@ upgrade: {
     helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {helmet85:{id:'helmet85',caption:'Шлем Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресусра',count:50}}}},
 		common: {weight:15,price:245,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,capitalreputation:10000},
-		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
+		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:10,headarmor2:40,headarmorf:9,headarmorm:1,headarmord:30},
 		properties: {defence:55},
 		setlink: {name:'scorpion10'}
       }}
@@ -6453,7 +6453,7 @@ upgrade: {
 	helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater3:{id:'mater3',caption:'Серебро',count:6}}}},
 		common: {weight:15,price:245,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,capitalreputation:10000},
-		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:10,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
+		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:10,headarmor2:40,headarmorf:9,headarmorm:1,headarmord:30},
 		properties: {defence:55},
 		setlink: {name:'scorpion10'}
 	},
@@ -6466,14 +6466,14 @@ upgrade: {
 	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {helmet81:{id:'helmet81',caption:'Шлем Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
 		common: {weight:20,price:250,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,capitalreputation:10000},
-		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:41,headarmor2:100,headarmorf:40,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
+		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:91,headarmor2:150,headarmorf:90,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
 	 }}
 	},
 	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
 		common: {weight:20,price:250,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,capitalreputation:10000},
-		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:41,headarmor2:100,headarmorf:30,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
+		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:91,headarmor2:150,headarmorf:90,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
 	},
 	helmet83: {id:'helmet83',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости',requireditems:{shop:{exchanger:'shop', items: {mater17:{id:'mater17',caption:'Плод змеиного дерева',count:5},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:6}}}},

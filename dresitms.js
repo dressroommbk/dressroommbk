@@ -5569,7 +5569,7 @@ upgrade: {
 	armor107_1: {id:'armor107_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен [10]',baseitem:'armor107',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor107:{id:'armor107',caption:'Броня Забытых Времен',count:1}}}},
 		common: {weight:60,price:455,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,demonsreputation:10000},
-		modify: {anticriticalhit:90,antijumpaway:45,intellect:1,magicdefence:30,hitpoints:120,strength:6,bodyarmor1:34,bodyarmor2:99,bodyarmorf:33,bodyarmorm:1,bodyarmord:66,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,jumpaway:-100,criticalhit:-100,defence:150},
+		modify: {anticriticalhit:90,antijumpaway:45,intellect:1,magicdefence:30,hitpoints:120,strength:6,bodyarmor1:94,bodyarmor2:159,bodyarmorf:93,bodyarmorm:1,bodyarmord:66,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,jumpaway:-100,criticalhit:-100,defence:150},
 		setlink: {name:'losttime10',skip:'yes'},
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'mediocre'}
 	}}
@@ -5578,7 +5578,7 @@ upgrade: {
 	armor107_1: {id:'armor107_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен [10]',baseitem:'armor107',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor107:{id:'armor107',caption:'Броня Забытых Времен',count:1}}}},
 		common: {weight:60,price:455,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,demonsreputation:10000},
-		modify: {anticriticalhit:90,antijumpaway:45,intellect:1,magicdefence:30,hitpoints:120,strength:6,bodyarmor1:34,bodyarmor2:99,bodyarmorf:33,bodyarmorm:1,bodyarmord:66,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,jumpaway:-100,criticalhit:-100,defence:150},
+		modify: {anticriticalhit:90,antijumpaway:45,intellect:1,magicdefence:30,hitpoints:120,strength:6,bodyarmor1:94,bodyarmor2:159,bodyarmorf:93,bodyarmorm:1,bodyarmord:66,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,jumpaway:-100,criticalhit:-100,defence:150},
 		setlink: {name:'losttime10',skip:'yes'},
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'mediocre'}
 	},
@@ -5591,14 +5591,14 @@ upgrade: {
 	armor108_du1_1: {id:'armor108_du1_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108_du1:{id:'armor108_du1',caption:'Броня Утреннего Солнца',count:1}}}},
 		common: {weight:23,price:455,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,demonsreputation:10000},
-		modify: {anticriticalhit:100,antijumpaway:75,parry:7,magicdefence:60,firemagicdefence:50,hitpoints:76,strength:5,bodyarmor1:16,bodyarmor2:58,bodyarmorf:15,bodyarmorm:1,bodyarmord:43,jumpaway:-100,criticalhit:-100,defence:105},
+		modify: {anticriticalhit:100,antijumpaway:75,parry:7,magicdefence:60,firemagicdefence:0,hitpoints:76,strength:5,bodyarmor1:16,bodyarmor2:58,bodyarmorf:15,bodyarmorm:1,bodyarmord:43,jumpaway:-100,criticalhit:-100,defence:105},
 		setlink: {name:'morningsun10'}
 	}}
 	},
 	armor108_du1_1: {id:'armor108_du1_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108_du1:{id:'armor108_du1',caption:'Броня Утреннего Солнца',count:1}}}},
 		common: {weight:23,price:455,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,demonsreputation:10000},
-		modify: {anticriticalhit:100,antijumpaway:75,parry:7,magicdefence:60,firemagicdefence:50,hitpoints:76,strength:5,bodyarmor1:16,bodyarmor2:58,bodyarmorf:15,bodyarmorm:1,bodyarmord:43,jumpaway:-100,criticalhit:-100,defence:105},
+		modify: {anticriticalhit:100,antijumpaway:75,parry:7,magicdefence:60,firemagicdefence:0,hitpoints:76,strength:5,bodyarmor1:16,bodyarmor2:58,bodyarmorf:15,bodyarmorm:1,bodyarmord:43,jumpaway:-100,criticalhit:-100,defence:105},
 		setlink: {name:'morningsun10'}
 	},
 	armor109: {id:'armor109',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater22:{id:'mater22',caption:'Эссенция чистоты',count:1},mater3:{id:'mater3',caption:'Серебро',count:8}}}},
@@ -9017,7 +9017,7 @@ upgrade: {
 	clip91: {id:'clip91',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неуемной Силы',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2}}}},
 		common: {weight:1,price:200,durability:50},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:50},
-		modify: {anticriticalhit:70,antijumpaway:70,strength:10,hitpoints:55,clubskill:1}
+		modify: {anticriticalhit:70,criticalhit:-75,antijumpaway:70,jumpaway:-75,strength:10,hitpoints:55,clubskill:1}
 	},
 	clip71: {id:'clip71',category:'earrings',slot:'w1',width:60,height:20,caption:'Огненные Серьги',
 		common: {weight:1,price:240,durability:50},
@@ -10398,7 +10398,7 @@ upgrade: {
 	ring135: {id:'ring135',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Неуемной Силы',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1}}}},
 		common: {weight:1,price:100,durability:50},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:50},
-		modify: {anticriticalhit:40,antijumpaway:40,strength:7}
+		modify: {anticriticalhit:40,criticalhit:-75,antijumpaway:40,jumpaway:-75,strength:7}
 	},
 	ring136: {id:'ring136',category:'rings',slot:'w6',width:20,height:20,caption:'Черное Кольцо Перемен',
 		common: {weight:1,price:120,durability:50},

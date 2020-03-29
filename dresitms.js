@@ -3712,7 +3712,7 @@ upgrade: {
 	boots23_1: {id:'boots23_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Забытых Времен [10]',binding:'boe',baseitem:'boots23',clist:{_:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots23:{id:'boots23',caption:'Сапоги Забытых Времен',count:1}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:30,antijumpaway:30,dexterity:-2,hitpoints:90,legarmor1:41,legarmor2:90,legarmorf:40,legarmorm:1,legarmord:50,jumpaway:-100,criticalhit:-100,defence:50},
+		modify: {anticriticalhit:30,antijumpaway:30,dexterity:-2,hitpoints:90,legarmor1:91,legarmor2:140,legarmorf:90,legarmorm:1,legarmord:50,jumpaway:-100,criticalhit:-100,defence:50},
 		setlink: {name:'losttime10'}
 	}}
 
@@ -3720,7 +3720,7 @@ upgrade: {
 	boots23_1: {id:'boots23_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Забытых Времен [10]',binding:'boe',baseitem:'boots23',clist:{_:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots23:{id:'boots23',caption:'Сапоги Забытых Времен',count:1}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:30,antijumpaway:30,dexterity:-2,hitpoints:90,legarmor1:41,legarmor2:90,legarmorf:40,legarmorm:1,legarmord:50,jumpaway:-100,criticalhit:-100,defence:50},
+		modify: {anticriticalhit:30,antijumpaway:30,dexterity:-2,hitpoints:90,legarmor1:91,legarmor2:140,legarmorf:90,legarmorm:1,legarmord:50,jumpaway:-100,criticalhit:-100,defence:50},
 		setlink: {name:'losttime10'}
 	},
 	boots24_du2: {id:'boots24_du2',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:5}}}},
@@ -7589,7 +7589,7 @@ upgrade: {
 	belt36_1: {id:'belt36_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Кровавой Луны [10]',binding:'bop',baseitem:'belt36',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt36:{id:'belt36',caption:'Пояс Кровавой Луны',count:1}}},
 		common: {weight:1,price:168,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
-		modify: {criticalpower:15,criticalhit:20,magicdefence:25,defence:30,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
+		modify: {criticalpower:15,criticalhit:20,magicdefence:25,defence:30,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50,hitpoints:50},
 		setlink: {name:'bloodmoon10'}
 	}}
 
@@ -7597,7 +7597,7 @@ upgrade: {
 	belt36_1: {id:'belt36_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Кровавой Луны [10]',binding:'bop',baseitem:'belt36',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt36:{id:'belt36',caption:'Пояс Кровавой Луны',count:1}}},
 		common: {weight:1,price:168,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
-		modify: {criticalpower:15,criticalhit:20,magicdefence:25,defence:30,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
+		modify: {criticalpower:15,criticalhit:20,magicdefence:25,defence:30,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50,hitpoints:50},
 		setlink: {name:'bloodmoon10'}
 	},
 	belt37: {id:'belt37',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},mater6:{id:'mater6',caption:'Железное дерево',count:4}}}},
@@ -7982,13 +7982,13 @@ upgrade: {
 	leg14: {id:'leg14',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:5}}}},
 		common: {weight:13,price:150,durability:60},
 		required: {dexterity:30,intuition:30,level:9,endurance:35,strength:35},
-		modify: {anticriticalhit:30,antijumpaway:15,parry:2,firemagicdefence:10,defence:10,watermagicdefence:-10,hitpoints:39,waistarmor1:10,waistarmor2:36,waistarmorf:9,waistarmorm:1,waistarmord:27,legarmor1:10,legarmor2:36,legarmorf:9,legarmorm:1,legarmord:27,jumpaway:-75,criticalhit:-75,defence:35},
+		modify: {anticriticalhit:30,antijumpaway:15,parry:2,firemagicdefence:10,watermagicdefence:-10,hitpoints:39,waistarmor1:10,waistarmor2:36,waistarmorf:9,waistarmorm:1,waistarmord:27,legarmor1:10,legarmor2:36,legarmorf:9,legarmorm:1,legarmord:27,jumpaway:-75,criticalhit:-75,defence:35},
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	leg14_1: {id:'leg14_1',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца [10]',binding:'bop',baseitem:'leg14',requireditems:{baltar:{exchanger:'baltar', items: {leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
 		common: {weight:13,price:30,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,baltarreputation:100},
-		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:15,defence:15,watermagicdefence:-10,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:40},
+		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:0,watermagicdefence:0,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:55},
 		setlink: {name:'morningsun10'}
 	}}
 
@@ -7996,7 +7996,7 @@ upgrade: {
 	leg14_1: {id:'leg14_1',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца [10]',binding:'bop',baseitem:'leg14',requireditems:{baltar:{exchanger:'baltar', items: {leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
 		common: {weight:13,price:30,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,baltarreputation:100},
-		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:15,defence:15,watermagicdefence:-10,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:40},
+		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:0,watermagicdefence:0,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:55},
 		setlink: {name:'morningsun10'}
 	},
 	leg15: {id:'leg15',category:'pants',slot:'w19',caption:'Штаны Решимости',requireditems:{shop:{exchanger:'shop', items: {mater26:{id:'mater26',caption:'Кристалл стабильности',count:1},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:5}}}},
@@ -8025,15 +8025,13 @@ upgrade: {
 	leg16: {id:'leg16',category:'pants',slot:'w19',caption:'Поножи Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater3:{id:'mater3',caption:'Серебро',count:5}}}},
 		common: {weight:10,price:150,durability:50},
 		required: {dexterity:15,intuition:45,level:9,endurance:45,strength:35},
-		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:25,hitpoints:33,strength:2,waistarmor1:10,waistarmor2:36,waistarmorf:9,waistarmorm:1,waistarmord:27,legarmor1:10,legarmor2:36,legarmorf:9,legarmorm:1,legarmord:27},
-		properties: {defence:30},
+		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:25,hitpoints:33,strength:2,waistarmor1:10,waistarmor2:36,waistarmorf:9,waistarmorm:1,waistarmord:27,legarmor1:10,legarmor2:36,legarmorf:9,legarmorm:1,legarmord:27,defence:30},
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	leg16_1: {id:'leg16_1',category:'pants',slot:'w19',caption:'Поножи Скорпиона [10]',binding:'bop',baseitem:'leg16',requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
 		common: {weight:10,price:30,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,baltarreputation:100},
-		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
-		properties: {defence:35},
+		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,defence:35},
 		setlink: {name:'scorpion10'}
 	}}
 
@@ -8041,8 +8039,7 @@ upgrade: {
 	leg16_1: {id:'leg16_1',category:'pants',slot:'w19',caption:'Поножи Скорпиона [10]',binding:'bop',baseitem:'leg16',requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
 		common: {weight:10,price:30,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,baltarreputation:100},
-		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
-		properties: {defence:35},
+		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,defence:35},
 		setlink: {name:'scorpion10'}
 	},
 	leg17: {id:'leg17',category:'pants',slot:'w19',caption:'Поножи Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater29:{id:'mater29',caption:'Лучистый топаз',count:1},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:5}}}},
@@ -13369,15 +13366,15 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 	},
 	earthmagicdefence: {id:'earthmagicdefence',caption:'Защита от магии Земли'
 	},
-	magicdefencereduce: {id:'magicdefencereduce',caption:'Понижение защиты от магии'
+	magicdefencereduce: {id:'magicdefencereduce',caption:'Подавление защиты от магии'
 	},
-	firemagicdefencereduce: {id:'firemagicdefencereduce',caption:'Понижение защиты от магии Огня'
+	firemagicdefencereduce: {id:'firemagicdefencereduce',caption:'Подавление защиты от магии Огня'
 	},
-	airmagicdefencereduce: {id:'airmagicdefencereduce',caption:'Понижение защиты от магии Воздуха'
+	airmagicdefencereduce: {id:'airmagicdefencereduce',caption:'Подавление защиты от магии Воздуха'
 	},
-	watermagicdefencereduce: {id:'watermagicdefencereduce',caption:'Понижение защиты от магии Воды'
+	watermagicdefencereduce: {id:'watermagicdefencereduce',caption:'Подавление защиты от магии Воды'
 	},
-	earthmagicdefencereduce: {id:'earthmagicdefencereduce',caption:'Понижение защиты от магии Земли'
+	earthmagicdefencereduce: {id:'earthmagicdefencereduce',caption:'Подавление защиты от магии Земли'
 	},
 	magicpower: {id:'magicpower',caption:'Мощность магии стихий'
 	},

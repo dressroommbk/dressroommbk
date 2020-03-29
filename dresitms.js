@@ -6356,7 +6356,7 @@ upgrade: {
 		defences: {crush:'good',sabre:'normal'}
 	,upgrade:{
 	helmet79_1: {id:'helmet79_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука [10]',requireditems:{shop:{exchanger:'shop', items: {helmet79:{id:'helmet79',caption:'Шлем Паука',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:55,intellect:2,weaponskill:1,magicdefence:50,hitpoints:55,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
 		properties: {defence:55},
@@ -6365,7 +6365,7 @@ upgrade: {
 	}}
 	},
 	helmet79_1: {id:'helmet79_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука [10]',requireditems:{shop:{exchanger:'shop', items: {mater18:{id:'mater18',caption:'Тысячелетний камень',count:5},mater12:{id:'mater12',caption:'Сталь',count:6}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:50,intuition:15,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:55,intellect:2,weaponskill:1,magicdefence:50,hitpoints:55,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
 		properties: {defence:55},
@@ -6380,7 +6380,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'}
 	,  upgrade:{
 	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items: {helmet80:{id:'helmet80',caption:'Шлем Кровавой Луны',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
-		common: {weight:15,price:210,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:60,magicdefence:60,hitpoints:40,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
 		properties: {defence:55},
@@ -6389,7 +6389,7 @@ upgrade: {
 
 	},
 	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items: {mater15:{id:'mater15',caption:'Сгусток астрала',count:5},mater5:{id:'mater5',caption:'Мифрил',count:6}}}},
-		common: {weight:15,price:210,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:60,magicdefence:60,hitpoints:40,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,defence:55},
 		setlink: {name:'bloodmoon10'}
@@ -6401,14 +6401,14 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {helmet82_du2:{id:'helmet82_du2',caption:'Шлем Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:0,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
     }}
 	},
 	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater2:{id:'mater2',caption:'Золото',count:6}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:0,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
@@ -6421,7 +6421,7 @@ upgrade: {
 		setlink: {name:'misdeed'}
 	,upgrade: {
      helmet84_1: {id:'helmet84_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items: {helmet84:{id:'helmet84',caption:'Шлем Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,capitalreputation:10000},
 		modify: {anticriticalhit:40,criticalhit:60,jumpaway:30,dexterity:2,magicdefence:60,hitpoints:33,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
 		properties: {defence:55},
@@ -6429,7 +6429,7 @@ upgrade: {
    	}}
 	},
 	helmet84_1: {id:'helmet84_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items: {mater14:{id:'mater14',caption:'Сгусток эфира',count:5},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:6}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,capitalreputation:10000},
 		modify: {anticriticalhit:40,criticalhit:60,jumpaway:30,dexterity:2,magicdefence:60,hitpoints:33,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
 		properties: {defence:55},
@@ -6451,27 +6451,27 @@ upgrade: {
       }}
 	},
 	helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater3:{id:'mater3',caption:'Серебро',count:6}}}},
-		common: {weight:15,price:245,durability:60},
+		common: {weight:15,price:310,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:10,headarmor2:40,headarmorf:9,headarmorm:1,headarmord:30},
 		properties: {defence:55},
 		setlink: {name:'scorpion10'}
 	},
 	helmet81: {id:'helmet81',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
-		common: {weight:20,price:215,durability:100},
+		common: {weight:20,price:310,durability:100},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45},
 		modify: {anticriticalhit:20,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,magicdefence:50,hitpoints:66,headarmor1:36,headarmor2:85,headarmorf:35,headarmorm:1,headarmord:50,jumpaway:-75,criticalhit:-75,defence:25},
 		setlink: {name:'losttime'}
 	,upgrade: {
 	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {helmet81:{id:'helmet81',caption:'Шлем Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
-		common: {weight:20,price:250,durability:100},
+		common: {weight:20,price:315,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:91,headarmor2:150,headarmorf:90,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
 	 }}
 	},
 	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
-		common: {weight:20,price:250,durability:100},
+		common: {weight:20,price:315,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:91,headarmor2:150,headarmorf:90,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
@@ -6483,7 +6483,7 @@ upgrade: {
 		setlink: {name:'determination'}
 	, upgrade: {
 	 helmet83_1: {id:'helmet83_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости [10]',requireditems:{shop:{exchanger:'shop', items: {helmet83:{id:'helmet83',caption:'Маска Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
-		common: {weight:5,price:250,durability:50},
+		common: {weight:5,price:315,durability:50},
 		required: {intellect:50,level:10,wisdom:60,capitalreputation:10000},
 		modify: {intellect:6,magicdefence:40,hitpoints:78,mana:140,headarmor1:10,headarmor2:10},
 		setlink: {name:'determination10'}
@@ -7099,7 +7099,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'}
 	, upgrade: {
 	braslet24_1: {id:'braslet24_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Кровавой Луны [10]',binding:'bop',baseitem:'braslet24',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet24:{id:'braslet24',caption:'Браслет Кровавой Луны',count:1}}},
-		common: {weight:2,price:167,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {criticalpower:23,anticriticalhit:25,criticalhit:40,weaponskill:2,strength:3},
 		setlink: {name:'bloodmoon10'}
@@ -7107,7 +7107,7 @@ upgrade: {
 
 	},
 	braslet24_1: {id:'braslet24_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Кровавой Луны [10]',binding:'bop',baseitem:'braslet24',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet24:{id:'braslet24',caption:'Браслет Кровавой Луны',count:1}}},
-		common: {weight:2,price:167,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {criticalpower:23,anticriticalhit:25,criticalhit:40,weaponskill:2,strength:3},
 		setlink: {name:'bloodmoon10'}
@@ -7119,7 +7119,7 @@ upgrade: {
 		setlink: {name:'losttime'}
 	, upgrade: {
 	braslet25_1: {id:'braslet25_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Забытых Времен [10]',binding:'bop',baseitem:'braslet25',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet25:{id:'braslet25',caption:'Наручи Забытых Времен',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,sandreputation:10000},
 		modify: {antijumpaway:30,weaponskill:2,magicdefence:40,hitpoints:41,strength:2,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
@@ -7127,7 +7127,7 @@ upgrade: {
 
 	},
 	braslet25_1: {id:'braslet25_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Забытых Времен [10]',binding:'bop',baseitem:'braslet25',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet25:{id:'braslet25',caption:'Наручи Забытых Времен',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,sandreputation:10000},
 		modify: {antijumpaway:30,weaponskill:2,magicdefence:40,hitpoints:41,strength:2,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
@@ -7139,7 +7139,7 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	braslet26_du2_1: {id:'braslet26_du2_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Утреннего Солнца [10]',binding:'bop',baseitem:'braslet26_du2',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet26_du2:{id:'braslet26_du2',caption:'Наручи Утреннего Солнца',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,sandreputation:10000},
 		modify: {anticriticalhit:35,antijumpaway:35,power:5,weaponskill:2,magicdefence:30,hitpoints:37,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
@@ -7147,7 +7147,7 @@ upgrade: {
 
 	},
 	braslet26_du2_1: {id:'braslet26_du2_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Утреннего Солнца [10]',binding:'bop',baseitem:'braslet26_du2',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet26_du2:{id:'braslet26_du2',caption:'Наручи Утреннего Солнца',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,sandreputation:10000},
 		modify: {anticriticalhit:35,antijumpaway:35,power:5,weaponskill:2,magicdefence:30,hitpoints:37,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
@@ -7200,14 +7200,14 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	braslet32_1: {id:'braslet32_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Скорпиона [10]',binding:'bop',baseitem:'braslet32',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet32:{id:'braslet32',caption:'Браслет Скорпиона',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:30,antijumpaway:45,criticalhit:50,weaponskill:1,magicdefence:30,hitpoints:26,strength:3},
 		setlink: {name:'scorpion10'}
 	}}
 	},
 	braslet32_1: {id:'braslet32_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Скорпиона [10]',binding:'bop',baseitem:'braslet32',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet32:{id:'braslet32',caption:'Браслет Скорпиона',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:30,antijumpaway:45,criticalhit:50,weaponskill:1,magicdefence:30,hitpoints:26,strength:3},
 		setlink: {name:'scorpion10'}
@@ -7587,7 +7587,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'}
 	, upgrade: {
 	belt36_1: {id:'belt36_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Кровавой Луны [10]',binding:'bop',baseitem:'belt36',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt36:{id:'belt36',caption:'Пояс Кровавой Луны',count:1}}},
-		common: {weight:1,price:168,durability:50},
+		common: {weight:1,price:240,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {criticalpower:15,criticalhit:20,magicdefence:25,defence:30,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50,hitpoints:50},
 		setlink: {name:'bloodmoon10'}
@@ -7595,7 +7595,7 @@ upgrade: {
 
 	},
 	belt36_1: {id:'belt36_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Кровавой Луны [10]',binding:'bop',baseitem:'belt36',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt36:{id:'belt36',caption:'Пояс Кровавой Луны',count:1}}},
-		common: {weight:1,price:168,durability:50},
+		common: {weight:1,price:240,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {criticalpower:15,criticalhit:20,magicdefence:25,defence:30,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50,hitpoints:50},
 		setlink: {name:'bloodmoon10'}
@@ -7690,7 +7690,7 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	belt44_1: {id:'belt44_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Скорпиона [10]',binding:'bop',baseitem:'belt44',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt44:{id:'belt44',caption:'Пояс Скорпиона',count:1}}},
-		common: {weight:1,price:168,durability:50},
+		common: {weight:1,price:240,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:65,magicdefence:20,defence:30,hitpoints:39,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
 		setlink: {name:'scorpion10'}
@@ -7698,7 +7698,7 @@ upgrade: {
 
 	},
 	belt44_1: {id:'belt44_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Скорпиона [10]',binding:'bop',baseitem:'belt44',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt44:{id:'belt44',caption:'Пояс Скорпиона',count:1}}},
-		common: {weight:1,price:168,durability:50},
+		common: {weight:1,price:240,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:65,magicdefence:20,defence:30,hitpoints:39,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
 		setlink: {name:'scorpion10'}
@@ -7941,7 +7941,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'}
 	, upgrade: {
 	leg12_1: {id:'leg12_1',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны [10]',binding:'bop',baseitem:'leg12',requireditems:{baltar:{exchanger:'baltar', items: {leg12:{id:'leg12',caption:'Поножи Кровавой Луны',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:45,magicdefence:15,hitpoints:35,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		properties: {defence:40},
@@ -7950,7 +7950,7 @@ upgrade: {
 
 	},
 	leg12_1: {id:'leg12_1',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны [10]',binding:'bop',baseitem:'leg12',requireditems:{baltar:{exchanger:'baltar', items: {leg12:{id:'leg12',caption:'Поножи Кровавой Луны',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:45,magicdefence:15,hitpoints:35,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		properties: {defence:40},
@@ -7964,7 +7964,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	leg13_1: {id:'leg13_1',category:'pants',slot:'w19',caption:'Поножи Паука [10]',binding:'bop',baseitem:'leg13',requireditems:{baltar:{exchanger:'baltar', items: {leg13:{id:'leg13',caption:'Поножи Паука',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:45,jumpaway:50,magicdefence:30,hitpoints:27,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		properties: {defence:35},
@@ -7973,7 +7973,7 @@ upgrade: {
 
 	},
 	leg13_1: {id:'leg13_1',category:'pants',slot:'w19',caption:'Поножи Паука [10]',binding:'bop',baseitem:'leg13',requireditems:{baltar:{exchanger:'baltar', items: {leg13:{id:'leg13',caption:'Поножи Паука',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:45,jumpaway:50,magicdefence:30,hitpoints:27,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		properties: {defence:35},
@@ -7986,7 +7986,7 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	leg14_1: {id:'leg14_1',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца [10]',binding:'bop',baseitem:'leg14',requireditems:{baltar:{exchanger:'baltar', items: {leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:13,price:30,durability:60},
+		common: {weight:13,price:250,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,baltarreputation:100},
 		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:0,watermagicdefence:0,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:55},
 		setlink: {name:'morningsun10'}
@@ -7994,7 +7994,7 @@ upgrade: {
 
 	},
 	leg14_1: {id:'leg14_1',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца [10]',binding:'bop',baseitem:'leg14',requireditems:{baltar:{exchanger:'baltar', items: {leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:13,price:30,durability:60},
+		common: {weight:13,price:250,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,baltarreputation:100},
 		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:0,watermagicdefence:0,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:55},
 		setlink: {name:'morningsun10'}
@@ -8007,7 +8007,7 @@ upgrade: {
 		setlink: {name:'determination'}
 	, upgrade: {
 	leg15_1: {id:'leg15_1',category:'pants',slot:'w19',caption:'Штаны Решимости [10]',binding:'bop',baseitem:'leg15',requireditems:{baltar:{exchanger:'baltar', items: {leg15:{id:'leg15',caption:'Штаны Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:5,price:30,durability:50},
+		common: {weight:5,price:250,durability:50},
 		required: {intellect:50,level:10,wisdom:60,baltarreputation:100},
 		modify: {magicdefencereduce:2,magicpower:5,hitpoints:25,mana:100,waistarmor1:6,waistarmor2:20,waistarmorf:5,waistarmorm:1,waistarmord:15,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15},
 		properties: {defence:15},
@@ -8016,7 +8016,7 @@ upgrade: {
 
 	},
 	leg15_1: {id:'leg15_1',category:'pants',slot:'w19',caption:'Штаны Решимости [10]',binding:'bop',baseitem:'leg15',requireditems:{baltar:{exchanger:'baltar', items: {leg15:{id:'leg15',caption:'Штаны Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:5,price:30,durability:50},
+		common: {weight:5,price:250,durability:50},
 		required: {intellect:50,level:10,wisdom:60,baltarreputation:100},
 		modify: {magicdefencereduce:2,magicpower:5,hitpoints:25,mana:100,waistarmor1:6,waistarmor2:20,waistarmorf:5,waistarmorm:1,waistarmord:15,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15},
 		properties: {defence:15},
@@ -8029,7 +8029,7 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	leg16_1: {id:'leg16_1',category:'pants',slot:'w19',caption:'Поножи Скорпиона [10]',binding:'bop',baseitem:'leg16',requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,defence:35},
 		setlink: {name:'scorpion10'}
@@ -8037,7 +8037,7 @@ upgrade: {
 
 	},
 	leg16_1: {id:'leg16_1',category:'pants',slot:'w19',caption:'Поножи Скорпиона [10]',binding:'bop',baseitem:'leg16',requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,defence:35},
 		setlink: {name:'scorpion10'}
@@ -8050,7 +8050,7 @@ upgrade: {
 		setlink: {name:'misdeed'}
 	, upgrade: {
 	leg17_1: {id:'leg17_1',category:'pants',slot:'w19',caption:'Поножи Злодеяний [10]',binding:'bop',baseitem:'leg17',requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,baltarreputation:100},
 		modify: {anticriticalhit:25,criticalhit:30,jumpaway:30,dexterity:2,intuition:2,magicdefence:25,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		properties: {defence:30},
@@ -8059,7 +8059,7 @@ upgrade: {
 
 	},
 	leg17_1: {id:'leg17_1',category:'pants',slot:'w19',caption:'Поножи Злодеяний [10]',binding:'bop',baseitem:'leg17',requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
-		common: {weight:10,price:30,durability:50},
+		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,baltarreputation:100},
 		modify: {anticriticalhit:25,criticalhit:30,jumpaway:30,dexterity:2,intuition:2,magicdefence:25,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		properties: {defence:30},
@@ -8898,7 +8898,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	clip76_1: {id:'clip76_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Паука [10]',binding:'bop',baseitem:'clip76',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip76:{id:'clip76',caption:'Серьги Паука',count:1}}},
-		common: {weight:1,price:240,durability:60},
+		common: {weight:1,price:300,durability:60},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:35,antijumpaway:35,jumpaway:110,counterstroke:17,intellect:2,magicdefence:25,hitpoints:41,strength:4},
 		setlink: {name:'spider10'}
@@ -8906,7 +8906,7 @@ upgrade: {
 
 	},
 	clip76_1: {id:'clip76_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Паука [10]',binding:'bop',baseitem:'clip76',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip76:{id:'clip76',caption:'Серьги Паука',count:1}}},
-		common: {weight:1,price:240,durability:60},
+		common: {weight:1,price:300,durability:60},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:35,antijumpaway:35,jumpaway:110,counterstroke:17,intellect:2,magicdefence:25,hitpoints:41,strength:4},
 		setlink: {name:'spider10'}
@@ -8918,7 +8918,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'}
 	, upgrade: {
 	clip80_1: {id:'clip80_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Кровавой Луны [10]',binding:'bop',baseitem:'clip80',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip80:{id:'clip80',caption:'Серьги Кровавой Луны',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {criticalpower:30,antijumpaway:45,criticalhit:100,intellect:2,weaponskill:1,strength:4},
 		setlink: {name:'bloodmoon10'}
@@ -8926,7 +8926,7 @@ upgrade: {
 
 	},
 	clip80_1: {id:'clip80_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Кровавой Луны [10]',binding:'bop',baseitem:'clip80',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip80:{id:'clip80',caption:'Серьги Кровавой Луны',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {criticalpower:30,antijumpaway:45,criticalhit:100,intellect:2,weaponskill:1,strength:4},
 		setlink: {name:'bloodmoon10'}
@@ -8978,7 +8978,7 @@ upgrade: {
 		setlink: {name:'misdeed'}
 	, upgrade: {
 	clip89_1: {id:'clip89_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Злодеяний [10]',binding:'bop',baseitem:'clip89',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip89:{id:'clip89',caption:'Серьги Злодеяний',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,demonsreputation:10000},
 		modify: {criticalhit:110,jumpaway:120,counterstroke:12,dexterity:5,intuition:2,weaponskill:1,hitpoints:28},
 		setlink: {name:'misdeed10'}
@@ -8986,7 +8986,7 @@ upgrade: {
 
 	},
 	clip89_1: {id:'clip89_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Злодеяний [10]',binding:'bop',baseitem:'clip89',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip89:{id:'clip89',caption:'Серьги Злодеяний',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,demonsreputation:10000},
 		modify: {criticalhit:110,jumpaway:120,counterstroke:12,dexterity:5,intuition:2,weaponskill:1,hitpoints:28},
 		setlink: {name:'misdeed10'}
@@ -8998,22 +8998,22 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	clip90_1: {id:'clip90_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Скорпиона [10]',binding:'bop',baseitem:'clip90',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip90:{id:'clip90',caption:'Серьги Скорпиона',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,demonsreputation:10000},
-		modify: {antijumpaway:100,criticalhit:100,weaponskill:1,defence:35,hitpoints:48,strength:4},
+		modify: {antijumpaway:100,criticalhit:100,weaponskill:0,defence:35,hitpoints:48,strength:4},
 		setlink: {name:'scorpion10'}
 	}}
 
 	},
 	clip90_1: {id:'clip90_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Скорпиона [10]',binding:'bop',baseitem:'clip90',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip90:{id:'clip90',caption:'Серьги Скорпиона',count:1}}},
-		common: {weight:1,price:240,durability:50},
-		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,demonsreputation:10000},
-		modify: {antijumpaway:100,criticalhit:100,weaponskill:1,defence:35,hitpoints:48,strength:4},
+		common: {weight:1,price:300,durability:50},
+		required: {dexterity:15,intuition:60,level:10,endurance:30,strength:35,demonsreputation:10000},
+		modify: {antijumpaway:100,criticalhit:100,weaponskill:0,defence:35,hitpoints:48,strength:4},
 		setlink: {name:'scorpion10'}
 	},
 	clip91: {id:'clip91',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неуемной Силы',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2}}}},
-		common: {weight:1,price:200,durability:50},
-		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:50},
+		common: {weight:1,price:300,durability:50},
+		required: {dexterity:15,intuition:15,level:9,endurance:30,strength:50},
 		modify: {anticriticalhit:70,criticalhit:-75,antijumpaway:70,jumpaway:-75,strength:10,hitpoints:55,clubskill:1}
 	},
 	clip71: {id:'clip71',category:'earrings',slot:'w1',width:60,height:20,caption:'Огненные Серьги',
@@ -9450,7 +9450,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	amulet75_1: {id:'amulet75_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Паука [10]',binding:'bop',baseitem:'amulet75',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet75:{id:'amulet75',caption:'Амулет Паука',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:45,antijumpaway:45,jumpaway:120,counterstroke:20,magicdefence:40,hitpoints:74,strength:4},
 		setlink: {name:'spider10'}
@@ -9458,7 +9458,7 @@ upgrade: {
 
 	},
 	amulet75_1: {id:'amulet75_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Паука [10]',binding:'bop',baseitem:'amulet75',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet75:{id:'amulet75',caption:'Амулет Паука',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:45,antijumpaway:45,jumpaway:120,counterstroke:20,magicdefence:40,hitpoints:74,strength:4},
 		setlink: {name:'spider10'}
@@ -10269,7 +10269,7 @@ upgrade: {
 		setlink: {name:'spider',count:3}
 	, upgrade: {
 	ring110_1: {id:'ring110_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Паука [10]',binding:'bop',baseitem:'ring110',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring110:{id:'ring110',caption:'Кольцо Паука',count:1}},anvil1_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater12:{id:'mater12',caption:'Сталь',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:3},mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},ring110:{id:'ring110',caption:'Кольцо Паука',count:1}}},
-		common: {weight:1,price:120,durability:40},
+		common: {weight:1,price:180,durability:40},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:20,parry:5,jumpaway:45,counterstroke:5,defence:15,hitpoints:30,strength:1},
 		setlink: {name:'spider10',count:3},setlinks:['spider10','spider']
@@ -10277,7 +10277,7 @@ upgrade: {
 
 	},
 	ring110_1: {id:'ring110_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Паука [10]',binding:'bop',baseitem:'ring110',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring110:{id:'ring110',caption:'Кольцо Паука',count:1}},anvil1_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater12:{id:'mater12',caption:'Сталь',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:3},mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},ring110:{id:'ring110',caption:'Кольцо Паука',count:1}}},
-		common: {weight:1,price:120,durability:40},
+		common: {weight:1,price:180,durability:40},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:20,parry:5,jumpaway:45,counterstroke:5,defence:15,hitpoints:30,strength:1},
 		setlink: {name:'spider10',count:3},setlinks:['spider10','spider']
@@ -10359,7 +10359,7 @@ upgrade: {
 		setlink: {name:'misdeed',count:3}
 	, upgrade: {
 	ring128_1: {id:'ring128_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Злодеяний [10]',binding:'bop',baseitem:'ring128',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring128:{id:'ring128',caption:'Кольцо Злодеяний',count:1}}},
-		common: {weight:1,price:120,durability:50},
+		common: {weight:1,price:180,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,angelsreputation:10000},
 		modify: {anticriticalhit:15,criticalhit:85,jumpaway:45,dexterity:2,hitpoints:28,strength:1},
 		setlink: {name:'misdeed10',count:3}
@@ -10367,7 +10367,7 @@ upgrade: {
 
 	},
 	ring128_1: {id:'ring128_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Злодеяний [10]',binding:'bop',baseitem:'ring128',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring128:{id:'ring128',caption:'Кольцо Злодеяний',count:1}}},
-		common: {weight:1,price:120,durability:50},
+		common: {weight:1,price:180,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,angelsreputation:10000},
 		modify: {anticriticalhit:15,criticalhit:85,jumpaway:45,dexterity:2,hitpoints:28,strength:1},
 		setlink: {name:'misdeed10',count:3}
@@ -10379,7 +10379,7 @@ upgrade: {
 		setlink: {name:'scorpion',count:3}
 	, upgrade: {
 	ring129_1: {id:'ring129_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Скорпиона [10]',binding:'bop',baseitem:'ring129',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring129:{id:'ring129',caption:'Кольцо Скорпиона',count:1}}},
-		common: {weight:1,price:120,durability:50},
+		common: {weight:1,price:180,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:15,antijumpaway:80,criticalhit:60,parry:1,hitpoints:31},
 		setlink: {name:'scorpion10',count:3}
@@ -10387,7 +10387,7 @@ upgrade: {
 
 	},
 	ring129_1: {id:'ring129_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Скорпиона [10]',binding:'bop',baseitem:'ring129',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring129:{id:'ring129',caption:'Кольцо Скорпиона',count:1}}},
-		common: {weight:1,price:120,durability:50},
+		common: {weight:1,price:180,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:15,antijumpaway:80,criticalhit:60,parry:1,hitpoints:31},
 		setlink: {name:'scorpion10',count:3}
@@ -13442,7 +13442,7 @@ var categories = {
 	pants:{id: 'pants', canRune: 'yes', caption: 'Поножи', slot: 'w19', items: new Array(dressItems.leg2008_1,dressItems.leg1,dressItems.leg18,dressItems.leg32,dressItems.leg19,dressItems.leg21,dressItems.leg22,dressItems.leg34,dressItems.leg26,dressItems.leg23,dressItems.leg24,dressItems.leg25,dressItems.legs40,dressItems.leg11,dressItems.leg11_1,dressItems.leg12,dressItems.leg12_1,dressItems.leg13,dressItems.leg13_1,dressItems.leg14,dressItems.leg14_1,dressItems.leg15,dressItems.leg15_1,dressItems.leg16,dressItems.leg16_1,dressItems.leg17,dressItems.leg17_1,dressItems.leg28,dressItems.leg30,dressItems.leg31,dressItems.leg29,dressItems.leg27,dressItems.leg33,dressItems.legs41,dressItems.legs42,dressItems.legs43,dressItems.legs44,dressItems.aleg2,dressItems.aleg1)},
 	shields:{id: 'shields', caption: 'Щиты', slot: 'w10', items: new Array(dressItems.ashielddc,dressItems.shield1,dressItems.shield4,dressItems.shield6,dressItems.trshield2,dressItems.shield5,dressItems.grshield2,dressItems.trshield1,dressItems.shield78,dressItems.grshield1,dressItems.shield12,dressItems.shield10,dressItems.shield19,dressItems.shield7,dressItems.shield3,dressItems.shield79,dressItems.shield13,dressItems.shield9,dressItems.shield11,dressItems.shield8,dressItems.shield15,dressItems.shield17,dressItems.shield20,dressItems.shield16,dressItems.shield77,dressItems.shield21,dressItems.shield80,dressItems.shield18,dressItems.shield14,dressItems.shield82,dressItems.shield82_1,dressItems.shield83,dressItems.shield83_1,dressItems.shield84,dressItems.shield84_1,dressItems.shield85_du2,dressItems.shield85,dressItems.shield86,dressItems.shield88,dressItems.ashield6_7dk29as,dressItems.ashield1,dressItems.ashield3,dressItems.ashield4,dressItems.ashield5,dressItems.shield201,dressItems.shield210,dressItems.shield200,dressItems.shield202,dressItems.shield208,dressItems.shield206,dressItems.shield205,dressItems.shield204,dressItems.shield207,dressItems.shield81,dressItems.shield203,dressItems.shield209,dressItems.shield211,dressItems.shield88_11)},
 	earrings:{id: 'earrings', canRune: 'yes', caption: 'Серьги', slot: 'w1', items: new Array(dressItems.clip7,dressItems.clip6,dressItems.clip2,dressItems.clip5,dressItems.clip58,dressItems.clip8,dressItems.clip56,dressItems._1apr72,dressItems.clip1,dressItems.clip57,dressItems.clip53,dressItems.clip86,dressItems.clip11,dressItems.clip4,dressItems.clip63,dressItems.clip55,dressItems.clip54,dressItems.clip62,dressItems.clip10,dressItems.clip60,dressItems.clip87,dressItems.clip51,dressItems.clip66,dressItems.clip67,dressItems.clip70,dressItems.clip73,dressItems.clip74,dressItems.clip3,dressItems.clip52,dressItems.clip79,dressItems.clip64,dressItems.clip69,dressItems.clip75,dressItems.clip65,dressItems.clip68,dressItems.clip61,dressItems.clip88,dressItems.clip59,dressItems.clip76,dressItems.clip76_1,dressItems.clip80,dressItems.clip80_1,dressItems.clip81,dressItems.clip81_1,dressItems.clip82_du2,dressItems.clip82_du2_1,dressItems.clip89,dressItems.clip89_1,dressItems.clip90,dressItems.clip90_1,dressItems.clip91,dressItems.clip71,dressItems.ring112,dressItems.clip77,dressItems.clip78,dressItems.clip83,dressItems.clip84,dressItems.clip85,dressItems.clip82,dressItems.aclip1,dressItems.earrings200,dressItems.earrings207,dressItems.earrings203,dressItems.earrings204,dressItems.earrings205,dressItems.earrings201,dressItems.earrings202,dressItems.earrings206,dressItems.clip72,dressItems.earrings209,dressItems.earrings210,dressItems.earrings211,dressItems.earrings_illusion1,dressItems.earrings_illusion2,dressItems.clip92,dressItems.clip93,dressItems.clip94,dressItems.clip95,dressItems.clip100_9,dressItems.clip100,dressItems.clip100_11)},
-	necklaces:{id: 'necklaces', canRune: 'yes', caption: 'Амулеты и ожерелья', slot: 'w2', items: new Array(dressItems.amulet4,dressItems.amulet6,dressItems.amulet2,dressItems.amulet5,dressItems.amulet70,dressItems.amulet69,dressItems.amulet1,dressItems.amulet8,dressItems.amulet66,dressItems.amulet62,dressItems.amulet53,dressItems.amulet90,dressItems.amulet63,dressItems.amulet67,dressItems.amulet7,dressItems.amulet9,dressItems.amulet56,dressItems.amulet54,dressItems.amulet65,dressItems.amulet99,dressItems.amulet100,dressItems.amulet60,dressItems.amulet3,dressItems.amulet82,dressItems.amulet55,dressItems.amulet91,dressItems.amulet58,dressItems.amulet59,dressItems.amulet73,dressItems.amulet92,dressItems.amulet94,dressItems.amulet52,dressItems.amulet50,dressItems.amulet61,dressItems.amulet71,dressItems.amulet76,dressItems.amulet77,dressItems.amulet78,dressItems.amulet79,dressItems.amulet68,dressItems.amulet51,dressItems.amulet74,dressItems.amulet64,dressItems.amulet75,dressItems.amulet75_1,dressItems.amulet80,dressItems.amulet80_1,dressItems.amulet81,dressItems.amulet81_1,dressItems.amulet83_du2,dressItems.amulet83_du2_1,dressItems.amulet86,dressItems.amulet87,dressItems.amulet88,dressItems.amulet85,dressItems.amulet97,dressItems.amulet97_1,dressItems.amulet98,dressItems.amulet98_1,dressItems.amulet96,dressItems.amulet84,dressItems.aamulet2_hs3hg2,dressItems.kulon200,dressItems.amulet93,dressItems.kulon204,dressItems.amulet72,dressItems.kulon201,dressItems.kulon202,dressItems.kulon203,dressItems.kulon206,dressItems.kulon207,dressItems.kulon208,dressItems.kulon209,dressItems.amulet95,dressItems.amulet57,dressItems.aamulet1,dressItems.aamulet10,dressItems.aamulet11,dressItems.aamulet3_mn720s,dressItems.aamulet4_x8dj3,dressItems.amulet103,dressItems.amulet_illusion1,dressItems.amulet_illusion2,dressItems.amulet101,dressItems.amulet102,dressItems.amulet104,dressItems.amulet105,dressItems.amulet106,dressItems.amulet107,dressItems.amulet104_2,dressItems.amulet104_3,dressItems.amulet105_2,dressItems.amulet105_3,dressItems.amulet106_2,dressItems.amulet106_3,dressItems.amulet107_2,dressItems.amulet107_3,dressItems.amulet104_1,dressItems.amulet105_1,dressItems.amulet106_1,dressItems.amulet107_1,dressItems.amulet111_9,dressItems.amulet111,dressItems.amulet111_11)},
+	necklaces:{id: 'necklaces', canRune: 'yes', caption: 'Амулеты и ожерелья', slot: 'w2', items: new Array(dressItems.amulet4,dressItems.amulet6,dressItems.amulet2,dressItems.amulet5,dressItems.amulet70,dressItems.amulet69,dressItems.amulet1,dressItems.amulet8,dressItems.amulet66,dressItems.amulet62,dressItems.amulet53,dressItems.amulet90,dressItems.amulet63,dressItems.amulet67,dressItems.amulet7,dressItems.amulet9,dressItems.amulet56,dressItems.amulet54,dressItems.amulet65,dressItems.amulet99,dressItems.amulet100,dressItems.amulet60,dressItems.amulet3,dressItems.amulet82,dressItems.amulet55,dressItems.amulet91,dressItems.amulet58,dressItems.amulet59,dressItems.amulet73,dressItems.amulet92,dressItems.amulet94,dressItems.amulet52,dressItems.amulet50,dressItems.amulet61,dressItems.amulet71,dressItems.amulet76,dressItems.amulet77,dressItems.amulet78,dressItems.amulet79,dressItems.amulet68,dressItems.amulet51,dressItems.amulet74,dressItems.amulet64,dressItems.amulet75,dressItems.amulet75_1,dressItems.amulet80,dressItems.amulet80_1,dressItems.amulet81,dressItems.amulet81_1,dressItems.amulet83_du2,dressItems.amulet83_du2_1,dressItems.amulet86,dressItems.amulet87,dressItems.amulet88,dressItems.amulet85,dressItems.amulet97,dressItems.amulet97_1,dressItems.amulet98,dressItems.amulet98_1,/*dressItems.amulet96,*/dressItems.amulet84,dressItems.aamulet2_hs3hg2,dressItems.kulon200,dressItems.amulet93,dressItems.kulon204,dressItems.amulet72,dressItems.kulon201,dressItems.kulon202,dressItems.kulon203,dressItems.kulon206,dressItems.kulon207,dressItems.kulon208,dressItems.kulon209,dressItems.amulet95,dressItems.amulet57,dressItems.aamulet1,dressItems.aamulet10,dressItems.aamulet11,dressItems.aamulet3_mn720s,dressItems.aamulet4_x8dj3,dressItems.amulet103,dressItems.amulet_illusion1,dressItems.amulet_illusion2,dressItems.amulet101,dressItems.amulet102,dressItems.amulet104,dressItems.amulet105,dressItems.amulet106,dressItems.amulet107,dressItems.amulet104_2,dressItems.amulet104_3,dressItems.amulet105_2,dressItems.amulet105_3,dressItems.amulet106_2,dressItems.amulet106_3,dressItems.amulet107_2,dressItems.amulet107_3,dressItems.amulet104_1,dressItems.amulet105_1,dressItems.amulet106_1,dressItems.amulet107_1,dressItems.amulet111_9,dressItems.amulet111,dressItems.amulet111_11)},
 	rings:{id: 'rings', canRune: 'yes', caption: 'Кольца', slot: 'w6', items: new Array(dressItems.weddingring,dressItems.ring127,dressItems.ring126,dressItems.ring82,dressItems.ring83,dressItems.ring85,dressItems.ring100,dressItems.ring63,dressItems.ring4,dressItems.ring6,dressItems.ring3,dressItems.ring106,dressItems.ring64,dressItems.ring104,dressItems.ring1,dressItems.ring61,dressItems.ring54,dressItems.ring108,dressItems.ring81,dressItems.ring123,dressItems.ring55,dressItems.ring101,dressItems.ring69,dressItems.ring7,dressItems.ring60,dressItems.ring130_2,dressItems.ring131_2,dressItems.ring67,dressItems.ring70,dressItems.ring58,dressItems.ring50,dressItems.ring77,dressItems.ring78,dressItems.ring124,dressItems.ring62,dressItems.ring59,dressItems.ring66,dressItems.ring91,dressItems.ring73,dressItems.ring52,dressItems.ring68,dressItems.ring65,dressItems.ring71,dressItems.ring86,dressItems.ring105,dressItems.ring87,dressItems.ring2,dressItems.ring97,dressItems.ring79,dressItems.ring76,dressItems.ring51,dressItems.ring95,dressItems.ring205,dressItems.ring99,dressItems.ring23f,dressItems.ring5,dressItems.ring93,dressItems.ring90,dressItems.ring88,dressItems.ring115,dressItems.ring80,dressItems.ring57,dressItems.ring96,dressItems.ring92,dressItems.ring107,dressItems.ring75,dressItems.ring118,dressItems.ring125,dressItems.ring130_1,dressItems.ring131_1,dressItems.ring110,dressItems.ring110_1,dressItems.ring116,dressItems.ring116_1,dressItems.ring117,dressItems.ring117_1,dressItems.ring119_du2,dressItems.ring119_du2_1,dressItems.ring120_si8,dressItems.ring121_si8,dressItems.ring128,dressItems.ring128_1,dressItems.ring129,dressItems.ring129_1,dressItems.ring135,dressItems.ring136,dressItems.ring84,dressItems.ring109,dressItems.ring111,dressItems.ring113,dressItems.ring114,dressItems.ring130,dressItems.ring131,dressItems.ring119,dressItems.ring120,dressItems.ring121,dressItems.ring122,dressItems.aring8,dressItems.aring12,dressItems.aring2,dressItems.aring1_99,dressItems.aring9,dressItems.aring10,dressItems.aring11,dressItems.aring5,dressItems.aring13_snsfh4,dressItems.ring89,dressItems.aring3,dressItems.ring200,dressItems.ring207,dressItems.ring201,dressItems.ring202,dressItems.ring203,dressItems.ring2008,dressItems.ring210,dressItems.ring211,dressItems.ring208,dressItems.ring209,dressItems.ring204,dressItems.ring206,dressItems.ring213,dressItems.ring214,dressItems.ring215,dressItems.ring_illusion1,dressItems.ring_illusion2,dressItems.aring100,dressItems.ring137,dressItems.ring139,dressItems.ring140,dressItems.ring141)},
 	//combatscrolls:{id: 'combatscrolls', caption: 'Боевые и защитные заклятия', slot: 'w100', items: new Array(dressItems.spell_luck_300_1,dressItems.spell_luck_300_100,dressItems.mirror,dressItems.antimirror,dressItems.cureHP15,dressItems.cureHP30,dressItems.cureHP45,dressItems.cureHP60,dressItems.cureHP120,dressItems.cureHP600,dressItems.cureHP900_1,dressItems.cureHP1200_1,dressItems.cureHP1500_1,dressItems.note,dressItems.submission,dressItems.nature_burn,dressItems.preservation,dressItems.reanimationL,dressItems.reanimation,dressItems.preservationD,dressItems.closesphere,dressItems.dispell,dressItems.retreat,dressItems.spell_death,dressItems.joke_battlelog,dressItems.elementalcrit,dressItems.staff_enc8,dressItems.snowball1,dressItems.spell_seduct,dressItems.cureMana50,dressItems.spell_powerup10,dressItems.spell_powerup1,dressItems.spell_powerup2,dressItems.spell_powerup3,dressItems.spell_powerup4,dressItems.spell_protect10,dressItems.spell_protect1,dressItems.spell_protect2,dressItems.spell_protect3,dressItems.spell_protect4,dressItems.spell_undamage10,dressItems.spell_unprotect10,dressItems.spell_unprotect,dressItems.spell_ug_unp10c, dressItems.spell_ug_undam1c,dressItems.spell_ug_undam2c,dressItems.spell_ug_undam3c,dressItems.spell_ug_undam4c,dressItems.spell_ug_unexprc,dressItems.dispell1,  dressItems.cureMana100,dressItems.cureMana1000,dressItems.invoke_create_lesserbloodstone,dressItems.invoke_create_bloodstone)},
 	//auxiliaryscrolls:{id: 'auxiliaryscrolls', caption: 'Нейтральные заклятия', slot: 'w100', items: new Array (dressItems.silence60,dressItems.fsleep,dressItems.haos,dressItems.death,dressItems.cureelixir,dressItems.paper100,dressItems.paper200,dressItems.paper500,dressItems.attack,dressItems.attackk,dressItems.attackb,dressItems.attackt,dressItems.chesnok,dressItems.chesnok2,dressItems.cure_g1,dressItems.teleport,dressItems.teleport_some,dressItems.sharpen_sword_1,dressItems.sharpen_sword_2,dressItems.sharpen_sword_3,dressItems.sharpen_sword_4,dressItems.sharpen_sword_5,dressItems.sharpen_knife_1,dressItems.sharpen_knife_2,dressItems.sharpen_knife_3,dressItems.sharpen_knife_4,dressItems.sharpen_knife_5,dressItems.sharpen_axe_1,dressItems.sharpen_axe_2,dressItems.sharpen_axe_3,dressItems.sharpen_axe_4,dressItems.sharpen_axe_5,dressItems.sharpen_molot_1,dressItems.sharpen_molot_2,dressItems.sharpen_molot_3,dressItems.sharpen_molot_4,dressItems.sharpen_molot_5,dressItems.sharpen_staff_1,dressItems.sharpen_staff_2,dressItems.sharpen_staff_3,dressItems.sharpen_staff_4,dressItems.sharpen_staff_5,dressItems.sharpen_all_7,dressItems.sharpen_all_10,dressItems.hidden,dressItems.illusion,dressItems.undef,dressItems.scanner,dressItems.trap,dressItems.chains,dressItems.osinkol,dressItems.build_in,dressItems.bloodyelement,dressItems.box_lock,dressItems.travma,dressItems.downgrade,dressItems.open_present_val,dressItems.shout,dressItems.spell_luck,/*dressItems.spell_godstat_str,dressItems.spell_godstat_dex,dressItems.spell_godstat_inst,dressItems.spell_godprotect10,dressItems.spell_godprotect,dressItems.invoke_spell_godintel100,dressItems.invoke_spell_godmana100,dressItems.spell_starshine,dressItems.spell_startenacity,*/dressItems.spell_starenergy,dressItems.spell_stat_intel,dressItems.invoke_plain_1s_str10,dressItems.invoke_plain_1s_dex10,dressItems.invoke_plain_1s_inst10,dressItems.invoke_plain_1s_intel10,dressItems.invoke_plain_1s_all5,dressItems.invoke_plain_1s_spirit10,dressItems.spell_powerHPup1,dressItems.spell_powerHPup2,dressItems.spell_powerHPup3,dressItems.spell_powerHPup4,dressItems.spell_powerHPup5,dressItems.spell_powerHPdn1,dressItems.spell_powerHPdn2,dressItems.spell_powerHPdn3,dressItems.spell_powerHPdn4,dressItems.spell_powerHPdn5,dressItems.spell_ritual001,dressItems.jail,dressItems.joke_system,dressItems.joke_block,dressItems.joke_name,dressItems.joke_items,dressItems.joke_stat,dressItems.spell_curse,dressItems.spell_curseb,dressItems.d_blat_6,dressItems.d_blat24,dressItems.pet_rename,dressItems.spell_curset,dressItems.spell_cursek,dressItems.sealroom,dressItems.spell_freedom30,dressItems.invoke_snowball_start,dressItems.spell_kissofkassandra1)},

@@ -7607,17 +7607,17 @@ upgrade: {
 		setlink: {name:'losttime'}
 	, upgrade: {
 	belt37_1: {id:'belt37_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Забытых Времен [10]',binding:'bop',baseitem:'belt37',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt37:{id:'belt37',caption:'Пояс Забытых Времен',count:1}}},
-		common: {weight:2,price:168,durability:50},
+		common: {weight:2,price:240,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,sandreputation:10000},
-		modify: {magicdefence:25,crushdefence:25,hitpoints:121,waistarmor1:21,waistarmor2:80,waistarmorf:20,waistarmorm:1,waistarmord:60,jumpaway:-100,criticalhit:-100},
+		modify: {magicdefence:25,crushdefence:25,hitpoints:121,waistarmor1:71,waistarmor2:130,waistarmorf:70,waistarmorm:1,waistarmord:60,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10'}
 	}}
 
 	},
 	belt37_1: {id:'belt37_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Забытых Времен [10]',binding:'bop',baseitem:'belt37',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt37:{id:'belt37',caption:'Пояс Забытых Времен',count:1}}},
-		common: {weight:2,price:168,durability:50},
+		common: {weight:2,price:240,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,sandreputation:10000},
-		modify: {magicdefence:25,crushdefence:25,hitpoints:121,waistarmor1:21,waistarmor2:80,waistarmorf:20,waistarmorm:1,waistarmord:60,jumpaway:-100,criticalhit:-100},
+		modify: {magicdefence:25,crushdefence:25,hitpoints:121,waistarmor1:71,waistarmor2:130,waistarmorf:70,waistarmorm:1,waistarmord:60,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10'}
 	},
 	belt38_du2: {id:'belt38_du2',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:4}}}},

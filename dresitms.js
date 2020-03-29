@@ -7627,17 +7627,17 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	belt38_du2_1: {id:'belt38_du2_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Утреннего Солнца [10]',binding:'bop',baseitem:'belt38_du2',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt38_du2:{id:'belt38_du2',caption:'Пояс Утреннего Солнца',count:1}}},
-		common: {weight:1,price:168,durability:50},
+		common: {weight:1,price:240,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,sandreputation:10000},
-		modify: {anticriticalhit:40,firemagicdefence:20,defence:30,watermagicdefence:-10,hitpoints:42,strength:4,waistarmor1:21,waistarmor2:75,waistarmorf:20,waistarmorm:1,waistarmord:55,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:40,firemagicdefence:0,defence:30,watermagicdefence:0,hitpoints:42,strength:4,waistarmor1:21,waistarmor2:75,waistarmorf:20,waistarmorm:1,waistarmord:55,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	}}
 
 	},
 	belt38_du2_1: {id:'belt38_du2_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Утреннего Солнца [10]',binding:'bop',baseitem:'belt38_du2',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt38_du2:{id:'belt38_du2',caption:'Пояс Утреннего Солнца',count:1}}},
-		common: {weight:1,price:168,durability:50},
+		common: {weight:1,price:240,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,sandreputation:10000},
-		modify: {anticriticalhit:40,firemagicdefence:20,defence:30,watermagicdefence:-10,hitpoints:42,strength:4,waistarmor1:21,waistarmor2:75,waistarmorf:20,waistarmorm:1,waistarmord:55,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:40,firemagicdefence:0,defence:30,watermagicdefence:0,hitpoints:42,strength:4,waistarmor1:21,waistarmor2:75,waistarmorf:20,waistarmorm:1,waistarmord:55,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	},
 	belt39: {id:'belt39',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Решимости',requireditems:{shop:{exchanger:'shop', items: {mater26:{id:'mater26',caption:'Кристалл стабильности',count:1},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:4}}}},
@@ -8958,17 +8958,17 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	clip82_du2_1: {id:'clip82_du2_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Утреннего Солнца [10]',binding:'bop',baseitem:'clip82_du2',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip82_du2:{id:'clip82_du2',caption:'Серьги Утреннего Солнца',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,demonsreputation:10000},
-		modify: {anticriticalhit:45,antijumpaway:40,power:12,weaponskill:1,magicdefence:40,firemagicdefence:20,watermagicdefence:-10,strength:6,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:45,antijumpaway:40,power:12,weaponskill:1,magicdefence:40,firemagicdefence:0,watermagicdefence:0,strength:6,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	}}
 
 	},
 	clip82_du2_1: {id:'clip82_du2_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Утреннего Солнца [10]',binding:'bop',baseitem:'clip82_du2',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip82_du2:{id:'clip82_du2',caption:'Серьги Утреннего Солнца',count:1}}},
-		common: {weight:1,price:240,durability:50},
+		common: {weight:1,price:300,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,demonsreputation:10000},
-		modify: {anticriticalhit:45,antijumpaway:40,power:12,weaponskill:1,magicdefence:40,firemagicdefence:20,watermagicdefence:-10,strength:6,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:45,antijumpaway:40,power:12,weaponskill:1,magicdefence:40,firemagicdefence:0,watermagicdefence:0,strength:6,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	},
 	clip89: {id:'clip89',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater29:{id:'mater29',caption:'Лучистый топаз',count:2}}}},
@@ -9513,17 +9513,17 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	amulet83_du2_1: {id:'amulet83_du2_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Утреннего Солнца [10]',binding:'bop',baseitem:'amulet83_du2',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet83_du2:{id:'amulet83_du2',caption:'Ожерелье Утреннего Солнца',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:110,parry:12,magicdefence:30,firemagicdefence:20,watermagicdefence:-10,hitpoints:80,strength:8,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:110,parry:12,magicdefence:30,firemagicdefence:0,watermagicdefence:0,hitpoints:80,strength:8,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	}}
 
 	},
 	amulet83_du2_1: {id:'amulet83_du2_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Утреннего Солнца [10]',binding:'bop',baseitem:'amulet83_du2',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet83_du2:{id:'amulet83_du2',caption:'Ожерелье Утреннего Солнца',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:110,parry:12,magicdefence:30,firemagicdefence:20,watermagicdefence:-10,hitpoints:80,strength:8,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:110,parry:12,magicdefence:30,firemagicdefence:0,watermagicdefence:0,hitpoints:80,strength:8,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	},
 	amulet86: {id:'amulet86',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Пожирающего Пламени',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2},mater7:{id:'mater7',caption:'Слиток пустынной руды',count:4}}}},
@@ -9577,14 +9577,14 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	amulet98_1: {id:'amulet98_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Скорпиона [10]',binding:'bop',baseitem:'amulet98',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet98:{id:'amulet98',caption:'Амулет Скорпиона',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:60,antijumpaway:70,parry:5,magicdefence:40,defence:60,hitpoints:84,strength:1},
 		setlink: {name:'scorpion10'}
 	}}
 	},
 	amulet98_1: {id:'amulet98_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Скорпиона [10]',binding:'bop',baseitem:'amulet98',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet98:{id:'amulet98',caption:'Амулет Скорпиона',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:60,antijumpaway:70,parry:5,magicdefence:40,defence:60,hitpoints:84,strength:1},
 		setlink: {name:'scorpion10'}
@@ -10329,7 +10329,7 @@ upgrade: {
 		setlink: {name:'morningsun',count:3}
 	, upgrade: {
 	ring119_du2_1: {id:'ring119_du2_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Утреннего Солнца [10]',binding:'bop',baseitem:'ring119_du2',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring119_du2:{id:'ring119_du2',caption:'Кольцо Утреннего Солнца',count:1}}},
-		common: {weight:1,price:120,durability:50},
+		common: {weight:1,price:180,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,angelsreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:35,parry:3,hitpoints:40,strength:3,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10',count:3}
@@ -10337,7 +10337,7 @@ upgrade: {
 
 	},
 	ring119_du2_1: {id:'ring119_du2_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Утреннего Солнца [10]',binding:'bop',baseitem:'ring119_du2',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring119_du2:{id:'ring119_du2',caption:'Кольцо Утреннего Солнца',count:1}}},
-		common: {weight:1,price:120,durability:50},
+		common: {weight:1,price:180,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,angelsreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:35,parry:3,hitpoints:40,strength:3,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10',count:3}

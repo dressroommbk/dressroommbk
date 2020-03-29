@@ -7181,16 +7181,16 @@ upgrade: {
 		setlink: {name:'misdeed'}
 	, upgrade: {
 	braslet31_1: {id:'braslet31_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Злодеяний [10]',binding:'bop',baseitem:'braslet31',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet31:{id:'braslet31',caption:'Наручи Злодеяний',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,sandreputation:10000},
-		modify: {anticriticalhit:25,criticalhit:65,counterstroke:17,dexterity:2,intuition:2,weaponskill:1,hitpoints:24},
+		modify: {anticriticalhit:25,criticalhit:65,counterstroke:17,dexterity:2,intuition:2,weaponskill:1,hitpoints:24,headarmor1:23,headarmor2:22,headarmorf:23,headarmorm:1,headarmord:0,waistarmor1:23,waistarmor2:22,waistarmorf:23,waistarmorm:1,waistarmord:0},
 		setlink: {name:'misdeed10'}
 	}}
 	},
 	braslet31_1: {id:'braslet31_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Злодеяний [10]',binding:'bop',baseitem:'braslet31',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},braslet31:{id:'braslet31',caption:'Наручи Злодеяний',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,sandreputation:10000},
-		modify: {anticriticalhit:25,criticalhit:65,counterstroke:17,dexterity:2,intuition:2,weaponskill:1,hitpoints:24},
+		modify: {anticriticalhit:25,criticalhit:65,counterstroke:17,dexterity:2,intuition:2,weaponskill:1,hitpoints:24,headarmor1:23,headarmor2:22,waistarmor1:23,waistarmor2:22},
 		setlink: {name:'misdeed10'}
 	},
 	braslet32: {id:'braslet32',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater3:{id:'mater3',caption:'Серебро',count:3}}}},
@@ -7670,7 +7670,7 @@ upgrade: {
 		setlink: {name:'misdeed'}
 	, upgrade: {
 	belt43_1: {id:'belt43_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Злодеяний [10]',binding:'bop',baseitem:'belt43',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt43:{id:'belt43',caption:'Пояс Злодеяний',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,sandreputation:10000},
 		modify: {anticriticalhit:30,counterstroke:17,magicdefence:35,hitpoints:20,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
 		setlink: {name:'misdeed10'}
@@ -7678,7 +7678,7 @@ upgrade: {
 
 	},
 	belt43_1: {id:'belt43_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Злодеяний [10]',binding:'bop',baseitem:'belt43',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt43:{id:'belt43',caption:'Пояс Злодеяний',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,sandreputation:10000},
 		modify: {anticriticalhit:30,counterstroke:17,magicdefence:35,hitpoints:20,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
 		setlink: {name:'misdeed10'}
@@ -10553,8 +10553,9 @@ upgrade: {
 					bodyarmor2:5,bodyarmorm:1,bodyarmord:5,waistarmor1:1,waistarmor2:5,waistarmorm:1,waistarmord:5,legarmor1:1,legarmor2:5,legarmorm:1,legarmord:5,defence:225,magicdefence:150}
 	},
 	aring9: {id:'aring9',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Могучего Воина',artefact:true,
-		common: {weight:1, eprice:100000},
-		modify: {hitpoints:1500}
+		common: {weight:1, eprice:3000,durability: 500},
+		required: {level: 10},
+		modify: {strength:12,dexterity:12,intuition:12,hitpoints:1500,criticalhit:100,anticriticalhit:100,criticalpower:25,jumpaway:100,antijumpaway:100,weaponskill:4,defence:200,magicdefence:150,power:10}
 	},
 	aring10: {id:'aring10',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Жизни',artefact:true,old:true,
 		common: {weight:1,price:209,eprice:3000,durability:500},

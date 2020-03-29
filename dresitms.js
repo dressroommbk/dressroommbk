@@ -9493,17 +9493,17 @@ upgrade: {
 		modify: {strength:10,hitpoints:250}
 	},
 	amulet81_1: {id:'amulet81_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Забытых Времен [10]',binding:'bop',baseitem:'amulet81',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet81:{id:'amulet81',caption:'Амулет Забытых Времен',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:45,antijumpaway:45,magicdefence:50,hitpoints:118,strength:6,headarmor1:1,headarmor2:30,headarmorm:1,headarmord:30,bodyarmor1:1,bodyarmor2:30,bodyarmorm:1,bodyarmord:30,waistarmor1:1,waistarmor2:30,waistarmorm:1,waistarmord:30,legarmor1:1,legarmor2:30,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:45,antijumpaway:45,magicdefence:50,hitpoints:118,strength:6,headarmor1:31,headarmor2:60,headarmorm:30,headarmord:30,bodyarmor1:31,bodyarmor2:60,bodyarmorm:30,bodyarmord:30,waistarmor1:31,waistarmor2:60,waistarmorm:30,waistarmord:30,legarmor1:31,legarmor2:60,legarmorm:30,legarmord:30,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10'}
 	}}
 
 	},
 	amulet81_1: {id:'amulet81_1',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Забытых Времен [10]',binding:'bop',baseitem:'amulet81',clist:{anvil2_ang:{sp_mat7:{id:'sp_mat7',caption:'Сущность Ожерелья',count:1},mater262:{id:'mater262',caption:'Осколок бездны',count:1},amulet81:{id:'amulet81',caption:'Амулет Забытых Времен',count:1}}},
-		common: {weight:1,price:288,durability:50},
+		common: {weight:1,price:340,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:45,antijumpaway:45,magicdefence:50,hitpoints:118,strength:6,headarmor1:1,headarmor2:30,headarmorm:1,headarmord:30,bodyarmor1:1,bodyarmor2:30,bodyarmorm:1,bodyarmord:30,waistarmor1:1,waistarmor2:30,waistarmorm:1,waistarmord:30,legarmor1:1,legarmor2:30,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:45,antijumpaway:45,magicdefence:50,hitpoints:118,strength:6,headarmor1:31,headarmor2:60,headarmorm:30,headarmord:30,bodyarmor1:31,bodyarmor2:60,bodyarmorm:30,bodyarmord:30,waistarmor1:31,waistarmor2:60,waistarmorm:30,waistarmord:30,legarmor1:31,legarmor2:60,legarmorm:30,legarmord:30,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10'}
 	},
 	amulet83_du2: {id:'amulet83_du2',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:2}}}},

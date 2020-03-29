@@ -7079,7 +7079,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	naruchi76_1: {id:'naruchi76_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Паука [10]',binding:'bop',baseitem:'naruchi76',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},naruchi76:{id:'naruchi76',caption:'Наручи Паука',count:1}}},
-		common: {weight:2,price:168,durability:30},
+		common: {weight:2,price:240,durability:30},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:35,antijumpaway:35,power:17,intellect:1,hitpoints:26},
 		setlink: {name:'spider10'}
@@ -7087,7 +7087,7 @@ upgrade: {
 
 	},
 	naruchi76_1: {id:'naruchi76_1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Паука [10]',binding:'bop',baseitem:'naruchi76',clist:{anvil_sand:{sp_mat5:{id:'sp_mat5',caption:'Сущность Браслета',count:1},mater275:{id:'mater275',caption:'Песок просвета',count:1},naruchi76:{id:'naruchi76',caption:'Наручи Паука',count:1}}},
-		common: {weight:2,price:168,durability:30},
+		common: {weight:2,price:240,durability:30},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:35,antijumpaway:35,power:17,intellect:1,hitpoints:26},
 		setlink: {name:'spider10'}
@@ -7567,7 +7567,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	belt35_1: {id:'belt35_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Паука [10]',binding:'bop',baseitem:'belt35',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt35:{id:'belt35',caption:'Пояс Паука',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:55,jumpaway:15,magicdefence:25,hitpoints:41,strength:4,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
 		setlink: {name:'spider10'}
@@ -7575,7 +7575,7 @@ upgrade: {
 
 	},
 	belt35_1: {id:'belt35_1',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Паука [10]',binding:'bop',baseitem:'belt35',clist:{anvil_sand:{sp_mat13:{id:'sp_mat13',caption:'Сущность пояса',count:1},mater276:{id:'mater276',caption:'Песчаная руда',count:1},belt35:{id:'belt35',caption:'Пояс Паука',count:1}}},
-		common: {weight:2,price:168,durability:40},
+		common: {weight:2,price:240,durability:40},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:55,jumpaway:15,magicdefence:25,hitpoints:41,strength:4,waistarmor1:21,waistarmor2:70,waistarmorf:20,waistarmorm:1,waistarmord:50},
 		setlink: {name:'spider10'}
@@ -10309,17 +10309,17 @@ upgrade: {
 		setlink: {name:'losttime',count:3}
 	, upgrade: {
 	ring117_1: {id:'ring117_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Забытых Времен [10]',binding:'bop',baseitem:'ring117',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring117:{id:'ring117',caption:'Кольцо Забытых Времен',count:1}},anvil1_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater4:{id:'mater4',caption:'Лучистое серебро',count:1},mater16:{id:'mater16',caption:'Глубинный камень',count:3},mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},ring117:{id:'ring117',caption:'Кольцо Забытых Времен',count:1}}},
-		common: {weight:1,price:120,durability:60},
+		common: {weight:1,price:180,durability:60},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:20,antijumpaway:10,defence:25,hitpoints:66,headarmor1:1,headarmor2:15,headarmorm:1,headarmord:15,bodyarmor1:1,bodyarmor2:15,bodyarmorm:1,bodyarmord:15,waistarmor1:1,waistarmor2:15,waistarmorm:1,waistarmord:15,legarmor1:1,legarmor2:15,legarmorm:1,legarmord:15,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:20,antijumpaway:10,defence:25,hitpoints:66,headarmor1:16,headarmor2:30,headarmorm:15,headarmord:15,bodyarmor1:16,bodyarmor2:30,bodyarmorm:15,bodyarmord:15,waistarmor1:16,waistarmor2:30,waistarmorm:15,waistarmord:15,legarmor1:16,legarmor2:30,legarmorm:15,legarmord:15,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10',count:3},setlinks:['losttime10','losttime']
 	}}
 
 	},
 	ring117_1: {id:'ring117_1',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Забытых Времен [10]',binding:'bop',baseitem:'ring117',clist:{anvil2_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater261:{id:'mater261',caption:'Слиток света',count:1},ring117:{id:'ring117',caption:'Кольцо Забытых Времен',count:1}},anvil1_ang:{sp_mat3:{id:'sp_mat3',caption:'Сущность Кольца',count:1},mater4:{id:'mater4',caption:'Лучистое серебро',count:1},mater16:{id:'mater16',caption:'Глубинный камень',count:3},mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},ring117:{id:'ring117',caption:'Кольцо Забытых Времен',count:1}}},
-		common: {weight:1,price:120,durability:60},
+		common: {weight:1,price:180,durability:60},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,angelsreputation:10000},
-		modify: {anticriticalhit:20,antijumpaway:10,defence:25,hitpoints:66,headarmor1:1,headarmor2:15,headarmorm:1,headarmord:15,bodyarmor1:1,bodyarmor2:15,bodyarmorm:1,bodyarmord:15,waistarmor1:1,waistarmor2:15,waistarmorm:1,waistarmord:15,legarmor1:1,legarmor2:15,legarmorm:1,legarmord:15,jumpaway:-100,criticalhit:-100},
+		modify: {anticriticalhit:20,antijumpaway:10,defence:25,hitpoints:66,headarmor1:16,headarmor2:30,headarmorm:15,headarmord:15,bodyarmor1:16,bodyarmor2:30,bodyarmorm:15,bodyarmord:15,waistarmor1:16,waistarmor2:30,waistarmorm:15,waistarmord:15,legarmor1:16,legarmor2:30,legarmorm:15,legarmord:15,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10',count:3},setlinks:['losttime10','losttime']
 	},
 	ring119_du2: {id:'ring119_du2',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1}}}},

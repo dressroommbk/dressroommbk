@@ -28,9 +28,13 @@ var offlineCookieId = "offlinecookie";
 var menuImageIdPrefix = 'mnudrs_';
 var hpMeterSuffix = '_HP';
 var manaMeterSuffix = '_MP';
-var minSharpLevels=[0,0,0,0,1,2,3,4,5,6,0,8];
-var regSharpPrices=[0,20,40,80,0,320,640,1000,2000,3000,0,5000];
-var dblSharpPrices=[0,40,80,160,320,640,1280,2000,4000,6000,0,10000];
+var minSharpLevels=[1,1,1,1,1,1,1,1,1,1,1,1];
+
+var regSharpPrices = [0,20,40,80,160,320,640,1000,2000,3000,0,5000];
+var dblSharpPrices = [0,40,80,160,320,640,1280,2000,4000,6000,0,10000];
+
+var impRegSharpPrices = [0,0,0,0,0,0,10,20,50,65,0,200];
+var impReqMagSharpPrices = [0,0,0,0,0,0,20,40,100,130,0,300];
 
 var benderOmsk = {
 	saveLink: 'benderomsk://save?name={0}&value={1}',
@@ -1097,7 +1101,8 @@ function onSharpeningMenu(slotid, minlevel, allownew, isstf, isdbl)
 	//var menuHtml  ='<table width="360px" border="0"><tr><td valign="middle" align="center"><table width="180px" border="0">';
 	var menuHtml  ='<table width="180px" border="0"><tr><td valign="middle" align="center"><table width="100%" border="0">';
 	menuHtml += getRowMenuItemHtml(localizer.noSharpening, format("onSharpWeapon('{0}', '{1}', 0)", state.id, slot.id));
-	if (allownew == 1)
+	
+	/*if (allownew == 1)
 	{
 	menuHtml += getRowMenuSeparatorHtml();
 	if (isstf != 1) { menuHtml += getRowMenuItemHtml(format('{0} +1', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 101)", state.id, slot.id)); }
@@ -1111,7 +1116,7 @@ function onSharpeningMenu(slotid, minlevel, allownew, isstf, isdbl)
 	if (minlevel >=6) { menuHtml += getRowMenuItemHtml(format('{0} +9', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 109)", state.id, slot.id)); }
 	if (minlevel >=8) { menuHtml += getRowMenuItemHtml(format('{0} +11', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 111)", state.id, slot.id)); }
 	}
-	/*menuHtml += '</table></td><td valign="middle" align="center"><table width="180px" border="0">';
+	menuHtml += '</table></td><td valign="middle" align="center"><table width="180px" border="0">';
 	menuHtml += getRowMenuItemHtml(format('{0} +1 [old]', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 1)", state.id, slot.id));
 	menuHtml += getRowMenuItemHtml(format('{0} +2 [old]', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 2)", state.id, slot.id));
 	menuHtml += getRowMenuItemHtml(format('{0} +3 [old]', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 3)", state.id, slot.id));
@@ -1122,6 +1127,21 @@ function onSharpeningMenu(slotid, minlevel, allownew, isstf, isdbl)
 	menuHtml += '</table></td></tr><tr><td colspan="2" align="middle"><table align="center" width="360" border="0">';
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, 'hideMenu()');*/
+	
+	var o = getObjectByStateSlot(state, slot);
+	
+	menuHtml += getRowMenuSeparatorHtml();
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 1)) { menuHtml += getRowMenuItemHtml(format('{0} +1', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 101)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 2)) { menuHtml += getRowMenuItemHtml(format('{0} +2', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 102)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 3)) { menuHtml += getRowMenuItemHtml(format('{0} +3', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 103)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 4)) { menuHtml += getRowMenuItemHtml(format('{0} +4', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 104)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 5)) { menuHtml += getRowMenuItemHtml(format('{0} +5', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 105)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 6)) { menuHtml += getRowMenuItemHtml(format('{0} +6', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 106)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 7)) { menuHtml += getRowMenuItemHtml(format('{0} +7', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 107)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 8)) { menuHtml += getRowMenuItemHtml(format('{0} +8', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 108)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 9)) { menuHtml += getRowMenuItemHtml(format('{0} +9', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 109)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 11)) { menuHtml += getRowMenuItemHtml(format('{0} +11', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 111)", state.id, slot.id)); }
+	
 	menuHtml += '</table></td></tr></table>';
 	cursorY -= 200;
 	showMenu(menuHtml);
@@ -7847,6 +7867,25 @@ function compareSharpStats(x, y)
 	return r;
 }
 
+function checkSharpeningAllowed(category, imp1, twohandled, sharp)
+{
+	var result = true;
+	
+	if (imp1 === true) {
+		result = ([6, 7, 8, 9, 11].indexOf(sharp) != -1);
+	} else {
+		if (category === 'staffs') {
+			result = (sharp === 5);
+		} else if (twohandled === true) {
+			result = ([1,2,3,4,5].indexOf(sharp) != -1);
+		} else {
+			result = ([1,2,3,4,5,7].indexOf(sharp) != -1);
+		}
+	}	
+	
+	return result;
+}
+
 function getSharpenWeapon(weaponObject, sharp)
 {
 	if (sharp == 0 || weaponObject == null)
@@ -7857,6 +7896,18 @@ function getSharpenWeapon(weaponObject, sharp)
 	if (parseInt(sharp) == 11 || parseInt(sharp) == 8 || parseInt(sharp) == 6 || parseInt(sharp) == 9) { sharp=100+parseInt(sharp); }
 	var oldmode=1;
 	if (sharp > 100) { sharp-=100; oldmode = 0; }
+	
+	// check allowed sharpering
+	if (!('category' in weaponObject) || !('properties' in weaponObject)) {
+		alert("Can't check sharpening is allowed!");
+		return weaponObject;
+	}
+	
+	if (!checkSharpeningAllowed(weaponObject.category, ('imp1' in weaponObject && weaponObject.imp1 === true) || ('artefact' in weaponObject && weaponObject.artefact === true), 'twohandled' in weaponObject.properties, sharp)) {
+		alert("Sharpening is not allowed!");
+		return weaponObject;
+	}
+	
 	var sharpenWeapon = cloneObject(weaponObject);
 
 	// drop sharpening for non-lv10 arts
@@ -7888,7 +7939,9 @@ function getSharpenWeapon(weaponObject, sharp)
 	{
 		skillname = swcat.skillname;
 	}
-	var increaseReq = (skillname != null);
+	
+	// disable requirements increasing
+	/*var increaseReq = (skillname != null); 
 	if (increaseReq && ('required' in weaponObject))
 	{
 		if ('multiplier' in weaponObject.required)
@@ -7926,7 +7979,8 @@ function getSharpenWeapon(weaponObject, sharp)
 			skillv += sharp;
 			sharpenWeapon.required[skillname] = skillv;
 		}
-	}
+	}*/
+	
 	if (!('common' in sharpenWeapon))
 	{
 		sharpenWeapon.common = { price: 0 };
@@ -7938,9 +7992,9 @@ function getSharpenWeapon(weaponObject, sharp)
 			sharpenWeapon.common.price = 0;
 		}
 	}
-
-	if (oldmode != 1)
-		{
+	
+	// disable requirements increasing
+	/*if (oldmode != 1) { 
 		if (!('required' in sharpenWeapon))
 			{
 			sharpenWeapon.required = { level: 0 };
@@ -7953,29 +8007,31 @@ function getSharpenWeapon(weaponObject, sharp)
 					}
 				}
 		if (sharpenWeapon.required.level < minSharpLevels[sharp]) { sharpenWeapon.required.level = minSharpLevels[sharp]; }
-		}
+	}*/
 
-	if (oldmode==1)
-		{
-		if (sharp < 7)
-			{
+	if (oldmode==1) {
+		if (sharp < 7) {
 			sharpenWeapon.common.price += 10 * Math.pow(2, sharp);
-			}
-			else
-				{
-				sharpenWeapon.common.price += (1000 * (sharp - 6));
-				}
+		} else {
+			sharpenWeapon.common.price += (1000 * (sharp - 6));
 		}
-		else
-			{
-			if ('properties' in sharpenWeapon)
-				{
-				if ('twohandled' in sharpenWeapon.properties)
-					{ sharpenWeapon.common.price += dblSharpPrices[sharp]; }
-					else { sharpenWeapon.common.price += regSharpPrices[sharp]; }
-				}
-				else { sharpenWeapon.common.price += regSharpPrices[sharp]; }
+	} else {
+		if (('imp1' in sharpenWeapon && sharpenWeapon.imp1 === true) || ('artefact' in sharpenWeapon && sharpenWeapon.artefact === true)) {
+			if ('category' in sharpenWeapon && sharpenWeapon.category === 'staffs') {
+				sharpenWeapon.common.eprice += impReqMagSharpPrices[sharp];
+			} else {
+				sharpenWeapon.common.eprice += impRegSharpPrices[sharp];
 			}
+		} else if ('properties' in sharpenWeapon) {
+			if ('twohandled' in sharpenWeapon.properties) {
+				sharpenWeapon.common.price += dblSharpPrices[sharp];
+			} else {
+				sharpenWeapon.common.price += regSharpPrices[sharp];
+			}
+		} else { 
+			sharpenWeapon.common.price += regSharpPrices[sharp]; 
+		}
+	}
 
 	var generalSharp=1;
 	if ('category' in sharpenWeapon)

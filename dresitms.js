@@ -3260,11 +3260,10 @@ upgrade: {
 		attacks: {fire:'small',air:'small',water:'small',earth:'small'}
 	},
 	staff52: {id:'staff52',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Решимости',requireditems:{shop:{exchanger:'shop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:2}}}},
-		common: {weight:5,price:360,durability:50,probability:70},
+		common: {weight:5,price:360,durability:50},
 		required: {intellect:50,level:9,staffskill:3,mana:80,wisdom:50},
 		modify: {magicdefencereduce:2,magicpower:15,intellect:6,firemagicskill:1,airmagicskill:1,watermagicskill:1,earthmagicskill:1,defence:50,hitpoints:60,manaconsumption:3},
 		properties: {mindamage:1,maxdamage:20,twohandled:'yes',blockzones:'+'},
-		magic: {name:'cureHP60',caption:'Восстановление энергии 60HP',description:'6 шт. на бой'},
 		attacks: {fire:'always'},
 		setlink: {name:'determination'}
 	/*, upgrade: {

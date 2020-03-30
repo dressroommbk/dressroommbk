@@ -4450,11 +4450,11 @@ upgrade: {
 		modify: {anticriticalhit:30,earthmagicdefencereduce:1,earthmagicpower:5,intellect:2,staffskill:1,magicdefence:5,defence:20,hitpoints:30,mana:60}/*,
 		setlink: {name:'haughtiness'}*/
 	},
-	gloves301: {id:'gloves301',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Искушения',artefact:true,adjustment:true,
+	gloves301: {id:'gloves301',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Искушения',artefact:true,
 		common: {weight:1,durability:500,eprice:500},
 		modify: {mindamage:5,maxdamage:10,stats:30,hitpoints:100,criticalhit:100,anticriticalhit:100,criticalpower:10,jumpaway:100,antijumpaway:100,knifeskill:3,axeskill:3,staffskill:3,clubskill:3,swordskill:3,defence:100,magicdefence:100,power:10},
 	},
-	gloves302: {id:'gloves302',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Cупер магии',artefact:true,adjustment:true,
+	gloves302: {id:'gloves302',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Cупер магии',artefact:true,
 		common: {weight:1,durability:500,eprice:500},
 		modify: {stats:10,hitpoints:250,mana:500,anticriticalhit:50,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:12,defence:100,magicdefence:150,magicpower:50},
 	},	

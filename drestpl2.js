@@ -8217,10 +8217,13 @@ function onFitObject(stateId, slotId, setId)
 					menuHtml += getRowMenuItemHtml(sethtml, format("onFitObject('{0}', '{1}', '{2}')", state.id, slot.id, set.id));
 				}*/
 				
-				if (false) {
+				var sethtml = set.caption;
+				
+				/* Emulation of the bug with Arrogance set fitting */
+				if ((['helmet208', 'staff900', 'staff901', 'staff902', 'staff903', 'gloves208', 'roba201'].indexOf(o.id) != -1) && (set.id != 'determination10')) {
 					continue;
 				}
-				var sethtml = set.caption;
+				
 				menuHtml += getRowMenuItemHtml(sethtml, format("onFitObject('{0}', '{1}', '{2}')", state.id, slot.id, set.id));
 			}
 		}

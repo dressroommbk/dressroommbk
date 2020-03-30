@@ -3236,19 +3236,17 @@ upgrade: {
 		attacks: {fire:'sometimes',air:'sometimes'}
 	},
 	staff50: {id:'staff50',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Мага',
-		common: {weight:5,price:300,durability:50,probability:70},
+		common: {weight:5,price:300,durability:50},
 		required: {intellect:40,level:8,staffskill:3,mana:80,wisdom:40},
 		modify: {magicpower:10,intellect:5,magicskill:1,defence:50,hitpoints:33,manaconsumption:5},
 		properties: {mindamage:1,maxdamage:20,twohandled:'yes',blockzones:'+'},
-		magic: {name:'cureHP60',caption:'Восстановление энергии 60HP',description:'5 шт. на бой'},
 		attacks: {air:'always'}
 	},
 	staff51: {id:'staff51',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Паладина',alignment:'light',
-		common: {weight:5,price:330,durability:50,probability:70},
+		common: {weight:5,price:330,durability:50},
 		required: {level:8,intellect:40,wisdom:40,mana:100},
 		modify: {magicpower:10,intellect:5,magicskill:1,lightmagicskill:1,greymagicskill:1,magicdefence:20,defence:50,hitpoints:45,manaconsumption:5},
 		properties: {mindamage:1,maxdamage:20,twohandled:'yes'},
-		magic: {name:'cureHP600',caption:'Великое восстановление энергии',description:'1 шт. на бой'},
 		attacks: {light:'always'}
 	},
 	staff53: {id:'staff53',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Сохранения',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater21:{id:'mater21',caption:'Эссенция глубины',count:1},mater29:{id:'mater29',caption:'Лучистый топаз',count:3},mater4:{id:'mater4',caption:'Лучистое серебро',count:1}}}},
@@ -3256,7 +3254,6 @@ upgrade: {
 		required: {intellect:75,level:9,staffskill:3,wisdom:50},
 		modify: {anticriticalhit:100,intellect:5,magicskill:2,defence:40,magicdefence:40,hitpoints:150},
 		properties: {mindamage:1,maxdamage:20,twohandled:'yes',blockzones:'+'},
-		magic: {name:'cureMana100',caption:'Восстановление маны (100)',description:'Шанс срабатывания - 2% при каждом успешном ударе.'},
 		attacks: {fire:'small',air:'small',water:'small',earth:'small'}
 	},
 	staff52: {id:'staff52',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Решимости',requireditems:{shop:{exchanger:'shop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:2}}}},
@@ -4468,7 +4465,7 @@ upgrade: {
 	naruchi87: {id:'naruchi87',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Варежки',description:'С помощью этих варежек, вы можете слепить снежок на Центральной Площади.',
 		common: {weight:1,price:5,durability:30,expirationdate:60},
 		required: {level:2},
-		magic: {name:'invoke_snowball_start',caption:'Слепить снежок',description:'24 шт. в сутки'}
+		magic: {name:'invoke_snowball_start',caption:'Слепить снежок',description:'5 шт. в сутки'}
 	},
 	roba1: {id:'roba1',category:'shirts',slot:'wshirt',width:60,height:80,caption:'Рубашка',old:true,
 		common: {price:2,weight:1,durability:10},
@@ -10244,7 +10241,6 @@ upgrade: {
 		common: {weight:1,price:90,durability:40},
 		required: {dexterity:15,intuition:15,level:7,endurance:25,strength:20},
 		modify: {anticriticalhit:30,antijumpaway:30,hitpoints:33},
-		magic: {name:'nature_burn',caption:'Удар Стихий',description:'1 шт. на бой'}
 	},
 	ring125: {id:'ring125',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ищущего',
 		common: {weight:1,price:90,durability:50},

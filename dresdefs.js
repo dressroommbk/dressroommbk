@@ -54,6 +54,8 @@ var localizer =
 	unfitObject: 'Убрать подгонку под комплект',
 	sharpening: 'Заточка',
 	noSharpening: 'Без заточки',
+	staffSpelling: 'Заговор',
+	noStaffSpelling: 'Без заговора',
 	twohandledWeapon: '<font color="brown">Двуручное оружие.</font>',
 	secondaryWeapon: '<font color="darkgreen">Второе оружие.</font>',
 	blockZones: 'Зоны блокирования',

@@ -1097,10 +1097,16 @@ function onSharpeningMenu(slotid, minlevel, allownew, isstf, isdbl)
 	{
 		return;
 	}
-
+	
+	var o = getObjectByStateSlot(state, slot);
+	var actionTitle = localizer.sharpening, noActionTitle = localizer.noSharpening;
+	if('category' in o && o.category === 'staffs') {
+		actionTitle = localizer.staffSpelling;
+		noActionTitle = localizer.noStaffSpelling;
+	}
 	//var menuHtml  ='<table width="360px" border="0"><tr><td valign="middle" align="center"><table width="180px" border="0">';
 	var menuHtml  ='<table width="180px" border="0"><tr><td valign="middle" align="center"><table width="100%" border="0">';
-	menuHtml += getRowMenuItemHtml(localizer.noSharpening, format("onSharpWeapon('{0}', '{1}', 0)", state.id, slot.id));
+	menuHtml += getRowMenuItemHtml(noActionTitle, format("onSharpWeapon('{0}', '{1}', 0)", state.id, slot.id));
 	
 	/*if (allownew == 1)
 	{
@@ -1128,19 +1134,17 @@ function onSharpeningMenu(slotid, minlevel, allownew, isstf, isdbl)
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, 'hideMenu()');*/
 	
-	var o = getObjectByStateSlot(state, slot);
-	
 	menuHtml += getRowMenuSeparatorHtml();
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 1)) { menuHtml += getRowMenuItemHtml(format('{0} +1', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 101)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 2)) { menuHtml += getRowMenuItemHtml(format('{0} +2', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 102)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 3)) { menuHtml += getRowMenuItemHtml(format('{0} +3', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 103)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 4)) { menuHtml += getRowMenuItemHtml(format('{0} +4', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 104)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 5)) { menuHtml += getRowMenuItemHtml(format('{0} +5', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 105)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 6)) { menuHtml += getRowMenuItemHtml(format('{0} +6', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 106)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 7)) { menuHtml += getRowMenuItemHtml(format('{0} +7', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 107)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 8)) { menuHtml += getRowMenuItemHtml(format('{0} +8', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 108)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 9)) { menuHtml += getRowMenuItemHtml(format('{0} +9', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 109)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 11)) { menuHtml += getRowMenuItemHtml(format('{0} +11', localizer.sharpening), format("onSharpWeapon('{0}', '{1}', 111)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 1)) { menuHtml += getRowMenuItemHtml(format('{0} +1', actionTitle), format("onSharpWeapon('{0}', '{1}', 101)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 2)) { menuHtml += getRowMenuItemHtml(format('{0} +2', actionTitle), format("onSharpWeapon('{0}', '{1}', 102)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 3)) { menuHtml += getRowMenuItemHtml(format('{0} +3', actionTitle), format("onSharpWeapon('{0}', '{1}', 103)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 4)) { menuHtml += getRowMenuItemHtml(format('{0} +4', actionTitle), format("onSharpWeapon('{0}', '{1}', 104)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 5)) { menuHtml += getRowMenuItemHtml(format('{0} +5', actionTitle), format("onSharpWeapon('{0}', '{1}', 105)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 6)) { menuHtml += getRowMenuItemHtml(format('{0} +6', actionTitle), format("onSharpWeapon('{0}', '{1}', 106)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 7)) { menuHtml += getRowMenuItemHtml(format('{0} +7', actionTitle), format("onSharpWeapon('{0}', '{1}', 107)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 8)) { menuHtml += getRowMenuItemHtml(format('{0} +8', actionTitle), format("onSharpWeapon('{0}', '{1}', 108)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 9)) { menuHtml += getRowMenuItemHtml(format('{0} +9', actionTitle), format("onSharpWeapon('{0}', '{1}', 109)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 11)) { menuHtml += getRowMenuItemHtml(format('{0} +11', actionTitle), format("onSharpWeapon('{0}', '{1}', 111)", state.id, slot.id)); }
 	
 	menuHtml += '</table></td></tr></table>';
 	cursorY -= 200;
@@ -1329,8 +1333,12 @@ function onObjectClick(stateid, slotid)
 						isDouble=1;
 						}
 					}
-
-				menuHtml += getRowMenuItemHtml(localizer.sharpening, format("onSharpeningMenu('{0}','{1}','{2}','{3}','{4}')", slot.id, minlv, allowNewSharp, isStaff, isDouble));
+				
+				var actionTitle = localizer.sharpening;
+				if('category' in o && o.category === 'staffs') {
+					actionTitle = localizer.staffSpelling;		
+				}
+				menuHtml += getRowMenuItemHtml(actionTitle, format("onSharpeningMenu('{0}','{1}','{2}','{3}','{4}')", slot.id, minlv, allowNewSharp, isStaff, isDouble));
 			}
 		}
 

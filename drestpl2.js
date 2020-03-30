@@ -7632,7 +7632,7 @@ function getFittedObject(objectToFit, setIdToFit)
 		fittedObject.setlink.name = setIdToFit;
 	}
 	fittedObject.wasFit = true;
-    if ('common' in fittedObject)
+    /*if ('common' in fittedObject)
     {
         var upgradePrice = 0;
         if ('eprice' in fittedObject.common)
@@ -7654,7 +7654,7 @@ function getFittedObject(objectToFit, setIdToFit)
                 fittedObject.common.eprice = upgradePrice;
             }
         }
-    }
+    }*/
 	return fittedObject;
 }
 

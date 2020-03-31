@@ -3965,20 +3965,20 @@ upgrade: {
 	boots215: {id:'boots215',category:'boots',slot:'w12',width:60,height:40,caption:'Airy Boots of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:5,durability:30,eprice:14},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:25,airmagicpower:3,intellect:1,magicdefence:25,defence:15,hitpoints:15,mana:75,legarmor1:4,legarmor2:9,legarmorf:3,legarmorm:1,legarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:25,airmagicpower:3,intellect:1,magicdefence:25,defence:15,hitpoints:15,mana:75,legarmor1:4,legarmor2:9,legarmorf:3,legarmorm:1,legarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	boots216: {id:'boots216',category:'boots',slot:'w12',width:60,height:40,caption:'Fiery Boots of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:5,durability:30,eprice:14},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:25,firemagicpower:3,intellect:1,magicdefence:20,defence:20,hitpoints:20,mana:70,legarmor1:4,legarmor2:9,legarmorf:3,legarmorm:1,legarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:25,firemagicpower:3,intellect:1,magicdefence:20,defence:20,hitpoints:20,mana:70,legarmor1:4,legarmor2:9,legarmorf:3,legarmorm:1,legarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	boots217: {id:'boots217',category:'boots',slot:'w12',width:60,height:40,caption:'Earthen Boots of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:5,durability:30,eprice:14},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:25,earthmagicpower:3,intellect:1,magicdefence:15,defence:25,hitpoints:40,mana:50,legarmor1:4,legarmor2:9,legarmorf:3,legarmorm:1,legarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:25,earthmagicpower:3,intellect:1,magicdefence:15,defence:25,hitpoints:40,mana:50,legarmor1:4,legarmor2:9,legarmorf:3,legarmorm:1,legarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	boots_illusion1: {id:'boots_illusion1',category:'boots',slot:'w12',width:60,height:40,caption:'Светлые Туфли',description:'Иллюзия туфлей'
 	},
@@ -4429,8 +4429,8 @@ upgrade: {
 	gloves209: {id:'gloves209',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Airy Gloves of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:1,durability:30,eprice:13},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:20,airmagicdefencereduce:1,airmagicpower:5,intellect:2,staffskill:1,magicdefence:20,defence:5,hitpoints:20,mana:80}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:20,airmagicdefencereduce:1,airmagicpower:5,intellect:2,staffskill:1,magicdefence:20,defence:5,hitpoints:20,mana:80},
+		setlink: {name:'haughtiness'}
 	},
  	gloves210: {id:'gloves210',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Icy Gloves of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:1,durability:30,eprice:13},
@@ -4441,14 +4441,14 @@ upgrade: {
 	gloves211: {id:'gloves211',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Fiery Gloves of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:1,durability:30,eprice:13},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:20,firemagicdefencereduce:1,firemagicpower:5,intellect:2,staffskill:1,magicdefence:15,defence:10,hitpoints:25,mana:75}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:20,firemagicdefencereduce:1,firemagicpower:5,intellect:2,staffskill:1,magicdefence:15,defence:10,hitpoints:25,mana:75},
+		setlink: {name:'haughtiness'}
 	},
 	gloves212: {id:'gloves212',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Earthen Gloves of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:1,price:150,durability:30,eprice:13},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:30,earthmagicdefencereduce:1,earthmagicpower:5,intellect:2,staffskill:1,magicdefence:5,defence:20,hitpoints:30,mana:60}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:30,earthmagicdefencereduce:1,earthmagicpower:5,intellect:2,staffskill:1,magicdefence:5,defence:20,hitpoints:30,mana:60},
+		setlink: {name:'haughtiness'}
 	},
 	gloves301: {id:'gloves301',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Искушения',artefact:true,
 		common: {weight:1,durability:500,eprice:500},
@@ -4887,8 +4887,8 @@ upgrade: {
 	roba202: {id:'roba202',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Fiery Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:30,firemagicdefencereduce:3,firemagicpower:25,intellect:4,firemagicskill:2,magicdefence:25,defence:25,hitpoints:60,mana:140,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:30,firemagicdefencereduce:3,firemagicpower:25,intellect:4,firemagicskill:2,magicdefence:25,defence:25,hitpoints:60,mana:140,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
+		setlink: {name:'haughtiness'}
 	},
 	roba203: {id:'roba203',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Icy Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:5,durability:50,eprice:33},
@@ -4899,14 +4899,14 @@ upgrade: {
 	roba204: {id:'roba204',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Earthen Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:50,earthmagicdefencereduce:2,earthmagicpower:20,intellect:4,earthmagicskill:2,magicdefence:25,defence:35,hitpoints:70,mana:130,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:50,earthmagicdefencereduce:2,earthmagicpower:20,intellect:4,earthmagicskill:2,magicdefence:25,defence:35,hitpoints:70,mana:130,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
+		setlink: {name:'haughtiness'}
 	},
 	roba205: {id:'roba205',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Airy Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:30,airmagicdefencereduce:3,airmagicpower:20,intellect:4,airmagicskill:2,magicdefence:35,defence:25,hitpoints:50,mana:155,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:30,airmagicdefencereduce:3,airmagicpower:20,intellect:4,airmagicskill:2,magicdefence:35,defence:25,hitpoints:50,mana:155,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
+		setlink: {name:'haughtiness'}
 	},
 	arobe1: {id:'arobe1',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Роба Хаоса',adjustment:false,artefact:true,
 		common: {weight:5,eprice:200,durability:100},
@@ -6710,14 +6710,14 @@ upgrade: {
 	helmet209: {id:'helmet209',category:'helmets',slot:'w9',width:60,height:60,caption:'Earthen Hat of Haughtiness',imp1:true,adjustment:true,
 		common: {weight:2,durability:30,eprice:16},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {earthmagicdefencereduce:1,earthmagicpower:5,intellect:5,earthmagicskill:1,magicdefence:10,defence:25,hitpoints:55,mana:70,headarmor1:4,headarmor2:9,headarmorf:3,headarmorm:1,headarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {earthmagicdefencereduce:1,earthmagicpower:5,intellect:5,earthmagicskill:1,magicdefence:10,defence:25,hitpoints:55,mana:70,headarmor1:4,headarmor2:9,headarmorf:3,headarmorm:1,headarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	helmet210: {id:'helmet210',category:'helmets',slot:'w9',width:60,height:60,caption:'Airy Hat of Haughtiness',imp1:true,adjustment:true,
 		common: {weight:2,durability:30,eprice:16},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {airmagicdefencereduce:1,airmagicpower:5,intellect:5,airmagicskill:1,magicdefence:25,defence:10,hitpoints:35,mana:90,headarmor1:4,headarmor2:9,headarmorf:3,headarmorm:1,headarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {airmagicdefencereduce:1,airmagicpower:5,intellect:5,airmagicskill:1,magicdefence:25,defence:10,hitpoints:35,mana:90,headarmor1:4,headarmor2:9,headarmorf:3,headarmorm:1,headarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	helmet211: {id:'helmet211',category:'helmets',slot:'w9',width:60,height:60,caption:'Icy Hat of Haughtiness',imp1:true,adjustment:true,
 		common: {weight:2,durability:30,eprice:16},
@@ -6728,8 +6728,8 @@ upgrade: {
 	helmet212: {id:'helmet212',category:'helmets',slot:'w9',width:60,height:60,caption:'Fiery Hat of Haughtiness',imp1:true,adjustment:true,
 		common: {weight:2,durability:30,eprice:16},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {firemagicdefencereduce:1,firemagicpower:5,intellect:5,firemagicskill:1,magicdefence:15,defence:20,hitpoints:40,mana:85,headarmor1:4,headarmor2:9,headarmorf:3,headarmorm:1,headarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {firemagicdefencereduce:1,firemagicpower:5,intellect:5,firemagicskill:1,magicdefence:15,defence:20,hitpoints:40,mana:85,headarmor1:4,headarmor2:9,headarmorf:3,headarmorm:1,headarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	
 	glasses2: {id:'glasses2',category:'helmets',slot:'w9',width:60,height:60,caption:'Зеленые очки',imp1:true,adjustment:true,description:'«Очки из Священных Изумрудов. Храм Изумруда»<br>Необходимы для посещения Изумрудного Города',
@@ -7290,20 +7290,20 @@ upgrade: {
 	braslet210: {id:'braslet210',category:'bracelets',slot:'w13',width:60,height:40,caption:'Airy Cuffs of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:11},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {airmagicdefencereduce:1,airmagicpower:3,intellect:3,magicdefence:25,defence:5,hitpoints:15,mana:70}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {airmagicdefencereduce:1,airmagicpower:3,intellect:3,magicdefence:25,defence:5,hitpoints:15,mana:70},
+		setlink: {name:'haughtiness'}
 	},
    	braslet211: {id:'braslet211',category:'bracelets',slot:'w13',width:60,height:40,caption:'Fiery Cuffs of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:11},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {firemagicdefencereduce:1,firemagicpower:3,intellect:3,magicdefence:20,defence:10,hitpoints:20,mana:65}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {firemagicdefencereduce:1,firemagicpower:3,intellect:3,magicdefence:20,defence:10,hitpoints:20,mana:65},
+		setlink: {name:'haughtiness'}
 	},
 	braslet212: {id:'braslet212',category:'bracelets',slot:'w13',width:60,height:40,caption:'Earthen Cuffs of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:11},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {earthmagicdefencereduce:1,earthmagicpower:3,intellect:3,magicdefence:10,defence:20,hitpoints:35,mana:50}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {earthmagicdefencereduce:1,earthmagicpower:3,intellect:3,magicdefence:10,defence:20,hitpoints:35,mana:50},
+		setlink: {name:'haughtiness'}
 	},
 	naruchi_illusion1: {id:'naruchi_illusion1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Бриллиантовые Наручи',description:'Иллюзия наручей'
 	},
@@ -7768,8 +7768,8 @@ upgrade: {
 	belt208: {id:'belt208',category:'belts',slot:'w5',width:60,height:40,caption:'Airy Belt of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:10},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {airmagicpower:7,intellect:2,magicdefence:20,defence:10,hitpoints:15,mana:55,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {airmagicpower:7,intellect:2,magicdefence:20,defence:10,hitpoints:15,mana:55,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	belt209: {id:'belt209',category:'belts',slot:'w5',width:60,height:40,caption:'Icy Belt of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:10},
@@ -7780,14 +7780,14 @@ upgrade: {
    	belt210: {id:'belt210',category:'belts',slot:'w5',width:60,height:40,caption:'Fiery Belt of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:10},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {firemagicpower:7,intellect:2,magicdefence:20,defence:10,hitpoints:20,mana:50,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {firemagicpower:7,intellect:2,magicdefence:20,defence:10,hitpoints:20,mana:50,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	belt211: {id:'belt211',category:'belts',slot:'w5',width:60,height:40,caption:'Earthen Belt of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:1,durability:30,eprice:10},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {earthmagicpower:7,intellect:2,magicdefence:10,defence:20,hitpoints:30,mana:40,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {earthmagicpower:7,intellect:2,magicdefence:10,defence:20,hitpoints:30,mana:40,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6},
+		setlink: {name:'haughtiness'}
 	},
 	belt_illusion1: {id:'belt_illusion1',category:'belts',slot:'w5',width:60,height:40,caption:'Светлый Пояс',description:'Иллюзия пояса'
 	},
@@ -8112,20 +8112,20 @@ upgrade: {
 	legs42: {id:'legs42',category:'pants',slot:'w19',caption:'Airy Pants of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:13},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:15,airmagicpower:3,intellect:2,magicdefence:15,defence:5,hitpoints:20,mana:65,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:15,airmagicpower:3,intellect:2,magicdefence:15,defence:5,hitpoints:20,mana:65,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9},
+		setlink: {name:'haughtiness'}
 	},
 	legs43: {id:'legs43',category:'pants',slot:'w19',caption:'Fiery Pants of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:13},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:20,firemagicpower:3,intellect:2,magicdefence:10,defence:10,hitpoints:20,mana:60,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:20,firemagicpower:3,intellect:2,magicdefence:10,defence:10,hitpoints:20,mana:60,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9},
+		setlink: {name:'haughtiness'}
 	},
-	legs44: {id:'legs44',category:'pants',slot:'w19',caption:'Earthen Pants of Haughtiness ',imp1:true,adjustment:true,binding:'boe',
+	legs44: {id:'legs44',category:'pants',slot:'w19',caption:'Earthen Pants of Haughtiness',imp1:true,adjustment:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:13},
 		required: {intellect:25,level:8,wisdom:50},
-		modify: {anticriticalhit:25,earthmagicpower:3,intellect:2,magicdefence:5,defence:15,hitpoints:30,mana:45,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9}/*,
-		setlink: {name:'haughtiness'}*/
+		modify: {anticriticalhit:25,earthmagicpower:3,intellect:2,magicdefence:5,defence:15,hitpoints:30,mana:45,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9},
+		setlink: {name:'haughtiness'}
 	},
 
 	aleg2: {id:'aleg2',category:'pants',slot:'w19',caption:'Штаны Хаоса',adjustment:false,artefact:true,binding:'bop',
@@ -13814,7 +13814,66 @@ var dressSets = {
 			haughtiness_9: {id: 'haughtiness_9', required: {itemscount:9}, modify: {mana:25,hitpoints:25,anticriticalhit:25,magicskill:1,magicdefence:25,defence:25}},
 			haughtiness_7: {id: 'haughtiness_7', required: {minitemscount:7,maxitemscount:8}, modify: {mana:25,hitpoints:25,magicskill:1,anticriticalhit:25}},			
 			haughtiness_5: {id: 'haughtiness_5', required: {minitemscount:5,maxitemscount:6}, modify: {mana:25,hitpoints:25}}
-	}},
+		},
+		pvariants: [
+			[
+				{}, {},	{},
+				{id:'staff800', caption:'Fiery Staff of Haughtiness'},
+				{id:'roba202', caption:'Fiery Robe of Haughtiness'},
+				{id:'belt210', caption:'Fiery Belt of Haughtiness'},
+				{},	{},	{},
+				{id:'helmet212', caption:'Fiery Hat of Haughtiness'},
+				{},
+				{id:'gloves211', caption:'Fiery Gloves of Haughtiness'},
+				{id:'boots216', caption:'Fiery Boots of Haughtiness'},
+				{id:'braslet211', caption:'Fiery Cuffs of Haughtiness'},
+				{},	{},	{}, {}, {},	{}, {}, {}, {},	{},	{},	{},	{},	{},	{},	{},	{},
+				{id:'legs43', caption:'Fiery Pants of Haughtiness'}
+			],
+			[
+				{}, {},	{},
+				{id:'staff801', caption:'Icy Staff of Haughtiness'},
+				{id:'roba203', caption:'Icy Robe of Haughtiness'},
+				{id:'belt209', caption:'Icy Belt of Haughtiness'},
+				{},	{},	{},
+				{id:'helmet211', caption:'Icy Hat of Haughtiness'},
+				{},
+				{id:'gloves210', caption:'Icy Gloves of Haughtiness'},
+				{id:'boots214', caption:'Icy Boots of Haughtiness'},
+				{id:'braslet209', caption:'Icy Cuffs of Haughtiness'},
+				{},	{},	{}, {}, {},	{}, {}, {}, {},	{},	{},	{},	{},	{},	{},	{},	{},
+				{id:'legs41', caption:'Icy Pants of Haughtiness'}
+			],
+			[
+				{}, {},	{},
+				{id:'staff802', caption:'Eathern Staff of Haughtiness'},
+				{id:'roba204', caption:'Eathern Robe of Haughtiness'},
+				{id:'belt211', caption:'Eathern Belt of Haughtiness'},
+				{},	{},	{},
+				{id:'helmet209', caption:'Eathern Hat of Haughtiness'},
+				{},
+				{id:'gloves212', caption:'Eathern Gloves of Haughtiness'},
+				{id:'boots217', caption:'Eathern Boots of Haughtiness'},
+				{id:'braslet212', caption:'Eathern Cuffs of Haughtiness'},
+				{},	{},	{}, {}, {},	{}, {}, {}, {},	{},	{},	{},	{},	{},	{},	{},	{},
+				{id:'legs44', caption:'Eathern Pants of Haughtiness'}
+			],
+			[
+				{}, {},	{},
+				{id:'staff803', caption:'Airy Staff of Haughtiness'},
+				{id:'roba205', caption:'Airy Robe of Haughtiness'},
+				{id:'belt208', caption:'Airy Belt of Haughtiness'},
+				{},	{},	{},
+				{id:'helmet210', caption:'Airy Hat of Haughtiness'},
+				{},
+				{id:'gloves209', caption:'Airy Gloves of Haughtiness'},
+				{id:'boots215', caption:'Airy Boots of Haughtiness'},
+				{id:'braslet210', caption:'Airy Cuffs of Haughtiness'},
+				{},	{},	{}, {}, {},	{}, {}, {}, {},	{},	{},	{},	{},	{},	{},	{},	{},
+				{id:'legs42', caption:'Airy Pants of Haughtiness'}
+			]
+		],
+	},
 
  	notg: {id: 'notg', caption: 'Комплект Неприступного Утеса', count: 3, noadjust:true,
 		required: {level:10},

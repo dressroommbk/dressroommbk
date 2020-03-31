@@ -8477,6 +8477,16 @@ function getObjectsCountOfVariant(v)
 		if (v[i] != null)
 		{
 			r++;
+
+			// fix for twohandled weapons and staffs (only haughtiness)
+			if ('properties' in v[i]) {
+				let o = v[i];
+				if (('twohandled' in o.properties) && (o.properties.twohandled === 'yes') 
+					 && ('setlink' in o) && ('name' in o.setlink) && (o.setlink.name === 'haughtiness'))
+				{
+					r++;
+				}
+			}
 		}
 	}
 	return r;

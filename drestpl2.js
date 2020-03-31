@@ -6626,6 +6626,15 @@ function calcZoneModifiers(state)
 	{
 		state.results.defence.all += state.spellPowerUps.spell_protect10;
 	}
+	for (var delixn in state.damageElixes)
+	{
+		var delix = knownDamageElix[delixn];
+		if (!('modify' in delix)) continue;
+
+		if ('defence' in delix.modify) {
+			applyDefElix(state, 'edefence', delix.modify.defence);
+		}		
+	}
 	for (var mfname in knownZoneModifiers)
 	{
 		if (mfname == 'defence')
@@ -7197,8 +7206,8 @@ function recalcDresserState(state)
 		if ('anticriticalhit' in delix.modify) {
 			state.natural.anticriticalhit += delix.modify.anticriticalhit;
 		}
-		if ('defence' in delix.modify) {//??? wtf
-			state.modify.defence += delix.modify.defence;
+		if ('defence' in delix.modify) {
+			state.natural.defence += delix.modify.defence;
 		}
 		if ('magicdefence' in delix.modify) {
 			state.natural.magicdefence += delix.modify.magicdefence;
@@ -7377,14 +7386,14 @@ function recalcDresserState(state)
 			applyDefElix(state, delix.makeUp2, v2);
 		}
 	}
+	
 	// updating magic skills from natural intellect
 	for (var i = 0; i < allElements.length; i++)
 	{
 		var mfvalue= ((allElements[i]+'magicpower') in state.modify) ? state.modify[allElements[i] + 'magicpower'] : 0;
-		if ('intellect' in state.modify)
-  {
-   mfvalue += state.modify.intellect*0.5;
-   }
+		if ('intellect' in state.modify)  {
+			mfvalue += state.modify.intellect*0.5;
+		}
 		state.modify[allElements[i]+'magicpower'] = mfvalue;
 	}
 

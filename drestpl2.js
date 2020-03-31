@@ -3966,16 +3966,16 @@ function getDresserCommands(state)
 	var html = '<table cellpadding="0" cellspacing="0" border="0"><tr>';
 	//html += '<img src="http://upload.wikimedia.org/wikipedia/commons/e/e5/Crystal_Clear_app_x.png" width="32" height="32">'
 	html += getCell2MenuItemHtml(localizer.dropAll, 'onDropAll()');
-	html += getCell2MenuSeparatorHtml();	
+	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.clearAllStats, format("onClearAllStats('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.fitStats, format("onFitStats('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
-	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
-	html += getCell2MenuSeparatorHtml();
 	var s = localizer.dressFromCombats;
 	html += getCell2MenuItemHtml(localizer.dressCombatsSet, 'onDressAnyCombatsSet()');
-	html += getCell2MenuSeparatorHtml();	
+	html += getCell2MenuSeparatorHtml();
+	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
+	html += getCell2MenuSeparatorHtml();
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
 	html += getCell2MenuItemHtml(localizer.waddMenu, 'onWAddMenu()');	
 	if (!dressOptions.newCapEdition)

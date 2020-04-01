@@ -1144,9 +1144,9 @@ var knownAdds = {
 	};
 
 var knownDamageElix = {
-	pot_base_100_master: {id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, damage1: 25, damage2: 50, magicpower:50, magicdefencereduce:10}},
+	pot_base_100_master: {id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, mindamage: 25, maxdamage: 50, magicpower:50, magicdefencereduce:10}},
 	pot_base_1000_gl_absolute: {id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}},
-/*	pot_base_0_strup: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {power: 33, damage1: 25, damage2: 50}},
+/*	pot_base_0_strup: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {power: 33, mindamage: 25, maxdamage: 50}},
 	pot_base_0_strup_1: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {magicpower: 50, magicdefencereduce: 10}},
 	pot_base_0_ny3: {id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}},
 	pot_base_0_ny1: {id: 'pot_base_0_ny1', caption: 'Снадобье -Тарманка-', modify: {power: 15,hitpoints: 60}}*/
@@ -1232,7 +1232,7 @@ spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}*/
 	catbaff_regen: {modify: 'hpspeed', v: 30},
 	catbaff_life: {modify: 'hitpoints', v: 30},
 	catbaff_damage: {modify: 'maxdamage', v: 25},*/
-	catbaff_full: {v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,damage2:25}},
+	catbaff_full: {v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}},
 	mrbaff_makropus: {modify: 'hitpoints', v: 250},
 	mrbaff_gribnica: {v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
 	glbaff_ghost_1: {v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},

@@ -1167,7 +1167,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 	knife55_olditem: {id:'knife55_olditem',caption:'Кинжал Стального Рыцаря',old:true,
 		common: {weight:7,price:76,durability:50},
 		required: {intuition:21,level:5,knifeskill:3,endurance:11,strength:0,dexterity:21},
-		modify: {criticalpower:0,intuition:0,knifeskill:0,strength:0,counterstroke:15},
+		modify: {criticalpower:0,intuition:0,strength:0,counterstroke:15},
 		properties: {mindamage:4,maxdamage:11,antijumpaway:0,criticalhit:25,piercearmor:0,secondweapon:'yes'}
 	}}
 
@@ -1207,7 +1207,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		setlink: {name:'firedown'},
 		attacks: {fire:'rare',thrust:'routinely',cut:'rare'}
 	},
-	knife53: {id:'knife53',category:'knives',slot:'w3',width:60,height:60,caption:'Нож Паладина',alignment:'light',
+	knife53: {id:'knife53',category:'knives',slot:'w3',width:60,height:60,caption:'Нож Паладина',alignment:'light',old:true,
 		common: {weight:10,price:200,durability:50},
 		required: {dexterity:35,intuition:35,level:8,knifeskill:5,endurance:15,strength:15},
 		modify: {parry:5,dexterity:1,intuition:1},
@@ -1218,7 +1218,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:50,intuition:25,level:9,knifeskill:5,endurance:30,strength:30},
 		modify: {jumpaway:50,thrustpower:20},
-		properties: {mindamage:5,maxdamage:17,antijumpaway:70,knifeskill:3,piercearmor:65,secondweapon:'yes',blockzones:'+'},
+		properties: {mindamage:5,maxdamage:17,antijumpaway:70,piercearmor:65,secondweapon:'yes',blockzones:'+'},
 		setlink: {name:'spider'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
@@ -1234,7 +1234,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:20,intuition:55,level:9,knifeskill:5,endurance:30,strength:30},
 		modify: {criticalpower:15,intuition:2,knifeskill:2,parry:0},
-		properties: {knifeskill:0,mindamage:6,maxdamage:17,antijumpaway:70,criticalhit:70,piercearmor:70,secondweapon:'yes',blockzones:'+'}
+		properties: {mindamage:6,maxdamage:17,antijumpaway:70,criticalhit:70,piercearmor:70,secondweapon:'yes',blockzones:'+'}
 	}}
 
 	},
@@ -4022,7 +4022,7 @@ upgrade: {
 	naruchi1: {id:'naruchi1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Крестоносца',old:true,
 		common: {price:20,weight:3,durability:50},
 		required: {level:1},
-		modify: {knifeskill:1,clubskill:1,axeskill:1,swordskill:1}
+		modify: {weaponskill:1}
 	},
 	naruchi62: {id:'naruchi62',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Когтистые Перчатки Вырубки',
 		common: {weight:2,price:24,durability:30},
@@ -4150,7 +4150,7 @@ upgrade: {
 	naruchi10: {id:'naruchi10',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паладина',old:true,alignment:'light',
 		common: {price:100,weight:5,durability:30},
 		required: {strength:12,dexterity:16,level:4},
-		modify: {hitpoints:60,knifeskill:2,clubskill:2,axeskill:2,swordskill:2}
+		modify: {hitpoints:60,weaponskill:2}
 	},
 	naruchi53: {id:'naruchi53',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паладина',alignment:'light',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:20}}}},
 		common: {weight:3,price:100,durability:50},
@@ -6456,7 +6456,7 @@ upgrade: {
 	helmet81: {id:'helmet81',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
 		common: {weight:20,price:310,durability:100},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45},
-		modify: {anticriticalhit:20,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,magicdefence:50,hitpoints:66,headarmor1:36,headarmor2:85,headarmorf:35,headarmorm:1,headarmord:50,jumpaway:-75,criticalhit:-75,defence:25},
+		modify: {anticriticalhit:20,weaponskill:1,magicdefence:50,hitpoints:66,headarmor1:36,headarmor2:85,headarmorf:35,headarmorm:1,headarmord:50,jumpaway:-75,criticalhit:-75,defence:25},
 		setlink: {name:'losttime'}
 	,upgrade: {
 	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {helmet81:{id:'helmet81',caption:'Шлем Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
@@ -11051,7 +11051,7 @@ upgrade: {
   modify: {maxdamage:25}
 	},*/
 	catbaff_full: {id:'catbaff_full',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин',fixless:true,
-		modify: {strength:5,dexterity:5,intuition:5,hitpoints:30,damage2:25}
+		modify: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}
 	},
 	mrbaff_makropus: {id:'mrbaff_makropus',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Макропуса',fixless:true,
   modify: {hitpoints:250}

@@ -6240,13 +6240,13 @@ function calculateBaseWeaponIndices(state, wslot, o)
 		{
 			magicpowermf += delix.modify.magicpower;
 		}
-		if ('damage1' in delix.modify)
+		if ('mindamage' in delix.modify)
 		{
-			postmindamage += delix.modify.damage1;
+			postmindamage += delix.modify.mindamage;
 		}
-		if ('damage2' in delix.modify)
+		if ('maxdamage' in delix.modify)
 		{
-			postmaxdamage += delix.modify.damage2;
+			postmaxdamage += delix.modify.maxdamage;
 		}
 	}
 	
@@ -6256,7 +6256,7 @@ function calculateBaseWeaponIndices(state, wslot, o)
 		{			
 			if (knownECRPowerUps[powerupn].modifyExt !== undefined) {
 				for (var epowerup in knownECRPowerUps[powerupn].modifyExt) {
-					if (epowerup ==='damage2') {
+					if (epowerup ==='maxdamage') {
 						postmaxdamage += knownECRPowerUps[powerupn].modifyExt[epowerup];
 					}
 				}

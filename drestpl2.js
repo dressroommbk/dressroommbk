@@ -6249,6 +6249,20 @@ function calculateBaseWeaponIndices(state, wslot, o)
 			postmaxdamage += delix.modify.damage2;
 		}
 	}
+	
+	for (var powerupn in state.spellPowerUps)
+	{
+		if (powerupn in knownECRPowerUps)
+		{			
+			if (knownECRPowerUps[powerupn].modifyExt !== undefined) {
+				for (var epowerup in knownECRPowerUps[powerupn].modifyExt) {
+					if (epowerup ==='damage2') {
+						postmaxdamage += knownECRPowerUps[powerupn].modifyExt[epowerup];
+					}
+				}
+			}
+		}
+	}	
 
 	return {strength: strength, skill: skill, mindamage: mindamage, maxdamage: maxdamage, cpower: cpower, attacks: attacks, powermf: powermf, magicpowermf: magicpowermf, postmindamage: postmindamage, postmaxdamage: postmaxdamage};
 }
@@ -6908,7 +6922,7 @@ function recalcDresserState(state)
 		state.natural.spiritlevel += (ls - 6) * 10;
 	}
 	state.natural.counterstroke = dressOptions.newCapEdition ? 20 : 10;
-	state.natural.piercearmor = dressOptions.newCapEdition ? 20 : 5;
+	state.natural.piercearmor = dressOptions.newCapEdition ? 20 : 0;
 	state.natural.attackcount = 1;
 	state.modify.attackcount = getAttackCount(state) - 1;
 	state.natural.blockcount = 2;

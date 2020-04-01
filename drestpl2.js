@@ -7168,6 +7168,8 @@ function recalcDresserState(state)
 	state.natural.criticalhit = state.natural.anticriticalhit = (state.results.intuition * 5);
 	state.natural.jumpaway = state.natural.antijumpaway = (state.results.dexterity * 5);
 	
+	state.natural.anticriticalpower = Math.round(state.results.strength * 0.8);
+	
 	// stupid fix for Legion Mountain buffs
 	for (var powerupn in state.spellPowerUps)
 	{

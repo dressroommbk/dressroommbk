@@ -6365,6 +6365,59 @@ function calculateAttackDamage(state, wslot, o, baseIndices, attackn)
 		};
 }
 
+function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
+{
+	var attack = baseIndices.attacks[attackn];
+	
+	var powermfn = attackn + 'power';
+	var powerMfValue = baseIndices.powermf;
+
+	powerMfValue += getPowerMfValue(state, wslot, 'power');
+	powerMfValue += getPowerMfValue(state, wslot, powermfn);
+	
+	var min_damage_base = 5,
+	    max_damage_base = 5,
+		lvl = state.results.level, 
+		min_damage_weapon = (o != null && 'properties' in o) ? o.properties.mindamage : 0,
+		max_damage_weapon = (o != null && 'properties' in o) ? o.properties.maxdamage : 0,
+		weaponskill = baseIndices.skill,
+		stats_damage_effect = 0;
+	
+	switch (attackn) {
+		case 'crush':
+			stats_damage_effect = state.results.strength * 1.0;
+			break;
+		
+		case 'thrust':
+			stats_damage_effect = state.results.strength * 0.4 + state.results.dexterity * 0.6;
+			break;
+			
+		case 'cut':
+			stats_damage_effect = state.results.strength * 0.3 + state.results.intuition * 0.7;
+			break;
+			
+		case 'sabre':
+			stats_damage_effect = state.results.strength * 0.6 + state.results.dexterity * 0.2 + state.results.intuition * 0.2;
+			break;
+		
+		default:
+			break;
+	}
+		
+	var min_damage = (min_damage_base + lvl + stats_damage_effect + min_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+	var max_damage = (max_damage_base + lvl + stats_damage_effect + max_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+
+	return {
+		id: attackn,
+		attack: attack,
+		damage: {minv:1, maxv:1},
+		mfdamage: {minv:min_damage, maxv:max_damage},
+		mfcdamage: {minv:2, maxv:2},
+		postdamage: {minv:0, maxv:0},
+		_power_v: powerMfValue
+	};
+}
+
 function addToDamage(averages, concrete, percentage)
 {
 	averages.minv += concrete.minv * percentage / 100.0;
@@ -6401,7 +6454,7 @@ function recalcDresserWeaponAdvState(state, wslot)
 	var averages = {damage: {minv:0, maxv:0}, mfdamage: {minv:0, maxv:0}, mfcdamage: {minv:0, maxv:0}};
 	for (var attackn in baseIndices.attacks)
 	{
-		var fd = calculateAttackDamage(state, wslot, o, baseIndices, attackn);
+		var fd = calculateAttackDamage2(state, wslot, o, baseIndices, attackn);
 		addToDamage(averages.damage, fd.damage, fd.attack.real);
 		addToDamage(averages.mfdamage, fd.mfdamage, fd.attack.real);
 		addToDamage(averages.mfcdamage, fd.mfcdamage, fd.attack.real);

@@ -1773,19 +1773,19 @@ upgrade: {
 	aaxe5_level9: {id:'aaxe5_level9',level:9,
 		common: {eprice:600},
 		required: {level:9,dexterity:40,strength:30,endurance:30},
-		modify: {parry:15,counterstroke:30,anticriticalhit:100,dexterity:20,jumpaway:200,antijumpaway:50,magicdefence:20,airmagicdefence:80,axeskill:5},
+		modify: {parry:15,counterstroke:30,anticriticalhit:100,dexterity:20,jumpaway:200,antijumpaway:0,magicdefence:20,airmagicdefence:80,axeskill:5},
 		properties: {mindamage:43,maxdamage:47,antijumpaway:100}
 	},
 	aaxe5_level10: {id:'aaxe5_level10',level:10,
 		common: {eprice:1000},
 		required: {level:10,dexterity:50,strength:35,endurance:35},
-		modify: {parry:15,counterstroke:50,anticriticalhit:200,dexterity:30,jumpaway:250,antijumpaway:50,magicdefence:20,airmagicdefence:80,axeskill:5},
+		modify: {parry:15,counterstroke:50,anticriticalhit:200,dexterity:30,jumpaway:250,antijumpaway:0,magicdefence:20,airmagicdefence:80,axeskill:5},
 		properties: {mindamage:48,maxdamage:52,antijumpaway:150}
 	},
 	aaxe5_level11: {id:'aaxe5_level11',level:11,
 		common: {eprice:7000},
 		required: {level:11,dexterity:150,strength:35,endurance:50},
-		modify: {parry:20,counterstroke:50,anticriticalhit:200,dexterity:35,jumpaway:350,antijumpaway:50,magicdefence:30,airmagicdefence:120,axeskill:5},
+		modify: {parry:20,counterstroke:50,anticriticalhit:200,dexterity:35,jumpaway:350,antijumpaway:0,magicdefence:30,airmagicdefence:120,axeskill:5},
 		properties: {mindamage:55,maxdamage:60,antijumpaway:200}
 	}}
 

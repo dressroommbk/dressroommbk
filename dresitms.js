@@ -6850,7 +6850,7 @@ upgrade: {
 	venok31: {id:'venok31',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Воина [10]',adjustment:true,artefact:true,
 		common: {weight:1,durability:200,eprice:200},
 		required: {level:10},
-		modify: {stats:9,hitpoints:250,criticalhit:100,anticriticalhit:100,jumpaway:100,antijumpaway:100,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,defence:50,magicdefence:150}
+		modify: {stats:9,hitpoints:250,criticalhit:100,anticriticalhit:100,jumpaway:100,antijumpaway:100,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,defence:50,magicdefence:150,power:10}
 	},
 	venok32: {id:'venok32',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Мага [10]',adjustment:true,artefact:true,
 		common: {weight:1,durability:200,eprice:200},

@@ -6369,20 +6369,22 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 {
 	var attack = baseIndices.attacks[attackn],
 	    powermfn = attackn + 'power',
-		powerMfValue = baseIndices.powermf,
-		slotPropName = wslot.id + 'props';
-
-		powerMfValue += getPowerMfValue(state, wslot, 'power');
-		powerMfValue += getPowerMfValue(state, wslot, powermfn);
-	
-	var min_damage_base = 5,
+		powerMfValue = baseIndices.powermf + getPowerMfValue(state, wslot, 'power') + getPowerMfValue(state, wslot, powermfn),
+		slotPropName = wslot.id + 'props',
+	    min_damage_base = 5,
 	    max_damage_base = 5,
 		lvl = state.results.level, 
-		min_damage_weapon = (o != null && 'properties' in o) ? o.properties.mindamage : 0,
-		max_damage_weapon = (o != null && 'properties' in o) ? o.properties.maxdamage : 0,
+		min_damage_weapon = ((o != null && 'properties' in o) ? o.properties.mindamage : 0),
+		max_damage_weapon = ((o != null && 'properties' in o) ? o.properties.maxdamage : 0),
+		min_damage_add = baseIndices.postmindamage,
+		max_damage_add = baseIndices.postmaxdamage,
 		weaponskill = baseIndices.skill,
 		stats_damage_effect = 0,
-		criticalpower = (slotPropName in state && 'criticalpower' in state[slotPropName]) ? state[slotPropName].criticalpower : 0;
+		criticalpower = (slotPropName in state && 'criticalpower' in state[slotPropName]) ? state[slotPropName].criticalpower : 0,
+		min_damage = min_damage_base + lvl,
+		max_damage = max_damage_base + lvl,
+		min_damage_critical = min_damage * 2.0,
+		max_damage_critical = max_damage * 2.0;
 	
 	switch (attackn) {
 		case 'crush':
@@ -6392,7 +6394,7 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 		case 'thrust':
 			stats_damage_effect = state.results.strength * 0.4 + state.results.dexterity * 0.6;
 			break;
-			
+		
 		case 'cut':
 			stats_damage_effect = state.results.strength * 0.3 + state.results.intuition * 0.7;
 			break;
@@ -6404,12 +6406,11 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 		default:
 			break;
 	}
-		
-	var min_damage = (min_damage_base + lvl + stats_damage_effect + min_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
-	var max_damage = (max_damage_base + lvl + stats_damage_effect + max_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
 	
-	var min_damage_critical = min_damage * 2.0 * (1.0 + criticalpower / 100.0);
-	var max_damage_critical = max_damage * 2.0 * (1.0 + criticalpower / 100.0);
+	min_damage = (min_damage_base + lvl + stats_damage_effect + min_damage_add + min_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+	max_damage = (max_damage_base + lvl + stats_damage_effect + max_damage_add + max_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+	min_damage_critical = min_damage * 2.0 * (1.0 + criticalpower / 100.0);
+	max_damage_critical = max_damage * 2.0 * (1.0 + criticalpower / 100.0);
 
 	return {
 		id: attackn,
@@ -6448,7 +6449,8 @@ function recalcDresserWeaponAdvState(state, wslot)
 
 	if ('spell_powerup10' in state.spellPowerUps)
 	{
-		baseIndices.strength *= 1 + (0.01 * state.spellPowerUps.spell_powerup10);
+		//baseIndices.strength *= 1 + (0.01 * state.spellPowerUps.spell_powerup10);
+		baseIndices.powermf += state.spellPowerUps.spell_powerup10;
 	}
 	baseIndices.mindamage += (baseIndices.strength / 3);
 	baseIndices.maxdamage += (baseIndices.strength / 3);

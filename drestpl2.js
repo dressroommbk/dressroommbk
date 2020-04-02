@@ -6367,13 +6367,13 @@ function calculateAttackDamage(state, wslot, o, baseIndices, attackn)
 
 function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 {
-	var attack = baseIndices.attacks[attackn];
-	
-	var powermfn = attackn + 'power';
-	var powerMfValue = baseIndices.powermf;
+	var attack = baseIndices.attacks[attackn],
+	    powermfn = attackn + 'power',
+		powerMfValue = baseIndices.powermf,
+		slotPropName = wslot.id + 'props';
 
-	powerMfValue += getPowerMfValue(state, wslot, 'power');
-	powerMfValue += getPowerMfValue(state, wslot, powermfn);
+		powerMfValue += getPowerMfValue(state, wslot, 'power');
+		powerMfValue += getPowerMfValue(state, wslot, powermfn);
 	
 	var min_damage_base = 5,
 	    max_damage_base = 5,
@@ -6381,7 +6381,8 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 		min_damage_weapon = (o != null && 'properties' in o) ? o.properties.mindamage : 0,
 		max_damage_weapon = (o != null && 'properties' in o) ? o.properties.maxdamage : 0,
 		weaponskill = baseIndices.skill,
-		stats_damage_effect = 0;
+		stats_damage_effect = 0,
+		criticalpower = (slotPropName in state && 'criticalpower' in state[slotPropName]) ? state[slotPropName].criticalpower : 0;
 	
 	switch (attackn) {
 		case 'crush':
@@ -6406,13 +6407,16 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 		
 	var min_damage = (min_damage_base + lvl + stats_damage_effect + min_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
 	var max_damage = (max_damage_base + lvl + stats_damage_effect + max_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+	
+	var min_damage_critical = min_damage * 2.0 * (1.0 + criticalpower / 100.0);
+	var max_damage_critical = max_damage * 2.0 * (1.0 + criticalpower / 100.0);
 
 	return {
 		id: attackn,
 		attack: attack,
 		damage: {minv:1, maxv:1},
 		mfdamage: {minv:min_damage, maxv:max_damage},
-		mfcdamage: {minv:2, maxv:2},
+		mfcdamage: {minv:min_damage_critical, maxv:max_damage_critical},
 		postdamage: {minv:0, maxv:0},
 		_power_v: powerMfValue
 	};

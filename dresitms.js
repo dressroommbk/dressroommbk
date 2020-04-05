@@ -5651,8 +5651,8 @@ upgrade: {
 
 	armor113: { id: 'armor113', category:'heavyarmors', slot:'w4', width:60, height:80, caption: 'Броня Неприступного Утеса', stats:true,binding: 'bop',clist:{_:{	sp_mat42:{id:'sp_mat42',caption:'Утерянная Сущность Брони',count:1},mater301:{id:'mater301',caption:'Кость болотного тролля',count:1},mater299:{id:'mater299',caption:'Черное масло',count:10},mater300:{id:'mater300',caption:'Бурая шкура',count:12},mater293:{id:'mater293',caption:'Мерцающий кристалл',count:10}, mater296:{id:'mater296',caption:'Самородок мерцающего металла',count:20},mater295:{id:'mater295',caption:'Чешуйчатая шкура',count:10},mater297:{id:'mater297',caption:'Изменчивые водоросли',count:10}}},
 	    common: {weight: 60, price:537, durability: 100},
-		required: {level:10,endurance:70,strength:50, dexterity:10,intuition:10},
-		modify: { anticriticalhit:150,antijumpaway:100,magicdefence:50,defence:100,hitpoints:200,bodyarmor1:34,bodyarmor2:99,bodyarmorf:33,bodyarmorm:1,bodyarmord:66,knifeskill:1,swordskill:1,axeskill:1,clubskill:1},
+		required: {level:10,endurance:70,strength:100,dexterity:10,intuition:10},
+		modify: { anticriticalhit:150,antijumpaway:100,magicdefence:50,defence:150,hitpoints:200,bodyarmor1:34,bodyarmor2:99,bodyarmorf:33,bodyarmorm:1,bodyarmord:66,weaponskill:2,strength:10},
 		properties: {},
 		setlink: {name:'notg'},
 		defences: {crush:'mediocre',thrust:'mediocre'}

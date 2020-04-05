@@ -9007,7 +9007,7 @@ upgrade: {
 		modify: {antijumpaway:100,criticalhit:100,weaponskill:0,defence:35,hitpoints:48,strength:4},
 		setlink: {name:'scorpion10'}
 	},
-	clip91: {id:'clip91',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неуемной Силы',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2}}}},
+	clip91: {id:'clip91',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неуемной Силы',adjustment:true,binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2}}}},
 		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:15,level:9,endurance:30,strength:50},
 		modify: {anticriticalhit:70,criticalhit:-75,antijumpaway:70,jumpaway:-75,strength:10,hitpoints:55,clubskill:1}
@@ -10387,7 +10387,7 @@ upgrade: {
 		modify: {anticriticalhit:15,antijumpaway:80,criticalhit:60,parry:1,hitpoints:31},
 		setlink: {name:'scorpion10',count:3}
 	},
-	ring135: {id:'ring135',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Неуемной Силы',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1}}}},
+	ring135: {id:'ring135',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Неуемной Силы',adjustment:true,binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1}}}},
 		common: {weight:1,price:100,durability:50},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:50},
 		modify: {anticriticalhit:40,criticalhit:-75,antijumpaway:40,jumpaway:-75,strength:7}

@@ -3971,6 +3971,11 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.fitStats, format("onFitStats('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
+	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
+	html += getCell2MenuItemHtml(localizer.saveSet, format("onSaveSet('{0}')", state.id));
+	html += getCell2MenuSeparatorHtml();
+	html += getCell2MenuItemHtml(localizer.loadSet, format("onLoadSet('{0}')", state.id));
+	html += getCell2MenuSeparatorHtml();	
 	var s = localizer.dressFromCombats;
 	html += getCell2MenuItemHtml(localizer.dressCombatsSet, 'onDressAnyCombatsSet()');
 	html += getCell2MenuSeparatorHtml();
@@ -3990,10 +3995,6 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	/*html += getCell2MenuItemHtml(localizer.optionsMenu, "onOptionsMenu()");
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
-	html += getCell2MenuItemHtml(localizer.saveSet, format("onSaveSet('{0}')", state.id));
-	html += getCell2MenuSeparatorHtml();
-	html += getCell2MenuItemHtml(localizer.loadSet, format("onLoadSet('{0}')", state.id));
-	html += getCell2MenuSeparatorHtml();
 	s = '<img unselectable="on" src="' + hereItemImgPath + 'dressFromCombats.gif" width="17" height="15" border="0" /><font unselectable="on" color="#003300" title="' + localizer.dressFromCombatsHint + '">' + s + '</font>';
 	html += getCell2MenuItemHtml(s, format("onDressFromCombatsMenu('{0}')", state.id));	
 	html += getCell2MenuItemHtml('<img unselectable="on" src="' + hereItemImgPath + 'dressFriendLink.gif" width="16" height="15" border="0" /><font unselectable="on" color="#330033">' + localizer.friendLink + '</font>', format("onFriendLink('{0}')", state.id));
@@ -10241,22 +10242,34 @@ function saveOnServer()
 	window.open(url, '_blank');
 }
 
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
 function onSaveSet(stateid)
 {
 	var state = dressStates[stateid];
 	if (state == null)
 	{
+		alert('Internal Error. Nothing to save!');
 		return;
 	}
+
+	var url = window.location.href + '?set=' + uuidv4();
+	/* alert(url); */
+
 	var menuHtml  ='<table width="340" border="0"><tr><td>';
 	var text = serializeObject(getSerializableState(state));
 	menuHtml += format(localizer.saveSetHint, clanImgPath);
 	menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
-	menuHtml += text;
+	menuHtml += url;
 	menuHtml += '</textarea></td></tr>';
 	menuHtml += getRowMenuSeparatorHtml();
-	menuHtml += getRowMenuItemHtml(localizer.saveSetOnServer, "saveOnServer()");
-	menuHtml += getRowMenuSeparatorHtml();
+	/*menuHtml += getRowMenuItemHtml(localizer.saveSetOnServer, "saveOnServer()");
+	menuHtml += getRowMenuSeparatorHtml();*/
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 	menuHtml += '</table>';
 	showMenu(menuHtml, false);

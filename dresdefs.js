@@ -1500,11 +1500,16 @@ function getAttackFreq(obj)
 {
 	if (obj == null || !('attacks' in obj))
 	{
-		return {
+		/*return {
 			thrust: getDefAttackFreqFor('thrust'),
 			sabre: getDefAttackFreqFor('sabre'),
 			crush: getDefAttackFreqFor('crush'),
 			cut: getDefAttackFreqFor('cut')
+		};*/
+		return {
+			crush: {
+				id: 'crush', ideal: 100, real: 100, freal: 100, elemental: false
+			}
 		};
 	}
 	var totalv = 0;

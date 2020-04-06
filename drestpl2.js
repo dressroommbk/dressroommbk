@@ -6171,10 +6171,10 @@ function calculateBaseWeaponIndices(state, wslot, o)
 
 	if (o != null)
 	{
-		if (isTwohandledWeapon(o))
+		/*if (isTwohandledWeapon(o))
 		{
 			skill *= 1.2;
-		}
+		}*/
 
 		var statBonuses = categories[o.category].statBonuses;
 		if (statBonuses != null)
@@ -6189,7 +6189,7 @@ function calculateBaseWeaponIndices(state, wslot, o)
 			}
 		}
 	}
-	else
+	/*else
 	{
 		// test no weapons
 		if (wslot.id == 'w3' && getObjectByStateSlot(state, slot_w10) == null)
@@ -6213,7 +6213,7 @@ function calculateBaseWeaponIndices(state, wslot, o)
 	if (hasTwohandledWeapon(state))
 	{
 		strength *= 1.1;
-	}
+	}*/
 	var cpower = 0;
 	if ('criticalpower' in state[wslot.id + 'props'])
 	{
@@ -6452,8 +6452,8 @@ function recalcDresserWeaponAdvState(state, wslot)
 		//baseIndices.strength *= 1 + (0.01 * state.spellPowerUps.spell_powerup10);
 		baseIndices.powermf += state.spellPowerUps.spell_powerup10;
 	}
-	baseIndices.mindamage += (baseIndices.strength / 3);
-	baseIndices.maxdamage += (baseIndices.strength / 3);
+	/*baseIndices.mindamage += (baseIndices.strength / 3);
+	baseIndices.maxdamage += (baseIndices.strength / 3);*/
 
 	// calculate averages in parallel
 	var finalData = {};

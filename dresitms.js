@@ -4704,12 +4704,12 @@ upgrade: {
 		required: {level:10},
 		modify: {hitpoints:10,anticriticalhit:15,jumpaway:15}
 	},	
-	cloak301: {id:'cloak301',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного воина [10]',adjustment:true,artefact:true,binding:'boe',
+	cloak301: {id:'cloak301',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного воина [10]',adjustment:true,binding:'boe',
 		common: {weight:1,durability:100,eprice:100},
 		required: {level:10},
 		modify: {stats:7,hitpoints:100,criticalhit:30,anticriticalhit:30,jumpaway:30,antijumpaway:30,defence:25,magicdefence:25,power:10}
 	},
-	cloak302: {id:'cloak302',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного мага [10]',adjustment:true,artefact:true,binding:'boe',
+	cloak302: {id:'cloak302',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного мага [10]',adjustment:true,binding:'boe',
 		common: {weight:1,durability:100,eprice:100},
 		required: {level:10},
 		modify: {stats:7,mana:200,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:2,defence:25,magicdefence:25,magicpower:10}
@@ -6853,12 +6853,12 @@ upgrade: {
     common: {weight: 10, price: 400, durability: 50},
     modify: {stats: 15, mana: 100, hitpoints: 100, power: 10, defence: 25, magicdefence: 25, magicdefencereduce: 2},
   },	
-	venok31: {id:'venok31',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Воина [10]',adjustment:true,artefact:true,
+	venok31: {id:'venok31',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Воина [10]',adjustment:true,
 		common: {weight:1,durability:200,eprice:200},
 		required: {level:10},
 		modify: {stats:9,hitpoints:250,criticalhit:100,anticriticalhit:100,jumpaway:100,antijumpaway:100,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,defence:50,magicdefence:150,power:10}
 	},
-	venok32: {id:'venok32',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Мага [10]',adjustment:true,artefact:true,
+	venok32: {id:'venok32',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Мага [10]',adjustment:true,
 		common: {weight:1,durability:200,eprice:200},
 		required: {level:10},
 		modify: {stats:9,hitpoints:100,mana:500,anticriticalhit:100,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:4,defence:150,magicdefence:50,magicpower:10}

@@ -718,6 +718,14 @@ function getPersImageHtml(state)
 	r += '<td width="120"><table width="120" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3" width="120" onclick="onPersMenu()" oncontextmenu="onPersMenu()" onmouseover="showCharPopup()" onmouseout="hidePopup()" height="220" align="left" valign="bottom" style="background-image:url(';
 	r += charImgPath + state.sex + '/' + state.image;
 	r += '.gif); background-repeat: no-repeat; background-position: center center;">';
+
+	var o = getObjectByStateSlot(state, slot_wadd);
+	if (o != null) {
+		r += '<a onclick="onApplyWAdd(null);" href="javascript:;">';
+		r += '<img src="' + iconImgPath + o.id + '.gif" title="' + o.caption + '" width="36" height="23" border="0" />';
+		r += '</a>';
+	}
+
 	if (state.statElix != null)
 	{
 		var selix = knownElix[state.statElix.elixn];
@@ -7538,7 +7546,8 @@ function updateDresserState(state)
 	{
 		return;
 	}
-	fastUpdateDresserState(state);
+	//fastUpdateDresserState(state);
+	hardUpdateDresserState(state);
 	setMeter(state, hpMeterSuffix, state.results.hitpoints);
 	setMeter(state, manaMeterSuffix, ('mana' in state.results) ? state.results.mana : 0);
 	var nickelt = document.getElementById('nick' + state.id);
@@ -11195,9 +11204,9 @@ function initializeDresserAfterItemsLoaded()
 	//dressItems.spell_godprotect10.buylink = knownECRPowerUps.spell_godprotect10.buylink;
 	/*knownAdds.food_l41 = dressItems.food_l41;
 	knownAdds.food_l61 = dressItems.food_l61;
-	knownAdds.food_l71 = dressItems.food_l71;*/
+	knownAdds.food_l71 = dressItems.food_l71;
 	knownAdds.food_l8 = dressItems.food_l8;
-	/*knownAdds.food_8m1 = dressItems.food_8m1;
+	knownAdds.food_8m1 = dressItems.food_8m1;
 	knownAdds.food_8m2 = dressItems.food_8m2;*/
 	knownAdds.food_l5_eng = dressItems.food_l5_eng;
 	/*knownAdds.pot_base_0_8m1 = dressItems.pot_base_0_8m1;*/

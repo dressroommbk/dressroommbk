@@ -1563,6 +1563,8 @@ function hasTwoWeapons(state)
 function getDresserInfoPaneWeaponHtml(state, wslot)
 {
 	var wo = getObjectByStateSlot(state, wslot);
+	var baseIndices = calculateBaseWeaponIndices(state, wslot, wo);
+
 	if (wo == null && wslot.id != slot_w3.id)
 	{
 		return '';
@@ -1630,27 +1632,36 @@ function getDresserInfoPaneWeaponHtml(state, wslot)
 		{
 			continue;
 		}
-		var vn = (mf in state.natural) ? state.natural[mf] : 0;
-		var vm = (mf in state[wslot.id + 'props']) ? state[wslot.id + 'props'][mf] : 0;
-		var vt = vn + vm;
-		var mvt = vt;
-		for (var staten in dressStates)
-		{
-			var astate = dressStates[staten];
-			var avn = (mf in astate.natural) ? astate.natural[mf] : 0;
-			var avm1 = (mf in astate.w3props) ? astate.w3props[mf] : 0;
-			var avm2 = (mf in astate.w10props) ? astate.w10props[mf] : 0;
-			var avt1 = avn + avm1;
-			var avt2 = avn + avm2;
-			if (mvt < avt1)
+
+		if (['power', 'thrustpower', 'sabrepower', 'crushpower', 'cutpower'].indexOf(mf) != -1) {
+			var vn = baseIndices.powermf + getPowerMfValue(state, wslot, 'power'),
+				vm = (mf !== 'power' ? getPowerMfValue(state, wslot, mf) : 0),
+				vt = vn + vm,
+				mvt = vt;
+		} else {
+			var vn = (mf in state.natural) ? state.natural[mf] : 0;
+			var vm = (mf in state[wslot.id + 'props']) ? state[wslot.id + 'props'][mf] : 0;
+			var vt = vn + vm;
+			var mvt = vt;
+			for (var staten in dressStates)
 			{
-				mvt = avt1;
-			}
-			if (mvt < avt2)
-			{
-				mvt = avt2;
+				var astate = dressStates[staten];
+				var avn = (mf in astate.natural) ? astate.natural[mf] : 0;
+				var avm1 = (mf in astate.w3props) ? astate.w3props[mf] : 0;
+				var avm2 = (mf in astate.w10props) ? astate.w10props[mf] : 0;
+				var avt1 = avn + avm1;
+				var avt2 = avn + avm2;
+				if (mvt < avt1)
+				{
+					mvt = avt1;
+				}
+				if (mvt < avt2)
+				{
+					mvt = avt2;
+				}
 			}
 		}
+		
 		if (mvt != 0 || vn != 0 || vm != 0)
 		{
 			chapterHtml += '<tr><td valign="top">';
@@ -2444,7 +2455,7 @@ function getMatvikZoneValue1000(v)
 	return getMatvikZoneValue(v);
 }
 
-function getDresserInfoPaneHtml(state) //!!!!!!!!!!!!!!!!!!!!
+function getDresserInfoPaneHtml(state)
 {
 	var html = '';
 	html += '<div style="width: 100%">';
@@ -6262,6 +6273,11 @@ function calculateBaseWeaponIndices(state, wslot, o)
 				}
 			}
 		}
+	}
+
+	if ('spell_powerup10' in state.spellPowerUps)
+	{		
+		powermf += state.spellPowerUps.spell_powerup10;
 	}	
 
 	return {strength: strength, skill: skill, mindamage: mindamage, maxdamage: maxdamage, cpower: cpower, attacks: attacks, powermf: powermf, magicpowermf: magicpowermf, postmindamage: postmindamage, postmaxdamage: postmaxdamage};
@@ -6447,12 +6463,12 @@ function recalcDresserWeaponAdvState(state, wslot)
 	var o = getObjectByStateSlot(state, wslot);
 	var baseIndices = calculateBaseWeaponIndices(state, wslot, o);
 
+	/*
 	if ('spell_powerup10' in state.spellPowerUps)
 	{
-		//baseIndices.strength *= 1 + (0.01 * state.spellPowerUps.spell_powerup10);
-		baseIndices.powermf += state.spellPowerUps.spell_powerup10;
+		baseIndices.strength *= 1 + (0.01 * state.spellPowerUps.spell_powerup10);
 	}
-	/*baseIndices.mindamage += (baseIndices.strength / 3);
+	baseIndices.mindamage += (baseIndices.strength / 3);
 	baseIndices.maxdamage += (baseIndices.strength / 3);*/
 
 	// calculate averages in parallel

@@ -933,7 +933,7 @@ var item_props = {
 	mindamage: {lbl: 'Минимальный урон', view: true, inmfg: true, inprpg: true},
 	maxdamage: {lbl: 'Максимальный урон', view: true, inmfg: true, inprpg: true},
 	damage: {lbl: 'Урон', view: false, nocharm: true},
-	mfdamage: {lbl: 'Урон с учётом мф.', view: true, nocharm: true},
+	//mfdamage: {lbl: 'Урон с учётом мф.', view: true, nocharm: true},
 	nextdamage: {lbl: 'Отложенный урон', view: true, nocharm: true},
 	nextturns: {lbl: 'Длительность отложенного урона', fmt: '{0} ходов', view: true, nocharm: true},
 	minhitpoints: {lbl: 'Минимальный уровень жизни', view: true, nocharm: true},

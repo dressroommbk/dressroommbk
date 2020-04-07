@@ -190,5 +190,33 @@ function doClean()
 <script id="pets" language="javascript" type="text/javascript" src="pets.js" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
 <script id="infospace" src="jshttp.js" type="text/javascript" language="javascript" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
 <script id="drestpl" language="javascript" type="text/javascript" src="drestpl2.js" onreadystatechange="onScriptLoaded()" defer></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBxeSg4_EesWKvn1vMqaUFSfmGOIF65ISk",
+    authDomain: "dressroommbk.firebaseapp.com",
+    databaseURL: "https://dressroommbk.firebaseio.com",
+    projectId: "dressroommbk",
+    storageBucket: "dressroommbk.appspot.com",
+    messagingSenderId: "745549669532",
+    appId: "1:745549669532:web:1dc03da4f3eef0989bf959",
+    measurementId: "G-1XF9EPVXTM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var db = firebase.firestore();
+</script>
+
 </body>
 </html>

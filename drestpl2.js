@@ -5,8 +5,6 @@ var absoluteDressRoomUrl = '/dressroom';
 var battleScriptId = 'battleScriptId';
 var battleProviderUrl = '/cgi/dresbatl.pl';
 
-var manageSetsAppKey = 'sjp8iflw';
-
 //var getCharacterInfoUrlFormat = '/cgi/get_ci.pl?nick={0}';
 var getCharacterInfoUrlFormat = '/cgi/get_nick.pl?nick={0}';
 
@@ -10209,104 +10207,6 @@ function applyDeserializedState(stateid, r)
 	someStatesLoaded = true;
 }
 
-/*function loadEnteredSet()
-{
-	var state = activeState;
-	if (state == null)
-	{
-		return;
-	}
-	var telt = document.getElementById('setArea');
-	if (telt == null)
-	{
-		return;
-	}
-	var text = telt.value;
-	if (text.indexOf(absoluteDressRoomUrl) === 0)
-	{
-		// its friendlink.
-		text = text.substr(absoluteDressRoomUrl.length + '?data='.length);
-		text = unescape(text);
-	}
-	if (text == '')
-	{
-		alert('Введите сперва текст, описывающий состав комплекта.');
-		return;
-	}
-	var dstate = deserializeObject(text);
-	applyDeserializedState(state.id, dstate);
-}*/
-
-function loadSetFromServer(key) {
-	var url = 'https://keyvalue.immanuel.co/api/KeyVal/GetValue/' + manageSetsAppKey + '/' + key;
-
-    var xhr = new XMLHttpRequest();
-
-	xhr.open('GET', url, false);
-
-	xhr.send();
-
-	if (xhr.status != 200) {
-  		alert(xhr.status + ': ' + xhr.responseText);
-  		return false;
-	}
-
-	return JSON.parse(xhr.responseText);
-}
-
-// LZW-compress a string
-function lzw_encode(s) {
-    var dict = {};
-    var data = (s + "").split("");
-    var out = [];
-    var currChar;
-    var phrase = data[0];
-    var code = 256;
-    for (var i=1; i<data.length; i++) {
-        currChar=data[i];
-        if (dict[phrase + currChar] != null) {
-            phrase += currChar;
-        }
-        else {
-            out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
-            dict[phrase + currChar] = code;
-            code++;
-            phrase=currChar;
-        }
-    }
-    out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
-    for (var i=0; i<out.length; i++) {
-        out[i] = String.fromCharCode(out[i]);
-    }
-    return out.join("");
-}
-
-// Decompress an LZW-encoded string
-function lzw_decode(s) {
-    var dict = {};
-    var data = (s + "").split("");
-    var currChar = data[0];
-    var oldPhrase = currChar;
-    var out = [currChar];
-    var code = 256;
-    var phrase;
-    for (var i=1; i<data.length; i++) {
-        var currCode = data[i].charCodeAt(0);
-        if (currCode < 256) {
-            phrase = data[i];
-        }
-        else {
-           phrase = dict[currCode] ? dict[currCode] : (oldPhrase + currChar);
-        }
-        out.push(phrase);
-        currChar = phrase.charAt(0);
-        dict[code] = oldPhrase + currChar;
-        code++;
-        oldPhrase = phrase;
-    }
-    return out.join("");
-}
-
 function loadEnteredSet()
 {
 	var state = activeState,
@@ -10327,15 +10227,17 @@ function loadEnteredSet()
 		return;
 	}
 
-	text = loadSetFromServer(key);
-
-	if (typeof text === 'string' && text.length > 0) {
-		alert('Success');
-		var dstate = deserializeObject(lzw_decode(text));
-		applyDeserializedState(state.id, dstate);
-	} else {
-		alert('Комплект ' + key + ' не найден');
-	}
+	db.collection("sets").doc(key).get().then(function(doc) {
+	    if (doc.exists) {
+	        var text = doc.data().set;
+	        var dstate = deserializeObject(text);
+			applyDeserializedState(state.id, dstate);
+	    } else {
+	        alert('Комплект ' + key + ' не найден');
+	    }
+	}).catch(function(error) {
+    	alert("Error getting document: " + error);
+	});
 }
 
 function onLoadSet(stateid)
@@ -10358,45 +10260,11 @@ function onLoadSet(stateid)
 	}
 }
 
-function saveOnServer()
-{
-	var state = activeState;
-	if (state == null)
-	{
-		return;
-	}
-	var text = serializeObject(getSerializableState(state));
-	var url = format(saveSetOnServerUrl, escape(text));
-	window.open(url, '_blank');
-}
-
 function uuidv4() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
     return v.toString(16);
   });
-}
-
-function saveSetOnServer(key, set) {
-	if (set.length > 1024) {
-		alert('Set is too long!');
-		return false;
-	}
-
-	var url = 'https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/' + manageSetsAppKey + "/" + key + "/" + encodeURIComponent(set);
-	
-	var xhr = new XMLHttpRequest();
-
-	xhr.open('POST', url, false);
-
-	xhr.send();
-
-	if (xhr.status != 200) {
-  		alert(xhr.status + ': ' + xhr.responseText);
-  		return false;
-	}
-
-	return true;
 }
 
 function onSaveSet(stateid)
@@ -10408,19 +10276,20 @@ function onSaveSet(stateid)
 		return;
 	}
 
-	var key = uuidv4()/* 'ca12f6bc-d192-4803-841a-126b39d3cbfd'*/,
+	var key = uuidv4(),
 		url = window.location.href + '?key=' + key,
-		text = lzw_encode(serializeObject(getSerializableState(state)))/* 'test_text' + uuidv4()*/;
+		text = serializeObject(getSerializableState(state));
 
-	if (saveSetOnServer(key, text)) {
+	db.collection("sets").doc(key).set({
+	    set: text
+	})
+	.then(function() {
 		var menuHtml  ='<table width="340" border="0"><tr><td>';
 		menuHtml += format(localizer.saveSetHint, clanImgPath);
 		menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
 		menuHtml += url;
 		menuHtml += '</textarea></td></tr>';
 		menuHtml += getRowMenuSeparatorHtml();
-		/*menuHtml += getRowMenuItemHtml(localizer.saveSetOnServer, "saveOnServer()");
-		menuHtml += getRowMenuSeparatorHtml();*/
 		menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 		menuHtml += '</table>';
 		showMenu(menuHtml, false);
@@ -10430,7 +10299,10 @@ function onSaveSet(stateid)
 			telt.focus();
 			telt.select();
 		}
-	}
+	})
+	.catch(function(error) {
+	    alert("Error writing document: " + error);
+	});
 }
 
 function getNextGoodSlot(o, slot)

@@ -10247,7 +10247,7 @@ function loadSetFromServer(key) {
 	xhr.send();
 
 	if (xhr.status != 200) {
-  		alert(xhr.status + ': ' + xhr.statusText);
+  		alert(xhr.status + ': ' + xhr.responseText);
   		return false;
 	}
 
@@ -10394,7 +10394,7 @@ function saveSetOnServer(key, set) {
 	xhr.send();
 
 	if (xhr.status != 200) {
-  		alert(xhr.status + ': ' + xhr.statusText);
+  		alert(xhr.status + ': ' + xhr.responseText);
   		return false;
 	}
 

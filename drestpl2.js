@@ -5,6 +5,8 @@ var absoluteDressRoomUrl = '/dressroom';
 var battleScriptId = 'battleScriptId';
 var battleProviderUrl = '/cgi/dresbatl.pl';
 
+var manageSetsAppKey = 'sjp8iflw';
+
 //var getCharacterInfoUrlFormat = '/cgi/get_ci.pl?nick={0}';
 var getCharacterInfoUrlFormat = '/cgi/get_nick.pl?nick={0}';
 
@@ -10207,7 +10209,7 @@ function applyDeserializedState(stateid, r)
 	someStatesLoaded = true;
 }
 
-function loadEnteredSet()
+/*function loadEnteredSet()
 {
 	var state = activeState;
 	if (state == null)
@@ -10233,6 +10235,114 @@ function loadEnteredSet()
 	}
 	var dstate = deserializeObject(text);
 	applyDeserializedState(state.id, dstate);
+}*/
+
+function loadSetFromServer(key) {
+	var url = 'https://keyvalue.immanuel.co/api/KeyVal/GetValue/' + manageSetsAppKey + '/' + key;
+
+    var xhr = new XMLHttpRequest();
+
+	xhr.open('GET', url, false);
+
+	xhr.send();
+
+	if (xhr.status != 200) {
+  		alert(xhr.status + ': ' + xhr.statusText);
+  		return false;
+	}
+
+	return JSON.parse(xhr.responseText);
+}
+
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+// LZW-compress a string
+function lzw_encode(s) {
+    var dict = {};
+    var data = (s + "").split("");
+    var out = [];
+    var currChar;
+    var phrase = data[0];
+    var code = 256;
+    for (var i=1; i<data.length; i++) {
+        currChar=data[i];
+        if (dict[phrase + currChar] != null) {
+            phrase += currChar;
+        }
+        else {
+            out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
+            dict[phrase + currChar] = code;
+            code++;
+            phrase=currChar;
+        }
+    }
+    out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
+    for (var i=0; i<out.length; i++) {
+        out[i] = String.fromCharCode(out[i]);
+    }
+    return out.join("");
+}
+
+// Decompress an LZW-encoded string
+function lzw_decode(s) {
+    var dict = {};
+    var data = (s + "").split("");
+    var currChar = data[0];
+    var oldPhrase = currChar;
+    var out = [currChar];
+    var code = 256;
+    var phrase;
+    for (var i=1; i<data.length; i++) {
+        var currCode = data[i].charCodeAt(0);
+        if (currCode < 256) {
+            phrase = data[i];
+        }
+        else {
+           phrase = dict[currCode] ? dict[currCode] : (oldPhrase + currChar);
+        }
+        out.push(phrase);
+        currChar = phrase.charAt(0);
+        dict[code] = oldPhrase + currChar;
+        code++;
+        oldPhrase = phrase;
+    }
+    return out.join("");
+}
+
+function loadEnteredSet()
+{
+	var state = activeState,
+		telt = document.getElementById('setArea');
+	
+	if ((state == null) || (telt == null)) {
+		alert('Internal Error');
+		return;
+	}
+
+	var key = telt.value;
+	if (key.indexOf(window.location.href + '?key=') === 0) {
+		key = key.replace(window.location.href + '?key=', '');
+	}
+
+	if (/^\w{8}-\w{4}-4\w{3}-\w{4}-\w{12}$/.test(key) === false) {
+		alert('Формат ключа не поддерживается.');
+		return;
+	}
+
+	text = loadSetFromServer(key);
+
+	if (typeof text === 'string' && text.length > 0) {
+		alert(text);
+		/*var dstate = deserializeObject(lzw_decode(text));
+		applyDeserializedState(state.id, dstate);*/
+	} else {
+		alert('Комплект ' + key + ' не найден');
+	}
 }
 
 function onLoadSet(stateid)
@@ -10267,11 +10377,21 @@ function saveOnServer()
 	window.open(url, '_blank');
 }
 
-function uuidv4() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-    return v.toString(16);
-  });
+function saveSetOnServer(key, set) {
+	var url = encodeURI('https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/' + manageSetsAppKey + "/" + key + "/" + set);
+
+	var xhr = new XMLHttpRequest();
+
+	xhr.open('POST', url, false);
+
+	xhr.send();
+
+	if (xhr.status != 200) {
+  		alert(xhr.status + ': ' + xhr.statusText);
+  		return false;
+	}
+
+	return true;
 }
 
 function onSaveSet(stateid)
@@ -10283,26 +10403,28 @@ function onSaveSet(stateid)
 		return;
 	}
 
-	var url = window.location.href + '?set=' + uuidv4();
-	/* alert(url); */
+	var key = /*uuidv4()*/ 'ca12f6bc-d192-4803-841a-126b39d3cbfd',
+		url = window.location.href + '?key=' + key,
+		text = /*lzw_encode(serializeObject(getSerializableState(state)))*/ 'test_text' + uuidv4();
 
-	var menuHtml  ='<table width="340" border="0"><tr><td>';
-	var text = serializeObject(getSerializableState(state));
-	menuHtml += format(localizer.saveSetHint, clanImgPath);
-	menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
-	menuHtml += url;
-	menuHtml += '</textarea></td></tr>';
-	menuHtml += getRowMenuSeparatorHtml();
-	/*menuHtml += getRowMenuItemHtml(localizer.saveSetOnServer, "saveOnServer()");
-	menuHtml += getRowMenuSeparatorHtml();*/
-	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
-	menuHtml += '</table>';
-	showMenu(menuHtml, false);
-	var telt = document.getElementById('setArea');
-	if (telt != null)
-	{
-		telt.focus();
-		telt.select();
+	if (saveSetOnServer(key, text)) {
+		var menuHtml  ='<table width="340" border="0"><tr><td>';
+		menuHtml += format(localizer.saveSetHint, clanImgPath);
+		menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
+		menuHtml += url;
+		menuHtml += '</textarea></td></tr>';
+		menuHtml += getRowMenuSeparatorHtml();
+		/*menuHtml += getRowMenuItemHtml(localizer.saveSetOnServer, "saveOnServer()");
+		menuHtml += getRowMenuSeparatorHtml();*/
+		menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
+		menuHtml += '</table>';
+		showMenu(menuHtml, false);
+		var telt = document.getElementById('setArea');
+		if (telt != null)
+		{
+			telt.focus();
+			telt.select();
+		}
 	}
 }
 

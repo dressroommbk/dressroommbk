@@ -10254,13 +10254,6 @@ function loadSetFromServer(key) {
 	return JSON.parse(xhr.responseText);
 }
 
-function uuidv4() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-    return v.toString(16);
-  });
-}
-
 // LZW-compress a string
 function lzw_encode(s) {
     var dict = {};
@@ -10337,9 +10330,9 @@ function loadEnteredSet()
 	text = loadSetFromServer(key);
 
 	if (typeof text === 'string' && text.length > 0) {
-		alert(text);
-		/*var dstate = deserializeObject(lzw_decode(text));
-		applyDeserializedState(state.id, dstate);*/
+		alert('Success');
+		var dstate = deserializeObject(lzw_decode(text));
+		applyDeserializedState(state.id, dstate);
 	} else {
 		alert('Комплект ' + key + ' не найден');
 	}
@@ -10385,8 +10378,13 @@ function uuidv4() {
 }
 
 function saveSetOnServer(key, set) {
-	var url = encodeURI('https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/' + manageSetsAppKey + "/" + key + "/" + set);
+	if (set.length > 1024) {
+		alert('Set is too long!');
+		return false;
+	}
 
+	var url = 'https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/' + manageSetsAppKey + "/" + key + "/" + encodeURIComponent(set);
+	
 	var xhr = new XMLHttpRequest();
 
 	xhr.open('POST', url, false);
@@ -10410,9 +10408,9 @@ function onSaveSet(stateid)
 		return;
 	}
 
-	var key = /*uuidv4()*/ 'ca12f6bc-d192-4803-841a-126b39d3cbfd',
+	var key = uuidv4()/* 'ca12f6bc-d192-4803-841a-126b39d3cbfd'*/,
 		url = window.location.href + '?key=' + key,
-		text = /*lzw_encode(serializeObject(getSerializableState(state)))*/ 'test_text' + uuidv4();
+		text = lzw_encode(serializeObject(getSerializableState(state)))/* 'test_text' + uuidv4()*/;
 
 	if (saveSetOnServer(key, text)) {
 		var menuHtml  ='<table width="340" border="0"><tr><td>';

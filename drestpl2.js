@@ -4105,7 +4105,7 @@ function getEditHeaderInfo(state)
 			html +=  '</div>';
 	    }
 	}
-	var availskills = state.natural.level + state.natural.pskil + 1;
+	var availskills = state.natural.level + state.natural.pskil + 1; //!!!!
 	if (availskills < totalnskills)
 	{
 		var pskilstr = '';
@@ -10276,33 +10276,35 @@ function onSaveSet(stateid)
 		return;
 	}
 
-	var key = uuidv4(),
-		url = window.location.href + '?key=' + key,
-		text = serializeObject(getSerializableState(state));
+	if (confirm('Подтвердите сохранение комлпекта...')) {
+		var key = uuidv4(),
+			url = window.location.protocol + '//' + window.location.host + '/?key=' + key,
+			text = serializeObject(getSerializableState(state));
 
-	db.collection("sets").doc(key).set({
-	    set: text
-	})
-	.then(function() {
-		var menuHtml  ='<table width="340" border="0"><tr><td>';
-		menuHtml += format(localizer.saveSetHint, clanImgPath);
-		menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
-		menuHtml += url;
-		menuHtml += '</textarea></td></tr>';
-		menuHtml += getRowMenuSeparatorHtml();
-		menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
-		menuHtml += '</table>';
-		showMenu(menuHtml, false);
-		var telt = document.getElementById('setArea');
-		if (telt != null)
-		{
-			telt.focus();
-			telt.select();
-		}
-	})
-	.catch(function(error) {
-	    alert("Error writing document: " + error);
-	});
+		db.collection("sets").doc(key).set({
+		    set: text
+		})
+		.then(function() {
+			var menuHtml  ='<table width="340" border="0"><tr><td>';
+			menuHtml += format(localizer.saveSetHint, clanImgPath);
+			menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
+			menuHtml += url;
+			menuHtml += '</textarea></td></tr>';
+			menuHtml += getRowMenuSeparatorHtml();
+			menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
+			menuHtml += '</table>';
+			showMenu(menuHtml, false);
+			var telt = document.getElementById('setArea');
+			if (telt != null)
+			{
+				telt.focus();
+				telt.select();
+			}
+		})
+		.catch(function(error) {
+		    alert("Error writing document: " + error);
+		});
+	}
 }
 
 function getNextGoodSlot(o, slot)

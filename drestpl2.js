@@ -6396,21 +6396,18 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 	    powermfn = attackn + 'power',
 		powerMfValue = baseIndices.powermf + getPowerMfValue(state, wslot, 'power') + getPowerMfValue(state, wslot, powermfn),
 		slotPropName = wslot.id + 'props',
-	    min_damage_base = state.results.strength / 3.0,
-	    max_damage_base = state.results.strength / 3.0,
-		lvl = state.results.level, 
-		min_damage_weapon = ((o != null && 'properties' in o) ? o.properties.mindamage : 0),
-		max_damage_weapon = ((o != null && 'properties' in o) ? o.properties.maxdamage : 0),
-		min_damage_add = baseIndices.postmindamage,
-		max_damage_add = baseIndices.postmaxdamage,
-		weaponskill = baseIndices.skill,
-		stats_damage_effect = 0,
-		criticalpower = (slotPropName in state && 'criticalpower' in state[slotPropName]) ? state[slotPropName].criticalpower : 0,
-		min_damage = min_damage_base + lvl,
-		max_damage = max_damage_base + lvl,
+	    min_damage_base = state.results.strength / 3.0 + state.results.level + baseIndices.postmindamage,
+	    max_damage_base = state.results.strength / 3.0 + state.results.level + baseIndices.postmaxdamage,
+	    min_damage = min_damage_base,
+	    max_damage = max_damage_base,
 		min_damage_critical = min_damage * 2.0,
 		max_damage_critical = max_damage * 2.0;
-	
+		min_damage_weapon = ((o != null && 'properties' in o) ? o.properties.mindamage : 0),
+		max_damage_weapon = ((o != null && 'properties' in o) ? o.properties.maxdamage : 0),
+		weaponskill = baseIndices.skill * ((o != null && 'properties' in o && 'twohandled' in o.properties && o.properties.twohandled === 'yes') ? 2 : 1),
+		stats_damage_effect = 0,
+		criticalpower = (slotPropName in state && 'criticalpower' in state[slotPropName]) ? state[slotPropName].criticalpower : 0;
+
 	switch (attackn) {
 		case 'crush':
 			stats_damage_effect = state.results.strength * 1.0;
@@ -6431,16 +6428,19 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 		default:
 			break;
 	}
-	
-	min_damage = (min_damage_base + lvl + stats_damage_effect + min_damage_add + min_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
-	max_damage = (max_damage_base + lvl + stats_damage_effect + max_damage_add + max_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
-	min_damage_critical = min_damage * 2.0 * (1.0 + criticalpower / 100.0);
-	max_damage_critical = max_damage * 2.0 * (1.0 + criticalpower / 100.0);
+
+	if (o != null && 'properties' in o) {
+		min_damage = (min_damage_base + stats_damage_effect + min_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+		max_damage = (max_damage_base + stats_damage_effect + max_damage_weapon * (1 + 0.07 * weaponskill)) * (1.0 + powerMfValue / 100.0);
+		
+		min_damage_critical = min_damage * 2.0 * (1.0 + criticalpower / 100.0);
+		max_damage_critical = max_damage * 2.0 * (1.0 + criticalpower / 100.0);
+	}
 
 	return {
 		id: attackn,
 		attack: attack,
-		damage: {minv:1, maxv:1},
+		damage: {minv:min_damage_base, maxv:max_damage_base},
 		mfdamage: {minv:min_damage, maxv:max_damage},
 		mfcdamage: {minv:min_damage_critical, maxv:max_damage_critical},
 		postdamage: {minv:0, maxv:0},

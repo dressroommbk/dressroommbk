@@ -3990,6 +3990,11 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.fitStats, format("onFitStats('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
+	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
+	html += getCell2MenuItemHtml(localizer.saveSet, format("onSaveSet('{0}')", state.id));
+	html += getCell2MenuSeparatorHtml();
+	html += getCell2MenuItemHtml(localizer.loadSet, format("onLoadSet('{0}')", state.id));
+	html += getCell2MenuSeparatorHtml();	
 	var s = localizer.dressFromCombats;
 	html += getCell2MenuItemHtml(localizer.dressCombatsSet, 'onDressAnyCombatsSet()');
 	html += getCell2MenuSeparatorHtml();
@@ -4009,10 +4014,6 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	/*html += getCell2MenuItemHtml(localizer.optionsMenu, "onOptionsMenu()");
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
-	html += getCell2MenuItemHtml(localizer.saveSet, format("onSaveSet('{0}')", state.id));
-	html += getCell2MenuSeparatorHtml();
-	html += getCell2MenuItemHtml(localizer.loadSet, format("onLoadSet('{0}')", state.id));
-	html += getCell2MenuSeparatorHtml();
 	s = '<img unselectable="on" src="' + hereItemImgPath + 'dressFromCombats.gif" width="17" height="15" border="0" /><font unselectable="on" color="#003300" title="' + localizer.dressFromCombatsHint + '">' + s + '</font>';
 	html += getCell2MenuItemHtml(s, format("onDressFromCombatsMenu('{0}')", state.id));	
 	html += getCell2MenuItemHtml('<img unselectable="on" src="' + hereItemImgPath + 'dressFriendLink.gif" width="16" height="15" border="0" /><font unselectable="on" color="#330033">' + localizer.friendLink + '</font>', format("onFriendLink('{0}')", state.id));
@@ -10208,30 +10209,35 @@ function applyDeserializedState(stateid, r)
 
 function loadEnteredSet()
 {
-	var state = activeState;
-	if (state == null)
-	{
+	var state = activeState,
+		telt = document.getElementById('setArea');
+	
+	if ((state == null) || (telt == null)) {
+		alert('Internal Error');
 		return;
 	}
-	var telt = document.getElementById('setArea');
-	if (telt == null)
-	{
+
+	var key = telt.value;
+	if (key.indexOf(window.location.href + '?key=') === 0) {
+		key = key.replace(window.location.href + '?key=', '');
+	}
+
+	if (/^\w{8}-\w{4}-4\w{3}-\w{4}-\w{12}$/.test(key) === false) {
+		alert('Формат ключа не поддерживается.');
 		return;
 	}
-	var text = telt.value;
-	if (text.indexOf(absoluteDressRoomUrl) === 0)
-	{
-		// its friendlink.
-		text = text.substr(absoluteDressRoomUrl.length + '?data='.length);
-		text = unescape(text);
-	}
-	if (text == '')
-	{
-		alert('Введите сперва текст, описывающий состав комплекта.');
-		return;
-	}
-	var dstate = deserializeObject(text);
-	applyDeserializedState(state.id, dstate);
+
+	db.collection("sets").doc(key).get().then(function(doc) {
+	    if (doc.exists) {
+	        var text = doc.data().set;
+	        var dstate = deserializeObject(text);
+			applyDeserializedState(state.id, dstate);
+	    } else {
+	        alert('Комплект ' + key + ' не найден');
+	    }
+	}).catch(function(error) {
+    	alert("Error getting document: " + error);
+	});
 }
 
 function onLoadSet(stateid)
@@ -10254,16 +10260,11 @@ function onLoadSet(stateid)
 	}
 }
 
-function saveOnServer()
-{
-	var state = activeState;
-	if (state == null)
-	{
-		return;
-	}
-	var text = serializeObject(getSerializableState(state));
-	var url = format(saveSetOnServerUrl, escape(text));
-	window.open(url, '_blank');
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
 }
 
 function onSaveSet(stateid)
@@ -10271,26 +10272,37 @@ function onSaveSet(stateid)
 	var state = dressStates[stateid];
 	if (state == null)
 	{
+		alert('Internal Error. Nothing to save!');
 		return;
 	}
-	var menuHtml  ='<table width="340" border="0"><tr><td>';
-	var text = serializeObject(getSerializableState(state));
-	menuHtml += format(localizer.saveSetHint, clanImgPath);
-	menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
-	menuHtml += text;
-	menuHtml += '</textarea></td></tr>';
-	menuHtml += getRowMenuSeparatorHtml();
-	menuHtml += getRowMenuItemHtml(localizer.saveSetOnServer, "saveOnServer()");
-	menuHtml += getRowMenuSeparatorHtml();
-	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
-	menuHtml += '</table>';
-	showMenu(menuHtml, false);
-	var telt = document.getElementById('setArea');
-	if (telt != null)
-	{
-		telt.focus();
-		telt.select();
-	}
+
+	var key = uuidv4(),
+		url = window.location.href + '?key=' + key,
+		text = serializeObject(getSerializableState(state));
+
+	db.collection("sets").doc(key).set({
+	    set: text
+	})
+	.then(function() {
+		var menuHtml  ='<table width="340" border="0"><tr><td>';
+		menuHtml += format(localizer.saveSetHint, clanImgPath);
+		menuHtml += '<br /><textarea id="setArea" class="inpText" cols="60" rows="8" wrap="VIRTUAL" readonly="true">';
+		menuHtml += url;
+		menuHtml += '</textarea></td></tr>';
+		menuHtml += getRowMenuSeparatorHtml();
+		menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
+		menuHtml += '</table>';
+		showMenu(menuHtml, false);
+		var telt = document.getElementById('setArea');
+		if (telt != null)
+		{
+			telt.focus();
+			telt.select();
+		}
+	})
+	.catch(function(error) {
+	    alert("Error writing document: " + error);
+	});
 }
 
 function getNextGoodSlot(o, slot)

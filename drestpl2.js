@@ -10218,8 +10218,8 @@ function loadEnteredSet()
 	}
 
 	var key = telt.value;
-	if (key.indexOf(window.location.href + '?key=') === 0) {
-		key = key.replace(window.location.href + '?key=', '');
+	if (key.indexOf(window.location.protocol + '//' + window.location.host + window.location.pathname + '?key=') === 0) {
+		key = key.replace(window.location.protocol + '//' + window.location.host + window.location.pathname + '?key=', '');
 	}
 
 	if (/^\w{8}-\w{4}-4\w{3}-\w{4}-\w{12}$/.test(key) === false) {

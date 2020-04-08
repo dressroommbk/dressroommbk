@@ -10276,9 +10276,9 @@ function onSaveSet(stateid)
 		return;
 	}
 
-	if (confirm('Подтвердите сохранение комлпекта...')) {
+	if (confirm('Подтвердите сохранение комплекта...')) {
 		var key = uuidv4(),
-			url = window.location.protocol + '//' + window.location.host + '/?key=' + key,
+			url = window.location.protocol + '//' + window.location.host + window.location.pathname + (window.location.pathname.length > 1 ? '/' : '') + '?key=' + key,
 			text = serializeObject(getSerializableState(state));
 
 		db.collection("sets").doc(key).set({

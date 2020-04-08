@@ -152,6 +152,12 @@ function onDresserLoaded()
 	}
 	//setInterval("updatePanelChannels()", 60 * 60 * 1000);
 	//setTimeout("updatePanelChannels()", 3 * 1000);
+
+	let setKey = new URL(window.location.href).searchParams.get('key');
+	
+	if (setKey != null) {
+		loadEnteredSet(setKey);
+	}
 }
 
 function delayedDresserLoad()

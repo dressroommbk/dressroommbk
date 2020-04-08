@@ -10207,17 +10207,25 @@ function applyDeserializedState(stateid, r)
 	someStatesLoaded = true;
 }
 
-function loadEnteredSet()
-{
-	var state = activeState,
-		telt = document.getElementById('setArea');
-	
-	if ((state == null) || (telt == null)) {
-		alert('Internal Error');
+function loadEnteredSet(key)
+{	
+	var state = activeState;
+
+	if (state == null) {
+		alert('Internal Error.');
 		return;
+	} 
+	
+	if (key == null) {
+		telt = document.getElementById('setArea');
+		if (telt == null) {
+			alert('Internal Error.');
+			return;
+		}
+		
+		key = telt.value;
 	}
 
-	var key = telt.value;
 	if (key.indexOf(window.location.protocol + '//' + window.location.host + window.location.pathname + '?key=') === 0) {
 		key = key.replace(window.location.protocol + '//' + window.location.host + window.location.pathname + '?key=', '');
 	}

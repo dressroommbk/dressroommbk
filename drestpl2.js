@@ -4105,16 +4105,36 @@ function getEditHeaderInfo(state)
 			html +=  '</div>';
 	    }
 	}
-	var availskills = state.natural.level + state.natural.pskil + 1; //!!!!
+	var availskills = state.natural.pskil;
+
+	for (var i = 0; i <= state.natural.level; i++) {
+		var leveln = 'L' + i;
+		if (!(leveln in expd)) {
+			break;
+		}
+
+		var ld = expd[leveln];
+		if (!('U0' in ld.ups)) {
+			break;
+		}
+		
+		var ups = (i == state.natural.level) ? ((('U' + state.natural.levelup) in expd[leveln].ups) ? (state.natural.levelup + 1) : Object.keys(expd[leveln].ups).length) : Object.keys(expd[leveln].ups).length;
+		
+		for (var j = 0; j < ups; j++) {
+			let key = 'U' + j, nextup = ld.ups[key];
+			availskills += nextup.amastery;
+		}
+	}
+
 	if (availskills < totalnskills)
 	{
 		var pskilstr = '';
 		if (state.natural.pskil > 0)
 		{
-			pskilstr = format(localizer.badSkillRewardedCount);
+			pskilstr = format(localizer.badSkillRewardedCount, state.natural.pskil);
 		}
 		html += '<div class="hintview">';
-		html += format(localizer.badSkillCount, state.natural.level, pskilstr, availskills, totalnskills);
+		html += format(localizer.badSkillCount, state.natural.level, pskilstr, availskills, totalnskills, state.natural.levelup);
 		html +=  '</div>';
 	}
 	if (state.natural.pskil > 7)

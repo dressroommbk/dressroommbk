@@ -1410,7 +1410,7 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 {
 	var html =  ((noLabel != null) && noLabel) ? '': (getItemPropLabel(mf) + ': ');
 	var hint = '';
-	if (natural !== 0 || modify !== 0)
+	/*if (natural !== 0 || modify !== 0)
 	{
 		if (natural !== 0)
 		{
@@ -1423,7 +1423,7 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 			hint += localizer.describeSetStats;
 		}
 		hint += '.';
-	}
+	}*/
 	html += ' <span';
 	if (hint != '')
 	{
@@ -2805,6 +2805,11 @@ function getDresserInfoPaneHtml(state)
 		{
 			continue;
 		}
+
+		if (['darkmagicdefence', 'lightmagicdefence', 'greymagicdefence', 'firemagicdefence', 'watermagicdefence', 'earthmagicdefence', 'airmagicdefence'].indexOf(mfname) != -1) {
+			state.results[mfname] += state.results.magicdefence;
+		}
+
 		if (mfname in state.results)
 		{
 			var vt = state.results[mfname];

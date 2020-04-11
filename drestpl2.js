@@ -1973,8 +1973,8 @@ function getCharmChooserHtml(sloti)
 	html += '</select><br />';
 	html += '<label for="charm_mf_value">' + localizer.charmEnterV + ':</label><br />';
 	html += '<input class="ABText80" id="charm_mf_value" type="text" maxlength="5" value="" /><br />';
-	html += '<input id="charm_mf_replace" type="checkbox" value="replace" />';
-	html += '<label for="charm_mf_replace">' + localizer.charmReplace + '.</label><br />';
+	//html += '<input id="charm_mf_replace" type="checkbox" value="replace" />';
+	//html += '<label for="charm_mf_replace">' + localizer.charmReplace + '.</label><br />';
 	if (!('canCharm' in slot))
 	{
 		html += '<div style="color: red; font-size: x-small;">Зачарование этого слота в БК невозможно.</div>';
@@ -8457,16 +8457,16 @@ function doCharm(sloti)
 	}
 	var charm_mf_name = document.getElementById('charm_mf_name').value;
 	var charm_mf_value = document.getElementById('charm_mf_value').value;
-	var charm_mf_replace = document.getElementById('charm_mf_replace').checked;
+	//var charm_mf_replace = document.getElementById('charm_mf_replace').checked;
 	if (!(charm_mf_name in item_props) || isNaN(charm_mf_value) || parseInt(charm_mf_value) == 0)
 	{
 		return;
 	}
 	var v = charm_mf_name + '#' + parseInt(charm_mf_value);
-	if (state.charmSlots[slot.index] != null && !charm_mf_replace)
+	/*if (state.charmSlots[slot.index] != null && !charm_mf_replace)
 	{
 		v += '#' + state.charmSlots[slot.index];
-	}
+	}*/
 	state.charmSlots[slot.index] = v;
 	updateDresserSlot(state, slot);
 }
@@ -8515,11 +8515,11 @@ function doPredefinedCharm(sloti, v)
 	{
 		return;
 	}
-	var charm_mf_replace = document.getElementById('charm_mf_replace').checked;
+/*	var charm_mf_replace = document.getElementById('charm_mf_replace').checked;
 	if (state.charmSlots[slot.index] != null && !charm_mf_replace)
 	{
 		v += '#' + state.charmSlots[slot.index];
-	}
+	}*/
 	state.charmSlots[slot.index] = v;
 	updateDresserSlot(state, slot);
 }
@@ -8535,6 +8535,7 @@ function onUncharmObject(stateId, slotId)
 	state.charmSlots[slot.index] = null;
 	updateDresserSlot(state, slot);
 }
+
 function onUnaddStats(stateId, slotId)
 {
 	var state = dressStates[stateId];

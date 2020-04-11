@@ -286,7 +286,7 @@ var localizer =
 	badGloves: '<tr><td colspan="2" class="hintview">Боевую магию невозможно использовать в перчатках не для мага. Нажмите {0}, чтобы снять перчатки.</td></tr>',
 	charmChooseMf: 'Выберите изменяемый показатель',
 	charmEnterV: 'Укажите значение, на которое чаруется показатель',
-	charmReplace: 'Замещать предыдущие чары',
+	//charmReplace: 'Замещать предыдущие чары',
 	showObjectData: 'Вывести параметры предмета',
 	waddMenu: 'Продукты',
 	waddInfo: 'Продукт/подарок',
@@ -1070,10 +1070,10 @@ var knownPredefinedCharms = [
 	{id: 'enhp_6_bloodlinem1', caption: 'Кровавая Мощь', v: 'magicpower#1#hitpoints#6', categories: ['rings']},
 	{id: 'enhp_6_bloodlinew2', caption: 'Кровавая Мощь [2]', v: 'power#2#hitpoints#12', categories: ['rings']},
 	{id: 'enhp_6_bloodlinem2', caption: 'Кровавая Мощь [2]', v: 'magicpower#2#hitpoints#12', categories: ['rings']},
-	{id: 'enhp_2_maxHP10', caption: 'Зачаровать амулет: Здоровье +100', v: 'hitpoints#100', categories: ['necklaces']},
+//	{id: 'enhp_2_maxHP10', caption: 'Зачаровать амулет: Здоровье +100', v: 'hitpoints#100', categories: ['necklaces']},
 	{id: 'enhp_13_pm_revard', caption: 'Зачаровать наручи: Здоровье +12', v: 'hitpoints#12', categories: ['bracelets']},
-	{id: 'enhp_3_moder_6_1', caption: 'Зачаровать Посох: Урон', v: 'magicpower#4', categories: ['staffs']},
-	{id: 'enhp_4_moder_2_1', caption: 'Зачаровать броню: Жизнь', v: 'hitpoints#33', categories: ['heavyarmors', 'lightarmors']},
+//	{id: 'enhp_3_moder_6_1', caption: 'Зачаровать Посох: Урон', v: 'magicpower#4', categories: ['staffs']},
+//	{id: 'enhp_4_moder_2_1', caption: 'Зачаровать броню: Жизнь', v: 'hitpoints#33', categories: ['heavyarmors', 'lightarmors']},
 	{id: 'enhp_4_4', caption: 'Зачаровать броню: Адаптация', v: 'antijumpaway#10#stats#2', categories: ['heavyarmors', 'lightarmors']},
 	{id: 'enhp_2_4', caption: 'Зачаровать амулет: Адаптация', v: 'magicdefence#5#stats#2', categories: ['necklaces']},
 	{id: 'enhp_9_5', caption: 'Зачаровать шлем: Адаптация', v: 'defence#5#stats#2', categories: ['helmets']},
@@ -1081,12 +1081,12 @@ var knownPredefinedCharms = [
 	{id: 'enhp_19_1', caption: 'Зачаровать поножи: Защита от урона', v: 'defence#20', categories: ['pants']},
 	{id: 'enhp_19_2', caption: 'Зачаровать поножи: Выживание', v: 'hitpoints#40', categories: ['pants']},
 	{id: 'enhp_19_3', caption: 'Зачаровать поножи: Защита от магии', v: 'magicdefence#20', categories: ['pants']},
-	{id: 'enhp_19_4', caption: 'Зачаровать поножи: Адаптация', v: 'stats#3', categories: ['pants']},
+	{id: 'enhp_19_4', caption: 'Зачаровать поножи: Адаптация', v: 'stats#3', categories: ['pants']}/*,
 	{id: 'enhp_9_moder_1_1', caption: 'Зачаровать шлем: Благословление Звезд', v: 'dexterity#1#intuition#1#intellect#1#strength#1#hitpoints#6', categories: ['helmets']},
 	{id: 'enhp_11_moder_3', caption: 'Зачаровать перчатки: Урон', v: 'power#2#magicpower#2', categories: ['gauntlets']},
 	{id: 'enhp_2_tournir1chka_7_1', caption: 'Зачаровать амулет: Характеристики +1', v: 'dexterity#1#intuition#1#strength#1#hitpoints#6', categories: ['necklaces']},
 	{id: 'enhp_2_tournir1chka_7_2', caption: 'Зачаровать амулет: Характеристики +2', v: 'dexterity#2#intuition#2#strength#2#hitpoints#12', categories: ['necklaces']},
-	{id: 'enhp_2_tournir1chka_7_3', caption: 'Зачаровать амулет: Характеристики +3', v: 'dexterity#3#intuition#3#strength#3#hitpoints#18', categories: ['necklaces']}
+	{id: 'enhp_2_tournir1chka_7_3', caption: 'Зачаровать амулет: Характеристики +3', v: 'dexterity#3#intuition#3#strength#3#hitpoints#18', categories: ['necklaces']}*/
 	];
 
 var knownNaturalEditors = new Array(

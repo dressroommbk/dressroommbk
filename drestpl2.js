@@ -521,6 +521,7 @@ function getPersObjectImageHtml(state, slot, mode, showImages, xclick, runes)
 	var sizeY = (runes == 1) ? o.height : slot.height;
 	var filter = (mode == null) ? getObjectFilter(state, slot, o) : '';
 	var imgId = getImageId(state, slot, (mode != null));
+	var imgFormat = (o != null && 'imgFormat' in o) ? o.imgFormat : defaultImgFormat;
 	style += getRealFilter(filter);
 	if (xclick == null) r += '<td valign="top">';
 	if (showImages == null || showImages)
@@ -535,14 +536,15 @@ function getPersObjectImageHtml(state, slot, mode, showImages, xclick, runes)
 		}
 		*/
 		r += format(
-					'<img id="{5}" name="x{1}" src="{0}{1}.gif" width="{2}" height="{3}" style="{4}" border="0"{6} onmouseover="showItemProps(this)" onmouseout="hidePopup()" />',
+					'<img id="{5}" name="x{1}" src="{0}{1}.{7}" width="{2}" height="{3}" style="{4}" border="0"{6} onmouseover="showItemProps(this)" onmouseout="hidePopup()" />',
 					realItemImgPath,
 					oimg,
 					sizeX,
 					sizeY,
 					style,
 					imgId,
-					onclick
+					onclick,
+					imgFormat
 					);
 	}
 	else

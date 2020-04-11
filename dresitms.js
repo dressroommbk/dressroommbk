@@ -11216,19 +11216,19 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 	},
 
   // пасхальные яйца
-  easter_egg_1: {id:'easter_egg_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальное отрицание',description:'Мф. мощности магии стихий: -75, Защита от урона: -75, Защита от магии: -75, Мф. мощности урона: -75<br />Используется на противника, продолжительность действия 3 хода.<br />Не работает на ботах.',
+  easter_egg_1: {id:'easter_egg_1', imgFormat:'png', category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальное отрицание',description:'Мф. мощности магии стихий: -75, Защита от урона: -75, Защита от магии: -75, Мф. мощности урона: -75<br />Используется на противника, продолжительность действия 3 хода.<br />Не работает на ботах.',
     common: {weight:0.1, durability: 1, eprice: 100}
   },
-  easter_egg_2: {id:'easter_egg_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальный удар',description:'Наносит противнику серию урона с рандомным значением от 1-50.<br />Ваша мощность магии и подавление влияет на силу ударов.',
+  easter_egg_2: {id:'easter_egg_2',imgFormat:'png', category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальный удар',description:'Наносит противнику серию урона с рандомным значением от 1-50.<br />Ваша мощность магии и подавление влияет на силу ударов.',
     common: {weight:0.1, durability: 1, eprice: 100}
   },
-  easter_egg_3: {id:'easter_egg_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальное наступление',description:'Мф. мощности урона: +50, Мф. мощности магии: +50<br />Действует 1 ход.',
+  easter_egg_3: {id:'easter_egg_3',imgFormat:'png', category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальное наступление',description:'Мф. мощности урона: +50, Мф. мощности магии: +50<br />Действует 1 ход.',
     common: {weight:0.1, durability: 1, eprice: 100}
   },
-  easter_egg_4: {id:'easter_egg_4',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальная защита',description:'Добавляет +5 тактик защиты.',
+  easter_egg_4: {id:'easter_egg_4',imgFormat:'png', category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальная защита',description:'Добавляет +5 тактик защиты.',
     common: {weight:0.1, durability: 1, eprice: 100}
   },
-  easter_egg_5: {id:'easter_egg_5',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальное потрясение',description:'Мф. защиты от урона: -150, Мф. защиты от магии: -150<br />Используется на противника, продолжительность действия 3 хода.<br />Не работает на ботах.',
+  easter_egg_5: {id:'easter_egg_5',imgFormat:'png', category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Пасхальное потрясение',description:'Мф. защиты от урона: -150, Мф. защиты от магии: -150<br />Используется на противника, продолжительность действия 3 хода.<br />Не работает на ботах.',
     common: {weight:0.1, durability: 1, eprice: 100}
   },
 

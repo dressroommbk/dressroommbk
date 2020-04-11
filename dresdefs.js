@@ -15,6 +15,7 @@ var infospaceImgPath = 'images/';
 var dressImgPath = 'images/';
 var blankImgPath = 'images/blank.gif';
 var toothImgPath = 'images/';
+var defaultImgFormat = 'gif';
 
 var charInfoUrlFormat = '/inf.php?login=';
 

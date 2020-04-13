@@ -2808,9 +2808,9 @@ function getDresserInfoPaneHtml(state)
 			continue;
 		}
 
-		if (['darkmagicdefence', 'lightmagicdefence', 'greymagicdefence', 'firemagicdefence', 'watermagicdefence', 'earthmagicdefence', 'airmagicdefence'].indexOf(mfname) != -1) {
+		/*if (['darkmagicdefence', 'lightmagicdefence', 'greymagicdefence', 'firemagicdefence', 'watermagicdefence', 'earthmagicdefence', 'airmagicdefence'].indexOf(mfname) != -1) {
 			state.results[mfname] += state.results.magicdefence;
-		}
+		}*/
 
 		if (mfname in state.results)
 		{

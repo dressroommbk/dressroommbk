@@ -2900,7 +2900,7 @@ upgrade: {
 	},
 	sword100: {id:'sword100',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Злодеяний',description:'Требует мастерство владения ножами и кастетами',requireditems:{shop:{exchanger:'shop', items: {mater14:{id:'mater14',caption:'Сгусток эфира',count:8},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:9}}}},
 		common: {weight:25,price:330,durability:50},
-		required: {dexterity:50,intuition:40,level:9,knifeskill:5,endurance:30,strength:25},
+		required: {dexterity:50,intuition:40,level:9,swordskill:5,endurance:30,strength:25},
 		modify: {dexterity:6},
 		properties: {mindamage:17,maxdamage:51,criticalhit:180,twohandled:'yes',blockzones:'+'},
 		setlink: {name:'misdeed'},

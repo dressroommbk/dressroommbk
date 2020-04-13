@@ -1514,6 +1514,11 @@ function getWeaponSkillValueOf(state, wo, skillname)
 	{
 		skill += wo.properties.weaponskill;
 	}
+
+	if ('properties' in wo && 'twohandled' in wo.properties && wo.properties.twohandled === 'yes') {
+		skill *= 2;
+	}
+
 	return skill;
 }
 
@@ -6431,7 +6436,7 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 		max_damage_critical = max_damage * 2.0;
 		min_damage_weapon = ((o != null && 'properties' in o) ? o.properties.mindamage : 0),
 		max_damage_weapon = ((o != null && 'properties' in o) ? o.properties.maxdamage : 0),
-		weaponskill = baseIndices.skill * ((o != null && 'properties' in o && 'twohandled' in o.properties && o.properties.twohandled === 'yes') ? 2 : 1),
+		weaponskill = baseIndices.skill,
 		stats_damage_effect = 0,
 		criticalpower = (slotPropName in state && 'criticalpower' in state[slotPropName]) ? state[slotPropName].criticalpower : 0;
 

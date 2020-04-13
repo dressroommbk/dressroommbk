@@ -2813,10 +2813,6 @@ function getDresserInfoPaneHtml(state)
 			continue;
 		}
 
-		/*if (['darkmagicdefence', 'lightmagicdefence', 'greymagicdefence', 'firemagicdefence', 'watermagicdefence', 'earthmagicdefence', 'airmagicdefence'].indexOf(mfname) != -1) {
-			state.results[mfname] += state.results.magicdefence;
-		}*/
-
 		if (mfname in state.results)
 		{
 			var vt = state.results[mfname];
@@ -7043,9 +7039,9 @@ function recalcDresserState(state)
 	state.modify.attackcount = getAttackCount(state) - 1;
 	state.natural.blockcount = 2;
 	state.modify.blockcount = getBlockCount(state) - 2;
-	for (var i = 0; i < naturalElements.length; i++)
+	for (var i = 0; i < allElements.length; i++)
 	{
-		state.natural[naturalElements[i] + 'magicdefence'] = 0;
+		state.natural[allElements[i] + 'magicdefence'] = 0;
 	}
 	for (var i = 0; i < allElements.length; i++)
 	{
@@ -7527,6 +7523,12 @@ function recalcDresserState(state)
 			mfvalue += state.modify.intellect*0.5;
 		}
 		state.modify[allElements[i]+'magicpower'] = mfvalue;
+	}
+
+	// updating magics defense
+	for (let i = 0; i < allElements.length; i++) {
+		state.natural[allElements[i] + 'magicdefence'] += state.natural.magicdefence;
+		state.modify[allElements[i] + 'magicdefence'] += state.modify.magicdefence;
 	}
 
 	calcResults(state);

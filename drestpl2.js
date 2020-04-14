@@ -1412,7 +1412,7 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 {
 	var html =  ((noLabel != null) && noLabel) ? '': (getItemPropLabel(mf) + ': ');
 	var hint = '';
-	/*if (natural !== 0 || modify !== 0)
+	if (natural !== 0 || modify !== 0)
 	{
 		if (natural !== 0)
 		{
@@ -1424,8 +1424,8 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 			hint += getItemPropFormattedValue(mf, modify);
 			hint += localizer.describeSetStats;
 		}
-		hint += '.';
-	}*/
+		//hint += '.';
+	}
 	html += ' <span';
 	if (hint != '')
 	{
@@ -6647,18 +6647,19 @@ function applyDefElix(state, makeUp, v)
 			state.results.cutdefence.all += v;
 			break;
 		case 'emagicdefence':
-			state.modify.firemagicdefence += v;
-			state.modify.airmagicdefence += v;
-			state.modify.watermagicdefence += v;
-			state.modify.earthmagicdefence += v;
+			state.natural.firemagicdefence += v;
+			state.natural.airmagicdefence += v;
+			state.natural.watermagicdefence += v;
+			state.natural.earthmagicdefence += v;
 			break;
 		default:
 			if (makeUp in knownZoneModifiers)
 			{
 				state.results[makeUp].all += v;
 			}
-			else
-			{
+			else if (makeUp === 'magicdefence') {
+				state.natural[makeUp] += v;
+			} else {
 				state.modify[makeUp] += v;
 			}
 			break;
@@ -7250,7 +7251,7 @@ function recalcDresserState(state)
 			var powerup = knownPowerUps[powerupn];
 			if (!powerup.damageup)
 			{
-				state.modify[powerup.element + 'magicdefence'] += state.spellPowerUps[powerupn];
+				state.natural[powerup.element + 'magicdefence'] += state.spellPowerUps[powerupn];
 			}
 			else
 			{
@@ -7269,7 +7270,7 @@ function recalcDresserState(state)
 				{
 					if (!(epowerup.modify in knownWeaponModifiersHash))
 					{
-						state.modify[epowerup.modify] += epowerup.v;
+						state.natural[epowerup.modify] += epowerup.v;
 					}
 				}
 			}

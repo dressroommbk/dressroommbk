@@ -1481,7 +1481,7 @@ function getItemPropAdvWeaponHtml(mf, vobj, maxv, noLabel)
 	}
 	var vsum = vobj.minv + vobj.maxv;
 	var fv = getItemPropFormattedValue(mf, vobj.minv);
-	fv += '-';
+	fv += ' - ';
 	fv += getItemPropFormattedValue(mf, vobj.maxv);
 	if (maxv != null && vsum < maxv)
 	{
@@ -6079,6 +6079,7 @@ function recalcDresserWeaponState(state, wslot)
 	var r = {};
 	var objid;
 	var o;
+	var doublesO = getObjectByStateSlot(state, getSlotById(wslot.id === 'w3' ? 'w10' : 'w3'));
 	for (var mfname in knownWeaponModifiersHash)
 	{
 		var mfvalue = 0;
@@ -6123,6 +6124,14 @@ function recalcDresserWeaponState(state, wslot)
 		{
 			continue;
 		}
+
+		// Emulate bug with weapon's damage properties
+		if (doublesO != null && ['power', 'thrustpower', 'sabrepower', 'crushpower', 'cutpower'].indexOf(mfname) != -1) {
+			if ('properties' in doublesO && mfname in doublesO.properties) {
+				mfvalue += parseInt(doublesO.properties[mfname]);
+			}
+		}
+
 		r[mfname] = mfvalue;
 	}
 	for (var powerupn in state.spellPowerUps)

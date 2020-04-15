@@ -1875,7 +1875,7 @@ function getDresserInfoPaneTabsHtml(tabIndex)
 	html += '<div class="dtab"><ul class="dtab" style="float:right; margin-right: 16px;">';
 	html += getDresserInfoPaneTabHtml(localizer.infoPaneHeader, 'showInfoPane()', (tabIndex == 0));
 	html += getDresserInfoPaneTabHtml(localizer.damagePaneHeader, 'showDamagePane()', (tabIndex == 4));
-	//html += getDresserInfoPaneTabHtml(localizer.componentsPaneHeader, 'showComponentsPane()', (tabIndex == 5));
+	html += getDresserInfoPaneTabHtml(localizer.componentsPaneHeader, 'showComponentsPane()', (tabIndex == 5));
 	//html += getDresserInfoPaneTabHtml(localizer.listPaneHeader, 'showListPane()', (tabIndex == 1));
 	if (state != null && state.pet != null)
 	{
@@ -2429,7 +2429,7 @@ function getDresserComponentsPaneHtml(state)
 		}
 		if (ephtml != '')
 		{
-			html += '<br /><b title="' + ep.description + '"><i>' + ep.caption + '</i></b><br />';
+			html += '<br /><b title="' + ep.description + '"><i>' + ep.description + '</i></b><br />';
 			html += ephtml;
 			html += '<i>Всего</i>: ';
 			var firstc = true;

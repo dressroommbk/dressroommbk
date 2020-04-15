@@ -3698,13 +3698,14 @@ upgrade: {
 		properties: {defence:50},
 		setlink: {name:'spider10'}
 	},
-	boots22: {id:'boots22',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater5:{id:'mater5',caption:'Мифрил',count:5}}}},
+	boots22: {id:'boots22',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Кровавой Луны',
 		common: {weight:10,price:150,durability:50},
 		required: {dexterity:15,intuition:50,level:9,endurance:30,strength:30},
 		modify: {anticriticalhit:30,antijumpaway:30,criticalhit:25,magicdefence:10,defence:25,hitpoints:33,strength:2,legarmor1:9,legarmor2:35,legarmorf:8,legarmorm:1,legarmord:27},
 		setlink: {name:'bloodmoon'}
 	, upgrade: {
-	boots22_1: {id:'boots22_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Кровавой Луны [10]',binding:'boe',baseitem:'boots22',clist:{_:{sp_mat1:{id:'sp_mat1',caption:'Сущность Сапог',count:1},mater30:{id:'mater30',caption:'Шепот гор',count:3},boots22:{id:'boots22',caption:'Ботинки Кровавой Луны',count:1}}},
+	boots22_1: {id:'boots22_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Кровавой Луны [10]',binding:'boe',baseitem:'boots22',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots22:{id:'boots22',caption:'Ботинки Кровавой Луны',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:30,antijumpaway:30,criticalhit:25,magicdefence:20,defence:25,hitpoints:54,strength:2,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -3712,7 +3713,8 @@ upgrade: {
 	}}
 
 	},
-	boots22_1: {id:'boots22_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Кровавой Луны [10]',binding:'boe',baseitem:'boots22',clist:{_:{sp_mat1:{id:'sp_mat1',caption:'Сущность Сапог',count:1},mater30:{id:'mater30',caption:'Шепот гор',count:3},boots22:{id:'boots22',caption:'Ботинки Кровавой Луны',count:1}}},
+	boots22_1: {id:'boots22_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Кровавой Луны [10]',binding:'boe',baseitem:'boots22',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots22:{id:'boots22',caption:'Ботинки Кровавой Луны',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:30,antijumpaway:30,criticalhit:25,magicdefence:20,defence:25,hitpoints:54,strength:2,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -3740,20 +3742,22 @@ upgrade: {
 		modify: {anticriticalhit:30,antijumpaway:30,dexterity:-2,hitpoints:90,legarmor1:91,legarmor2:140,legarmorf:90,legarmorm:1,legarmord:50,jumpaway:-100,criticalhit:-100,defence:50},
 		setlink: {name:'losttime10'}
 	},
-	boots24_du2: {id:'boots24_du2',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:5}}}},
+	boots24_du2: {id:'boots24_du2',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца',
 		common: {weight:13,price:150,durability:60},
 		required: {dexterity:30,intuition:30,level:9,endurance:35,strength:35},
 		modify: {anticriticalhit:30,antijumpaway:15,firemagicdefence:10,watermagicdefence:-10,hitpoints:33,strength:2,legarmor1:10,legarmor2:36,legarmorf:9,legarmorm:1,legarmord:27,jumpaway:-75,criticalhit:-75,defence:75},
 		setlink: {name:'morningsun'}
 	, upgrade: {
-	boots24_du2_1: {id:'boots24_du2_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {boots24_du2:{id:'boots24_du2',caption:'Сапоги Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	boots24_du2_1: {id:'boots24_du2_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца [10]',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots24_du2:{id:'boots24_du2',caption:'Сапоги Утреннего Солнца',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:13,price:180,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,angelsreputation:10000},
 		modify: {anticriticalhit:40,antijumpaway:25,firemagicdefence:20,watermagicdefence:-10,hitpoints:44,strength:2,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
      }}
 	},
-	boots24_du2_1: {id:'boots24_du2_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {boots24_du2:{id:'boots24_du2',caption:'Сапоги Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	boots24_du2_1: {id:'boots24_du2_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Утреннего Солнца [10]',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots24_du2:{id:'boots24_du2',caption:'Сапоги Утреннего Солнца',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:13,price:180,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,angelsreputation:10000},
 		modify: {anticriticalhit:40,antijumpaway:25,firemagicdefence:20,watermagicdefence:-10,hitpoints:44,strength:2,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
@@ -3784,39 +3788,43 @@ upgrade: {
 		properties: {defence:55},
 		setlink: {name:'determination10'}
 	},
-	boots26: {id:'boots26',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater29:{id:'mater29',caption:'Лучистый топаз',count:1},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:5}}}},
+	boots26: {id:'boots26',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний',
 		common: {weight:10,price:150,durability:50},
 		required: {dexterity:50,intuition:40,level:9,endurance:30,strength:25},
 		modify: {anticriticalhit:20,criticalhit:30,jumpaway:50,dexterity:4,magicdefence:20,defence:20,legarmor1:9,legarmor2:35,legarmorf:8,legarmorm:1,legarmord:27},
 		setlink: {name:'misdeed'}
 	,upgrade:{
-		boots26_1: {id:'boots26_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items: {boots26:{id:'boots26',caption:'Ботинки Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+		boots26_1: {id:'boots26_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний [10]',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots26:{id:'boots26',caption:'Ботинки Злодеяний',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:50,intuition:40,level:9,endurance:30,strength:25,angelsreputation:10000},
 		modify: {anticriticalhit:25,criticalhit:40,jumpaway:60,dexterity:4,magicdefence:25,defence:25,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		setlink: {name:'misdeed10'}
        }}
 	},
-	boots26_1: {id:'boots26_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items: {boots26:{id:'boots26',caption:'Ботинки Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	boots26_1: {id:'boots26_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Злодеяний [10]',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots26:{id:'boots26',caption:'Ботинки Злодеяний',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:50,intuition:40,level:9,endurance:30,strength:25,angelsreputation:10000},
 		modify: {anticriticalhit:25,criticalhit:40,jumpaway:60,dexterity:4,magicdefence:25,defence:25,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		setlink: {name:'misdeed10'}
 	},
-	boots27: {id:'boots27',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater3:{id:'mater3',caption:'Серебро',count:5}}}},
+	boots27: {id:'boots27',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Скорпиона',
 		common: {weight:10,price:150,durability:50},
 		required: {dexterity:15,intuition:45,level:9,endurance:45,strength:35},
 		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:25,defence:25,hitpoints:45,strength:1,legarmor1:10,legarmor2:36,legarmorf:9,legarmorm:1,legarmord:27},
 		setlink: {name:'scorpion'}
     , upgrade: {
-    	boots27_1: {id:'boots27_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {boots27:{id:'boots27',caption:'Ботинки Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+    	boots27_1: {id:'boots27_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Скорпиона [10]',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots27:{id:'boots27',caption:'Ботинки Скорпиона',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:60,antijumpaway:40,criticalhit:35,defence:30,hitpoints:49,strength:1,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
 		setlink: {name:'scorpion10'}
       }}
 	},
-	boots27_1: {id:'boots27_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {boots27:{id:'boots27',caption:'Ботинки Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	boots27_1: {id:'boots27_1',category:'boots',slot:'w12',width:60,height:40,caption:'Ботинки Скорпиона [10]',
+        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots27:{id:'boots27',caption:'Ботинки Скорпиона',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:60,antijumpaway:40,criticalhit:35,defence:30,hitpoints:49,strength:1,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},

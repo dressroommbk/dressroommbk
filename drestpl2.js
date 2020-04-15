@@ -2360,7 +2360,7 @@ function getDresserComponentsPaneHtml(state)
 		eps[epn] = { id: epn, caption: ep.caption, description: ep.description, items: [] };
 	}
 
-	html += '<b>' + localizer.componentsPaneHeader + '</b>';
+	html += '<b>' + localizer.componentsPaneHeader + '</b>' + '<br />' + '<br />';
 	var chtml = '';
 	var totals = {};
 	for (var i = 0; i < slots.length; i++)
@@ -2415,7 +2415,7 @@ function getDresserComponentsPaneHtml(state)
 		for (var i in ep.items)
 		{
 			var item = ep.items[i];
-			ephtml += item.caption + ': ';
+			ephtml += '<br />' + item.caption + ': ';
 			var firstc = true;
 			for (var ci in item.items)
 			{
@@ -2431,14 +2431,14 @@ function getDresserComponentsPaneHtml(state)
 		{
 			html += '<br /><b title="' + ep.description + '"><i>' + ep.description + '</i></b><br />';
 			html += ephtml;
-			html += '<i>Всего</i>: ';
+			/*html += '<i>Всего</i>: ';
 			var firstc = true;
 			for (var ci in totals)
 			{
 				var c = totals[ci];
 				if (firstc) firstc = false; else html += ',';
 				html += ' ' + c.caption + ' - ' + c.count;
-			}
+			}*/
 			html += '<br />';
 		}
 	}

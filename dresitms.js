@@ -7997,7 +7997,7 @@ upgrade: {
 		setlink: {name:'losttime'}
 	, upgrade: {
 	leg11_1: {id:'leg11_1',category:'pants',slot:'w19',caption:'Поножи Забытых Времен [10]',binding:'bop',baseitem:'leg11',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg11:{id:'leg11',caption:'Поножи Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg11:{id:'leg11',caption:'Поножи Забытых Времен',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,baltarreputation:100},
 		modify: {magicdefence:25,hitpoints:57,waistarmor1:66,waistarmor2:105,waistarmorf:15,waistarmorm:1,waistarmord:40,legarmor1:66,legarmor2:105,legarmorf:15,legarmorm:1,legarmord:40,jumpaway:-100,criticalhit:-100,defence:55},
@@ -8006,7 +8006,7 @@ upgrade: {
 
 	},
 	leg11_1: {id:'leg11_1',category:'pants',slot:'w19',caption:'Поножи Забытых Времен [10]',binding:'bop',baseitem:'leg11',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg11:{id:'leg11',caption:'Поножи Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+    requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg11:{id:'leg11',caption:'Поножи Забытых Времен',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,baltarreputation:100},
 		modify: {magicdefence:25,hitpoints:57,waistarmor1:66,waistarmor2:105,waistarmorf:15,waistarmorm:1,waistarmord:40,legarmor1:66,legarmor2:105,legarmorf:15,legarmorm:1,legarmord:40,jumpaway:-100,criticalhit:-100,defence:55},
@@ -8019,7 +8019,8 @@ upgrade: {
 		properties: {defence:40},
 		setlink: {name:'bloodmoon'}
 	, upgrade: {
-	leg12_1: {id:'leg12_1',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны [10]',binding:'bop',baseitem:'leg12',requireditems:{baltar:{exchanger:'baltar', items: {leg12:{id:'leg12',caption:'Поножи Кровавой Луны',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
+	leg12_1: {id:'leg12_1',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны [10]',binding:'bop',baseitem:'leg12',
+    requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg12:{id:'leg12',caption:'Поножи Кровавой Луны',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:45,magicdefence:15,hitpoints:35,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -8028,7 +8029,8 @@ upgrade: {
 	}}
 
 	},
-	leg12_1: {id:'leg12_1',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны [10]',binding:'bop',baseitem:'leg12',requireditems:{baltar:{exchanger:'baltar', items: {leg12:{id:'leg12',caption:'Поножи Кровавой Луны',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}}}},
+	leg12_1: {id:'leg12_1',category:'pants',slot:'w19',caption:'Поножи Кровавой Луны [10]',binding:'bop',baseitem:'leg12',
+    requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg12:{id:'leg12',caption:'Поножи Кровавой Луны',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:45,magicdefence:15,hitpoints:35,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -8043,7 +8045,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	leg13_1: {id:'leg13_1',category:'pants',slot:'w19',caption:'Поножи Паука [10]',binding:'bop',baseitem:'leg13',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg13:{id:'leg13',caption:'Поножи Паука',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+    requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg13:{id:'leg13',caption:'Поножи Паука',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:45,jumpaway:50,magicdefence:30,hitpoints:27,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -8053,7 +8055,7 @@ upgrade: {
 
 	},
 	leg13_1: {id:'leg13_1',category:'pants',slot:'w19',caption:'Поножи Паука [10]',binding:'bop',baseitem:'leg13',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg13:{id:'leg13',caption:'Поножи Паука',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg13:{id:'leg13',caption:'Поножи Паука',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:45,jumpaway:50,magicdefence:30,hitpoints:27,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -8067,7 +8069,7 @@ upgrade: {
 		setlink: {name:'morningsun'}
 	, upgrade: {
 	leg14_1: {id:'leg14_1',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца [10]',binding:'bop',baseitem:'leg14',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:13,price:250,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,baltarreputation:100},
 		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:0,watermagicdefence:0,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:55},
@@ -8076,7 +8078,7 @@ upgrade: {
 
 	},
 	leg14_1: {id:'leg14_1',category:'pants',slot:'w19',caption:'Поножи Утреннего Солнца [10]',binding:'bop',baseitem:'leg14',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg14:{id:'leg14',caption:'Поножи Утреннего Солнца',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:13,price:250,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,baltarreputation:100},
 		modify: {anticriticalhit:40,antijumpaway:20,parry:2,firemagicdefence:0,watermagicdefence:0,hitpoints:45,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,jumpaway:-100,criticalhit:-100,defence:55},
@@ -8090,7 +8092,7 @@ upgrade: {
 		setlink: {name:'determination'}
 	, upgrade: {
 	leg15_1: {id:'leg15_1',category:'pants',slot:'w19',caption:'Штаны Решимости [10]',binding:'bop',baseitem:'leg15',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg15:{id:'leg15',caption:'Штаны Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg15:{id:'leg15',caption:'Штаны Решимости',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:5,price:250,durability:50},
 		required: {intellect:50,level:10,wisdom:60,baltarreputation:100},
 		modify: {magicdefencereduce:2,magicpower:5,hitpoints:25,mana:100,waistarmor1:6,waistarmor2:20,waistarmorf:5,waistarmorm:1,waistarmord:15,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15},
@@ -8100,7 +8102,7 @@ upgrade: {
 
 	},
 	leg15_1: {id:'leg15_1',category:'pants',slot:'w19',caption:'Штаны Решимости [10]',binding:'bop',baseitem:'leg15',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg15:{id:'leg15',caption:'Штаны Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg15:{id:'leg15',caption:'Штаны Решимости',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:5,price:250,durability:50},
 		required: {intellect:50,level:10,wisdom:60,baltarreputation:100},
 		modify: {magicdefencereduce:2,magicpower:5,hitpoints:25,mana:100,waistarmor1:6,waistarmor2:20,waistarmorf:5,waistarmorm:1,waistarmord:15,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15},
@@ -8114,7 +8116,7 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	leg16_1: {id:'leg16_1',category:'pants',slot:'w19',caption:'Поножи Скорпиона [10]',binding:'bop',baseitem:'leg16',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,defence:35},
@@ -8123,7 +8125,7 @@ upgrade: {
 
 	},
 	leg16_1: {id:'leg16_1',category:'pants',slot:'w19',caption:'Поножи Скорпиона [10]',binding:'bop',baseitem:'leg16',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+    requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},leg16:{id:'leg16',caption:'Поножи Скорпиона',count:1},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,baltarreputation:100},
 		modify: {anticriticalhit:30,antijumpaway:35,criticalhit:35,hitpoints:43,strength:2,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30,defence:35},
@@ -8137,7 +8139,7 @@ upgrade: {
 		setlink: {name:'misdeed'}
 	, upgrade: {
 	leg17_1: {id:'leg17_1',category:'pants',slot:'w19',caption:'Поножи Злодеяний [10]',binding:'bop',baseitem:'leg17',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}, credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+        requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}, leg16:{id:'leg16',caption:'Поножи Злодеяний',count:1}, credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,baltarreputation:100},
 		modify: {anticriticalhit:25,criticalhit:30,jumpaway:30,dexterity:2,intuition:2,magicdefence:25,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -8147,7 +8149,7 @@ upgrade: {
 
 	},
 	leg17_1: {id:'leg17_1',category:'pants',slot:'w19',caption:'Поножи Злодеяний [10]',binding:'bop',baseitem:'leg17',
-        requireditems:{baltar:{exchanger:'baltar', items: {leg16:{id:'leg16',caption:'Поножи Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6},credits:{id:'credits', caption:'Кредиты', count: 250}}}},
+    requireditems:{baltar:{exchanger:'baltar', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:6}, leg16:{id:'leg16',caption:'Поножи Злодеяний',count:1}, credits:{id:'credits', caption:'Кредиты', count: 250}}}},
 		common: {weight:10,price:250,durability:50},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,baltarreputation:100},
 		modify: {anticriticalhit:25,criticalhit:30,jumpaway:30,dexterity:2,intuition:2,magicdefence:25,waistarmor1:11,waistarmor2:40,waistarmorf:10,waistarmorm:1,waistarmord:30,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},

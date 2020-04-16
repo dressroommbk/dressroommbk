@@ -1232,7 +1232,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		properties: {mindamage:5,maxdamage:15,antijumpaway:40,thrustpower:15,knifeskill:3,piercearmor:65,secondweapon:'yes'},
 		attacks: {thrust:'routinely',sabre:'insignificant',cut:'insignificant',light:'insignificant'}
 	},
-	knife71: {id:'knife71',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Паука',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater12:{id:'mater12',caption:'Сталь',count:12}}}},
+	knife71: {id:'knife71',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Паука',
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:50,intuition:25,level:9,knifeskill:5,endurance:30,strength:30},
 		modify: {jumpaway:50,thrustpower:20},
@@ -1240,23 +1240,15 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		setlink: {name:'spider'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	knife72: {id:'knife72',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater5:{id:'mater5',caption:'Мифрил',count:12}}}},
+	knife72: {id:'knife72',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Кровавой Луны',
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:20,intuition:55,level:9,knifeskill:5,endurance:30,strength:30},
 		modify: {criticalpower:10,intuition:2,parry:3},
 		properties: {knifeskill:3,mindamage:6,maxdamage:17,antijumpaway:80,criticalhit:80,piercearmor:25,secondweapon:'yes',blockzones:'+'},
 		setlink: {name:'bloodmoon'},
 		attacks: {thrust:'routinely',sabre:'rare',cut:'rare',water:'rare'}
-	, upgrade: {
-	knife72_olditem: {id:'knife72_olditem',old:true,requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater5:{id:'mater5',caption:'Мифрил',count:12}}}},
-		common: {weight:10,price:220,durability:50},
-		required: {dexterity:20,intuition:55,level:9,knifeskill:5,endurance:30,strength:30},
-		modify: {criticalpower:15,intuition:2,knifeskill:2,parry:0},
-		properties: {mindamage:6,maxdamage:17,antijumpaway:70,criticalhit:70,piercearmor:70,secondweapon:'yes',blockzones:'+'}
-	}}
-
 	},
-	knife73: {id:'knife73',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},mater6:{id:'mater6',caption:'Железное дерево',count:12}}}},
+	knife73: {id:'knife73',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Забытых Времен',
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:20,intuition:20,level:9,knifeskill:5,endurance:50,strength:45},
 		modify: {anticriticalhit:35,thrustpower:25},
@@ -1264,7 +1256,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		setlink: {name:'losttime'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	knife74_du2: {id:'knife74_du2',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:11},mater16:{id:'mater16',caption:'Глубинный камень',count:1}}}},
+	knife74_du2: {id:'knife74_du2',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Утреннего Солнца',
 		common: {weight:8,price:220,durability:50},
 		required: {dexterity:35,intuition:35,level:9,knifeskill:5,endurance:35,strength:35},
 		modify: {anticriticalhit:15,antijumpaway:15,parry:10,thrustpower:10,knifeskill:1,strength:2},
@@ -1272,7 +1264,7 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		setlink: {name:'morningsun'},
 		attacks: {fire:'small',thrust:'routinely'}
 	},
-	knife76: {id:'knife76',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater29:{id:'mater29',caption:'Лучистый топаз',count:1},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:12}}}},
+	knife76: {id:'knife76',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Злодеяний',
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:50,intuition:40,level:9,knifeskill:5,endurance:30,strength:25},
 		modify: {jumpaway:80,dexterity:4,intuition:1},
@@ -1712,7 +1704,7 @@ upgrade: {
 		properties: {mindamage:16,maxdamage:30,antijumpaway:90,sabrepower:20,axeskill:2},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',light:'insignificant'}
 	},
-	axe87: {id:'axe87',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Паука',requireditems:{shop:{exchanger:'shop', items: {mater18:{id:'mater18',caption:'Тысячелетний камень',count:9},mater12:{id:'mater12',caption:'Сталь',count:8}}}},
+	axe87: {id:'axe87',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Паука',
 		common: {weight:10,price:260,durability:50},
 		required: {dexterity:60,intuition:15,level:9,axeskill:5,endurance:30,strength:30},
 		modify: {jumpaway:65,dexterity:3},
@@ -1720,7 +1712,7 @@ upgrade: {
 		setlink: {name:'spider'},
 		attacks: {sabre:'often',crush:'rare'}
 	},
-	axe88: {id:'axe88',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater15:{id:'mater15',caption:'Сгусток астрала',count:9},mater5:{id:'mater5',caption:'Мифрил',count:8}}}},
+	axe88: {id:'axe88',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Кровавой Луны',
 		common: {weight:20,price:260,durability:50},
 		required: {dexterity:30,intuition:50,level:9,axeskill:5,endurance:30,strength:30},
 		modify: {dexterity:5},
@@ -1728,7 +1720,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'},
 		attacks: {sabre:'routinely',crush:'rare',water:'rare'}
 	},
-	axe89: {id:'axe89',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:9},mater6:{id:'mater6',caption:'Железное дерево',count:8}}}},
+	axe89: {id:'axe89',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Забытых Времен',
 		common: {weight:20,price:260,durability:60},
 		required: {dexterity:15,intuition:15,level:9,axeskill:5,endurance:50,strength:45},
 		modify: {dexterity:2,intellect:2},
@@ -1736,7 +1728,7 @@ upgrade: {
 		setlink: {name:'losttime'},
 		attacks: {sabre:'often',crush:'rare'}
 	},
-	axe90_du2: {id:'axe90_du2',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:9},mater2:{id:'mater2',caption:'Золото',count:8}}}},
+	axe90_du2: {id:'axe90_du2',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Утреннего Солнца',
 		common: {weight:15,price:260,durability:50},
 		required: {dexterity:35,intuition:30,level:9,axeskill:5,endurance:35,strength:35},
 		modify: {anticriticalhit:50,antijumpaway:55,strength:4},
@@ -1744,7 +1736,7 @@ upgrade: {
 		setlink: {name:'morningsun'},
 		attacks: {fire:'small',sabre:'routinely'}
 	},
-	axe90: {id:'axe90',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:9},mater3:{id:'mater3',caption:'Серебро',count:8}}}},
+	axe90: {id:'axe90',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Скорпиона',
 		common: {weight:20,price:260,durability:50},
 		required: {dexterity:15,intuition:45,level:9,axeskill:5,endurance:45,strength:35},
 		modify: {intuition:2,strength:5},
@@ -1752,21 +1744,12 @@ upgrade: {
 		setlink: {name:'scorpion'},
 		attacks: {sabre:'routinely',crush:'rare',dark:'insignificant'}
 	},
-	 axe91: {id:'axe91',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Сострадания',description:'Они заслужили быструю смерть...',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater31:{id:'mater31',caption:'Эссенция праведного гнева',count:1},mater30:{id:'mater30',caption:'Шепот гор',count:3},mater5:{id:'mater5',caption:'Мифрил',count:5}}}},
+	 axe91: {id:'axe91',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Сострадания',description:'Они заслужили быструю смерть...',binding:'bop',
 		common: {weight:20,price:260,durability:50},
 		required: {dexterity:25,intuition:25,level:9,axeskill:5,endurance:50,strength:50},
 		modify: {axeskill:2},
 		properties: {mindamage:10,maxdamage:40,antijumpaway:150,sabrepower:25,blockzones:'+'},
-		attacks: {sabre:'often',crush:'rare'},
-		upgrade: {
- 	axe91_olditem: {id:'axe91_olditem',old:true,
-         common: {weight:20,price:260,durability:50},
-         required: {dexterity:25,intuition:25,level:9,axeskill:5,endurance:50,strength:50},
-         modify: {axeskill:2},
-         properties: {mindamage:10,maxdamage:40,criticalpower:20,criticalhit:50,sabrepower:15,blockzones:'+'},
-         attacks: {sabre:'often',crush:'rare'},
-         magic: {name:'sp_tacpts_KRT1',caption:'Тактика Крови',description:'1 шт. на бой'}
-	}}
+		attacks: {sabre:'often',crush:'rare'}
 	},
 	aaxe2: {id:'aaxe2',category:'axes',slot:'w3',width:60,height:60,owner:'!NeGaTiVe!',caption:'Негативный Топор',old:true,
 		common: {weight:5,price:326,durability:5000},
@@ -2215,7 +2198,7 @@ upgrade: {
 		properties: {mindamage:20,maxdamage:32,antijumpaway:70,crushpower:20,clubskill:2},
 		attacks: {thrust:'insignificant',crush:'often',light:'insignificant'}
 	},
-	mace66: {id:'mace66',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Паука',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:2},mater12:{id:'mater12',caption:'Сталь',count:5}}}},
+	mace66: {id:'mace66',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Паука',
 		common: {weight:25,price:250,durability:50},
 		required: {dexterity:50,level:9,clubskill:5,endurance:30,strength:40},
 		modify: {clubskill:2},
@@ -2231,7 +2214,7 @@ upgrade: {
 	}}
 
 	},
-	mace67: {id:'mace67',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2},mater5:{id:'mater5',caption:'Мифрил',count:5}}}},
+	mace67: {id:'mace67',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Кровавой Луны',
 		common: {weight:30,price:250,durability:50},
 		required: {dexterity:15,intuition:45,level:9,clubskill:5,endurance:35,strength:40},
 		modify: {dexterity:-2},
@@ -2239,7 +2222,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'},
 		attacks: {crush:'often',water:'rare'}
 	},
-	mace68: {id:'mace68',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater25:{id:'mater25',caption:'Кристалл голоса предков',count:2},mater6:{id:'mater6',caption:'Железное дерево',count:5}}}},
+	mace68: {id:'mace68',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Забытых Времен',
 		common: {weight:30,price:250,durability:50},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45,clubskill:5},
 		modify: {strength:1},
@@ -2247,7 +2230,7 @@ upgrade: {
 		setlink: {name:'losttime'},
 		attacks: {thrust:'insignificant',crush:'often'}
 	},
-	hammer72_du2: {id:'hammer72_du2',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:2},mater2:{id:'mater2',caption:'Золото',count:5}}}},
+	hammer72_du2: {id:'hammer72_du2',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Утреннего Солнца',
 		common: {weight:30,price:250,durability:100},
 		required: {dexterity:30,intuition:30,level:9,clubskill:5,endurance:40,strength:40},
 		modify: {dexterity:-1,strength:6},
@@ -2255,7 +2238,7 @@ upgrade: {
 		setlink: {name:'morningsun'},
 		attacks: {fire:'small',crush:'routinely'}
 	},
-	hammer74: {id:'hammer74',category:'clubs',slot:'w3',width:60,height:60,caption:'Цеп Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:2},mater3:{id:'mater3',caption:'Серебро',count:5}}}},
+	hammer74: {id:'hammer74',category:'clubs',slot:'w3',width:60,height:60,caption:'Цеп Скорпиона',
 		common: {weight:25,price:250,durability:50},
 		required: {dexterity:15,intuition:45,level:9,clubskill:5,endurance:45,strength:35},
 		modify: {clubskill:1},
@@ -2270,7 +2253,7 @@ upgrade: {
 		properties: {mindamage:20,maxdamage:32},
 		attacks: {thrust:'insignificant',crush:'often'}
 	},
-	hammer76: {id:'hammer76',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Утреннего Солнца',requireditems:{shop:{exchanger:'shop',items:{mater27:{id:'mater27',caption:'Камень затаенного солнца',count:5},mater5:{id:'mater5',caption:'Мифрил',count:20}}}},
+	hammer76: {id:'hammer76',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Утреннего Солнца',
         common: {weight:30,price:370,durability:60},
         required: {dexterity:25,intuition:25,level:9,clubskill:5,endurance:50,strength:50},
         modify: {anticriticalhit:50,jumpaway:-500},
@@ -2278,7 +2261,7 @@ upgrade: {
         setlink: {name:'morningsun'},
         attacks: {fire:'small',crush:'routinely'}
     },
-	hammer70: {id:'hammer70',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater15:{id:'mater15',caption:'Сгусток астрала',count:9},mater5:{id:'mater5',caption:'Мифрил',count:10}}}},
+	hammer70: {id:'hammer70',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Кровавой Луны',
 		common: {weight:30,price:370,durability:60},
 		required: {dexterity:15,intuition:50,level:9,clubskill:5,endurance:35,strength:45},
 		modify: {dexterity:-1,strength:1,jumpaway:-500},
@@ -2286,7 +2269,7 @@ upgrade: {
 		setlink: {name:'bloodmoon'},
 		attacks: {crush:'often',water:'rare'}
 	},
-	hammer71: {id:'hammer71',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:9},mater6:{id:'mater6',caption:'Железное дерево',count:10}}}},
+	hammer71: {id:'hammer71',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Забытых Времен',
 		common: {weight:30,price:370,durability:60},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:55,clubskill:5},
 		modify: {anticriticalhit:20,strength:2,jumpaway:-500},
@@ -2805,7 +2788,7 @@ upgrade: {
 		properties: {mindamage:10,maxdamage:30,antijumpaway:45,swordskill:2,piercearmor:10},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'insignificant',cut:'small',light:'insignificant'}
 	},
-	sword102: {id:'sword102',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Паука',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater12:{id:'mater12',caption:'Сталь',count:12}}}},
+	sword102: {id:'sword102',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Паука',
 		common: {weight:17,price:220,durability:50},
 		required: {dexterity:55,intuition:15,level:9,swordskill:5,endurance:30,strength:30},
 		modify: {anticriticalhit:35,jumpaway:75,strength:1},
@@ -2821,7 +2804,7 @@ upgrade: {
 	}}
 
 	},
-	sword103: {id:'sword103',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater5:{id:'mater5',caption:'Мифрил',count:12}}}},
+	sword103: {id:'sword103',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Кровавой Луны',
 		common: {weight:17,price:220,durability:50},
 		required: {dexterity:15,intuition:50,level:9,swordskill:5,endurance:30,strength:30},
 		properties: {mindamage:12,maxdamage:34,criticalpower:10,antijumpaway:50,criticalhit:80,swordskill:2,blockzones:'+'},
@@ -2836,7 +2819,7 @@ upgrade: {
 	}}
 
 	},
-	sword104: {id:'sword104',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},mater6:{id:'mater6',caption:'Железное дерево',count:12}}}},
+	sword104: {id:'sword104',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Забытых Времен',
 		common: {weight:17,price:220,durability:50},
 		required: {dexterity:15,intuition:15,level:9,swordskill:5,endurance:50,strength:45},
 		modify: {anticriticalhit:40,strength:2},
@@ -2844,7 +2827,7 @@ upgrade: {
 		setlink: {name:'losttime'},
 		attacks: {thrust:'small',sabre:'sometimes',cut:'small'}
 	},
-	sword105_du2: {id:'sword105_du2',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Утреннего Солнца',magic1:'Вспышка',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:11},mater16:{id:'mater16',caption:'Глубинный камень',count:1}}}},
+	sword105_du2: {id:'sword105_du2',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Утреннего Солнца',
 		common: {weight:17,price:220,durability:50},
 		required: {dexterity:30,intuition:30,level:9,swordskill:5,endurance:35,strength:35},
 		modify: {anticriticalhit:55,parry:3,dexterity:1,intuition:1},
@@ -2852,7 +2835,7 @@ upgrade: {
 		setlink: {name:'morningsun'},
 		attacks: {fire:'small',thrust:'rare',sabre:'sometimes',cut:'rare'}
 	},
-	knife77: {id:'knife77',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater3:{id:'mater3',caption:'Серебро',count:12}}}},
+	knife77: {id:'knife77',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Скорпиона',
 		common: {weight:10,price:220,durability:50},
 		required: {dexterity:15,intuition:45,level:9,swordskill:5,endurance:45,strength:35},
 		modify: {parry:7,intuition:5},
@@ -2860,7 +2843,7 @@ upgrade: {
 		setlink: {name:'scorpion'},
 		attacks: {thrust:'sometimes',sabre:'rare',cut:'small',dark:'insignificant'}
 	},
-	sword105: {id:'sword105',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater3:{id:'mater3',caption:'Серебро',count:12}}}},
+	sword105: {id:'sword105',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Скорпиона',
 		common: {weight:17,price:220,durability:50},
 		required: {dexterity:15,intuition:50,level:9,swordskill:5,endurance:30,strength:30},
 		modify: {strength:2},
@@ -2868,7 +2851,7 @@ upgrade: {
 		setlink: {name:'scorpion'},
 		attacks: {thrust:'small',sabre:'sometimes',cut:'small',dark:'insignificant'}
 	},
-	sword106: {id:'sword106',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Сомнений',old:true,description:'Трудно решить, кого убить первым... ',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:1},mater13:{id:'mater13',caption:'Кристалл тысячи ответов',count:3},mater12:{id:'mater12',caption:'Сталь',count:5}}}},
+	sword106: {id:'sword106',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Сомнений',old:true,description:'Трудно решить, кого убить первым... ',binding:'bop',
 		common: {weight:17,price:220,durability:50},
 		required: {dexterity:25,intuition:50,level:9,swordskill:5,endurance:30,strength:25},
 		properties: {mindamage:15,maxdamage:30,criticalhit:50,antijumpaway:50,cutpower:20,swordskill:2,blockzones:'+'},
@@ -2916,7 +2899,7 @@ upgrade: {
 		properties: {mindamage:14,maxdamage:38,antijumpaway:80,swordskill:3,piercearmor:10,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'routinely',cut:'insignificant',dark:'insignificant'}
 	},
-	sword100: {id:'sword100',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Злодеяний',description:'Требует мастерство владения ножами и кастетами',requireditems:{shop:{exchanger:'shop', items: {mater14:{id:'mater14',caption:'Сгусток эфира',count:8},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:9}}}},
+	sword100: {id:'sword100',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Злодеяний',description:'Требует мастерство владения ножами и кастетами',
 		common: {weight:25,price:330,durability:50},
 		required: {dexterity:50,intuition:40,level:9,swordskill:5,endurance:30,strength:25},
 		modify: {dexterity:6},
@@ -3267,14 +3250,14 @@ upgrade: {
 		properties: {mindamage:1,maxdamage:20,twohandled:'yes'},
 		attacks: {light:'always'}
 	},
-	staff53: {id:'staff53',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Сохранения',binding:'bop',requireditems:{shop:{exchanger:'shop', items: {mater21:{id:'mater21',caption:'Эссенция глубины',count:1},mater29:{id:'mater29',caption:'Лучистый топаз',count:3},mater4:{id:'mater4',caption:'Лучистое серебро',count:1}}}},
+	staff53: {id:'staff53',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Сохранения',binding:'bop',
 		common: {weight:5,price:300,durability:50},
 		required: {intellect:75,level:9,staffskill:3,wisdom:50},
 		modify: {anticriticalhit:100,intellect:5,magicskill:2,defence:40,magicdefence:40,hitpoints:150},
 		properties: {mindamage:1,maxdamage:20,twohandled:'yes',blockzones:'+'},
 		attacks: {fire:'small',air:'small',water:'small',earth:'small'}
 	},
-	staff52: {id:'staff52',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Решимости',requireditems:{shop:{exchanger:'shop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:2}}}},
+	staff52: {id:'staff52',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Решимости',
 		common: {weight:5,price:360,durability:50},
 		required: {intellect:50,level:9,staffskill:3,mana:80,wisdom:50},
 		modify: {magicdefencereduce:2,magicpower:15,intellect:6,firemagicskill:1,airmagicskill:1,watermagicskill:1,earthmagicskill:1,defence:50,hitpoints:60,manaconsumption:3},

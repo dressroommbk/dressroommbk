@@ -2446,7 +2446,7 @@ function getDresserComponentsPaneHtml(state)
 	}
 
 	if (isListEmpty === true) {
-		html += 'Дополнительных усилий не требуется.';
+		html += 'Дополнительных действий не требуется.';
 	}
 
 	html += '</td>';

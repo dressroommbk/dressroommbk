@@ -2353,7 +2353,8 @@ function getDresserComponentsPaneHtml(state)
 	html += '<table width="100%" border="0" cellspacing="0" class="tcontent" style="padding: 2px 8px 0px 0px;"><tr>';
 	html += '<td valign="top">';
 
-	var eps = {};
+	var eps = {},
+		isListEmpty = true;
 	for (var epn in dressExchangePoints)
 	{
 		var ep = dressExchangePoints[epn];
@@ -2415,8 +2416,9 @@ function getDresserComponentsPaneHtml(state)
 		for (var i in ep.items)
 		{
 			var item = ep.items[i];
-			ephtml += '<br />' + item.caption + ': ';
+			ephtml += '<br /><b>' + item.caption + '</b>: ';
 			var firstc = true;
+			isListEmpty = false;
 			for (var ci in item.items)
 			{
 				var c = item.items[ci];
@@ -2441,6 +2443,10 @@ function getDresserComponentsPaneHtml(state)
 			}*/
 			html += '<br />';
 		}
+	}
+
+	if (isListEmpty === true) {
+		html += 'Дополнительных усилий не требуется.';
 	}
 
 	html += '</td>';

@@ -4242,37 +4242,37 @@ upgrade: {
 		modify: {magicdefencereduce:5,staffskill:2,magicdefence:10,hitpoints:15}
 	},
 
-	naruchi78: {id:'naruchi78',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паука',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater12:{id:'mater12',caption:'Сталь',count:3}}}},
+	naruchi78: {id:'naruchi78',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паука',
 		common: {weight:1,price:130,durability:30},
 		required: {dexterity:50,intuition:15,level:8,endurance:30,strength:30},
 		modify: {anticriticalhit:35,dexterity:4,weaponskill:3,strength:1},
 		setlink: {name:'spider'}
 	, upgrade: {
-	naruchi78_1: {id:'naruchi78_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паука [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi78:{id:'naruchi78',caption:'Перчатки Паука',count:1}}}},
+	naruchi78_1: {id:'naruchi78_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паука [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi78:{id:'naruchi78',caption:'Перчатки Паука',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:20,dexterity:4,hitpoints:14,strength:1},
 		setlink: {name:'spider10'}
-		},
-	naruchi78_olditem: {id:'naruchi78_olditem',old:true,
-		required: {dexterity:45,intuition:10,level:8,endurance:25,strength:25}
-	}}
+		}}
 
 	},
-	naruchi78_1: {id:'naruchi78_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паука [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi78:{id:'naruchi78',caption:'Перчатки Паука',count:1}}}},
+	naruchi78_1: {id:'naruchi78_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паука [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi78:{id:'naruchi78',caption:'Перчатки Паука',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:20,dexterity:4,weaponskill:3,hitpoints:14,strength:1},
 		setlink: {name:'spider10'}
 	},
 
-	naruchi79: {id:'naruchi79',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},mater6:{id:'mater6',caption:'Железное дерево',count:3}}}},
+	naruchi79: {id:'naruchi79',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Забытых Времен',
 		common: {weight:1,price:130,durability:30},
 		required: {dexterity:15,intuition:15,level:8,endurance:50,strength:45},
 		modify: {anticriticalhit:40,weaponskill:3,magicdefence:20,strength:1,jumpaway:-75,criticalhit:-75},
 		setlink: {name:'losttime'}
 	,upgrade: {
-	naruchi79_1: {id:'naruchi79_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi79:{id:'naruchi79',caption:'Перчатки Забытых Времен',count:1}}}},
+	naruchi79_1: {id:'naruchi79_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Забытых Времен [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi79:{id:'naruchi79',caption:'Перчатки Забытых Времен',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,sandreputation:10000},
 		modify: {anticriticalhit:50,magicdefence:30,hitpoints:16,strength:1,jumpaway:-100,criticalhit:-100},
@@ -4280,76 +4280,84 @@ upgrade: {
 
 	}}
 	},
-	naruchi79_1: {id:'naruchi79_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi79:{id:'naruchi79',caption:'Перчатки Забытых Времен',count:1}}}},
+	naruchi79_1: {id:'naruchi79_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Забытых Времен [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi79:{id:'naruchi79',caption:'Перчатки Забытых Времен',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,sandreputation:10000},
 		modify: {anticriticalhit:50,weaponskill:3,magicdefence:30,hitpoints:16,strength:1,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'losttime10'}
 	},
-	naruchi83_du2: {id:'naruchi83_du2',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater2:{id:'mater2',caption:'Золото',count:3}}}},
+	naruchi83_du2: {id:'naruchi83_du2',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Утреннего Солнца',
 		common: {weight:1,price:130,durability:30},
 		required: {dexterity:25,intuition:25,level:8,endurance:30,strength:30},
 		modify: {anticriticalhit:30,parry:4,weaponskill:3,strength:2,jumpaway:-75,criticalhit:-75},
 		setlink: {name:'morningsun'}
 	, upgrade: {
-	naruchi83_du2_1: {id:'naruchi83_du2_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi83_du2:{id:'naruchi83_du2',caption:'Перчатки Утреннего Солнца',count:1}}}},
+	naruchi83_du2_1: {id:'naruchi83_du2_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Утреннего Солнца [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi83_du2:{id:'naruchi83_du2',caption:'Перчатки Утреннего Солнца',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:25,intuition:25,level:10,endurance:45,strength:45,sandreputation:10000},
 		modify: {anticriticalhit:50,parry:5,strength:2,hitpoints:14,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
     }}
 	},
-	naruchi83_du2_1: {id:'naruchi83_du2_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi83_du2:{id:'naruchi83_du2',caption:'Перчатки Утреннего Солнца',count:1}}}},
+	naruchi83_du2_1: {id:'naruchi83_du2_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Утреннего Солнца [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi83_du2:{id:'naruchi83_du2',caption:'Перчатки Утреннего Солнца',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:25,intuition:25,level:10,endurance:45,strength:45,sandreputation:10000},
 		modify: {anticriticalhit:50,parry:5,weaponskill:3,strength:2,hitpoints:14,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10'}
 	},
-	naruchi85: {id:'naruchi85',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater29:{id:'mater29',caption:'Лучистый топаз',count:1},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:3}}}},
+	naruchi85: {id:'naruchi85',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Злодеяний',
 		common: {weight:1,price:130,durability:30},
 		required: {dexterity:50,intuition:40,level:8,endurance:30,strength:25},
 		modify: {anticriticalhit:30,jumpaway:25,dexterity:2,intuition:2,weaponskill:3},
 		setlink: {name:'misdeed'}
 	, upgrade: {
-		naruchi85_1: {id:'naruchi85_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi85:{id:'naruchi85',caption:'Перчатки Злодеяний',count:1}}}},
+		naruchi85_1: {id:'naruchi85_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Злодеяний [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi85:{id:'naruchi85',caption:'Перчатки Злодеяний',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,sandreputation:10000},
 		modify: {anticriticalhit:45,jumpaway:40,dexterity:2,intuition:2,hitpoints:17},
 		setlink: {name:'misdeed10'}
 		}}
 	},
-	naruchi85_1: {id:'naruchi85_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi85:{id:'naruchi85',caption:'Перчатки Злодеяний',count:1}}}},
+	naruchi85_1: {id:'naruchi85_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Злодеяний [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi85:{id:'naruchi85',caption:'Перчатки Злодеяний',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,sandreputation:10000},
 		modify: {anticriticalhit:45,jumpaway:40,dexterity:2,intuition:2,weaponskill:3,hitpoints:17},
 		setlink: {name:'misdeed10'}
 	},
-	naruchi86: {id:'naruchi86',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater30:{id:'mater30',caption:'Шепот гор',count:1},mater3:{id:'mater3',caption:'Серебро',count:3}}}},
+	naruchi86: {id:'naruchi86',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Скорпиона',
 		common: {weight:1,price:130,durability:30},
 		required: {dexterity:15,intuition:45,level:8,endurance:45,strength:35},
 		modify: {antijumpaway:40,criticalhit:5,parry:1,weaponskill:3,strength:3},
 		setlink: {name:'scorpion'}
 	, upgrade: {
-	naruchi86_1: {id:'naruchi86_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi86:{id:'naruchi86',caption:'Перчатки Скорпиона',count:1}}}},
+	naruchi86_1: {id:'naruchi86_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Скорпиона [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi86:{id:'naruchi86',caption:'Перчатки Скорпиона',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,sandreputation:10000},
 		modify: {antijumpaway:50,criticalhit:15,parry:2,hitpoints:17,strength:3},
 		setlink: {name:'scorpion10'}
 	 }}
 	},
-	naruchi86_1: {id:'naruchi86_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi86:{id:'naruchi86',caption:'Перчатки Скорпиона',count:1}}}},
+	naruchi86_1: {id:'naruchi86_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Скорпиона [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi86:{id:'naruchi86',caption:'Перчатки Скорпиона',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:155,durability:30},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,sandreputation:10000},
 		modify: {antijumpaway:50,criticalhit:15,parry:2,weaponskill:3,hitpoints:17,strength:3},
 		setlink: {name:'scorpion10'}
 	},
-	naruchi77: {id:'naruchi77',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater5:{id:'mater5',caption:'Мифрил',count:3}}}},
+	naruchi77: {id:'naruchi77',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Кровавой Луны',
 		common: {weight:1,price:131,durability:30},
 		required: {dexterity:15,intuition:50,level:8,endurance:30,strength:30},
 		modify: {criticalpower:10,antijumpaway:30,criticalhit:5,weaponskill:3,strength:1},
 		setlink: {name:'bloodmoon'}
     , upgrade: {
-    naruchi77_1: {id:'naruchi77_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi77:{id:'naruchi77',caption:'Перчатки Кровавой Луны',count:1}}}},
+    naruchi77_1: {id:'naruchi77_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Кровавой Луны [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi83_du2:{id:'naruchi83_du2',caption:'Перчатки Кровавой Луны',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:131,durability:30},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {criticalpower:13,antijumpaway:40,criticalhit:5,hitpoints:16,strength:1},
@@ -4357,7 +4365,8 @@ upgrade: {
  	}}
 
 	},
-	naruchi77_1: {id:'naruchi77_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi77:{id:'naruchi77',caption:'Перчатки Кровавой Луны',count:1}}}},
+	naruchi77_1: {id:'naruchi77_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Кровавой Луны [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi83_du2:{id:'naruchi83_du2',caption:'Перчатки Кровавой Луны',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:131,durability:30},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,sandreputation:10000},
 		modify: {criticalpower:13,antijumpaway:40,criticalhit:5,weaponskill:3,hitpoints:16,strength:1},
@@ -4365,13 +4374,14 @@ upgrade: {
     },
 
 
-	naruchi84: {id:'naruchi84',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Решимости',requireditems:{shop:{exchanger:'shop', items: {mater26:{id:'mater26',caption:'Кристалл стабильности',count:1},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:6}}}},
+	naruchi84: {id:'naruchi84',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Решимости',    
 		common: {weight:1,price:160,durability:50},
 		required: {intellect:40,level:9,wisdom:50},
 		modify: {magicdefencereduce:5,magicpower:2,intellect:2,staffskill:2,magicdefence:10,hitpoints:18},
 		setlink: {name:'determination'}
 	, upgrade: {
-	naruchi84_1: {id:'naruchi84_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Решимости [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi84:{id:'naruchi84',caption:'Перчатки Решимости',count:1}}}},
+	naruchi84_1: {id:'naruchi84_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Решимости [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi84:{id:'naruchi84',caption:'Перчатки Решимости',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:185,durability:50},
 		required: {intellect:50,level:10,wisdom:60,sandreputation:10000},
 		modify: {magicdefencereduce:5,magicpower:4,intellect:2,staffskill:2,magicdefence:20,hitpoints:25},
@@ -4382,7 +4392,8 @@ upgrade: {
 	}*/}
 
 	},
-	naruchi84_1: {id:'naruchi84_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Решимости [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi84:{id:'naruchi84',caption:'Перчатки Решимости',count:1}}}},
+	naruchi84_1: {id:'naruchi84_1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Решимости [10]',
+    requireditems:{ks_sand:{exchanger:'ks_sand', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},naruchi84:{id:'naruchi84',caption:'Перчатки Решимости',count:1},credits: {id: 'credits', caption: 'Кредиты', count: 131}}}},
 		common: {weight:1,price:185,durability:50},
 		required: {intellect:50,level:10,wisdom:60,sandreputation:10000},
 		modify: {magicdefencereduce:5,magicpower:4,intellect:2,staffskill:2,magicdefence:20,hitpoints:25},

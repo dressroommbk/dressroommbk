@@ -6398,7 +6398,7 @@ upgrade: {
 		properties: {defence:25},
 		setlink: {name:'siege'}
 	},
-	helmet79: {id:'helmet79',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука',requireditems:{shop:{exchanger:'shop', items: {mater18:{id:'mater18',caption:'Тысячелетний камень',count:5},mater12:{id:'mater12',caption:'Сталь',count:6}}}},
+	helmet79: {id:'helmet79',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука',
 		common: {weight:15,price:210,durability:60},
 		required: {dexterity:50,intuition:15,level:9,endurance:30,strength:30},
 		modify: {anticriticalhit:35,jumpaway:40,intellect:2,weaponskill:1,magicdefence:40,hitpoints:45,headarmor1:10,headarmor2:36,headarmorf:9,headarmorm:1,headarmord:27},
@@ -6406,7 +6406,8 @@ upgrade: {
 		setlink: {name:'spider'},
 		defences: {crush:'good',sabre:'normal'}
 	,upgrade:{
-	helmet79_1: {id:'helmet79_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука [10]',requireditems:{shop:{exchanger:'shop', items: {helmet79:{id:'helmet79',caption:'Шлем Паука',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	helmet79_1: {id:'helmet79_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet79: {id:'helmet79',caption:'Шлем Паука',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:55,intellect:2,weaponskill:1,magicdefence:50,hitpoints:55,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
@@ -6415,7 +6416,8 @@ upgrade: {
 		defences: {crush:'good',sabre:'normal'}
 	}}
 	},
-	helmet79_1: {id:'helmet79_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука [10]',requireditems:{shop:{exchanger:'shop', items: {mater18:{id:'mater18',caption:'Тысячелетний камень',count:5},mater12:{id:'mater12',caption:'Сталь',count:6}}}},
+	helmet79_1: {id:'helmet79_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Паука [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet79: {id:'helmet79',caption:'Шлем Паука',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:50,intuition:15,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:55,intellect:2,weaponskill:1,magicdefence:50,hitpoints:55,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
@@ -6423,14 +6425,15 @@ upgrade: {
 		setlink: {name:'spider10'},
 		defences: {crush:'good',sabre:'normal'}
 	},
-	helmet80: {id:'helmet80',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater15:{id:'mater15',caption:'Сгусток астрала',count:5},mater5:{id:'mater5',caption:'Мифрил',count:6}}}},
+	helmet80: {id:'helmet80',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны',
 		common: {weight:15,price:210,durability:60},
 		required: {dexterity:15,intuition:50,level:9,endurance:30,strength:30},
 		modify: {anticriticalhit:40,antijumpaway:20,criticalhit:45,magicdefence:50,hitpoints:33,headarmor1:10,headarmor2:36,headarmorf:9,headarmorm:1,headarmord:27},
 		properties: {defence:50},
 		setlink: {name:'bloodmoon'}
 	,  upgrade:{
-	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items: {helmet80:{id:'helmet80',caption:'Шлем Кровавой Луны',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet80: {id:'helmet80',caption:'Шлем Кровавой Луны',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:60,magicdefence:60,hitpoints:40,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
@@ -6439,39 +6442,43 @@ upgrade: {
   	}}
 
 	},
-	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',requireditems:{shop:{exchanger:'shop', items: {mater15:{id:'mater15',caption:'Сгусток астрала',count:5},mater5:{id:'mater5',caption:'Мифрил',count:6}}}},
+	helmet80_1: {id:'helmet80_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Кровавой Луны [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet80: {id:'helmet80',caption:'Шлем Кровавой Луны',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:50,antijumpaway:30,criticalhit:60,magicdefence:60,hitpoints:40,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,defence:55},
 		setlink: {name:'bloodmoon10'}
      },
-	helmet82_du2: {id:'helmet82_du2',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater2:{id:'mater2',caption:'Золото',count:6}}}},
+	helmet82_du2: {id:'helmet82_du2',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца',
 		common: {weight:15,price:210,durability:60},
 		required: {dexterity:30,intuition:30,level:9,endurance:35,strength:35},
 		modify: {anticriticalhit:45,antijumpaway:35,magicdefence:20,firemagicdefence:10,watermagicdefence:-5,hitpoints:33,strength:4,headarmor1:10,headarmor2:36,headarmorf:9,headarmorm:1,headarmord:27,jumpaway:-75,criticalhit:-75,defence:75},
 		setlink: {name:'morningsun'}
 	, upgrade: {
-	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {helmet82_du2:{id:'helmet82_du2',caption:'Шлем Утреннего Солнца',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet82_du2: {id:'helmet82_du2',caption:'Шлем Утреннего Солнца',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:0,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
     }}
 	},
-	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater2:{id:'mater2',caption:'Золото',count:6}}}},
+	helmet82_du2_1: {id:'helmet82_du2_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Утреннего Солнца [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet82_du2: {id:'helmet82_du2',caption:'Шлем Утреннего Солнца',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:45,magicdefence:30,firemagicdefence:20,watermagicdefence:0,hitpoints:40,strength:4,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30,jumpaway:-100,criticalhit:-100,defence:80},
 		setlink: {name:'morningsun10'}
 	},
-	helmet84: {id:'helmet84',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater14:{id:'mater14',caption:'Сгусток эфира',count:5},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:6}}}},
+	helmet84: {id:'helmet84',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний',
 		common: {weight:15,price:210,durability:60},
 		required: {dexterity:50,intuition:40,level:9,endurance:30,strength:25},
 		modify: {anticriticalhit:30,criticalhit:45,jumpaway:20,dexterity:2,magicdefence:50,hitpoints:24,headarmor1:10,headarmor2:36,headarmorf:9,headarmorm:1,headarmord:27},
 		properties: {defence:50},
 		setlink: {name:'misdeed'}
 	,upgrade: {
-     helmet84_1: {id:'helmet84_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items: {helmet84:{id:'helmet84',caption:'Шлем Злодеяний',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+     helmet84_1: {id:'helmet84_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний [10]',
+     requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet84: {id:'helmet84',caption:'Шлем Злодеяний',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,capitalreputation:10000},
 		modify: {anticriticalhit:40,criticalhit:60,jumpaway:30,dexterity:2,magicdefence:60,hitpoints:33,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
@@ -6479,21 +6486,23 @@ upgrade: {
 		setlink: {name:'misdeed10'}
    	}}
 	},
-	helmet84_1: {id:'helmet84_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items: {mater14:{id:'mater14',caption:'Сгусток эфира',count:5},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:6}}}},
+	helmet84_1: {id:'helmet84_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Злодеяний [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet84: {id:'helmet84',caption:'Шлем Злодеяний',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,capitalreputation:10000},
 		modify: {anticriticalhit:40,criticalhit:60,jumpaway:30,dexterity:2,magicdefence:60,hitpoints:33,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30},
 		properties: {defence:55},
 		setlink: {name:'misdeed10'}
 	},
-	helmet85: {id:'helmet85',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater3:{id:'mater3',caption:'Серебро',count:6}}}},
+	helmet85: {id:'helmet85',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона',
 		common: {weight:15,price:210,durability:60},
 		required: {dexterity:15,intuition:45,level:9,endurance:45,strength:35},
 		modify: {anticriticalhit:45,antijumpaway:70,criticalhit:50,magicdefence:15,hitpoints:42,headarmor1:10,headarmor2:36,headarmorf:9,headarmorm:1,headarmord:27},
 		properties: {defence:50},
 		setlink: {name:'scorpion'}
     , upgrade: {
-    helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {helmet85:{id:'helmet85',caption:'Шлем Скорпиона',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресусра',count:50}}}},
+    helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',
+      requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet85: {id:'helmet85',caption:'Шлем Скорпиона',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:245,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:10,headarmor2:40,headarmorf:9,headarmorm:1,headarmord:30},
@@ -6501,50 +6510,52 @@ upgrade: {
 		setlink: {name:'scorpion10'}
       }}
 	},
-	helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items: {mater16:{id:'mater16',caption:'Глубинный камень',count:5},mater3:{id:'mater3',caption:'Серебро',count:6}}}},
+	helmet85_1: {id:'helmet85_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скорпиона [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet85: {id:'helmet85',caption:'Шлем Скорпиона',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:15,price:310,durability:60},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,capitalreputation:10000},
 		modify: {anticriticalhit:55,antijumpaway:80,criticalhit:60,magicdefence:25,hitpoints:53,headarmor1:10,headarmor2:40,headarmorf:9,headarmorm:1,headarmord:30},
 		properties: {defence:55},
 		setlink: {name:'scorpion10'}
 	},
-	helmet81: {id:'helmet81',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
+	helmet81: {id:'helmet81',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен',
 		common: {weight:20,price:310,durability:100},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45},
 		modify: {anticriticalhit:20,weaponskill:1,magicdefence:50,hitpoints:66,headarmor1:36,headarmor2:85,headarmorf:35,headarmorm:1,headarmord:50,jumpaway:-75,criticalhit:-75,defence:25},
 		setlink: {name:'losttime'}
 	,upgrade: {
-	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {helmet81:{id:'helmet81',caption:'Шлем Забытых Времен',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},  
+	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet81: {id:'helmet81',caption:'Шлем Забытых Времен',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:20,price:315,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:91,headarmor2:150,headarmorf:90,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
 	 }}
 	},
-	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',requireditems:{shop:{exchanger:'shop', items: {mater19:{id:'mater19',caption:'Кристалл времен',count:5},mater6:{id:'mater6',caption:'Железное дерево',count:6}}}},
+	helmet81_1: {id:'helmet81_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Забытых Времен [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet81: {id:'helmet81',caption:'Шлем Забытых Времен',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:20,price:315,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,capitalreputation:10000},
 		modify: {anticriticalhit:30,weaponskill:1,magicdefence:60,hitpoints:77,headarmor1:91,headarmor2:150,headarmorf:90,headarmorm:1,headarmord:60,jumpaway:-100,criticalhit:-100,defence:30},
 		setlink: {name:'losttime10'}
 	},
-	helmet83: {id:'helmet83',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости',requireditems:{shop:{exchanger:'shop', items: {mater17:{id:'mater17',caption:'Плод змеиного дерева',count:5},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:6}}}},
+	helmet83: {id:'helmet83',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости',
 		common: {weight:5,price:215,durability:50},
 		required: {intellect:40,level:9,wisdom:50},
 		modify: {intellect:6,magicskill:1,magicdefence:30,hitpoints:60,mana:120,headarmor1:8,headarmor2:8},
 		setlink: {name:'determination'}
 	, upgrade: {
-	 helmet83_1: {id:'helmet83_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости [10]',requireditems:{shop:{exchanger:'shop', items: {helmet83:{id:'helmet83',caption:'Маска Решимости',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}}}},
+	 helmet83_1: {id:'helmet83_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet83: {id:'helmet83',caption:'Маска Решимости',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:5,price:315,durability:50},
 		required: {intellect:50,level:10,wisdom:60,capitalreputation:10000},
 		modify: {intellect:6,magicdefence:40,hitpoints:78,mana:140,headarmor1:10,headarmor2:10},
 		setlink: {name:'determination10'}
-	 }/*,
-	helmet83_fury: {id:'helmet83_fury',caption:'Маска Ярости',old:true,
-		modify: {magicskill:0,intellect:4,magicdefencereduce:2,intuition:4,magicdefence:30,hitpoints:30,mana:100,headarmor1:8,headarmor2:8}
-	}*/}
+	 }}
 
 	},
-	helmet83_1: {id:'helmet83_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости [10]',requireditems:{shop:{exchanger:'shop', items: {mater17:{id:'mater17',caption:'Плод змеиного дерева',count:5},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:6}}}},
+	helmet83_1: {id:'helmet83_1',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Решимости [10]',
+    requireditems:{ks_cap: {exchanger:'ks_cap', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50}, helmet83: {id:'helmet83',caption:'Маска Решимости',count:1}, credits: {id: 'credits', caption: 'Кредиты', count: 310}}}},
 		common: {weight:5,price:250,durability:50},
 		required: {intellect:50,level:10,wisdom:60,capitalreputation:10000},
 		modify: {intellect:6,magicskill:1,magicdefence:40,hitpoints:78,mana:140,headarmor1:10,headarmor2:10},

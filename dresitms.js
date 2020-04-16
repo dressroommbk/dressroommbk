@@ -4837,14 +4837,15 @@ upgrade: {
        required: {intellect:75,level:10,wisdom:50},
        modify: {magicdefencereduce:5,magicpower:30,defence:100,intellect:10,hitpoints:100,mana:200,bodyarmor1:6,bodyarmor2:20,bodyarmorf:5,bodyarmorm:1,bodyarmord:15}
    },
-	roba51: {id:'roba51',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Мантия Решимости',requireditems:{shop:{exchanger:'shop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:1},mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:8}}}},
+	roba51: {id:'roba51',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Мантия Решимости',
 		common: {weight:5,price:380,durability:50},
 		required: {intellect:40,level:9,wisdom:50},
 		modify: {anticriticalhit:25,magicdefencereduce:3,magicpower:20,hitpoints:42,mana:120,bodyarmor1:5,bodyarmor2:16,bodyarmorf:4,bodyarmorm:1,bodyarmord:12},
 		properties: {defence:100},
 		setlink: {name:'determination'}
 	, upgrade: {
-   roba51_1: {id:'roba51_1',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Мантия Решимости [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},roba51:{id:'roba51',caption:'Мантия Решимости',count:1}}}},
+   roba51_1: {id:'roba51_1',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Мантия Решимости [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},roba51:{id:'roba51',caption:'Мантия Решимости',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:5,price:455,durability:50},
 		required: {intellect:50,level:10,wisdom:60,demonsreputation:10000},
 		modify: {anticriticalhit:40,magicdefencereduce:3,magicpower:25,hitpoints:59,mana:150,bodyarmor1:6,bodyarmor2:20,bodyarmorf:5,bodyarmorm:1,bodyarmord:15},
@@ -4855,7 +4856,8 @@ upgrade: {
 	}
 
 	},
-	roba51_1: {id:'roba51_1',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Мантия Решимости [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},roba51:{id:'roba51',caption:'Мантия Решимости',count:1}}}},
+	roba51_1: {id:'roba51_1',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Мантия Решимости [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},roba51:{id:'roba51',caption:'Мантия Решимости',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:5,price:455,durability:50},
 		required: {intellect:50,level:10,wisdom:60,demonsreputation:10000},
 		modify: {anticriticalhit:40,magicdefencereduce:3,magicpower:25,hitpoints:59,mana:150,bodyarmor1:6,bodyarmor2:20,bodyarmorf:5,bodyarmorm:1,bodyarmord:15},
@@ -5509,7 +5511,7 @@ upgrade: {
 	}}
 
 	},
-	armor105: {id:'armor105',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Паука',requireditems:{shop:{exchanger:'shop', items: {mater22:{id:'mater22',caption:'Эссенция чистоты',count:1},mater12:{id:'mater12',caption:'Сталь',count:8}}}},
+	armor105: {id:'armor105',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Паука',
 		common: {weight:35,price:380,durability:50},
 		required: {dexterity:50,intuition:15,level:9,endurance:30,strength:30},
 		modify: {anticriticalhit:40,antijumpaway:70,parry:10,jumpaway:80,counterstroke:10,swordskill:2,clubskill:2,knifeskill:2,axeskill:2,magicdefence:30,hitpoints:45,bodyarmor1:12,bodyarmor2:44,bodyarmorf:11,bodyarmorm:1,bodyarmord:33},
@@ -5517,7 +5519,8 @@ upgrade: {
 		setlink: {name:'spider'},
 		defences: {crush:'normal',cut:'mediocre',sabre:'good'}
 	, upgrade: {
-	armor105_1: {id:'armor105_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Паука [10]',baseitem:'armor105',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor105:{id:'armor105',caption:'Броня Паука',count:1}}}},
+	armor105_1: {id:'armor105_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Паука [10]',baseitem:'armor105',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor105:{id:'armor105',caption:'Броня Паука',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:35,price:455,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:40,antijumpaway:70,parry:15,jumpaway:80,counterstroke:10,swordskill:2,clubskill:2,knifeskill:2,axeskill:2,magicdefence:40,hitpoints:60,bodyarmor1:13,bodyarmor2:48,bodyarmorf:12,bodyarmorm:1,bodyarmord:36},
@@ -5527,7 +5530,8 @@ upgrade: {
 	}}
 
 	},
-	armor105_1: {id:'armor105_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Паука [10]',baseitem:'armor105',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor105:{id:'armor105',caption:'Броня Паука',count:1}}}},
+	armor105_1: {id:'armor105_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Паука [10]',baseitem:'armor105',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor105:{id:'armor105',caption:'Броня Паука',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:35,price:455,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:40,antijumpaway:70,parry:15,jumpaway:80,counterstroke:10,swordskill:2,clubskill:2,knifeskill:2,axeskill:2,magicdefence:40,hitpoints:60,bodyarmor1:13,bodyarmor2:48,bodyarmorf:12,bodyarmorm:1,bodyarmord:36},
@@ -5535,7 +5539,7 @@ upgrade: {
 		setlink: {name:'spider10',skip:'yes'},
 		defences: {crush:'normal',cut:'mediocre',sabre:'good'}
 	},
-	armor106: {id:'armor106',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Кровавой Луны',requireditems:{shop:{exchanger:'shop', items: {mater20:{id:'mater20',caption:'Эссенция лунного света',count:1},mater5:{id:'mater5',caption:'Мифрил',count:8}}}},
+	armor106: {id:'armor106',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Кровавой Луны',
 		common: {weight:40,price:380,durability:100},
 		required: {dexterity:15,intuition:50,level:9,endurance:30,strength:30},
 		modify: {anticriticalhit:75,antijumpaway:30,criticalhit:45,intuition:2,intellect:2,magicdefence:40,hitpoints:66,strength:4,bodyarmor1:19,bodyarmor2:54,bodyarmorf:18,bodyarmorm:1,bodyarmord:36},
@@ -5543,7 +5547,8 @@ upgrade: {
 		setlink: {name:'bloodmoon'},
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
 	, upgrade: {
-	armor106_1: {id:'armor106_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Кровавой Луны [10]',baseitem:'armor106',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor106:{id:'armor106',caption:'Броня Кровавой Луны',count:1}}}},
+	armor106_1: {id:'armor106_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Кровавой Луны [10]',baseitem:'armor106',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor106:{id:'armor106',caption:'Броня Кровавой Луны',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:75,antijumpaway:30,criticalhit:45,intuition:2,intellect:2,magicdefence:60,hitpoints:66,strength:8,bodyarmor1:21,bodyarmor2:62,bodyarmorf:20,bodyarmorm:1,bodyarmord:42,knifeskill:1,axeskill:1,clubskill:1,swordskill:1},
@@ -5553,7 +5558,8 @@ upgrade: {
 	}}
 
 	},
-	armor106_1: {id:'armor106_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Кровавой Луны [10]',baseitem:'armor106',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor106:{id:'armor106',caption:'Броня Кровавой Луны',count:1}}}},
+	armor106_1: {id:'armor106_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Кровавой Луны [10]',baseitem:'armor106',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor106:{id:'armor106',caption:'Броня Кровавой Луны',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:15,intuition:60,level:10,endurance:35,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:75,antijumpaway:30,criticalhit:45,intuition:2,intellect:2,magicdefence:60,hitpoints:66,strength:8,bodyarmor1:21,bodyarmor2:62,bodyarmorf:20,bodyarmorm:1,bodyarmord:42,knifeskill:1,axeskill:1,clubskill:1,swordskill:1},
@@ -5561,14 +5567,15 @@ upgrade: {
 		setlink: {name:'bloodmoon10',skip:'yes'},
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
     },
- 	armor108: {id:'armor108',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Злодеяний',requireditems:{shop:{exchanger:'shop', items: {mater21:{id:'mater21',caption:'Эссенция глубины',count:1},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:8}}}},
+ 	armor108: {id:'armor108',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Злодеяний',
 		common: {weight:40,price:380,durability:100},
 		required: {dexterity:50,intuition:40,level:9,endurance:30,strength:25},
 		modify: {anticriticalhit:55,criticalhit:50,jumpaway:60,dexterity:7,intuition:3,magicdefence:65,hitpoints:54,strength:2,bodyarmor1:12,bodyarmor2:44,bodyarmorf:11,bodyarmorm:1,bodyarmord:33},
 		properties: {defence:75},
 		setlink: {name:'misdeed'}
 	,upgrade:{
-	armor108_1: {id:'armor108_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108:{id:'armor108',caption:'Броня Злодеяний',count:1}}}},
+	armor108_1: {id:'armor108_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Злодеяний [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108:{id:'armor108',caption:'Броня Злодеяний',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,demonsreputation:10000},
 		modify: {anticriticalhit:75,criticalhit:70,jumpaway:80,dexterity:7,intuition:3,magicdefence:80,hitpoints:81,strength:2,bodyarmor1:14,bodyarmor2:53,bodyarmorf:13,bodyarmorm:1,bodyarmord:40},
@@ -5576,7 +5583,8 @@ upgrade: {
 		setlink: {name:'misdeed10'}
 	 }}
 	},
-	armor108_1: {id:'armor108_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Злодеяний [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108:{id:'armor108',caption:'Броня Злодеяний',count:1}}}},
+	armor108_1: {id:'armor108_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Злодеяний [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108:{id:'armor108',caption:'Броня Злодеяний',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:60,intuition:45,level:10,endurance:35,strength:25,demonsreputation:10000},
 		modify: {anticriticalhit:75,criticalhit:70,jumpaway:80,dexterity:7,intuition:3,magicdefence:80,hitpoints:81,strength:2,bodyarmor1:14,bodyarmor2:53,bodyarmorf:13,bodyarmorm:1,bodyarmord:40},
@@ -5584,14 +5592,15 @@ upgrade: {
 		setlink: {name:'misdeed10'}
 	},
 
-	armor107: {id:'armor107',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен',requireditems:{shop:{exchanger:'shop', items: {mater31:{id:'mater31',caption:'Эссенция праведного гнева',count:1},mater6:{id:'mater6',caption:'Железное дерево',count:8}}}},
+	armor107: {id:'armor107',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен',  
 		common: {weight:60,price:380,durability:100},
 		required: {dexterity:15,intuition:15,level:9,endurance:50,strength:45},
 		modify: {anticriticalhit:50,antijumpaway:25,intellect:1,magicdefence:30,hitpoints:99,strength:6,bodyarmor1:31,bodyarmor2:90,bodyarmorf:30,bodyarmorm:1,bodyarmord:60,jumpaway:-75,criticalhit:-75,defence:150},
 		setlink: {name:'losttime'},
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'mediocre'}
 	, upgrade: {
-	armor107_1: {id:'armor107_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен [10]',baseitem:'armor107',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor107:{id:'armor107',caption:'Броня Забытых Времен',count:1}}}},
+	armor107_1: {id:'armor107_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен [10]',baseitem:'armor107',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor107:{id:'armor107',caption:'Броня Забытых Времен',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:60,price:455,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,demonsreputation:10000},
 		modify: {anticriticalhit:90,antijumpaway:45,intellect:1,magicdefence:30,hitpoints:120,strength:6,bodyarmor1:94,bodyarmor2:159,bodyarmorf:93,bodyarmorm:1,bodyarmord:66,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,jumpaway:-100,criticalhit:-100,defence:150},
@@ -5600,40 +5609,44 @@ upgrade: {
 	}}
 
 	},
-	armor107_1: {id:'armor107_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен [10]',baseitem:'armor107',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor107:{id:'armor107',caption:'Броня Забытых Времен',count:1}}}},
+	armor107_1: {id:'armor107_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Забытых Времен [10]',baseitem:'armor107',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor107:{id:'armor107',caption:'Броня Забытых Времен',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:60,price:455,durability:100},
 		required: {dexterity:15,intuition:15,level:10,endurance:65,strength:45,demonsreputation:10000},
 		modify: {anticriticalhit:90,antijumpaway:45,intellect:1,magicdefence:30,hitpoints:120,strength:6,bodyarmor1:94,bodyarmor2:159,bodyarmorf:93,bodyarmorm:1,bodyarmord:66,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,jumpaway:-100,criticalhit:-100,defence:150},
 		setlink: {name:'losttime10',skip:'yes'},
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'mediocre'}
 	},
-	armor108_du1: {id:'armor108_du1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца',requireditems:{shop:{exchanger:'shop', items: {mater23:{id:'mater23',caption:'Ралиэль',count:1},mater2:{id:'mater2',caption:'Золото',count:8}}}},
+	armor108_du1: {id:'armor108_du1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца',
 		common: {weight:23,price:380,durability:50},
 		required: {dexterity:30,intuition:30,level:9,endurance:35,strength:35},
 		modify: {anticriticalhit:85,antijumpaway:60,parry:5,magicdefence:50,firemagicdefence:25,hitpoints:66,strength:5,bodyarmor1:13,bodyarmor2:48,bodyarmorf:12,bodyarmorm:1,bodyarmord:36,jumpaway:-75,criticalhit:-75,defence:100},
 		setlink: {name:'morningsun'}
 	, upgrade: {
-	armor108_du1_1: {id:'armor108_du1_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108_du1:{id:'armor108_du1',caption:'Броня Утреннего Солнца',count:1}}}},
+	armor108_du1_1: {id:'armor108_du1_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108_du1:{id:'armor108_du1',caption:'Броня Утреннего Солнца',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:23,price:455,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,demonsreputation:10000},
 		modify: {anticriticalhit:100,antijumpaway:75,parry:7,magicdefence:60,firemagicdefence:0,hitpoints:76,strength:5,bodyarmor1:16,bodyarmor2:58,bodyarmorf:15,bodyarmorm:1,bodyarmord:43,jumpaway:-100,criticalhit:-100,defence:105},
 		setlink: {name:'morningsun10'}
 	}}
 	},
-	armor108_du1_1: {id:'armor108_du1_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108_du1:{id:'armor108_du1',caption:'Броня Утреннего Солнца',count:1}}}},
+	armor108_du1_1: {id:'armor108_du1_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Утреннего Солнца [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor108_du1:{id:'armor108_du1',caption:'Броня Утреннего Солнца',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:23,price:455,durability:50},
 		required: {dexterity:30,intuition:30,level:10,endurance:45,strength:45,demonsreputation:10000},
 		modify: {anticriticalhit:100,antijumpaway:75,parry:7,magicdefence:60,firemagicdefence:0,hitpoints:76,strength:5,bodyarmor1:16,bodyarmor2:58,bodyarmorf:15,bodyarmorm:1,bodyarmord:43,jumpaway:-100,criticalhit:-100,defence:105},
 		setlink: {name:'morningsun10'}
 	},
-	armor109: {id:'armor109',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона',requireditems:{shop:{exchanger:'shop', items: {mater22:{id:'mater22',caption:'Эссенция чистоты',count:1},mater3:{id:'mater3',caption:'Серебро',count:8}}}},
+	armor109: {id:'armor109',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона',
 		common: {weight:40,price:380,durability:100},
 		required: {dexterity:15,intuition:45,level:9,endurance:45,strength:35},
 		modify: {anticriticalhit:90,antijumpaway:60,criticalhit:60,parry:3,magicdefence:20,hitpoints:78,strength:3,bodyarmor1:18,bodyarmor2:53,bodyarmorf:17,bodyarmorm:1,bodyarmord:36,defence:125},
 		setlink: {name:'scorpion'},
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
 	, upgrade: {
-	armor109_1: {id:'armor109_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor109:{id:'armor109',caption:'Броня Скорпиона',count:1}}}},
+	armor109_1: {id:'armor109_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor109:{id:'armor109',caption:'Броня Скорпиона',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:110,antijumpaway:80,criticalhit:80,parry:4,magicdefence:30,hitpoints:99,strength:3,bodyarmor1:21,bodyarmor2:60,bodyarmorf:20,bodyarmorm:1,bodyarmord:40,defence:130},
@@ -5641,7 +5654,8 @@ upgrade: {
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
 	 }}
 	},
-	armor109_1: {id:'armor109_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона [10]',requireditems:{shop:{exchanger:'shop', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor109:{id:'armor109',caption:'Броня Скорпиона',count:1}}}},
+	armor109_1: {id:'armor109_1',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Скорпиона [10]',
+    requireditems:{ks_dem:{exchanger:'ks_dem', items:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},armor109:{id:'armor109',caption:'Броня Скорпиона',count:1}, credits: {id:'credits', caption: 'Кредиты', count: 455}}}},
 		common: {weight:40,price:455,durability:100},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35,demonsreputation:10000},
 		modify: {anticriticalhit:110,antijumpaway:80,criticalhit:80,parry:4,magicdefence:30,hitpoints:99,strength:3,bodyarmor1:21,bodyarmor2:60,bodyarmorf:20,bodyarmorm:1,bodyarmord:40,defence:130},

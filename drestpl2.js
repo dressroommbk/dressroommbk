@@ -9988,7 +9988,7 @@ function getSerializableState(state)
 	if (isImportantStateArray(state.addSlots))
 	{
 //		r.charmSlots = cloneArray(state.charmSlots);
-		r.cs1 = getPackedObjectsRepresentation(state.addSlots);
+		r.cs3 = getPackedObjectsRepresentation(state.addSlots);
 	}
 	if (isImportantStateArray(state.runeSlots))
 	{
@@ -10169,6 +10169,9 @@ function applyDeserializedState(stateid, r)
 	if ('cs2' in r)
 	{
 		state.runeSlots = getRightSizeArray(getUnpackedObjectsRepresentation(r.cs2), slots.length);
+	}
+	if ('cs3' in r) {
+		state.addSlots = getRightSizeArray(getUnpackedObjectsRepresentation(r.cs3), slots.length);
 	}
 	if (('statElix' in r) && (r.statElix.elixn in knownElix))
 	{

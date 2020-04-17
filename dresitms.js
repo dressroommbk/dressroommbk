@@ -4474,11 +4474,11 @@ upgrade: {
 		setlink: {name:'haughtiness'}
 	},
 	gloves301: {id:'gloves301',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Искушения',artefact:true,
-		common: {weight:1,durability:500,eprice:500},
+		common: {weight:1,durability:500,eprice:150},
 		modify: {mindamage:5,maxdamage:10,stats:30,hitpoints:100,criticalhit:100,anticriticalhit:100,criticalpower:10,jumpaway:100,antijumpaway:100,knifeskill:3,axeskill:3,staffskill:3,clubskill:3,swordskill:3,defence:100,magicdefence:100,power:10},
 	},
 	handsmag: {id:'handsmag',imgFormat:'png', category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Cупер магии',artefact:true,
-		common: {weight:1,durability:500,eprice:500},
+		common: {weight:1,durability:500,eprice:150},
 		modify: {stats:10,hitpoints:250,mana:500,anticriticalhit:50,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:12,defence:100,magicdefence:150,magicpower:50},
 	},	
 	perchi_illusion1: {id:'perchi_illusion1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Светлые Перчатки',description:'Иллюзия перчаток'
@@ -4728,12 +4728,12 @@ upgrade: {
 		modify: {hitpoints:10,anticriticalhit:15,jumpaway:15}
 	},	
 	cloak301: {id:'cloak301',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного воина [10]',adjustment:true,binding:'boe',
-		common: {weight:1,durability:100,eprice:100},
+		common: {weight:1,durability:100,eprice:200},
 		required: {level:10},
 		modify: {stats:7,hitpoints:100,criticalhit:30,anticriticalhit:30,jumpaway:30,antijumpaway:30,defence:25,magicdefence:25,power:10}
 	},
 	cloak302: {id:'cloak302',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного мага [10]',adjustment:true,binding:'boe',
-		common: {weight:1,durability:100,eprice:100},
+		common: {weight:1,durability:100,eprice:200},
 		required: {level:10},
 		modify: {stats:7,mana:200,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:2,defence:25,magicdefence:25,magicpower:10}
 	},
@@ -6903,12 +6903,12 @@ upgrade: {
     modify: {stats: 15, mana: 100, hitpoints: 100, power: 10, defence: 25, magicdefence: 25, magicdefencereduce: 2},
   },	
 	venok31: {id:'venok31',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Воина [10]',adjustment:true,
-		common: {weight:1,durability:200,eprice:200},
+		common: {weight:1,durability:200,eprice:400},
 		required: {level:10},
 		modify: {stats:9,hitpoints:250,criticalhit:100,anticriticalhit:100,jumpaway:100,antijumpaway:100,knifeskill:1,axeskill:1,clubskill:1,swordskill:1,defence:50,magicdefence:150,power:10}
 	},
 	venok32: {id:'venok32',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Мага [10]',adjustment:true,
-		common: {weight:1,durability:200,eprice:200},
+		common: {weight:1,durability:200,eprice:400},
 		required: {level:10},
 		modify: {stats:9,hitpoints:100,mana:500,anticriticalhit:100,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:4,defence:150,magicdefence:50,magicpower:10}
 	},	
@@ -11659,18 +11659,18 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:1,eprice:'0.1/0.2/0.3/0.5/1/2.5/5/7.5/10',durability:'1/2/3/5/10/25/50/75/100'},
 	},*/
 	cureHP600_100: {id:'cureHP600_100',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление энергии 600HP',fixless:true,
-		common: {weight:1,eprice:'10',durability:'100'},
+		common: {weight:1,eprice:10,durability:'100'},
 	},
 	cureHP900_100: {id:'cureHP900_100',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление энергии 900HP',fixless:true,
-		common: {weight:1,eprice:'20',durability:'100'},
+		common: {weight:1,eprice:20,durability:'100'},
 		required: {level:7}
 	},
 	cureHP1200_100: {id:'cureHP1200_100',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление энергии 1200HP',fixless:true,
-		common: {weight:1,eprice:'20',durability:'100'},
+		common: {weight:1,eprice:20,durability:'100'},
 		required: {level:10}
 	},
 	cureHP1500_100: {id:'cureHP1500_100',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление энергии 1500HP',fixless:true,
-		common: {weight:1,eprice:'20',durability:'100'},
+		common: {weight:1,eprice:20,durability:'100'},
 		required: {level:11}
 	},
 	
@@ -11784,15 +11784,15 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		required: {level:6}
 	},*/
 	cureMana1000_90: {id:'cureMana1000_90',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление Маны 1000MP',fixless:true,
-		common: {weight:1,eprice:'18',durability:'90'},
+		common: {weight:1,eprice:18,durability:'90'},
 		required: {level:6}
 	},
 	cureMana1250_90: {id:'cureMana1250_90',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление Маны 1250MP',fixless:true,
-		common: {weight:1,eprice:'18',durability:'90'},
+		common: {weight:1,eprice:18,durability:'90'},
 		required: {level:8}
 	},
 	cureMana1500_90: {id:'cureMana1500_90',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Восстановление Маны 1500MP',fixless:true,
-		common: {weight:1,eprice:'18',durability:'90'},
+		common: {weight:1,eprice:18,durability:'90'},
 		required: {level:10}
 	},
 

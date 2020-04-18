@@ -5684,7 +5684,7 @@ upgrade: {
 	},
 	
 	armor113_11: { id: 'armor113_11', category:'heavyarmors', slot:'w4', width:60, height:80, caption: 'Утерянная Броня Неприступного Утеса', stats:true,adjustment:true,binding: 'bop',
-        requireditems: {anvil_devil: {exchanger: 'anvil_devil', items: {sp_mat42:{id:'sp_mat42',caption:'Утерянная Сущность Брони',count:1},mater301:{id:'mater301',caption:'Кость болотного тролля',count:1},mater299:{id:'mater299',caption:'Черное масло',count:10},mater300:{id:'mater300',caption:'Бурая шкура',count:12},mater293:{id:'mater293',caption:'Мерцающий кристалл',count:10}, mater296:{id:'mater296',caption:'Самородок мерцающего металла',count:20},mater295:{id:'mater295',caption:'Чешуйчатая шкура',count:10},mater297:{id:'mater297',caption:'Изменчивые водоросли',count:10}}}},
+        requireditems: {anvil_devil: {exchanger: 'anvil_devil', items: {sp_mat42:{id:'sp_mat42',caption:'Утерянная Сущность Брони',count:1},mater301:{id:'mater301',caption:'Кость болотного тролля',count:1},mater299:{id:'mater299',caption:'Черное масло',count:10},mater300:{id:'mater300',caption:'Бурая шкура',count:12},mater293:{id:'mater293',caption:'Мерцающий кристалл',count:8}, mater296:{id:'mater296',caption:'Самородок мерцающего металла',count:20},mater295:{id:'mater295',caption:'Чешуйчатая шкура',count:10},mater297:{id:'mater297',caption:'Изменчивые водоросли',count:10}}}},
 	    common: {weight: 60, price: 537, durability: 100},
 		required: {level:11,endurance:100,strength:200, dexterity:10,intuition:10},
 		modify: { anticriticalhit:350,antijumpaway:200,magicdefence:100,defence:150,hitpoints:200,bodyarmor1:34,bodyarmor2:99,bodyarmorf:33,bodyarmorm:1,bodyarmord:66,knifeskill:2,swordskill:2,axeskill:2,clubskill:2,strength:15},

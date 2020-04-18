@@ -129,7 +129,7 @@ var tricks = {
 		required: {level:8,strength:50},
 		resources: {hit:3}
 	},*/
-	blood_gainattack: {name: 'blood_gainattack', caption: 'Рывок', description: 'Ослабляя свою защиту, вы прорываетесь к противнику и получаете <img src="hit.gif" width=8 height=8> 3', school: 'fight',
+	blood_gainattack: {name: 'blood_gainattack', caption: 'Рывок', description: 'Ослабляя свою защиту, вы прорываетесь к противнику и получаете <img src="' + baseImgPath + 'hit.gif" width=8 height=8> 3', school: 'fight',
 		required: {level:7,strength:25,endurance:25}
 	},
 	hit_willpower: {name: 'hit_willpower', caption: 'Воля к победе', description: 'Вы восстанавливаете 5*(уровень)+7 HP, эффект увеличен на 25%, если ваши HP ниже 33%', school: 'fight',
@@ -145,7 +145,7 @@ var tricks = {
 		required: {level:3},
 		resources: {krit:3}
 	},
-	krit_blindluck: {name: 'krit_blindluck', caption: 'Слепая удача', description: 'Следующий удар будет критическим.Вы не получите <IMG width=7 height=8 src="krit.gif"> с этого крита.', school: 'fight',
+	krit_blindluck: {name: 'krit_blindluck', caption: 'Слепая удача', description: 'Следующий удар будет критическим.Вы не получите <IMG width=7 height=8 src="' + baseImgPath + 'krit.gif"> с этого крита.', school: 'fight',
 		required: {level:5},
 		resources: {krit:5}
 	},
@@ -162,11 +162,11 @@ var tricks = {
 		required: {level:7},
 		resources: {hit:2,krit:3}
 	},
-	counter_winddance: {name: 'counter_winddance', caption: 'Танец ветра', description: 'Вы увернетесь от следующего направленного в вас удара.Вы не получите <IMG width=8 height=8 src="counter.gif"> за контрудар с этого уворота.', school: 'fight',
+	counter_winddance: {name: 'counter_winddance', caption: 'Танец ветра', description: 'Вы увернетесь от следующего направленного в вас удара.Вы не получите <IMG width=8 height=8 src="' + baseImgPath + 'counter.gif"> за контрудар с этого уворота.', school: 'fight',
 		required: {level:3},
 		resources: {counter:3}
 	},
-	counter_bladedance: {name: 'counter_bladedance', caption: 'Танец лезвий', description: 'Вы увернетесь от следующего направленного в вас удара и нанесете контрудар.Вы не получите <IMG width=8 height=8 src="counter.gif"> за контрудар с этого уворота.', school: 'fight',
+	counter_bladedance: {name: 'counter_bladedance', caption: 'Танец лезвий', description: 'Вы увернетесь от следующего направленного в вас удара и нанесете контрудар.Вы не получите <IMG width=8 height=8 src="' + baseImgPath + 'counter.gif"> за контрудар с этого уворота.', school: 'fight',
 		required: {level:5},
 		resources: {counter:5}
 	},
@@ -178,11 +178,11 @@ var tricks = {
 		required: {level:7},
 		resources: {counter:5}
 	},
-	parry_prediction: {name: 'parry_prediction', caption: 'Предвидение', description: 'Следующий удар противника парируется.Вы не получите <img width=8 height=8 src="parry.gif"> за это парирование.', school: 'fight',
+	parry_prediction: {name: 'parry_prediction', caption: 'Предвидение', description: 'Следующий удар противника парируется.Вы не получите <img width=8 height=8 src="' + baseImgPath + 'parry.gif"> за это парирование.', school: 'fight',
 		required: {level:3},
 		resources: {parry:3}
 	},
-	parry_secondlife: {name: 'parry_secondlife', caption: 'Второе дыхание', description: 'Следующий удар противника - парируется, за каждый уровень противника, чей удар вы парировали, вы получаете 5 ХП.Вы не получите <img width=8 height=8 src="parry.gif"> за это парирование.', school: 'fight',
+	parry_secondlife: {name: 'parry_secondlife', caption: 'Второе дыхание', description: 'Следующий удар противника - парируется, за каждый уровень противника, чей удар вы парировали, вы получаете 5 ХП.Вы не получите <img width=8 height=8 src="' + baseImgPath + 'parry.gif"> за это парирование.', school: 'fight',
 		required: {level:5},
 		resources: {parry:5},
 		consumes: {spiritlevel:2}

@@ -39,7 +39,7 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
   },
                               
 /*NEW (21.03.2008)*/
-  braslet43 : { id: 'braslet43', category: 'bracelets',slot:'w13',width:60,height:40,caption:'Браслеты Неуловимой Мощи',adjustment:true,
+  braslet43 : { id: 'braslet43', category: 'bracelets',slot:'w13',width:60,height:40,caption:'Браслеты Неуловимой Мощи',adjustment:true,treasure: true,
     requireditems: {ks_cap: {exchanger: 'ks_cap', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
     common: {weight:2,price:200,durability:50},
     setlink: {name:'hulk_power'},
@@ -69,7 +69,7 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
    	required: {level:9,dexterity:10,endurance:30,strength:30,intuition:50},
 	   modify: {antijumpaway:35,criticalhit:30,intuition:3,magicdefence:25,hitpoints:40,legarmor1:10,legarmor2:44,legarmorm:9,legarmord:35}
   },
-  boots32: {id:'boots32',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Быстрой Расправы',adjustment:true,
+  boots32: {id:'boots32',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Быстрой Расправы',adjustment:true,treasure: true,
     requireditems: {ks_ang: {exchanger: 'ks_ang', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
     common: {price:211,weight:10,durability:50,angelsreputation: 10000},
     setlink: {name:'fastf'},
@@ -89,7 +89,7 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
    	required: {level:9,wisdom:50,intellect:40},
    	modify: {magicpower:10,intellect:3,hitpoints:30,mana:70,defence: 10, legarmor1:5,legarmor2:16,legarmorm:4,legarmord:12}
   },
-  boots33: {id:'boots33',category:'boots',slot:'w12',width:60,height:40,caption:'Сандали Неуловимой Мощи',adjustment:true,
+  boots33: {id:'boots33',category:'boots',slot:'w12',width:60,height:40,caption:'Сандали Неуловимой Мощи',adjustment:true,treasure: true,
     requireditems: {ks_ang: {exchanger: 'ks_ang', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
    	common: {price:211,weight:5,durability:50,angelsreputation: 10000},
    	setlink: {name:'hulk_power'},
@@ -109,7 +109,7 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
    	required: {level:9,wisdom:50,intellect:40},
    	modify: {magicdefencereduce:3,magicpower:15,intellect:5,hitpoints:30,mana:30,staffskill: 2, magicdefence:20}
   },
-  naruchi92 : { id: 'naruchi92', category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Неуловимой Мощи',adjustment:true,
+  naruchi92 : { id: 'naruchi92', category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Неуловимой Мощи',adjustment:true,treasure: true,
     requireditems: {ks_sand: {exchanger: 'ks_sand', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
     common: {weight:1,price:226,durability:50,sandreputation: 10000},
     setlink: {name:'hulk_power'},
@@ -129,7 +129,7 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
    	required: {level:9,dexterity:10,endurance:30,strength:30,intuition:50},
    	modify: {criticalpower:10,antijumpaway:30,criticalhit:25,intuition:5,weaponskill:2}
   },
-  naruchi91 : { id: 'naruchi91', category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Быстрой Расправы',adjustment:true,
+  naruchi91 : { id: 'naruchi91', category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Быстрой Расправы',adjustment:true,treasure: true,
     requireditems: {ks_sand: {exchanger: 'ks_sand', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
    	common: {price:182,weight:1,durability:50,sandreputation: 10000},
    	setlink: {name:'fastf'},
@@ -164,21 +164,21 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
   },  
   /*  */
 /*STARTOF: Комплект неотвратимого возмездия*/
-  naruchi41 : { id: 'naruchi41', category: 'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Неотвратимого Возмездия',adjustment:true,
+  naruchi41 : { id: 'naruchi41', category: 'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Неотвратимого Возмездия',adjustment:true,treasure:true,
     requireditems: {ks_cap: {exchanger: 'ks_cap', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
     common: {weight:2,price:199,durability:50},
     setlink:{name:'revenge'},
    	required: {level:10,dexterity:60,endurance:40,strength:40,intuition:10,capitalreputation:10000},
    	modify: {jumpaway: 110, antijumpaway: 60, counterstroke: 5, power: 10, dexterity: 3, weaponskill: 1}
   },
-  helmet92: {id:'helmet92',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Неотвратимого Возмездия',adjustment:true,
+  helmet92: {id:'helmet92',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Неотвратимого Возмездия',adjustment:true,treasure:true,
     requireditems: {ks_sand: {exchanger: 'ks_sand', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
    	common: {price:295,weight:15,durability:50,sandreputation: 10000},
    	setlink:{name:'revenge'},
    	required: {dexterity:60,intuition:10,level:10,endurance:40,strength:40},
    	modify: {jumpaway:150,power:6,parry:5,dexterity:6,weaponskill:2,defence:25,magicdefence:25,headarmor1:11,headarmor2:40,headarmorf:10,headarmorm:1,headarmord:30}
   },
-  clip100: {id:'clip100',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неотвратимого Возмездия',adjustment:true,
+  clip100: {id:'clip100',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неотвратимого Возмездия',adjustment:true,treasure:true,
     requireditems: {ks_ang: {exchanger: 'ks_ang', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
    	common: {price:281,weight:1,durability:60},
    	setlink:{name:'revenge'},
@@ -215,7 +215,7 @@ boots2008_1: {id:'boots2008_1',category:'boots',slot:'w12',width:60,height:40,ca
    	required: {level:9,dexterity:10,endurance:30,strength:30,intuition:50},
    	modify: {criticalpower:20,antijumpaway:50,criticalhit:35,anticriticalhit:75,intuition:5,weaponskill:1,magicdefence:35,defence:50,hitpoints:60}
   },
-  amulet111: {id:'amulet111',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Быстрой Расправы',adjustment:true,
+  amulet111: {id:'amulet111',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Быстрой Расправы',adjustment:true,treasure: true,
     requireditems: {ks_cap: {exchanger: 'ks_cap', items: {mater_shop7: {id:'mater_shop7',caption:'Сущность Ресурса',count:10}, mater29: {id:'mater29',caption:'Лучистый топаз',count:15}, mater24: {id:'mater24',caption:'Стихиалия',count:10}, mater28: {id:'mater28',caption:'Лучистый рубин',count:15}, mater31: {id:'mater31',caption:'Эссенция праведного гнева',count:10}, mater27: {id:'mater27',caption:'Камень затаенного солнца',count:15}, mater21: {id:'mater21',caption:'Эссенция глубины',count:10}, mater26: {id:'mater26',caption:'Кристалл стабильности',count:15}, mater20: {id:'mater20',caption:'Эссенция лунного света',count:10}, mater30: {id:'mater30',caption:'Шепот гор',count:15}, mater22: {id:'mater22',caption:'Эссенция чистоты',count:10}, mater25: {id:'mater25',caption:'Кристалл голоса предков',count:15}, mater23: {id:'mater23',caption:'Ралиэль',count:10}}}},
 	common: {price:335,weight:1,durability:50},
 	setlink: {name:'fastf'},

@@ -148,6 +148,7 @@ var localizer =
 	copyCab: 'Скопировать кабинку',
 	impitem: '[импорт]',
 	fixless: '<font color="red">Предмет не подлежит ремонту в ремонтных мастерских.</font>',
+	treasure: '<font color="red">Клад Легендарного Героя может содержать этот предмет.</font>',
 	charmless: '<font color="red">Предмет не подлежит зачаровыванию.</font>',
 	changeName: 'Изменить имя',
 	changeGender: 'Изменить пол',
@@ -2079,6 +2080,11 @@ function getObjectDescHtml(state, obj)
 		addinfo += format(localizer.partOfSet, set.caption, getCountForSet(state, set.id), set.count);
 		addinfo += '<br />';
 	}
+	if ('description' in obj)
+	{
+		addinfo += obj.description;
+		addinfo += '<br />';
+	}
 	if (('fixless' in obj) && obj.fixless)
 	{
 		addinfo += localizer.fixless;
@@ -2093,12 +2099,10 @@ function getObjectDescHtml(state, obj)
 		/*addinfo += localizer.charmless;
 		addinfo += '<br />';*/
 	}
-	if ('description' in obj)
-	{
-		addinfo += obj.description;
+	if (('treasure' in obj) && obj.treasure === true) {
+		addinfo += localizer.treasure;
 		addinfo += '<br />';
 	}
-
 	if (addinfo != '')
 	{
 		html += localizer.itemAddInfoGroup.italics() + '<br />';

@@ -3,7 +3,7 @@ var itemImgPath = 'images/';
 var hereItemImgPath = 'images/';
 var charImgPath = 'images/';
 var clanImgPath = 'images/';
-var zodiacImgPath = 'images/';
+var zodiacImgPath = 'images/z/';
 var brandImgPath = 'images/';
 var brand2ImgPath = 'images/';
 var trickResourceImgPath = 'images/';
@@ -17,7 +17,7 @@ var blankImgPath = 'images/blank.gif';
 var toothImgPath = 'images/';
 var defaultImgFormat = 'gif';
 
-var charInfoUrlFormat = '/inf.php?login=';
+var charInfoUrlFormat = 'https://mycombats.org/inf.php?login=';
 
 var shortVip = "vip=1";
 
@@ -574,8 +574,8 @@ var aligns = new Array(
 	{id: '0', caption: 'Без склонности'},
 	{id: '7', caption: 'Нейтральное братство'},
 	{id: '9', caption: 'Марка'},
-	{id: '10', caption: 'Отморозок'},
-	{id: '23', caption: 'ТемноСерая'},
+/*	{id: '10', caption: 'Отморозок'},
+	{id: '23', caption: 'ТемноСерая'},*/
 	{id: '50', caption: 'Алхимик'},
 	{id: '100', caption: 'Ангел'},
 	{caption: 'Темное братство'},
@@ -605,9 +605,9 @@ var aligns = new Array(
 	{id: '1.01', caption: 'Гвардия Мироздателя'},
 	{caption: 'Пределы Хаоса'},
 	{id: '2', caption: 'Хаос'},
-	{id: '2.5', caption: 'Служитель Хаоса'},
+//	{id: '2.5', caption: 'Служитель Хаоса'},
 	{id: '2.9', caption: 'Старший Служитель Хаоса'},
-	{id: '2.99', caption: 'Лорд Хаоса'}
+//	{id: '2.99', caption: 'Лорд Хаоса'}
 	);
 
 var relativeSpiritConsumers = new Array(

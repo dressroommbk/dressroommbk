@@ -1087,7 +1087,7 @@ function onPersMenu()
 	menuHtml += getRowMenuItemHtml(localizer.changeImage, 'changePersImage()');
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.changeAlign, 'changePersAlign()');
-	menuHtml += getRowMenuItemHtml(localizer.changeClan, 'changePersClan()');
+//	menuHtml += getRowMenuItemHtml(localizer.changeClan, 'changePersClan()');
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, 'hideMenu()');
 	menuHtml += '</table>';

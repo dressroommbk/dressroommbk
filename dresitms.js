@@ -3665,7 +3665,7 @@ upgrade: {
 		setlink: {name:'spider'}
 	, upgrade: {
 	boots21_1: {id:'boots21_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Паука [10]',binding:'boe',baseitem:'boots21',
-        requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots21:{id:'boots21',caption:'Сапоги Паука',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
+    requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots21:{id:'boots21',caption:'Сапоги Паука',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:50,magicdefence:40,hitpoints:24,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -3674,7 +3674,8 @@ upgrade: {
 	}}
 
 	},
-	boots21_1: {id:'boots21_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Паука [10]',binding:'boe',baseitem:'boots21',clist:{_:{mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots21:{id:'boots21',caption:'Сапоги Паука',count:1}}},
+	boots21_1: {id:'boots21_1',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Паука [10]',binding:'boe',baseitem:'boots21',
+    requireditems:{ks_ang: {exchanger: 'ks_ang', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:50},boots21:{id:'boots21',caption:'Сапоги Паука',count:1}, credits:{id:'credits', caption:'Кредиты', count: 180}}}},
 		common: {weight:10,price:180,durability:50},
 		required: {dexterity:60,intuition:15,level:10,endurance:35,strength:35,angelsreputation:10000},
 		modify: {anticriticalhit:50,jumpaway:50,magicdefence:40,hitpoints:24,legarmor1:11,legarmor2:40,legarmorf:10,legarmorm:1,legarmord:30},
@@ -9101,7 +9102,7 @@ upgrade: {
 		setlink: {name:'scorpion'}
 	, upgrade: {
 	clip90_1: {id:'clip90_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Скорпиона [10]',binding:'bop',baseitem:'clip90',
-        requireditems:{anvil_dem: {exchanger: 'anvil_dem', items: {sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip90:{id:'clip90',caption:'Серьги Скорпиона',count:1}}}},
+    requireditems:{anvil_dem: {exchanger: 'anvil_dem', items: {sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip90:{id:'clip90',caption:'Серьги Скорпиона',count:1}}}},
 		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:50,strength:35},
 		modify: {antijumpaway:100,criticalhit:100,weaponskill:0,defence:35,hitpoints:48,strength:4},
@@ -9109,14 +9110,15 @@ upgrade: {
 	}}
 
 	},
-	clip90_1: {id:'clip90_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Скорпиона [10]',binding:'bop',baseitem:'clip90',clist:{anvil_dem:{sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip90:{id:'clip90',caption:'Серьги Скорпиона',count:1}}},
+	clip90_1: {id:'clip90_1',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Скорпиона [10]',binding:'bop',baseitem:'clip90',
+    requireditems:{anvil_dem: {exchanger: 'anvil_dem', items: {sp_mat15:{id:'sp_mat15',caption:'Сущность Серег',count:1},mater267:{id:'mater267',caption:'Расскаленная магма',count:1},clip90:{id:'clip90',caption:'Серьги Скорпиона',count:1}}}},
 		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:60,level:10,endurance:30,strength:35},
 		modify: {antijumpaway:100,criticalhit:100,weaponskill:0,defence:35,hitpoints:48,strength:4},
 		setlink: {name:'scorpion10'}
 	},
 	clip91: {id:'clip91',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Неуемной Силы',adjustment:true,binding:'bop',
-        requireditems:{ks_dem: {exchanger:'ks_dem', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2}}}},
+    requireditems:{ks_dem: {exchanger:'ks_dem', items: {mater28:{id:'mater28',caption:'Лучистый рубин',count:2}}}},
 		common: {weight:1,price:300,durability:50},
 		required: {dexterity:15,intuition:15,level:9,endurance:30,strength:50},
 		modify: {anticriticalhit:70,criticalhit:-75,antijumpaway:70,jumpaway:-75,strength:10,hitpoints:55,clubskill:1}
@@ -9966,12 +9968,12 @@ upgrade: {
 		required: {level:3,endurance:12,strength:12},
 		modify: {anticriticalhit:10,antijumpaway:5,hitpoints:6}
 	},
-	ring83: {id:'ring83',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Интуиции',clist:{_:{mater2:{id:'mater2',caption:'Золото',count:5},mater11:{id:'mater11',caption:'Кожа Общего Врага',count:2},mater14:{id:'mater14',caption:'Сгусток эфира',count:1},mater15:{id:'mater15',caption:'Сгусток астрала',count:2}}},
+	ring83: {id:'ring83',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Интуиции',
 		common: {weight:1,price:16,durability:40},
 		required: {level:2,endurance:10,strength:10},
 		modify: {intuition:2}
 	},
-	ring85: {id:'ring85',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ловкости',clist:{_:{mater3:{id:'mater3',caption:'Серебро',count:5},mater10:{id:'mater10',caption:'Кора змеиного дерева',count:2},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:1},mater18:{id:'mater18',caption:'Тысячелетний камень',count:1},mater19:{id:'mater19',caption:'Кристалл времен',count:1}}},
+	ring85: {id:'ring85',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ловкости',
 		common: {weight:1,price:16,durability:40},
 		required: {level:2,strength:10},
 		modify: {dexterity:2}
@@ -10001,7 +10003,7 @@ upgrade: {
 		required: {endurance:10,level:2},
 		modify: {strength:3}
 	},
-	ring106: {id:'ring106',category:'rings',slot:'w6',width:20,height:20,caption:'Рубиновое Кольцо',clist:{_:{mater4:{id:'mater4',caption:'Лучистое серебро',count:3},mater7:{id:'mater7',caption:'Слиток пустынной руды',count:4},mater8:{id:'mater8',caption:'Троекорень',count:4},mater13:{id:'mater13',caption:'Кристалл тысячи ответов',count:3}}},
+	ring106: {id:'ring106',category:'rings',slot:'w6',width:20,height:20,caption:'Рубиновое Кольцо',
 		common: {weight:1,price:20,durability:20},
 		required: {level:3,endurance:12,strength:12},
 		modify: {hitpoints:33}
@@ -10011,7 +10013,7 @@ upgrade: {
 		required: {level:3,endurance:15,strength:15},
 		modify: {anticriticalhit:8,antijumpaway:8,criticalhit:10,jumpaway:10}
 	},
-	ring104: {id:'ring104',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Силы',clist:{_:{mater1:{id:'mater1',caption:'Шкура пещерного оленя',count:4},mater5:{id:'mater5',caption:'Мифрил',count:4},mater9:{id:'mater9',caption:'Корень змеиного дерева',count:3},mater16:{id:'mater16',caption:'Глубинный камень',count:2},mater19:{id:'mater19',caption:'Кристалл времен',count:1}}},
+	ring104: {id:'ring104',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Силы',
 		common: {weight:1,price:23,durability:40},
 		required: {level:3,endurance:10},
 		modify: {strength:3}
@@ -10240,7 +10242,7 @@ upgrade: {
 		required: {dexterity:15,intuition:30,level:7,endurance:20,strength:20},
 		modify: {criticalpower:8,antijumpaway:10,criticalhit:35,hitpoints:12}
 	},
-	ring99: {id:'ring99',category:'rings',slot:'w6',width:20,height:20,caption:'Синее Кольцо Учителя',clist:{_:{mater6:{id:'mater6',caption:'Железное дерево',count:5},mater15:{id:'mater15',caption:'Сгусток астрала',count:2},mater26:{id:'mater26',caption:'Кристалл стабильности',count:2},mater22:{id:'mater22',caption:'Эссенция чистоты',count:1}}},
+	ring99: {id:'ring99',category:'rings',slot:'w6',width:20,height:20,caption:'Синее Кольцо Учителя',old:true,
 		common: {weight:1,price:61,durability:30},
 		required: {dexterity:20,level:7,endurance:20,strength:20},
 		modify: {parry:5,counterstroke:1,defence:25}
@@ -10776,7 +10778,7 @@ upgrade: {
 		required: {intuition:8,level:2,strength:8},
 		modify: {dexterity:1,intuition:2}
 	},
-	ring207: {id:'ring207',category:'rings',slot:'w6',width:20,height:20,caption:'Simplicity Ring',imp1:true,adjustment:true,old:true,clist:{_:{mater12:{id:'mater12',caption:'Сталь',count:2},mater13:{id:'mater13',caption:'Кристалл тысячи ответов',count:3},mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater29:{id:'mater29',caption:'Лучистый топаз',count:1}}},
+	ring207: {id:'ring207',category:'rings',slot:'w6',width:20,height:20,caption:'Simplicity Ring',imp1:true,adjustment:true,old:true,
 		common: {weight:1,price:30,durability:30,eprice:6},
 		required: {intuition:15,level:4,endurance:15,strength:15},
 		modify: {intuition:3,strength:2}
@@ -11328,11 +11330,11 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 	joke_stat: {id:'joke_stat',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Свиток Супермена',fixless:true,
 		common: {weight:1,price:1,durability:1,expirationdate:3,probability:99,duration:360}
 	},
-	spell_curse: {id:'spell_curse',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Черная Метка',magic1:'проклятье',fixless:true,clist:{_:{mater12:{id:'mater12',caption:'Сталь',count:1},mater16:{id:'mater16',caption:'Глубинный камень',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:1},mater18:{id:'mater18',caption:'Тысячелетний камень',count:1},mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater29:{id:'mater29',caption:'Лучистый топаз',count:1}}},
+	spell_curse: {id:'spell_curse',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Черная Метка',magic1:'проклятье',fixless:true,
 		common: {weight:1,price:1,durability:1,probability:70,duration:1440},
 		required: {intellect:10,level:8}
 	},
-	spell_curseb: {id:'spell_curseb',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Красная Метка',magic1:'проклятье',fixless:true,clist:{_:{mater4:{id:'mater4',caption:'Лучистое серебро',count:1},mater14:{id:'mater14',caption:'Сгусток эфира',count:1},mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1},mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},mater30:{id:'mater30',caption:'Шепот гор',count:1},mater31:{id:'mater31',caption:'Эссенция праведного гнева',count:1},mater24:{id:'mater24',caption:'Стихиалия',count:1}}},
+	spell_curseb: {id:'spell_curseb',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Красная Метка',magic1:'проклятье',fixless:true,
 		common: {weight:1,price:1,durability:1,probability:70,duration:1440},
 		required: {intellect:10,level:8}
 	},
@@ -11918,31 +11920,31 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		required: {intellect:2,level:7,darkmagicskill:0,mana:0,wisdom:0}
 	}}
 	},
-	spell_ug_unp10c: {id:'spell_ug_unp10c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Уязвимости',description:'Требуется предмет: [Образец]x15, [Ланирит]x5', fixless:true,clist:{_:{mater26:{id:'mater26',caption:'Кристалл стабильности',count:1},mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater24:{id:'mater24',caption:'Стихиалия',count:1}}},
+	spell_ug_unp10c: {id:'spell_ug_unp10c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Уязвимости',description:'Требуется предмет: [Образец]x15, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {defence:-100}
 	},
-	spell_ug_unp10b: {id:'spell_ug_unp10b',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Уязвимости Магии',description:'Требуется предмет: [Образец]x15, [Ланирит]x5', fixless:true,clist:{_:{mater26:{id:'mater26',caption:'Кристалл стабильности',count:1},mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater24:{id:'mater24',caption:'Стихиалия',count:1}}},
+	spell_ug_unp10b: {id:'spell_ug_unp10b',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Уязвимости Магии',description:'Требуется предмет: [Образец]x15, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {magicdefence:-100}
 	},
-	spell_ug_undam1c: {id:'spell_ug_undam1c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Угасающего Огня',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,clist:{_:{mater11:{id:'mater11',caption:'Кожа Общего Врага',count:1},mater14:{id:'mater14',caption:'Сгусток эфира',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:1},mater18:{id:'mater18',caption:'Тысячелетний камень',count:1},mater29:{id:'mater29',caption:'Лучистый топаз',count:1}}},
+	spell_ug_undam1c: {id:'spell_ug_undam1c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Угасающего Огня',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {firemagicpower:-20}
 	},
-	spell_ug_undam2c: {id:'spell_ug_undam2c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Замерзающей Воды',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,clist:{_:{mater10:{id:'mater10',caption:'Кора змеиного дерева',count:1},mater16:{id:'mater16',caption:'Глубинный камень',count:1},mater18:{id:'mater18',caption:'Тысячелетний камень',count:1},mater19:{id:'mater19',caption:'Кристалл времен',count:1},mater27:{id:'mater27',caption:'Камень затаенного солнца',count:1}}},
+	spell_ug_undam2c: {id:'spell_ug_undam2c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Замерзающей Воды',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {watermagicpower:-20}
 	},
-	spell_ug_undam3c: {id:'spell_ug_undam3c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Стихающего Ветра',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,clist:{_:{mater12:{id:'mater12',caption:'Сталь',count:1},mater15:{id:'mater15',caption:'Сгусток астрала',count:1},mater17:{id:'mater17',caption:'Плод змеиного дерева',count:1},mater18:{id:'mater18',caption:'Тысячелетний камень',count:1},mater30:{id:'mater30',caption:'Шепот гор',count:1}}},
+	spell_ug_undam3c: {id:'spell_ug_undam3c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Стихающего Ветра',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {airmagicpower:-20}
 	},
-	spell_ug_undam4c: {id:'spell_ug_undam4c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Умирающей Земли',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,clist:{_:{mater25:{id:'mater25',caption:'Кристалл голоса предков',count:1},mater26:{id:'mater26',caption:'Кристалл стабильности',count:1}}},
+	spell_ug_undam4c: {id:'spell_ug_undam4c',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Умирающей Земли',description:'Требуется предмет: [Образец]x10, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {earthmagicpower:-20}
 	},
-	spell_ug_unexprc: {id:'spell_ug_unexprc',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Легкого Отупения',description:'Требуется предмет: [Образец]x15, [Ланирит]x5', fixless:true,clist:{_:{mater26:{id:'mater26',caption:'Кристалл стабильности',count:1},mater28:{id:'mater28',caption:'Лучистый рубин',count:1},mater24:{id:'mater24',caption:'Стихиалия',count:1}}},
+	spell_ug_unexprc: {id:'spell_ug_unexprc',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятье Легкого Отупения',description:'Требуется предмет: [Образец]x15, [Ланирит]x5', fixless:true,
 		common: {weight:1,price:10,durability:5},
 		modify: {intellect:-20}
 	},
@@ -11998,15 +12000,15 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:0.1,durability:1},
 		required: {level:10},
 	},
-	abook1: {id:'abook1',category:'books',slot:'wbook',width:40,height:25,caption:'Бронзовая Книга Саныча',description:'Каждая страница этой книги позволяет мгновенно получить +1 <img width=8 height=8 src=images/hit.gif> <img width=7 height=8 src="images/krit.gif"> <img width=8 height=8 src="images/counter.gif"> <img width=8 height=8 src="images/block.gif"> <img width=8 height=8 src="images/parry.gif"><br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {abook1_reg:{id:'abook1_reg',caption:'Бронзовая Квитанция',count:1}}}},	
+	abook1: {id:'abook1',category:'books',slot:'wbook',width:40,height:25,caption:'Бронзовая Книга Саныча',description:'Каждая страница этой книги позволяет мгновенно получить +1 <img width=8 height=8 src=images/hit.gif> <img width=7 height=8 src="images/krit.gif"> <img width=8 height=8 src="images/counter.gif"> <img width=8 height=8 src="images/block.gif"> <img width=8 height=8 src="images/parry.gif"><br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',
 		common: {weight:1,price:15,pages:50,expirationdate:360,timeout:'3 мин.',intermediatecast:'yes'},
 		modify: {intellect:1,hitpoints:10}
 	},
-	abook2: {id:'abook2',category:'books',slot:'wbook',width:40,height:25,caption:'Серебряная Книга Саныча',description:'Страница этой книги способна исцелить владельца от физических травм.<br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {abook2_reg:{id:'abook2_reg',caption:'Серебряная Квитанция',count:1}}}},
+	abook2: {id:'abook2',category:'books',slot:'wbook',width:40,height:25,caption:'Серебряная Книга Саныча',description:'Страница этой книги способна исцелить владельца от физических травм.<br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',
 		common: {weight:1,price:30,pages:75,expirationdate:360},
 		modify: {intellect:2,hitpoints:20}
 	},
-	abook3: {id:'abook3',category:'books',slot:'wbook',width:40,height:25,caption:'Золотая Книга Саныча',description:'Страницы этой книги меняют уровень жизни противника с вашим.<br/>От уровня противника зависит, сколько страниц вам придется потратить<br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {abook3_reg:{id:'abook3_reg',caption:'Золотая Квитанция',count:1}}}},
+	abook3: {id:'abook3',category:'books',slot:'wbook',width:40,height:25,caption:'Золотая Книга Саныча',description:'Страницы этой книги меняют уровень жизни противника с вашим.<br/>От уровня противника зависит, сколько страниц вам придется потратить<br/>Только одна книга может использоваться одновременно.',fixless:true,binding:'bop',
 		common: {weight:1,price:100,pages:100,expirationdate:360,timeout:'3 ч.  0 мин.',intermediatecast:'yes'},
 		modify: {criticalpower:1,parry:1,shieldblock:1,magicdefencereduce:1,counterstroke:1,magicpower:1,power:1,intellect:3,hitpoints:30,piercearmor:1,manaconsumption:1}
 	},
@@ -12511,12 +12513,14 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 	}}
 
 	},
-	pot_base_200_bot_pm1: {id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',fixless:true,clist:{_:{pot_base_150_fireproof:{id:'pot_base_150_fireproof',caption:'Эликсир Зарева',count:1},pot_base_150_airproof:{id:'pot_base_150_airproof',caption:'Эликсир Урагана',count:1},pot_base_150_waterproof:{id:'pot_base_150_waterproof',caption:'Эликсир Океанов',count:1},pot_base_150_earthproof:{id:'pot_base_150_earthproof',caption:'Эликсир Недр',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:5}}},
+	pot_base_200_bot_pm1: {id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',fixless:true,
+    clist:{_:{pot_base_150_fireproof:{id:'pot_base_150_fireproof',caption:'Эликсир Зарева',count:1},pot_base_150_airproof:{id:'pot_base_150_airproof',caption:'Эликсир Урагана',count:1},pot_base_150_waterproof:{id:'pot_base_150_waterproof',caption:'Эликсир Океанов',count:1},pot_base_150_earthproof:{id:'pot_base_150_earthproof',caption:'Эликсир Недр',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:5}}},
 		common: {weight:1,durability:1,expirationdate:30,duration:180},
 		required: {endurance:40},
 		modify: {strength:20}
 	},
-	pot_base_200_bot_pm2: {id:'pot_base_200_bot_pm2',caption:'Тайная Настойка Рульфа',fixless:true,clist:{_:{pot_base_200_bot_pm1:{id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',count:10}}},
+	pot_base_200_bot_pm2: {id:'pot_base_200_bot_pm2',caption:'Тайная Настойка Рульфа',fixless:true,
+    clist:{_:{pot_base_200_bot_pm1:{id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',count:10}}},
 		common: {weight:1,durability:1,expirationdate:30,duration:180},
 		required: {endurance:45},
 		modify: {strength:25}

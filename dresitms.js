@@ -4738,19 +4738,6 @@ upgrade: {
 		required: {level:10},
 		modify: {stats:7,mana:200,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:2,defence:25,magicdefence:25,magicpower:10}
 	},
-	/*cloack_poker: {id:'cloack_poker',category:'capes',slot:'wcape',width:60,height:80,caption:'Накидка Опытной Банши',description:'С вероятностью 10% при размене противник будет парализован страхом и пропустит 1 ход',
-		common: {weight:1,durability:100,emprice:125},
-		required: {level:8},
-		modify: {stats:5,hitpoints:100,criticalhit:30,anticriticalhit:30,jumpaway:30,antijumpaway:30,defence:25,magicdefence:25,power:5},
-		setlink: {name:'bansha'}
-	},
-	cloack_poker_mage: {id:'cloack_poker_mage',category:'capes',slot:'wcape',width:60,height:80,caption:'Магическая накидка Опытной Банши',description:'С вероятностью 10% при размене противник будет парализован страхом и пропустит 1 ход',
-		common: {weight:1,durability:100,emprice:125},
-		required: {level:8},
-		modify: {stats:5,hitpoints:100,anticriticalhit:50,defence:25,magicdefence:25,magicpower:10,greymagicskill:1},
-		setlink: {name:'bansha_mage'}
-		
-	},*/
 	darktemple_priest: {id:'darktemple_priest',category:'capes',slot:'wcape',width:60,height:80,owner:'Абу Хашиш',caption:'Роба Блаженного Жреца',old:true,
 		common: {weight:1,price:500,durability:50},
 		modify: {stats:2,firemagicpower:2,hitpoints:24,mana:30,bodyarmor1:13,bodyarmor2:20}
@@ -6880,19 +6867,7 @@ upgrade: {
 		required: {sex:'male'},
 		modify: {stats:3,hitpoints:50}
 	},
-	/*helm_warrior_emr: {id:'helm_warrior_emr',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Опытной Банши',description:'Встроено заклятие <img src="/i/magic/bexit.gif"> 1 шт. в сутки',
-		common: {weight:5,emprice:150,durability:100},
-		required: {level:8},
-		modify: {stats:7,hitpoints:100,criticalhit:100,anticriticalhit:100,jumpaway:100,antijumpaway:100,defence:50,magicdefence:50},
-		setlink: {name:'bansha'}
-	},
-	helm_mage_emr: {id:'helm_mage_emr',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Магический капюшон Опытной Банши',description:'Встроено заклятие <img src="/i/magic/bexit.gif"> 1 шт. в сутки',
-		common: {weight:5,emprice:150,durability:100},
-		required: {level:8},
-		modify: {stats:7,mana:200,anticriticalhit:100,anticriticalpower:10,magicdefencereduce:1,defence:75,magicdefence:75,magicpower:5,manaconsumption:5},
-		setlink: {name:'bansha_mage'}
-	},*/
-	
+
 	venok21: {id:'venok21',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Мародера',
 		common: {weight:2,price:3,durability:50},
 		modify: {jumpaway:25,knifeskill:1}

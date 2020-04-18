@@ -14226,7 +14226,7 @@ var dressStrengthenings = {
 	intuition200: {id: 'intuition200', caption: 'Предчувствие', domain: 'ru', required: {intuition:200}, step:49, modify: {criticalhit:210,criticalpower:30,absolutecriticalhit:5}},
 	intuition250: {id: 'intuition250', caption: 'Предчувствие', domain: 'ru', required: {intuition:250}, modify: {criticalhit:270,criticalpower:35,absolutecriticalhit:10}},
 	
-	endurance0: {id: 'endurance0', caption: 'Выносливость', domain: 'ru', required: {endurance:0}, modify: {hitpoints:30}},
+	endurance0: {id: 'endurance0', caption: 'Выносливость', domain: 'ru', modify: {hitpoints:30}},
 	endurance25: {id: 'endurance25', caption: 'Стальное тело', domain: 'ru', required: {endurance:25}, modify: {hitpoints:50}},
 	endurance50: {id: 'endurance50', caption: 'Стальное тело', domain: 'ru', required: {endurance:50}, modify: {hitpoints:100}},
 	endurance75: {id: 'endurance75', caption: 'Стальное тело', domain: 'ru', required: {endurance:75}, modify: {hitpoints:175}},

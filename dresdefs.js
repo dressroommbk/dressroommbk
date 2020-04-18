@@ -42,7 +42,7 @@ var localizer =
 	fitStats: 'Подогнать статы и умения под комплект',
 	itemComsumesGroup: 'Потребление',
 	itemRequiredGroup: 'Требования',
-	itemModifyGroup: 'Действует на',
+	itemModifyGroup: 'Действует на:',
 	itemPropertiesGroup: 'Свойства предмета',
 	itemAddInfoGroup: 'Дополнительная информация',
 	itemAttackGroup: 'Особенности (атаки)',

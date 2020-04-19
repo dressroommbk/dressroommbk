@@ -680,9 +680,9 @@ var battleTurnParams = [
 	'airmagicdefencereduce',
 	'watermagicdefencereduce',
 	'earthmagicdefencereduce',
-	'lightmagicdefencereduce',
+/*	'lightmagicdefencereduce',
 	'darkmagicdefencereduce',
-	'greymagicdefencereduce',
+	'greymagicdefencereduce',*/
 	'attackcount',
 	'blockcount',
 	'criticalpower',
@@ -772,9 +772,9 @@ var knownCleanModifiers = [
 	'airmagicdefencereduce',
 	'watermagicdefencereduce',
 	'earthmagicdefencereduce',
-	'lightmagicdefencereduce',
+/*	'lightmagicdefencereduce',
 	'darkmagicdefencereduce',
-	'greymagicdefencereduce',
+	'greymagicdefencereduce',*/
 	'-',
 	'attackcount',
 	'blockcount',
@@ -784,7 +784,7 @@ var knownCleanModifiers = [
 	'totalprice',
 	'totaleprice',
 	'totalweight',
-	'consumed_reward',
+	'consumed_reward'/*,
 	'-',
 	'spell_powerup10_self',
 	'spell_powerup10_other',
@@ -806,7 +806,7 @@ var knownCleanModifiers = [
 	'spell_protect2_self',
 	'spell_protect2_other',
 	'spell_protect4_self',
-	'spell_protect4_other'
+	'spell_protect4_other'*/
 	];
 
 var knownWeaponModifiers = [
@@ -893,7 +893,7 @@ var common_props = {
 	eprice: {lbl: 'Цена (екр.)', fmt: '<font color="brown">{0}&nbsp;екр.</font>', view: true},
 	price: {lbl: 'Цена', fmt: '{0}&nbsp;кр.', view: true},
 	weight: {lbl: 'Вес', view: true},
-	durability: {lbl: 'Долговечность', fmt: '0/{0}', view: true}
+	durability: {lbl: 'Долговечность', fmt: '0/{0}', view: false}
 	};
 
 var item_props = {
@@ -965,13 +965,13 @@ var item_props = {
 	crushpower: {lbl: 'Мф. мощности дробящего урона', fmt: '{0}%', view: true, inmfg: true, inprpg: true},
 	cutpower: {lbl: 'Мф. мощности режущего урона', fmt: '{0}%', view: true, inmfg: true, inprpg: true},
 	defence: {lbl: 'Защита от урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
-	edefence: {lbl: 'Защита от колющего, рубящего, дробящего и режущего урона', maxvalue: 1000, view: true, nocharm: true},
+//	edefence: {lbl: 'Защита от колющего, рубящего, дробящего и режущего урона', maxvalue: 1000, view: false, nocharm: true},
 	thrustdefence: {lbl: 'Защита от колющего урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
 	sabredefence: {lbl: 'Защита от рубящего урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
 	crushdefence: {lbl: 'Защита от дробящего урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
 	cutdefence: {lbl: 'Защита от режущего урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
 	magicdefence: {lbl: 'Защита от магии', maxvalue: 1600, view: true, inmfg: true},
-	emagicdefence: {lbl: 'Защита от магии Огня, Воздуха, Воды и Земли', maxvalue: 1600, view: true, nocharm: true},
+//	emagicdefence: {lbl: 'Защита от магии Огня, Воздуха, Воды и Земли', maxvalue: 1600, view: false, nocharm: true},
 	firemagicdefence: {lbl: 'Защита от магии Огня', maxvalue: 1600, view: true, inmfg: true},
 	airmagicdefence: {lbl: 'Защита от магии Воздуха', maxvalue: 1600, view: true, inmfg: true},
 	watermagicdefence: {lbl: 'Защита от магии Воды', maxvalue: 1600, view: true, inmfg: true},
@@ -991,9 +991,9 @@ var item_props = {
 	airmagicdefencereduce: {lbl: 'Подавление защиты от магии Воздуха', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
 	watermagicdefencereduce: {lbl: 'Подавление защиты от магии Воды', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
 	earthmagicdefencereduce: {lbl: 'Подавление защиты от магии Земли', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
-	lightmagicdefencereduce: {lbl: 'Подавление защиты от магии Света', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
+/*	lightmagicdefencereduce: {lbl: 'Подавление защиты от магии Света', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
 	darkmagicdefencereduce: {lbl: 'Подавление защиты от магии Тьмы', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
-	greymagicdefencereduce: {lbl: 'Подавление защиты от серой магии', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
+	greymagicdefencereduce: {lbl: 'Подавление защиты от серой магии', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},*/
 	attackcount: {lbl: 'Точек удара за ход', view: true, nocharm: true},
 	blockcount: {lbl: 'Зон блока за ход', view: true, nocharm: true},
 	knapsack: {lbl: 'Ёмкость рюкзака', view: true, nocharm: true},
@@ -1003,7 +1003,7 @@ var item_props = {
 	legarmor: {lbl: 'Броня ног', view: true, nocharm: true},
 	avgarmor: {lbl: 'Броня в среднем', view: true, nocharm: true},
 	probability: {lbl: 'Вероятность срабатывания', fmt: '{0}%', maxvalue: 99, view: true, nocharm: true, inprpg: true},
-	spell_powerup10_self: {lbl:'Сокрушение на себя', fmt:'{0} ед.', view: true, nocharm: true},
+	/*spell_powerup10_self: {lbl:'Сокрушение на себя', fmt:'{0} ед.', view: true, nocharm: true},
 	spell_powerup10_other: {lbl:'Сокрушение на других', fmt:'{0} ед.', view: true, nocharm: true},
 	spell_powerup1_self: {lbl:'Огненное Усиление на себя', fmt:'{0} ед.', view: true, nocharm: true},
 	spell_powerup1_other: {lbl:'Огненное Усиление на других', fmt:'{0} ед.', view: true, nocharm: true},
@@ -1024,7 +1024,7 @@ var item_props = {
 	spell_protect4_self: {lbl:'Защита от Земли на себя', fmt:'{0} ед.', view: true, nocharm: true},
 	spell_protect4_other: {lbl:'Защита от Земли на других', fmt:'{0} ед.', view: true, nocharm: true},
 	magic_damage: {lbl:'Магический урон', view: true, nocharm: true},
-	magic_cdamage: {lbl:'Магический критический урон', view: true, nocharm: true},
+	magic_cdamage: {lbl:'Магический критический урон', view: true, nocharm: true},*/
 	consumed_reward: {lbl:'Потрачено награды', view: true, nocharm: true},
 	_power_v: {lbl:'Общий мф. мощности урона', fmt: '{0}%', view: true, nocharm: true}
 	};

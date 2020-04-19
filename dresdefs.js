@@ -2050,10 +2050,10 @@ function getObjectDescHtml(state, obj)
 	}
 	if ('magic1' in obj)
 	{
-		addinfo += localizer.useMagic;
-		addinfo += ': ';
-		addinfo += obj.magic1;
-		addinfo += '<br />';
+		html += '<span class="magic_caption">' + localizer.useMagic;
+		html += ': ' + '</span>';
+		html += obj.magic1;
+		html += '<br />';
 	}
 	if ('magic' in obj)
 	{

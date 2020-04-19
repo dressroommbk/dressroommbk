@@ -391,3 +391,7 @@ table.tabZ tr td
 	FONT-SIZE: 9px; HEIGHT: 20px;
 	BACKGROUND-COLOR: #e2e0e0;
 }
+
+span.magic_caption {
+	color: rgb(128, 0, 0);
+}

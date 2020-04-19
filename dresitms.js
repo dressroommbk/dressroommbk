@@ -1101,40 +1101,40 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 		properties: {mindamage:4,maxdamage:10,criticalhit:10,antijumpaway:3},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	knife54: {id:'knife54',category:'knives',slot:'w3',width:60,height:60,caption:'Нож Пророчеств',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:8}}}},
+	knife54: {id:'knife54',category:'knives',slot:'w3',width:60,height:60,caption:'Нож Пророчеств',
 		common: {weight:5,price:40,durability:40},
 		required: {dexterity:17,intuition:17,level:4,knifeskill:3,endurance:9},
 		properties: {mindamage:3,maxdamage:9,antijumpaway:20,criticalhit:30,piercearmor:20,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'small',sabre:'rare',crush:'insignificant',cut:'sometimes'}
 	},
-	knife56: {id:'knife56',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Витой Рукояти',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	knife56: {id:'knife56',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Витой Рукояти',
 		common: {weight:6,price:43,durability:30},
 		required: {dexterity:17,intuition:17,level:4,knifeskill:3,endurance:9},
 		properties: {mindamage:3,maxdamage:9,criticalhit:10,piercearmor:50,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	knife58: {id:'knife58',category:'knives',slot:'w3',width:60,height:60,caption:'Столовый Разделочный Нож',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:14}}}},
+	knife58: {id:'knife58',category:'knives',slot:'w3',width:60,height:60,caption:'Столовый Разделочный Нож',
 		common: {weight:4,price:68,durability:40},
 		required: {dexterity:21,intuition:21,level:4,knifeskill:3,strength:11},
 		modify: {jumpaway:60},
 		properties: {mindamage:4,maxdamage:11,antijumpaway:40,criticalhit:20,piercearmor:5,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'sometimes',sabre:'small',crush:'insignificant',cut:'small'}
 	},
-	knife66: {id:'knife66',category:'knives',slot:'w3',width:60,height:60,caption:'Тяжелый Нож Рубки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:14}}}},
+	knife66: {id:'knife66',category:'knives',slot:'w3',width:60,height:60,caption:'Тяжелый Нож Рубки',
 		common: {weight:5,price:70,durability:50},
 		required: {dexterity:21,intuition:21,level:5,knifeskill:3,endurance:11},
 		modify: {jumpaway:20,dexterity:1,intuition:1},
 		properties: {mindamage:4,maxdamage:11,antijumpaway:20,criticalhit:20,piercearmor:20,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',cut:'sometimes'}
 	},
-	knife62: {id:'knife62',category:'knives',slot:'w3',width:60,height:60,caption:'Крис',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:14}}}},
+	knife62: {id:'knife62',category:'knives',slot:'w3',width:60,height:60,caption:'Крис',
 		common: {weight:6,price:71,durability:40},
 		required: {dexterity:18,intuition:18,level:5,knifeskill:3},
 		modify: {parry:5},
 		properties: {mindamage:4,maxdamage:11,piercearmor:35,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	dagger70: {id:'dagger70',category:'knives',slot:'w3',width:60,height:60,caption:'Боевой Кинжал',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:19}}}},
+	dagger70: {id:'dagger70',category:'knives',slot:'w3',width:60,height:60,caption:'Боевой Кинжал',
 		common: {weight:7,price:99,durability:50},
 		required: {dexterity:34,intuition:25,level:6,knifeskill:4,endurance:13},
 		properties: {mindamage:4,maxdamage:12,antijumpaway:45,cutpower:15,piercearmor:50,secondweapon:'yes',blockzones:'+'},
@@ -1147,13 +1147,13 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 	}}
 
 	},
-	knife57: {id:'knife57',category:'knives',slot:'w3',width:60,height:60,caption:'Стылый Кинжал',magic1:'Обморожение',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:20}}}},
+	knife57: {id:'knife57',category:'knives',slot:'w3',width:60,height:60,caption:'Стылый Кинжал',magic1:'Обморожение',
 		common: {weight:6,price:100,durability:40},
 		required: {dexterity:25,intuition:25,intellect:5,level:6,knifeskill:4,endurance:13},
 		properties: {mindamage:4,maxdamage:13,antijumpaway:20,piercearmor:30,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	knife68: {id:'knife68',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Обряда',magic1:'Ожог',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:20}}}},
+	knife68: {id:'knife68',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Обряда',magic1:'Ожог',
 		common: {weight:7,price:100,durability:40},
 		required: {dexterity:25,intuition:25,intellect:5,level:6,knifeskill:4,endurance:13},
 		modify: {jumpaway:20},
@@ -1513,14 +1513,14 @@ upgrade: {
 		properties: {mindamage:9,maxdamage:12,criticalhit:5},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe60: {id:'axe60',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Внезапности',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	axe60: {id:'axe60',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Внезапности',
 		common: {weight:10,price:60,durability:50},
 		required: {dexterity:13,level:4,axeskill:3,endurance:13,strength:13},
 		modify: {dexterity:2},
 		properties: {mindamage:8,maxdamage:14,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe84: {id:'axe84',category:'axes',slot:'w3',width:60,height:60,caption:'Легкий Боевой Топор',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	axe84: {id:'axe84',category:'axes',slot:'w3',width:60,height:60,caption:'Легкий Боевой Топор',
 		common: {weight:8,price:62,durability:30},
 		required: {dexterity:15,level:4,axeskill:3,endurance:15,strength:15},
 		modify: {dexterity:1},
@@ -1534,20 +1534,20 @@ upgrade: {
 		properties: {mindamage:13,maxdamage:16,criticalhit:10},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe63: {id:'axe63',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Лезвий',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:15}}}},
+	axe63: {id:'axe63',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Лезвий',
 		common: {weight:10,price:72,durability:50},
 		required: {dexterity:13,level:4,axeskill:3,endurance:13,strength:13},
 		modify: {parry:5,dexterity:-1},
 		properties: {mindamage:8,maxdamage:15,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe70: {id:'axe70',category:'axes',slot:'w3',width:60,height:60,caption:'Ледяной Топор',magic1:'Обморожение',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:16}}}},
+	axe70: {id:'axe70',category:'axes',slot:'w3',width:60,height:60,caption:'Ледяной Топор',magic1:'Обморожение',
 		common: {weight:13,price:80,durability:50},
 		required: {intuition:13,intellect:2,level:4,axeskill:3,endurance:13,strength:13},
 		properties: {mindamage:8,maxdamage:15,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe79: {id:'axe79',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Огня и Пепла',magic1:'Ожог',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:16}}}},
+	axe79: {id:'axe79',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Огня и Пепла',magic1:'Ожог',
 		common: {weight:12,price:80,durability:50},
 		required: {intuition:13,intellect:2,level:4,axeskill:3,endurance:13,strength:13},
 		properties: {mindamage:8,maxdamage:15,secondweapon:'yes',blockzones:'+'},
@@ -1565,14 +1565,14 @@ upgrade: {
 		properties: {mindamage:15,maxdamage:18,criticalhit:20,antijumpaway:20},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe52: {id:'axe52',category:'axes',slot:'w3',width:60,height:60,caption:'Тяжёлый Бронзовый Топор',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:17}}}},
+	axe52: {id:'axe52',category:'axes',slot:'w3',width:60,height:60,caption:'Тяжёлый Бронзовый Топор',
 		common: {weight:15,price:89,durability:50},
 		required: {dexterity:16,level:5,axeskill:3,endurance:16,strength:16},
 		modify: {dexterity:-1},
 		properties: {mindamage:10,maxdamage:18,antijumpaway:40,sabrepower:8,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe67: {id:'axe67',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Странника',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	axe67: {id:'axe67',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Странника',
 		common: {weight:13,price:90,durability:50},
 		required: {dexterity:16,level:5,axeskill:3,endurance:16,strength:16},
 		modify: {jumpaway:20},
@@ -1593,13 +1593,13 @@ upgrade: {
 		properties: {mindamage:10,maxdamage:15,criticalhit:10,antijumpaway:30,axeskill:2},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe71: {id:'axe71',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Ливня',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	axe71: {id:'axe71',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Ливня',
 		common: {weight:13,price:91,durability:50},
 		required: {intuition:16,level:5,axeskill:3,endurance:16,strength:16},
 		properties: {mindamage:10,maxdamage:18,antijumpaway:50,criticalhit:20,blockzones:'+'},
 		attacks: {sabre:'routinely',water:'small'}
 	},
-	axe57: {id:'axe57',category:'axes',slot:'w3',width:60,height:60,caption:'Рыцарский Топор',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	axe57: {id:'axe57',category:'axes',slot:'w3',width:60,height:60,caption:'Рыцарский Топор',
 		common: {weight:15,price:92,durability:50},
 		required: {intuition:16,level:5,axeskill:3,endurance:16,strength:16},
 		modify: {strength:2},
@@ -1619,21 +1619,21 @@ upgrade: {
 		properties: {mindamage:9,maxdamage:17,antijumpaway:30,axeskill:3},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe76: {id:'axe76',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Дровосека',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:22}}}},
+	axe76: {id:'axe76',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Дровосека',
 		common: {weight:17,price:111,durability:50},
 		required: {dexterity:16,level:6,axeskill:4,endurance:16,strength:16},
 		modify: {jumpaway:20,dexterity:2,strength:1},
 		properties: {mindamage:11,maxdamage:19,criticalhit:15,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe58: {id:'axe58',category:'axes',slot:'w3',width:60,height:60,caption:'Гвардейский Топор',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:23}}}},
+	axe58: {id:'axe58',category:'axes',slot:'w3',width:60,height:60,caption:'Гвардейский Топор',
 		common: {weight:19,price:115,durability:50},
 		required: {dexterity:19,level:6,axeskill:4,endurance:19,strength:19},
 		modify: {jumpaway:30,axeskill:1},
 		properties: {mindamage:11,maxdamage:21,antijumpaway:40,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe59: {id:'axe59',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Палача',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:23}}}},
+	axe59: {id:'axe59',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Палача',
 		common: {weight:16,price:119,durability:50},
 		required: {dexterity:19,level:6,axeskill:4,endurance:19,strength:19},
 		properties: {mindamage:12,maxdamage:21,criticalpower:10,criticalhit:30,secondweapon:'yes',blockzones:'+'},
@@ -1991,7 +1991,7 @@ upgrade: {
 		properties: {mindamage:12,maxdamage:18,criticalhit:10,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'none',crush:'often',cut:'none'}
 	},
-	hammer60: {id:'hammer60',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Разбойника',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:31}}}},
+	hammer60: {id:'hammer60',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Разбойника',
 		common: {weight:29,price:157,durability:50},
 		required: {level:5,clubskill:4,endurance:20,strength:25},
 		modify: {jumpaway:-20,dexterity:-1},
@@ -2006,42 +2006,42 @@ upgrade: {
 	}}
 
 	},
-	hammer50: {id:'hammer50',category:'clubs',slot:'w3',width:60,height:60,caption:'Клевец',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:15}}}},
+	hammer50: {id:'hammer50',category:'clubs',slot:'w3',width:60,height:60,caption:'Клевец',
 		common: {weight:18,price:71,durability:50},
 		required: {level:4,clubskill:3,endurance:16,strength:20},
 		modify: {dexterity:-1},
 		properties: {mindamage:10,maxdamage:18,antijumpaway:7,criticalhit:20,blockzones:'+'},
 		attacks: {thrust:'rare',crush:'often'}
 	},
-	hammer65: {id:'hammer65',category:'clubs',slot:'w3',width:60,height:60,caption:'Клевец Пробоин',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:15}}}},
+	hammer65: {id:'hammer65',category:'clubs',slot:'w3',width:60,height:60,caption:'Клевец Пробоин',
 		common: {weight:19,price:71,durability:50},
 		required: {level:4,clubskill:3,endurance:16,strength:20},
 		modify: {dexterity:-2},
 		properties: {mindamage:10,maxdamage:18,criticalhit:15,piercearmor:20,blockzones:'+'},
 		attacks: {thrust:'rare',crush:'often'}
 	},
-	mace55: {id:'mace55',category:'clubs',slot:'w3',width:60,height:60,caption:'Цеп Мародера',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:17}}}},
+	mace55: {id:'mace55',category:'clubs',slot:'w3',width:60,height:60,caption:'Цеп Мародера',
 		common: {weight:7,price:83,durability:50},
 		required: {level:4,clubskill:3,endurance:16,strength:20},
 		modify: {dexterity:-1},
 		properties: {mindamage:10,maxdamage:18,antijumpaway:50,criticalhit:20,blockzones:'&#8212;'},
 		attacks: {thrust:'small',crush:'routinely'}
 	},
-	hammer51: {id:'hammer51',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Удара',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:19}}}},
+	hammer51: {id:'hammer51',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Удара',
 		common: {weight:23,price:98,durability:50},
 		required: {level:5,clubskill:3,endurance:20,strength:25},
 		modify: {dexterity:-2,strength:1},
 		properties: {mindamage:13,maxdamage:22,criticalhit:30,blockzones:'+'},
 		attacks: {thrust:'rare',crush:'often'}
 	},
-	mace60: {id:'mace60',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Ярости',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:19}}}},
+	mace60: {id:'mace60',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Ярости',
 		common: {weight:21,price:99,durability:50},
 		required: {level:5,clubskill:3,endurance:20,strength:25},
 		modify: {anticriticalhit:-20,antijumpaway:20,jumpaway:-20},
 		properties: {mindamage:13,maxdamage:22,criticalhit:35,blockzones:'+'},
 		attacks: {thrust:'small',crush:'routinely'}
 	},
-	hammer52: {id:'hammer52',category:'clubs',slot:'w3',width:60,height:60,caption:'Зубастый Молот',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:20}}}},
+	hammer52: {id:'hammer52',category:'clubs',slot:'w3',width:60,height:60,caption:'Зубастый Молот',
 		common: {weight:24,price:101,durability:50},
 		required: {level:5,clubskill:3,endurance:20,strength:25},
 		modify: {jumpaway:-15,dexterity:-1,strength:1},
@@ -2056,14 +2056,14 @@ upgrade: {
 		setlink: {name:'siege'},
 		attacks: {thrust:'rare',crush:'often'}
 	},
-	mace54: {id:'mace54',category:'clubs',slot:'w3',width:60,height:60,caption:'Пехотная Булава',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:20}}}},
+	mace54: {id:'mace54',category:'clubs',slot:'w3',width:60,height:60,caption:'Пехотная Булава',
 		common: {weight:22,price:104,durability:50},
 		required: {level:5,clubskill:3,endurance:20,strength:25},
 		modify: {dexterity:-2},
 		properties: {mindamage:13,maxdamage:22,criticalpower:10,antijumpaway:15,blockzones:'+'},
 		attacks: {thrust:'small',crush:'routinely'}
 	},
-	hammer4: {id:'hammer4',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Оправдания',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:22}}}},
+	hammer4: {id:'hammer4',category:'clubs',slot:'w3',width:60,height:60,caption:'Молот Оправдания',
 		common: {weight:20,price:110,durability:50},
 		required: {dexterity:10,intuition:10,level:5,clubskill:3,endurance:20,strength:20},
 		modify: {dexterity:-2},
@@ -2075,13 +2075,13 @@ upgrade: {
 	}}
 
 	},
-	mace53: {id:'mace53',category:'clubs',slot:'w3',width:60,height:60,caption:'Тройной Цеп Простоты',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:24}}}},
+	mace53: {id:'mace53',category:'clubs',slot:'w3',width:60,height:60,caption:'Тройной Цеп Простоты',
 		common: {weight:9,price:120,durability:50},
 		required: {level:5,clubskill:3,endurance:20,strength:25},
 		properties: {mindamage:13,maxdamage:22,antijumpaway:70,criticalhit:15,blockzones:'&#8212;'},
 		attacks: {thrust:'small',crush:'routinely'}
 	},
-	molot1: {id:'molot1',category:'clubs',slot:'w3',width:60,height:60,caption:'Ледяной Молот',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:25}}}},
+	molot1: {id:'molot1',category:'clubs',slot:'w3',width:60,height:60,caption:'Ледяной Молот',
 		common: {weight:10,price:125,durability:50},
 		required: {dexterity:15,level:6,clubskill:3,endurance:20,strength:20},
 		modify: {dexterity:-2,strength:5},
@@ -2096,27 +2096,27 @@ upgrade: {
 	}}
 
 	},
-	mace56: {id:'mace56',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Тёмной Злобы',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:26}}}},
+	mace56: {id:'mace56',category:'clubs',slot:'w3',width:60,height:60,caption:'Булава Тёмной Злобы',
 		common: {weight:25,price:130,durability:50},
 		required: {level:6,clubskill:4,endurance:24,strength:30},
 		modify: {jumpaway:-20},
 		properties: {mindamage:15,maxdamage:25,antijumpaway:50,criticalhit:30,blockzones:'+'},
 		attacks: {thrust:'small',crush:'routinely'}
 	},
-	hammer59: {id:'hammer59',category:'clubs',slot:'w3',width:60,height:60,caption:'Лёгкий Молот',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:27}}}},
+	hammer59: {id:'hammer59',category:'clubs',slot:'w3',width:60,height:60,caption:'Лёгкий Молот',
 		common: {weight:27,price:135,durability:40},
 		required: {level:6,clubskill:4,endurance:24,strength:30},
 		modify: {strength:1},
 		properties: {mindamage:15,maxdamage:25,clubskill:2,blockzones:'+'},
 		attacks: {thrust:'insignificant',crush:'often',air:'insignificant'}
 	},
-	mace62: {id:'mace62',category:'clubs',slot:'w3',width:60,height:60,caption:'Цеп Мастера',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:29}}}},
+	mace62: {id:'mace62',category:'clubs',slot:'w3',width:60,height:60,caption:'Цеп Мастера',
 		common: {weight:9,price:148,durability:50},
 		required: {level:6,clubskill:4,endurance:24,strength:30},
 		properties: {mindamage:15,maxdamage:25,antijumpaway:70,criticalhit:40,blockzones:'&#8212;'},
 		attacks: {thrust:'small',crush:'routinely'}
 	},
-	mace59: {id:'mace59',category:'clubs',slot:'w3',width:60,height:60,caption:'Утренняя Звезда',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:29}}}},
+	mace59: {id:'mace59',category:'clubs',slot:'w3',width:60,height:60,caption:'Утренняя Звезда',
 		common: {weight:25,price:149,durability:50},
 		required: {level:6,clubskill:4,endurance:24,strength:30},
 		properties: {mindamage:15,maxdamage:25,antijumpaway:-10,criticalhit:25,thrustpower:15,blockzones:'+'},
@@ -2129,7 +2129,7 @@ upgrade: {
 		properties: {mindamage:17,maxdamage:28,criticalpower:5,criticalhit:20,blockzones:'+'},
 		attacks: {thrust:'sometimes',crush:'sometimes'}
 	},
-	hammer54: {id:'hammer54',category:'clubs',slot:'w3',width:60,height:60,caption:'Экзотический Молот',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:32}}}},
+	hammer54: {id:'hammer54',category:'clubs',slot:'w3',width:60,height:60,caption:'Экзотический Молот',
 		common: {weight:24,price:160,durability:50},
 		required: {level:6,clubskill:4,endurance:24,strength:30},
 		modify: {criticalpower:10,dexterity:-3,intuition:1,strength:3},
@@ -2534,7 +2534,7 @@ upgrade: {
 		properties: {mindamage:5,maxdamage:16,criticalhit:10,antijumpaway:30},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword61: {id:'sword61',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Чести',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	sword61: {id:'sword61',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Чести',
 		common: {weight:10,price:56,durability:50},
 		required: {dexterity:13,level:4,swordskill:3,endurance:13,strength:13},
 		properties: {mindamage:7,maxdamage:18,blockzones:'+'},
@@ -2547,21 +2547,21 @@ upgrade: {
 		properties: {mindamage:8,maxdamage:16,criticalpower:6,criticalhit:15,twohandled:'yes',blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword62: {id:'sword62',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Полета',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	sword62: {id:'sword62',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Полета',
 		common: {weight:12,price:60,durability:50},
 		required: {dexterity:10,level:4,swordskill:3,endurance:10,strength:10},
 		modify: {jumpaway:-20,counterstroke:5},
 		properties: {mindamage:5,maxdamage:18,antijumpaway:20,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword55: {id:'sword55',category:'swords',slot:'w3',width:60,height:60,caption:'Рыцарский Меч',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	sword55: {id:'sword55',category:'swords',slot:'w3',width:60,height:60,caption:'Рыцарский Меч',
 		common: {weight:13,price:62,durability:50},
 		required: {dexterity:13,level:4,swordskill:3,endurance:13,strength:13},
 		modify: {criticalhit:15,jumpaway:10,dexterity:-1,strength:1},
 		properties: {mindamage:8,maxdamage:15,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword54: {id:'sword54',category:'swords',slot:'w3',width:60,height:60,caption:'Короткий Меч',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	sword54: {id:'sword54',category:'swords',slot:'w3',width:60,height:60,caption:'Короткий Меч',
 		common: {weight:11,price:64,durability:50},
 		required: {dexterity:13,level:4,swordskill:3,endurance:13,strength:13},
 		modify: {jumpaway:20},
@@ -2594,47 +2594,47 @@ upgrade: {
 		properties: {mindamage:5,maxdamage:18,criticalhit:50},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword79: {id:'sword79',category:'swords',slot:'w3',width:60,height:60,caption:'Меч -Жнец-',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword79: {id:'sword79',category:'swords',slot:'w3',width:60,height:60,caption:'Меч -Жнец-',
 		common: {weight:16,price:90,durability:50},
 		required: {dexterity:16,level:5,swordskill:3,endurance:16,strength:16},
 		properties: {mindamage:8,maxdamage:21,antijumpaway:50,criticalhit:10,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword81: {id:'sword81',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Боли',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword81: {id:'sword81',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Боли',
 		common: {weight:13,price:90,durability:50},
 		required: {level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:-10,jumpaway:-30,dexterity:1,intuition:-1,hitpoints:20,strength:1},
 		properties: {mindamage:10,maxdamage:18,antijumpaway:40,criticalhit:25,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword73: {id:'sword73',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Мёртвых',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword73: {id:'sword73',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Мёртвых',
 		common: {weight:13,price:91,durability:50},
 		required: {intuition:16,level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:40,dexterity:-1,intuition:1},
 		properties: {mindamage:10,maxdamage:18,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword50: {id:'sword50',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Долга',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword50: {id:'sword50',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Долга',
 		common: {weight:7,price:92,durability:50},
 		required: {intuition:16,level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:20,jumpaway:30},
 		properties: {mindamage:10,maxdamage:18,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword56: {id:'sword56',category:'swords',slot:'w3',width:60,height:60,caption:'Сабля -Ласточка-',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword56: {id:'sword56',category:'swords',slot:'w3',width:60,height:60,caption:'Сабля -Ласточка-',
 		common: {weight:13,price:92,durability:50},
 		required: {dexterity:16,level:5,swordskill:3,endurance:16,strength:16},
 		properties: {mindamage:7,maxdamage:23,antijumpaway:25,criticalhit:25,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'sometimes',cut:'small'}
 	},
-	sword87: {id:'sword87',category:'swords',slot:'w3',width:60,height:60,caption:'Экзотический Меч',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword87: {id:'sword87',category:'swords',slot:'w3',width:60,height:60,caption:'Экзотический Меч',
 		common: {weight:13,price:92,durability:50},
 		required: {intuition:16,level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:10,jumpaway:10,strength:1},
 		properties: {mindamage:10,maxdamage:18,antijumpaway:10,criticalhit:10,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword57: {id:'sword57',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Посланца Смерти',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	sword57: {id:'sword57',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Посланца Смерти',
 		common: {weight:11,price:93,durability:50},
 		required: {dexterity:14,intuition:14,level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:20,jumpaway:20,dexterity:-1,intuition:-1,strength:1},
@@ -2654,14 +2654,14 @@ upgrade: {
 		properties: {mindamage:7,maxdamage:17,antijumpaway:10},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword96: {id:'sword96',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Послушания',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:22}}}},
+	sword96: {id:'sword96',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Послушания',
 		common: {weight:13,price:110,durability:50},
 		required: {intuition:19,level:6,swordskill:4,endurance:19,strength:19},
 		modify: {dexterity:4},
 		properties: {mindamage:11,maxdamage:21,criticalpower:-10,antijumpaway:25,criticalhit:30,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword70: {id:'sword70',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Страсти',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:22}}}},
+	sword70: {id:'sword70',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Страсти',
 		common: {weight:16,price:113,durability:50},
 		required: {dexterity:18,level:6,swordskill:4,endurance:18,strength:18},
 		modify: {anticriticalhit:1,dexterity:3,hitpoints:15},
@@ -2675,14 +2675,14 @@ upgrade: {
 		properties: {mindamage:11,maxdamage:30,antijumpaway:40,sabrepower:5,swordskill:1,blockzones:'+'},
 		attacks: {sabre:'routinely',cut:'small'}
 	},
-	sword83: {id:'sword83',category:'swords',slot:'w3',width:60,height:60,caption:'Сквозной Меч',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:23}}}},
+	sword83: {id:'sword83',category:'swords',slot:'w3',width:60,height:60,caption:'Сквозной Меч',
 		common: {weight:10,price:116,durability:50},
 		required: {dexterity:16,level:6,swordskill:4,endurance:16,strength:16},
 		modify: {jumpaway:60},
 		properties: {mindamage:9,maxdamage:24,piercearmor:10,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword69: {id:'sword69',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Ледяной Руки',magic1:'Обморожение',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:24}}}},
+	sword69: {id:'sword69',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Ледяной Руки',magic1:'Обморожение',
 		common: {weight:15,price:120,durability:50},
 		required: {intuition:16,intellect:2,level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:-20,jumpaway:20},
@@ -2723,7 +2723,7 @@ upgrade: {
 		properties: {mindamage:12,maxdamage:25,criticalpower:10,criticalhit:70,swordskill:1,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword58: {id:'sword58',category:'swords',slot:'w3',width:60,height:60,caption:'Двуручный Меч Достижения',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:32}}}},
+	sword58: {id:'sword58',category:'swords',slot:'w3',width:60,height:60,caption:'Двуручный Меч Достижения',
 		common: {weight:22,price:160,durability:50},
 		required: {intuition:19,level:6,swordskill:5,endurance:22,strength:22},
 		modify: {dexterity:-2},
@@ -3208,14 +3208,14 @@ upgrade: {
 		properties: {mindamage:10,maxdamage:20,twohandled:'yes',blockzones:'+'},
 		magic: {name:'teleport',caption:'Телепортация между городами',description:'5 шт.'}
 	},
-	staff1: {id:'staff1',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Ученика',old:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:20}}}},
+	staff1: {id:'staff1',category:'staffs',slot:'w3',width:60,height:60,caption:'Посох Ученика',old:true,
 		common: {weight:4,price:100,durability:30},
 		required: {intellect:20,level:4,staffskill:1},
 		modify: {magicskill:1,hitpoints:30,mana:100},
 		properties: {mindamage:1,maxdamage:10,twohandled:'yes',blockzones:'+'},
 		attacks: {crush:'sometimes',earth:'sometimes'}
 	},
-	staff2: {id:'staff2',category:'staffs',slot:'w3',width:60,height:60,caption:'Зеленый Посох',old:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:30}}}},
+	staff2: {id:'staff2',category:'staffs',slot:'w3',width:60,height:60,caption:'Зеленый Посох',old:true,
 		common: {weight:4,price:150,durability:30},
 		required: {intellect:30,level:6,staffskill:2},
 		modify: {magicpower:5,magicskill:1,hitpoints:33,mana:100},
@@ -3534,12 +3534,12 @@ upgrade: {
 		required: {level:3,endurance:12,strength:12},
 		modify: {anticriticalhit:7,antijumpaway:7,criticalhit:7,jumpaway:7,intuition:1,hitpoints:9,legarmor1:3,legarmor2:11,legarmorf:2,legarmorm:1,legarmord:9}
 	},
-	boots7: {id:'boots7',category:'boots',slot:'w12',width:60,height:40,caption:'Железные Ботинки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:7}}}},
+	boots7: {id:'boots7',category:'boots',slot:'w12',width:60,height:40,caption:'Железные Ботинки',
 		common: {weight:6,price:36,durability:40},
 		required: {level:5,endurance:17,strength:17},
 		modify: {anticriticalhit:25,hitpoints:12,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15}
 	},
-	boots10: {id:'boots10',category:'boots',slot:'w12',width:60,height:40,caption:'Изящные Сапоги',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:8}}}},
+	boots10: {id:'boots10',category:'boots',slot:'w12',width:60,height:40,caption:'Изящные Сапоги',
 		common: {weight:4,price:37,durability:20},
 		required: {level:4,endurance:15,strength:15},
 		modify: {antijumpaway:20,jumpaway:25,hitpoints:15,legarmor1:2,legarmor2:10,legarmorf:1,legarmorm:1,legarmord:9}
@@ -3549,32 +3549,32 @@ upgrade: {
 		required: {strength:15,endurance:15,level:4},
 		modify: {hitpoints:9,anticriticalhit:5,jumpaway:15,antijumpaway:15,legarmor:9}
 	},
-	boots210: {id:'boots210',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:8}}}},
+	boots210: {id:'boots210',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Ученика',
 		common: {weight:4,price:40,durability:30},
 		required: {intellect:20,level:4},
 		modify: {anticriticalhit:20,hitpoints:15,mana:30,legarmor1:2,legarmor2:2}
 	},
-	boots11: {id:'boots11',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Жизни',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:9}}}},
+	boots11: {id:'boots11',category:'boots',slot:'w12',width:60,height:40,caption:'Сапоги Жизни',
 		common: {weight:7,price:49,durability:50},
 		required: {level:5,endurance:17,strength:17},
 		modify: {hitpoints:45,strength:1,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15}
 	},
-	boots17: {id:'boots17',category:'boots',slot:'w12',width:60,height:40,caption:'Линейные Ботинки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:12}}}},
+	boots17: {id:'boots17',category:'boots',slot:'w12',width:60,height:40,caption:'Линейные Ботинки',
 		common: {weight:6,price:61,durability:40},
 		required: {level:6,endurance:20,strength:20},
 		modify: {antijumpaway:50,dexterity:2,legarmor1:7,legarmor2:24,legarmorf:6,legarmorm:1,legarmord:18}
 	},
-	boots15: {id:'boots15',category:'boots',slot:'w12',width:60,height:40,caption:'Экзотические Ботинки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:13}}}},
+	boots15: {id:'boots15',category:'boots',slot:'w12',width:60,height:40,caption:'Экзотические Ботинки',
 		common: {weight:6,price:69,durability:30},
 		required: {level:6,endurance:20,strength:20},
 		modify: {anticriticalhit:15,antijumpaway:15,criticalhit:5,jumpaway:15,strength:4,legarmor1:6,legarmor2:20,legarmorf:5,legarmorm:1,legarmord:15}
 	},
-	boots19: {id:'boots19',category:'boots',slot:'w12',width:60,height:40,caption:'Боевые Сапоги Шута',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:13}}}},
+	boots19: {id:'boots19',category:'boots',slot:'w12',width:60,height:40,caption:'Боевые Сапоги Шута',
 		common: {weight:5,price:69,durability:50},
 		required: {intellect:15,level:6,endurance:20,strength:20},
 		modify: {anticriticalhit:25,jumpaway:20,intellect:4,legarmor1:7,legarmor2:24,legarmorf:6,legarmorm:1,legarmord:18}
 	},
-	boots211: {id:'boots211',category:'boots',slot:'w12',width:60,height:40,caption:'Зеленые Сапоги',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	boots211: {id:'boots211',category:'boots',slot:'w12',width:60,height:40,caption:'Зеленые Сапоги',
 		common: {weight:4,price:70,durability:30},
 		required: {intellect:30,level:6,endurance:15,strength:10},
 		modify: {anticriticalhit:25,intellect:1,hitpoints:18,mana:50,legarmor1:4,legarmor2:12,legarmorf:3,legarmorm:1,legarmord:9}
@@ -4052,7 +4052,7 @@ upgrade: {
 		required: {dexterity:10,level:3,strength:15},
 		modify: {criticalhit:10,clubskill:2}
 	},
-	naruchi54: {id:'naruchi54',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Рыцаря',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	naruchi54: {id:'naruchi54',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Рыцаря',
 		common: {weight:3,price:29,durability:30},
 		required: {dexterity:15,level:4,strength:20},
 		modify: {anticriticalhit:5,hitpoints:18,strength:2}
@@ -4072,77 +4072,77 @@ upgrade: {
 		required: {strength:15,dexterity:15,level:4},
 		modify: {clubskill:2}
 	},
-	gloves1: {id:'gloves1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	gloves1: {id:'gloves1',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Ученика',
 		common: {weight:1,price:30,durability:30},
 		required: {intellect:20,level:4},
 		modify: {staffskill:1,hitpoints:6,mana:30}
 	},
-	naruchi61: {id:'naruchi61',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Изящные Перчатки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	naruchi61: {id:'naruchi61',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Изящные Перчатки',
 		common: {weight:3,price:30,durability:30},
 		required: {dexterity:25,level:4,strength:15},
 		modify: {antijumpaway:15,jumpaway:30,dexterity:1}
 	},
-	naruchi70: {id:'naruchi70',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Шипованые Перчатки Ран',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	naruchi70: {id:'naruchi70',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Шипованые Перчатки Ран',
 		common: {weight:1,price:30,durability:30},
 		required: {dexterity:20,level:4,strength:20},
 		modify: {strength:1,maxdamage:6,mindamage:3}
 	},
-	naruchi65: {id:'naruchi65',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Рубиновые Перчатки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:7}}}},
+	naruchi65: {id:'naruchi65',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Рубиновые Перчатки',
 		common: {weight:2,price:31,durability:20},
 		required: {dexterity:10,level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:5,hitpoints:45}
 	},
-	naruchi58: {id:'naruchi58',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Чешуйчатые Перчатки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:7}}}},
+	naruchi58: {id:'naruchi58',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Чешуйчатые Перчатки',
 		common: {weight:3,price:31,durability:30},
 		required: {dexterity:25,level:4,strength:10},
 		modify: {anticriticalhit:5,antijumpaway:5,counterstroke:5,swordskill:1}
 	},
-	naruchi51: {id:'naruchi51',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Крестоносца',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:7}}}},
+	naruchi51: {id:'naruchi51',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Крестоносца',
 		common: {weight:3,price:38,durability:50},
 		required: {dexterity:20,level:5,strength:15},
 		modify: {weaponskill:1,hitpoints:30}
 	},
-	naruchi57: {id:'naruchi57',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Небес',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	naruchi57: {id:'naruchi57',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Небес',
 		common: {weight:3,price:42,durability:30},
 		required: {dexterity:20,level:5,strength:20},
 		modify: {magicdefence:20,airmagicdefence:30}
 	},
-	naruchi66: {id:'naruchi66',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Стылого Касания',magic1:'Обморожение',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	naruchi66: {id:'naruchi66',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Стылого Касания',magic1:'Обморожение',
 		common: {weight:3,price:50,durability:50},
 		required: {dexterity:15,level:6,strength:15},
 		modify: {watermagicdefence:10}
 	},
-	naruchi71: {id:'naruchi71',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Сияющие Перчатки',magic1:'Разряд',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	naruchi71: {id:'naruchi71',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Сияющие Перчатки',magic1:'Разряд',
 		common: {weight:3,price:50,durability:50},
 		required: {dexterity:15,level:6,strength:15},
 		modify: {airmagicdefence:10}
 	},
-	naruchi72: {id:'naruchi72',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Огненной Души',magic1:'Ожог',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	naruchi72: {id:'naruchi72',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Огненной Души',magic1:'Ожог',
 		common: {weight:3,price:50,durability:50},
 		required: {dexterity:15,level:6,strength:15},
 		modify: {firemagicdefence:10}
 	},
-	naruchi64: {id:'naruchi64',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Шипованные Перчатки Дровосека',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:11}}}},
+	naruchi64: {id:'naruchi64',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Шипованные Перчатки Дровосека',
 		common: {weight:3,price:55,durability:30},
 		required: {dexterity:25,level:5,strength:15},
 		modify: {sabrepower:6,axeskill:3}
 	},
-	naruchi63: {id:'naruchi63',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Старого Кузнеца',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:11}}}},
+	naruchi63: {id:'naruchi63',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Старого Кузнеца',
 		common: {weight:3,price:55,durability:30},
 		required: {dexterity:15,level:5,strength:25},
 		modify: {crushpower:3,clubskill:3}
 	},
-	naruchi68: {id:'naruchi68',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Опытного Мечника',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:11}}}},
+	naruchi68: {id:'naruchi68',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Опытного Мечника',
 		common: {weight:3,price:55,durability:30},
 		required: {dexterity:20,level:5,strength:20},
 		modify: {sabrepower:4,cutpower:2,swordskill:3}
 	},
-	gloves2: {id:'gloves2',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Зеленые Перчатки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:11}}}},
+	gloves2: {id:'gloves2',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Зеленые Перчатки',
 		common: {weight:1,price:55,durability:30},
 		required: {intellect:25,level:5,endurance:10},
 		modify: {intellect:1,staffskill:1,defence:10,hitpoints:12,mana:30}
 	},
-	naruchi74: {id:'naruchi74',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Убийцы',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	naruchi74: {id:'naruchi74',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Убийцы',
 		common: {weight:4,price:74,durability:50},
 		required: {dexterity:30,intuition:30,level:6,endurance:10,strength:10},
 		modify: {knifeskill:4}
@@ -4165,7 +4165,7 @@ upgrade: {
 		required: {strength:12,dexterity:16,level:4},
 		modify: {hitpoints:60,weaponskill:2}
 	},
-	naruchi53: {id:'naruchi53',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паладина',alignment:'light',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:20}}}},
+	naruchi53: {id:'naruchi53',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Паладина',alignment:'light',
 		common: {weight:3,price:100,durability:50},
 		required: {dexterity:20,level:6,strength:15},
 		modify: {anticriticalhit:5,antijumpaway:5,criticalhit:5,jumpaway:5,weaponskill:2,hitpoints:72,strength:1}
@@ -4530,7 +4530,7 @@ upgrade: {
 		required: {level:1,endurance:5,strength:5},
 		modify: {dexterity:1,hitpoints:6,bodyarmor1:1,bodyarmor2:3,bodyarmorm:1,bodyarmord:3}
 	},
-	roba14: {id:'roba14',category:'shirts',slot:'wshirt',width:60,height:80,caption:'Защитная Рубаха',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:3}}}},
+	roba14: {id:'roba14',category:'shirts',slot:'wshirt',width:60,height:80,caption:'Защитная Рубаха',
 		common: {weight:2,price:15,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {firemagicdefence:10,watermagicdefence:10,airmagicdefence:10,earthmagicdefence:10,hitpoints:3}
@@ -4774,7 +4774,7 @@ upgrade: {
 		required: {strength:10,endurance:10,level:4},
 		modify: {strength:4,dexterity:1,intuition:1,intellect:2,knifeskill:1,clubskill:1,axeskill:1,swordskill:1,bodyarmor1:1,bodyarmor2:3,bodyarmorm:1,bodyarmord:3}
 	},
-	roba17: {id:'roba17',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Рубашка Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:20}}}},
+	roba17: {id:'roba17',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Рубашка Ученика',
 		common: {weight:5,price:100,durability:50},
 		required: {intellect:20,level:4},
 		modify: {anticriticalhit:10,magicskill:1,hitpoints:30,mana:80,bodyarmor1:6,bodyarmor2:10,bodyarmorf:5,bodyarmorm:1,bodyarmord:5}
@@ -4783,7 +4783,7 @@ upgrade: {
 		common: {price:100,durability:100},
 		required: {level:1}
 	},
-	roba18: {id:'roba18',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Зеленая Роба',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:34}}}},
+	roba18: {id:'roba18',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Зеленая Роба',
 		common: {weight:5,price:170,durability:50},
 		required: {intellect:30,level:6,endurance:15,strength:10},
 		modify: {anticriticalhit:15,magicpower:5,magicskill:1,hitpoints:48,mana:90,bodyarmor1:4,bodyarmor2:10,bodyarmorf:3,bodyarmorm:1,bodyarmord:7},
@@ -5014,7 +5014,7 @@ upgrade: {
 		modify: {anticriticalhit:35,antijumpaway:10,shieldblock:3,dexterity:1,hitpoints:24,bodyarmor1:6,bodyarmor2:20,bodyarmorf:5,bodyarmorm:1,bodyarmord:15},
 		defences: {crush:'good',thrust:'weak'}
 	},
-	armor61: {id:'armor61',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Стальной Жилет',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:18}}}},
+	armor61: {id:'armor61',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Стальной Жилет',
 		common: {weight:10,price:90,durability:50},
 		required: {dexterity:5,intuition:5,level:4,endurance:17,strength:17},
 		modify: {anticriticalhit:15,jumpaway:-10,clubskill:1,hitpoints:24,bodyarmor1:7,bodyarmor2:24,bodyarmorf:6,bodyarmorm:1,bodyarmord:18},
@@ -5053,13 +5053,13 @@ upgrade: {
 		required: {dexterity:5,intuition:5,level:3,endurance:20,strength:15},
 		modify: {anticriticalhit:35,hitpoints:66,bodyarmor1:8,bodyarmor2:28,bodyarmorf:7,bodyarmorm:1,bodyarmord:21}
 	},
-	armor52: {id:'armor52',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Блестящий Нагрудник',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:20}}}},
+	armor52: {id:'armor52',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Блестящий Нагрудник',
 		common: {weight:14,price:97,durability:40},
 		required: {dexterity:15,level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:15,antijumpaway:5,jumpaway:15,dexterity:2,intuition:2,hitpoints:12,strength:4,bodyarmor1:6,bodyarmor2:20,bodyarmorf:5,bodyarmorm:1,bodyarmord:15},
 		defences: {crush:'good',thrust:'weak'}
 	},
-	armor64: {id:'armor64',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Иллюзорный Доспех',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:18}}}},
+	armor64: {id:'armor64',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Иллюзорный Доспех',
 		common: {weight:18,price:90,durability:50},
 		required: {dexterity:7,intuition:7,level:4,endurance:22,strength:22},
 		modify: {anticriticalhit:15,antijumpaway:15,weaponskill:2,hitpoints:33,bodyarmor1:7,bodyarmor2:24,bodyarmorf:6,bodyarmorm:1,bodyarmord:18},
@@ -5077,20 +5077,20 @@ upgrade: {
 		required: {strength:15,endurance:15,level:3},
 		modify: {hitpoints:21,anticriticalhit:25,jumpaway:10,knifeskill:1,clubskill:1,axeskill:1,swordskill:1,bodyarmor:6}
 	},
-	armor51: {id:'armor51',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Тяжелая Железная Броня',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:20}}}},
+	armor51: {id:'armor51',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Тяжелая Железная Броня',
 		common: {weight:23,price:101,durability:80},
 		required: {level:5,endurance:25,strength:25},
 		modify: {anticriticalhit:20,defence:25,hitpoints:27,strength:1,bodyarmor1:6,bodyarmor2:26,bodyarmorf:5,bodyarmorm:1,bodyarmord:21},
 		properties: {defence:5},
 		defences: {crush:'good',thrust:'mediocre',cut:'magnificent',sabre:'normal'}
 	},
-	armor83: {id:'armor83',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Обреченных',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:21}}}},
+	armor83: {id:'armor83',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Обреченных',
 		common: {weight:17,price:103,durability:50},
 		required: {dexterity:7,intuition:7,level:4,endurance:22,strength:22},
 		modify: {antijumpaway:25,criticalhit:30,jumpaway:45,intuition:2,hitpoints:33,bodyarmor1:7,bodyarmor2:24,bodyarmorf:6,bodyarmorm:1,bodyarmord:18},
 		defences: {thrust:'weak'}
 	},
-	armor60: {id:'armor60',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Защищенный Нагрудник',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:26}}}},
+	armor60: {id:'armor60',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Защищенный Нагрудник',
 		common: {weight:18,price:130,durability:50},
 		required: {dexterity:7,intuition:7,level:5,endurance:25,strength:25},
 		modify: {anticriticalhit:30,antijumpaway:20,clubskill:1,hitpoints:33,strength:1,bodyarmor1:8,bodyarmor2:31,bodyarmorf:7,bodyarmorm:1,bodyarmord:24},
@@ -5105,13 +5105,13 @@ upgrade: {
 	}}
 
 	},
-	armor82: {id:'armor82',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Экзотическая Броня',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:22}}}},
+	armor82: {id:'armor82',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Экзотическая Броня',
 		common: {weight:15,price:106,durability:50},
 		required: {dexterity:7,intuition:7,level:4,endurance:20,strength:20},
 		modify: {anticriticalhit:20,criticalhit:20,jumpaway:20,hitpoints:6,piercearmor:20,strength:4,bodyarmor1:7,bodyarmor2:24,bodyarmorf:6,bodyarmorm:1,bodyarmord:18},
 		defences: {thrust:'mediocre'}
 	},
-	armor98: {id:'armor98',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Мистическая Броня',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:22}}}},
+	armor98: {id:'armor98',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Мистическая Броня',
 		common: {weight:9,price:106,durability:50},
 		required: {dexterity:22,intuition:22,level:4,endurance:7,strength:7},
 		modify: {antijumpaway:30,thrustpower:5,knifeskill:2,hitpoints:18,strength:3,bodyarmor1:3,bodyarmor2:8,bodyarmorf:2,bodyarmorm:1,bodyarmord:6},
@@ -5155,13 +5155,13 @@ upgrade: {
 	}}
 
 	},
-	armor53: {id:'armor53',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Аккуратности',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:25}}}},
+	armor53: {id:'armor53',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Аккуратности',
 		common: {weight:16,price:128,durability:40},
 		required: {dexterity:25,level:5,endurance:10,strength:15},
 		modify: {anticriticalhit:15,antijumpaway:25,parry:5,jumpaway:50,dexterity:2,hitpoints:18,strength:2,bodyarmor1:6,bodyarmor2:20,bodyarmorf:5,bodyarmorm:1,bodyarmord:15},
 		defences: {crush:'mediocre',thrust:'mediocre',cut:'good'}
 	},
-	armor56: {id:'armor56',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Тяжелая Броня Ястребов',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:25}}}},
+	armor56: {id:'armor56',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Тяжелая Броня Ястребов',
 		common: {weight:24,price:128,durability:70},
 		required: {intuition:20,level:5,endurance:25,strength:25},
 		modify: {criticalpower:5,anticriticalhit:30,criticalhit:40,hitpoints:33,strength:4,bodyarmor1:8,bodyarmor2:28,bodyarmorf:7,bodyarmorm:1,bodyarmord:21},
@@ -5174,14 +5174,14 @@ upgrade: {
 	}}
 
 	},
-	armor55: {id:'armor55',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Тяжелая Полная Броня',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:25}}}},
+	armor55: {id:'armor55',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Тяжелая Полная Броня',
 		common: {weight:25,price:128,durability:80},
 		required: {level:5,endurance:25,strength:25},
 		modify: {anticriticalhit:40,hitpoints:33,bodyarmor1:7,bodyarmor2:30,bodyarmorf:6,bodyarmorm:1,bodyarmord:24},
 		properties: {defence:15},
 		defences: {crush:'good',thrust:'mediocre',cut:'magnificent',sabre:'normal'}
 	},
-	armor102: {id:'armor102',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Шипованый Доспех Возврата',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:26}}}},
+	armor102: {id:'armor102',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Шипованый Доспех Возврата',
 		common: {weight:20,price:132,durability:80},
 		required: {dexterity:20,intuition:20,level:5,endurance:15,strength:15},
 		modify: {anticriticalhit:20,antijumpaway:20,thrustpower:25,hitpoints:24,bodyarmor1:8,bodyarmor2:28,bodyarmorf:7,bodyarmorm:1,bodyarmord:21},
@@ -5194,7 +5194,7 @@ upgrade: {
 	}}
 
 	},
-	armor79: {id:'armor79',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Панцирь Противостояния',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:34}}}},
+	armor79: {id:'armor79',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Панцирь Противостояния',
 		common: {weight:28,price:170,durability:60},
 		required: {dexterity:15,intuition:15,level:6,endurance:25,strength:25},
 		modify: {anticriticalhit:40,antijumpaway:40,strength:2,bodyarmor1:9,bodyarmor2:32,bodyarmorf:8,bodyarmorm:1,bodyarmord:24},
@@ -5214,7 +5214,7 @@ upgrade: {
 		required: {strength:25,endurance:25,level:5},
 		modify: {hitpoints:33,criticalhit:25,anticriticalhit:25,antijumpaway:20,strength:4,intellect:1,knifeskill:1,clubskill:1,axeskill:1,swordskill:1,bodyarmor:18}
 	},
-	armor57: {id:'armor57',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Черненого Серебра',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:34}}}},
+	armor57: {id:'armor57',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Черненого Серебра',
 		common: {weight:23,price:170,durability:60},
 		required: {dexterity:20,intuition:15,level:6,endurance:20,strength:20},
 		modify: {criticalpower:5,anticriticalhit:30,antijumpaway:30,criticalhit:20,parry:5,defence:25,hitpoints:33,strength:1,bodyarmor1:8,bodyarmor2:28,bodyarmorf:7,bodyarmorm:1,bodyarmord:21}
@@ -5224,7 +5224,7 @@ upgrade: {
 		required: {strength:21,endurance:21,intellect:2,level:5},
 		modify: {hitpoints:45,criticalhit:45,anticriticalhit:35,jumpaway:35,antijumpaway:45,strength:-3,knifeskill:2,clubskill:2,axeskill:2,swordskill:2,bodyarmor:18}
 	},
-	armor74: {id:'armor74',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Изящная Броня',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:33}}}},
+	armor74: {id:'armor74',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Изящная Броня',
 		common: {weight:3,price:166,durability:50},
 		required: {dexterity:17,intuition:17,level:6},
 		modify: {anticriticalhit:25,antijumpaway:30,jumpaway:50,intuition:4,firemagicdefence:45,crushdefence:25,hitpoints:33,bodyarmor1:9,bodyarmor2:32,bodyarmorf:8,bodyarmorm:1,bodyarmord:24},
@@ -5243,12 +5243,12 @@ upgrade: {
 	}}
 
 	},
-	armor65: {id:'armor65',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Синяя Броня Знающего',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:33}}}},
+	armor65: {id:'armor65',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Синяя Броня Знающего',
 		common: {weight:14,price:168,durability:50},
 		required: {dexterity:34,intuition:34,level:6,endurance:11,strength:11},
 		modify: {anticriticalhit:25,jumpaway:65,intuition:10,weaponskill:2,hitpoints:18,bodyarmor1:4,bodyarmor2:11,bodyarmorf:3,bodyarmorm:1,bodyarmord:8}
 	},
-	armor76: {id:'armor76',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Доспех Хранителей Луны',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:34}}}},
+	armor76: {id:'armor76',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Доспех Хранителей Луны',
 		common: {weight:33,price:170,durability:50},
 		required: {dexterity:11,intuition:11,level:6,endurance:30,strength:30},
 		modify: {anticriticalhit:40,antijumpaway:40,sabrepower:20,hitpoints:33,strength:3,bodyarmor1:9,bodyarmor2:32,bodyarmorf:8,bodyarmorm:1,bodyarmord:24},
@@ -5261,13 +5261,13 @@ upgrade: {
 	}}
 
 	},
-	armor90: {id:'armor90',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Доспех Чудовищ',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:34}}}},
+	armor90: {id:'armor90',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Доспех Чудовищ',
 		common: {weight:13,price:170,durability:50},
 		required: {dexterity:34,intuition:34,level:6,endurance:11,strength:11},
 		modify: {antijumpaway:30,parry:10,jumpaway:95,counterstroke:15,bodyarmor1:3,bodyarmor2:8,bodyarmorf:2,bodyarmorm:1,bodyarmord:6},
 		defences: {crush:'weak',thrust:'weak',cut:'normal',sabre:'mediocre'}
 	},
-	armor54: {id:'armor54',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Черная Кольчуга',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:34}}}},
+	armor54: {id:'armor54',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Черная Кольчуга',
 		common: {weight:21,price:171,durability:50},
 		required: {level:6,endurance:12,strength:20},
 		modify: {anticriticalhit:25,antijumpaway:25,parry:5,jumpaway:40,counterstroke:5,dexterity:1,hitpoints:33,strength:2,bodyarmor1:7,bodyarmor2:24,bodyarmorf:6,bodyarmorm:1,bodyarmord:18},
@@ -5290,7 +5290,7 @@ upgrade: {
 	}}
 
 	},
-	armor70: {id:'armor70',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Ордена',alignment:'light',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:38}}}},
+	armor70: {id:'armor70',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Ордена',alignment:'light',
 		common: {weight:33,price:194,durability:50},
 		required: {dexterity:11,intuition:11,level:6,endurance:30,strength:30},
 		modify: {anticriticalhit:30,antijumpaway:30,criticalhit:45,dexterity:2,intuition:2,magicdefence:30,hitpoints:45,bodyarmor1:9,bodyarmor2:32,bodyarmorf:8,bodyarmorm:1,bodyarmord:24},
@@ -6082,7 +6082,7 @@ upgrade: {
 		required: {level:3,endurance:12,strength:12},
 		modify: {dexterity:1,intuition:1,strength:2,headarmor1:4,headarmor2:12,headarmorf:3,headarmorm:1,headarmord:9}
 	},
-	helmet61: {id:'helmet61',category:'helmets',slot:'w9',width:60,height:60,caption:'Изящный Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	helmet61: {id:'helmet61',category:'helmets',slot:'w9',width:60,height:60,caption:'Изящный Шлем',
 		common: {weight:5,price:41,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {antijumpaway:15,jumpaway:30,hitpoints:21,headarmor1:2,headarmor2:10,headarmorf:1,headarmorm:1,headarmord:9}
@@ -6092,43 +6092,43 @@ upgrade: {
 		required: {strength:12,endurance:12,level:3},
 		modify: {hitpoints:15,anticriticalhit:5,jumpaway:10,strength:2,knifeskill:1,clubskill:1,axeskill:1,swordskill:1,headarmor:9}
 	},
-	helmet34: {id:'helmet34',category:'helmets',slot:'w9',width:60,height:60,caption:'Бронзовый Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	helmet34: {id:'helmet34',category:'helmets',slot:'w9',width:60,height:60,caption:'Бронзовый Шлем',
 		common: {weight:10,price:44,durability:40},
 		required: {level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:20,hitpoints:30,headarmor1:5,headarmor2:22,headarmorf:4,headarmorm:1,headarmord:18}
 	},
-	helmet52: {id:'helmet52',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Сияния',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	helmet52: {id:'helmet52',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Сияния',
 		common: {weight:10,price:45,durability:35},
 		required: {level:4,endurance:15,strength:15},
 		modify: {criticalhit:10,dexterity:2,airmagicdefence:20,headarmor1:5,headarmor2:16,headarmorf:4,headarmorm:1,headarmord:12},
 		defences: {thrust:'mediocre'}
 	},
-	helmet32: {id:'helmet32',category:'helmets',slot:'w9',width:60,height:60,caption:'Восточный Дворцовый Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	helmet32: {id:'helmet32',category:'helmets',slot:'w9',width:60,height:60,caption:'Восточный Дворцовый Шлем',
 		common: {weight:4,price:45,durability:30},
 		required: {level:4},
 		modify: {jumpaway:25,dexterity:2,intuition:2,headarmor1:3,headarmor2:8,headarmorf:2,headarmorm:1,headarmord:6}
 	},
-	helmet30: {id:'helmet30',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Чемпиона',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	helmet30: {id:'helmet30',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Чемпиона',
 		common: {weight:8,price:45,durability:40},
 		required: {level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:15,hitpoints:18,strength:2,headarmor1:4,headarmor2:15,headarmorf:3,headarmorm:1,headarmord:12}
 	},
-	whelmet4: {id:'whelmet4',category:'helmets',slot:'w9',width:60,height:60,caption:'Обруч Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	whelmet4: {id:'whelmet4',category:'helmets',slot:'w9',width:60,height:60,caption:'Обруч Ученика',
 		common: {weight:2,price:45,durability:30},
 		required: {intellect:20,level:4},
 		modify: {hitpoints:24,mana:45,headarmor1:3,headarmor2:3}
 	},
-	helmet48: {id:'helmet48',category:'helmets',slot:'w9',width:60,height:60,caption:'Пятирогий Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:10}}}},
+	helmet48: {id:'helmet48',category:'helmets',slot:'w9',width:60,height:60,caption:'Пятирогий Шлем',
 		common: {weight:5,price:46,durability:30},
 		required: {dexterity:10,intuition:10,level:4,endurance:10,strength:10},
 		modify: {dexterity:1,intuition:1,intellect:1,hitpoints:12,strength:1,headarmor1:4,headarmor2:15,headarmorf:3,headarmorm:1,headarmord:12}
 	},
-	helmet49: {id:'helmet49',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Отречения',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:10}}}},
+	helmet49: {id:'helmet49',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Отречения',
 		common: {weight:7,price:47,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:10,strength:4,headarmor1:5,headarmor2:16,headarmorf:4,headarmorm:1,headarmord:12}
 	},
-	helmet77: {id:'helmet77',category:'helmets',slot:'w9',width:60,height:60,caption:'Серый Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:10}}}},
+	helmet77: {id:'helmet77',category:'helmets',slot:'w9',width:60,height:60,caption:'Серый Шлем',
 		common: {weight:5,price:48,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {jumpaway:30,dexterity:2,intuition:2,headarmor1:3,headarmor2:10,headarmorf:2,headarmorm:1,headarmord:8},
@@ -6139,7 +6139,7 @@ upgrade: {
 		required: {strength:12,dexterity:14,endurance:12,level:3},
 		modify: {hitpoints:15,anticriticalhit:10,jumpaway:10,antijumpaway:10,strength:2,intuition:2,swordskill:1,headarmor1:1,headarmor2:9,headarmorm:1,headarmord:9}
 	},
-	helmet63: {id:'helmet63',category:'helmets',slot:'w9',width:60,height:60,caption:'Линейный Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:10}}}},
+	helmet63: {id:'helmet63',category:'helmets',slot:'w9',width:60,height:60,caption:'Линейный Шлем',
 		common: {weight:5,price:51,durability:40},
 		required: {level:5,endurance:18,strength:18},
 		modify: {antijumpaway:50,hitpoints:12,headarmor1:6,headarmor2:20,headarmorf:5,headarmorm:1,headarmord:15}
@@ -6166,22 +6166,22 @@ upgrade: {
 		properties: {sabredefence:150},
 		defences: {crush:'good',cut:'good',sabre:'magnificent'}
 	},
-	helmet35: {id:'helmet35',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Темного Крестоносца',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:10}}}},
+	helmet35: {id:'helmet35',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Темного Крестоносца',
 		common: {weight:12,price:53,durability:50},
 		required: {dexterity:20,level:5,endurance:20,strength:20},
 		modify: {criticalhit:35,jumpaway:35,hitpoints:12,headarmor1:1,headarmor2:15,headarmorm:1,headarmord:15}
 	},
-	helmet72: {id:'helmet72',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Тотем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:10}}}},
+	helmet72: {id:'helmet72',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Тотем',
 		common: {weight:4,price:53,durability:20},
 		required: {level:5,endurance:18,strength:18},
 		modify: {intuition:1,watermagicdefence:30,hitpoints:33,strength:1}
 	},
-	helmet67: {id:'helmet67',category:'helmets',slot:'w9',width:60,height:60,caption:'Шипастая Маска',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:10}}}},
+	helmet67: {id:'helmet67',category:'helmets',slot:'w9',width:60,height:60,caption:'Шипастая Маска',
 		common: {weight:7,price:53,durability:30},
 		required: {level:5,endurance:18,strength:18},
 		modify: {criticalhit:15,intuition:1,hitpoints:18,strength:2,headarmor1:4,headarmor2:18,headarmorf:3,headarmorm:1,headarmord:15}
 	},
-	helmet38: {id:'helmet38',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Имперский',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:11}}}},
+	helmet38: {id:'helmet38',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Имперский',
 		common: {weight:5,price:55,durability:30},
 		required: {intuition:20,level:5,endurance:20,strength:20},
 		modify: {criticalpower:20,antijumpaway:-25,criticalhit:20,jumpaway:-25,headarmor1:1,headarmor2:15,headarmorm:1,headarmord:15}
@@ -6209,7 +6209,7 @@ upgrade: {
 		required: {strength:14,endurance:14,level:3},
 		modify: {hitpoints:6,anticriticalhit:15,jumpaway:15,antijumpaway:15,axeskill:2,headarmor:9}
 	},
-	helmet45: {id:'helmet45',category:'helmets',slot:'w9',width:60,height:60,caption:'Конусный Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:13}}}},
+	helmet45: {id:'helmet45',category:'helmets',slot:'w9',width:60,height:60,caption:'Конусный Шлем',
 		common: {weight:10,price:68,durability:40},
 		required: {level:6,endurance:21,strength:21},
 		modify: {anticriticalhit:35,antijumpaway:25,weaponskill:1,headarmor1:6,headarmor2:20,headarmorf:5,headarmorm:1,headarmord:15}
@@ -6226,43 +6226,43 @@ upgrade: {
 	}}
 
 	},
-	whelmet5: {id:'whelmet5',category:'helmets',slot:'w9',width:60,height:60,caption:'Зеленый Обруч',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	whelmet5: {id:'whelmet5',category:'helmets',slot:'w9',width:60,height:60,caption:'Зеленый Обруч',
 		common: {weight:2,price:70,durability:30},
 		required: {intellect:30,level:6,endurance:15,strength:10},
 		modify: {magicpower:3,hitpoints:30,mana:50,headarmor1:4,headarmor2:4}
 	},
-	helmet50: {id:'helmet50',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Черного Преторианца',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	helmet50: {id:'helmet50',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Черного Преторианца',
 		common: {weight:10,price:71,durability:50},
 		required: {level:6,endurance:21,strength:21},
 		modify: {criticalpower:8,sabrepower:10,headarmor1:7,headarmor2:24,headarmorf:6,headarmorm:1,headarmord:18}
 	},
-	helmet39: {id:'helmet39',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скелета',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	helmet39: {id:'helmet39',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Скелета',
 		common: {weight:8,price:71,durability:40},
 		required: {level:6,endurance:21,strength:21},
 		modify: {dexterity:4,strength:4,headarmor1:6,headarmor2:20,headarmorf:5,headarmorm:1,headarmord:15}
 	},
-	helmet75: {id:'helmet75',category:'helmets',slot:'w9',width:60,height:60,caption:'Экзотический Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	helmet75: {id:'helmet75',category:'helmets',slot:'w9',width:60,height:60,caption:'Экзотический Шлем',
 		common: {weight:5,price:71,durability:30},
 		required: {level:6,endurance:21,strength:21},
 		modify: {anticriticalhit:15,antijumpaway:20,jumpaway:20,strength:4,headarmor1:6,headarmor2:20,headarmorf:5,headarmorm:1,headarmord:15}
 	},
-	helmet70: {id:'helmet70',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Темного Витязя',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:14}}}},
+	helmet70: {id:'helmet70',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Темного Витязя',
 		common: {weight:7,price:72,durability:50},
 		required: {dexterity:20,level:6,endurance:20,strength:20},
 		modify: {anticriticalhit:25,antijumpaway:25,parry:5,headarmor1:4,headarmor2:18,headarmorf:3,headarmorm:1,headarmord:15}
 	},
-	helmet51: {id:'helmet51',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Ветерана',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:15}}}},
+	helmet51: {id:'helmet51',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Ветерана',
 		common: {weight:13,price:75,durability:40},
 		required: {level:6,endurance:25,strength:25},
 		modify: {anticriticalhit:10,parry:5,swordskill:2,hitpoints:6,headarmor1:7,headarmor2:27,headarmorf:6,headarmorm:1,headarmord:21}
 	},
-	helmet43: {id:'helmet43',category:'helmets',slot:'w9',width:60,height:60,caption:'Турнирный Армет',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:15}}}},
+	helmet43: {id:'helmet43',category:'helmets',slot:'w9',width:60,height:60,caption:'Турнирный Армет',
 		common: {weight:8,price:76,durability:40},
 		required: {level:5,endurance:18,strength:18},
 		modify: {anticriticalhit:20,jumpaway:-10,hitpoints:27,strength:2,headarmor1:7,headarmor2:24,headarmorf:6,headarmorm:1,headarmord:18},
 		properties: {sabredefence:5,crushdefence:5}
 	},
-	helmet66: {id:'helmet66',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Узника Лабиринта',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:15}}}},
+	helmet66: {id:'helmet66',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Узника Лабиринта',
 		common: {weight:4,price:78,durability:30},
 		required: {level:6,endurance:21,strength:21},
 		modify: {antijumpaway:25,crushpower:10,hitpoints:33,headarmor1:5,headarmor2:22,headarmorf:4,headarmorm:1,headarmord:18},
@@ -6300,7 +6300,7 @@ upgrade: {
 		required: {level:7,endurance:24,strength:24},
 		modify: {intuition:5,hitpoints:72,headarmor1:6,headarmor2:20,headarmorf:5,headarmorm:1,headarmord:15}
 	},
-	helmet47: {id:'helmet47',category:'helmets',slot:'w9',width:60,height:60,caption:'Монолитный Шлем',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:17}}}},
+	helmet47: {id:'helmet47',category:'helmets',slot:'w9',width:60,height:60,caption:'Монолитный Шлем',
 		common: {weight:18,price:89,durability:60},
 		required: {intuition:24,level:6,endurance:21,strength:21},
 		modify: {magicdefence:40,headarmor1:21,headarmor2:60,headarmorf:20,headarmorm:1,headarmord:40}
@@ -6915,17 +6915,17 @@ upgrade: {
 		required: {level:3,endurance:12,strength:12},
 		modify: {hitpoints:33}
 	},
-	braslet6: {id:'braslet6',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Гнева',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	braslet6: {id:'braslet6',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Гнева',
 		common: {weight:1,price:30,durability:20},
 		required: {intuition:15,level:4,endurance:10,strength:10},
 		modify: {antijumpaway:10,criticalhit:15,strength:2}
 	},
-	braslet9: {id:'braslet9',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Ухода',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	braslet9: {id:'braslet9',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Ухода',
 		common: {weight:5,price:30,durability:30},
 		required: {dexterity:15,level:4,endurance:10,strength:10},
 		modify: {anticriticalhit:10,jumpaway:25,dexterity:2}
 	},
-	braslet26: {id:'braslet26',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	braslet26: {id:'braslet26',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Ученика',
 		common: {weight:1,price:30,durability:30},
 		required: {intellect:20,level:4},
 		modify: {hitpoints:12,mana:35}
@@ -6940,32 +6940,32 @@ upgrade: {
 		required: {dexterity:5,intuition:5,level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:5,antijumpaway:5,criticalhit:5,jumpaway:5,defence:10,hitpoints:6,dexterity:1,intuition:1,strength:1}
 	},
-	naruchi81: {id:'naruchi81',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Пружин',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	naruchi81: {id:'naruchi81',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Пружин',
 		common: {weight:2,price:40,durability:30},
 		required: {intuition:21,level:5,endurance:20,strength:20},
 		modify: {anticriticalhit:10,antijumpaway:10,criticalhit:20,strength:2}
 	},
-	braslet28: {id:'braslet28',category:'bracelets',slot:'w13',width:60,height:40,caption:'Зеленые Наручи',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:9}}}},
+	braslet28: {id:'braslet28',category:'bracelets',slot:'w13',width:60,height:40,caption:'Зеленые Наручи',
 		common: {weight:1,price:45,durability:30},
 		required: {intellect:25,level:5,endurance:10},
 		modify: {intellect:1,hitpoints:21,mana:40}
 	},
-	braslet11: {id:'braslet11',category:'bracelets',slot:'w13',width:60,height:40,caption:'Стальные Наручи',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:12}}}},
+	braslet11: {id:'braslet11',category:'bracelets',slot:'w13',width:60,height:40,caption:'Стальные Наручи',
 		common: {weight:1,price:61,durability:40},
 		required: {intuition:15,level:6,endurance:15,strength:15},
 		modify: {anticriticalhit:15,criticalhit:10,defence:25,strength:2}
 	},
-	braslet10: {id:'braslet10',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Талантов',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	braslet10: {id:'braslet10',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Талантов',
 		common: {weight:2,price:61,durability:30},
 		required: {dexterity:10,intuition:10,level:4,endurance:10,strength:10},
 		modify: {dexterity:2,intuition:2,hitpoints:18,strength:3}
 	},
-	braslet23: {id:'braslet23',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Силы',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:12}}}},
+	braslet23: {id:'braslet23',category:'bracelets',slot:'w13',width:60,height:40,caption:'Наручи Силы',
 		common: {weight:1,price:62,durability:60},
 		required: {level:6,endurance:15,strength:15},
 		modify: {crushpower:5,strength:6}
 	},
-	braslet8: {id:'braslet8',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Защиты',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:12}}}},
+	braslet8: {id:'braslet8',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Защиты',
 		common: {weight:1,price:60,durability:30},
 		required: {level:6,endurance:25,strength:30},
 		modify: {defence:35,headarmor1:1,headarmor2:9,headarmorm:1,headarmord:9,bodyarmor1:1,bodyarmor2:9,bodyarmorm:1,bodyarmord:9,waistarmor1:1,waistarmor2:9,waistarmorm:1,waistarmord:9,legarmor1:1,legarmor2:9,legarmorm:1,legarmord:9}
@@ -7384,72 +7384,72 @@ upgrade: {
 		required: {level:4,endurance:12,strength:12},
 		modify: {lightmagicskill:1,waistarmor1:4,waistarmor2:12,waistarmorf:3,waistarmorm:1,waistarmord:9}
 	},
-	belt5: {id:'belt5',category:'belts',slot:'w5',width:60,height:40,caption:'Девичий Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:4}}}},
+	belt5: {id:'belt5',category:'belts',slot:'w5',width:60,height:40,caption:'Девичий Пояс',
 		common: {weight:2,price:20,durability:30},
 		required: {dexterity:10,intuition:10,level:4,endurance:10,strength:10},
 		modify: {dexterity:1,intuition:1,waistarmor1:3,waistarmor2:8,waistarmorf:2,waistarmorm:1,waistarmord:6}
 	},
-	belt40: {id:'belt40',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:4}}}},
+	belt40: {id:'belt40',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Ученика',
 		common: {weight:2,price:20,durability:20},
 		required: {intellect:20,level:4},
 		modify: {mana:30,waistarmor1:3,waistarmor2:3}
 	},
-	belt31: {id:'belt31',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Желтого Демона',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:5}}}},
+	belt31: {id:'belt31',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Желтого Демона',
 		common: {weight:2,price:21,durability:30},
 		required: {intuition:15,level:4,strength:15},
 		modify: {intuition:2,waistarmor1:1,waistarmor2:12,waistarmorm:1,waistarmord:12}
 	},
-	belt26: {id:'belt26',category:'belts',slot:'w5',width:60,height:40,caption:'Двойной Кожаный Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:6}}}},
+	belt26: {id:'belt26',category:'belts',slot:'w5',width:60,height:40,caption:'Двойной Кожаный Пояс',
 		common: {weight:1,price:30,durability:20},
 		required: {level:5,endurance:15,strength:20},
 		modify: {anticriticalhit:5,jumpaway:5,firemagicdefence:5,hitpoints:18,waistarmor1:3,waistarmor2:17,waistarmorf:2,waistarmorm:1,waistarmord:15}
 	},
-	belt3: {id:'belt3',category:'belts',slot:'w5',width:60,height:40,caption:'Изящный Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:6}}}},
+	belt3: {id:'belt3',category:'belts',slot:'w5',width:60,height:40,caption:'Изящный Пояс',
 		common: {weight:3,price:30,durability:30},
 		required: {dexterity:20,level:5,endurance:10,strength:20},
 		modify: {antijumpaway:5,jumpaway:10,dexterity:1,intuition:1,waistarmor1:3,waistarmor2:14,waistarmorf:2,waistarmorm:1,waistarmord:12}
 	},
-	belt25: {id:'belt25',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Обреченности',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:6}}}},
+	belt25: {id:'belt25',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Обреченности',
 		common: {weight:3,price:30,durability:30},
 		required: {dexterity:15,level:5,strength:15},
 		modify: {antijumpaway:15,jumpaway:25,waistarmor1:5,waistarmor2:16,waistarmorf:4,waistarmorm:1,waistarmord:12}
 	},
-	belt20: {id:'belt20',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Жестокости',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:6}}}},
+	belt20: {id:'belt20',category:'belts',slot:'w5',width:60,height:40,caption:'Пояс Жестокости',
 		common: {weight:5,price:31,durability:30},
 		required: {intuition:25,level:5,endurance:10,strength:10},
 		modify: {anticriticalhit:5,criticalhit:25,waistarmor1:6,waistarmor2:20,waistarmorf:5,waistarmorm:1,waistarmord:15}
 	},
-	belt23: {id:'belt23',category:'belts',slot:'w5',width:60,height:40,caption:'Восточный Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:6}}}},
+	belt23: {id:'belt23',category:'belts',slot:'w5',width:60,height:40,caption:'Восточный Пояс',
 		common: {weight:2,price:32,durability:20},
 		required: {level:5,endurance:20,strength:20},
 		modify: {hitpoints:45,waistarmor1:3,waistarmor2:8,waistarmorf:2,waistarmorm:1,waistarmord:6}
 	},
-	belt41: {id:'belt41',category:'belts',slot:'w5',width:60,height:40,caption:'Зеленый Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:6}}}},
+	belt41: {id:'belt41',category:'belts',slot:'w5',width:60,height:40,caption:'Зеленый Пояс',
 		common: {weight:2,price:32,durability:20},
 		required: {intellect:25,level:5,endurance:10},
 		modify: {mana:45,waistarmor1:4,waistarmor2:9,waistarmorf:3,waistarmorm:1,waistarmord:6}
 	},
-	belt13: {id:'belt13',category:'belts',slot:'w5',width:60,height:40,caption:'Тигровый Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:8}}}},
+	belt13: {id:'belt13',category:'belts',slot:'w5',width:60,height:40,caption:'Тигровый Пояс',
 		common: {weight:1,price:40,durability:30},
 		required: {level:6,endurance:15,strength:24},
 		modify: {strength:4,waistarmor1:4,waistarmor2:21,waistarmorf:3,waistarmorm:1,waistarmord:18}
 	},
-	belt8: {id:'belt8',category:'belts',slot:'w5',width:60,height:40,caption:'Черный Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:8}}}},
+	belt8: {id:'belt8',category:'belts',slot:'w5',width:60,height:40,caption:'Черный Пояс',
 		common: {weight:3,price:40,durability:30},
 		required: {dexterity:18,intuition:18,level:6,endurance:15,strength:15},
 		modify: {dexterity:1,intuition:1,hitpoints:12,strength:1,waistarmor1:5,waistarmor2:16,waistarmorf:4,waistarmorm:1,waistarmord:12}
 	},
-	belt24: {id:'belt24',category:'belts',slot:'w5',width:60,height:40,caption:'Экзотический Пояс',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:8}}}},
+	belt24: {id:'belt24',category:'belts',slot:'w5',width:60,height:40,caption:'Экзотический Пояс',
 		common: {weight:2,price:40,durability:30},
 		required: {dexterity:12,intuition:12,level:6,endurance:12,strength:12},
 		modify: {anticriticalhit:5,antijumpaway:6,criticalhit:5,jumpaway:6,strength:2,waistarmor1:6,waistarmor2:20,waistarmorf:5,waistarmorm:1,waistarmord:15}
 	},
-	belt14: {id:'belt14',category:'belts',slot:'w5',width:60,height:40,caption:'Кожаный Пояс Агрессии',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:8}}}},
+	belt14: {id:'belt14',category:'belts',slot:'w5',width:60,height:40,caption:'Кожаный Пояс Агрессии',
 		common: {weight:2,price:41,durability:30},
 		required: {intuition:24,level:6,strength:24},
 		modify: {criticalpower:10,waistarmor1:4,waistarmor2:18,waistarmorf:3,waistarmorm:1,waistarmord:15}
 	},
-	belt29: {id:'belt29',category:'belts',slot:'w5',width:60,height:40,caption:'Ювелирный Поясок',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:8}}}},
+	belt29: {id:'belt29',category:'belts',slot:'w5',width:60,height:40,caption:'Ювелирный Поясок',
 		common: {weight:3,price:41,durability:30},
 		required: {dexterity:25,intuition:25,level:6,endurance:10,strength:10},
 		modify: {thrustpower:10,waistarmor1:5,waistarmor2:16,waistarmorf:4,waistarmorm:1,waistarmord:12}
@@ -7896,23 +7896,23 @@ upgrade: {
 	}}
 
 	},
-	leg18: {id:'leg18',category:'pants',slot:'w19',caption:'Воинские Штаны',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:8}}}},
+	leg18: {id:'leg18',category:'pants',slot:'w19',caption:'Воинские Штаны',
 		common: {weight:2,price:40,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:5,antijumpaway:5,criticalhit:5,jumpaway:5,hitpoints:27,waistarmor1:1,waistarmor2:12,waistarmorm:1,waistarmord:12,legarmor1:1,legarmor2:12,legarmorm:1,legarmord:12}
 	},
-	leg32: {id:'leg32',category:'pants',slot:'w19',caption:'Поножи',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:10}}}},
+	leg32: {id:'leg32',category:'pants',slot:'w19',caption:'Поножи',
 		common: {weight:7,price:50,durability:50},
 		required: {level:5,endurance:18,strength:18},
 		modify: {hitpoints:27,strength:1,waistarmor1:7,waistarmor2:18,waistarmorf:6,waistarmorm:1,waistarmord:12,legarmor1:7,legarmor2:18,legarmorf:6,legarmorm:1,legarmord:12}
 	},
-	leg19: {id:'leg19',category:'pants',slot:'w19',caption:'Черные Штаны',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:13}}}},
+	leg19: {id:'leg19',category:'pants',slot:'w19',caption:'Черные Штаны',
 		common: {weight:4,price:65,durability:30},
 		required: {intuition:10,level:6,endurance:25,strength:10},
 		modify: {anticriticalhit:10,antijumpaway:10,hitpoints:36,waistarmor1:3,waistarmor2:20,waistarmorf:2,waistarmorm:1,waistarmord:18,legarmor1:3,legarmor2:20,legarmorf:2,legarmorm:1,legarmord:18},
 		properties: {defence:10}
 	},
-	leg21: {id:'leg21',category:'pants',slot:'w19',caption:'Белые Штаны',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:13}}}},
+	leg21: {id:'leg21',category:'pants',slot:'w19',caption:'Белые Штаны',
 		common: {weight:4,price:65,durability:30},
 		required: {intuition:10,level:6,endurance:25,strength:10},
 		modify: {criticalhit:25,jumpaway:25,hitpoints:18,waistarmor1:3,waistarmor2:20,waistarmorf:2,waistarmorm:1,waistarmord:18,legarmor1:3,legarmor2:20,legarmorf:2,legarmorm:1,legarmord:18},
@@ -8319,25 +8319,25 @@ upgrade: {
 		modify: {hitpoints:9,headarmor1:4,headarmor2:18,headarmorf:3,headarmorm:1,headarmord:15,bodyarmor1:5,bodyarmor2:19,bodyarmorf:4,bodyarmorm:1,bodyarmord:15,waistarmor1:4,waistarmor2:18,waistarmorf:3,waistarmorm:1,waistarmord:15,legarmor1:4,legarmor2:18,legarmorf:3,legarmorm:1,legarmord:15},
 		defences: {crush:'normal',thrust:'weak',cut:'magnificent',sabre:'mediocre'}
 	},
-	shield12: {id:'shield12',category:'shields',slot:'w10',width:60,height:60,caption:'Щит Ласки',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:11}}}},
+	shield12: {id:'shield12',category:'shields',slot:'w10',width:60,height:60,caption:'Щит Ласки',
 		common: {weight:8,price:55,durability:30},
 		required: {dexterity:12,level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:25,intuition:1,headarmor1:3,headarmor2:14,headarmorf:2,headarmorm:1,headarmord:12,bodyarmor1:4,bodyarmor2:15,bodyarmorf:3,bodyarmorm:1,bodyarmord:12,waistarmor1:3,waistarmor2:14,waistarmorf:2,waistarmorm:1,waistarmord:12,legarmor1:3,legarmor2:14,legarmorf:2,legarmorm:1,legarmord:12},
 		defences: {crush:'normal',thrust:'weak',cut:'magnificent',sabre:'mediocre'}
 	},
-	shield10: {id:'shield10',category:'shields',slot:'w10',width:60,height:60,caption:'Щит Дикости',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	shield10: {id:'shield10',category:'shields',slot:'w10',width:60,height:60,caption:'Щит Дикости',
 		common: {weight:10,price:60,durability:40},
 		required: {dexterity:12,level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:25,maxdamage:3,mindamage:2,headarmor1:3,headarmor2:14,headarmorf:2,headarmorm:1,headarmord:12,bodyarmor1:4,bodyarmor2:15,bodyarmorf:3,bodyarmorm:1,bodyarmord:12,waistarmor1:3,waistarmor2:14,waistarmorf:2,waistarmorm:1,waistarmord:12,legarmor1:3,legarmor2:14,legarmorf:2,legarmorm:1,legarmord:12},
 		defences: {crush:'normal',thrust:'weak',cut:'magnificent',sabre:'mediocre'}
 	},
-	shield19: {id:'shield19',category:'shields',slot:'w10',width:60,height:60,caption:'Щит Тоски',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	shield19: {id:'shield19',category:'shields',slot:'w10',width:60,height:60,caption:'Щит Тоски',
 		common: {weight:10,price:61,durability:30},
 		required: {dexterity:12,level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:20,intuition:1,hitpoints:15,headarmor1:3,headarmor2:14,headarmorf:2,headarmorm:1,headarmord:12,bodyarmor1:4,bodyarmor2:15,bodyarmorf:3,bodyarmorm:1,bodyarmord:12,waistarmor1:3,waistarmor2:14,waistarmorf:2,waistarmorm:1,waistarmord:12,legarmor1:3,legarmor2:14,legarmorf:2,legarmorm:1,legarmord:12},
 		defences: {crush:'normal',thrust:'weak',cut:'magnificent',sabre:'mediocre'}
 	},
-	shield7: {id:'shield7',category:'shields',slot:'w10',width:60,height:60,caption:'Изящный Щит',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:14}}}},
+	shield7: {id:'shield7',category:'shields',slot:'w10',width:60,height:60,caption:'Изящный Щит',
 		common: {weight:5,price:72,durability:30},
 		required: {dexterity:15,level:5,endurance:18,strength:18},
 		modify: {anticriticalhit:25,antijumpaway:20,hitpoints:15,headarmor1:4,headarmor2:15,headarmorf:3,headarmorm:1,headarmord:12,bodyarmor1:4,bodyarmor2:15,bodyarmorf:3,bodyarmorm:1,bodyarmord:12,waistarmor1:4,waistarmor2:15,waistarmorf:3,waistarmorm:1,waistarmord:12,legarmor1:4,legarmor2:15,legarmorf:3,legarmorm:1,legarmord:12},
@@ -8348,19 +8348,19 @@ upgrade: {
 		required: {strength:15,endurance:15,level:3},
 		modify: {hitpoints:15,anticriticalhit:50,headarmor1:1,headarmor2:6,headarmorm:1,headarmord:6,bodyarmor1:1,bodyarmor2:6,bodyarmorm:1,bodyarmord:6,waistarmor1:1,waistarmor2:6,waistarmorm:1,waistarmord:6,legarmor1:1,legarmor2:6,legarmorm:1,legarmord:6}
 	},
-	shield79: {id:'shield79',category:'shields',slot:'w10',width:60,height:60,caption:'Тяжелый Кожаный Щит',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:16}}}},
+	shield79: {id:'shield79',category:'shields',slot:'w10',width:60,height:60,caption:'Тяжелый Кожаный Щит',
 		common: {weight:15,price:82,durability:50},
 		required: {dexterity:15,level:5,endurance:18,strength:18},
 		modify: {anticriticalhit:10,antijumpaway:15,sabredefence:50,headarmor1:4,headarmor2:15,headarmorf:3,headarmorm:1,headarmord:12,bodyarmor1:4,bodyarmor2:15,bodyarmorf:3,bodyarmorm:1,bodyarmord:12,waistarmor1:4,waistarmor2:15,waistarmorf:3,waistarmorm:1,waistarmord:12,legarmor1:4,legarmor2:15,legarmorf:3,legarmorm:1,legarmord:12},
 		defences: {crush:'good',thrust:'weak',cut:'magnificent',sabre:'weak'}
 	},
-	shield13: {id:'shield13',category:'shields',slot:'w10',width:60,height:60,caption:'Крепкий Щит',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:17}}}},
+	shield13: {id:'shield13',category:'shields',slot:'w10',width:60,height:60,caption:'Крепкий Щит',
 		common: {weight:15,price:87,durability:50},
 		required: {dexterity:15,level:5,endurance:18,strength:18},
 		modify: {hitpoints:18,headarmor1:8,headarmor2:31,headarmorf:7,headarmorm:1,headarmord:24,bodyarmor1:9,bodyarmor2:32,bodyarmorf:8,bodyarmorm:1,bodyarmord:24,waistarmor1:8,waistarmor2:31,waistarmorf:7,waistarmorm:1,waistarmord:24,legarmor1:8,legarmor2:31,legarmorf:7,legarmorm:1,legarmord:24},
 		defences: {crush:'normal',thrust:'weak',cut:'magnificent',sabre:'mediocre'}
 	},
-	shield9: {id:'shield9',category:'shields',slot:'w10',width:60,height:60,caption:'Круглый Щит Спасения',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:19}}}},
+	shield9: {id:'shield9',category:'shields',slot:'w10',width:60,height:60,caption:'Круглый Щит Спасения',
 		common: {weight:10,price:96,durability:40},
 		required: {dexterity:18,level:6,endurance:21,strength:21},
 		modify: {anticriticalhit:45,maxdamage:3,mindamage:2,headarmor1:6,headarmor2:23,headarmorf:5,headarmorm:1,headarmord:18,bodyarmor1:7,bodyarmor2:24,bodyarmorf:6,bodyarmorm:1,bodyarmord:18,waistarmor1:6,waistarmor2:23,waistarmorf:5,waistarmorm:1,waistarmord:18,legarmor1:6,legarmor2:23,legarmorf:5,legarmorm:1,legarmord:18},
@@ -8781,17 +8781,17 @@ upgrade: {
 		required: {strength:20,endurance:15,level:4},
 		modify: {hitpoints:12,criticalhit:50}
 	},
-	clip57: {id:'clip57',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Листвы',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	clip57: {id:'clip57',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Листвы',
 		common: {weight:1,price:60,durability:40},
 		required: {dexterity:18,level:4,endurance:10,strength:10},
 		modify: {anticriticalhit:20,jumpaway:55,counterstroke:3,dexterity:2}
 	},
-	clip53: {id:'clip53',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Простоты',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	clip53: {id:'clip53',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Простоты',
 		common: {weight:1,price:60,durability:30},
 		required: {dexterity:12,level:4,endurance:12,strength:12},
 		modify: {anticriticalhit:30,antijumpaway:30,criticalhit:15,jumpaway:15,dexterity:1}
 	},
-	clip86: {id:'clip86',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	clip86: {id:'clip86',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Ученика',
 		common: {weight:1,price:60,durability:50},
 		required: {intellect:20,level:4},
 		modify: {anticriticalhit:10,hitpoints:36,mana:50}
@@ -8806,22 +8806,22 @@ upgrade: {
 		required: {strength:20,endurance:15,level:4},
 		modify: {hitpoints:99}
 	},
-	clip63: {id:'clip63',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Возрождения',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:14}}}},
+	clip63: {id:'clip63',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Возрождения',
 		common: {weight:1,price:74,durability:50},
 		required: {level:5,endurance:20,strength:20},
 		modify: {hitpoints:120}
 	},
-	clip55: {id:'clip55',category:'earrings',slot:'w1',width:60,height:20,caption:'Изящные Серьги',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:15}}}},
+	clip55: {id:'clip55',category:'earrings',slot:'w1',width:60,height:20,caption:'Изящные Серьги',
 		common: {weight:1,price:75,durability:50},
 		required: {level:5,endurance:17,strength:17},
 		modify: {anticriticalhit:15,jumpaway:30,hitpoints:33,strength:2,headarmor1:1,headarmor2:9,headarmorm:1,headarmord:9,bodyarmor1:1,bodyarmor2:9,bodyarmorm:1,bodyarmord:9,waistarmor1:1,waistarmor2:9,waistarmorm:1,waistarmord:9,legarmor1:1,legarmor2:9,legarmorm:1,legarmord:9}
 	},
-	clip54: {id:'clip54',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Основ',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:15}}}},
+	clip54: {id:'clip54',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Основ',
 		common: {weight:1,price:79,durability:30},
 		required: {dexterity:10,intuition:10,level:5,endurance:10,strength:10},
 		modify: {dexterity:2,intuition:2,intellect:2,hitpoints:33,strength:2}
 	},
-	clip62: {id:'clip62',category:'earrings',slot:'w1',width:60,height:20,caption:'Шипастые Серьги Пламени',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:17}}}},
+	clip62: {id:'clip62',category:'earrings',slot:'w1',width:60,height:20,caption:'Шипастые Серьги Пламени',
 		common: {weight:1,price:89,durability:50},
 		required: {intuition:25,level:6,endurance:20,strength:20},
 		modify: {criticalpower:10,criticalhit:50,hitpoints:33,strength:1}
@@ -8831,12 +8831,12 @@ upgrade: {
 		required: {strength:25,endurance:25,level:4},
 		modify: {hitpoints:66,headarmor:18,bodyarmor:18,waistarmor:18,legarmor:18}
 	},
-	clip60: {id:'clip60',category:'earrings',slot:'w1',width:60,height:20,caption:'Экзотические Серьги Затмения',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:19}}}},
+	clip60: {id:'clip60',category:'earrings',slot:'w1',width:60,height:20,caption:'Экзотические Серьги Затмения',
 		common: {weight:1,price:98,durability:50},
 		required: {level:6,endurance:16,strength:15},
 		modify: {anticriticalhit:30,antijumpaway:30,criticalhit:30,jumpaway:30,strength:4}
 	},
-	clip87: {id:'clip87',category:'earrings',slot:'w1',width:60,height:20,caption:'Зеленые Серьги',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:20}}}},
+	clip87: {id:'clip87',category:'earrings',slot:'w1',width:60,height:20,caption:'Зеленые Серьги',
 		common: {weight:1,price:100,durability:50},
 		required: {intellect:30,level:6,endurance:15,strength:10},
 		modify: {anticriticalhit:15,magicpower:2,magicskill:1,hitpoints:36,mana:60}
@@ -9308,22 +9308,22 @@ upgrade: {
 		required: {level:3,endurance:15,strength:15},
 		modify: {antijumpaway:30,headarmor1:1,headarmor2:12,headarmorm:1,headarmord:12,bodyarmor1:1,bodyarmor2:12,bodyarmorm:1,bodyarmord:12,waistarmor1:1,waistarmor2:12,waistarmorm:1,waistarmord:12,legarmor1:1,legarmor2:12,legarmorm:1,legarmord:12}
 	},
-	amulet53: {id:'amulet53',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье -Капля Крови-',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	amulet53: {id:'amulet53',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье -Капля Крови-',
 		common: {weight:1,price:58,durability:30},
 		required: {intuition:15,level:4,endurance:15,strength:15},
 		modify: {criticalhit:25,intuition:3,hitpoints:33}
 	},
-	amulet90: {id:'amulet90',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	amulet90: {id:'amulet90',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Ученика',
 		common: {weight:1,price:60,durability:50},
 		required: {intellect:20,level:4},
 		modify: {anticriticalhit:30,intellect:2,hitpoints:18,mana:25}
 	},
-	amulet63: {id:'amulet63',category:'necklaces',slot:'w2',width:60,height:20,caption:'Изящный Амулет',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	amulet63: {id:'amulet63',category:'necklaces',slot:'w2',width:60,height:20,caption:'Изящный Амулет',
 		common: {weight:1,price:61,durability:50},
 		required: {level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:30,defence:5,hitpoints:18}
 	},
-	amulet67: {id:'amulet67',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Здоровья',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:13}}}},
+	amulet67: {id:'amulet67',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Здоровья',
 		common: {weight:1,price:62,durability:50},
 		required: {level:4,endurance:20,strength:10},
 		modify: {hitpoints:99}
@@ -9343,17 +9343,17 @@ upgrade: {
 		required: {strength:20,endurance:15,level:4},
 		modify: {anticriticalhit:15,antijumpaway:15,strength:4,dexterity:2,intuition:2}
 	},
-	amulet56: {id:'amulet56',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет -Рубиновая Ветвь-',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:17}}}},
+	amulet56: {id:'amulet56',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет -Рубиновая Ветвь-',
 		common: {weight:1,price:89,durability:60},
 		required: {dexterity:20,level:5,endurance:10,strength:10},
 		modify: {anticriticalhit:25,antijumpaway:25,jumpaway:45,counterstroke:5,intuition:3}
 	},
-	amulet54: {id:'amulet54',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Фокуса',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:17}}}},
+	amulet54: {id:'amulet54',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Фокуса',
 		common: {weight:1,price:89,durability:50},
 		required: {dexterity:10,intuition:10,level:5,endurance:10,strength:10},
 		modify: {dexterity:4,intuition:4,strength:4}
 	},
-	amulet65: {id:'amulet65',category:'necklaces',slot:'w2',width:60,height:20,caption:'Кулон Грозового Облака',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	amulet65: {id:'amulet65',category:'necklaces',slot:'w2',width:60,height:20,caption:'Кулон Грозового Облака',
 		common: {weight:1,price:90,durability:50},
 		required: {level:5,endurance:20,strength:20},
 		modify: {anticriticalhit:25,jumpaway:25,dexterity:2,intuition:2,strength:5}
@@ -9368,7 +9368,7 @@ upgrade: {
 		required: {level:4,intellect:15},
 		modify: {anticriticalhit:27,hitpoints:30,mana:30,intellect:3,headarmor1:4,headarmor2:6,headarmorf:3,headarmorm:1,headarmord:3,bodyarmor1:4,bodyarmor2:6,bodyarmorf:3,bodyarmorm:1,bodyarmord:3,waistarmor1:4,waistarmor2:6,waistarmorf:3,waistarmorm:1,waistarmord:3,legarmor1:4,legarmor2:6,legarmorf:3,legarmorm:1,legarmord:3}
 	},
-	amulet60: {id:'amulet60',category:'necklaces',slot:'w2',width:60,height:20,caption:'Кулон Баланса',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:18}}}},
+	amulet60: {id:'amulet60',category:'necklaces',slot:'w2',width:60,height:20,caption:'Кулон Баланса',
 		common: {weight:1,price:93,durability:30},
 		required: {dexterity:15,intuition:15,level:5,endurance:15,strength:15},
 		modify: {anticriticalhit:25,antijumpaway:25,criticalhit:25,jumpaway:25,dexterity:1,intuition:1,hitpoints:6,strength:1,headarmor1:1,headarmor2:6,headarmorm:1,headarmord:6,bodyarmor1:1,bodyarmor2:6,bodyarmorm:1,bodyarmord:6,waistarmor1:1,waistarmor2:6,waistarmorm:1,waistarmord:6,legarmor1:1,legarmor2:6,legarmorm:1,legarmord:6}
@@ -9378,17 +9378,17 @@ upgrade: {
 		required: {strength:20,endurance:15,level:4},
 		modify: {swordskill:4}
 	},
-	amulet82: {id:'amulet82',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Старой Крепости',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:24}}}},
+	amulet82: {id:'amulet82',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Старой Крепости',
 		common: {weight:1,price:120,durability:60},
 		required: {dexterity:10,intuition:10,level:6,endurance:25,strength:25},
 		modify: {anticriticalhit:30,dexterity:1,intuition:1,intellect:1,defence:25,hitpoints:21,strength:1,headarmor1:1,headarmor2:15,headarmorm:1,headarmord:15,bodyarmor1:1,bodyarmor2:15,bodyarmorm:1,bodyarmord:15,waistarmor1:1,waistarmor2:15,waistarmorm:1,waistarmord:15,legarmor1:1,legarmor2:15,legarmorm:1,legarmord:15}
 	},
-	amulet55: {id:'amulet55',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Жадности',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:26}}}},
+	amulet55: {id:'amulet55',category:'necklaces',slot:'w2',width:60,height:20,caption:'Ожерелье Жадности',
 		common: {weight:1,price:130,durability:60},
 		required: {intuition:25,level:6,endurance:15,strength:15},
 		modify: {criticalpower:40,strength:1}
 	},
-	amulet91: {id:'amulet91',category:'necklaces',slot:'w2',width:60,height:20,caption:'Зеленый Амулет',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:26}}}},
+	amulet91: {id:'amulet91',category:'necklaces',slot:'w2',width:60,height:20,caption:'Зеленый Амулет',
 		common: {weight:1,price:130,durability:50},
 		required: {intellect:30,level:6,endurance:15,strength:10},
 		modify: {anticriticalhit:35,magicpower:5,intellect:2,magicskill:1,hitpoints:24,mana:50}
@@ -10003,7 +10003,7 @@ upgrade: {
 		required: {level:4,endurance:15},
 		modify: {dexterity:-1,intuition:-1,hitpoints:12,strength:5,headarmor1:3,headarmor2:3,headarmorm:3,headarmord:3,bodyarmor1:3,bodyarmor2:3,bodyarmorm:3,bodyarmord:3,waistarmor1:3,waistarmor2:3,waistarmorm:3,waistarmord:3,legarmor1:3,legarmor2:3,legarmorm:3,legarmord:3}
 	},
-	ring54: {id:'ring54',category:'rings',slot:'w6',width:20,height:20,caption:'Выпуклое Кольцо',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	ring54: {id:'ring54',category:'rings',slot:'w6',width:20,height:20,caption:'Выпуклое Кольцо',
 		common: {weight:1,price:30,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {sabredefence:25,hitpoints:21}
@@ -10015,27 +10015,27 @@ upgrade: {
 	}}
 
 	},
-	ring108: {id:'ring108',category:'rings',slot:'w6',width:20,height:20,caption:'Песочный Перстень',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	ring108: {id:'ring108',category:'rings',slot:'w6',width:20,height:20,caption:'Песочный Перстень',
 		common: {weight:1,price:30,durability:30},
 		required: {level:4,endurance:15,strength:15},
 		modify: {anticriticalhit:5,shieldblock:2,jumpaway:-5,hitpoints:33}
 	},
-	ring81: {id:'ring81',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Защиты',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	ring81: {id:'ring81',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Защиты',
 		common: {weight:1,price:30,durability:30},
 		required: {level:4,endurance:20,strength:20},
 		modify: {headarmor1:1,headarmor2:15,headarmorm:1,headarmord:15,bodyarmor1:1,bodyarmor2:15,bodyarmorm:1,bodyarmord:15,waistarmor1:1,waistarmor2:15,waistarmorm:1,waistarmord:15,legarmor1:1,legarmor2:15,legarmorm:1,legarmord:15}
 	},
-	ring123: {id:'ring123',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ученика',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:6}}}},
+	ring123: {id:'ring123',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ученика',
 		common: {weight:1,price:30,durability:50},
 		required: {intellect:20,level:4},
 		modify: {intellect:1,mana:35}
 	},
-	ring55: {id:'ring55',category:'rings',slot:'w6',width:20,height:20,caption:'Рыцарское Кольцо Подвижности',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:7}}}},
+	ring55: {id:'ring55',category:'rings',slot:'w6',width:20,height:20,caption:'Рыцарское Кольцо Подвижности',
 		common: {weight:1,price:31,durability:30},
 		required: {dexterity:10,intuition:10,level:4,endurance:10,strength:10},
 		modify: {anticriticalhit:10,antijumpaway:5,jumpaway:15,dexterity:1,intuition:1}
 	},
-	ring101: {id:'ring101',category:'rings',slot:'w6',width:20,height:20,caption:'Синее Кольцо Мастерства',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:7}}}},
+	ring101: {id:'ring101',category:'rings',slot:'w6',width:20,height:20,caption:'Синее Кольцо Мастерства',
 		common: {weight:1,price:31,durability:30},
 		required: {dexterity:17,level:4,endurance:10,strength:10},
 		modify: {anticriticalhit:10,parry:3,counterstroke:2}
@@ -10050,7 +10050,7 @@ upgrade: {
 		required: {strength:15,endurance:15,level:4},
 		modify: {criticalhit:5,anticriticalhit:5,jumpaway:5,antijumpaway:5,intellect:2,headarmor:3,bodyarmor:3,waistarmor:3,legarmor:3}
 	},
-	ring60: {id:'ring60',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Дождей',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:7}}}},
+	ring60: {id:'ring60',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Дождей',
 		common: {weight:1,price:33,durability:30},
 		required: {intuition:12,level:4,endurance:10,strength:10},
 		modify: {anticriticalhit:30,watermagicdefence:20}
@@ -10065,12 +10065,12 @@ upgrade: {
 		required: {intellect:20,level:4},
 		modify: {anticriticalhit:5,jumpaway:5,intellect:3,hitpoints:18,mana:20}
 	},
-	ring67: {id:'ring67',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Координации',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:7}}}},
+	ring67: {id:'ring67',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Координации',
 		common: {weight:1,price:38,durability:50},
 		required: {level:5,endurance:15,strength:15},
 		modify: {dexterity:5}
 	},
-	ring70: {id:'ring70',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Наития',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:7}}}},
+	ring70: {id:'ring70',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Наития',
 		common: {weight:1,price:38,durability:50},
 		required: {level:5,endurance:15,strength:15},
 		modify: {intuition:5}
@@ -10080,67 +10080,67 @@ upgrade: {
 		required: {level:5,endurance:20,strength:20},
 		modify: {intuition:1,firemagicdefence:66}
 	},
-	ring50: {id:'ring50',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Разума',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	ring50: {id:'ring50',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Разума',
 		common: {weight:1,price:40,durability:50},
 		required: {intuition:25,level:5,endurance:15},
 		modify: {intellect:5,hitpoints:3}
 	},
-	ring77: {id:'ring77',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Темного Металла',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	ring77: {id:'ring77',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Темного Металла',
 		common: {weight:1,price:40,durability:30},
 		required: {intuition:20,level:5,endurance:15,strength:15},
 		modify: {criticalpower:6,criticalhit:25,headarmor1:1,headarmor2:3,headarmorm:1,headarmord:3,bodyarmor1:1,bodyarmor2:3,bodyarmorm:1,bodyarmord:3,waistarmor1:1,waistarmor2:3,waistarmorm:1,waistarmord:3,legarmor1:1,legarmor2:3,legarmorm:1,legarmord:3}
 	},
-	ring78: {id:'ring78',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Стремлений',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	ring78: {id:'ring78',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Стремлений',
 		common: {weight:1,price:40,durability:30},
 		required: {level:5,endurance:15,strength:15},
 		modify: {anticriticalhit:15,parry:5}
 	},
-	ring124: {id:'ring124',category:'rings',slot:'w6',width:20,height:20,caption:'Зеленое Кольцо',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	ring124: {id:'ring124',category:'rings',slot:'w6',width:20,height:20,caption:'Зеленое Кольцо',
 		common: {weight:1,price:40,durability:50},
 		required: {intellect:25,level:5},
 		modify: {magicpower:1,intellect:1,mana:40}
 	},
-	ring62: {id:'ring62',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Отражения',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	ring62: {id:'ring62',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Отражения',
 		common: {weight:1,price:41,durability:30},
 		required: {level:5,endurance:20,strength:20},
 		modify: {anticriticalhit:5,shieldblock:7,hitpoints:12}
 	},
-	ring59: {id:'ring59',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Пяти Камней',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:8}}}},
+	ring59: {id:'ring59',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Пяти Камней',
 		common: {weight:1,price:41,durability:40},
 		required: {dexterity:10,intuition:10,level:5,endurance:10,strength:10},
 		modify: {dexterity:1,intuition:1,intellect:1,hitpoints:18,strength:1}
 	},
-	ring66: {id:'ring66',category:'rings',slot:'w6',width:20,height:20,caption:'Сияющее Кольцо',magic1:'Разряд',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	ring66: {id:'ring66',category:'rings',slot:'w6',width:20,height:20,caption:'Сияющее Кольцо',magic1:'Разряд',
 		common: {weight:1,price:45,durability:20},
 		required: {level:4,airmagicskill:1,endurance:10,strength:10},
 		modify: {jumpaway:25}
 	},
-	ring91: {id:'ring91',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Горящего Взгляда',magic1:'Ожог',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	ring91: {id:'ring91',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Горящего Взгляда',magic1:'Ожог',
 		common: {weight:1,price:45,durability:20},
 		required: {level:4,endurance:10,strength:15},
 		modify: {jumpaway:25}
 	},
-	ring73: {id:'ring73',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мороза',magic1:'Обморожение',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:9}}}},
+	ring73: {id:'ring73',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мороза',magic1:'Обморожение',
 		common: {weight:1,price:45,durability:20},
 		required: {level:4,watermagicskill:1,endurance:10,strength:10},
 		modify: {anticriticalhit:25}
 	},
-	ring52: {id:'ring52',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мыслей',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:9}}}},
+	ring52: {id:'ring52',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мыслей',
 		common: {weight:1,price:49,durability:50},
 		required: {intuition:10,level:6,endurance:15,strength:15},
 		modify: {anticriticalhit:-5,antijumpaway:-5,criticalhit:-5,jumpaway:-5,intuition:4,intellect:4}
 	},
-	ring68: {id:'ring68',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Чемпиона',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	ring68: {id:'ring68',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Чемпиона',
 		common: {weight:1,price:50,durability:30},
 		required: {dexterity:15,level:6,endurance:10,strength:15},
 		modify: {dexterity:2,hitpoints:9,strength:4}
 	},
-	ring65: {id:'ring65',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Могущества',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	ring65: {id:'ring65',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Могущества',
 		common: {weight:1,price:50,durability:30},
 		required: {level:6,endurance:20,strength:20},
 		modify: {hitpoints:9,strength:6}
 	},
-	ring71: {id:'ring71',category:'rings',slot:'w6',width:20,height:20,caption:'Золотое Кольцо Здоровья',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	ring71: {id:'ring71',category:'rings',slot:'w6',width:20,height:20,caption:'Золотое Кольцо Здоровья',
 		common: {weight:1,price:50,durability:30},
 		required: {level:6,endurance:20,strength:20},
 		modify: {defence:10,hitpoints:45,strength:2}
@@ -10150,7 +10150,7 @@ upgrade: {
 	}}
 
 	},
-	ring86: {id:'ring86',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ужаса',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	ring86: {id:'ring86',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Ужаса',
 		common: {weight:1,price:51,durability:30},
 		required: {level:6,endurance:25,strength:25},
 		modify: {anticriticalhit:20,antijumpaway:20,criticalhit:20,jumpaway:20,headarmor1:1,headarmor2:3,headarmorm:1,headarmord:3,bodyarmor1:1,bodyarmor2:3,bodyarmorm:1,bodyarmord:3,waistarmor1:1,waistarmor2:3,waistarmorm:1,waistarmord:3,legarmor1:1,legarmor2:3,legarmorm:1,legarmord:3}
@@ -10160,7 +10160,7 @@ upgrade: {
 		required: {level:7,endurance:35,strength:35},
 		modify: {anticriticalhit:10,defence:5,headarmor1:1,headarmor2:24,headarmorm:1,headarmord:24,bodyarmor1:1,bodyarmor2:24,bodyarmorm:1,bodyarmord:24,waistarmor1:1,waistarmor2:24,waistarmorm:1,waistarmord:24,legarmor1:1,legarmor2:24,legarmorm:1,legarmord:24}
 	},
-	ring87: {id:'ring87',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Иммунитета',requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:10}}}},
+	ring87: {id:'ring87',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Иммунитета',
 		common: {weight:1,price:52,durability:50},
 		required: {level:6,endurance:25,strength:25},
 		modify: {parry:2,shieldblock:1,magicdefence:2,defence:5}
@@ -10916,17 +10916,17 @@ upgrade: {
 	teleport_some: {id:'teleport_some',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Телепортировать цель',fixless:true,
 		common: {weight:1,price:10000,durability:20,probability:99}
 	},
-	sharpen_sword_1: {id:'sharpen_sword_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: мечи',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	sharpen_sword_1: {id:'sharpen_sword_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: мечи',fixless:true,
 		common: {weight:1,price:20,durability:1,probability:50},
 		required: {intellect:4,level:4,swordskill:1,greymagicskill:1},
 		modify: {maxdamage:1,mindamage:1} 
 	},
-	sharpen_sword_2: {id:'sharpen_sword_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: мечи',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:24}}}},
+	sharpen_sword_2: {id:'sharpen_sword_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: мечи',fixless:true,
 		common: {weight:1,price:40,durability:1,probability:60},
 		required: {intellect:6,level:4,swordskill:2,greymagicskill:2},
 		modify: {maxdamage:2,mindamage:2} 
 	},
-	sharpen_sword_3: {id:'sharpen_sword_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: мечи',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:48}}}},
+	sharpen_sword_3: {id:'sharpen_sword_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: мечи',fixless:true,
 		common: {weight:1,price:80,durability:1,probability:70},
 		required: {intellect:8,level:4,swordskill:3,greymagicskill:3},
 		modify: {maxdamage:3,mindamage:3} 
@@ -10941,17 +10941,17 @@ upgrade: {
 		required: {intellect:12,level:4,swordskill:5,greymagicskill:5},
 		modify: {maxdamage:5,mindamage:5} 
 	},
-	sharpen_knife_1: {id:'sharpen_knife_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: ножи и кастеты',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	sharpen_knife_1: {id:'sharpen_knife_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: ножи и кастеты',fixless:true,
 		common: {weight:1,price:20,durability:1,probability:50},
 		required: {intellect:4,level:4,greymagicskill:1,knifeskill:1},
 		modify: {maxdamage:1,mindamage:1} 
 	},
-	sharpen_knife_2: {id:'sharpen_knife_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: ножи и кастеты',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:24}}}},
+	sharpen_knife_2: {id:'sharpen_knife_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: ножи и кастеты',fixless:true,
 		common: {weight:1,price:40,durability:1,probability:60},
 		required: {intellect:6,level:4,greymagicskill:2,knifeskill:2},
 		modify: {maxdamage:2,mindamage:2} 
 	},
-	sharpen_knife_3: {id:'sharpen_knife_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: ножи и кастеты',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:48}}}},
+	sharpen_knife_3: {id:'sharpen_knife_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: ножи и кастеты',fixless:true,
 		common: {weight:1,price:80,durability:1,probability:70},
 		required: {intellect:8,level:4,greymagicskill:3,knifeskill:3},
 		modify: {maxdamage:3,mindamage:3} 
@@ -10966,17 +10966,17 @@ upgrade: {
 		required: {intellect:12,level:4,greymagicskill:5,knifeskill:5},
 		modify: {maxdamage:5,mindamage:5} 
 	},
-	sharpen_axe_1: {id:'sharpen_axe_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: топоры',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	sharpen_axe_1: {id:'sharpen_axe_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: топоры',fixless:true,
 		common: {weight:1,price:20,durability:1,probability:50},
 		required: {intellect:4,level:4,greymagicskill:1,axeskill:1},
 		modify: {maxdamage:1,mindamage:1} 
 	},
-	sharpen_axe_2: {id:'sharpen_axe_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: топоры',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:24}}}},
+	sharpen_axe_2: {id:'sharpen_axe_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: топоры',fixless:true,
 		common: {weight:1,price:40,durability:1,probability:60},
 		required: {intellect:6,level:4,greymagicskill:2,axeskill:2},
 		modify: {maxdamage:2,mindamage:2} 
 	},
-	sharpen_axe_3: {id:'sharpen_axe_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: топоры',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:48}}}},
+	sharpen_axe_3: {id:'sharpen_axe_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: топоры',fixless:true,
 		common: {weight:1,price:80,durability:1,probability:70},
 		required: {intellect:8,level:4,greymagicskill:3,axeskill:3},
 		modify: {maxdamage:3,mindamage:3} 
@@ -10991,17 +10991,17 @@ upgrade: {
 		required: {intellect:12,level:4,greymagicskill:5,axeskill:5},
 		modify: {maxdamage:5,mindamage:5} 
 	},
-	sharpen_molot_1: {id:'sharpen_molot_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: дубины, булавы, молоты',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl4_reward:{id:'mater_coin_lvl4_reward',caption:'Жетон',count:12}}}},
+	sharpen_molot_1: {id:'sharpen_molot_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 1: дубины, булавы, молоты',fixless:true,
 		common: {weight:1,price:20,durability:1,probability:50},
 		required: {intellect:4,level:4,greymagicskill:1,clubskill:1},
 		modify: {maxdamage:1,mindamage:1} 
 	},
-	sharpen_molot_2: {id:'sharpen_molot_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: дубины, булавы, молоты',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl5_reward:{id:'mater_coin_lvl5_reward',caption:'Серебряный Жетон',count:24}}}},
+	sharpen_molot_2: {id:'sharpen_molot_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 2: дубины, булавы, молоты',fixless:true,
 		common: {weight:1,price:40,durability:1,probability:60},
 		required: {intellect:6,level:4,greymagicskill:2,clubskill:2},
 		modify: {maxdamage:2,mindamage:2} 
 	},
-	sharpen_molot_3: {id:'sharpen_molot_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: дубины, булавы, молоты',fixless:true,requireditems:{s_luka:{exchanger:'s_luka', items: {mater_coin_lvl6_reward:{id:'mater_coin_lvl6_reward',caption:'Золотой Жетон',count:48}}}},
+	sharpen_molot_3: {id:'sharpen_molot_3',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Заточка на 3: дубины, булавы, молоты',fixless:true,
 		common: {weight:1,price:80,durability:1,probability:70},
 		required: {intellect:8,level:4,greymagicskill:3,clubskill:3},
 		modify: {maxdamage:3,mindamage:3} 

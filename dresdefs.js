@@ -674,6 +674,7 @@ var battleTurnParams = [
 	'watermagicpower',
 	'earthmagicpower',
 	'lightmagicpower',
+	'greymagicpower',
 	'darkmagicpower',
 	'magicdefencereduce',
 	'firemagicdefencereduce',
@@ -766,6 +767,7 @@ var knownCleanModifiers = [
 	'earthmagicpower',
 	'lightmagicpower',
 	'darkmagicpower',
+	'greymagicpower',
 	'-',
 	'magicdefencereduce',
 	'firemagicdefencereduce',
@@ -853,7 +855,8 @@ var knownWeaponPowerModifiers = {
 	watermagicpower: 'magic',
 	earthmagicpower: 'magic',
 	lightmagicpower: 'xmagic',
-	darkmagicpower: 'xmagic'
+	darkmagicpower: 'xmagic',
+	greymagicpower: 'xmagic',
 	};
 
 var knownZoneModifiers = {
@@ -986,6 +989,7 @@ var item_props = {
 	earthmagicpower: {lbl: 'Мф. мощности магии Земли', fmt: '{0}%', view: true, inmfg: true},
 	lightmagicpower: {lbl: 'Мф. мощности магии Света', fmt: '{0}%', view: true, inmfg: true},
 	darkmagicpower: {lbl: 'Мф. мощности магии Тьмы', fmt: '{0}%', view: true, inmfg: true},
+	greymagicpower: {lbl: 'Мф. мощности Серой магии', fmt: '{0}%', view: true, inmfg: true},
 	magicdefencereduce: {lbl: 'Подавление защиты от магии', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
 	firemagicdefencereduce: {lbl: 'Подавление защиты от магии Огня', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},
 	airmagicdefencereduce: {lbl: 'Подавление защиты от магии Воздуха', fmt: '{0}%', maxvalue: 99, view: true, inmfg: true},

@@ -7064,7 +7064,7 @@ function recalcDresserState(state)
 	}
 	for (var i = 0; i < allElements.length; i++)
 	{
-		state.natural[allElements[i] + 'magicpower'] = state.natural.intellect * 0.5;
+		state.natural[allElements[i] + 'magicpower'] = Math.floor(state.natural.intellect * 0.5);
 	}
 
 	if ('spirituality' in state.natural)
@@ -7533,7 +7533,7 @@ function recalcDresserState(state)
 	{
 		var mfvalue= ((allElements[i]+'magicpower') in state.modify) ? state.modify[allElements[i] + 'magicpower'] : 0;
 		if ('intellect' in state.modify)  {
-			mfvalue += state.modify.intellect*0.5;
+			mfvalue += Math.floor(state.modify.intellect * 0.5);
 		}
 		state.modify[allElements[i]+'magicpower'] = mfvalue;
 	}

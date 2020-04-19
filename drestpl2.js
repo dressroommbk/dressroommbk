@@ -1145,16 +1145,16 @@ function onSharpeningMenu(slotid, minlevel, allownew, isstf, isdbl)
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, 'hideMenu()');*/
 	
 	menuHtml += getRowMenuSeparatorHtml();
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 1)) { menuHtml += getRowMenuItemHtml(format('{0} +1', actionTitle), format("onSharpWeapon('{0}', '{1}', 101)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 2)) { menuHtml += getRowMenuItemHtml(format('{0} +2', actionTitle), format("onSharpWeapon('{0}', '{1}', 102)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 3)) { menuHtml += getRowMenuItemHtml(format('{0} +3', actionTitle), format("onSharpWeapon('{0}', '{1}', 103)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 4)) { menuHtml += getRowMenuItemHtml(format('{0} +4', actionTitle), format("onSharpWeapon('{0}', '{1}', 104)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 5)) { menuHtml += getRowMenuItemHtml(format('{0} +5', actionTitle), format("onSharpWeapon('{0}', '{1}', 105)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 6)) { menuHtml += getRowMenuItemHtml(format('{0} +6', actionTitle), format("onSharpWeapon('{0}', '{1}', 106)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 7)) { menuHtml += getRowMenuItemHtml(format('{0} +7', actionTitle), format("onSharpWeapon('{0}', '{1}', 107)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 8)) { menuHtml += getRowMenuItemHtml(format('{0} +8', actionTitle), format("onSharpWeapon('{0}', '{1}', 108)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 9)) { menuHtml += getRowMenuItemHtml(format('{0} +9', actionTitle), format("onSharpWeapon('{0}', '{1}', 109)", state.id, slot.id)); }
-	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), ('properties' in o) && ('twohandled' in o.properties) && (o.properties.twohandled === 'yes'), 11)) { menuHtml += getRowMenuItemHtml(format('{0} +11', actionTitle), format("onSharpWeapon('{0}', '{1}', 111)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 1)) { menuHtml += getRowMenuItemHtml(format('{0} +1', actionTitle), format("onSharpWeapon('{0}', '{1}', 101)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 2)) { menuHtml += getRowMenuItemHtml(format('{0} +2', actionTitle), format("onSharpWeapon('{0}', '{1}', 102)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 3)) { menuHtml += getRowMenuItemHtml(format('{0} +3', actionTitle), format("onSharpWeapon('{0}', '{1}', 103)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 4)) { menuHtml += getRowMenuItemHtml(format('{0} +4', actionTitle), format("onSharpWeapon('{0}', '{1}', 104)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 5)) { menuHtml += getRowMenuItemHtml(format('{0} +5', actionTitle), format("onSharpWeapon('{0}', '{1}', 105)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 6)) { menuHtml += getRowMenuItemHtml(format('{0} +6', actionTitle), format("onSharpWeapon('{0}', '{1}', 106)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 7)) { menuHtml += getRowMenuItemHtml(format('{0} +7', actionTitle), format("onSharpWeapon('{0}', '{1}', 107)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 8)) { menuHtml += getRowMenuItemHtml(format('{0} +8', actionTitle), format("onSharpWeapon('{0}', '{1}', 108)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 9)) { menuHtml += getRowMenuItemHtml(format('{0} +9', actionTitle), format("onSharpWeapon('{0}', '{1}', 109)", state.id, slot.id)); }
+	if (checkSharpeningAllowed(o.category, ('imp1' in o && o.imp1 === true) || ('artefact' in o && o.artefact === true), isTwohandledWeapon(o), 11)) { menuHtml += getRowMenuItemHtml(format('{0} +11', actionTitle), format("onSharpWeapon('{0}', '{1}', 111)", state.id, slot.id)); }
 	
 	menuHtml += '</table></td></tr></table>';
 	cursorY -= 200;
@@ -1515,7 +1515,7 @@ function getWeaponSkillValueOf(state, wo, skillname)
 		skill += wo.properties.weaponskill;
 	}
 
-	if ('properties' in wo && 'twohandled' in wo.properties && wo.properties.twohandled === 'yes') {
+	if (isTwohandledWeapon(wo)) {
 		skill *= 2;
 	}
 
@@ -6439,8 +6439,11 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 	    powermfn = attackn + 'power',
 		powerMfValue = baseIndices.powermf + getPowerMfValue(state, wslot, 'power') + getPowerMfValue(state, wslot, powermfn),
 		slotPropName = wslot.id + 'props',
-	    min_damage_base = Math.round(state.results.strength / 3.0 + state.results.level + baseIndices.postmindamage),
-	    max_damage_base = Math.round(state.results.strength / 3.0 + state.results.level + baseIndices.postmaxdamage),
+		strength = state.results.strength,
+		dexterity = state.results.dexterity,
+		intuition = state.results.intuition,
+	    min_damage_base = Math.round(strength / 3.0 + state.results.level + baseIndices.postmindamage),
+	    max_damage_base = Math.round(strength / 3.0 + state.results.level + baseIndices.postmaxdamage),
 	    min_damage = min_damage_base,
 	    max_damage = max_damage_base,
 		min_damage_critical = min_damage * 2.0,
@@ -6453,19 +6456,19 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 
 	switch (attackn) {
 		case 'crush':
-			stats_damage_effect = state.results.strength * 1.0;
+			stats_damage_effect = strength * 1.0;
 			break;
 		
 		case 'thrust':
-			stats_damage_effect = state.results.strength * 0.4 + state.results.dexterity * 0.6;
+			stats_damage_effect = strength * 0.4 + dexterity * 0.6;
 			break;
 		
 		case 'cut':
-			stats_damage_effect = state.results.strength * 0.3 + state.results.intuition * 0.7;
+			stats_damage_effect = strength * 0.3 + intuition * 0.7;
 			break;
-			
+		
 		case 'sabre':
-			stats_damage_effect = state.results.strength * 0.6 + state.results.dexterity * 0.2 + state.results.intuition * 0.2;
+			stats_damage_effect = strength * 0.6 + dexterity * 0.2 + intuition * 0.2;
 			break;
 		
 		default:

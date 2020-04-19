@@ -87,8 +87,8 @@ var localizer =
 	uncharmObject: 'Снять зачарование',
 	charmHint: '<img src="{0}DarkClan.gif" width="24" height="15" border="0" align="right" /><b>Зачарование</b><br />',
 	addstatsHint: '<img src="{0}DarkClan.gif" width="24" height="15" border="0" align="right" /><b>Распределяем Статы</b><br />',
-	useMagic: 'Встроена магия',
-	hasMagic: 'Встроена магия',
+	useMagic: 'Наложены заклятия',
+	hasMagic: 'Встроено заклятие',
 	saveSet: 'Сохранить комплект (beta)',
 	loadSet: 'Загрузить комплект (beta)',
 /*	saveSetHint: '<img src="{0}DarkClan.gif" width="24" height="15" border="0" align="right" /><b>Сохранение комплекта</b><br />Скопируйте этот текст через буфер обмена и сохраните где-нибудь.<br />В любой момент Вы сможете загрузить комплект, описанный этим текстом.<br />Также Вы можете сохранить этот комплект на сервере, получив возможность открывать его по ссылке краткого вида.',
@@ -2051,7 +2051,7 @@ function getObjectDescHtml(state, obj)
 	if ('magic1' in obj)
 	{
 		addinfo += localizer.useMagic;
-		addinfo += ' ';
+		addinfo += ': ';
 		addinfo += obj.magic1;
 		addinfo += '<br />';
 	}

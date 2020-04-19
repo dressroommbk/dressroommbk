@@ -1147,13 +1147,13 @@ rune_super_10: { id: 'rune_super_10', category:'runes', width:60, height:60, cap
 	}}
 
 	},
-	knife57: {id:'knife57',category:'knives',slot:'w3',width:60,height:60,caption:'Стылый Кинжал',magic1:'Обморожение',
+	knife57: {id:'knife57',category:'knives',slot:'w3',width:60,height:60,caption:'Стылый Кинжал',
 		common: {weight:6,price:100,durability:40},
 		required: {dexterity:25,intuition:25,intellect:5,level:6,knifeskill:4,endurance:13},
 		properties: {mindamage:4,maxdamage:13,antijumpaway:20,piercearmor:30,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'sometimes',sabre:'rare',crush:'insignificant',cut:'small'}
 	},
-	knife68: {id:'knife68',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Обряда',magic1:'Ожог',
+	knife68: {id:'knife68',category:'knives',slot:'w3',width:60,height:60,caption:'Кинжал Обряда',
 		common: {weight:7,price:100,durability:40},
 		required: {dexterity:25,intuition:25,intellect:5,level:6,knifeskill:4,endurance:13},
 		modify: {jumpaway:20},
@@ -1541,13 +1541,13 @@ upgrade: {
 		properties: {mindamage:8,maxdamage:15,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe70: {id:'axe70',category:'axes',slot:'w3',width:60,height:60,caption:'Ледяной Топор',magic1:'Обморожение',
+	axe70: {id:'axe70',category:'axes',slot:'w3',width:60,height:60,caption:'Ледяной Топор',
 		common: {weight:13,price:80,durability:50},
 		required: {intuition:13,intellect:2,level:4,axeskill:3,endurance:13,strength:13},
 		properties: {mindamage:8,maxdamage:15,blockzones:'+'},
 		attacks: {thrust:'rare',sabre:'routinely',crush:'rare',cut:'insignificant'}
 	},
-	axe79: {id:'axe79',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Огня и Пепла',magic1:'Ожог',
+	axe79: {id:'axe79',category:'axes',slot:'w3',width:60,height:60,caption:'Топор Огня и Пепла',
 		common: {weight:12,price:80,durability:50},
 		required: {intuition:13,intellect:2,level:4,axeskill:3,endurance:13,strength:13},
 		properties: {mindamage:8,maxdamage:15,secondweapon:'yes',blockzones:'+'},
@@ -2185,7 +2185,7 @@ upgrade: {
 		properties: {mindamage:20,maxdamage:32,antijumpaway:80,crushpower:20,blockzones:'+'},
 		attacks: {thrust:'insignificant',crush:'often'}
 	},
-	hammer58: {id:'hammer58',category:'clubs',slot:'w3',width:60,height:60,caption:'Ядовитый Молот',magic1:'Ядовитость',
+	hammer58: {id:'hammer58',category:'clubs',slot:'w3',width:60,height:60,caption:'Ядовитый Молот',
 		common: {weight:30,price:220,durability:50},
 		required: {level:8,clubskill:5,endurance:32,strength:40},
 		properties: {mindamage:20,maxdamage:32,antijumpaway:20,criticalhit:30,blockzones:'+'},
@@ -2682,7 +2682,7 @@ upgrade: {
 		properties: {mindamage:9,maxdamage:24,piercearmor:10,secondweapon:'yes',blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword69: {id:'sword69',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Ледяной Руки',magic1:'Обморожение',
+	sword69: {id:'sword69',category:'swords',slot:'w3',width:60,height:60,caption:'Клинок Ледяной Руки',
 		common: {weight:15,price:120,durability:50},
 		required: {intuition:16,intellect:2,level:5,swordskill:3,endurance:16,strength:16},
 		modify: {anticriticalhit:-20,jumpaway:20},
@@ -2737,7 +2737,7 @@ upgrade: {
 		properties: {mindamage:13,maxdamage:24,antijumpaway:50,criticalhit:70,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	sword82: {id:'sword82',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Огненной Зари',magic1:'Раскаленные Брызги',
+	sword82: {id:'sword82',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Огненной Зари',
 		common: {weight:17,price:170,durability:50},
 		required: {dexterity:25,intuition:25,level:8,swordskill:5,firemagicskill:2,endurance:25,strength:25},
 		modify: {anticriticalhit:50},
@@ -4107,17 +4107,17 @@ upgrade: {
 		required: {dexterity:20,level:5,strength:20},
 		modify: {magicdefence:20,airmagicdefence:30}
 	},
-	naruchi66: {id:'naruchi66',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Стылого Касания',magic1:'Обморожение',
+	naruchi66: {id:'naruchi66',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Стылого Касания',
 		common: {weight:3,price:50,durability:50},
 		required: {dexterity:15,level:6,strength:15},
 		modify: {watermagicdefence:10}
 	},
-	naruchi71: {id:'naruchi71',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Сияющие Перчатки',magic1:'Разряд',
+	naruchi71: {id:'naruchi71',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Сияющие Перчатки',
 		common: {weight:3,price:50,durability:50},
 		required: {dexterity:15,level:6,strength:15},
 		modify: {airmagicdefence:10}
 	},
-	naruchi72: {id:'naruchi72',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Огненной Души',magic1:'Ожог',
+	naruchi72: {id:'naruchi72',category:'gauntlets',slot:'w11',width:60,height:40,caption:'Перчатки Огненной Души',
 		common: {weight:3,price:50,durability:50},
 		required: {dexterity:15,level:6,strength:15},
 		modify: {firemagicdefence:10}
@@ -4398,7 +4398,7 @@ upgrade: {
 		required: {level:8,dexterity:30,intuition:30,endurance:40,strength:50},
 		modify: {knifeskill:3,axeskill:3,staffskill:3,swordskill:3,antijumpaway:55,anticriticalhit:55,parry:5,counterstroke:5,strength:10}
 	},
-	anaruchi3_get: {id:'anaruchi3_get',category:'gauntlets',slot:'w11',width:60,height:40,owner:'Getman',caption:'Перчатки Темной Силы',magic1:'Сила Теней',fixless:true,old:true,
+	anaruchi3_get: {id:'anaruchi3_get',category:'gauntlets',slot:'w11',width:60,height:40,owner:'Getman',caption:'Перчатки Темной Силы',fixless:true,old:true,
 		common: {weight:1,price:250,durability:500},
 		required: {level:10,endurance:50,strength:50},
 		modify: {weaponskill:3,criticalhit:75,strength:20}
@@ -4648,8 +4648,8 @@ upgrade: {
 	_1apr1: {id:'1apr1',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ Нытика',owner:'Н а в и г а т о р',
 		common: {weight:1,price:1,durability:10},
 	},
-	cloak1: {id:'cloak1',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ Ветерана',description:'Подарок ветеранам БК на ДР Клуба',
-		common: {weight:1,price:235,durability:100,probability:50},
+	cloak1: {id:'cloak1',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ Ветерана',description:'Достойным...',
+		common: {weight:1,price:235,durability:100},
 		required: {level:7},
 		modify: {intellect:2},
 		magic: {name:'cure3',caption:'Лечение тяжелых травм',description:'100 шт.'}
@@ -10110,17 +10110,17 @@ upgrade: {
 		required: {dexterity:10,intuition:10,level:5,endurance:10,strength:10},
 		modify: {dexterity:1,intuition:1,intellect:1,hitpoints:18,strength:1}
 	},
-	ring66: {id:'ring66',category:'rings',slot:'w6',width:20,height:20,caption:'Сияющее Кольцо',magic1:'Разряд',
+	ring66: {id:'ring66',category:'rings',slot:'w6',width:20,height:20,caption:'Сияющее Кольцо',
 		common: {weight:1,price:45,durability:20},
 		required: {level:4,airmagicskill:1,endurance:10,strength:10},
 		modify: {jumpaway:25}
 	},
-	ring91: {id:'ring91',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Горящего Взгляда',magic1:'Ожог',
+	ring91: {id:'ring91',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Горящего Взгляда',
 		common: {weight:1,price:45,durability:20},
 		required: {level:4,endurance:10,strength:15},
 		modify: {jumpaway:25}
 	},
-	ring73: {id:'ring73',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мороза',magic1:'Обморожение',
+	ring73: {id:'ring73',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мороза',
 		common: {weight:1,price:45,durability:20},
 		required: {level:4,watermagicskill:1,endurance:10,strength:10},
 		modify: {anticriticalhit:25}
@@ -10459,12 +10459,12 @@ upgrade: {
 		modify: {anticriticalhit:55,antijumpaway:35,parry:3,hitpoints:40,strength:3,jumpaway:-100,criticalhit:-100},
 		setlink: {name:'morningsun10',count:3}
 	},
-	ring120_si8: {id:'ring120_si8',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Бушующего Пламени',magic1:'Огненная Стихия',
+	ring120_si8: {id:'ring120_si8',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Бушующего Пламени',
 		common: {weight:1,price:100,durability:50},
 		required: {level:9,firemagicskill:3,endurance:25,strength:25},
 		modify: {jumpaway:50}
 	},
-	ring121_si8: {id:'ring121_si8',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Северного Ветра',magic1:'ВоднаяСтихия',
+	ring121_si8: {id:'ring121_si8',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Северного Ветра',
 		common: {weight:1,price:100,durability:50},
 		required: {level:9,watermagicskill:3,endurance:25,strength:25},
 		modify: {anticriticalhit:25,antijumpaway:25}
@@ -10721,7 +10721,7 @@ upgrade: {
 
 	},
 
-	aring5: {id:'aring5',category:'rings',slot:'w6',width:20,height:20,caption:'Витое кольцо атаки',description:'Дает возможность дополнительного удара за один ход',artefact:true,
+	aring5: {id:'aring5',category:'rings',slot:'w6',width:20,height:20,caption:'Витое кольцо атаки',description:'Дополнительная зона для удара: +1',artefact:true,
 		common: {weight:1,eprice:1500,durability:200,probability:70},
 		required: {level:6,dexterity:25,intuition:25},
 		modify: {dexterity:1,intuition:1},
@@ -10881,7 +10881,7 @@ upgrade: {
 	paper500: {id:'paper500',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Бумага',fixless:true,
 		common: {weight:1,price:0.05,durability:1,symbols:500}
 	},
-	attack: {id:'attack',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Нападение', magic1:': внезапность', fixless:true,
+	attack: {id:'attack',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Нападение', magic1:'внезапность', fixless:true,
 		common: {weight:1,eprice:'5',durability:'10'},
 		required: {level:4}
 	},
@@ -10889,19 +10889,19 @@ upgrade: {
 		common: {price:5,weight:1,durability:1,probability:70},
 		required: {intellect:6,level:4}
 	},
-	attackb: {id:'attackb',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Кровавое нападение',magic1:':внезапность', fixless:true,
+	attackb: {id:'attackb',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Кровавое нападение',magic1:'внезапность', fixless:true,
 		common: {weight:1,eprice:'1.3/10/21/40/60/70',durability:'1/10/25/50/75/100'},
 		required: {level:4}
 	},
-	attackt: {id:'attackt',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Темное Нападение',magic1:'Внезапность',fixless:true,
+	attackt: {id:'attackt',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Темное Нападение',magic1:'внезапность',fixless:true,
 		common: {weight:1,price:20,durability:1,probability:70,timeout:'1 ч.  0 мин.'},
 		required: {intellect:15,level:6,darkmagicskill:5}
 	},
-	chesnok: {id:'chesnok',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Чеснок (защита от вампиров)',magic1:'Против вампиров',fixless:true,
+	chesnok: {id:'chesnok',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Чеснок (защита от вампиров)',magic1:'против вампиров',fixless:true,
 		common: {weight:1,price:2,durability:20,probability:70},
 		required: {level:1}
 	},
-	chesnok2: {id:'chesnok2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Чеснок (защита от вампиров)',magic1:'Против вампиров',
+	chesnok2: {id:'chesnok2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Чеснок (защита от вампиров)',magic1:'против вампиров',
 		common: {weight:1,price:3,durability:40,probability:80},
 		required: {level:1}
 	},
@@ -11236,7 +11236,7 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
   modify: {spirituality:10}
 	}, 
 
-	spell_stat_intel: {id:'spell_stat_intel',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Холодный Разум',magic1:'усиление',fixless:true,
+	spell_stat_intel: {id:'spell_stat_intel',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Холодный Разум',magic1:'Холодный Разум',fixless:true,
 		common: {weight:1,price:10,durability:5,probability:80,duration:120},
 		required: {intellect:50,level:7,mana:1000}
 	, upgrade: {
@@ -11326,11 +11326,11 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:1,price:30,durability:1,expirationdate:30,timeout:'90 дн.'},
 		required: {level:4}
 	},
-	spell_curset: {id:'spell_curset',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Проклятие Темного Нападения',magic1:'Проклятье',fixless:true,
+	spell_curset: {id:'spell_curset',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Проклятие Темного Нападения',magic1:'проклятье',fixless:true,
 		common: {weight:1,price:1,durability:1,probability:70,duration:1440},
 		required: {intellect:10,level:8}
 	},
-	spell_cursek: {id:'spell_cursek',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Проклятие Кулачного Нападения',magic1:'Проклятье',fixless:true,
+	spell_cursek: {id:'spell_cursek',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Проклятие Кулачного Нападения',magic1:'проклятье',fixless:true,
 		common: {weight:1,price:1,durability:1,probability:70,duration:1440},
 		required: {intellect:10,level:8}
 	},
@@ -11451,26 +11451,26 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 	},
 
 //призыва
-	summon_pet_cat: {id:'summon_pet_cat',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Кота',description:'Призывает Кота в постоянные спутники.',magic1:'призыв',fixless:true,
+	summon_pet_cat: {id:'summon_pet_cat',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Кота',description:'Призывает Кота в постоянные спутники.',magic1:'Призыв',fixless:true,
 		common: {weight:1,price:50,durability:1},
 		required: {level:4}
 	},
-	summon_pet_owl: {id:'summon_pet_owl',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Сову',description:'Призывает Сову в постоянные спутники.',magic1:'призыв',fixless:true,
+	summon_pet_owl: {id:'summon_pet_owl',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Сову',description:'Призывает Сову в постоянные спутники.',magic1:'Призыв',fixless:true,
 		common: {weight:1,price:50,durability:1},
 		required: {level:4}
 	},
-	summon_pet_demon: {id:'summon_pet_demon',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Чертяку',description:'Призывает Чертяку в постоянные спутники. Свиток работает только в Demons city.',magic1:'призыв',fixless:true,
+	summon_pet_demon: {id:'summon_pet_demon',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Чертяку',description:'Призывает Чертяку в постоянные спутники.',magic1:'Призыв',fixless:true,
 		common: {weight:1,price:50,durability:1}
 	},
-	summon_pet_wisp: {id:'summon_pet_wisp',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Светляка',description:'Призывает Светляка в постоянные спутники. Свиток работает только в Angels city.',magic1:'призыв',fixless:true,
+	summon_pet_wisp: {id:'summon_pet_wisp',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Светляка',description:'Призывает Светляка в постоянные спутники.',magic1:'Призыв',fixless:true,
 		common: {weight:1,price:75,durability:1},
 		required: {level:7,wisdom:15}
 	},
-	summon_pet_dog: {id:'summon_pet_dog',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Пса',description:'Призывает Пса в постоянные спутники. Свиток работает только в Angels city.',magic1:'призыв',fixless:true,
+	summon_pet_dog: {id:'summon_pet_dog',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Пса',description:'Призывает Пса в постоянные спутники.',magic1:'Призыв',fixless:true,
 		common: {weight:1,price:80,durability:1},
 		required: {level:4}
 	},
-	summon_pet_pig: {id:'summon_pet_pig',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Свина',description:'Призывает Свина в постоянные спутники.',magic1:'призыв',fixless:true,
+	summon_pet_pig: {id:'summon_pet_pig',category:'summonscrolls',slot:'w100',width:40,height:25,caption:'Призвать Свина',description:'Призывает Свина в постоянные спутники.',magic1:'Призыв',fixless:true,
 		common: {weight:1,price:80,durability:1},
 		required: {level:4}
 	},
@@ -11639,11 +11639,11 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:1,eprice:'100',durability:1},
 		required: {level:4},
 	},
-	mirror: {id:'mirror',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Клонирование',description:'Задержка использования: 20 ходов.',magic1:': Порождение клона', fixless:true,
+	mirror: {id:'mirror',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Клонирование',description:'Задержка использования: 20 ходов.',magic1:'Порождение клона', fixless:true,
 		common: {weight:1,eprice:5,durability:1},
 		required: {level:4}
 	},
-	antimirror: {id:'antimirror',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Переманить клона', magic1: ': Эфирное воздействие', fixless:true,
+	antimirror: {id:'antimirror',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Переманить клона', magic1: 'Эфирное воздействие', fixless:true,
 		common: {weight:1,eprice:5,durability:1},
 		required: {level:4}
 	},
@@ -12390,7 +12390,7 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		required: {level:4},
 		modify: {dexterity:10,intuition:3}
 	},
-	pot_anti_disease_5: {id:'pot_anti_disease_5',caption:'Сыворотка [5]',description:'Исцелит вас от многих болезней',magic1:'исцеление',fixless:true,
+	pot_anti_disease_5: {id:'pot_anti_disease_5',caption:'Сыворотка [5]',description:'Исцелит вас от многих болезней',fixless:true,
 		common: {price:1,durability:3}
 	},
 	pot_base_0_ny_ele: {id:'pot_base_0_ny_ele',caption:'Бочонок Эликсира',fixless:true,

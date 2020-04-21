@@ -276,77 +276,103 @@ var tricks = {
 		required: {level:7},
 		resources: {hp:3}
 	},*/
-	wis_air_chaincure05: {name: 'wis_air_chaincure05', caption: 'Цепь Исцеления [5]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', iname: 'wis_air_chaincure08', school: 'air',
+	wis_air_chaincure05: {name: 'wis_air_chaincure05', caption: 'Цепь Исцеления [5]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-126 HP магией Воздуха.', iname: 'wis_air_chaincure08', school: 'air',
 		required: {level:5,intellect:20,airmagicskill:5},
 		resources: {hp:1},
 		consumes: {mana:46},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:95}
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:126}
 	},
-	wis_air_chaincure06: {name: 'wis_air_chaincure06', caption: 'Цепь Исцеления [6]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', iname: 'wis_air_chaincure08', school: 'air',
+	wis_air_chaincure06: {name: 'wis_air_chaincure06', caption: 'Цепь Исцеления [6]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-152 HP магией Воздуха.', iname: 'wis_air_chaincure08', school: 'air',
 		required: {level:6,intellect:30,airmagicskill:6},
 		resources: {hp:1},
 		consumes: {mana:69},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:115}
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:152}
 	},
-	wis_air_chaincure07: {name: 'wis_air_chaincure07', caption: 'Цепь Исцеления [7]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', iname: 'wis_air_chaincure08', school: 'air',
+	wis_air_chaincure07: {name: 'wis_air_chaincure07', caption: 'Цепь Исцеления [7]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-183 HP магией Воздуха.', iname: 'wis_air_chaincure08', school: 'air',
 		required: {level:7,intellect:40,airmagicskill:7},
 		resources: {hp:1},
 		consumes: {mana:104},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:138}
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:183}
 	},
-	wis_air_chaincure08: {name: 'wis_air_chaincure08', caption: 'Цепь Исцеления [8]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', school: 'air',
+	wis_air_chaincure08: {name: 'wis_air_chaincure08', caption: 'Цепь Исцеления [8]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-219 HP магией Воздуха.', school: 'air',
 		required: {level:8,intellect:50,airmagicskill:8},
 		resources: {hp:1},
-		consumes: {mana:108},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:165}
+		consumes: {mana:124},
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:219}
 	},
-	wis_air_chaincure09: {name: 'wis_air_chaincure09', caption: 'Цепь Исцеления [9]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', iname: 'wis_air_chaincure08', school: 'air',
+	wis_air_chaincure09: {name: 'wis_air_chaincure09', caption: 'Цепь Исцеления [9]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-263 HP магией Воздуха.', iname: 'wis_air_chaincure08', school: 'air',
 		required: {level:9,intellect:60,airmagicskill:9},
 		resources: {hp:1},
-		consumes: {mana:126},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:198}
+		consumes: {mana:149},
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:263}
 	},
-	wis_air_chaincure10: {name: 'wis_air_chaincure10', caption: 'Цепь Исцеления [10]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', iname: 'wis_air_chaincure08', school: 'air',
+	wis_air_chaincure10: {name: 'wis_air_chaincure10', caption: 'Цепь Исцеления [10]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-316 HP магией Воздуха.', iname: 'wis_air_chaincure08', school: 'air',
 		required: {level:10,intellect:75,airmagicskill:10},
 		resources: {hp:1},
-		consumes: {mana:152},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:238}
+		consumes: {mana:179},
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:316}
 	},
-	wis_air_chaincure11: {name: 'wis_air_chaincure11', caption: 'Цепь Исцеления [11]', description: 'Восстанавливает 1-3 целям уровень жизни магией воздуха', iname: 'wis_air_chaincure08', school: 'air',
-		required: {level:11,intellect:100,airmagicskill:11},
+	wis_air_chaincure11: {name: 'wis_air_chaincure11', caption: 'Цепь Исцеления [11]', spendsMove : true,
+		action: 'Восстанавливает 1-3 целям 1-380 HP магией Воздуха.', iname: 'wis_air_chaincure08', school: 'air',
+		required: {intellect:100,airmagicskill:11,level:11},
 		resources: {hp:1},
 		consumes: {mana:215},
-		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:286}
+		delay: 3,
+		healing: {mincount:1,maxcount:3,minhitpoints:1,maxhitpoints:380}
 	},
-	wis_air_chainlight06: {name: 'wis_air_chainlight06', caption: 'Цепь Молний [6]', description: 'Наносит 2-5 целям урон электричеством', iname: 'wis_air_chainlight08', school: 'air',
+	wis_air_chainlight06: {name: 'wis_air_chainlight06', caption: 'Цепь Молний [6]', spendsMove : true,
+		action: 'Наносит 2-5 целям 1-46 урона электричеством.', iname: 'wis_air_chainlight08', school: 'air',
 		required: {level:6,intellect:30,airmagicskill:6},
 		consumes: {mana:71},
-		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:35}
+		delay: 3,
+		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:46}
 	},
-	wis_air_chainlight07: {name: 'wis_air_chainlight07', caption: 'Цепь Молний [7]', description: 'Наносит 2-5 целям урон электричеством', iname: 'wis_air_chainlight08', school: 'air',
+	wis_air_chainlight07: {name: 'wis_air_chainlight07', caption: 'Цепь Молний [7]', spendsMove : true,
+		action: 'Наносит 2-5 целям 1-55 урона электричеством.', iname: 'wis_air_chainlight08', school: 'air',
 		required: {level:7,intellect:40,airmagicskill:7},
 		consumes: {mana:107},
-		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:42}
+		delay: 3,
+		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:55}
 	},
-	wis_air_chainlight08: {name: 'wis_air_chainlight08', caption: 'Цепь Молний [8]', description: 'Наносит 2-5 целям урон электричеством', school: 'air',
+	wis_air_chainlight08: {name: 'wis_air_chainlight08', caption: 'Цепь Молний [8]', spendsMove : true,
+		action: 'Наносит 2-5 целям 1-67 урона электричеством.', school: 'air',
 		required: {level:8,intellect:50,airmagicskill:8},
 		consumes: {mana:128},
-		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:51}
+		delay: 3,
+		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:67}
 	},
-	wis_air_chainlight09: {name: 'wis_air_chainlight09', caption: 'Цепь Молний [9]', description: 'Наносит 2-5 целям урон электричеством', iname: 'wis_air_chainlight08', school: 'air',
+	wis_air_chainlight09: {name: 'wis_air_chainlight09', caption: 'Цепь Молний [9]', spendsMove : true,
+		action: 'Наносит 2-5 целям 1-81 урона электричеством.', iname: 'wis_air_chainlight08', school: 'air',
 		required: {level:9,intellect:60,airmagicskill:9},
 		consumes: {mana:154},
-		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:61}
+		delay: 3,
+		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:81}
 	},
-	wis_air_chainlight10: {name: 'wis_air_chainlight10', caption: 'Цепь Молний [10]', description: 'Наносит 2-5 целям урон электричеством', iname: 'wis_air_chainlight08', school: 'air',
+	wis_air_chainlight10: {name: 'wis_air_chainlight10', caption: 'Цепь Молний [10]', spendsMove : true,
+		action: 'Наносит 2-5 целям 1-97 урона электричеством.', iname: 'wis_air_chainlight08', school: 'air',
 		required: {level:10,intellect:75,airmagicskill:10},
 		consumes: {mana:185},
-		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:73}
+		delay: 3,
+		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:97}
 	},
-	wis_air_chainlight11: {name: 'wis_air_chainlight11', caption: 'Цепь Молний [11]', description: 'Наносит 2-5 целям урон электричеством', iname: 'wis_air_chainlight08', school: 'air',
+	wis_air_chainlight11: {name: 'wis_air_chainlight11', caption: 'Цепь Молний [11]', spendsMove : true,
+		action: 'Наносит 2-5 целям 1-116 урона электричеством.', iname: 'wis_air_chainlight08', school: 'air',
 		required: {level:11,intellect:100,airmagicskill:11},
 		consumes: {mana:222},
-		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:88}
+		delay: 3,
+		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:116}
 	},
 	wis_air_shaft04: {name: 'wis_air_shaft04', caption: 'Молния [4]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:4,intellect:15,airmagicskill:4},

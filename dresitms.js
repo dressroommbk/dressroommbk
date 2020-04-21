@@ -12184,24 +12184,32 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:1,price:50,durability:1,maxitems:1},
 		required: {intellect:60,level:8,airmagicskill:8}
 	},
-	booklearn_slot7: {id:'booklearn_slot7',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 1)',description:'Добавляет +1 дополнительный слот для приемов. Каждый том может быть использован лишь один раз.',fixless:true,binding:'bop',
+	booklearn_slot7: {id:'booklearn_slot7',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 1)',
+    specification: 'Добавляет +1 дополнительный слот для приемов. Каждый том может быть использован лишь один раз.',fixless:true,binding:'bop',
 		common: {weight:1,price:120,durability:1,maxitems:1},
 		required: {level:7}
 	},
-	booklearn_slot8: {id:'booklearn_slot8',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 2)',description:'Добавляет +1 дополнительный слот для приемов. <br>Каждый том может быть использован лишь один раз. <br>Для изучения требуется знание первого тома.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:15}}}},
+	booklearn_slot8: {id:'booklearn_slot8',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 2)',
+    specification: 'Добавляет +1 дополнительный слот для приемов. <br>Каждый том может быть использован лишь один раз. <br>Для изучения требуется знание первого тома.',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:15}}}},
 		common: {weight:1,price:200,durability:1,maxitems:1},
 		required: {level:8}
 	},
-	booklearn_slot9: {id:'booklearn_slot9',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 3)',description:'Добавляет +1 дополнительный слот для приемов. <br>Каждый том может быть использован лишь один раз. <br>Для изучения требуется знание второго тома.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:3},mater26:{id:'mater26',caption:'Кристалл стабильности',count:3},mater28:{id:'mater28',caption:'Лучистый рубин',count:3},mater29:{id:'mater29',caption:'Лучистый топаз',count:3},mater25:{id:'mater25',caption:'Кристалл голоса предков',count:3},mater30:{id:'mater30',caption:'Шепот гор',count:3}}}},
+	booklearn_slot9: {id:'booklearn_slot9',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 3)',
+    specification: 'Добавляет +1 дополнительный слот для приемов. <br>Каждый том может быть использован лишь один раз. <br>Для изучения требуется знание второго тома.',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater27:{id:'mater27',caption:'Камень затаенного солнца',count:3},mater26:{id:'mater26',caption:'Кристалл стабильности',count:3},mater28:{id:'mater28',caption:'Лучистый рубин',count:3},mater29:{id:'mater29',caption:'Лучистый топаз',count:3},mater25:{id:'mater25',caption:'Кристалл голоса предков',count:3},mater30:{id:'mater30',caption:'Шепот гор',count:3}}}},
 		common: {weight:1,price:300,durability:1,maxitems:1},
 		required: {level:9}
 	},
-	booklearn_slot10: {id:'booklearn_slot10',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 4)',description:'Добавляет +1 дополнительный слот для приемов. <br>Каждый том может быть использован лишь один раз. <br>Для изучения требуется знание третьего тома.',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:5},mater22:{id:'mater22',caption:'Эссенция чистоты',count:5},mater21:{id:'mater21',caption:'Эссенция глубины',count:5},mater20:{id:'mater20',caption:'Эссенция лунного света',count:5},mater31:{id:'mater31',caption:'Эссенция праведного гнева',count:5},mater23:{id:'mater23',caption:'Ралиэль',count:5}}}},
+	booklearn_slot10: {id:'booklearn_slot10',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (том 4)',
+    specification: 'Добавляет +1 дополнительный слот для приемов. <br>Каждый том может быть использован лишь один раз. <br>Для изучения требуется знание третьего тома.',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater24:{id:'mater24',caption:'Стихиалия',count:5},mater22:{id:'mater22',caption:'Эссенция чистоты',count:5},mater21:{id:'mater21',caption:'Эссенция глубины',count:5},mater20:{id:'mater20',caption:'Эссенция лунного света',count:5},mater31:{id:'mater31',caption:'Эссенция праведного гнева',count:5},mater23:{id:'mater23',caption:'Ралиэль',count:5}}}},
 		common: {weight:1,price:500,durability:1,maxitems:1},
 		required: {level:10}
 	},
- 	booklearn_slot11: {id:'booklearn_slot11',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (секретный том)',description:'Добавляет +2 дополнительных слота для приемов. <br>Каждый том может быть использован лишь один раз.',fixless:true,binding:'bop',
-		common: {weight:1,eprice:3500,durability:1,maxitems:1},
+ 	booklearn_slot11: {id:'booklearn_slot11',category:'books',slot:'wbook',width:40,height:25,caption:'Тайное Знание (секретный том)',
+    specification: 'Добавляет +2 дополнительных слота для приемов. <br>Каждый том может быть использован лишь один раз.',fixless:true,binding:'bop',
+		common: {weight:1,eprice:300,durability:1,maxitems:1},
 		required: {level:4}
 	},
 

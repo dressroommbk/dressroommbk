@@ -830,10 +830,10 @@ function getPersImageHtml(state)
 	for (var ci = 0; ci < 3; ci++)
 	{
 		r += '<tr>';
-		for (var i = 0; i < 7; i++)
+		for (var i = 0; i < 8; i++)
 		{
-// 	if (ci==2 && i==7) {continue;}
-			var trickNumber = (ci * 7) + i;
+		 	if (ci==2 && i >= 7) { continue; }
+			var trickNumber = (ci * 8) + i;
 			r += getSingleTrickSlotHtml(state, trickNumber, state.trickSlots[trickNumber]);
 		}
 		r += '</tr>';
@@ -11376,17 +11376,17 @@ function getTrickImageHtml_Core(name, onclick, width, i)
 	var path = trickImgPath;
 	if (name == null)
 	{
-		if (i >= 10)
+/*		if (i >= 10)
 		{
 			name = 'clear';
 			iname = 'booklearn_slot7';
-//			iname = 'booklearn_slot' + (i - 3);
+			iname = 'booklearn_slot' + (i - 3);
 			path = itemImgPath;
 		}
 		else
-		{
+		{*/
 			name = iname = 'clear';
-		}
+		//}
 	}
 	else
 	{

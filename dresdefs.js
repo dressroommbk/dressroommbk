@@ -1895,6 +1895,9 @@ function getObjectDescHtml(state, obj)
 		if ('delay' in obj) {
 			html += 'Задержка: ' + obj.delay + '<br />';
 		}
+		if ('beginDelay' in obj) {
+			html += 'Начальная задержка: ' + obj.beginDelay + '<br />';
+		}
 		if ('spendsMove' in obj && obj.spendsMove === true) {
 			html += '• ' + localizer.spendsMove + '<br />';
 		}

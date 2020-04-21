@@ -1886,6 +1886,9 @@ function getObjectDescHtml(state, obj)
 	}
 
 	if (isMagicTrick(obj)) {
+		if (!('resources' in obj)) {
+			html += '<br />';
+		}
 		if ('consumes' in obj && 'mana' in obj.consumes) {
 			html += 'Расход маны: ' + obj.consumes.mana + '<br />';
 		}
@@ -1893,9 +1896,9 @@ function getObjectDescHtml(state, obj)
 			html += 'Задержка: ' + obj.delay + '<br />';
 		}
 		if ('spendsMove' in obj && obj.spendsMove === true) {
-			html += '• ' + localizer.spendsMove;
+			html += '• ' + localizer.spendsMove + '<br />';
 		}
-		html += '<br /><br />';
+		html += '<br />';
 	}
 
 	if ('required' in obj)

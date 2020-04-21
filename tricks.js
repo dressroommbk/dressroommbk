@@ -374,62 +374,82 @@ var tricks = {
 		delay: 3,
 		attack: {mincount:2,maxcount:5,mindamage:1,maxdamage:116}
 	},
-	wis_air_shaft04: {name: 'wis_air_shaft04', caption: 'Молния [4]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft04: {name: 'wis_air_shaft04', caption: 'Молния [4]', spendsMove : true,
+		action: 'Наносит цели 1-55 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:4,intellect:15,airmagicskill:4},
 		consumes: {mana:15},
-		attack: {mindamage:1,maxdamage:42}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:55}
 	},
-	wis_air_shaft05: {name: 'wis_air_shaft05', caption: 'Молния [5]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft05: {name: 'wis_air_shaft05', caption: 'Молния [5]', spendsMove : true,
+		action: 'Наносит цели 1-66 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:5,intellect:20,airmagicskill:5},
 		consumes: {mana:23},
-		attack: {mindamage:1,maxdamage:50}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:66}
 	},
-	wis_air_shaft06: {name: 'wis_air_shaft06', caption: 'Молния [6]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft06: {name: 'wis_air_shaft06', caption: 'Молния [6]', spendsMove : true,
+		action: 'Наносит цели 1-79 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:6,intellect:30,airmagicskill:6},
 		consumes: {mana:34},
-		attack: {mindamage:1,maxdamage:60}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:79}
 	},
-	wis_air_shaft07: {name: 'wis_air_shaft07', caption: 'Молния [7]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft07: {name: 'wis_air_shaft07', caption: 'Молния [7]', spendsMove : true,
+		action: 'Наносит цели 1-97 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:7,intellect:40,airmagicskill:7},
 		consumes: {mana:52},
-		attack: {mindamage:1,maxdamage:73}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:97}
 	},
-	wis_air_shaft08: {name: 'wis_air_shaft08', caption: 'Молния [8]', description: 'Наносит цели урон электричеством', school: 'air',
+	wis_air_shaft08: {name: 'wis_air_shaft08', caption: 'Молния [8]', spendsMove : true,
+		action: 'Наносит цели 1-115 урона электричеством', school: 'air',
 		required: {level:8,intellect:50,airmagicskill:8},
 		consumes: {mana:62},
-		attack: {mindamage:1,maxdamage:87}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:115}
 	},
-	wis_air_shaft09: {name: 'wis_air_shaft09', caption: 'Молния [9]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft09: {name: 'wis_air_shaft09', caption: 'Молния [9]', spendsMove : true,
+		action: 'Наносит цели 1-139 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:9,intellect:60,airmagicskill:9},
 		consumes: {mana:74},
-		attack: {mindamage:1,maxdamage:105}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:139}
 	},
-	wis_air_shaft10: {name: 'wis_air_shaft10', caption: 'Молния [10]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft10: {name: 'wis_air_shaft10', caption: 'Молния [10]', spendsMove : true,
+		action: 'Наносит цели 1-167 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:10,intellect:75,airmagicskill:10},
 		consumes: {mana:89},
-		attack: {mindamage:1,maxdamage:126}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:167}
 	},
-	wis_air_shaft11: {name: 'wis_air_shaft11', caption: 'Молния [11]', description: 'Наносит цели урон электричеством', iname: 'wis_air_shaft08', school: 'air',
+	wis_air_shaft11: {name: 'wis_air_shaft11', caption: 'Молния [11]', spendsMove : true,
+		action: 'Наносит цели 1-200 урона электричеством', iname: 'wis_air_shaft08', school: 'air',
 		required: {level:11,intellect:100,airmagicskill:11},
 		consumes: {mana:107},
-		attack: {mindamage:1,maxdamage:151}
+		delay: 1,
+		attack: {mindamage:1,maxdamage:200}
 	},
-	wis_air_sparks08: {name: 'wis_air_sparks08', caption: 'Искры [8]', description: 'Наносит 1-7 целям урон электричеством', school: 'air',
+	wis_air_sparks08: {name: 'wis_air_sparks08', caption: 'Искры [8]', 
+		description: 'Наносит 1-7 целям урон электричеством', school: 'air',
 		required: {level:8,intellect:50,airmagicskill:8},
 		consumes: {mana:117},
 		attack: {mincount:1,maxcount:7,mindamage:1,maxdamage:41}
 	},
-	wis_air_sparks09: {name: 'wis_air_sparks09', caption: 'Искры [9]', description: 'Наносит 1-7 целям урон электричеством', iname: 'wis_air_sparks08', school: 'air',
+	wis_air_sparks09: {name: 'wis_air_sparks09', caption: 'Искры [9]', 
+		description: 'Наносит 1-7 целям урон электричеством', iname: 'wis_air_sparks08', school: 'air',
 		required: {level:9,intellect:60,airmagicskill:9},
 		consumes: {mana:140},
 		attack: {mincount:1,maxcount:7,mindamage:1,maxdamage:50}
 	},
-	wis_air_sparks10: {name: 'wis_air_sparks10', caption: 'Искры [10]', description: 'Наносит 1-7 целям урон электричеством', iname: 'wis_air_sparks08', school: 'air',
+	wis_air_sparks10: {name: 'wis_air_sparks10', caption: 'Искры [10]', 
+		description: 'Наносит 1-7 целям урон электричеством', iname: 'wis_air_sparks08', school: 'air',
 		required: {level:10,intellect:75,airmagicskill:10},
 		consumes: {mana:142},
 		attack: {mincount:1,maxcount:7,mindamage:1,maxdamage:60}
 	},
-	wis_air_sparks11: {name: 'wis_air_sparks11', caption: 'Искры [11]', description: 'Наносит 1-7 целям урон электричеством', iname: 'wis_air_sparks08', school: 'air',
+	wis_air_sparks11: {name: 'wis_air_sparks11', caption: 'Искры [11]', 
+		description: 'Наносит 1-7 целям урон электричеством', iname: 'wis_air_sparks08', school: 'air',
 		required: {level:11,intellect:100,airmagicskill:11},
 		consumes: {mana:202},
 		attack: {mincount:1,maxcount:7,mindamage:1,maxdamage:72}
@@ -444,24 +464,32 @@ var tricks = {
 		resources: {},
 		consumes: {mana:10,spiritlevel:1}
 	},
-	wis_air_shield07: {name: 'wis_air_shield07', caption: 'Туманный Образ [7]', description: 'Все атаки по вам в следующем размене будут отражены в случайного союзника (в том числе и в вас).<br>Прием не подвержен действию шока.', iname: 'wis_air_shield08', school: 'air',
+	wis_air_shield07: {name: 'wis_air_shield07', caption: 'Туманный Образ [7]', 
+		action: 'Все атаки по вам в следующем размене будут отражены в случайного союзника (в том числе и в вас).<br>Прием не подвержен действию шока.', iname: 'wis_air_shield08', school: 'air',
 		required: {level:7,intellect:20,airmagicskill:7},
 		resources: {hp:1},
+		delay: 8,
 		consumes: {mana:80}
 	},
-	wis_air_shield08: {name: 'wis_air_shield08', caption: 'Туманный Образ [8]', description: 'Следующая атака по вам будет отражена в случайного противника или союзника.<br>Прием не подвержен действию шока.', school: 'air',
+	wis_air_shield08: {name: 'wis_air_shield08', caption: 'Туманный Образ [8]', 
+		action: 'Следующая атака по вам будет отражена в случайного противника или союзника.<br>Прием не подвержен действию шока.', school: 'air',
 		required: {level:8,intellect:40,airmagicskill:8},
 		resources: {hp:1},
+		delay: 8,
 		consumes: {mana:160}
 	},
-	wis_air_shield09: {name: 'wis_air_shield09', caption: 'Туманный Образ [9]', description: 'Следующая атака по вам будет отражена в случайного противника.<br>Прием не подвержен действию шока.', iname: 'wis_air_shield08', school: 'air',
+	wis_air_shield09: {name: 'wis_air_shield09', caption: 'Туманный Образ [9]', 
+		action: 'Следующая атака по вам будет отражена в случайного противника.<br>Прием не подвержен действию шока.', iname: 'wis_air_shield08', school: 'air',
 		required: {level:9,intellect:60,airmagicskill:9},
 		resources: {hp:1},
+		delay: 8,
 		consumes: {mana:240}
 	},
-	wis_air_shield10: {name: 'wis_air_shield10', caption: 'Туманный Образ [10]', description: 'Следующая атака по вам будет отражена обратно в атакующего.<br>Прием не подвержен действию шока.', iname: 'wis_air_shield08', school: 'air',
+	wis_air_shield10: {name: 'wis_air_shield10', caption: 'Туманный Образ [10]', 
+		action: 'Следующая атака по вам будет отражена обратно в атакующего.<br>Прием не подвержен действию шока.', iname: 'wis_air_shield08', school: 'air',
 		required: {level:10,intellect:80,airmagicskill:10},
 		resources: {hp:1},
+		delay: 8,
 		consumes: {mana:240}
 	},
 	wis_earth_gravity07: {name: 'wis_earth_gravity07', caption: 'Гравитация [7]', description: 'Наносит цели 10% урона магией Земли от ее текущего уровня жизни. Заклинание не может нанести более 170 ед. урона. урона.', iname: 'wis_earth_gravity08', school: 'earth',

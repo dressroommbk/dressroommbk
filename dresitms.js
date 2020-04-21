@@ -12048,7 +12048,9 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:1,price:20,durability:1,maxitems:1},
 		required: {intellect:25,level:7,firemagicskill:7}
 	},
-	booklearn_spell4: {id:'booklearn_spell4',category:'books',slot:'wbook',width:40,height:25,caption:'Иней (заклинание)',description:'В инструкции рассказывается, как тонким слоем льда защитить себя от урона .',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater21:{id:'mater21',caption:'Эссенция глубины',count:1}}}},
+	booklearn_spell4: {id:'booklearn_spell4',category:'books',slot:'wbook',width:40,height:25,caption:'Иней (заклинание)',
+    specification: 'В инструкции рассказывается, как тонким слоем льда защитить себя от урона.<br />Обучает приему: <b>Иней</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater21:{id:'mater21',caption:'Эссенция глубины',count:1}}}},
 		common: {weight:1,price:20,durability:1,maxitems:1},
 		required: {intellect:25,level:7,watermagicskill:7}
 	},
@@ -12110,43 +12112,63 @@ invoke_plain_1s_spirit10: {id:'invoke_plain_1s_spirit10',category:'auxiliaryscro
 		common: {weight:1,price:25,durability:1,maxitems:1},
 		required: {intellect:35,level:8,firemagicskill:8}
 	},
-	booklearn_spell16: {id:'booklearn_spell16',category:'books',slot:'wbook',width:40,height:25,caption:'Хватка Льда (заклинание)',description:'<i>Через 2 хода цель теряет возможность использовать приемы или набирать очки тактики на 3 хода.</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
+	booklearn_spell16: {id:'booklearn_spell16',category:'books',slot:'wbook',width:40,height:25,caption:'Хватка Льда (заклинание)',
+    specification: '<i>Через 2 хода цель теряет возможность использовать приемы или набирать очки тактики на 3 хода.</i><br />Обучает приему: <b>Хватка Льда</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
 		common: {weight:1,price:20,durability:1,maxitems:1},
 		required: {intellect:25,level:7,watermagicskill:7}
 	},
-	booklearn_spell17: {id:'booklearn_spell17',category:'books',slot:'wbook',width:40,height:25,caption:'Жертва Воде (заклинание)',description:'<i>Маг теряет 10% жизни за 5 ходов, но цена всех заклятий снижена на 30%.</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
+	booklearn_spell17: {id:'booklearn_spell17',category:'books',slot:'wbook',width:40,height:25,caption:'Жертва Воде (заклинание)',
+    specification: '<i>Маг теряет 10% жизни за 5 ходов, но цена всех заклятий снижена на 30%.</i><br />Обучает приему: <b>Жертва Воде</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
 		common: {weight:1,price:20,durability:1,maxitems:1},
 		required: {intellect:25,level:7,watermagicskill:7}
 	},
-	booklearn_spell19: {id:'booklearn_spell19',category:'books',slot:'wbook',width:40,height:25,caption:'Оледенениие: Разбить (заклинание)',description:'<i>Наносит текущей цели подверженной <B>Оледенению</B> урон магией воды. <br>Наносит дополнительный урон, если уровень жизни цели меньше определенного</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
+	booklearn_spell19: {id:'booklearn_spell19',category:'books',slot:'wbook',width:40,height:25,caption:'Оледенениие: Разбить! (заклинание)',
+    specification: 'Наносит урон магией воды текущей цели, подверженной <B>Оледенению</B>, если уровень жизни цели меньше определенного</i><br />Обучает приему: <b>Оледенение: Разбить!</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
 		common: {weight:1,price:20,durability:1,maxitems:1},
 		required: {intellect:25,level:7,watermagicskill:7}
 	},
-	booklearn_spell21: {id:'booklearn_spell21',category:'books',slot:'wbook',width:40,height:25,caption:'Острая Грань (заклинание)',description:'<i>Наносит цели колющий урон</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
+	booklearn_spell21: {id:'booklearn_spell21',category:'books',slot:'wbook',width:40,height:25,caption:'Острая Грань (заклинание)',
+    specification: '<i>Наносит цели колющий урон</i><br />Обучает приему: <b>Острая Грань</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:1}}}},
 		common: {weight:1,price:20,durability:1,maxitems:1},
 		required: {intellect:25,level:7,watermagicskill:7}
 	},
-	booklearn_spell15: {id:'booklearn_spell15',category:'books',slot:'wbook',width:40,height:25,caption:'Кристаллизация (заклинание)',description:'<i>Мгновенно наносит цели урон равный уровню силы цели, но не более определенного. Снижает Силу и Ловкость цели.</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
+	booklearn_spell15: {id:'booklearn_spell15',category:'books',slot:'wbook',width:40,height:25,caption:'Кристаллизация (заклинание)',
+    specification: '<i>Мгновенно наносит цели урон равный уровню силы цели, но не более определенного. Снижает Силу и Ловкость цели.</i><br />Обучает приему: <b>Кристаллизация</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
 		common: {weight:1,price:25,durability:1,maxitems:1},
 		required: {intellect:35,level:8,watermagicskill:8}
 	},
-	booklearn_spell18: {id:'booklearn_spell18',category:'books',slot:'wbook',width:40,height:25,caption:'Духи Льда (заклинание)',description:'<i>На три хода увеличивает мф. мощности Магии Воды на 15. Часть вашего прямого урона магией воды, восстанавливает ману</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
+	booklearn_spell18: {id:'booklearn_spell18',category:'books',slot:'wbook',width:40,height:25,caption:'Духи Льда (заклинание)',
+    specification: '<i>На три хода увеличивает мф. мощности Магии Воды на 15. Часть вашего прямого урона магией воды, восстанавливает ману</i><br />Обучает приему: <b>Духи Льда</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
 		common: {weight:1,price:25,durability:1,maxitems:1},
 		required: {intellect:35,level:8,watermagicskill:8}
 	},
-	booklearn_spell20: {id:'booklearn_spell20',category:'books',slot:'wbook',width:40,height:25,caption:'Ледяное Спасение (заклинание)',description:'<i>Мгновенно останавливает кровотечения, исцеляя мага, но наносит магу урон последующие 5 ходов</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
+	booklearn_spell20: {id:'booklearn_spell20',category:'books',slot:'wbook',width:40,height:25,caption:'Ледяное Спасение (заклинание)',
+    specification: '<i>Мгновенно останавливает кровотечения, исцеляя мага, но наносит магу урон последующие 5 ходов</i><br />Обучает приему: <b>Ледяное Спасение</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
 		common: {weight:1,price:25,durability:1,maxitems:1},
 		required: {intellect:35,level:8,watermagicskill:8}
 	},
-	booklearn_spell22: {id:'booklearn_spell22',category:'books',slot:'wbook',width:40,height:25,caption:'Ледяное Сердце (заклинание)',description:'<i>При использовании убирает текущие задержки на заклинаниях школы Воды.</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
+	booklearn_spell22: {id:'booklearn_spell22',category:'books',slot:'wbook',width:40,height:25,caption:'Ледяное Сердце (заклинание)',
+    description:'<i>При использовании убирает текущие задержки на заклинаниях школы Воды.</i><br />Обучает приему: <b>Ледяное Сердце</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
 		common: {weight:1,price:25,durability:1,maxitems:1},
 		required: {intellect:35,level:8,watermagicskill:8}
 	},
-	booklearn_spell23: {id:'booklearn_spell23',category:'books',slot:'wbook',width:40,height:25,caption:'Чистота Воды (заклинание)',description:'<i>Снимает один негативный эффект магии или отравления.</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
+	booklearn_spell23: {id:'booklearn_spell23',category:'books',slot:'wbook',width:40,height:25,caption:'Чистота Воды (заклинание)',
+    specification: '<i>Снимает один негативный эффект магии или отравления.</i><br />Обучает приему: <b>Чистота Воды</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:2}}}},
 		common: {weight:1,price:25,durability:1,maxitems:1},
 		required: {intellect:35,level:8,watermagicskill:8}
 	},
-	booklearn_spell24: {id:'booklearn_spell24',category:'books',slot:'wbook',width:40,height:25,caption:'Переохлаждение (заклинание)',description:'<i>Уменьшает эффекты лечения на цели на 10%. Можно применить на одну цель до 5 раз.</i>',fixless:true,binding:'bop',requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:3}}}},
+	booklearn_spell24: {id:'booklearn_spell24',category:'books',slot:'wbook',width:40,height:25,caption:'Переохлаждение (заклинание)',
+    specification: '<i>Уменьшает эффекты лечения на цели на 10%. Можно применить на одну цель до 5 раз.</i><br />Обучает приему: <b>Переохлаждение</b>',fixless:true,binding:'bop',
+    requireditems:{bshop:{exchanger:'bshop', items: {mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:3}}}},
 		common: {weight:1,price:45,durability:1,maxitems:1},
 		required: {intellect:75,level:9,watermagicskill:9}
 	},
@@ -14269,7 +14291,7 @@ var dressMiners = {
 	};
 var dressExchangePoints = {
 	shop: {id: 'shop', caption: 'Государственные Магазины', description: 'Государственные магазины городов БК'},
-	bshop: {id: 'bshop', caption: 'Книжный Магазин', description: 'Книжный Магазин Capital City'},
+	bshop: {id: 'bshop', caption: 'Книжный Магазин', description: 'Книжный Магазин. Большая торговая улица, Capital City'},
 	nyshop: {id: 'nyshop', caption: 'Новогодние Магазины', description: 'Новогодниие магазины городов БК'},
 	baltar: {id: 'baltar', caption: 'Алтарь Крови', description: 'Алтарь Крови. Страшилкина улица, Devils City'},
 	ks_cap: {id: 'ks_cap', caption: 'Рыцарский Магазин Capital City', description: 'Рыцарский магазин ПТП. Capital City'},

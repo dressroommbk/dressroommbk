@@ -11454,7 +11454,7 @@ function onChooseTrick_InCat(trickNumber, catno)
 	var ftricks = getFilteredTricks(state, catno);
 	var menuHtml = format('<b>{0}</b>', trickCategories[catno].caption);
 	menuHtml += '<table cellspacing="0" width="' + tableWidth + '" cellpadding="0" border="0"><tr><td>';
-	menuHtml += '<table style="table-layout:fixed;" cellspacing="0" width="' + tableWidth + '" cellpadding="0" border="0"><tr>';
+	menuHtml += '<table style="table-layout:fixed;" cellspacing="1" width="' + tableWidth + '" cellpadding="1" border="0"><tr>';
 	for (var i = 0; i < ftricks.length; i++)
 	{
 		var onclick = format("hideMenu(); onWearTrick({1}, '{0}'); return false", ftricks[i].name, trickNumber);

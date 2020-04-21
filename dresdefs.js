@@ -308,7 +308,8 @@ var localizer =
 	unaddStats: 'Снять статы',
 	opt_choices: 'Варианты действия',
 	unRune: 'Снять руну',
-	wasRuned: 'Наложена руна'
+	wasRuned: 'Наложена руна',
+	specification: 'Описание'
 };
 
 // taken from analyzer3.js script.
@@ -623,12 +624,12 @@ var relativeSpiritConsumers = new Array(
 	);
 
 var absoluteSpiritConsumers = [
-	{id: 'preservation', spirit: 10},
+/*	{id: 'preservation', spirit: 10},
 	{id: 'preservationD', spirit: 10},
 	{id: 'reanimationL', spirit: 10},
 	{id: 'reanimation', spirit: 10},
 	{id: 'reanimation_olditem', spirit: 30},	
-	{id: 'elementalcrit', spirit: 10}
+	{id: 'elementalcrit', spirit: 5}*/
 	];
 
 var alignImages = {
@@ -2021,8 +2022,6 @@ function getObjectDescHtml(state, obj)
 			html += getHtmlOfArmorProp(obj.modify, armorn, getItemPropLabel(armorn));
 		}
 
-
-
 	}
 	if ('properties' in obj)
 	{
@@ -2085,6 +2084,11 @@ function getObjectDescHtml(state, obj)
 	{
 		addinfo += obj.description;
 		addinfo += '<br />';
+	}
+	if ('specification' in obj) {
+		html += '<b>' + localizer.specification + ':</b><br />';
+		html += obj.specification;
+		html += '<br />';
 	}
 	if (('fixless' in obj) && obj.fixless)
 	{

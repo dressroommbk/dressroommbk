@@ -7288,7 +7288,7 @@ function recalcDresserState(state)
 				{
 					if (!(epowerup.modify in knownWeaponModifiersHash))
 					{
-						state.natural[epowerup.modify] += epowerup.v;
+						state.modify[epowerup.modify] += epowerup.v;
 					}
 				}
 			}

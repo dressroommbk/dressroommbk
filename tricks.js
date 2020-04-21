@@ -760,187 +760,258 @@ var tricks = {
 		resources: {},
 		consumes: {mana:200}
 	},
-	wis_fire_burst08: {name: 'wis_fire_burst08', caption: 'Вспышка [8]', description: 'Мгновенно наносит цели урон огнем. Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', school: 'fire',
+	wis_fire_burst08: {name: 'wis_fire_burst08', caption: 'Вспышка [8]', 
+		action: 'Мгновенно наносит цели 43 урона огнем.<br />Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
 		consumes: {mana:70},
-		attack: {damage:33}
+		delay: 8,
+		attack: {damage:43}
 	},
-	wis_fire_burst09: {name: 'wis_fire_burst09', caption: 'Вспышка [9]', description: 'Мгновенно наносит цели урон огнем. Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', iname: 'wis_fire_burst08', school: 'fire',
+	wis_fire_burst09: {name: 'wis_fire_burst09', caption: 'Вспышка [9]', 
+		action: 'Мгновенно наносит цели 51 урона огнем.<br />Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', iname: 'wis_fire_burst08', school: 'fire',
 		required: {level:9,intellect:60,firemagicskill:9},
 		consumes: {mana:84},
-		attack: {damage:39}
+		delay: 8,
+		attack: {damage:51}
 	},
-	wis_fire_burst10: {name: 'wis_fire_burst10', caption: 'Вспышка [10]', description: 'Мгновенно наносит цели урон огнем. Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', iname: 'wis_fire_burst08', school: 'fire',
+	wis_fire_burst10: {name: 'wis_fire_burst10', caption: 'Вспышка [10]', 
+		action: 'Мгновенно наносит цели 62 урона огнем.<br />Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', iname: 'wis_fire_burst08', school: 'fire',
 		required: {level:10,intellect:75,firemagicskill:10},
 		consumes: {mana:101},
-		attack: {damage:47}
+		delay: 8,
+		attack: {damage:62}
 	},
-	wis_fire_burst11: {name: 'wis_fire_burst11', caption: 'Вспышка [11]', description: 'Мгновенно наносит цели урон огнем. Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', iname: 'wis_fire_burst08', school: 'fire',
+	wis_fire_burst11: {name: 'wis_fire_burst11', caption: 'Вспышка [11]', 
+		action: 'Мгновенно наносит цели 75 урона огнем.<br />Урон увеличен на 5% за каждую Цель Огня присутствующую на жертве.', iname: 'wis_fire_burst08', school: 'fire',
 		required: {level:11,intellect:100,firemagicskill:11},
 		consumes: {mana:121},
-		attack: {damage:57}
+		delay: 8,
+		attack: {damage:75}
 	},
-	wis_fire_heal05: {name: 'wis_fire_heal05', caption: 'Тепло Жизни [5]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal05: {name: 'wis_fire_heal05', caption: 'Тепло Жизни [5]', 
+		action: 'Исцеляет цель на 49-55НР магией огня.<br />Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:5,intellect:20,firemagicskill:5},
 		resources: {hp:1},
 		consumes: {mana:40},
-		healing: {minhitpoints:37,maxhitpoints:42}
+		delay: 4,
+		healing: {minhitpoints:49,maxhitpoints:55}
 	},
-	wis_fire_heal06: {name: 'wis_fire_heal06', caption: 'Тепло Жизни [6]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal06: {name: 'wis_fire_heal06', caption: 'Тепло Жизни [6]', 
+		action: 'Исцеляет цель на 58-67НР магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:6,intellect:30,firemagicskill:6},
 		resources: {hp:1},
 		consumes: {mana:60},
-		healing: {minhitpoints:44,maxhitpoints:51}
+		delay: 4,
+		healing: {minhitpoints:58,maxhitpoints:67}
 	},
-	wis_fire_heal07: {name: 'wis_fire_heal07', caption: 'Тепло Жизни [7]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal07: {name: 'wis_fire_heal07', caption: 'Тепло Жизни [7]', 
+		action: 'Исцеляет цель на 70-81НР магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
 		resources: {hp:1},
 		consumes: {mana:91},
-		healing: {minhitpoints:53,maxhitpoints:61}
+		delay: 4,
+		healing: {minhitpoints:70,maxhitpoints:81}
 	},
-	wis_fire_heal08: {name: 'wis_fire_heal08', caption: 'Тепло Жизни [8]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal08: {name: 'wis_fire_heal08', caption: 'Тепло Жизни [8]', 
+		action: 'Исцеляет цель на 85-97НР магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
 		resources: {hp:1},
 		consumes: {mana:109},
-		healing: {minhitpoints:64,maxhitpoints:73}
+		delay: 4,
+		healing: {minhitpoints:85,maxhitpoints:97}
 	},
-	wis_fire_heal09: {name: 'wis_fire_heal09', caption: 'Тепло Жизни [9]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal09: {name: 'wis_fire_heal09', caption: 'Тепло Жизни [9]', 
+		action: 'Исцеляет цель на 102-117НР магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:9,intellect:60,firemagicskill:9},
 		resources: {hp:1},
 		consumes: {mana:131},
-		healing: {minhitpoints:77,maxhitpoints:88}
+		delay: 4,
+		healing: {minhitpoints:102,maxhitpoints:117}
 	},
-	wis_fire_heal10: {name: 'wis_fire_heal10', caption: 'Тепло Жизни [10]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal10: {name: 'wis_fire_heal10', caption: 'Тепло Жизни [10]', 
+		action: 'Исцеляет цель на 122-139НР магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:10,intellect:75,firemagicskill:10},
 		resources: {hp:1},
 		consumes: {mana:157},
-		healing: {minhitpoints:92,maxhitpoints:105}
+		delay: 4,
+		healing: {minhitpoints:122,maxhitpoints:139}
 	},
-	wis_fire_heal11: {name: 'wis_fire_heal11', caption: 'Тепло Жизни [11]', description: 'Исцеляет цель магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
+	wis_fire_heal11: {name: 'wis_fire_heal11', caption: 'Тепло Жизни [11]', 
+		action: 'Исцеляет цель на 147-168НР магией огня. Эффект выше при применении на себя.', iname: 'wis_fire_heal08', school: 'fire',
 		required: {level:11,intellect:100,firemagicskill:11},
 		resources: {hp:1},
 		consumes: {mana:188},
 		healing: {minhitpoints:111,maxhitpoints:127}
 	},
-	wis_fire_flamming06: {name: 'wis_fire_flamming06', caption: 'Пожирающее Пламя [6]', description: 'Наносит цели урон огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
+	wis_fire_flamming06: {name: 'wis_fire_flamming06', caption: 'Пожирающее Пламя [6]', spendsMove: true,
+		action: 'Наносит цели 53 урона огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
 		required: {level:6,intellect:30,firemagicskill:6},
 		consumes: {mana:38},
-		attack: {damage:40,nextturns:5}
+		delay: 8,
+		attack: {damage:53,nextturns:5}
 	},
-	wis_fire_flamming07: {name: 'wis_fire_flamming07', caption: 'Пожирающее Пламя [7]', description: 'Наносит цели урон огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
+	wis_fire_flamming07: {name: 'wis_fire_flamming07', caption: 'Пожирающее Пламя [7]', spendsMove: true,
+		action: 'Наносит цели 63 урона огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
 		consumes: {mana:57},
-		attack: {damage:48,nextturns:5}
+		delay: 8,
+		attack: {damage:63,nextturns:5}
 	},
-	wis_fire_flamming08: {name: 'wis_fire_flamming08', caption: 'Пожирающее Пламя [8]', description: 'Наносит цели урон огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
+	wis_fire_flamming08: {name: 'wis_fire_flamming08', caption: 'Пожирающее Пламя [8]', spendsMove: true,
+		action: 'Наносит цели 77 урона огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
 		consumes: {mana:68},
-		attack: {damage:58,nextturns:5}
+		delay: 8,
+		attack: {damage:77,nextturns:5}
 	},
-	wis_fire_flamming09: {name: 'wis_fire_flamming09', caption: 'Пожирающее Пламя [9]', description: 'Наносит цели урон огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
+	wis_fire_flamming09: {name: 'wis_fire_flamming09', caption: 'Пожирающее Пламя [9]', spendsMove: true,
+		action: 'Наносит цели 91 урона огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
 		required: {level:9,intellect:60,firemagicskill:9},
 		consumes: {mana:82},
-		attack: {damage:69,nextturns:5}
+		delay: 8,
+		attack: {damage:91,nextturns:5}
 	},
-	wis_fire_flamming10: {name: 'wis_fire_flamming10', caption: 'Пожирающее Пламя [10]', description: 'Наносит цели урон огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
+	wis_fire_flamming10: {name: 'wis_fire_flamming10', caption: 'Пожирающее Пламя [10]', spendsMove: true,
+		action: 'Наносит цели 110 урона огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
 		required: {level:10,intellect:75,firemagicskill:10},
 		consumes: {mana:98},
-		attack: {damage:83,nextturns:5}
+		delay: 8,
+		attack: {damage:110,nextturns:5}
 	},
-	wis_fire_flamming11: {name: 'wis_fire_flamming11', caption: 'Пожирающее Пламя [11]', description: 'Наносит цели урон огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
+	wis_fire_flamming11: {name: 'wis_fire_flamming11', caption: 'Пожирающее Пламя [11]', spendsMove: true,
+		action: 'Наносит цели 133 урона огнем за пять ходов', iname: 'wis_fire_flamming08', school: 'fire',
 		required: {level:11,intellect:100,firemagicskill:11},
 		consumes: {mana:118},
-		attack: {damage:100,nextturns:5}
+		delay: 8,
+		attack: {damage:133,nextturns:5}
 	},
-	wis_fire_incenerate04: {name: 'wis_fire_incenerate04', caption: 'Испепеление [4]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate04: {name: 'wis_fire_incenerate04', caption: 'Испепеление [4]', spendsMove: true,
+		action: 'Наносит цели 27 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:4,intellect:15,firemagicskill:4},
 		consumes: {mana:15},
-		attack: {damage:21}
+		delay: 1,
+		attack: {damage:27}
 	},
-	wis_fire_incenerate05: {name: 'wis_fire_incenerate05', caption: 'Испепеление [5]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate05: {name: 'wis_fire_incenerate05', caption: 'Испепеление [5]', spendsMove: true,
+		action: 'Наносит цели 33 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:5,intellect:20,firemagicskill:5},
 		consumes: {mana:23},
-		attack: {damage:25}
+		delay: 1,
+		attack: {damage:33}
 	},
-	wis_fire_incenerate06: {name: 'wis_fire_incenerate06', caption: 'Испепеление [6]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate06: {name: 'wis_fire_incenerate06', caption: 'Испепеление [6]', spendsMove: true,
+		action: 'Наносит цели 39 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:6,intellect:30,firemagicskill:6},
 		consumes: {mana:34},
-		attack: {damage:30}
+		delay: 1,
+		attack: {damage:39}
 	},
-	wis_fire_incenerate07: {name: 'wis_fire_incenerate07', caption: 'Испепеление [7]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate07: {name: 'wis_fire_incenerate07', caption: 'Испепеление [7]', spendsMove: true,
+		action: 'Наносит цели 47 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
 		consumes: {mana:52},
-		attack: {damage:36}
+		delay: 1,
+		attack: {damage:47}
 	},
-	wis_fire_incenerate08: {name: 'wis_fire_incenerate08', caption: 'Испепеление [8]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate08: {name: 'wis_fire_incenerate08', caption: 'Испепеление [8]', spendsMove: true,
+		action: 'Наносит цели 58 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
 		consumes: {mana:62},
-		attack: {damage:44}
+		delay: 1,
+		attack: {damage:58}
 	},
-	wis_fire_incenerate09: {name: 'wis_fire_incenerate09', caption: 'Испепеление [9]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate09: {name: 'wis_fire_incenerate09', caption: 'Испепеление [9]', spendsMove: true,
+		action: 'Наносит цели 69 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:9,intellect:60,firemagicskill:9},
 		consumes: {mana:74},
-		attack: {damage:52}
+		delay: 1,
+		attack: {damage:69}
 	},
-	wis_fire_incenerate10: {name: 'wis_fire_incenerate10', caption: 'Испепеление [10]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate10: {name: 'wis_fire_incenerate10', caption: 'Испепеление [10]', spendsMove: true,
+		action: 'Наносит цели 83 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:10,intellect:75,firemagicskill:10},
 		consumes: {mana:89},
-		attack: {damage:63}
+		delay: 1,
+		attack: {damage:83}
 	},
-	wis_fire_incenerate11: {name: 'wis_fire_incenerate11', caption: 'Испепеление [11]', description: 'Наносит цели урон огнем', iname: 'wis_fire_incenerate08', school: 'fire',
+	wis_fire_incenerate11: {name: 'wis_fire_incenerate11', caption: 'Испепеление [11]', spendsMove: true,
+		action: 'Наносит цели 101 урона огнем', iname: 'wis_fire_incenerate08', school: 'fire',
 		required: {level:11,intellect:100,firemagicskill:11},
-		consumes: {mana:107},
-		attack: {damage:76}
+		consumes: {mana:94},
+		delay: 1,
+		attack: {damage:101}
 	},
-	wis_fire_mark: {name: 'wis_fire_mark', caption: 'Цель Огня', description: 'Уменьшает сопротивляемость воздействию Магии Огня. Можно применить на одну цель до 5 раз.', school: 'fire',
+	wis_fire_mark: {name: 'wis_fire_mark', caption: 'Цель Огня', 
+		action: 'Уменьшает сопротивляемость воздействию Магии Огня. Можно применить на одну цель до 5 раз.', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
 		resources: {},
+		delay: 1,
 		consumes: {mana:20,spiritlevel:0.5}
 	},
-	wis_fire_sign: {name: 'wis_fire_sign', caption: 'Знак Огня', description: 'Маг получает +n мф. мощности магии стихий. Заклинание требует 10 маны каждый ход.', school: 'fire',
+	wis_fire_sign: {name: 'wis_fire_sign', caption: 'Знак Огня', 
+		action: 'Маг получает 2*(ваш уровень) мф. мощности магии стихий. Заклинание требует 10 маны каждый ход.', school: 'fire',
 		required: {level:4,intellect:25,firemagicskill:2},
 		resources: {},
-		consumes: {mana:100,spiritlevel:1}
+		consumes: {mana:110,spiritlevel:1}
 	},
-	wis_fire_flameshock: {name: 'wis_fire_flameshock', caption: 'Пылающий Ужас', description: 'Высвобождает энергию вашего заклятия Пожирающее Пламя на цели. Цель получает урон огнем и не может использовать приемы или набирать очки тактики 2 хода.', school: 'fire',
+	wis_fire_flameshock: {name: 'wis_fire_flameshock', caption: 'Пылающий Ужас', 
+		action: 'Высвобождает энергию вашего заклятия <img src="images/wis_fire_flamming08.gif" width="40" height="25" border="0"> <b>Пожирающее Пламя</b> на цели.<br />Цель получает 75% оставшегося урона Пожирающего Пламени<br />и не может использовать приемы или набирать очки тактики 2 хода.', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
-		consumes: {mana:200}
+		delay: 10,
+		consumes: {mana:83}
 	},
-	wis_fire_flamedestroy: {name: 'wis_fire_flamedestroy', caption: 'Пылающий взрыв', description: 'Высвобождает энергию вашего заклятия  Пожирающее Пламя на цели.Цель и еще 4 случайных цели получает 33% оставшегося урона Пожирающего Пламени магией Огня.', school: 'fire',
+	wis_fire_flamedestroy: {name: 'wis_fire_flamedestroy', caption: 'Пылающий взрыв', 
+		action: 'Высвобождает энергию вашего заклятия <img src="images/wis_fire_flamming08.gif" width="40" height="25" border="0"> <b>Пожирающее Пламя</b> на цели.<br />Цель и еще 4 случайных цели получает 33% оставшегося урона Пожирающего Пламени магией Огня.', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
 		consumes: {mana:83}
 	},
-	wis_fire_flamedeath: {name: 'wis_fire_flamedeath', caption: 'Пылающая смерть', description: 'Высвобождает энергию вашего заклятия  Пожирающее Пламя на цели, если её уровень жизни менее 33%.Цель получает 125% оставшегося урона Пожирающего пламени.', school: 'fire',
+	wis_fire_flamedeath: {name: 'wis_fire_flamedeath', caption: 'Пылающая смерть', 
+		action: 'Высвобождает энергию вашего заклятия <img src="images/wis_fire_flamming08.gif" width="40" height="25" border="0"> <b>Пожирающее Пламя</b> на цели,<br />если её уровень жизни менее 33%.<br />Цель получает 150% оставшегося урона Пожирающего пламени.', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
+		delay: 5,		
 		consumes: {mana:83}
 	},
-	wis_fire_boost: {name: 'wis_fire_boost', caption: 'Разогрев', description: 'Ваше следующее огненное заклинание получит +100 мф. мощности Магии Огня.Не подвержен шоку.', school: 'fire',
+	wis_fire_boost: {name: 'wis_fire_boost', caption: 'Разогрев', spendsMove: true,
+		action: 'Ваше следующее огненное заклинание получит +100 мф. мощности Магии Огня. Прием не подвержен шоку.', school: 'fire',
 		required: {level:7,intellect:25,firemagicskill:7},
+		delay: 5,
 		consumes: {mana:25}
 	},
-	wis_fire_sacrifice: {name: 'wis_fire_sacrifice', caption: 'Жертва огню', description: 'Вы теряете 10%НР, но восстанавливаете 20% маны (Для использования у вас должно быть не меньше 10%НР).', school: 'fire',
+	wis_fire_sacrifice: {name: 'wis_fire_sacrifice', caption: 'Жертва огню', 
+		action: 'Вы теряете 10%НР, но восстанавливаете 20% маны.', school: 'fire',
 		required: {level:7,intellect:40,firemagicskill:7},
-		consumes: {mana:4}
+		resources: {hp:5},
+		delay: 5,
+		consumes: {mana:5}
 	},
-	wis_fire_hiddenpower: {name: 'wis_fire_hiddenpower', caption: 'Скрытое пламя', description: 'Если уровень вашей жизни ниже 33%, то при использовании убирает текущие задержки на заклинаниях школы Огня.Один раз за бой.', school: 'fire',
+	wis_fire_hiddenpower: {name: 'wis_fire_hiddenpower', caption: 'Скрытое пламя', 
+		action: 'Если уровень вашей жизни ниже 33%, то при использовании убирает текущие задержки на заклинаниях школы Огня.<br />Один раз за бой.', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
 		consumes: {mana:83}
 	},
-	wis_fire_shield: {name: 'wis_fire_shield', caption: 'Огненный щит', description: 'Вы получаете на 50% меньше урона 2 последующих размена, полученный урон восстанавливает вашу ману.Не подвержен шоку.', school: 'fire',
+	wis_fire_shield: {name: 'wis_fire_shield', caption: 'Огненный щит', 
+		action: 'Вы получаете на 50% меньше урона 2 последующих размена,<br />полученный урон восстанавливает вашу ману.<br />Не подвержен шоку.', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
-		consumes: {mana:133}
+		delay: 8,
+		consumes: {mana:150}
 	},
-	wis_fire_flametongue08: {name: 'wis_fire_flametongue08', caption: 'Язык пламени [8]', description: 'Наносит цели 5% урона магией Огня от её Максимального уровня жизни.И ещё +2% за каждый уровень Цели Огня.Заклинание не может нанести более 300 единиц урона, не наносит критический урон. ', iname: 'wis_fire_flametongue', school: 'fire',
+	wis_fire_flametongue08: {name: 'wis_fire_flametongue08', caption: 'Язык пламени [8]', spendsMove: true,
+		action: 'Наносит цели 5% урона магией Огня от её Максимального уровня жизни<br />и ещё +2% за каждый уровень Цели Огня.<br />Заклинание не может нанести более 200 единиц урона.', iname: 'wis_fire_flametongue', school: 'fire',
 		required: {level:8,intellect:50,firemagicskill:8},
-		consumes: {mana:109}
+		delay: 3,
+		consumes: {mana:156}
 	},
-	wis_fire_flametongue09: {name: 'wis_fire_flametongue09', caption: 'Язык пламени [9]', description: 'Наносит цели 5% урона магией Огня от её Максимального уровня жизни.И ещё +2% за каждый уровень Цели Огня.Заклинание не может нанести более 400 единиц урона, не наносит критический урон. ', iname: 'wis_fire_flametongue', school: 'fire',
+	wis_fire_flametongue09: {name: 'wis_fire_flametongue09', caption: 'Язык пламени [9]', spendsMove: true,
+	 	action: 'Наносит цели 5% урона магией Огня от её Максимального уровня жизни<br />и ещё +2% за каждый уровень Цели Огня.<br />Заклинание не может нанести более 250 единиц урона.', iname: 'wis_fire_flametongue', school: 'fire',
 		required: {level:9,intellect:60,firemagicskill:9},
-		consumes: {mana:131}
+		delay: 3,
+		consumes: {mana:187}
 	},
-	wis_fire_flametongue10: {name: 'wis_fire_flametongue10', caption: 'Язык пламени [10]', description: 'Наносит цели 5% урона магией Огня от её Максимального уровня жизни.И ещё +2% за каждый уровень Цели Огня.Заклинание не может нанести более 500 единиц урона, не наносит критический урон. ', iname: 'wis_fire_flametongue', school: 'fire',
+	wis_fire_flametongue10: {name: 'wis_fire_flametongue10', caption: 'Язык пламени [10]', spendsMove: true,
+		action: 'Наносит цели 5% урона магией Огня от её Максимального уровня жизни<br />и ещё +2% за каждый уровень Цели Огня.<br />Заклинание не может нанести более 300 единиц урона.', iname: 'wis_fire_flametongue', school: 'fire',
 		required: {level:10,intellect:75,firemagicskill:10},
-		consumes: {mana:157}
+		delay: 3,
+		consumes: {mana:224}
 	},
 	wis_water_cloud08: {name: 'wis_water_cloud08', caption: 'Ядовитое Облако [8]', description: 'Наносит 3-5 целям урон ядом за пять ходов', iname: 'wis_water_cloud08', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},

@@ -42,6 +42,7 @@ var localizer =
 	fitStats: 'Подогнать статы и умения под комплект',
 	itemComsumesGroup: 'Потребление',
 	itemRequiredGroup: 'Требования',
+	minItemRequiredGroup: 'Минимальные требования:',
 	itemModifyGroup: 'Действует на:',
 	itemPropertiesGroup: 'Свойства предмета',
 	itemAddInfoGroup: 'Дополнительная информация',
@@ -309,7 +310,9 @@ var localizer =
 	opt_choices: 'Варианты действия',
 	unRune: 'Снять руну',
 	wasRuned: 'Наложена руна',
-	specification: 'Описание'
+	specification: 'Описание',
+	isMagicTrick: 'Магический приём. Необходимо менее 40 в параметрах Сила, Ловксть и Интуиция',
+	spendsMove: 'Прием тратит ход'
 };
 
 // taken from analyzer3.js script.
@@ -1650,6 +1653,10 @@ function getStrengtheningById(strengtheningid)
 	return dressStrengthenings[strengtheningid];
 }
 
+function isMagicTrick(obj) {
+	return 'school' in obj && ['air'].indexOf(obj.school) != -1;
+}
+
 function getObjectDescHtml(state, obj)
 {
 	var i;
@@ -1877,9 +1884,27 @@ function getObjectDescHtml(state, obj)
 		html += localizer.itemComsumesGroup.bold() + '<br />';
 		html += comsumationHtml;
 	}
+
+	if (isMagicTrick(obj)) {
+		if ('consumes' in obj && 'mana' in obj.consumes) {
+			html += 'Расход маны: ' + obj.consumes.mana + '<br />';
+		}
+		if ('delay' in obj) {
+			html += 'Задержка: ' + obj.delay + '<br />';
+		}
+		if ('spendsMove' in obj && obj.spendsMove === true) {
+			html += '• ' + localizer.spendsMove;
+		}
+		html += '<br /><br />';
+	}
+
 	if ('required' in obj)
 	{
-		html += localizer.itemRequiredGroup.bold() + '<br />';
+		if (isMagicTrick(obj)) {
+			html += localizer.minItemRequiredGroup.bold() + '<br />';
+		} else {
+			html += localizer.itemRequiredGroup.bold() + '<br />';
+		}		
 		if ('sex' in obj.required)
 		{
    			var statesex = state.sex ? 'female' : 'male';
@@ -1981,7 +2006,10 @@ function getObjectDescHtml(state, obj)
 			}
 			html += '<br />';
 		}
-	}
+		if (isMagicTrick(obj)) {
+			html += localizer.isMagicTrick + '<br />';
+		}
+	}	
 	if ('modify' in obj)
 	{
 		html += localizer.itemModifyGroup.bold() + '<br />';
@@ -2089,6 +2117,9 @@ function getObjectDescHtml(state, obj)
 		html += '<b>' + localizer.specification + ':</b><br />';
 		html += obj.specification;
 		html += '<br />';
+	}
+	if ('action' in obj) {
+		html += '<br />' + obj.action;
 	}
 	if (('fixless' in obj) && obj.fixless)
 	{

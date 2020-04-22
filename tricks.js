@@ -1106,159 +1106,235 @@ var tricks = {
 		delay: 3,
 		consumes: {mana:224}
 	},
-	wis_water_cloud08: {name: 'wis_water_cloud08', caption: 'Ядовитое Облако [8]', description: 'Наносит 3-5 целям урон ядом за пять ходов', iname: 'wis_water_cloud08', school: 'water',
+	wis_water_cloud08: {name: 'wis_water_cloud08', caption: 'Ядовитое Облако [8]', spendsMove: true,
+		action: 'Наносит 3-5 целям 35 урона ядом за пять ходов.', iname: 'wis_water_cloud08', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
 		consumes: {mana:156},
-		attack: {mincount:3,maxcount:5,nextdamage:27,nextturns:5}
+		delay: 10,
+		attack: {mincount:3,maxcount:5,nextdamage:35,nextturns:5}
 	},
-	wis_water_cloud09: {name: 'wis_water_cloud09', caption: 'Ядовитое Облако [9]', description: 'Наносит 3-5 целям урон ядом за пять ходов', iname: 'wis_water_cloud08', school: 'water',
+	wis_water_cloud09: {name: 'wis_water_cloud09', caption: 'Ядовитое Облако [9]', spendsMove: true,
+		action: 'Наносит 3-5 целям 43 урона ядом за пять ходов.', iname: 'wis_water_cloud08', school: 'water',
 		required: {level:9,intellect:60,watermagicskill:9},
-		consumes: {mana:1887},
-		attack: {mincount:3,maxcount:5,nextdamage:33,nextturns:5}
+		consumes: {mana:187},
+		delay: 10,
+		attack: {mincount:3,maxcount:5,nextdamage:43,nextturns:5}
 	},
-	wis_water_cloud10: {name: 'wis_water_cloud10', caption: 'Ядовитое Облако [10]', description: 'Наносит 3-5 целям урон ядом за пять ходов', iname: 'wis_water_cloud08', school: 'water',
+	wis_water_cloud10: {name: 'wis_water_cloud10', caption: 'Ядовитое Облако [10]', spendsMove: true,
+		action: 'Наносит 3-5 целям 51 урона ядом за пять ходов.', iname: 'wis_water_cloud08', school: 'water',
 		required: {level:10,intellect:75,watermagicskill:10},
 		consumes: {mana:224},
-		attack: {mincount:3,maxcount:5,nextdamage:39,nextturns:5}
+		delay: 10,
+		attack: {mincount:3,maxcount:5,nextdamage:51,nextturns:5}
 	},
-	wis_water_cloud11: {name: 'wis_water_cloud11', caption: 'Ядовитое Облако [11]', description: 'Наносит 3-5 целям урон ядом за пять ходов', iname: 'wis_water_cloud08', school: 'water',
+	wis_water_cloud11: {name: 'wis_water_cloud11', caption: 'Ядовитое Облако [11]', spendsMove: true,
+		action: 'Наносит 3-5 целям 62 урона ядом за пять ходов.', iname: 'wis_water_cloud08', school: 'water',
 		required: {level:11,intellect:100,watermagicskill:11},
 		consumes: {mana:269},
-		attack: {mincount:3,maxcount:5,nextdamage:47,nextturns:5}
+		delay: 10,
+		attack: {mincount:3,maxcount:5,nextdamage:62,nextturns:5}
 	},
-	wis_water_frost04: {name: 'wis_water_frost04', caption: 'Оледенение [4]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost04: {name: 'wis_water_frost04', caption: 'Оледенение [4]', spendsMove: true,
+		action: 'Мгновенно наносит цели 25 урона и ещё 3 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:4,intellect:15,watermagicskill:4},
 		consumes: {mana:17},
+		delay: 1,
 		attack: {damage:19,nextdamage:3,nextturns:4}
 	},
-	wis_water_frost05: {name: 'wis_water_frost05', caption: 'Оледенение [5]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost05: {name: 'wis_water_frost05', caption: 'Оледенение [5]', spendsMove: true,
+		action: 'Мгновенно наносит цели 30 урона и ещё 3 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:5,intellect:20,watermagicskill:5},
 		consumes: {mana:26},
-		attack: {damage:23,nextdamage:3,nextturns:4}
+		delay: 1,
+		attack: {damage:30,nextdamage:3,nextturns:4}
 	},
-	wis_water_frost06: {name: 'wis_water_frost06', caption: 'Оледенение [6]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost06: {name: 'wis_water_frost06', caption: 'Оледенение [6]', spendsMove: true,
+		action: 'Мгновенно наносит цели 35 урона и ещё 5 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:6,intellect:30,watermagicskill:6},
 		consumes: {mana:39},
-		attack: {damage:27,nextdamage:4,nextturns:4}
+		delay: 1,
+		attack: {damage:35,nextdamage:5,nextturns:3}
 	},
-	wis_water_frost07: {name: 'wis_water_frost07', caption: 'Оледенение [7]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost07: {name: 'wis_water_frost07', caption: 'Оледенение [7]', spendsMove: true,
+		action: 'Мгновенно наносит цели 43 урона и ещё 6 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
 		consumes: {mana:58},
-		attack: {damage:33,nextdamage:26,nextturns:4}
+		delay: 1,
+		attack: {damage:43,nextdamage:6,nextturns:4}
 	},
-	wis_water_frost08: {name: 'wis_water_frost08', caption: 'Оледенение [8]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', school: 'water',
+	wis_water_frost08: {name: 'wis_water_frost08', caption: 'Оледенение [8]', spendsMove: true,
+		action: 'Мгновенно наносит цели 51 урона и ещё 7 за четыре хода.', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
 		consumes: {mana:70},
-		attack: {damage:39,nextdamage:6,nextturns:4}
+		delay: 1,
+		attack: {damage:51,nextdamage:7,nextturns:4}
 	},
-	wis_water_frost09: {name: 'wis_water_frost09', caption: 'Оледенение [9]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost09: {name: 'wis_water_frost09', caption: 'Оледенение [9]', spendsMove: true,
+		action: 'Мгновенно наносит цели 62 урона и ещё 9 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:9,intellect:60,watermagicskill:9},
 		consumes: {mana:84},
-		attack: {damage:47,nextdamage:7,nextturns:4}
+		delay: 1,
+		attack: {damage:62,nextdamage:9,nextturns:4}
 	},
-	wis_water_frost10: {name: 'wis_water_frost10', caption: 'Оледенение [10]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost10: {name: 'wis_water_frost10', caption: 'Оледенение [10]', spendsMove: true,
+		action: 'Мгновенно наносит цели 75 урона и ещё 11 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:10,intellect:75,watermagicskill:10},
 		consumes: {mana:101},
-		attack: {damage:57,nextdamage:9,nextturns:4}
+		delay: 1,
+		attack: {damage:75,nextdamage:11,nextturns:4}
 	},
-	wis_water_frost11: {name: 'wis_water_frost11', caption: 'Оледенение [11]', description: 'Мгновенно наносит цели урон холодом и ещё столько же за четыре хода', iname: 'wis_water_frost08', school: 'water',
+	wis_water_frost11: {name: 'wis_water_frost11', caption: 'Оледенение [11]', spendsMove: true,
+		action: 'Мгновенно наносит цели 90 урона и ещё 14 за четыре хода.', iname: 'wis_water_frost08', school: 'water',
 		required: {level:11,intellect:100,watermagicskill:11},
 		consumes: {mana:121},
-		attack: {damage:68,nextdamage:11,nextturns:4}
+		delay: 1,
+		attack: {damage:90,nextdamage:14,nextturns:4}
 	},
-	wis_water_poison06: {name: 'wis_water_poison06', caption: 'Отравление [6]', description: 'Наносит цели урон ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
+	wis_water_poison06: {name: 'wis_water_poison06', caption: 'Отравление [6]', 
+		action: 'Наносит цели 81 урона ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
 		required: {level:6,intellect:30,watermagicskill:6},
 		consumes: {mana:34},
-		attack: {nextdamage:61,nextturns:10}
+		delay: 3,
+		attack: {nextdamage:81,nextturns:10}
 	},
-	wis_water_poison07: {name: 'wis_water_poison07', caption: 'Отравление [7]', description: 'Наносит цели урон ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
+	wis_water_poison07: {name: 'wis_water_poison07', caption: 'Отравление [7]', 
+		action: 'Наносит цели 97 урона ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
 		consumes: {mana:52},
-		attack: {nextdamage:73,nextturns:10}
+		delay: 3,
+		attack: {nextdamage:97,nextturns:10}
 	},
-	wis_water_poison08: {name: 'wis_water_poison08', caption: 'Отравление [8]', description: 'Наносит цели урон ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
+	wis_water_poison08: {name: 'wis_water_poison08', caption: 'Отравление [8]', 
+		action: 'Наносит цели 117 урона ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
 		consumes: {mana:62},
-		attack: {nextdamage:88,nextturns:10}
+		delay: 3,
+		attack: {nextdamage:117,nextturns:10}
 	},
-	wis_water_poison09: {name: 'wis_water_poison09', caption: 'Отравление [9]', description: 'Наносит цели урон ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
+	wis_water_poison09: {name: 'wis_water_poison09', caption: 'Отравление [9]', 
+		action: 'Наносит цели 139 урона ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
 		required: {level:9,intellect:60,watermagicskill:9},
 		consumes: {mana:74},
-		attack: {nextdamage:105,nextturns:10}
+		delay: 3,
+		attack: {nextdamage:139,nextturns:10}
 	},
-	wis_water_poison10: {name: 'wis_water_poison10', caption: 'Отравление [10]', description: 'Наносит цели урон ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
+	wis_water_poison10: {name: 'wis_water_poison10', caption: 'Отравление [10]', 
+		action: 'Наносит цели 168 урона ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
 		required: {level:10,intellect:75,watermagicskill:10},
 		consumes: {mana:89},
-		attack: {nextdamage:127,nextturns:10}
+		delay: 3,
+		attack: {nextdamage:168,nextturns:10}
 	},
-	wis_water_poison11: {name: 'wis_water_poison11', caption: 'Отравление [11]', description: 'Наносит цели урон ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
+	wis_water_poison11: {name: 'wis_water_poison11', caption: 'Отравление [11]', 
+		action: 'Наносит цели 202 урона ядом за десять ходов. Заклинание требует ману каждый ход.', iname: 'wis_water_poison08', school: 'water',
 		required: {level:11,intellect:100,watermagicskill:11},
 		consumes: {mana:107},
-		attack: {nextdamage:152,nextturns:10}
+		delay: 3,
+		attack: {nextdamage:202,nextturns:10}
 	},
-	wis_water_regen05: {name: 'wis_water_regen05', caption: 'Регенерация [5]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen05: {name: 'wis_water_regen05', caption: 'Регенерация [5]', 
+		action: 'Восстанавливает цели 79НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:5,intellect:20,watermagicskill:5},
 		resources: {hp:2},
 		consumes: {mana:28},
-		healing: {nexthitpoints:60,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:79,nextturns:8}
 	},
-	wis_water_regen06: {name: 'wis_water_regen06', caption: 'Регенерация [6]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen06: {name: 'wis_water_regen06', caption: 'Регенерация [6]', 
+		action: 'Восстанавливает цели 95НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:6,intellect:30,watermagicskill:6},
 		resources: {hp:2},
 		consumes: {mana:43},
-		healing: {nexthitpoints:72,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:95,nextturns:8}
 	},
-	wis_water_regen07: {name: 'wis_water_regen07', caption: 'Регенерация [7]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen07: {name: 'wis_water_regen07', caption: 'Регенерация [7]',
+	 	action: 'Восстанавливает цели 115НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
 		resources: {hp:2},
 		consumes: {mana:65},
-		healing: {nexthitpoints:87,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:115,nextturns:8}
 	},
-	wis_water_regen08: {name: 'wis_water_regen08', caption: 'Регенерация [8]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen08: {name: 'wis_water_regen08', caption: 'Регенерация [8]', 
+		action: 'Восстанавливает цели 138НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
 		resources: {hp:2},
 		consumes: {mana:78},
-		healing: {nexthitpoints:104,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:138,nextturns:8}
 	},
-	wis_water_regen09: {name: 'wis_water_regen09', caption: 'Регенерация [9]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen09: {name: 'wis_water_regen09', caption: 'Регенерация [9]', 
+		action: 'Восстанавливает цели 166НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:9,intellect:60,watermagicskill:9},
 		resources: {hp:2},
 		consumes: {mana:93},
-		healing: {nexthitpoints:125,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:166,nextturns:8}
 	},
-	wis_water_regen10: {name: 'wis_water_regen10', caption: 'Регенерация [10]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen10: {name: 'wis_water_regen10', caption: 'Регенерация [10]', 
+		action: 'Восстанавливает цели 200НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:10,intellect:75,watermagicskill:10},
 		resources: {hp:2},
 		consumes: {mana:112},
-		healing: {nexthitpoints:151,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:200,nextturns:8}
 	},
-	wis_water_regen11: {name: 'wis_water_regen11', caption: 'Регенерация [11]', description: 'Восстанавливает цели за  восемь  ходов уровень жизни магией воды. Заклинание требует ману каждый ход.', iname: 'wis_water_regen08', school: 'water',
+	wis_water_regen11: {name: 'wis_water_regen11', caption: 'Регенерация [11]', 
+		action: 'Восстанавливает цели 240НР за восемь ходов магией воды. Заклинание требует ману каждый ход', iname: 'wis_water_regen08', school: 'water',
 		required: {level:11,intellect:100,watermagicskill:11},
 		resources: {hp:2},
 		consumes: {mana:134},
-		healing: {nexthitpoints:181,nextturns:8}
+		delay: 3,
+		healing: {nexthitpoints:240,nextturns:8}
 	},
-	wis_water_mark: {name: 'wis_water_mark', caption: 'Цель Воды', description: 'Уменьшает сопротивляемость воздействию Магии Воды. Можно применить на одну цель до 5 раз.', school: 'water',
+	wis_water_mark: {name: 'wis_water_mark', caption: 'Цель Воды', 
+		action: 'Уменьшает сопротивляемость воздействию Магии Воды.<br />Можно применить на одну цель до 5 раз.', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
 		resources: {},
+		delay: 1,
 		consumes: {mana:20,spiritlevel:0.5}
 	},
-	wis_water_sign: {name: 'wis_water_sign', caption: 'Знак Воды', description: 'Маг получает +n мф. антикрита. Заклинание требует маны каждый ход.', school: 'water',
+	wis_water_sign: {name: 'wis_water_sign', caption: 'Знак Воды', 
+		action: 'Маг получает +50 мф. антикрита (показатель зависит от интеллекта).<br />Заклинание требует маны каждый ход.', school: 'water',
 		required: {level:4,intellect:25,watermagicskill:2},
 		resources: {},
-		consumes: {mana:100,spiritlevel:1}
+		consumes: {mana:110,spiritlevel:1}
 	},
-	wis_water_shield: {name: 'wis_water_shield', caption: 'Иней [7]', description: 'Вы получаете на 25% меньше урона 4 последующих размена.', school: 'water',
+	wis_water_shield7: {name: 'wis_water_shield7', caption: 'Иней [7]', 
+		action: 'Вы получаете на 25% меньше урона 4 последующих размена.', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
-		consumes: {mana:89}
+		resources: {hp: 1},
+		delay: 8,
+		consumes: {mana:100}
 	},
-	wis_water_shield: {name: 'wis_water_shield', caption: 'Иней [8]', description: 'Вы получаете на 25% меньше урона 4 последующих размена, <br>атакующий оружием получает уязвимость к магии воды, не подвержен шоку.', school: 'water',
+	wis_water_shield8: {name: 'wis_water_shield8', caption: 'Иней [8]', 
+		action: 'Вы получаете на 25% меньше урона 4 последующих размена,<br>атакующий оружием получает уязвимость к магии воды.<br />Не подвержен действию шока', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
-		consumes: {mana:133}
+		resources: {hp: 1},
+		delay: 8,
+		consumes: {mana:150}
 	},
-	wis_water_shield: {name: 'wis_water_shield', caption: 'Иней [9]', description: 'Вы получаете на 25% меньше урона 4 последующих размена, <br>атакующий оружием получает уязвимость к магии воды и часть поглощённого урона, не подвержен шоку.', school: 'water',
+	wis_water_shield9: {name: 'wis_water_shield9', caption: 'Иней [9]', 
+		action: 'Вы получаете на 15% меньше урона 4 последующих размена,<br>атакующий оружием получает уязвимость к магии воды<br />и часть поглощённого урона.<br />Не подвержен действию шока', school: 'water',
 		required: {level:9,intellect:60,watermagicskill:9},
-		consumes: {mana:195}
+		resources: {hp: 1},
+		delay: 8,
+		consumes: {mana:220}
+	},
+	wis_water_shield10: {name: 'wis_water_shield10', caption: 'Иней [10]', 
+		action: 'Вы получаете на 20% меньше урона 4 последующих размена,<br>атакующий оружием получает уязвимость к магии воды<br />и часть поглощённого урона.<br />Не подвержен действию шока', school: 'water',
+		required: {level:10,intellect:75,watermagicskill:10},
+		resources: {hp: 1},
+		delay: 8,
+		consumes: {mana:250}
+	},
+	wis_water_shield11: {name: 'wis_water_shield11', caption: 'Иней [11]',
+		action: 'Вы получаете на 25% меньше урона 4 последующих размена,<br>атакующий оружием получает уязвимость к магии воды<br />и часть поглощённого урона.<br />Не подвержен действию шока', school: 'water',
+		required: {level:11,intellect:100,watermagicskill:11},
+		resources: {hp: 1},
+		delay: 8,
+		consumes: {mana:275}
 	},
 	wis_gray_beam: {name: 'wis_gray_beam', caption: 'Силовой луч', description: 'Наносит противнику урон равный значению вашего интеллекта.', school: 'grey',
 		required: {level:7,intellect:40,greymagicskill:4},
@@ -1541,48 +1617,68 @@ var tricks = {
 		required: {level:9,intellect:60,airmagicskill:9},
 		consumes: {mana:172}
 	},*/
-	wis_water_tempheal: {name: 'wis_water_tempheal', caption: 'Ледяное Спасение', description: 'Мгновенно останавливает кровотечения, исцеляя мага на ???HP магией воды, но за 5 ходов теряет 50% полученного здоровья.', school: 'water',
+	wis_water_tempheal: {name: 'wis_water_tempheal', caption: 'Ледяное Спасение', 
+		action: 'Мгновенно останавливает кровотечения, исцеляя мага на ???HP магией воды,<br />но за 5 ходов теряет 50% полученного здоровья.', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
 		resources: {hp:1},
+		delay: 5,
 		consumes: {mana:168}
 	},
-	wis_water_break: {name: 'wis_water_break', caption: 'Оледенениие: Разбить!', description: 'Наносит текущей цели подверженной Оледенению ??? урона магией воды и еще ???, если уровень жизни цели менее (кол.умений*5+50)', school: 'water',
+	wis_water_break: {name: 'wis_water_break', caption: 'Оледенениие: Разбить!', spendsMove: true,
+		action: 'Наносит текущей цели подверженной Оледенению 144 урона магией воды.<br />Урон увеличен на 50% за каждый уровень оледенения,<br />если НР цели менее 33%.', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
-		consumes: {mana:200}
+		delay: 5,
+		consumes: {mana:191}
 	},
-	wis_water_crystalize: {name: 'wis_water_crystalize', caption: 'Кристаллизация', description: 'Мгновенно наносит цели урон равный уровню силы цели но не более чем 10*(ваш уровень). Снижает силу и ловкость цели на (количество владений водой) на три хода.', school: 'water',
+	wis_water_crystalize: {name: 'wis_water_crystalize', caption: 'Кристаллизация', 
+		action: 'Мгновенно наносит цели урон равный уровню силы цели, но не более чем 10*(ваш уровень).<br />Снижает силу и ловкость цели на (количество владений водой) на три хода.', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
+		delay: 5,
 		consumes: {mana:200}
 	},
-	wis_water_icegrap: {name: 'wis_water_icegrap', caption: 'Хватка Льда', description: 'Через 2 хода цель теряет возможность использовать приемы или набирать очки тактики на 3 хода.', school: 'water',
+	wis_water_icegrap: {name: 'wis_water_icegrap', caption: 'Хватка Льда', 
+		action: 'Через 2 хода цель теряет возможность использовать приемы или набирать очки тактики на два хода.<br />Работает только на целях, подверженных Оледенению', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
+		delay: 10,
 		consumes: {mana:100}
 	},
-	wis_water_spirit: {name: 'wis_water_spirit', caption: 'Духи Льда', description: 'На три хода увеличивает мф. мощности Магии Воды на 15. Часть вашего прямого урона магией воды, восстанавливают вам ману.', school: 'water',
+	wis_water_spirit: {name: 'wis_water_spirit', caption: 'Духи Льда', 
+		action: 'На три хода увеличивает мф. мощности Магии Воды на 15. Часть вашего прямого урона Магией Воды восстанавливает вашу ману.', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
 		resources: {hp:4},
-		consumes: {spiritlevel:5}
+		delay: 10,
+		consumes: {mana:5, spiritlevel:5}
 	},
-	wis_water_aheal: {name: 'wis_water_aheal', caption: 'Переохлаждение', description: 'Уменьшает эффекты лечения на цели на 10% Можно применить на одну цель до 5 раз.', school: 'water',
-		required: {level:9,intellect:60,watermagicskill:9},
+	wis_water_aheal: {name: 'wis_water_aheal', caption: 'Переохлаждение', 
+		action: 'Уменьшает эффекты лечения на цели на 10% на 5 ходов.<br />Можно применить на одну цель до 3 раз.', school: 'water',
+		required: {level:9,intellect:75,watermagicskill:9},
 		resources: {hp:1},
 		consumes: {mana:70}
 	},
-	wis_water_cleance: {name: 'wis_water_cleance', caption: 'Чистота Воды', description: 'Снимает один негативный эффект магии или отравления.', school: 'water',
+	wis_water_cleance: {name: 'wis_water_cleance', caption: 'Чистота Воды', 
+		action: 'Снимает один негативный эффект магии или отравления.', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
+		delay: 5,
 		consumes: {mana:100}
 	},
-	wis_water_hiddenpower: {name: 'wis_water_hiddenpower', caption: 'Ледяное Сердце', description: 'При использовании убирает текущие задержки на заклинаниях школы Воды. Не подвержен действию шока.', school: 'water',
+	wis_water_hiddenpower: {name: 'wis_water_hiddenpower', caption: 'Ледяное Сердце', 
+		action: 'При использовании убирает текущие задержки на заклинаниях школы Воды.<br />Не подвержен действию шока.', school: 'water',
 		required: {level:8,intellect:50,watermagicskill:8},
+		delay: 10,
+		beginDelay: 5,
 		consumes: {mana:200}
 	},
-	wis_water_sacrifice: {name: 'wis_water_sacrifice', caption: 'Жертва Воде', description: 'Маг теряет 10% жизни за 5 ходов, но цена всех заклятий снижена на 50%.', school: 'water',
+	wis_water_sacrifice: {name: 'wis_water_sacrifice', caption: 'Жертва Воде', 
+		action: 'Маг теряет 10% жизни за 5 ходов, но цена всех заклятий снижена на 50%.', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
 		resources: {hp:5},
+		delay: 10,
 		consumes: {mana:5}
 	},
-	wis_water_strike: {name: 'wis_water_strike', caption: 'Острая Грань', description: 'Наносит цели колющий урон.', school: 'water',
+	wis_water_strike: {name: 'wis_water_strike', caption: 'Острая Грань', spendsMove: true,
+		action: 'Наносит цели 485 ед. колющего урона.', school: 'water',
 		required: {level:7,intellect:40,watermagicskill:7},
+		delay: 3,
 		consumes: {mana:162}
 	} 
  };

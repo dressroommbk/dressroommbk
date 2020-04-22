@@ -1603,6 +1603,7 @@ var tricks = {
 	wis_air_speed: {name: 'wis_air_speed', caption: 'Скорость Молнии', 
 		action: 'Любой следующий прием не тратит хода.', school: 'air',
 		required: {level:8,intellect:50,airmagicskill:8},
+		resources: {},
 		delay: 10,
 		beginDelay: 10,
 		consumes: {mana:85,spiritlevel:4}

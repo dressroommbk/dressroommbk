@@ -105,31 +105,40 @@ var tricks = {
 		resources: {},
 		consumes: {spiritlevel:10}
 	},
-	hit_strong: {name: 'hit_strong', caption: 'Сильный удар', description: 'Следующий удар наносит на 3*(Ваш уровень) ед. урона больше.', school: 'fight',
+	hit_strong: {name: 'hit_strong', caption: 'Сильный удар', 
+		action: 'Следующий удар наносит на 3*(Ваш уровень) ед. урона больше.', school: 'fight',
 		required: {level:2},
 		resources: {hit:3}
 	},
-	hit_luck: {name: 'hit_luck', caption: 'Удачный удар', description: 'Следующий удар наносит на 6*(Ваш уровень) ед. урона больше.', school: 'fight',
+	hit_luck: {name: 'hit_luck', caption: 'Удачный удар', 
+		action: 'Следующий удар наносит на 6*(Ваш уровень) ед. урона больше.', school: 'fight',
 		required: {level:4},
 		resources: {hit:5}
 	},
-	hit_overhit: {name: 'hit_overhit', caption: 'Подлый удар', description: 'Мгновенно наносит противнику 5*(уровень) ед. урона.', school: 'fight',
+	hit_overhit: {name: 'hit_overhit', caption: 'Подлый удар', 
+		action: 'Мгновенно наносит противнику 5*(уровень) ед. урона.', school: 'fight',
 		required: {level:4},
 		resources: {hit:7},
 		consumes: {spiritlevel:1}
 	},
-	hit_restrike: {name: 'hit_restrike', caption: 'Прорыв', description: 'Мгновенно наносит противнику треть урона оружием.', school: 'fight',
+	hit_restrike: {name: 'hit_restrike', caption: 'Прорыв', 
+		action: 'Мгновенно наносит противнику треть урона оружием, игнорируя любую защиту.', school: 'fight',
 		required: {level:8,strength:45},
 		resources: {hit:9},
+		delay: 5,
 		consumes: {spiritlevel:1}
 	},
-	hit_resolve: {name: 'hit_resolve', caption: 'Разведка боем', description: 'Успешное попадание раскрывает тактику противника, пять ходов показывая все его усиления и приемы.', school: 'fight',
+	hit_resolve: {name: 'hit_resolve', caption: 'Разведка боем', 
+		action: 'Успешное попадание раскрывает тактику противника, пять ходов показывая все его усиления и приемы', school: 'fight',
 		required: {level:5},
-		resources: {hit:2}
-	},
-	hit_shock: {name: 'hit_shock', caption: 'Ошеломить', description: 'Ваше следующее попадание ошеломляет противника снижая его урон вдвое на один ход.', school: 'fight',
-		required: {level:7},
+		delay: 5,
 		resources: {hit:3}
+	},
+	hit_shock: {name: 'hit_shock', caption: 'Ошеломить', exclusiveWarrior: true,
+		action: 'Оглушает противника, лишая его возможности<br />использовать приемы на 2 хода, нанося 5-10 урона.<br />Противник получает иммунитет к ошеломлению на 5 ходов.<br />Нельзя использовать, если мудрость больше 39', school: 'fight',
+		required: {level:7,strength:25},
+		resources: {hit:3},
+		delay: 5
 	},
 	/*hit_target_sword: {name: 'hit_target_sword', caption: 'Живой меч', description: 'Нанести удар вместо союзника решившего стать живым щитом. Требуется цель с приемом Живой щит.', school: 'fight',
 		required: {level:8,strength:50},
@@ -138,20 +147,24 @@ var tricks = {
 	blood_gainattack: {name: 'blood_gainattack', caption: 'Рывок', description: 'Ослабляя свою защиту, вы прорываетесь к противнику и получаете <img src="' + baseImgPath + 'hit.gif" width=8 height=8> 3', school: 'fight',
 		required: {level:7,strength:25,endurance:25}
 	},
-	hit_willpower: {name: 'hit_willpower', caption: 'Воля к победе', description: 'Вы восстанавливаете 5*(уровень)+7 HP, эффект увеличен на 25%, если ваши HP ниже 33%', school: 'fight',
+	hit_willpower: {name: 'hit_willpower', caption: 'Воля к победе', 
+		action: 'Вы восстанавливаете 5*(уровень)+7 HP, эффект увеличен на 25%, если ваши HP ниже 33%', school: 'fight',
 		required: {level:3},
 		resources: {hit:5},
 		consumes: {spiritlevel:1}
 	},
-	hit_empower: {name: 'hit_empower', caption: 'Усиленные удары', description: 'Все удары в следующем размене наносят на 5*(Уровень) ед. урона больше.', school: 'fight',
+	hit_empower: {name: 'hit_empower', caption: 'Усиленные удары', 
+		action: 'Все удары в следующем размене наносят на 5*(Уровень) ед. урона больше.', school: 'fight',
 		required: {level:7},
 		resources: {hit:3}
 	},
-	krit_wildluck: {name: 'krit_wildluck', caption: 'Дикая удача', description: 'Следующий критический удар наносит максимальные повреждения.', school: 'fight',
+	krit_wildluck: {name: 'krit_wildluck', caption: 'Дикая удача', 
+		action: 'Следующий критический удар наносит максимальные повреждения.', school: 'fight',
 		required: {level:3},
 		resources: {krit:3}
 	},
-	krit_blindluck: {name: 'krit_blindluck', caption: 'Слепая удача', description: 'Следующий удар будет критическим.Вы не получите <IMG width=7 height=8 src="' + baseImgPath + 'krit.gif"> с этого крита.', school: 'fight',
+	krit_blindluck: {name: 'krit_blindluck', caption: 'Слепая удача', 
+		action: 'Следующий удар будет критическим. Вы не получите очки "Критических ударов" с этого крита.', school: 'fight',
 		required: {level:5},
 		resources: {krit:5}
 	},

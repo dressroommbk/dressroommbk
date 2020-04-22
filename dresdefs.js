@@ -312,6 +312,7 @@ var localizer =
 	wasRuned: 'Наложена руна',
 	specification: 'Описание',
 	isMagicTrick: 'Магический приём. Необходимо менее 40 в параметрах Сила, Ловкость и Интуиция',
+	isExclusiveWarriorTrick: 'Воинский прием. Необходимо иметь Мудрости менее 40',
 	spendsMove: 'Прием тратит ход'
 };
 
@@ -1656,6 +1657,18 @@ function isMagicTrick(obj) {
 	return 'school' in obj && ['air', 'fire', 'earth', 'water', 'light', 'grey', 'dark'].indexOf(obj.school) != -1;
 }
 
+function isWarriorTrick(obj) {
+	return 'school' in obj && ['fight'].indexOf(obj.school) != -1;
+}
+
+function isExclusiveWarriorTrick(obj) {
+	return isWarriorTrick(obj) && 'exclusiveWarrior' in obj && obj.exclusiveWarrior === true;
+}
+
+function isTrick(obj) {
+	return isWarriorTrick(obj) || isMagicTrick(obj);
+}
+
 function getObjectDescHtml(state, obj)
 {
 	var i;
@@ -1884,7 +1897,7 @@ function getObjectDescHtml(state, obj)
 		html += comsumationHtml;
 	}
 
-	if (isMagicTrick(obj)) {
+	if (isTrick(obj)) {
 		if (!('resources' in obj)) {
 			html += '<br />';
 		}
@@ -1901,18 +1914,11 @@ function getObjectDescHtml(state, obj)
 			html += '• ' + localizer.spendsMove + '<br />';
 		}
 		html += '<br />';
-	} else {
-		if (!('resources' in obj)) {
-			html += '<br />';
-		}
-		if ('delay' in obj) {
-			html += 'Задержка: ' + obj.delay + '<br />';
-		}		
 	}
 
 	if ('required' in obj)
 	{
-		if (isMagicTrick(obj)) {
+		if (isTrick(obj)) {
 			html += localizer.minItemRequiredGroup.bold() + '<br />';
 		} else {
 			html += localizer.itemRequiredGroup.bold() + '<br />';
@@ -2020,6 +2026,10 @@ function getObjectDescHtml(state, obj)
 		}
 		if (isMagicTrick(obj)) {
 			html += localizer.isMagicTrick + '<br />';
+		} else {
+			if (isExclusiveWarriorTrick(obj)) {
+				html += localizer.isExclusiveWarriorTrick + '<br />';
+			}
 		}
 	}	
 	if ('modify' in obj)

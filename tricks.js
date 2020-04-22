@@ -1,9 +1,15 @@
 var tricks = {
-	novice_def: {name: 'novice_def', caption: 'Прикрыться', description: 'Следующий удар по вам нанесет на 3 ед. меньше урона.', school: 'novice'
+	novice_def: {name: 'novice_def', caption: 'Прикрыться', 
+		action: 'Следующий удар по вам нанесет на 3 ед. меньше урона.', school: 'fight',
+		delay: 3,		
 	},
-	novice_hit: {name: 'novice_hit', caption: 'Вломить', description: 'Следующий удар наносит на 4 ед. больше урона.', school: 'novice'
+	novice_hit: {name: 'novice_hit', caption: 'Вломить', 
+		action: 'Следующий удар наносит на 4 ед. больше урона.', school: 'fight',
+		delay: 4,
 	},
-	novice_hp: {name: 'novice_hp', caption: 'Собрать Зубы', description: 'Вы восстанавливаете от 2-5 НР.', school: 'novice',
+	novice_hp: {name: 'novice_hp', caption: 'Собрать Зубы', 
+		action: 'Вы восстанавливаете от 2-5 НР.', school: 'fight',
+		delay: 4,
 	},
 	block_absolute: {name: 'block_absolute', caption: 'Абсолютная защита', description: 'До Вашего следующего размена ударами, все повреждения от оружия или магии по Вам сводятся к 1.', school: 'fight',
 		required: {level:7},

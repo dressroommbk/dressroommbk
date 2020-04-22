@@ -1269,15 +1269,14 @@ var combatSpells = {
 	};
 
 var trickCategories = [
-	{id: 'novice', caption: 'Приёмы&nbsp;новичков' },
-	{id: 'fight', caption: 'Школа&nbsp;Оружия' },
-	{id: 'fire', caption: 'Стихия&nbsp;Огня' },
-	{id: 'air', caption: 'Стихия&nbsp;Воздуха' },
-	{id: 'water', caption: 'Стихия&nbsp;Воды' },
-	{id: 'earth', caption: 'Стихия&nbsp;Земли' },
-	{id: 'light', caption: 'Школа&nbsp;Света' },
-	{id: 'dark', caption: 'Школа&nbsp;Тьмы' },
-	{id: 'grey', caption: 'Серая&nbsp;школа' }
+	{id: 'fight', caption: 'Воинские' },
+	{id: 'fire', caption: 'Стихии&nbsp;Огня' },
+	{id: 'air', caption: 'Стихии&nbsp;Воздуха' },
+	{id: 'water', caption: 'Стихии&nbsp;Воды' },
+	{id: 'earth', caption: 'Стихии&nbsp;Земли' },
+	{id: 'light', caption: 'Школы&nbsp;Света' },
+	{id: 'dark', caption: 'Школы&nbsp;Тьмы' },
+	{id: 'grey', caption: 'Серой&nbsp;школы' }
 	];
 
 var helpChapterHtml = ''
@@ -1902,6 +1901,13 @@ function getObjectDescHtml(state, obj)
 			html += '• ' + localizer.spendsMove + '<br />';
 		}
 		html += '<br />';
+	} else {
+		if (!('resources' in obj)) {
+			html += '<br />';
+		}
+		if ('delay' in obj) {
+			html += 'Задержка: ' + obj.delay + '<br />';
+		}		
 	}
 
 	if ('required' in obj)

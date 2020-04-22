@@ -311,7 +311,7 @@ var localizer =
 	unRune: 'Снять руну',
 	wasRuned: 'Наложена руна',
 	specification: 'Описание',
-	isMagicTrick: 'Магический приём. Необходимо менее 40 в параметрах Сила, Ловксть и Интуиция',
+	isMagicTrick: 'Магический приём. Необходимо менее 40 в параметрах Сила, Ловкость и Интуиция',
 	spendsMove: 'Прием тратит ход'
 };
 
@@ -1654,7 +1654,7 @@ function getStrengtheningById(strengtheningid)
 }
 
 function isMagicTrick(obj) {
-	return 'school' in obj && ['air', 'fire'].indexOf(obj.school) != -1;
+	return 'school' in obj && ['air', 'fire', 'earth'].indexOf(obj.school) != -1;
 }
 
 function getObjectDescHtml(state, obj)

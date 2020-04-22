@@ -826,7 +826,7 @@ function getPersImageHtml(state)
 	r += '</tr><tr>';
 	// w17
 	r += getPersObjectImageHtml(state, slot_w17);
-	r += '</tr></tr></table></td></tr></table></td></tr><tr><td><table border="0" cellspacing="0" cellpadding="0">';
+	r += '</tr></tr></table></td></tr></table></td></tr><tr><td style="padding:5px 5px 0 0;"><table border="0" cellspacing="0" cellpadding="0">';
 	for (var ci = 0; ci < 3; ci++)
 	{
 		r += '<tr>';

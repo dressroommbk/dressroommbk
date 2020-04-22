@@ -10204,7 +10204,7 @@ function applyDeserializedState(stateid, r)
 	}
 	if ('ts1' in r)
 	{
-		state.trickSlots = getRightSizeArray(getUnpackedObjectsRepresentation(r.ts1), 20);
+		state.trickSlots = getRightSizeArray(getUnpackedObjectsRepresentation(r.ts1), 23);
 	}
 	for (var i = 0; i < slots.length; i++)
 	{

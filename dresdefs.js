@@ -1654,7 +1654,7 @@ function getStrengtheningById(strengtheningid)
 }
 
 function isMagicTrick(obj) {
-	return 'school' in obj && ['air', 'fire', 'earth', 'water', 'light', 'grey'].indexOf(obj.school) != -1;
+	return 'school' in obj && ['air', 'fire', 'earth', 'water', 'light', 'grey', 'dark'].indexOf(obj.school) != -1;
 }
 
 function getObjectDescHtml(state, obj)

@@ -1556,71 +1556,92 @@ var tricks = {
 		delay: '???',
 		consumes: {mana:200}
 	},
-	wis_dark_soulweak: {name: 'wis_dark_soulweak', caption: 'Слабость Духа', description: 'На 3 хода все заклинания цели стоят дороже, а физический урон сокращён. Цель получает иммунитет к этому заклинанию на 10 ходов.', school: 'dark',
+	wis_dark_soulweak: {name: 'wis_dark_soulweak', caption: 'Слабость Духа', 
+		action: 'На 3 хода все заклинания цели стоят дороже, а физический урон сокращён.<br />Цель получает иммунитет к этому заклинанию на 10 ходов', school: 'dark',
 		required: {level:8,intellect:50,darkmagicskill:5},
+		delay: 5,
 		consumes: {mana:100}
 	},
-	wis_dark_souleat: {name: 'wis_dark_souleat', caption: 'Поглотить', description: 'Вы поглощаете дух павшего в бою, восстанавливая себя. Одну цель можно поглотить только один раз. Заклятие не влияет на уровень духа цели.', school: 'dark',
+	wis_dark_souleat: {name: 'wis_dark_souleat', caption: 'Поглотить', 
+		action: 'Вы поглощаете дух павшего в бою, восстанавливая себя.<br />Восстанавливает 5* Уровень НР и 10* Уровень маны.<br />Одну цель можно поглотить только один раз.<br />Заклятие не влияет на уровень духа цели.', school: 'dark',
 		required: {level:8,intellect:50,darkmagicskill:5},
+		delay: 5,
 		consumes: {mana:50}
 	},
-	wis_dark_damage07: {name: 'wis_dark_damage07', caption: 'Разрушение [7]', description: 'Наносит цели урон магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
+	wis_dark_damage07: {name: 'wis_dark_damage07', caption: 'Разрушение [7]', spendsMove: true,
+		action: 'Наносит цели 33 урона магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
 		required: {level:7,intellect:40,darkmagicskill:5},
 		consumes: {mana:58},
-		attack: {damage:25}
+		attack: {damage:33}
 	},
-	wis_dark_damage08: {name: 'wis_dark_damage08', caption: 'Разрушение [8]', description: 'Наносит цели урон магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
+	wis_dark_damage08: {name: 'wis_dark_damage08', caption: 'Разрушение [8]', spendsMove: true,
+		action: 'Наносит цели 39 урона магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
 		required: {level:8,intellect:50,darkmagicskill:6},
 		consumes: {mana:70},
-		attack: {damage:30}
+		attack: {damage:39}
 	},
-	wis_dark_damage09: {name: 'wis_dark_damage09', caption: 'Разрушение [9]', description: 'Наносит цели урон магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
+	wis_dark_damage09: {name: 'wis_dark_damage09', caption: 'Разрушение [9]', spendsMove: true,
+		action: 'Наносит цели 47 урона магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
 		required: {level:9,intellect:60,darkmagicskill:7},
 		consumes: {mana:84},
-		attack: {damage:36}
+		attack: {damage:47}
 	},
-	wis_dark_damage10: {name: 'wis_dark_damage10', caption: 'Разрушение [10]', description: 'Наносит цели урон магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
+	wis_dark_damage10: {name: 'wis_dark_damage10', caption: 'Разрушение [10]', spendsMove: true,
+		action: 'Наносит цели 57 урона магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
 		required: {level:10,intellect:75,darkmagicskill:8},
 		consumes: {mana:101},
-		attack: {damage:43}
+		attack: {damage:57}
 	},
-	wis_dark_damage11: {name: 'wis_dark_damage11', caption: 'Разрушение [11]', description: 'Наносит цели урон магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
+	wis_dark_damage11: {name: 'wis_dark_damage11', caption: 'Разрушение [11]', spendsMove: true,
+		action: 'Наносит цели 69 урона магией Тьмы, часть урона лечит мага.', iname: 'wis_dark_damage08', school: 'dark',
 		required: {level:11,intellect:100,darkmagicskill:9},
 		consumes: {mana:121},
-		attack: {damage:52}
+		attack: {damage:69}
 	},
-	wis_dark_manadamage07: {name: 'wis_dark_manadamage07', caption: 'Опустошение [7]', description: 'Лишает цель маны при помощи магии Тьмы, <br>лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
+	wis_dark_manadamage07: {name: 'wis_dark_manadamage07', caption: 'Опустошение [7]', spendsMove: true,
+		action: 'Лишает цель 244 маны при помощи магии Тьмы,<br />лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br />Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
 		required: {level:7,intellect:40,darkmagicskill:5},
 		resources: {hp:2},
 		consumes: {mana:130},
-		attack: {manadamage:184}
+		delay: 5,
+		attack: {manadamage:244}
 	},
-	wis_dark_manadamage08: {name: 'wis_dark_manadamage08', caption: 'Опустошение [8]', description: 'Лишает цель маны при помощи магии Тьмы, <br>лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
+	wis_dark_manadamage08: {name: 'wis_dark_manadamage08', caption: 'Опустошение [8]', spendsMove: true,
+		action: 'Лишает цель 292 маны при помощи магии Тьмы,<br />лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
 		required: {level:8,intellect:50,darkmagicskill:6},
 		resources: {hp:2},
 		consumes: {mana:156},
-		attack: {manadamage:220}
+		delay: 5,
+		attack: {manadamage:292}
 	},
-	wis_dark_manadamage09: {name: 'wis_dark_manadamage09', caption: 'Опустошение [9]', description: 'Лишает цель маны при помощи магии Тьмы, <br>лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
+	wis_dark_manadamage09: {name: 'wis_dark_manadamage09', caption: 'Опустошение [9]', spendsMove: true,
+		action: 'Лишает цель 351 маны при помощи магии Тьмы,<br />лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
 		required: {level:9,intellect:60,darkmagicskill:7},
 		resources: {hp:2},
 		consumes: {mana:187},
-		attack: {manadamage:264}
+		delay: 5,
+		attack: {manadamage:351}
 	},
-	wis_dark_manadamage10: {name: 'wis_dark_manadamage10', caption: 'Опустошение [10]', description: 'Лишает цель маны при помощи магии Тьмы, <br>лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
+	wis_dark_manadamage10: {name: 'wis_dark_manadamage10', caption: 'Опустошение [10]', spendsMove: true,
+		action: 'Лишает цель 412 маны при помощи магии Тьмы,<br />лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
 		required: {level:10,intellect:75,darkmagicskill:8},
 		resources: {hp:2},
 		consumes: {mana:224},
-		attack: {manadamage:317}
+		delay: 5,
+		attack: {manadamage:421}
 	},
-	wis_dark_manadamage11: {name: 'wis_dark_manadamage11', caption: 'Опустошение [11]', description: 'Лишает цель маны при помощи магии Тьмы, <br>лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
+	wis_dark_manadamage11: {name: 'wis_dark_manadamage11', caption: 'Опустошение [11]', spendsMove: true,
+		action: 'Лишает цель 506 маны при помощи магии Тьмы,<br />лишая цель возможности использовать последний применённый приём и все приёмы того же класса на 3 хода.<br>Цель получает иммунитет к Опустошению на 10 ходов.', iname: 'wis_dark_manadamage08', school: 'dark',
 		required: {level:11,intellect:100,darkmagicskill:9},
 		resources: {hp:2},
 		consumes: {mana:269},
-		attack: {manadamage:381}
+		delay: 5,
+		attack: {manadamage:506}
 	},
-	wis_dark_eyeforeye: {name: 'wis_dark_eyeforeye', caption: 'Глаз за глаз', description: 'Следующее заклинание или удар нанесет не более половины урона, <br>оставшуюся половину магией тьмы получит атакующий, но не более 50*(ваш уровень) ед. урона.', iname: 'wis_dark_eyeforeye', school: 'dark',
+	wis_dark_eyeforeye: {name: 'wis_dark_eyeforeye', caption: 'Глаз за глаз', 
+		action: 'Следующее заклинание или удар нанесет не более половины урона,<br />оставшуюся половину магией тьмы получит атакующий<br />(но не более 50*ваш уровень ед. урона).', iname: 'wis_dark_eyeforeye', school: 'dark',
 		required: {level:7,intellect:40,darkmagicskill:4},
+		delay: 10,
 		consumes: {mana:200}
 	},
 	wis_air_charge: {name: 'wis_air_charge', caption: 'Статика', 

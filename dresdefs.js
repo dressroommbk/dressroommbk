@@ -2031,6 +2031,9 @@ function getObjectDescHtml(state, obj)
 				html += localizer.isExclusiveWarriorTrick + '<br />';
 			}
 		}
+		if (isTrick(obj)) {
+			html += '<br />';
+		}
 	}	
 	if ('modify' in obj)
 	{
@@ -2141,7 +2144,7 @@ function getObjectDescHtml(state, obj)
 		html += '<br />';
 	}
 	if ('action' in obj) {
-		html += '<br />' + obj.action;
+		html += obj.action;
 	}
 	if (('fixless' in obj) && obj.fixless)
 	{

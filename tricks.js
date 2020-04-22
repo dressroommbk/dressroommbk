@@ -159,7 +159,8 @@ var tricks = {
 		required: {level:8,strength:50},
 		resources: {hit:3}
 	},*/
-	blood_gainattack: {name: 'blood_gainattack', caption: 'Рывок', description: 'Ослабляя свою защиту, вы прорываетесь к противнику и получаете <img src="' + baseImgPath + 'hit.gif" width=8 height=8> 3', school: 'fight',
+	blood_gainattack: {name: 'blood_gainattack', caption: 'Рывок', exclusiveWarrior: true,
+		action: 'Ослабляя свою защиту и повышая урон<br />(Защита от урона: -250, Мф. мощности урона: +25),<br />вы прорываетесь к противнику и получаете <img src="' + baseImgPath + 'hit.gif" width=8 height=8> 3', school: 'fight',
 		required: {level:7,strength:25,endurance:25}
 	},
 	hit_willpower: {name: 'hit_willpower', caption: 'Воля к победе', 
@@ -183,16 +184,19 @@ var tricks = {
 		required: {level:5},
 		resources: {krit:5}
 	},
-	krit_crush: {name: 'krit_crush', caption: 'Сокрушающий удар', description: 'Ваш следующий удар нанесет двойной урон.', school: 'fight',
+	krit_crush: {name: 'krit_crush', caption: 'Сокрушающий удар', 
+		action: 'Ваш следующий удар нанесет двойной урон.', school: 'fight',
 		required: {level:7},
 		resources: {krit:7}
 	},
-	krit_blooddrink: {name: 'krit_blooddrink', caption: 'Хлебнуть Крови', description: 'Ваш следуюший критический удар и два удара за ним лечит вас частью нанесеного урона, но не более чем 154 НР с противника 10 уровня. Выпитая крoвь придает вам силы.', school: 'fight',
+	krit_blooddrink: {name: 'krit_blooddrink', caption: 'Хлебнуть Крови', 
+		action: 'Следующий критический удар лечит вас частью нанесенного урона.<br />Выпитая кровь придает вам силы.', school: 'fight',
 		required: {level:6},
 		resources: {krit:7,block:3},
 		consumes: {spiritlevel:2}
 	},
-	krit_bloodlust: {name: 'krit_bloodlust', caption: 'Жажда Крови', description: 'Увеличивает ваш мф. критического удара на 50 до конца боя и увеличивает физический урон на 5%. Можно применять трижды.', school: 'fight',
+	krit_bloodlust: {name: 'krit_bloodlust', caption: 'Жажда Крови', 
+		action: 'Увеличивает ваш мф. критического удара на 50 до конца боя<br />и увеличивает физический урон на 5%.<br />Можно применять трижды.', school: 'fight',
 		required: {level:7},
 		resources: {hit:2,krit:3}
 	},
@@ -219,18 +223,22 @@ var tricks = {
 		required: {level:7},
 		resources: {counter:5}
 	},
-	parry_prediction: {name: 'parry_prediction', caption: 'Предвидение', description: 'Следующий удар противника парируется.Вы не получите <img width=8 height=8 src="' + baseImgPath + 'parry.gif"> за это парирование.', school: 'fight',
+	parry_prediction: {name: 'parry_prediction', caption: 'Предвидение', 
+		action: 'Следующий удар противника парируется.<br />Вы не получите очки "Парирования" за это парирование.', school: 'fight',
 		required: {level:3},
 		resources: {parry:3}
 	},
-	parry_secondlife: {name: 'parry_secondlife', caption: 'Второе дыхание', description: 'Следующий удар противника - парируется, за каждый уровень противника, чей удар вы парировали, вы получаете 5 ХП.Вы не получите <img width=8 height=8 src="' + baseImgPath + 'parry.gif"> за это парирование.', school: 'fight',
+	parry_secondlife: {name: 'parry_secondlife', caption: 'Второе дыхание', 
+		action: 'Следующий удар противника - парируется,<br />за каждый уровень противника, чей удар вы парировали, вы получаете 5НР.<br />Вы не получите очки "Парирования" за это парирование.', school: 'fight',
 		required: {level:5},
 		resources: {parry:5},
 		consumes: {spiritlevel:2}
 	},
-	parry_supreme: {name: 'parry_supreme', caption: 'Превосходство', description: 'Увеличивает ваш мф. против критического удара и мф. против увертывания на 25 до конца боя. Снижает урон от магии на 5%. Можно применять трижды.', school: 'fight',
-		required: {level:7},
-		resources: {block:1,parry:3}
+	parry_supreme: {name: 'parry_supreme', caption: 'Превосходство', exclusiveWarrior: true,
+		action: 'Увеличивает ваш мф. против критического удара и мф. против увертывания на 25 до конца боя. Снижает урон от магии на 5%.<br />Можно применять трижды.<br />Требует 25 ловкости.', school: 'fight',
+		required: {level:7, dexterity: 25},
+		resources: {block:1,parry:3},
+		delay: 1,
 	},
 	multi_hitshock: {name: 'multi_hitshock', caption: 'Шокирующий удар', description: 'Ваше следующее попадание оглушает противника, лишая его возможности использовать приемы и получать очки тактики на два хода.', school: 'fight',
 		required: {level:7},

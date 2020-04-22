@@ -1592,9 +1592,9 @@ var tricks = {
 		consumes: {mana:646,spiritlevel:5}
 	},
 	wis_light_shield: {name: 'wis_light_shield', caption: 'Защита Света', 
-		action: 'Снижает весь урон получаемый магом на 10%, ускоряет время восстановления от любых видов оглушения на 1 ход.', iname: 'wis_light_shield', school: 'light',
+		action: 'Снижает весь урон получаемый магом на 15%<br />и повышает эфективность лечения на 10% на 10 ходов.', iname: 'wis_light_shield', school: 'light',
 		required: {level:7,intellect:40,lightmagicskill:4},
-		delay: '???',
+		delay: 20,
 		consumes: {mana:200}
 	},
 	wis_dark_soulweak: {name: 'wis_dark_soulweak', caption: 'Слабость Духа', 

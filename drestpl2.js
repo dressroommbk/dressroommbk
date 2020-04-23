@@ -731,7 +731,7 @@ function getPersImageHtml(state)
 	if (state.statElix != null)
 	{
 		var selix = knownElix[state.statElix.elixn];
-		r += '<a onclick="onConcreteElixMenu(' + "'" + state.statElix.elixn + "'" + ')" href="javascript:;">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + state.statElix.elixn + "'" + ')" href="javascript:;">';
 		r += '<img src="' + iconImgPath + selix.id + '.gif" title="' + selix.caption + ' +' + state.statElix.v + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -745,7 +745,7 @@ function getPersImageHtml(state)
 	for (var defelixn in state.defElixes)
 	{
 		var defelix = knownDefElix[defelixn];
-		r += '<a onclick="onConcreteElixMenu(' + "'" + defelix.id + "'" + ')" href="javascript:;">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + defelix.id + "'" + ')" href="javascript:;">';
 		r += '<img src="' + iconImgPath + defelix.id + '.gif" title="' + defelix.caption + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -760,19 +760,19 @@ function getPersImageHtml(state)
 			spellHitpointsName = knownApplicableSpells.spellHitpointsDown.id;
 			spellHitpointsCaption = knownApplicableSpells.spellHitpointsDown.caption;
 		}
-		r += '<a onclick="onConcreteElixMenu(' + "'" + spellHitpointsId + "'" + ')" href="javascript:;">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + spellHitpointsId + "'" + ')" href="javascript:;">';
 		r += '<img src="' + itemImgPath + format(spellHitpointsName, Math.abs(state.spellHitpoints)) + '.gif" title="' + spellHitpointsCaption + ' ' + state.spellHitpoints + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	if (state.spellIntel > 0)
 	{
-		r += '<a onclick="onConcreteElixMenu(' + "'spellIntel'" + ')" href="javascript:;">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'spellIntel'" + ')" href="javascript:;">';
 		r += '<img src="' + itemImgPath + knownApplicableSpells.spellIntel.id + '.gif" title="' + knownApplicableSpells.spellIntel.caption + ' +' + state.spellIntel + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	if (state.spellBD > 0)
 	{
-		r += '<a onclick="onConcreteElixMenu(' + "'spellBD'" + ')" href="javascript:;">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'spellBD'" + ')" href="javascript:;">';
 		r += '<img src="' + trickImgPath + knownApplicableSpells.spellBD.id + '.gif" title="' + knownApplicableSpells.spellBD.caption + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -3169,7 +3169,7 @@ function onApplyConcreteElix(elixn, v)
 	hardUpdateDresserState(state);
 }
 
-function onConcreteElixMenu(elixn)
+function onConcreteElixMenu(event, elixn)
 {
 	var state = activeState;
 	var elix = knownElix[elixn] || knownApplicableSpells[elixn] || knownDefElix[elixn];
@@ -3240,9 +3240,9 @@ function onConcreteElixMenu(elixn)
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 	menuHtml += '</table>';
 	showMenu(menuHtml);
-	if (!is.ie && e.stopPropagation)
+	if (!is.ie && event.stopPropagation)
 	{
-		e.stopPropagation();
+		event.stopPropagation();
 	}
 	if (is.ie)
 	{
@@ -3291,7 +3291,7 @@ function onElixMenu()
 		}
 		var caption = elix.caption;
 		caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + caption;
-		menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu('{0}')", elixn));
+		menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 	}
 	menuHtml += '</table></td><td><table width="240" border="0">';
 	for (var elixn in knownDamageElix)
@@ -3321,7 +3321,7 @@ function onElixMenu()
 			}
 			var caption = elix.caption;
 			caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + caption;
-			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu('{0}')", elixn));
+			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 			}
 	}
 	/*menuHtml += '</table></td><td><table width="240" border="0">';
@@ -3339,7 +3339,7 @@ function onElixMenu()
 			}
 			var caption = elix.caption;
 			caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + caption;
-			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu('{0}')", elixn));
+			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 			}
 	}
 	menuHtml += '</table></td></tr><tr><td colspan="3"><table width="640" border="0">';
@@ -3504,7 +3504,7 @@ function onSpellMenu()
 		{
 			spellHtml = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{2}', itemImgPath, format(spell.id, 5), spell.caption);
 		}
-		menuHtml += getRowMenuItemHtml(spellHtml, format("onConcreteElixMenu('{0}')", spelln));
+		menuHtml += getRowMenuItemHtml(spellHtml, format("onConcreteElixMenu(event, '{0}')", spelln));
 	}
 	menuHtml += getRowMenuSeparatorHtml();
 	for (var powerupn in knownPowerUps)
@@ -6468,7 +6468,7 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 			break;
 		
 		case 'sabre':
-			stats_damage_effect = strength * 0.6 + dexterity * 0.2 + intuition * 0.2;
+			stats_damage_effect = strength * 0.7 + dexterity * 0.2 + intuition * 0.2;
 			break;
 		
 		default:

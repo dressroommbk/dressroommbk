@@ -1669,6 +1669,18 @@ function isTrick(obj) {
 	return isWarriorTrick(obj) || isMagicTrick(obj);
 }
 
+function isStatExceeded(state, stat, value) {
+	return (state != null) && ('results' in state) && (stat in state.results) && (parseInt(state.results[stat]) > value);
+}
+
+function exslusiveWarriorTricksAllowed(state) {
+	return !isStatExceeded(state, 'wisdom', 39);
+}
+
+function exclusiveMagicTricksAllowed(state) {
+	return !isStatExceeded(state, 'strength', 39) && !isStatExceeded(state, 'dexterity', 39) && !isStatExceeded(state, 'intuition', 39); 
+}
+
 function getObjectDescHtml(state, obj)
 {
 	var i;
@@ -2025,10 +2037,10 @@ function getObjectDescHtml(state, obj)
 			html += '<br />';
 		}
 		if (isMagicTrick(obj)) {
-			html += localizer.isMagicTrick + '<br />';
+			html += '<span '+ (!exclusiveMagicTricksAllowed(state) ? 'style="color: red;"' : '') +'>' + localizer.isMagicTrick + '</span><br />';
 		} else {
 			if (isExclusiveWarriorTrick(obj)) {
-				html += localizer.isExclusiveWarriorTrick + '<br />';
+				html += '<span ' + (!exslusiveWarriorTricksAllowed(state) ? 'style="color: red;"' : '') + '>' + localizer.isExclusiveWarriorTrick + '</span><br />';
 			}
 		}
 		if (isTrick(obj)) {

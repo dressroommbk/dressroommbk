@@ -2878,10 +2878,10 @@ function getDresserInfoPaneHtml(state)
 	{
 		html += getDresserInfoPaneCombatSpellHtml(state, spellid);
 	}
-	for (var ctrickn in state.combatTricks)
+	/*for (var ctrickn in state.combatTricks)
 	{
 		html += getDresserInfoPaneCombatTrickHtml(state.combatTricks[ctrickn]);
-	}
+	}*/
 
 	html += '</table></td></tr>';
 	html += '<tr><td colspan="2">';

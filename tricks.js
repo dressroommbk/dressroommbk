@@ -180,6 +180,7 @@ var tricks = {
 	},*/
 	blood_gainattack: {name: 'blood_gainattack', caption: 'Рывок', exclusiveWarrior: true,
 		action: 'Ослабляя свою защиту и повышая урон<br />(Защита от урона: -250, Мф. мощности урона: +25),<br />вы прорываетесь к противнику и получаете <img src="' + baseImgPath + 'hit.gif" width=8 height=8> 3', school: 'fight',
+		resources: {},
 		required: {level:7,strength:25,endurance:25}
 	},
 	hit_willpower: {name: 'hit_willpower', caption: 'Воля к победе', 

@@ -722,7 +722,7 @@ function getPersImageHtml(state)
 
 	var o = getObjectByStateSlot(state, slot_wadd);
 	if (o != null) {
-		r += '<a onclick="onApplyWAdd(null);" href="javascript:;">';
+		r += '<a onclick="onApplyWAdd(event, null);" href="javascript:;">';
 		r += '<img src="' + iconImgPath + o.id + '.gif" title="' + o.caption + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -737,7 +737,7 @@ function getPersImageHtml(state)
 	for (var damageelixn in state.damageElixes)
 	{
 		var damageelix = knownDamageElix[damageelixn];
-		r += '<a onclick="onApplyConcreteElix(' + "'" + damageelixn + "'" + ', 0)" href="javascript:;">';
+		r += '<a onclick="onApplyConcreteElix(event, ' + "'" + damageelixn + "'" + ', 0)" href="javascript:;">';
 		r += '<img src="' + iconImgPath + damageelix.id + '.gif" title="' + damageelix.caption + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -3108,7 +3108,7 @@ function onOptionsMenu()
 	showMenu(menuHtml);
 }
 
-function onApplyConcreteElix(elixn, v)
+function onApplyConcreteElix(e, elixn, v)
 {
 	var state = activeState;
 	if (state == null)
@@ -3166,6 +3166,17 @@ function onApplyConcreteElix(elixn, v)
 		}
 	}
 	hardUpdateDresserState(state);
+
+	if (!is.ie && e.stopPropagation)
+	{
+		e.stopPropagation();
+	}
+	if (is.ie)
+	{
+		window.event.cancelBubble = true;
+		window.event.returnValue = false;
+	}
+	return false;	
 }
 
 function onConcreteElixMenu(event, elixn)
@@ -3233,7 +3244,7 @@ function onConcreteElixMenu(event, elixn)
 		}
 
 
- 		menuHtml += getRowMenuItemHtml(caption, format("onApplyConcreteElix('{0}', {1})", elixn, v));
+ 		menuHtml += getRowMenuItemHtml(caption, format("onApplyConcreteElix(event, '{0}', {1})", elixn, v));
 	}
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
@@ -3250,7 +3261,7 @@ function onConcreteElixMenu(event, elixn)
 	}
 }
 
-function onSwitchConcreteElix(elixn)
+function onSwitchConcreteElix(e, elixn)
 {
 	var state = activeState;
 	if (state == null)
@@ -3258,7 +3269,7 @@ function onSwitchConcreteElix(elixn)
 		return;
 	}
 	var putOn = (elixn in state.damageElixes) ? 0 : 1;
-	onApplyConcreteElix(elixn, putOn);
+	onApplyConcreteElix(e, elixn, putOn);
 }
 
 function onElixMenu()
@@ -3278,7 +3289,7 @@ function onElixMenu()
 	//var menuHtml  = '<table width="640" border="0"><tr><td>';
 	var menuHtml  = '<table width="480" border="0"><tr><td>';
 	menuHtml += '<table width="240" border="0">';
-	menuHtml += getRowMenuItemHtml(localizer.noElix, "onApplyConcreteElix(null, 0)");
+	menuHtml += getRowMenuItemHtml(localizer.noElix, "onApplyConcreteElix(event, null, 0)");
 	menuHtml += getRowMenuSeparatorHtml();
 	for (var elixn in knownElix)
 	{
@@ -3302,7 +3313,7 @@ function onElixMenu()
 			continue;
 		}
 		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + elix.caption;
-		var action = format("onSwitchConcreteElix('{0}')", elixn);
+		var action = format("onSwitchConcreteElix(event, '{0}')", elixn);
 		menuHtml += getRowMenuItemHtml(caption, action);
 	}
 	menuHtml += getRowMenuSeparatorHtml();
@@ -3355,7 +3366,7 @@ function onElixMenu()
 	showMenu(menuHtml);
 }
 
-function onApplyWAdd(waddn)
+function onApplyWAdd(e, waddn)
 {
 	var state = activeState;
 	if (state == null)
@@ -3371,6 +3382,16 @@ function onApplyWAdd(waddn)
 	state.objCache[slot_wadd.index] = null;
 	state.objects[slot_wadd.index] = waddn;
 	updateDresserState();
+	if (!is.ie && e.stopPropagation)
+	{
+		e.stopPropagation();
+	}
+	if (is.ie)
+	{
+		window.event.cancelBubble = true;
+		window.event.returnValue = false;
+	}
+	return false;
 }
 
 function onWAddMenu()
@@ -3384,7 +3405,7 @@ function onWAddMenu()
 	menuHtml += '<table width="240" border="0">';
 	if (state.objects[slot_wadd.index] != null)
 	{
-		menuHtml += getRowMenuItemHtml(localizer.noWAdd, 'onApplyWAdd(null)');
+		menuHtml += getRowMenuItemHtml(localizer.noWAdd, 'onApplyWAdd(event, null)');
 		menuHtml += getRowMenuSeparatorHtml();
 	}
 	for (var waddn in knownAdds)
@@ -3396,7 +3417,7 @@ function onWAddMenu()
 		var wadd = knownAdds[waddn];
 		var caption = wadd.caption;
 		caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, wadd.id, wadd.caption) + caption;
-		menuHtml += getRowMenuItemHtml(caption, format("onApplyWAdd('{0}')", waddn));
+		menuHtml += getRowMenuItemHtml(caption, format("onApplyWAdd(event, '{0}')", waddn));
 	}
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");

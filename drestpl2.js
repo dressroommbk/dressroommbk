@@ -11353,6 +11353,30 @@ function getFilteredTricks(state, catno)
 	return r;
 }
 
+function getAllTricks(state, catno) {
+	var r = [];
+	var ct = getTricksOfCategory(catno);
+	for (var ti = 0; ti < ct.length; ti++)
+	{
+		var trick = ct[ti];
+		var alreadyWeared = false;
+		for (var i = 0; i < state.trickSlots.length; i++)
+		{
+			if (state.trickSlots[i] == trick.name)
+			{
+				alreadyWeared = true;
+				break;
+			}
+		}
+		if (alreadyWeared)
+		{
+			continue;
+		}
+		r.push(trick);
+	}
+	return r;
+}
+
 function showTrickProps(trickName)
 {
 	if (trickName == 'clear')
@@ -11451,7 +11475,8 @@ function onChooseTrick_InCat(trickNumber, catno)
 	}
 	var tableWidth = (8 * 60);
 	var perRow = (tableWidth / 40);
-	var ftricks = getFilteredTricks(state, catno);
+	//var ftricks = getFilteredTricks(state, catno);
+	var ftricks = getAllTricks(state, catno);
 	var menuHtml = format('<b>{0}</b>', trickCategories[catno].caption);
 	menuHtml += '<table cellspacing="0" width="' + tableWidth + '" cellpadding="0" border="0"><tr><td>';
 	menuHtml += '<table style="table-layout:fixed;" cellspacing="1" width="' + tableWidth + '" cellpadding="1" border="0"><tr>';
@@ -11484,7 +11509,8 @@ function onChooseTrick(trickNumber)
 	menuHtml += '<table cellspacing="0" cellpadding="0" border="0">';
 	for (var i = 0; i < trickCategories.length; i++)
 	{
-		var ftricks = getFilteredTricks(state, i);
+		//var ftricks = getFilteredTricks(state, i);
+		var ftricks = getAllTricks(state, i);
 		if (ftricks.length == 0) continue;
 		var onclick = format("hideMenu(); onChooseTrick_InCat({0}, {1}); return false", trickNumber, i);
 		menuHtml += getRowMenuItemHtml(

@@ -6461,7 +6461,7 @@ function calculateAttackDamage2(state, wslot, o, baseIndices, attackn)
 			break;
 		
 		case 'sabre':
-			stats_damage_effect = strength * 0.7 + dexterity * 0.2 + intuition * 0.2;
+			stats_damage_effect = strength * 0.6 + dexterity * 0.2 + intuition * 0.2;
 			break;
 		
 		default:

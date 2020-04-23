@@ -59,7 +59,7 @@ var tricks = {
 		resources: {block:3}
 	},
 	block_revenge: {name: 'block_revenge', caption: 'Возмездие', 
-		action: 'Противник, нанесший вам удар, получит (12 x Ваш уровень) ед. урона.<i>Требует наличия щита.</i>', school: 'fight',
+		action: 'Макс.Ловкость: 49<br />Макс.Интуиция: 49<br /><br />Противник, нанесший вам удар, получит (12 x Ваш уровень) ед. урона.<br /><i>Требует наличия щита.</i>', school: 'fight',
 		required: {level:7},
 		resources: {block:5}
 	},

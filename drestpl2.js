@@ -2533,7 +2533,7 @@ function getDresserInfoPaneHtml(state)
 			}
 		}
 	}
-	for (var tricki = 0; tricki < state.trickSlots.length; tricki++)
+	/*for (var tricki = 0; tricki < state.trickSlots.length; tricki++)
 	{
 		var trickn = state.trickSlots[tricki];
 		var o = null;
@@ -2582,7 +2582,7 @@ function getDresserInfoPaneHtml(state)
 				chapterHtml +=  '</td></tr>';
 			}
 		}
-	}
+	}*/
 	if (chapterHtml != '')
 	{
 		html += chapterHtml; // + '<tr><td colspan="2"><hr class="dashed" /></td></tr>';

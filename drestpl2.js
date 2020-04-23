@@ -70,7 +70,6 @@ var dressOptions = {
 	showHealer: false,
 	showExp: true,
 	showBuilder: true,
-	newCapEdition: false,
 	helpWritten: false,
 	currentFilterTab: 0,
 	benderOmskMode: false,
@@ -4016,13 +4015,10 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
 	html += getCell2MenuItemHtml(localizer.waddMenu, 'onWAddMenu()');	
-	if (!dressOptions.newCapEdition)
-	{
-		html += getCell2MenuSeparatorHtml();
-		html += getCell2MenuItemHtml(localizer.spellMenu, 'onSpellMenu()');
-		html += getCell2MenuSeparatorHtml();
-		html += getCell2MenuItemHtml(localizer.petMenu, 'onPetMenu()');
-	}
+	html += getCell2MenuSeparatorHtml();
+	html += getCell2MenuItemHtml(localizer.spellMenu, 'onSpellMenu()');
+	html += getCell2MenuSeparatorHtml();
+	html += getCell2MenuItemHtml(localizer.petMenu, 'onPetMenu()');
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.elixMenu, 'onElixMenu()');
 	html += getCell2MenuSeparatorHtml();
@@ -4371,11 +4367,8 @@ function getDresserShortcuts(state)
 	var html = '';
 	var btn = '<img src="' + blankImgPath + '" border="0" width="80" height="51" />';
 	html += '<a class="elixmenu" href="#" onclick="hideMenu(); onElixMenu(); return false" title="' + localizer.elixMenu + '">' + btn + '</a>';
-	if (!dressOptions.newCapEdition)
-	{
-		html += '<a class="spellmenu" href="#" onclick="hideMenu(); onSpellMenu(); return false" title="' + localizer.spellMenu + '">' + btn + '</a>';
-		html += '<a class="petmenu" href="#" onclick="hideMenu(); onPetMenu(); return false" title="' + localizer.petMenu2 + '">' + btn + '</a>';
-	}
+	html += '<a class="spellmenu" href="#" onclick="hideMenu(); onSpellMenu(); return false" title="' + localizer.spellMenu + '">' + btn + '</a>';
+	html += '<a class="petmenu" href="#" onclick="hideMenu(); onPetMenu(); return false" title="' + localizer.petMenu2 + '">' + btn + '</a>';
 	html += '<hr class="dashed" />';
 	html += '<a class="dressset" href="#" onclick="hideMenu(); onDressAnyCombatsSet(); return false" title="' + localizer.dressCombatsSet + '">' + btn + '</a>';
 	html += '<a class="dropitems" href="#" onclick="hideMenu(); onDropAll(); return false" title="' + localizer.dropAll + '">' + btn + '</a>';
@@ -7052,8 +7045,8 @@ function recalcDresserState(state)
 		}
 		state.natural.spiritlevel += (ls - 6) * 10;
 	}
-	state.natural.counterstroke = dressOptions.newCapEdition ? 20 : 10;
-	state.natural.piercearmor = dressOptions.newCapEdition ? 20 : 0;
+	state.natural.counterstroke = 10;
+	state.natural.piercearmor = 0;
 	state.natural.attackcount = 1;
 	state.modify.attackcount = getAttackCount(state) - 1;
 	state.natural.blockcount = 2;
@@ -7364,14 +7357,7 @@ function recalcDresserState(state)
 	for (var strgn in dressStrengthenings)
 	{
 		var strg = dressStrengthenings[strgn];
-		if (dressOptions.newCapEdition)
-		{
-			if (strg.domain == 'ru') continue;
-		}
-		else
-		{
-			if (strg.domain == 'com') continue;
-		}
+		if (strg.domain == 'com') continue;
 		var strgOk = true;
 		if ('required' in strg)
 		{
@@ -7383,10 +7369,6 @@ function recalcDresserState(state)
 			    {
 			        rvmax = 99;
 			    }*/
-			    if (dressOptions.newCapEdition)
-			    {
-			        rvmax = 10000;
-			    }
 				if (!(mfname in state.results) || (state.results[mfname] < rvmin) || ((rvmin < 250) && (state.results[mfname] > rvmax)))
 				{
 					strgOk = false;

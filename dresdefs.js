@@ -41,7 +41,7 @@ var localizer =
 	clearAllStats: 'Сбросить статы и умения',
 	fitStats: 'Подогнать статы и умения под комплект',
 	itemComsumesGroup: 'Потребление',
-	itemRequiredGroup: 'Требования',
+	itemRequiredGroup: 'Требуется минимальное:',
 	minItemRequiredGroup: 'Минимальные требования:',
 	itemModifyGroup: 'Действует на:',
 	itemPropertiesGroup: 'Свойства предмета',
@@ -1383,7 +1383,7 @@ function testStateProp(state, propName, value)
 
 function getHtmlOfProp(state, obj, propDesc, propName, extension)
 {
-	if (obj == null || propDesc == null || !(propName in obj))
+	if (obj == null || propDesc == null || !(propName in obj) || obj[propName] === 0)
 	{
 		return '';
 	}
@@ -1681,6 +1681,16 @@ function exclusiveMagicTricksAllowed(state) {
 	return !isStatExceeded(state, 'strength', 39) && !isStatExceeded(state, 'dexterity', 39) && !isStatExceeded(state, 'intuition', 39); 
 }
 
+function requiredHasElmsButEmpty(obj) {
+	let res = 'required' in obj;
+
+	for (let i in obj.required) {
+		res = res && (obj.required[i] === 0);
+	}
+
+	return res;
+}
+
 function getObjectDescHtml(state, obj)
 {
 	var i;
@@ -1928,7 +1938,7 @@ function getObjectDescHtml(state, obj)
 		html += '<br />';
 	}
 
-	if ('required' in obj)
+	if ('required' in obj && !requiredHasElmsButEmpty(obj))
 	{
 		if (isTrick(obj)) {
 			html += localizer.minItemRequiredGroup.bold() + '<br />';

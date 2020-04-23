@@ -21,8 +21,8 @@ var charInfoUrlFormat = 'https://mycombats.org/inf.php?login=';
 
 var shortVip = "vip=1";
 
-var maxPersImageNumber = [51, 65];
-var excludePersImageNumbers = [[52, 53], [39, 40, 41, 66, 67, 68]];
+var maxPersImageNumber = [52, 65];
+var excludePersImageNumbers = [[53], [39, 40, 41, 52, 66, 67, 68]];
 
 var uniquePersImageNumbers = [
 	['52_orbvsqq', '53_otnmdih','400','500','501','502','503','504','505','506','507','508','509','510','511','512','513','514','515','516','10001','10002','10003','10015','10016','10017','10018','10019','2000_1_kbns5gu', '2000_3_askgl', '2000_2_zk39s', '1092_mfogweobwg', '1144_fzmyvqf','mocker','piper'],

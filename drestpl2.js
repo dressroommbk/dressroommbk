@@ -727,6 +727,16 @@ function getPersImageHtml(state)
 		r += '</a>';
 	}
 
+	for (let powerUpn in state.spellPowerUps) {
+		let powerUp = knownECRPowerUps[powerUpn];
+
+		if (powerUpn in knownECRPowerUps) {
+			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
+			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
+			r += '</a>';
+		}
+	}
+
 	if (state.statElix != null)
 	{
 		var selix = knownElix[state.statElix.elixn];
@@ -2770,7 +2780,7 @@ function getDresserInfoPaneHtml(state)
        	}
        	else
        	{
-       	var	link = '<font size="1"><a onclick="onECRPowerUp(' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
+       	var	link = '<font size="1"><a onclick="onECRPowerUp(event, ' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
        	}
 
 		chapterHtml += '<tr><td valign="top">';
@@ -3488,7 +3498,7 @@ function onPowerUp(spellid)
 	updateDresserStateWanted();
 }
 
-function onECRPowerUp(spellid)
+function onECRPowerUp(e, spellid)
 {
 	var state = activeState;
 	if (state == null) 
@@ -3511,6 +3521,17 @@ function onECRPowerUp(spellid)
 		state.spellPowerUps[spellid] = knownECRPowerUps[spellid].v;
 	}
 	updateDresserStateWanted();
+
+	if (!is.ie && e.stopPropagation) {
+		e.stopPropagation();
+	}
+	
+	if (is.ie) {
+		window.event.cancelBubble = true;
+		window.event.returnValue = false;
+	}
+
+	return false;
 }
 
 function onSpellMenu()
@@ -3558,7 +3579,7 @@ function onSpellMenu()
 	{
 		var o = getObjectById(powerupn);
 		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp; Наложить {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
-		menuHtml += getRowMenuItemHtml(caption, format("onECRPowerUp('{0}')", powerupn));
+		menuHtml += getRowMenuItemHtml(caption, format("onECRPowerUp(event, '{0}')", powerupn));
 	}
 	menuHtml += '</table></td></tr><tr><td colspan="2" valign="top"><table width="480px" border="0">';
 	menuHtml += getRowMenuSeparatorHtml();

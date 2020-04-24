@@ -11184,25 +11184,25 @@ upgrade: {
 	catbaff_damage: {id:'catbaff_damage',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Печать Хаоса',fixless:true,
   modify: {maxdamage:25}
 	},*/
-	catbaff_full: {id:'catbaff_full',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин',fixless:true,
+	standart_curse: {id:'standart_curse',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин',fixless:true,
 		modify: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}
 	},
-	mrbaff_makropus: {id:'mrbaff_makropus',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Макропуса',fixless:true,
+	gg_macropus_reward: {id:'gg_macropus_reward',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Макропуса',fixless:true,
   modify: {hitpoints:250}
 	},
-	mrbaff_gribnica: {id:'mrbaff_gribnica',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Грибницы',fixless:true,
+	gg_gribnica_reward: {id:'gg_gribnica_reward',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Грибницы',fixless:true,
   modify: {strength:5,dexterity:5,intuition:5,intellect:5}
 	},
-	glbaff_ghost_1: {id:'glbaff_ghost_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность одинокого призрака (уворот)',fixless:true,
+	gl_npc_ghost_buff1: {id:'gl_npc_ghost_buff1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность одинокого призрака (уворот)',fixless:true,
   modify: {jumpaway: 175, anticriticalhit: 175}
 	},
-	glbaff_ghost_2: {id:'glbaff_ghost_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность одинокого призрака (крит)',fixless:true,
+	gl_npc_ghost_buff2: {id:'gl_npc_ghost_buff2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность одинокого призрака (крит)',fixless:true,
   modify: {criticalhit: 175, antijumpaway: 175}
 	},
-	glbaff_skeleton_1: {id:'glbaff_skeleton_1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность одинокого скелета (воин)',fixless:true,
+	gl_npc_skeleton_buff1: {id:'gl_npc_skeleton_buff1',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность задорного скелета (воин)',fixless:true,
   modify: {power:10}
 	},
-	glbaff_skeleton_2: {id:'glbaff_skeleton_2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность одинокого скелета (маг)',fixless:true,
+	gl_npc_skeleton_buff2: {id:'gl_npc_skeleton_buff2',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благодарность задорного скелета (маг)',fixless:true,
   modify: {magicdefencereduce:2}
 	},
 	spell_starenergy: {id:'spell_starenergy',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Звездная Энергия',fixless:true,

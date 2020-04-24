@@ -3130,8 +3130,14 @@ function onApplyConcreteElix(e, elixn, v)
 	}
 	else if (elixn in knownDamageElix)
 	{
-		if (v > 0)
-		{
+		if (v > 0) {
+			
+			for (var delixn in state.defElixes) {
+				if (areArraysIntersect(knownDefElix[delixn].places, knownDamageElix[elixn].places)) {
+					delete state.defElixes[delixn];
+				}
+			}
+
 			state.damageElixes[elixn] = v;
 		}
 		else if (elixn in state.damageElixes)
@@ -3148,6 +3154,14 @@ function onApplyConcreteElix(e, elixn, v)
 				delete state.defElixes[delixn];
 			}
 		}
+
+		for (var delixn in state.damageElixes) {
+			if (areArraysIntersect(knownDamageElix[delixn].places, knownDefElix[elixn].places))
+			{
+				delete state.damageElixes[delixn];
+			}
+		}
+
 		if (v > 0)
 		{
 			state.defElixes[elixn] = v;
@@ -3477,18 +3491,24 @@ function onPowerUp(spellid)
 function onECRPowerUp(spellid)
 {
 	var state = activeState;
-	if (state == null)
+	if (state == null) 
 	{
 		return;
 	}
-	var v = 100;
+	
 	if (spellid in state.spellPowerUps)
 	{
 	    delete state.spellPowerUps[spellid];
 	}
 	else
 	{
-	    state.spellPowerUps[spellid] = knownECRPowerUps[spellid].v;
+		for (let existingSpellId in state.spellPowerUps) {
+			if (areArraysIntersect(knownECRPowerUps[existingSpellId].places, knownECRPowerUps[spellid].places)) {
+				delete state.spellPowerUps[existingSpellId];
+			}
+		}
+		
+		state.spellPowerUps[spellid] = knownECRPowerUps[spellid].v;
 	}
 	updateDresserStateWanted();
 }

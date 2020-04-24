@@ -1154,8 +1154,8 @@ var knownAdds = {
 	};
 
 var knownDamageElix = {
-	pot_base_100_master: {id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, mindamage: 25, maxdamage: 50, magicpower:50, magicdefencereduce:10}},
-	pot_base_1000_gl_absolute: {id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}},
+	pot_base_100_master: {places: new Array(), id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, mindamage: 25, maxdamage: 50, magicpower:50, magicdefencereduce:10}},
+	pot_base_1000_gl_absolute: {places: new Array('eweapon', 'emagic') ,id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}},
 /*	pot_base_0_strup: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {power: 33, mindamage: 25, maxdamage: 50}},
 	pot_base_0_strup_1: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {magicpower: 50, magicdefencereduce: 10}},
 	pot_base_0_ny3: {id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}},
@@ -1210,29 +1210,31 @@ var knownPowerUps = {
 	spell_protect2: {id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', found: false, damageup: false, element: 'water',value:100},
 	spell_protect3: {id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', found: false, damageup: false, element: 'air',value:100},
 	spell_protect4: {id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', found: false, damageup: false, element: 'earth',value:100}
-	};
-
+};
 
 var knownECRPowerUps = {
 	/*spell_godstat_str: {modify: 'strength', v: 100},
 	spell_godstat_dex: {modify: 'dexterity', v: 100},
 	spell_godstat_inst: {modify: 'intuition', v: 100},*/
-	spell_godprotect10: {modify: 'defence', v: 300},
+
+	spell_godprotect10: {places: new Array(), modify: 'defence', v: 300},
 	spell_godprotect: {modify: 'magicdefence', v: 300},
+
 	/*invoke_spell_godintel100: {modify: 'intellect', v: 100},
 	invoke_spell_godmana100: {modify: 'mana', v: 2000},
- spell_startenacity: {modify: 'hitpoints', v: 300},
-spell_starshine: {modify: 'strength', v: 10, 'dexterity', v: 10, 'intuition', v: 10},
-spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}*/
+ 	spell_startenacity: {modify: 'hitpoints', v: 300},
+	spell_starshine: {modify: 'strength', v: 10, 'dexterity', v: 10, 'intuition', v: 10},
+	spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}
+	separator2: null,*/
 
-//	separator2: null,   // статы от книг:
-	invoke_plain_1s_str10: {modify: 'strength', v: 10}, //Зелёный Том Знаний
-	invoke_plain_1s_dex10: {modify: 'dexterity', v: 10}, //Жёлтый Том Знаний
-	invoke_plain_1s_inst10: {modify: 'intuition', v: 10}, //Красный Том Знаний
-	invoke_plain_1s_intel10: {modify: 'intellect', v: 10}, //Синий Том Знаний
-	invoke_plain_1s_all5: {v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}}, //Белый том знаний
-	invoke_plain_1s_spirit10: {modify: 'spirituality', v: 10}, // Черный Том Знаний	
-	club_defender: {modify: 'hitpoints', v: 120}, 
+	invoke_plain_1s_str10: {places: new Array('colorVolume'), modify: 'strength', v: 10}, //Зелёный Том Знаний
+	invoke_plain_1s_dex10: {places: new Array('colorVolume'), modify: 'dexterity', v: 10}, //Жёлтый Том Знаний
+	invoke_plain_1s_inst10: {places: new Array('colorVolume'), modify: 'intuition', v: 10}, //Красный Том Знаний
+	invoke_plain_1s_intel10: {places: new Array('colorVolume'), modify: 'intellect', v: 10}, //Синий Том Знаний
+	invoke_plain_1s_all5: {places: new Array('colorVolume'), v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}}, //Белый том знаний
+	invoke_plain_1s_spirit10: {places: new Array(), modify: 'spirituality', v: 10}, // Черный Том Знаний	
+	club_defender: {places: new Array(), modify: 'hitpoints', v: 120}, 
+
 	/*quenching: {modify: 'hitpoints', v:120},
 	bulls_breath_warrior: {modify: 'hitpoints', v:500},
 	bulls_breath_mage: {modify: 'hitpoints', v:200},
@@ -1242,14 +1244,14 @@ spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}*/
 	catbaff_regen: {modify: 'hpspeed', v: 30},
 	catbaff_life: {modify: 'hitpoints', v: 30},
 	catbaff_damage: {modify: 'maxdamage', v: 25},*/
-	catbaff_full: {v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}},
-	mrbaff_makropus: {modify: 'hitpoints', v: 250},
-	mrbaff_gribnica: {v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
-	glbaff_ghost_1: {v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},
-	//glbaff_ghost_1: {v: '175+175', modifyExt: {strength: 175, intuition: 175}},
-	glbaff_ghost_2: {v: '175+175', modifyExt: {criticalhit: 175, antijumpaway: 175}},
-	glbaff_skeleton_1: {modify: 'power', v: 10},
-	glbaff_skeleton_2: {modify: 'magicdefencereduce', v:2}
+
+	catbaff_full: {places: new Array(), v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}},
+	mrbaff_makropus: {places: new Array('mrbaff'), modify: 'hitpoints', v: 250},
+	mrbaff_gribnica: {places: new Array('mrbaff'), v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
+	glbaff_ghost_1: {places: new Array('glbaff'), v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},
+	glbaff_ghost_2: {places: new Array('glbaff'), v: '175+175', modifyExt: {criticalhit: 175, antijumpaway: 175}},
+	glbaff_skeleton_1: {places: new Array('glbaff'), modify: 'power', v: 10},
+	glbaff_skeleton_2: {places: new Array('glbaff'), modify: 'magicdefencereduce', v:2}
 	
 };
 

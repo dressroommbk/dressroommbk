@@ -647,10 +647,10 @@ function showPetProps(e)
 	return false;
 }
 
-function showCharPopup()
+/*function showCharPopup()
 {
 	showPopup(localizer.charHint);
-}
+}*/
 
 function getPersImageHtml(state)
 {
@@ -716,7 +716,7 @@ function getPersImageHtml(state)
 	// w5
 	r += getPersObjectImageHtml(state, slot_w5);
 	r += '</tr></table></td>';
-	r += '<td width="120"><table width="120" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3" width="120" onclick="onPersMenu()" oncontextmenu="onPersMenu()" onmouseover="showCharPopup()" onmouseout="hidePopup()" height="220" align="left" valign="bottom" style="background-image:url(';
+	r += '<td width="120"><table width="120" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3" width="120" onclick="onPersMenu()" title="' + localizer.charHint + '" height="220" align="left" valign="bottom" style="background-image:url(';
 	r += charImgPath + state.sex + '/' + state.image;
 	r += '.gif); background-repeat: no-repeat; background-position: center center;">';
 

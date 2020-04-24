@@ -1227,12 +1227,12 @@ var knownECRPowerUps = {
 	spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}
 	separator2: null,*/
 
-	invoke_plain_1s_str10: {places: new Array('colorVolume'), modify: 'strength', v: 10}, //Зелёный Том Знаний
-	invoke_plain_1s_dex10: {places: new Array('colorVolume'), modify: 'dexterity', v: 10}, //Жёлтый Том Знаний
-	invoke_plain_1s_inst10: {places: new Array('colorVolume'), modify: 'intuition', v: 10}, //Красный Том Знаний
-	invoke_plain_1s_intel10: {places: new Array('colorVolume'), modify: 'intellect', v: 10}, //Синий Том Знаний
-	invoke_plain_1s_all5: {places: new Array('colorVolume'), v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}}, //Белый том знаний
-	invoke_plain_1s_spirit10: {places: new Array(), modify: 'spirituality', v: 10}, // Черный Том Знаний	
+	plain_1s_str10: {places: new Array('colorVolume'), id: 'plain_1s_str10', caption: 'Зелёный Том Знаний', modify: 'strength', v: 10},
+	plain_1s_dex10: {places: new Array('colorVolume'), id: 'plain_1s_dex10', caption: 'Жёлтый Том Знаний', modify: 'dexterity', v: 10},
+	plain_1s_inst10: {places: new Array('colorVolume'), id: 'plain_1s_inst10', caption: 'Красный Том Знаний', modify: 'intuition', v: 10},
+	plain_1s_intel10: {places: new Array('colorVolume'), id: 'plain_1s_intel10', caption: 'Синий Том Знаний', modify: 'intellect', v: 10},
+	plain_1s_all5: {places: new Array('colorVolume'), id: 'plain_1s_all5', caption: 'Белый том знаний', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
+	plain_1s_spirit10: {places: new Array(), id:'plain_1s_spirit10', caption: 'Черный Том Знаний', modify: 'spirituality', v: 10},
 
 	club_defender: {places: new Array(), modify: 'hitpoints', v: 120}, 
 

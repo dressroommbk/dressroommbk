@@ -1233,6 +1233,7 @@ var knownECRPowerUps = {
 	invoke_plain_1s_intel10: {places: new Array('colorVolume'), modify: 'intellect', v: 10}, //Синий Том Знаний
 	invoke_plain_1s_all5: {places: new Array('colorVolume'), v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}}, //Белый том знаний
 	invoke_plain_1s_spirit10: {places: new Array(), modify: 'spirituality', v: 10}, // Черный Том Знаний	
+
 	club_defender: {places: new Array(), modify: 'hitpoints', v: 120}, 
 
 	/*quenching: {modify: 'hitpoints', v:120},
@@ -1245,13 +1246,13 @@ var knownECRPowerUps = {
 	catbaff_life: {modify: 'hitpoints', v: 30},
 	catbaff_damage: {modify: 'maxdamage', v: 25},*/
 
-	catbaff_full: {places: new Array(), v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}},
-	mrbaff_makropus: {places: new Array('mrbaff'), modify: 'hitpoints', v: 250},
-	mrbaff_gribnica: {places: new Array('mrbaff'), v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
-	glbaff_ghost_1: {places: new Array('glbaff'), v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},
-	glbaff_ghost_2: {places: new Array('glbaff'), v: '175+175', modifyExt: {criticalhit: 175, antijumpaway: 175}},
-	glbaff_skeleton_1: {places: new Array('glbaff'), modify: 'power', v: 10},
-	glbaff_skeleton_2: {places: new Array('glbaff'), modify: 'magicdefencereduce', v:2}
+	standart_curse: {places: new Array(), id: 'standart_curse', caption: 'Благословение Глубин', v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}},	
+	gg_macropus_reward: {places: new Array('mrbaff'), id: 'gg_macropus_reward', caption: 'Благословение Макропуса', modify: 'hitpoints', v: 250},	
+	gg_gribnica_reward: {places: new Array('mrbaff'), id: 'gg_gribnica_reward', caption: 'Благословение Грибницы', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
+	gl_npc_ghost_buff1: {places: new Array('glbaff'), id: 'gl_npc_ghost_buff1', caption: 'Благодарность одинокого призрака', v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},
+	gl_npc_ghost_buff2: {places: new Array('glbaff'), id: 'gl_npc_ghost_buff2', caption: 'Благодарность одинокого призрака', v: '175+175', modifyExt: {criticalhit: 175, antijumpaway: 175}},
+	gl_npc_skeleton_buff1: {places: new Array('glbaff'), id: 'gl_npc_skeleton_buff1', caption: 'Благодарность задорного скелета', modify: 'power', v: 10},
+	gl_npc_skeleton_buff2: {places: new Array('glbaff'), id: 'gl_npc_skeleton_buff2', caption: 'Благодарность задорного скелета', modify: 'magicdefencereduce', v:2}
 	
 };
 

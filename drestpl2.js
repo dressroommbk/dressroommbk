@@ -4430,6 +4430,7 @@ function getDresserShortcuts(state)
 	var btn = '<img src="' + blankImgPath + '" border="0" width="80" height="51" />';
 	html += '<a class="elixmenu" href="#" onclick="hideMenu(); onElixMenu(); return false" title="' + localizer.elixMenu + '">' + btn + '</a>';
 	html += '<a class="spellmenu" href="#" onclick="hideMenu(); onSpellMenu(); return false" title="' + localizer.spellMenu + '">' + btn + '</a>';
+	html += '<a class="waddmenu" href="#" onclick="hideMenu(); onWAddMenu(); return false" title="' + localizer.waddMenu + '">' + btn + '</a>';	
 	html += '<a class="petmenu" href="#" onclick="hideMenu(); onPetMenu(); return false" title="' + localizer.petMenu2 + '">' + btn + '</a>';
 	html += '<hr class="dashed" />';
 	html += '<a class="dressset" href="#" onclick="hideMenu(); onDressAnyCombatsSet(); return false" title="' + localizer.dressCombatsSet + '">' + btn + '</a>';
@@ -4440,7 +4441,7 @@ function getDresserShortcuts(state)
 
 function getDresserInnerHtml(state, placeholdersOnly)
 {
-	var fmt = '<table class="tcontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" colspan="2">{3}</td></tr><tr><td valign="top" width="400"><table border="0" cellspacing="0" cellpadding="0" width="400"><tr><td width="320" valign="top">{0}</td><td width="80" valign="bottom">{5}</td></tr><tr><td colspan="2" valign="top"><div id="editpane{2}">{4}</div></td></tr></table></td><td valign="top"><div id="infopane{2}">{1}</div></td></tr></table>';
+	var fmt = '<table class="tcontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" colspan="2">{3}</td></tr><tr><td valign="top" width="400"><table border="0" cellspacing="0" cellpadding="0" width="400"><tr><td width="320" valign="top">{0}</td><td width="80">{5}</td></tr><tr><td colspan="2" valign="top"><div id="editpane{2}">{4}</div></td></tr></table></td><td valign="top"><div id="infopane{2}">{1}</div></td></tr></table>';
 	return format(
 				  fmt,
 				  getPersImageHtml(state),

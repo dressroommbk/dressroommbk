@@ -333,6 +333,18 @@ a.spellmenu:hover
 {
 	background-position: 0px -51px;
 }
+a.waddmenu, a.waddmenu:visited
+{
+	background: transparent url(images/food4.gif) no-repeat top left;
+	background-position: 0px 0px;
+	display: block;
+	height: 51px;
+	width: 80px;
+}
+a.waddmenu:hover
+{
+	background-position: 0px -51px;
+}
 a.dropitems, a.dropitems:visited
 {
 	background: transparent url(images/nude4.gif) no-repeat top left;

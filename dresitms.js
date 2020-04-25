@@ -11153,11 +11153,11 @@ upgrade: {
 		common: {weight:1,eprice:9.95,durability:4,probability:99,duration:60},
 		required: {level:2},
   modify: {hitpoints:300}
-	},*/
+	},
 	club_defender: {id:'club_defender',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Знак защитника клуба',fixless:true,
   modify: {hitpoints:120}
 	},
-	/*quenching: {id:'quenching',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Закалка',fixless:true,
+	quenching: {id:'quenching',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Закалка',fixless:true,
   modify: {hitpoints:120}
 	},
 	bulls_breath_warrior: {id:'bulls_breath_warrior',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Дыхание отмороженного Бугая (воин)',fixless:true,

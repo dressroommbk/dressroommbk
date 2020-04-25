@@ -1234,9 +1234,8 @@ var knownECRPowerUps = {
 	plain_1s_all5: {places: new Array('colorVolume'), id: 'plain_1s_all5', caption: 'Белый том знаний', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
 	plain_1s_spirit10: {places: new Array(), id:'plain_1s_spirit10', caption: 'Черный Том Знаний', modify: 'spirituality', v: 10},
 
-	club_defender: {places: new Array(), modify: 'hitpoints', v: 120}, 
-
-	/*quenching: {modify: 'hitpoints', v:120},
+	/*club_defender: {places: new Array(), id: 'club_defender', caption: 'Знак Защитника Клуба', modify: 'hitpoints', v: 120}, 
+	quenching: {modify: 'hitpoints', v:120},
 	bulls_breath_warrior: {modify: 'hitpoints', v:500},
 	bulls_breath_mage: {modify: 'hitpoints', v:200},
 	catbaff_strength: {modify: 'strength', v : 5},

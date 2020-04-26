@@ -3574,6 +3574,10 @@ function onSpellMenu()
 		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onPowerUp('{0}')", powerupn));
 	}
+	menuHtml += getRowMenuSeparatorHtml();
+
+	//TODO foods
+
 	menuHtml += '</table></td><td valign="top"><table width="240px" border="0">';
 	for (var powerupn in knownECRPowerUps)
 	{
@@ -4430,7 +4434,6 @@ function getDresserShortcuts(state)
 	var btn = '<img src="' + blankImgPath + '" border="0" width="80" height="51" />';
 	html += '<a class="elixmenu" href="#" onclick="hideMenu(); onElixMenu(); return false" title="' + localizer.elixMenu + '">' + btn + '</a>';
 	html += '<a class="spellmenu" href="#" onclick="hideMenu(); onSpellMenu(); return false" title="' + localizer.spellMenu + '">' + btn + '</a>';
-	html += '<a class="waddmenu" href="#" onclick="hideMenu(); onWAddMenu(); return false" title="' + localizer.waddMenu + '">' + btn + '</a>';	
 	html += '<a class="petmenu" href="#" onclick="hideMenu(); onPetMenu(); return false" title="' + localizer.petMenu2 + '">' + btn + '</a>';
 	html += '<hr class="dashed" />';
 	html += '<a class="dressset" href="#" onclick="hideMenu(); onDressAnyCombatsSet(); return false" title="' + localizer.dressCombatsSet + '">' + btn + '</a>';

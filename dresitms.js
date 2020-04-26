@@ -4890,25 +4890,25 @@ upgrade: {
 		properties: {defence:75},
 		setlink: {name:'arrogance'}
 	},
-	roba202: {id:'roba202',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Fiery Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
+	roba202: {id:'roba202',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Fiery Robe of Haughtiness',imp1:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
 		modify: {anticriticalhit:30,firemagicdefencereduce:3,firemagicpower:25,intellect:4,firemagicskill:2,magicdefence:25,defence:25,hitpoints:60,mana:140,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
 		setlink: {name:'haughtiness'}
 	},
-	roba203: {id:'roba203',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Icy Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
+	roba203: {id:'roba203',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Icy Robe of Haughtiness',imp1:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
 		modify: {anticriticalhit:40,watermagicdefencereduce:2,watermagicpower:20,intellect:4,watermagicskill:2,magicdefence:30,defence:30,hitpoints:60,mana:150,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
 		setlink: {name:'haughtiness'}
 	},
-	roba204: {id:'roba204',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Earthen Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
+	roba204: {id:'roba204',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Earthen Robe of Haughtiness',imp1:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
 		modify: {anticriticalhit:50,earthmagicdefencereduce:2,earthmagicpower:20,intellect:4,earthmagicskill:2,magicdefence:25,defence:35,hitpoints:70,mana:130,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
 		setlink: {name:'haughtiness'}
 	},
-	roba205: {id:'roba205',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Airy Robe of Haughtiness',imp1:true,binding:'boe',adjustment:true,
+	roba205: {id:'roba205',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Airy Robe of Haughtiness',imp1:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:33},
 		required: {intellect:25,level:8,wisdom:50},
 		modify: {anticriticalhit:30,airmagicdefencereduce:3,airmagicpower:20,intellect:4,airmagicskill:2,magicdefence:35,defence:25,hitpoints:50,mana:155,bodyarmor1:4,bodyarmor2:12,bodyarmorf:3,bodyarmorm:1,bodyarmord:9},
@@ -5676,7 +5676,7 @@ upgrade: {
 		defences: {crush:'mediocre',thrust:'mediocre'}
 	},
 	
-	armor113_11: { id: 'armor113_11', category:'heavyarmors', slot:'w4', width:60, height:80, caption: 'Утерянная Броня Неприступного Утеса', stats:true,adjustment:true,binding: 'bop',
+	armor113_11: { id: 'armor113_11', category:'heavyarmors', slot:'w4', width:60, height:80, caption: 'Утерянная Броня Неприступного Утеса', stats:true,binding: 'bop',
     requireditems: {anvil_devil: {exchanger: 'anvil_devil', items: {sp_mat42:{id:'sp_mat42',caption:'Утерянная Сущность Брони',count:1},mater301:{id:'mater301',caption:'Кость болотного тролля',count:1},mater299:{id:'mater299',caption:'Черное масло',count:10},mater300:{id:'mater300',caption:'Бурая шкура',count:12},mater293:{id:'mater293',caption:'Мерцающий кристалл',count:8}, mater296:{id:'mater296',caption:'Самородок мерцающего металла',count:20},mater295:{id:'mater295',caption:'Чешуйчатая шкура',count:10},mater297:{id:'mater297',caption:'Изменчивые водоросли',count:10}}}},
 	  common: {weight: 60, price: 537, durability: 100},
 		required: {level:11,endurance:100,strength:200, dexterity:10,intuition:10},

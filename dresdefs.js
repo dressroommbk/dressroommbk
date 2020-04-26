@@ -1200,16 +1200,16 @@ var knownApplicableSpells = {
 	};
 
 var knownPowerUps = {
-	spell_powerup10: {id:'spell_powerup10:',lbl:'Сокрушение', skill: 'greymagicskill', found: false, damageup: true,value:25},
-	spell_powerup1: {id:'spell_powerup1',lbl:'Огненное Усиление',skill: 'firemagicskill', found: false, damageup: true, element: 'fire',value:25,check:true},
-	spell_powerup2: {id:'spell_powerup2',lbl:'Водное Усиление',skill: 'watermagicskill', found: false, damageup: true, element: 'water',value:25,check:true},
-	spell_powerup3: {id:'spell_powerup3',lbl:'Воздушное Усиление',skill: 'airmagicskill', found: false, damageup: true, element: 'air',value:25,check:true},
-	spell_powerup4: {id:'spell_powerup4',lbl:'Земное Усиление',skill: 'earthmagicskill', found: false, damageup: true, element: 'earth',value:25,check:true},
-	spell_protect10: {id:'spell_protect10',lbl:'Защита от Оружия',skill: 'greymagicskill', found: false, damageup: false,value:100},
-	spell_protect1: {id:'spell_protect1',lbl:'Защита от Огня',skill: 'firemagicskill', found: false, damageup: false, element: 'fire',value:100},
-	spell_protect2: {id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', found: false, damageup: false, element: 'water',value:100},
-	spell_protect3: {id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', found: false, damageup: false, element: 'air',value:100},
-	spell_protect4: {id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', found: false, damageup: false, element: 'earth',value:100}
+	spell_powerup10: {places: new Array(), id:'spell_powerup10:',lbl:'Сокрушение', skill: 'greymagicskill', found: false, damageup: true,value:25},
+	spell_powerup1: {places: new Array(), id:'spell_powerup1',lbl:'Огненное Усиление',skill: 'firemagicskill', found: false, damageup: true, element: 'fire',value:25,check:true},
+	spell_powerup2: {places: new Array(), id:'spell_powerup2',lbl:'Водное Усиление',skill: 'watermagicskill', found: false, damageup: true, element: 'water',value:25,check:true},
+	spell_powerup3: {places: new Array(), id:'spell_powerup3',lbl:'Воздушное Усиление',skill: 'airmagicskill', found: false, damageup: true, element: 'air',value:25,check:true},
+	spell_powerup4: {places: new Array(), id:'spell_powerup4',lbl:'Земное Усиление',skill: 'earthmagicskill', found: false, damageup: true, element: 'earth',value:25,check:true},
+	spell_protect10: {places: new Array(), id:'spell_protect10',lbl:'Защита от Оружия',skill: 'greymagicskill', found: false, damageup: false,value:100},
+	spell_protect1: {places: new Array(), id:'spell_protect1',lbl:'Защита от Огня',skill: 'firemagicskill', found: false, damageup: false, element: 'fire',value:100},
+	spell_protect2: {places: new Array(), id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', found: false, damageup: false, element: 'water',value:100},
+	spell_protect3: {places: new Array(), id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', found: false, damageup: false, element: 'air',value:100},
+	spell_protect4: {places: new Array(), id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', found: false, damageup: false, element: 'earth',value:100}
 };
 
 var knownECRPowerUps = {
@@ -1217,8 +1217,8 @@ var knownECRPowerUps = {
 	spell_godstat_dex: {modify: 'dexterity', v: 100},
 	spell_godstat_inst: {modify: 'intuition', v: 100},*/
 
-	spell_godprotect10: {places: new Array(), modify: 'defence', v: 300},
-	spell_godprotect: {modify: 'magicdefence', v: 300},
+	spell_godprotect10: {places: new Array(), id: 'spell_godprotect10', modify: 'defence', v: 300},
+	spell_godprotect: {places: new Array(), id: 'spell_godprotect', modify: 'magicdefence', v: 300},
 
 	/*invoke_spell_godintel100: {modify: 'intellect', v: 100},
 	invoke_spell_godmana100: {modify: 'mana', v: 2000},

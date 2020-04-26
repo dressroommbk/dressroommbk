@@ -3503,7 +3503,7 @@ function onECRPowerUp(spellid)
 	else
 	{
 		for (let existingSpellId in state.spellPowerUps) {
-			if (areArraysIntersect(knownECRPowerUps[existingSpellId].places, knownECRPowerUps[spellid].places)) {
+			if (existingSpellId in knownECRPowerUps && areArraysIntersect(knownECRPowerUps[existingSpellId].places, knownECRPowerUps[spellid].places)) {
 				delete state.spellPowerUps[existingSpellId];
 			}
 		}

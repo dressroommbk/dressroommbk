@@ -4883,7 +4883,7 @@ upgrade: {
 
 	},
 
-	roba201: {id:'roba201',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Garment of Arrogance',imp1:true,binding:'boe',adjustment:true,
+	roba201: {id:'roba201',category:'lightarmors',slot:'w4',width:60,height:80,caption:'Garment of Arrogance',imp1:true,binding:'boe',
 		common: {weight:5,durability:50,eprice:80},
 		required: {intellect:25,level:9,endurance:10,wisdom:50},
 		modify: {anticriticalhit:50,magicdefencereduce:5,magicpower:15,intellect:6,magicskill:2,magicdefence:30,hitpoints:30,mana:70,bodyarmor1:5,bodyarmor2:16,bodyarmorf:4,bodyarmorm:1,bodyarmord:12},

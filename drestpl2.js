@@ -3307,7 +3307,7 @@ function onSwitchConcreteElix(e, elixn)
 
 function onElixMenu()
 {
-	cursorX -= 240;
+	//cursorX -= 240;
 
 	if ('onElixMenu' in menuhash)
 	{
@@ -3320,8 +3320,8 @@ function onElixMenu()
 		return;
 	}
 	//var menuHtml  = '<table width="640" border="0"><tr><td>';
-	var menuHtml  = '<table width="480" border="0"><tr><td>';
-	menuHtml += '<table width="240" border="0">';
+	var menuHtml  = '<table width="640" border="0"><tr><td>';
+	menuHtml += '<table width="320" border="0">';
 	menuHtml += getRowMenuItemHtml(localizer.noElix, "onApplyConcreteElix(event, null, 0)");
 	menuHtml += getRowMenuSeparatorHtml();
 	for (var elixn in knownElix)
@@ -3333,7 +3333,7 @@ function onElixMenu()
 			continue;
 		}
 		var caption = elix.caption;
-		caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + caption;
+		caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + caption;
 		menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 	}
 	menuHtml += '</table></td><td><table width="240" border="0">';
@@ -3345,7 +3345,7 @@ function onElixMenu()
 			menuHtml += getRowMenuSeparatorHtml();
 			continue;
 		}
-		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + elix.caption;
+		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + elix.caption;
 		var action = format("onSwitchConcreteElix(event, '{0}')", elixn);
 		menuHtml += getRowMenuItemHtml(caption, action);
 	}
@@ -3363,7 +3363,7 @@ function onElixMenu()
 				continue;
 			}
 			var caption = elix.caption;
-			caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption) + caption;
+			caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + caption;
 			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 			}
 	}
@@ -3390,7 +3390,7 @@ function onElixMenu()
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 	menuHtml += '</table></td></tr></table>';*/
 	
-	menuHtml += '</table></td></tr><tr><td colspan="2"><table width="480" border="0">';
+	menuHtml += '</table></td></tr><tr><td colspan="2"><table width="640" border="0">';
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 	menuHtml += '</table></td></tr></table>';	
@@ -3556,7 +3556,7 @@ function onECRPowerUp(e, spellid)
 
 function onSpellMenu()
 {
-	cursorX -= 100;
+	//cursorX -= 100;
 	if ('onSpellMenu' in menuhash)
 	{
 		showMenu(menuhash.onSpellMenu);
@@ -3567,8 +3567,8 @@ function onSpellMenu()
 	{
 		return;
 	}
-	var menuHtml = '<table width="480px" border="0">';
-	menuHtml += '<tr><td valign="top"><table width="240px" border="0">';
+	var menuHtml = '<table width="640px" border="0">';
+	menuHtml += '<tr><td valign="top"><table width="320px" border="0">';
 	for (var spelln in knownApplicableSpells)
 	{
 		var spell = knownApplicableSpells[spelln];
@@ -3580,10 +3580,10 @@ function onSpellMenu()
 		var spellHtml = spell.caption;
 		if (spell.check == 1)
 		{
-			spellHtml = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{2}', trickImgPath, spell.id, spell.caption);
+			spellHtml = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{2}', trickImgPath, spell.id, spell.caption);
 		}else if (spell.id.indexOf('(0}') < 0)
 		{
-			spellHtml = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{2}', itemImgPath, format(spell.id, 5), spell.caption);
+			spellHtml = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{2}', itemImgPath, format(spell.id, 5), spell.caption);
 		}
 		menuHtml += getRowMenuItemHtml(spellHtml, format("onConcreteElixMenu(event, '{0}')", spelln));
 	}
@@ -3591,7 +3591,7 @@ function onSpellMenu()
 	for (var powerupn in knownPowerUps)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onPowerUp(event, '{0}')", powerupn));
 	}
 	menuHtml += getRowMenuSeparatorHtml();
@@ -3599,18 +3599,18 @@ function onSpellMenu()
 	for (var powerupn in knownAdds)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onApplyWAdd(event, '{0}')", powerupn));
 	}
 
-	menuHtml += '</table></td><td valign="top"><table width="240px" border="0">';
+	menuHtml += '</table></td><td valign="top"><table width="320px" border="0">';
 	for (var powerupn in knownECRPowerUps)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp; Наложить {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp; {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onECRPowerUp(event, '{0}')", powerupn));
 	}
-	menuHtml += '</table></td></tr><tr><td colspan="2" valign="top"><table width="480px" border="0">';
+	menuHtml += '</table></td></tr><tr><td colspan="2" valign="top"><table width="640px" border="0">';
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 	menuHtml += '</table></td></tr></table>';

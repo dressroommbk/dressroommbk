@@ -730,7 +730,7 @@ function getPersImageHtml(state)
 	for (let powerUpn in state.spellPowerUps) {
 		if (powerUpn in knownECRPowerUps) {
 			let powerUp = knownECRPowerUps[powerUpn];
-
+			
 			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
 			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
 			r += '</a>';
@@ -738,7 +738,7 @@ function getPersImageHtml(state)
 
 		if (powerUpn in knownPowerUps) {
 			let powerUp = knownPowerUps[powerUpn];
-
+			
 			r += '<a onclick="onPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
 			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
 			r += '</a>';
@@ -2774,31 +2774,32 @@ function getDresserInfoPaneHtml(state)
 					   shp
 					   );
 	}
-	for (var powerupn in state.spellPowerUps)
-	{
+	for (var powerupn in state.spellPowerUps) {
 		var spell = getObjectById(powerupn);
-		var caption = spell.caption;
-		if ('buylink' in spell)
-		{
-			caption += '&nbsp;<a title="Купить" target="_blank" class="TLink" href="' + spell.buylink + '">&gt;&gt;</a>';
-		}
-        if (spell.id in knownPowerUps)
-        {
-        var	link = '<font size="1"><a onclick="onPowerUp(event, ' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
-       	}
-       	else
-       	{
-       	var	link = '<font size="1"><a onclick="onECRPowerUp(event, ' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
-       	}
 
-		chapterHtml += '<tr><td valign="top">';
-		chapterHtml += localizer.appliedSpell;
-		chapterHtml += ': </td><td valign="top">';
-		chapterHtml += format(
-					   '{0} на <i>{1} ед.</i>'+link+'</td></tr>',
-					   caption,
-					   state.spellPowerUps[powerupn]
-					   );
+		if (spell !== undefined) {
+			var caption = spell.caption;
+			if ('buylink' in spell)
+			{
+				caption += '&nbsp;<a title="Купить" target="_blank" class="TLink" href="' + spell.buylink + '">&gt;&gt;</a>';
+			}
+	        if (spell.id in knownPowerUps)
+	        {
+	        var	link = '<font size="1"><a onclick="onPowerUp(event, ' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
+	       	}
+	       	else
+	       	{
+	       	var	link = '<font size="1"><a onclick="onECRPowerUp(event, ' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
+	       	}
+
+			chapterHtml += '<tr><td valign="top">';
+			chapterHtml += localizer.appliedSpell;
+			chapterHtml += ': </td><td valign="top">';
+			chapterHtml += format('{0} на <i>{1} ед.</i>'+link+'</td></tr>', caption, state.spellPowerUps[powerupn]);
+		} else {
+			alert('Идентификатор ' + powerupn + ' более не используется и будет проигнорирован.');
+			delete state.spellPowerUps[powerupn];
+		}
 	}
 	if (chapterHtml != '')
 	{

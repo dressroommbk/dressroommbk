@@ -5642,7 +5642,7 @@ upgrade: {
 		required: {level:10,endurance:40,strength:45},
 		modify: {criticalhit:60,anticriticalhit:100,antijumpaway:65,magicdefence:50,hitpoints:200,strength:4,bodyarmor1:35,bodyarmor2:35,bodyarmorf:35,bodyarmorm:1,bodyarmord:0,weaponskill:2},
 		properties: {defence:125},
-		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'good'}	,
+		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'good'}/*,
  upgrade: {
 	armor109_ppwa_k1: {id:'armor109_ppwa_k1',caption:'Броня Повелителя (крит +65)',fixless:true,binding:'bop',
 		modify: {criticalhit:65}
@@ -5664,7 +5664,7 @@ upgrade: {
 	},
 	armor109_ppwa_j4: {id:'armor109_ppwa_j4',caption:'Броня Повелителя (уворот +75)',fixless:true,binding:'bop',
 		modify: {criticalhit:0,jumpaway:75}
-	}}
+	}}*/
 	},
 
 	armor113: { id: 'armor113', category:'heavyarmors', slot:'w4', width:60, height:80, caption: 'Броня Неприступного Утеса', stats:true,binding: 'bop',

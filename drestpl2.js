@@ -83,7 +83,7 @@ var expTableBuilt = false;
 var imagesToBeLoaded = {};
 var preloadImagesDelay = 1000;
 var someStatesLoaded = false;
-var isBuffsVisible = false;
+var isBuffsVisible = true;
 
 if (typeof (dressItems) == 'undefined')
 {

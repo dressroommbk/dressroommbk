@@ -83,6 +83,7 @@ var expTableBuilt = false;
 var imagesToBeLoaded = {};
 var preloadImagesDelay = 1000;
 var someStatesLoaded = false;
+var isBuffsVisible = false;
 
 if (typeof (dressItems) == 'undefined')
 {
@@ -647,6 +648,33 @@ function showPetProps(e)
 	return false;
 }
 
+function ShowBuffs(e, btn) {
+	var buffs = document.getElementById('buffs_icons'),
+		btn_image = document.getElementById('buffs_effect');
+
+	isBuffsVisible = !isBuffsVisible;
+
+	if (isBuffsVisible) {
+		buffs.className = 'visible';
+		btn.title = 'Скрыть обкаст';
+		btn_image.src = baseImgPath + 'effs_hide.gif';
+	} else {
+		buffs.className = 'hidden';
+		btn.title = 'Показать обкаст';
+		btn_image.src = baseImgPath + 'effs_show.gif';
+	}
+
+	if (!is.ie && e.stopPropagation) {
+		e.stopPropagation();
+	}
+	if (is.ie) {
+		window.event.cancelBubble = true;
+		window.event.returnValue = false;
+	}
+
+	return false;
+}
+
 /*function showCharPopup()
 {
 	showPopup(localizer.charHint);
@@ -719,6 +747,11 @@ function getPersImageHtml(state)
 	r += '<td width="120"><table width="120" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3" width="120" onclick="onPersMenu()" title="' + localizer.charHint + '" height="220" align="left" valign="bottom" style="background-image:url(';
 	r += charImgPath + state.sex + '/' + state.image;
 	r += '.gif); background-repeat: no-repeat; background-position: center center;">';
+	
+	r += '<div class="persimage_container">';
+	r += '<div class="persimage_layer buffs">';
+	r += '<a href="javascript:;" title="' + (isBuffsVisible ? 'Скрыть обкаст' : 'Показать обкаст') + '" onclick="ShowBuffs(event, this);"><img id="buffs_effect" src="' + baseImgPath + (isBuffsVisible ? 'effs_hide.gif' : 'effs_show.gif') +'" /></a>';
+	r += '<div id="buffs_icons" class="' + (isBuffsVisible ? 'visible' : 'hidden') + '">'
 
 	var o = getObjectByStateSlot(state, slot_wadd);
 	if (o != null) {
@@ -794,11 +827,15 @@ function getPersImageHtml(state)
 		r += '</a>';
 	}
 
+	r += '</div></div><div class="persimage_layer pet">';
+
 	if (state.pet != null)
 	{
 		var pet = pets[state.pet.n];
-		r += format('<br /><img align="right" src="{0}{2}/{1}.gif" alt="" title="" onmouseover="showPetProps(event)" onclick="javascript: ;" onmouseout="hidePopup()" width="40" height="73" border="0" />', charImgPath, pet.image.def, pet.image.sex);
+		r += format('<img src="{0}{2}/{1}.gif" alt="" title="" onmouseover="showPetProps(event)" onclick="event.stopPropagation();" onmouseout="hidePopup()" width="40" height="73" border="0" />', charImgPath, pet.image.def, pet.image.sex);
 	}
+
+	r += '</div></div>';
 	r += '</td></tr><tr>';
 	r += getPersObjectImageHtml(state, slot_w14);
 	// w16 is skipped

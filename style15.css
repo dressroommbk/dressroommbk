@@ -395,3 +395,39 @@ table.tabZ tr td
 span.magic_caption {
 	color: rgb(128, 0, 0);
 }
+
+div .persimage_container {
+	position: relative;
+	width:120px;
+	height:220px;
+}
+
+div .persimage_layer {
+	position:absolute; 
+	width:100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+div .buffs {
+	z-index: 2;
+}
+
+div .visible {
+	visibility: block;
+}
+
+div .hidden {
+	visibility: hidden;
+}
+
+div .pet {
+	z-index: 1;
+}
+
+div .pet > img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

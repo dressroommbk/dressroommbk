@@ -1195,21 +1195,21 @@ var knownApplicableSpells = {
 	separator2: null,
 	spellHitpointsUp: { id: 'spell_powerHPup{0}', caption: 'Жажда Жизни', makeUp: 'hitpoints', values: new Array(0, 1, 2, 3, 4 , 5, 6), isSpell: true,check:0 },
 	/*spellHitpointsDown: { id: 'spell_powerHPdn{0}', caption: 'Иссушение', makeUp: 'hitpoints', values: new Array(0, -1, -2, -3, -4 , -5), isSpell: true,check:0 },*/
-	spellBD: { id: 'wis_fire_sign',pic:'wis_fire_sign', caption: 'Благословение Звезд', makeUp: 'allstats', values: new Array(0,1,2,3,4,5,6,7,8,9,10,11), isSpell: true, check:1}
+	spellBD: { id: 'wis_fire_sign',pic:'wis_fire_sign', caption: 'Благословение Звезд', makeUp: 'allstats', values: new Array(0,1,2,3,4,5,6,7,8,9,10,11,12), isSpell: true, check:1}
 
 	};
 
 var knownPowerUps = {
-	spell_powerup10: {places: new Array(), id:'spell_powerup10:',lbl:'Сокрушение', skill: 'greymagicskill', found: false, damageup: true,value:25},
-	spell_powerup1: {places: new Array(), id:'spell_powerup1',lbl:'Огненное Усиление',skill: 'firemagicskill', found: false, damageup: true, element: 'fire',value:25,check:true},
-	spell_powerup2: {places: new Array(), id:'spell_powerup2',lbl:'Водное Усиление',skill: 'watermagicskill', found: false, damageup: true, element: 'water',value:25,check:true},
-	spell_powerup3: {places: new Array(), id:'spell_powerup3',lbl:'Воздушное Усиление',skill: 'airmagicskill', found: false, damageup: true, element: 'air',value:25,check:true},
-	spell_powerup4: {places: new Array(), id:'spell_powerup4',lbl:'Земное Усиление',skill: 'earthmagicskill', found: false, damageup: true, element: 'earth',value:25,check:true},
-	spell_protect10: {places: new Array(), id:'spell_protect10',lbl:'Защита от Оружия',skill: 'greymagicskill', found: false, damageup: false,value:100},
-	spell_protect1: {places: new Array(), id:'spell_protect1',lbl:'Защита от Огня',skill: 'firemagicskill', found: false, damageup: false, element: 'fire',value:100},
-	spell_protect2: {places: new Array(), id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', found: false, damageup: false, element: 'water',value:100},
-	spell_protect3: {places: new Array(), id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', found: false, damageup: false, element: 'air',value:100},
-	spell_protect4: {places: new Array(), id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', found: false, damageup: false, element: 'earth',value:100}
+	spell_powerup10: {places: new Array(), id:'spell_powerup10',lbl:'Сокрушение', skill: 'greymagicskill', caption: 'Сокрушение', found: false, damageup: true,value:25},
+	spell_powerup1: {places: new Array(), id:'spell_powerup1',lbl:'Огненное Усиление',skill: 'firemagicskill', caption: 'Огненное Усиление', found: false, damageup: true, element: 'fire',value:25,check:true},
+	spell_powerup2: {places: new Array(), id:'spell_powerup2',lbl:'Водное Усиление',skill: 'watermagicskill', caption: 'Водное Усиление', found: false, damageup: true, element: 'water',value:25,check:true},
+	spell_powerup3: {places: new Array(), id:'spell_powerup3',lbl:'Воздушное Усиление',skill: 'airmagicskill', caption: 'Воздушное Усиление', found: false, damageup: true, element: 'air',value:25,check:true},
+	spell_powerup4: {places: new Array(), id:'spell_powerup4',lbl:'Земное Усиление',skill: 'earthmagicskill', caption: 'Земное Усиление', found: false, damageup: true, element: 'earth',value:25,check:true},
+	spell_protect10: {places: new Array(), id:'spell_protect10',lbl:'Защита от Оружия',skill: 'greymagicskill', caption: 'Защита от Оружия', found: false, damageup: false,value:100},
+	spell_protect1: {places: new Array(), id:'spell_protect1',lbl:'Защита от Огня',skill: 'firemagicskill', caption: 'Защита от Огня', found: false, damageup: false, element: 'fire',value:100},
+	spell_protect2: {places: new Array(), id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', caption: 'Защита от Воды', found: false, damageup: false, element: 'water',value:100},
+	spell_protect3: {places: new Array(), id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', caption: 'Защита от Воздуха', found: false, damageup: false, element: 'air',value:100},
+	spell_protect4: {places: new Array(), id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', caption: 'Защита от Земли', found: false, damageup: false, element: 'earth',value:100}
 };
 
 var knownECRPowerUps = {

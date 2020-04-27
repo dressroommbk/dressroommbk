@@ -727,11 +727,19 @@ function getPersImageHtml(state)
 		r += '</a>';
 	}
 
-	for (let powerUpn in state.spellPowerUps) {
-		let powerUp = knownECRPowerUps[powerUpn];
-
+	for (let powerUpn in state.spellPowerUps) {	
 		if (powerUpn in knownECRPowerUps) {
+			let powerUp = knownECRPowerUps[powerUpn];
+
 			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
+			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
+			r += '</a>';
+		}
+
+		if (powerUpn in knownPowerUps) {
+			let powerUp = knownPowerUps[powerUpn];
+
+			r += '<a onclick="onPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
 			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
 			r += '</a>';
 		}
@@ -789,7 +797,7 @@ function getPersImageHtml(state)
 	if (state.pet != null)
 	{
 		var pet = pets[state.pet.n];
-		r += format('<br /><img align="right" src="{0}{2}/{1}.gif" alt="" title="" onmouseover="showPetProps()" onmouseout="hidePopup()" width="40" height="73" border="0" />', charImgPath, pet.image.def, pet.image.sex);
+		r += format('<br /><img align="right" src="{0}{2}/{1}.gif" alt="" title="" onmouseover="showPetProps(event)" onclick="javascript: ;" onmouseout="hidePopup()" width="40" height="73" border="0" />', charImgPath, pet.image.def, pet.image.sex);
 	}
 	r += '</td></tr><tr>';
 	r += getPersObjectImageHtml(state, slot_w14);
@@ -2776,7 +2784,7 @@ function getDresserInfoPaneHtml(state)
 		}
         if (spell.id in knownPowerUps)
         {
-        var	link = '<font size="1"><a onclick="onPowerUp(' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
+        var	link = '<font size="1"><a onclick="onPowerUp(event, ' + "'" + spell.id + "'" + ')" href="javascript:;">(remove)</a></font>';
        	}
        	else
        	{
@@ -3449,7 +3457,7 @@ function onWAddMenu()
 	showMenu(menuHtml);
 }
 
-function onPowerUp(spellid)
+function onPowerUp(e, spellid)
 {
 	var state = activeState;
 	if (state == null)
@@ -3468,7 +3476,7 @@ function onPowerUp(spellid)
 	{
       v = state.spellPowerUps[spellid];
 	}
-	v = spell['value'];
+	v = spell.value;
 	v = parseInt(v);
     if (spellid in state.spellPowerUps)
 	{
@@ -3496,6 +3504,17 @@ function onPowerUp(spellid)
 		delete state.spellPowerUps[spellid];
 	}
 	updateDresserStateWanted();
+
+	if (!is.ie && e.stopPropagation) {
+		e.stopPropagation();
+	}
+	
+	if (is.ie) {
+		window.event.cancelBubble = true;
+		window.event.returnValue = false;
+	}
+
+	return false;
 }
 
 function onECRPowerUp(e, spellid)
@@ -3572,11 +3591,16 @@ function onSpellMenu()
 	{
 		var o = getObjectById(powerupn);
 		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
-		menuHtml += getRowMenuItemHtml(caption, format("onPowerUp('{0}')", powerupn));
+		menuHtml += getRowMenuItemHtml(caption, format("onPowerUp(event, '{0}')", powerupn));
 	}
 	menuHtml += getRowMenuSeparatorHtml();
-
-	//TODO foods
+	
+	for (var powerupn in knownAdds)
+	{
+		var o = getObjectById(powerupn);
+		var caption = format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		menuHtml += getRowMenuItemHtml(caption, format("onApplyWAdd(event, '{0}')", powerupn));
+	}
 
 	menuHtml += '</table></td><td valign="top"><table width="240px" border="0">';
 	for (var powerupn in knownECRPowerUps)
@@ -4080,7 +4104,7 @@ function getDresserCommands(state)
 	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
-	html += getCell2MenuItemHtml(localizer.waddMenu, 'onWAddMenu()');	
+/*	html += getCell2MenuItemHtml(localizer.waddMenu, 'onWAddMenu()');	
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.spellMenu, 'onSpellMenu()');
 	html += getCell2MenuSeparatorHtml();
@@ -4088,7 +4112,7 @@ function getDresserCommands(state)
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.elixMenu, 'onElixMenu()');
 	html += getCell2MenuSeparatorHtml();
-	/*html += getCell2MenuItemHtml(localizer.optionsMenu, "onOptionsMenu()");
+	html += getCell2MenuItemHtml(localizer.optionsMenu, "onOptionsMenu()");
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
 	s = '<img unselectable="on" src="' + hereItemImgPath + 'dressFromCombats.gif" width="17" height="15" border="0" /><font unselectable="on" color="#003300" title="' + localizer.dressFromCombatsHint + '">' + s + '</font>';
 	html += getCell2MenuItemHtml(s, format("onDressFromCombatsMenu('{0}')", state.id));	
@@ -11720,7 +11744,7 @@ function getSimplePersImageHtml(state, showTricks)
 	if (state.pet != null)
 	{
 		var pet = pets[state.pet.n];
-		r += format('<img src="{0}{2}/{1}.gif" alt="" title="" onmouseover="showPetProps()" onmouseout="hidePopup()" width="40" height="73" border="0" />', charImgPath, pet.image.def, pet.image.sex);
+		r += format('<img src="{0}{2}/{1}.gif" alt="" title="" onmouseover="showPetProps(event)" onclick="javascript: ;" onmouseout="hidePopup()" width="40" height="73" border="0" />', charImgPath, pet.image.def, pet.image.sex);
 	}
         r += '</td></tr><tr>';
         r += getSimplePersObjectImageHtml(state, slot_w14);

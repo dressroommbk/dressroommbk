@@ -727,7 +727,7 @@ function getPersImageHtml(state)
 		r += '</a>';
 	}
 
-	for (let powerUpn in state.spellPowerUps) {	
+	for (let powerUpn in state.spellPowerUps) {
 		if (powerUpn in knownECRPowerUps) {
 			let powerUp = knownECRPowerUps[powerUpn];
 

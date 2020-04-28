@@ -12697,7 +12697,9 @@ upgrade: {
 	pot_cureHP10000_0: {id:'pot_cureHP10000_0',caption:'Новогодний Шоколад',description:'Полностью восстанавливает HP',fixless:true,
 		common: {weight:1,durability:10}
 	},
-	food_l5_eng: {id:'food_l5_eng',caption:'Бутерброд -The Best Friend-',imp1:true,description:'Вы можете обладать одновременно эффектом лишь от одной еды.',binding:'bop',
+	food_l5_eng: {id:'food_l5_eng',caption:'Бутерброд -The Best Friend-',imp1:true,
+    description:'Вы можете обладать одновременно эффектом лишь от одной еды.',binding:'bop',
+    legend: '<b>Бутерброд -The Best Friend-</b> (еда)<br />Уровень жизни: +150',
 		common: {weight:1,price:5,durability:1,expirationdate:9,duration:360,eprice:1},
 		required: {level:5},
 		modify: {hitpoints:150}
@@ -12707,12 +12709,16 @@ upgrade: {
 		required: {sex:'female'},
 		modify: {dexterity:10}
 	},*/
-	food_l11_e: {id:'food_l11_e',caption:'Жесткая Рыба',imp1:true,description:'Жесткая Рыба',description:'Вы можете обладать одновременно эффектом лишь от одной еды.',
+	food_l11_e: {id:'food_l11_e',caption:'Жесткая Рыба',imp1:true,description:'Жесткая Рыба',
+    description:'Вы можете обладать одновременно эффектом лишь от одной еды.',
+    legend: '<b>Жесткая рыба</b> (еда)<br />Мф. мощности урона: +10',
 		common: {weight:1,eprice:1,durability:5,expirationdate:30,duration:360},
 		required: {level:5},
 		modify: {power:10}
 	},
-	food_l10_e: {id:'food_l10_e',caption:'Яблоко Раздора',imp1:true,description:'Яблоко Раздора',description:'Вы можете обладать одновременно эффектом лишь от одной еды.',
+	food_l10_e: {id:'food_l10_e',caption:'Яблоко Раздора',imp1:true,description:'Яблоко Раздора',
+    description:'Вы можете обладать одновременно эффектом лишь от одной еды.',
+    legend: '<b>Яблоко</b> (еда)<br />Мф. мощности магии: +10',
 		common: {weight:1,eprice:1,durability:5,expirationdate:30,duration:360},
 		required: {level:5},
 		modify: {magicpower:10}

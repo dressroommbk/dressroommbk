@@ -697,6 +697,9 @@ function getLegend(type, key) {
 			obj = knownDamageElix[key];
 			break;
 
+		case 'wadd':
+			obj = knownAdds[key];
+
 		default:
 
 	}
@@ -783,8 +786,8 @@ function getPersImageHtml(state)
 
 	var o = getObjectByStateSlot(state, slot_wadd);
 	if (o != null) {
-		r += '<a onclick="onApplyWAdd(event, null);" href="javascript:;">';
-		r += '<img src="' + iconImgPath + o.id + '.gif" title="' + o.caption + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onApplyWAdd(event, null);" href="javascript:;" onmouseover="showPopup(getLegend(\'wadd\', \'' + o.id + '\'));" onmouseout="hidePopup();">';
+		r += '<img src="' + iconImgPath + o.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 

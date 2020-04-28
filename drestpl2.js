@@ -7270,6 +7270,7 @@ function recalcDresserState(state)
 		state.modify.intuition = state.spellBD + (('intuition' in state.modify) ? state.modify.intuition : 0);
 		state.modify.intellect = state.spellBD + (('intellect' in state.modify) ? state.modify.intellect : 0);
 		state.modify.hitpoints = state.spellBD*6 +(('hitpoints' in state.modify) ? state.modify.hitpoints : 0);
+		state.modify.mana = state.spellBD*10 +(('mana' in state.modify) ? state.modify.mana : 0);
 	}
 	if (state.spellHitpoints != 0)
 	{

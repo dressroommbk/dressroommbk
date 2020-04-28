@@ -11933,28 +11933,28 @@ upgrade: {
 	},
 	
 	spell_shield_hammer200: {id:'spell_shield_hammer200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Вмятины',description:'Поглощает: ваш уровень*30 единиц дробящего урона. Физические барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_axe200: {id:'spell_shield_axe200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Зарубы',description:'Поглощает: ваш уровень*30 единиц рубящего урона. Физические барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_sword200: {id:'spell_shield_sword200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Порезы',description:'Поглощает: ваш уровень*30 единиц режущего урона. Физические барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_knife200: {id:'spell_shield_knife200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Уколы',description:'Поглощает: ваш уровень*30 единиц колющего урона. Физические барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_water200: {id:'spell_shield_water200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Воду',description:'Поглощает: ваш уровень*30 единиц урона магии воды. Элементальные барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_fire200: {id:'spell_shield_fire200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Огонь',description:'Поглощает: ваш уровень*30 единиц урона магии огня. Элементальные барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_earth200: {id:'spell_shield_earth200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Землю',description:'Поглощает: ваш уровень*30 единиц урона магии земли. Элементальные барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},
 	spell_shield_air200: {id:'spell_shield_air200',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Барьер: Поглотить Воздух',description:'Поглощает: ваш уровень*30 единиц урона магии воздуха. Элементальные барьеры заменяют друг друга.<br>Задержка использования: 20 ходов.<br>Требуется предмет: [Образец]x0/1/2, [Ланирит]x1/2/5',fixless:true,
-		common: {weight:1,price:'10',durability:'3/5/10'}
+		common: {weight:1,price:10,durability:'3/5/10'}
 	},	
 	
 	fallen_curse: {id:'fallen_curse',category:'combatscrolls',slot:'w100',width:40,height:25,caption:'Проклятие падшего',description:'Снижает у текущего противника все защиты и мощности урона и магии на 75 ед. на 5 ходов.<br>Не действует на монстров.<br>Сделано в Горе Легиона.', fixless:true,

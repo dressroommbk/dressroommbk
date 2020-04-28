@@ -680,9 +680,9 @@ function showCharPopup()
 	showPopup(localizer.charHint);
 }
 
-function getLegend(type, key) {
-	let legend = 'No legend for this object';
-	let obj = undefined;
+function getLegend(type, key, values) {
+	let legend = 'No legend for this object',
+		obj = undefined;
 
 	switch (type) {
 		case 'ecr':
@@ -703,13 +703,27 @@ function getLegend(type, key) {
 
 		case 'defelix':
 			obj = knownDefElix[key];
+			break;
+
+		case 'selix':
+			obj = knownElix[key];
+			break;
+
+		case 'applicable':
+			obj = knownApplicableSpells[key];
+			break;
 
 		default:
-
 	}
 
 	if (obj !== undefined && 'legend' in obj && obj.legend.length > 0) {
 		legend = obj.legend;
+
+		if (values instanceof Array) {
+			for (let i = 0; i < values.length; i++) {
+				legend = legend.split('{' + i + '}').join(values[i]);
+			}
+		}
 	}
 
 	return legend;
@@ -790,7 +804,7 @@ function getPersImageHtml(state)
 
 	var o = getObjectByStateSlot(state, slot_wadd);
 	if (o != null) {
-		r += '<a onclick="onApplyWAdd(event, null);" href="javascript:;" onmouseover="showPopup(getLegend(\'wadd\', \'' + o.id + '\'));" onmouseout="hidePopup();">';
+		r += '<a onclick="onApplyWAdd(event, null);" href="javascript:;" onmouseover="showPopup(getLegend(\'wadd\', \'' + o.id + '\', null));" onmouseout="hidePopup();">';
 		r += '<img src="' + iconImgPath + o.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -799,7 +813,7 @@ function getPersImageHtml(state)
 		if (powerUpn in knownECRPowerUps) {
 			let powerUp = knownECRPowerUps[powerUpn];
 			
-			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'ecr\', \'' + powerUpn + '\'));" onmouseout="hidePopup();">';
+			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'ecr\', \'' + powerUpn + '\', null));" onmouseout="hidePopup();">';
 			r += '<img src="' + iconImgPath + powerUp.id + '.gif" width="36" height="23" border="0" />';
 			r += '</a>';
 		}
@@ -807,7 +821,7 @@ function getPersImageHtml(state)
 		if (powerUpn in knownPowerUps) {
 			let powerUp = knownPowerUps[powerUpn];
 			
-			r += '<a onclick="onPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'powerup\', \'' + powerUpn + '\'));" onmouseout="hidePopup();">';
+			r += '<a onclick="onPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'powerup\', \'' + powerUpn + '\', null));" onmouseout="hidePopup();">';
 			r += '<img src="' + iconImgPath + powerUp.id + '.gif" width="36" height="23" border="0" />';
 			r += '</a>';
 		}
@@ -816,21 +830,21 @@ function getPersImageHtml(state)
 	if (state.statElix != null)
 	{
 		var selix = knownElix[state.statElix.elixn];
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + state.statElix.elixn + "'" + ')" href="javascript:;">';
-		r += '<img src="' + iconImgPath + selix.id + '.gif" title="' + selix.caption + ' +' + state.statElix.v + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + state.statElix.elixn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'selix\', \'' + state.statElix.elixn + '\', [' + state.statElix.v +']));" onmouseout="hidePopup();">';
+		r += '<img src="' + iconImgPath + selix.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	for (var damageelixn in state.damageElixes)
 	{
 		var damageelix = knownDamageElix[damageelixn];
-		r += '<a onclick="onApplyConcreteElix(event, ' + "'" + damageelixn + "'" + ', 0)" href="javascript:;" onmouseover="showPopup(getLegend(\'damageelix\', \'' + damageelixn + '\'));" onmouseout="hidePopup();">';
+		r += '<a onclick="onApplyConcreteElix(event, ' + "'" + damageelixn + "'" + ', 0)" href="javascript:;" onmouseover="showPopup(getLegend(\'damageelix\', \'' + damageelixn + '\', null));" onmouseout="hidePopup();">';
 		r += '<img src="' + iconImgPath + damageelix.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	for (var defelixn in state.defElixes)
 	{
 		var defelix = knownDefElix[defelixn];
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + defelix.id + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'defelix\', \'' + defelixn + '\'));" onmouseout="hidePopup();">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + defelix.id + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'defelix\', \'' + defelixn + '\', [' + state.defElixes[defelixn] + ']));" onmouseout="hidePopup();">';
 		r += '<img src="' + iconImgPath + defelix.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -845,20 +859,20 @@ function getPersImageHtml(state)
 			spellHitpointsName = knownApplicableSpells.spellHitpointsDown.id;
 			spellHitpointsCaption = knownApplicableSpells.spellHitpointsDown.caption;
 		}
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + spellHitpointsId + "'" + ')" href="javascript:;">';
-		r += '<img src="' + itemImgPath + format(spellHitpointsName, Math.abs(state.spellHitpoints)) + '.gif" title="' + spellHitpointsCaption + '+' + state.spellHitpoints + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + spellHitpointsId + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'applicable\', \'spellHitpointsUp\', [' + state.spellHitpoints +', ' + state.spellHitpoints * state.natural.endurance + ']));" onmouseout="hidePopup();">';
+		r += '<img src="' + itemImgPath + format(spellHitpointsName, Math.abs(state.spellHitpoints)) + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	if (state.spellIntel > 0)
 	{
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'spellIntel'" + ')" href="javascript:;">';
-		r += '<img src="' + itemImgPath + knownApplicableSpells.spellIntel.id + '.gif" title="' + knownApplicableSpells.spellIntel.caption + ' +' + state.spellIntel + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'spellIntel'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'applicable\', \'spellIntel\', null));" onmouseout="hidePopup();">';
+		r += '<img src="' + itemImgPath + 'icon_' + knownApplicableSpells.spellIntel.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	if (state.spellBD > 0)
 	{
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'spellBD'" + ')" href="javascript:;">';
-		r += '<img src="' + trickImgPath + knownApplicableSpells.spellBD.id + '.gif" title="' + knownApplicableSpells.spellBD.caption + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'spellBD'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'applicable\', \'spellBD\', [' + state.spellBD + ',' + 6 * state.spellBD + ',' + 10 * state.spellBD + ']));" onmouseout="hidePopup();">';
+		r += '<img src="' + trickImgPath + knownApplicableSpells.spellBD.id + '.gif"  width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 

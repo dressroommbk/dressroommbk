@@ -1128,20 +1128,20 @@ var knownNaturalEditors = new Array(
 	);
 
 var knownElix = {
-	strength: { id: 'pot_base_50_str', caption: 'Зелье Могущества', makeUp: 'strength', values: new Array(0, 10, 11, 12, 13, 14, 15) },
-	dexterity: { id: 'pot_base_50_dex', caption: 'Зелье Стремительности', makeUp: 'dexterity', values: new Array(0, 10, 11, 12, 13, 14, 15) },
-	intuition: { id: 'pot_base_50_inst', caption: 'Зелье Прозрения', makeUp: 'intuition', values: new Array(0, 10, 11, 12, 13, 14, 15) },
-	intellect: { id: 'pot_base_50_intel', caption: 'Зелье Разума', makeUp: 'intellect', values: new Array(0, 10, 11, 12, 13, 14, 15) },	
+	strength: { id: 'pot_base_50_str', caption: 'Зелье Могущества', makeUp: 'strength', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Могущества</b> (эликсир)<br />Сила: +{0}'},
+	dexterity: { id: 'pot_base_50_dex', caption: 'Зелье Стремительности', makeUp: 'dexterity', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Стремительности</b> (эликсир)<br />Ловкость: +{0}'},
+	intuition: { id: 'pot_base_50_inst', caption: 'Зелье Прозрения', makeUp: 'intuition', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Прозрения</b> (эликсир)<br />Интуиция: +{0}'},
+	intellect: { id: 'pot_base_50_intel', caption: 'Зелье Разума', makeUp: 'intellect', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Разума</b> (эликсир)<br />Интеллект: +{0}'},
 	separator0: null,
-	strength2: { id: 'pot_base_200_bot3', caption: 'Снадобье Великана', makeUp: 'strength', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },
-	dexterity2: { id: 'pot_base_200_bot2', caption: 'Снадобье Змеи', makeUp: 'dexterity', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },
-	intuition2: { id: 'pot_base_200_bot1', caption: 'Снадобье Предчувствия', makeUp: 'intuition', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },
-	intellect1: { id: 'pot_base_200_bot4', caption: 'Снадобье Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },	
+	strength2: { id: 'pot_base_200_bot3', caption: 'Снадобье Великана', makeUp: 'strength', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Великана</b> (эликсир)<br />Сила: +{0}'},
+	dexterity2: { id: 'pot_base_200_bot2', caption: 'Снадобье Змеи', makeUp: 'dexterity', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Змеи</b> (эликсир)<br />Ловкость: +{0}'},
+	intuition2: { id: 'pot_base_200_bot1', caption: 'Снадобье Предчувствия', makeUp: 'intuition', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Предчувствия</b> (эликсир)<br />Интуиция: +{0}'},
+	intellect1: { id: 'pot_base_200_bot4', caption: 'Снадобье Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Разума</b> (эликсир)<br />Интеллект: +{0}'},	
 	separator2: null,
-	strength3: { id: 'pot_base_300_str', caption: 'Древняя настойка Свирепости', makeUp: 'strength', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'anticriticalhit', values2: [50] },
-	dexterity3: { id: 'pot_base_300_dex', caption: 'Древняя настойка Грации', makeUp: 'dexterity', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'jumpaway', values2: [50] },
-	intuition3: { id: 'pot_base_300_inst', caption: 'Древняя настойка Неукротимости', makeUp: 'intuition', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'criticalhit', values2: [50] },
-	intellect3: { id: 'pot_base_300_intel', caption: 'Древняя настойка Просветления', makeUp: 'intellect', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2:'magicpower', values2: [5] }
+	strength3: { id: 'pot_base_300_str', caption: 'Древняя настойка Свирепости', makeUp: 'strength', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'anticriticalhit', values2: [50], legend: '<b>Древняя настойка Свирепости</b> (эликсир)<br />Сила: +{0}<br />Мф. против крит. удара: +50'},
+	dexterity3: { id: 'pot_base_300_dex', caption: 'Древняя настойка Грации', makeUp: 'dexterity', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'jumpaway', values2: [50], legend: '<b>Древняя настойка Грации</b> (эликсир)<br />Ловкость: +{0}<br />Мф. увертливости: +50'},
+	intuition3: { id: 'pot_base_300_inst', caption: 'Древняя настойка Неукротимости', makeUp: 'intuition', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'criticalhit', values2: [50], legend: '<b>Древняя настойка Неукротимости</b> (эликсир)<br />Интуиция: +{0}<br />Мф. критического удара: +50'},
+	intellect3: { id: 'pot_base_300_intel', caption: 'Древняя настойка Просветления', makeUp: 'intellect', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2:'magicpower', values2: [5], legend: '<b>Древняя настойка Просветления</b> (эликсир)<br />Интеллект: +{0}<br />Мф. мощности магии: +5'}
 	/*intellect2: { id: 'pot_base_50_intel2', caption: 'Нектар Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },
 	separator0: null,
 	strength4: { id: 'pot_base_200_bot_pm1', caption: 'Эликсир Силы Предков', makeUp: 'strength', values: new Array(20, 37) },
@@ -1169,9 +1169,9 @@ var knownDefElix = {
 	pot_base_50_rezproof: { places: new Array('eweapon'), id: 'pot_base_50_rezproof', caption: 'Зелье Сверкающих Лезвий', makeUp: 'cutdefence', values: new Array(0, 50, 62) },
 	pot_base_50_damageproof: { places: new Array('eweapon'), id: 'pot_base_50_damageproof', caption: 'Эликсир Неуязвимости', makeUp: 'defence', values: new Array(0, 50, 62) },
 	pot_base_200_alldmg2: { places: new Array('eweapon'), id: 'pot_base_200_alldmg2', caption: 'Великое зелье Стойкости', makeUp: 'defence', values: new Array(0, 75, 93) },*/
-	pot_base_200_alldmg3: { places: new Array('eweapon'), id: 'pot_base_200_alldmg3', caption: 'Нектар Неуязвимости', makeUp: 'defence', values: new Array(0, 100, 125), legend: '<b>Нектар Неуязвимости</b> (эликсир)<br />Защита от урона: +125'},
-	pot_base_200_alldmg2_p1k: { places: new Array('eweapon'), id: 'pot_base_200_alldmg2_p1k', caption: 'Зелье Каменной Стойкости', makeUp: 'defence', values: new Array(0, 120, 150), legend: '<b>Зелье Каменной Стойкости</b> (эликсир)<br />Защита от урона: +150'},
-	pot_base_300_alldmg: { places: new Array('eweapon'), id: 'pot_base_300_alldmg', caption: 'Древняя настойка Безразличия', makeUp: 'defence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Безразличия</b> (эликсир)<br />Защита от урона: +212'},
+	pot_base_200_alldmg3: { places: new Array('eweapon'), id: 'pot_base_200_alldmg3', caption: 'Нектар Неуязвимости', makeUp: 'defence', values: new Array(0, 100, 125), legend: '<b>Нектар Неуязвимости</b> (эликсир)<br />Защита от урона: +{0}'},
+	pot_base_200_alldmg2_p1k: { places: new Array('eweapon'), id: 'pot_base_200_alldmg2_p1k', caption: 'Зелье Каменной Стойкости', makeUp: 'defence', values: new Array(0, 120, 150), legend: '<b>Зелье Каменной Стойкости</b> (эликсир)<br />Защита от урона: +{0}'},
+	pot_base_300_alldmg: { places: new Array('eweapon'), id: 'pot_base_300_alldmg', caption: 'Древняя настойка Безразличия', makeUp: 'defence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Безразличия</b> (эликсир)<br />Защита от урона: +{0}'},
 	separator0: null,
 	/*pot_base_50_fireproof: { places: new Array('emagic'), id: 'pot_base_50_fireproof', caption: 'Эликсир Пламени', makeUp: 'firemagicdefence', values: new Array(0, 50, 62) },
 	pot_base_50_airproof: { places: new Array('emagic'), id: 'pot_base_50_airproof', caption: 'Эликсир Ветра', makeUp: 'airmagicdefence', values: new Array(0, 50, 62) },
@@ -1185,19 +1185,18 @@ var knownDefElix = {
 	pot_base_150_waterproof: { places: new Array('emagic'), id: 'pot_base_150_waterproof', caption: 'Эликсир Океанов', makeUp: 'watermagicdefence', values: new Array(0, 75, 93) },
 	pot_base_150_earthproof: { places: new Array('emagic'), id: 'pot_base_150_earthproof', caption: 'Эликсир Недр', makeUp: 'earthmagicdefence', values: new Array(0, 75, 93) },
 	pot_base_200_allmag2: { places: new Array('emagic'), id: 'pot_base_200_allmag2', caption: 'Великое зелье Отрицания', makeUp: 'magicdefence', values: new Array(0, 75, 93) },*/
-	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'magicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +125'},
-	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'magicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +150'},
-	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'magicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +212'}
+	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'magicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +{0}'},
+	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'magicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +{0}'},
+	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'magicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +{0}'}
 	};
 
 var knownApplicableSpells = {
-	spellIntel: { id: 'spell_stat_intel', caption: 'Холодный Разум', makeUp: 'intellect', values: new Array(0, 10), isSpell: true,check:0},
+	spellIntel: { id: 'spell_stat_intel', caption: 'Холодный Разум', makeUp: 'intellect', values: new Array(0, 10), isSpell: true,check:0, legend: '<b>Холодный Разум</b> (свиток)<br />Интеллект: +10'},
 	separator2: null,
-	spellHitpointsUp: { id: 'spell_powerHPup{0}', caption: 'Жажда Жизни', makeUp: 'hitpoints', values: new Array(0, 1, 2, 3, 4 , 5, 6), isSpell: true,check:0 },
+	spellHitpointsUp: { id: 'spell_powerHPup{0}', caption: 'Жажда Жизни', makeUp: 'hitpoints', values: new Array(0, 1, 2, 3, 4 , 5, 6), isSpell: true,check:0, legend: '<b>Жажда Жизни +{0}</b> (свиток)<br />Уровень жизни: +{1}'},
 	/*spellHitpointsDown: { id: 'spell_powerHPdn{0}', caption: 'Иссушение', makeUp: 'hitpoints', values: new Array(0, -1, -2, -3, -4 , -5), isSpell: true,check:0 },*/
-	spellBD: { id: 'wis_fire_sign',pic:'wis_fire_sign', caption: 'Благословение Звезд', makeUp: 'allstats', values: new Array(0,1,2,3,4,5,6,7,8,9,10,11,12), isSpell: true, check:1}
-
-	};
+	spellBD: { id: 'wis_fire_sign',pic:'wis_fire_sign', caption: 'Благословение Звезд', makeUp: 'allstats', values: new Array(0,1,2,3,4,5,6,7,8,9,10,11,12), isSpell: true, check:1, legend: '<b>Благословение Звезд (день рождения)</b> (эффект)<br />Сила +{0}<br />Ловкость +{0}<br />Интуиция +{0}<br />Интеллект +{0}<br />Уровень жизни: +0({1})<br />Уровень маны: +0({2})<br />Восстановление маны (%): +100<br />Восстановление НР (%): +100<br />Получаемый опыт (%): +100'}
+};
 
 var knownPowerUps = {
 	spell_powerup10: {places: new Array(), id:'spell_powerup10',lbl:'Сокрушение', skill: 'greymagicskill', caption: 'Сокрушение', found: false, damageup: true,value:25, legend: '<b>Сокрушение</b> (заклятие)<br />Мф. мощности урона: +25'},

@@ -1169,9 +1169,9 @@ var knownDefElix = {
 	pot_base_50_rezproof: { places: new Array('eweapon'), id: 'pot_base_50_rezproof', caption: 'Зелье Сверкающих Лезвий', makeUp: 'cutdefence', values: new Array(0, 50, 62) },
 	pot_base_50_damageproof: { places: new Array('eweapon'), id: 'pot_base_50_damageproof', caption: 'Эликсир Неуязвимости', makeUp: 'defence', values: new Array(0, 50, 62) },
 	pot_base_200_alldmg2: { places: new Array('eweapon'), id: 'pot_base_200_alldmg2', caption: 'Великое зелье Стойкости', makeUp: 'defence', values: new Array(0, 75, 93) },*/
-	pot_base_200_alldmg3: { places: new Array('eweapon'), id: 'pot_base_200_alldmg3', caption: 'Нектар Неуязвимости', makeUp: 'defence', values: new Array(0, 100, 125) },
-	pot_base_200_alldmg2_p1k: { places: new Array('eweapon'), id: 'pot_base_200_alldmg2_p1k', caption: 'Зелье Каменной Стойкости', makeUp: 'defence', values: new Array(0, 120, 150) },
-	pot_base_300_alldmg: { places: new Array('eweapon'), id: 'pot_base_300_alldmg', caption: 'Древняя настойка Безразличия', makeUp: 'defence', values: new Array(0, 170, 212) },
+	pot_base_200_alldmg3: { places: new Array('eweapon'), id: 'pot_base_200_alldmg3', caption: 'Нектар Неуязвимости', makeUp: 'defence', values: new Array(0, 100, 125), legend: '<b>Нектар Неуязвимости</b> (эликсир)<br />Защита от урона: +125'},
+	pot_base_200_alldmg2_p1k: { places: new Array('eweapon'), id: 'pot_base_200_alldmg2_p1k', caption: 'Зелье Каменной Стойкости', makeUp: 'defence', values: new Array(0, 120, 150), legend: '<b>Зелье Каменной Стойкости</b> (эликсир)<br />Защита от урона: +150'},
+	pot_base_300_alldmg: { places: new Array('eweapon'), id: 'pot_base_300_alldmg', caption: 'Древняя настойка Безразличия', makeUp: 'defence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Безразличия</b> (эликсир)<br />Защита от урона: +212'},
 	separator0: null,
 	/*pot_base_50_fireproof: { places: new Array('emagic'), id: 'pot_base_50_fireproof', caption: 'Эликсир Пламени', makeUp: 'firemagicdefence', values: new Array(0, 50, 62) },
 	pot_base_50_airproof: { places: new Array('emagic'), id: 'pot_base_50_airproof', caption: 'Эликсир Ветра', makeUp: 'airmagicdefence', values: new Array(0, 50, 62) },
@@ -1185,9 +1185,9 @@ var knownDefElix = {
 	pot_base_150_waterproof: { places: new Array('emagic'), id: 'pot_base_150_waterproof', caption: 'Эликсир Океанов', makeUp: 'watermagicdefence', values: new Array(0, 75, 93) },
 	pot_base_150_earthproof: { places: new Array('emagic'), id: 'pot_base_150_earthproof', caption: 'Эликсир Недр', makeUp: 'earthmagicdefence', values: new Array(0, 75, 93) },
 	pot_base_200_allmag2: { places: new Array('emagic'), id: 'pot_base_200_allmag2', caption: 'Великое зелье Отрицания', makeUp: 'magicdefence', values: new Array(0, 75, 93) },*/
-	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'magicdefence', values: new Array(0, 100, 125) },
-	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'magicdefence', values: new Array(0, 120, 150) },
-	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'magicdefence', values: new Array(0, 170, 212) }
+	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'magicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +125'},
+	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'magicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +150'},
+	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'magicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +212'}
 	};
 
 var knownApplicableSpells = {

@@ -699,6 +699,10 @@ function getLegend(type, key) {
 
 		case 'wadd':
 			obj = knownAdds[key];
+			break;
+
+		case 'defelix':
+			obj = knownDefElix[key];
 
 		default:
 
@@ -826,8 +830,8 @@ function getPersImageHtml(state)
 	for (var defelixn in state.defElixes)
 	{
 		var defelix = knownDefElix[defelixn];
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + defelix.id + "'" + ')" href="javascript:;">';
-		r += '<img src="' + iconImgPath + defelix.id + '.gif" title="' + defelix.caption + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + defelix.id + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'defelix\', \'' + defelixn + '\'));" onmouseout="hidePopup();">';
+		r += '<img src="' + iconImgPath + defelix.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	if (state.spellHitpoints != 0)

@@ -1154,8 +1154,8 @@ var knownAdds = {
 	};
 
 var knownDamageElix = {
-	pot_base_100_master: {places: new Array(), id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, mindamage: 25, maxdamage: 50, magicpower:50, magicdefencereduce:10}},
-	pot_base_1000_gl_absolute: {places: new Array('eweapon', 'emagic') ,id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}},
+	pot_base_100_master: {places: new Array(), id: 'pot_base_100_master', caption: 'Снадобье Забытых Мастеров', modify: {power: 33, mindamage: 25, maxdamage: 50, magicpower:50, magicdefencereduce:10}, legend: '<b>Снадобье Забытых Мастеров</b> (эликсир)<br />Мф. мощности урона: +33<br />Подавление защиты от магии: +10<br />Минимальное наносимое повреждение: +25<br />Максимальное наносимое повреждение: +50<br/>Мф. мощности магии стихий: +50'},
+	pot_base_1000_gl_absolute: {places: new Array('eweapon', 'emagic') ,id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}, legend: '<b>Снадобье Забытых Мастеров</b> (эликсир)<br />Уровень жизни: +250<br />Защита от урона: +312<br />Защита от магии: +312<br />Мф. против увертливости: +250<br/>Мф. против крит. удара: +250'},
 /*	pot_base_0_strup: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {power: 33, mindamage: 25, maxdamage: 50}},
 	pot_base_0_strup_1: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {magicpower: 50, magicdefencereduce: 10}},
 	pot_base_0_ny3: {id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}},
@@ -1191,7 +1191,7 @@ var knownDefElix = {
 	};
 
 var knownApplicableSpells = {
-	spellIntel: { id: 'spell_stat_intel', caption: 'Холодный Разум', makeUp: 'intellect', values: new Array(0, 10), isSpell: true,check:0 },
+	spellIntel: { id: 'spell_stat_intel', caption: 'Холодный Разум', makeUp: 'intellect', values: new Array(0, 10), isSpell: true,check:0},
 	separator2: null,
 	spellHitpointsUp: { id: 'spell_powerHPup{0}', caption: 'Жажда Жизни', makeUp: 'hitpoints', values: new Array(0, 1, 2, 3, 4 , 5, 6), isSpell: true,check:0 },
 	/*spellHitpointsDown: { id: 'spell_powerHPdn{0}', caption: 'Иссушение', makeUp: 'hitpoints', values: new Array(0, -1, -2, -3, -4 , -5), isSpell: true,check:0 },*/
@@ -1200,16 +1200,16 @@ var knownApplicableSpells = {
 	};
 
 var knownPowerUps = {
-	spell_powerup10: {places: new Array(), id:'spell_powerup10',lbl:'Сокрушение', skill: 'greymagicskill', caption: 'Сокрушение', found: false, damageup: true,value:25},
-	spell_powerup1: {places: new Array(), id:'spell_powerup1',lbl:'Огненное Усиление',skill: 'firemagicskill', caption: 'Огненное Усиление', found: false, damageup: true, element: 'fire',value:25,check:true},
-	spell_powerup2: {places: new Array(), id:'spell_powerup2',lbl:'Водное Усиление',skill: 'watermagicskill', caption: 'Водное Усиление', found: false, damageup: true, element: 'water',value:25,check:true},
-	spell_powerup3: {places: new Array(), id:'spell_powerup3',lbl:'Воздушное Усиление',skill: 'airmagicskill', caption: 'Воздушное Усиление', found: false, damageup: true, element: 'air',value:25,check:true},
-	spell_powerup4: {places: new Array(), id:'spell_powerup4',lbl:'Земное Усиление',skill: 'earthmagicskill', caption: 'Земное Усиление', found: false, damageup: true, element: 'earth',value:25,check:true},
-	spell_protect10: {places: new Array(), id:'spell_protect10',lbl:'Защита от Оружия',skill: 'greymagicskill', caption: 'Защита от Оружия', found: false, damageup: false,value:100},
-	spell_protect1: {places: new Array(), id:'spell_protect1',lbl:'Защита от Огня',skill: 'firemagicskill', caption: 'Защита от Огня', found: false, damageup: false, element: 'fire',value:100},
-	spell_protect2: {places: new Array(), id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', caption: 'Защита от Воды', found: false, damageup: false, element: 'water',value:100},
-	spell_protect3: {places: new Array(), id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', caption: 'Защита от Воздуха', found: false, damageup: false, element: 'air',value:100},
-	spell_protect4: {places: new Array(), id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', caption: 'Защита от Земли', found: false, damageup: false, element: 'earth',value:100}
+	spell_powerup10: {places: new Array(), id:'spell_powerup10',lbl:'Сокрушение', skill: 'greymagicskill', caption: 'Сокрушение', found: false, damageup: true,value:25, legend: '<b>Сокрушение</b> (заклятие)<br />Мф. мощности урона: +25'},
+	spell_powerup1: {places: new Array(), id:'spell_powerup1',lbl:'Огненное Усиление',skill: 'firemagicskill', caption: 'Огненное Усиление', found: false, damageup: true, element: 'fire',value:25,check:true, legend: '<b>Огненное Усиление</b> (заклятие)<br />Мф. мощности магии Огня: +25'},
+	spell_powerup2: {places: new Array(), id:'spell_powerup2',lbl:'Водное Усиление',skill: 'watermagicskill', caption: 'Водное Усиление', found: false, damageup: true, element: 'water',value:25,check:true, legend: '<b>Водное Усиление</b> (заклятие)<br />Мф. мощности магии Воды: +25'},
+	spell_powerup3: {places: new Array(), id:'spell_powerup3',lbl:'Воздушное Усиление',skill: 'airmagicskill', caption: 'Воздушное Усиление', found: false, damageup: true, element: 'air',value:25,check:true, legend: '<b>Воздушное Усиление</b> (заклятие)<br />Мф. мощности магии Воздуха: +25'},
+	spell_powerup4: {places: new Array(), id:'spell_powerup4',lbl:'Земное Усиление',skill: 'earthmagicskill', caption: 'Земное Усиление', found: false, damageup: true, element: 'earth',value:25,check:true, legend: '<b>Земное Усиление</b> (заклятие)<br />Мф. мощности магии Земли: +25'},
+	spell_protect10: {places: new Array(), id:'spell_protect10',lbl:'Защита от Оружия',skill: 'greymagicskill', caption: 'Защита от Оружия', found: false, damageup: false,value:100, legend: '<b>Защита от Оружия</b> (заклятие)<br />Защита от урона: +100'},
+	spell_protect1: {places: new Array(), id:'spell_protect1',lbl:'Защита от Огня',skill: 'firemagicskill', caption: 'Защита от Огня', found: false, damageup: false, element: 'fire',value:100, legend: '<b>Защита от Огня</b> (заклятие)<br />Защита от магии Огня: +100'},
+	spell_protect2: {places: new Array(), id:'spell_protect2',lbl:'Защита от Воды',skill: 'watermagicskill', caption: 'Защита от Воды', found: false, damageup: false, element: 'water',value:100, legend: '<b>Защита от Воды</b> (заклятие)<br />Защита от магии Воды: +100'},
+	spell_protect3: {places: new Array(), id:'spell_protect3',lbl:'Защита от Воздуха',skill: 'airmagicskill', caption: 'Защита от Воздуха', found: false, damageup: false, element: 'air',value:100, legend: '<b>Защита от Воздуха</b> (заклятие)<br />Защита от магии Воздуха: +100'},
+	spell_protect4: {places: new Array(), id:'spell_protect4',lbl:'Защита от Земли',skill: 'earthmagicskill', caption: 'Защита от Земли', found: false, damageup: false, element: 'earth',value:100, legend: '<b>Защита от Земли</b> (заклятие)<br />Защита от магии Земли: +100'}
 };
 
 var knownECRPowerUps = {
@@ -1217,8 +1217,8 @@ var knownECRPowerUps = {
 	spell_godstat_dex: {modify: 'dexterity', v: 100},
 	spell_godstat_inst: {modify: 'intuition', v: 100},*/
 
-	spell_godprotect10: {places: new Array(), id: 'spell_godprotect10', caption: 'Неуязвимость Оружию', modify: 'defence', v: 300},
-	spell_godprotect: {places: new Array(), id: 'spell_godprotect', caption: 'Неуязвимость Стихиям', modify: 'magicdefence', v: 300},
+	spell_godprotect10: {places: new Array(), id: 'spell_godprotect10', caption: 'Неуязвимость Оружию', modify: 'defence', v: 300, legend: '<b>Неуязвимость Оружию</b> (заклятие)<br />Защита от урона: +300'},
+	spell_godprotect: {places: new Array(), id: 'spell_godprotect', caption: 'Неуязвимость Стихиям', modify: 'magicdefence', v: 300, legend: '<b>Неуязвимость Оружию</b> (заклятие)<br />Защита от магии: +300'},
 
 	/*invoke_spell_godintel100: {modify: 'intellect', v: 100},
 	invoke_spell_godmana100: {modify: 'mana', v: 2000},
@@ -1227,12 +1227,12 @@ var knownECRPowerUps = {
 	spell_starenergy: {modify: 'magicpower', v: 20, 'mana', v: 150}
 	separator2: null,*/
 
-	plain_1s_str10: {places: new Array('colorVolume'), id: 'plain_1s_str10', caption: 'Зелёный Том Знаний', modify: 'strength', v: 10},
-	plain_1s_dex10: {places: new Array('colorVolume'), id: 'plain_1s_dex10', caption: 'Жёлтый Том Знаний', modify: 'dexterity', v: 10},
-	plain_1s_inst10: {places: new Array('colorVolume'), id: 'plain_1s_inst10', caption: 'Красный Том Знаний', modify: 'intuition', v: 10},
-	plain_1s_intel10: {places: new Array('colorVolume'), id: 'plain_1s_intel10', caption: 'Синий Том Знаний', modify: 'intellect', v: 10},
-	plain_1s_all5: {places: new Array('colorVolume'), id: 'plain_1s_all5', caption: 'Белый том знаний', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
-	plain_1s_spirit10: {places: new Array(), id:'plain_1s_spirit10', caption: 'Черный Том Знаний', modify: 'spirituality', v: 10},
+	plain_1s_str10: {places: new Array('colorVolume'), id: 'plain_1s_str10', caption: 'Зелёный Том Знаний', modify: 'strength', v: 10, legend: '<b>Зелёный Том Знаний</b> (эффект)<br />Сила: +10'},
+	plain_1s_dex10: {places: new Array('colorVolume'), id: 'plain_1s_dex10', caption: 'Жёлтый Том Знаний', modify: 'dexterity', v: 10, legend: '<b>Жёлтый Том Знаний</b> (эффект)<br />Ловкость: +10'},
+	plain_1s_inst10: {places: new Array('colorVolume'), id: 'plain_1s_inst10', caption: 'Красный Том Знаний', modify: 'intuition', v: 10, legend: '<b>Красный Том Знаний</b> (эффект)<br />Интуиция: +10'},
+	plain_1s_intel10: {places: new Array('colorVolume'), id: 'plain_1s_intel10', caption: 'Синий Том Знаний', modify: 'intellect', v: 10, legend: '<b>Синий Том Знаний</b> (эффект)<br />Интеллект: +10'},
+	plain_1s_all5: {places: new Array('colorVolume'), id: 'plain_1s_all5', caption: 'Белый том знаний', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}, legend: '<b>Белый том знаний</b> (эффект)<br />Сила: +5<br />Ловкость: +5<br />Интуиция: +5<br />Интеллект: +5'},
+	plain_1s_spirit10: {places: new Array(), id:'plain_1s_spirit10', caption: 'Черный Том Знаний', modify: 'spirituality', v: 10, legend: '<b>Черный Том Знаний</b> (эффект)<br />Духовность: +10'},
 
 	/*club_defender: {places: new Array(), id: 'club_defender', caption: 'Знак Защитника Клуба', modify: 'hitpoints', v: 120}, 
 	quenching: {modify: 'hitpoints', v:120},
@@ -1245,14 +1245,13 @@ var knownECRPowerUps = {
 	catbaff_life: {modify: 'hitpoints', v: 30},
 	catbaff_damage: {modify: 'maxdamage', v: 25},*/
 
-	standart_curse: {places: new Array(), id: 'standart_curse', caption: 'Благословение Глубин', v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}},	
-	gg_macropus_reward: {places: new Array('mrbaff'), id: 'gg_macropus_reward', caption: 'Благословение Макропуса', modify: 'hitpoints', v: 250},	
-	gg_gribnica_reward: {places: new Array('mrbaff'), id: 'gg_gribnica_reward', caption: 'Благословение Грибницы', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}},
-	gl_npc_ghost_buff1: {places: new Array('glbaff'), id: 'gl_npc_ghost_buff1', caption: 'Благодарность одинокого призрака', v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}},
-	gl_npc_ghost_buff2: {places: new Array('glbaff'), id: 'gl_npc_ghost_buff2', caption: 'Благодарность одинокого призрака', v: '175+175', modifyExt: {criticalhit: 175, antijumpaway: 175}},
-	gl_npc_skeleton_buff1: {places: new Array('glbaff'), id: 'gl_npc_skeleton_buff1', caption: 'Благодарность задорного скелета', modify: 'power', v: 10},
-	gl_npc_skeleton_buff2: {places: new Array('glbaff'), id: 'gl_npc_skeleton_buff2', caption: 'Благодарность задорного скелета', modify: 'magicdefencereduce', v:2}
-	
+	standart_curse: {places: new Array(), id: 'standart_curse', caption: 'Благословение Глубин', v:'5+5+5+30+25', modifyExt: {strength:5,dexterity:5,intuition:5,hitpoints:30,maxdamage:25}, legend: '<b>Благословение Глубин</b> (эффект)<br />Сила: +5<br />Ловкость: +5<br />Интуиция: +5<br />Максимальное наносимое повреждение: +25<br />Уровень жизни: +30'},
+	gg_macropus_reward: {places: new Array('mrbaff'), id: 'gg_macropus_reward', caption: 'Благословение Макропуса', modify: 'hitpoints', v: 250, legend: '<b>Благословение Макропуса</b> (эффект)<br />Уровень жизни: +250'},
+	gg_gribnica_reward: {places: new Array('mrbaff'), id: 'gg_gribnica_reward', caption: 'Благословение Грибницы', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}, legend: '<b>Благословение Грибницы</b> (эффект)<br />Сила: +5<br />Ловкость: +5<br />Интуиция: +5<br />Интеллект: +5'},
+	gl_npc_ghost_buff1: {places: new Array('glbaff'), id: 'gl_npc_ghost_buff1', caption: 'Благодарность Одинокого призрака', v: '175+175', modifyExt: {jumpaway: 175, anticriticalhit: 175}, legend: '<b>Благодарность Одинокого призрака</b> (эффект)<br />Мф. против крит. удара: + 175<br />Мф. увертливости: +175'},
+	gl_npc_ghost_buff2: {places: new Array('glbaff'), id: 'gl_npc_ghost_buff2', caption: 'Благодарность Одинокого призрака', v: '175+175', modifyExt: {criticalhit: 175, antijumpaway: 175}, legend: '<b>Благодарность Одинокого призрака</b> (эффект)<br />Мф. против увертывания: + 175<br />Мф. крит. удара: +175'},
+	gl_npc_skeleton_buff1: {places: new Array('glbaff'), id: 'gl_npc_skeleton_buff1', caption: 'Благодарность Задорного скелета', modify: 'power', v: 10, legend: '<b>Благодарность Задорного скелета</b> (эффект)<br />Мф. мощности урона: +10'},
+	gl_npc_skeleton_buff2: {places: new Array('glbaff'), id: 'gl_npc_skeleton_buff2', caption: 'Благодарность Задорного скелета', modify: 'magicdefencereduce', v:2, legend: '<b>Благодарность Задорного скелета</b> (эффект)<br />Подавление защиты от магии: +2'}
 };
 
 var reSharpness = /\+(\d{1,2})$/;

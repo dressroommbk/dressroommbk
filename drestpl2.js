@@ -675,10 +675,38 @@ function ShowBuffs(e, btn) {
 	return false;
 }
 
-/*function showCharPopup()
+function showCharPopup()
 {
 	showPopup(localizer.charHint);
-}*/
+}
+
+function getLegend(type, key) {
+	let legend = 'No legend for this object';
+	let obj = undefined;
+
+	switch (type) {
+		case 'ecr':
+			obj = knownECRPowerUps[key];
+			break;
+
+		case 'powerup':
+			obj = knownPowerUps[key];
+			break;
+
+		case 'damageelix':
+			obj = knownDamageElix[key];
+			break;
+
+		default:
+
+	}
+
+	if (obj !== undefined && 'legend' in obj && obj.legend.length > 0) {
+		legend = obj.legend;
+	}
+
+	return legend;
+}
 
 function getPersImageHtml(state)
 {
@@ -744,7 +772,7 @@ function getPersImageHtml(state)
 	// w5
 	r += getPersObjectImageHtml(state, slot_w5);
 	r += '</tr></table></td>';
-	r += '<td width="120"><table width="120" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3" width="120" onclick="onPersMenu()" title="' + localizer.charHint + '" height="220" align="left" valign="bottom" style="background-image:url(';
+	r += '<td width="120"><table width="120" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3" width="120" onclick="onPersMenu();" height="220" align="left" valign="bottom" style="background-image:url(';
 	r += charImgPath + state.sex + '/' + state.image;
 	r += '.gif); background-repeat: no-repeat; background-position: center center;">';
 	
@@ -764,16 +792,16 @@ function getPersImageHtml(state)
 		if (powerUpn in knownECRPowerUps) {
 			let powerUp = knownECRPowerUps[powerUpn];
 			
-			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
-			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
+			r += '<a onclick="onECRPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'ecr\', \'' + powerUpn + '\'));" onmouseout="hidePopup();">';
+			r += '<img src="' + iconImgPath + powerUp.id + '.gif" width="36" height="23" border="0" />';
 			r += '</a>';
 		}
 
 		if (powerUpn in knownPowerUps) {
 			let powerUp = knownPowerUps[powerUpn];
 			
-			r += '<a onclick="onPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;">';
-			r += '<img src="' + iconImgPath + powerUp.id + '.gif" title="' + powerUp.caption + '" width="36" height="23" border="0" />';
+			r += '<a onclick="onPowerUp(event, ' + "'" + powerUpn + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'powerup\', \'' + powerUpn + '\'));" onmouseout="hidePopup();">';
+			r += '<img src="' + iconImgPath + powerUp.id + '.gif" width="36" height="23" border="0" />';
 			r += '</a>';
 		}
 	}
@@ -788,8 +816,8 @@ function getPersImageHtml(state)
 	for (var damageelixn in state.damageElixes)
 	{
 		var damageelix = knownDamageElix[damageelixn];
-		r += '<a onclick="onApplyConcreteElix(event, ' + "'" + damageelixn + "'" + ', 0)" href="javascript:;">';
-		r += '<img src="' + iconImgPath + damageelix.id + '.gif" title="' + damageelix.caption + '" width="36" height="23" border="0" />';
+		r += '<a onclick="onApplyConcreteElix(event, ' + "'" + damageelixn + "'" + ', 0)" href="javascript:;" onmouseover="showPopup(getLegend(\'damageelix\', \'' + damageelixn + '\'));" onmouseout="hidePopup();">';
+		r += '<img src="' + iconImgPath + damageelix.id + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	for (var defelixn in state.defElixes)

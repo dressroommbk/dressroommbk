@@ -811,7 +811,7 @@ function getPersImageHtml(state)
 			spellHitpointsCaption = knownApplicableSpells.spellHitpointsDown.caption;
 		}
 		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + spellHitpointsId + "'" + ')" href="javascript:;">';
-		r += '<img src="' + itemImgPath + format(spellHitpointsName, Math.abs(state.spellHitpoints)) + '.gif" title="' + spellHitpointsCaption + ' ' + state.spellHitpoints + '" width="36" height="23" border="0" />';
+		r += '<img src="' + itemImgPath + format(spellHitpointsName, Math.abs(state.spellHitpoints)) + '.gif" title="' + spellHitpointsCaption + '+' + state.spellHitpoints + '" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
 	if (state.spellIntel > 0)
@@ -3257,10 +3257,10 @@ function onConcreteElixMenu(event, elixn)
 	{
 		return;
 	}
-	var menuHtml  ='<table width="240px" border="0"><tr><td>';
+	var menuHtml  ='<table width="320px" border="0"><tr><td>';
 	if (elix.id.indexOf('{0}') < 0)
 	{
-		menuHtml += format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, elix.id, elix.caption);
+		menuHtml += format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption);
 		menuHtml += elix.caption.bold();
 	}
 	else
@@ -3292,7 +3292,7 @@ function onConcreteElixMenu(event, elixn)
 			   if (elix.check == 1)
 			   {
 			   	caption =
-					format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', trickImgPath, elix.pic, elix.caption)
+					format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;', trickImgPath, elix.pic, elix.caption)
 					+ '&nbsp;'
 					+ captionHead
 					+ ' '
@@ -3302,7 +3302,7 @@ function onConcreteElixMenu(event, elixn)
 			   else
 		       {
 				caption =
-					format('<img src="{0}{1}.gif" width="15" height="15" alt="{2}" border="0" />&nbsp;', itemImgPath, format(elix.id, Math.abs(v)), (elix.caption + sv))
+					format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;', itemImgPath, format(elix.id, Math.abs(v)), (elix.caption + sv))
 					+ '&nbsp;'
 					+ captionHead
 					+ ' '
@@ -3370,10 +3370,10 @@ function onElixMenu()
 			continue;
 		}
 		var caption = elix.caption;
-		caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + caption;
+		caption = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + caption;
 		menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 	}
-	menuHtml += '</table></td><td><table width="240" border="0">';
+	menuHtml += '</table></td><td><table width="320" border="0">';
 	for (var elixn in knownDamageElix)
 	{
 		var elix = knownDamageElix[elixn];
@@ -3382,7 +3382,7 @@ function onElixMenu()
 			menuHtml += getRowMenuSeparatorHtml();
 			continue;
 		}
-		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + elix.caption;
+		var caption = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + elix.caption;
 		var action = format("onSwitchConcreteElix(event, '{0}')", elixn);
 		menuHtml += getRowMenuItemHtml(caption, action);
 	}
@@ -3400,7 +3400,7 @@ function onElixMenu()
 				continue;
 			}
 			var caption = elix.caption;
-			caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + caption;
+			caption = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;', itemImgPath, 'icon_' + elix.id, elix.caption) + caption;
 			menuHtml += getRowMenuItemHtml(caption, format("onConcreteElixMenu(event, '{0}')", elixn));
 			}
 	}
@@ -3617,10 +3617,10 @@ function onSpellMenu()
 		var spellHtml = spell.caption;
 		if (spell.check == 1)
 		{
-			spellHtml = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{2}', trickImgPath, spell.id, spell.caption);
+			spellHtml = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;{2}', trickImgPath, spell.id, spell.caption);
 		}else if (spell.id.indexOf('(0}') < 0)
 		{
-			spellHtml = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{2}', itemImgPath, format(spell.id, 5), spell.caption);
+			spellHtml = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;{2}', itemImgPath, format(spell.id, 5), spell.caption);
 		}
 		menuHtml += getRowMenuItemHtml(spellHtml, format("onConcreteElixMenu(event, '{0}')", spelln));
 	}
@@ -3628,7 +3628,7 @@ function onSpellMenu()
 	for (var powerupn in knownPowerUps)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onPowerUp(event, '{0}')", powerupn));
 	}
 	menuHtml += getRowMenuSeparatorHtml();
@@ -3636,7 +3636,7 @@ function onSpellMenu()
 	for (var powerupn in knownAdds)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp;{3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onApplyWAdd(event, '{0}')", powerupn));
 	}
 
@@ -3644,7 +3644,7 @@ function onSpellMenu()
 	for (var powerupn in knownECRPowerUps)
 	{
 		var o = getObjectById(powerupn);
-		var caption = format('<img src="{0}{1}.gif" width="40" height="25" alt="{2}" border="0" />&nbsp; {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
+		var caption = format('<img src="{0}{1}.gif" width="32" height="20" alt="{2}" border="0" />&nbsp; {3}', itemImgPath, o.id, o.caption, htmlstring(o.caption));
 		menuHtml += getRowMenuItemHtml(caption, format("onECRPowerUp(event, '{0}')", powerupn));
 	}
 	menuHtml += '</table></td></tr><tr><td colspan="2" valign="top"><table width="640px" border="0">';
@@ -3691,7 +3691,7 @@ function onConcretePetMenu(petn)
 	var pet = pets[petn];
 	var menuHtml  ='<table width="240px" border="0">';
 
-	menuHtml += format('<img src="{2}{1}.gif" width="40" height="25" border="0" alt="{0}" />{0}', pet.caption, pet.summon.name, itemImgPath);
+	menuHtml += format('<img src="{2}{1}.gif" width="32" height="20" border="0" alt="{0}" />&nbsp;{0}', pet.caption, pet.summon.name, itemImgPath);
 
 	if (state.pet != null)
 	{
@@ -3731,7 +3731,7 @@ function onPetMenu()
 	for (var petn in pets)
 	{
 		var pet = pets[petn];
-		var petHtml = format('<img src="{2}{1}.gif" width="40" height="25" border="0" alt="{0}" />{0}', pet.caption, pet.summon.name, itemImgPath);
+		var petHtml = format('<img src="{2}{1}.gif" width="40" height="25" border="0" alt="{0}" />&nbsp;{0}', pet.caption, pet.summon.name, itemImgPath);
 		menuHtml += getRowMenuItemHtml(petHtml, format("onConcretePetMenu('{0}')", petn));
 	}
 	menuHtml += getRowMenuSeparatorHtml();

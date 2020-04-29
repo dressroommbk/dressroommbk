@@ -880,12 +880,14 @@ var knownArmorModifiers = {
 	avgarmor: 0
 	};
 
+var isDarkLightElements = false;
+
 var naturalElements = [
 	'fire',
 	'earth',
 	'air',
 	'water'
-	];
+];
 
 var allElements = [
 	'fire',
@@ -895,7 +897,7 @@ var allElements = [
 	'light',
 	'dark',
 	'grey'
-	];
+];
 
 var common_props = {
 	eprice: {lbl: 'Цена (екр.)', fmt: '<font color="brown">{0}&nbsp;екр.</font>', view: true},
@@ -925,13 +927,13 @@ var item_props = {
 	totaleprice: {lbl: 'Стоимость предметов (екр.)', fmt: '{0}&nbsp;екр.', view: true, nocharm: true},
 	totalweight: {lbl: 'Вес предметов', view: true, nocharm: true},
 	mana: {lbl: 'Уровень маны', required: true, view: true, inmfg: true},
-	weaponskill: {lbl: 'Владение оружием', view: true, inmfg: true, inprpg: true},
+	weaponskill: {lbl: 'Владение оружием', view: false, inmfg: true, inprpg: true},
 	knifeskill: {lbl: 'Владение ножами и кинжалами', required: true, view: true, inmfg: true, inprpg: true},
 	axeskill: {lbl: 'Владение топорами и секирами', required: true, view: true, inmfg: true, inprpg: true},
 	clubskill: {lbl: 'Владение молотами и дубинами', required: true, view: true, inmfg: true, inprpg: true},
 	swordskill: {lbl: 'Владение мечами', required: true, view: true, inmfg: true, inprpg: true},
 	staffskill: {lbl: 'Владение посохами', required: true, view: true, inmfg: true, inprpg: true},
-	magicskill: {lbl: 'Владение магией Стихий', view: true, inmfg: true},
+	magicskill: {lbl: 'Владение магией Стихий', view: false, inmfg: true},
 	firemagicskill: {lbl: 'Владение магией Огня', required: true, view: true, inmfg: true},
 	airmagicskill: {lbl: 'Владение магией Воздуха', required: true, view: true, inmfg: true},
 	watermagicskill: {lbl: 'Владение магией Воды', required: true, view: true, inmfg: true},
@@ -979,7 +981,7 @@ var item_props = {
 	crushdefence: {lbl: 'Защита от дробящего урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
 	cutdefence: {lbl: 'Защита от режущего урона', maxvalue: 1600, view: true, inmfg: true, inprpg: true},
 	magicdefence: {lbl: 'Защита от магии', maxvalue: 1600, view: true, inmfg: true},
-//	emagicdefence: {lbl: 'Защита от магии Огня, Воздуха, Воды и Земли', maxvalue: 1600, view: false, nocharm: true},
+	emagicdefence: {lbl: 'Защита от магии Стихий', maxvalue: 1600, view: false, nocharm: true},
 	firemagicdefence: {lbl: 'Защита от магии Огня', maxvalue: 1600, view: true, inmfg: true},
 	airmagicdefence: {lbl: 'Защита от магии Воздуха', maxvalue: 1600, view: true, inmfg: true},
 	watermagicdefence: {lbl: 'Защита от магии Воды', maxvalue: 1600, view: true, inmfg: true},
@@ -1185,9 +1187,9 @@ var knownDefElix = {
 	pot_base_150_waterproof: { places: new Array('emagic'), id: 'pot_base_150_waterproof', caption: 'Эликсир Океанов', makeUp: 'watermagicdefence', values: new Array(0, 75, 93) },
 	pot_base_150_earthproof: { places: new Array('emagic'), id: 'pot_base_150_earthproof', caption: 'Эликсир Недр', makeUp: 'earthmagicdefence', values: new Array(0, 75, 93) },
 	pot_base_200_allmag2: { places: new Array('emagic'), id: 'pot_base_200_allmag2', caption: 'Великое зелье Отрицания', makeUp: 'magicdefence', values: new Array(0, 75, 93) },*/
-	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'magicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +{0}'},
-	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'magicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +{0}'},
-	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'magicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +{0}'}
+	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'emagicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +{0}'},
+	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'emagicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +{0}'},
+	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'emagicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +{0}'}
 	};
 
 var knownApplicableSpells = {

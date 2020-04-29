@@ -1984,7 +1984,7 @@ function getDresserInfoPaneTabsHtml(tabIndex)
 	{
 		html += getDresserInfoPaneTabHtml(localizer.petPaneHeader, 'showPetPane()', (tabIndex == 2));
 	}
-	html += getDresserInfoPaneTabHtml(localizer.viewOptionsPaneHeader, 'showViewOptionsPane()', (tabIndex == 3));
+//	html += getDresserInfoPaneTabHtml(localizer.viewOptionsPaneHeader, 'showViewOptionsPane()', (tabIndex == 3));
 	html += '</ul></div>';
 	return html;
 }

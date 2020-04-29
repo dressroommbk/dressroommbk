@@ -6856,8 +6856,10 @@ function changeModifier(state, makeUp, v)
 		case 'magicdefence':
 			state.natural.magicdefence += v;
 
-			for (var i in allElements) {
-				state.natural[allElements[i] + 'magicdefence'] += v;
+			var schools = isDarkLightElements ? allElements : naturalElements;
+
+			for (var i in schools) {
+				state.natural[schools[i] + 'magicdefence'] += v;
 			}
 
 			break;

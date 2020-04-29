@@ -6824,7 +6824,7 @@ function calcArmors(state)
 
 }
 
-function applyDefElix(state, makeUp, v)
+function changeModifier(state, makeUp, v)
 {
 	switch (makeUp)
 	{
@@ -6856,10 +6856,8 @@ function applyDefElix(state, makeUp, v)
 		case 'magicdefence':
 			state.natural.magicdefence += v;
 
-			var schools = isDarkLightElements ? allElements : naturalElements;
-
-			for (var i in schools) {
-				state.natural[schools[i] + 'magicdefence'] += v;
+			for (var i in allElements) {
+				state.natural[allElements[i] + 'magicdefence'] += v;
 			}
 
 			break;
@@ -6950,11 +6948,11 @@ function calcZoneModifiers(state)
 			continue;
 		}
 		var v = state.defElixes[delixn];
-		applyDefElix(state, delix.makeUp, v);
+		changeModifier(state, delix.makeUp, v);
 		if ('makeUp2' in delix)
 		{
 			var v2 = getDefElixSecondValue(delix, v);
-			applyDefElix(state, delix.makeUp2, v2);
+			changeModifier(state, delix.makeUp2, v2);
 		}
 	}
 	if ('spell_protect10' in state.spellPowerUps)
@@ -6967,7 +6965,7 @@ function calcZoneModifiers(state)
 		if (!('modify' in delix)) continue;
 
 		if ('defence' in delix.modify) {
-			applyDefElix(state, 'edefence', delix.modify.defence);
+			changeModifier(state, 'edefence', delix.modify.defence);
 		}		
 	}
 	for (var mfname in knownZoneModifiers)
@@ -7227,7 +7225,12 @@ function recalcDresserState(state)
 	}
 	state.natural.hitpoints = (state.natural.endurance * 6);
 	state.natural.knapsack = 40*(state.natural.level + 1) + state.natural.endurance;
+	
 	state.natural.magicdefence = (state.natural.endurance * 1.5);
+	for (let i in allElements) {
+		state.natural[allElements[i] + 'magicdefence'] = state.natural.endurance * 1.5;
+	}
+
 	state.natural.defence = (state.natural.endurance * 1.5);
 	state.natural.mana = (state.natural.wisdom * 10);
 	state.natural.spiritlevel = 0;
@@ -7248,10 +7251,6 @@ function recalcDresserState(state)
 	state.modify.attackcount = getAttackCount(state) - 1;
 	state.natural.blockcount = 2;
 	state.modify.blockcount = getBlockCount(state) - 2;
-	for (var i = 0; i < allElements.length; i++)
-	{
-		state.natural[allElements[i] + 'magicdefence'] = 0;
-	}
 	for (var i = 0; i < allElements.length; i++)
 	{
 		state.natural[allElements[i] + 'magicpower'] = Math.floor(state.natural.intellect * 0.5);
@@ -7373,6 +7372,23 @@ function recalcDresserState(state)
 					continue;
 				}
 				state.modify[mfname] += parseInt(o.modify[mfname]);
+
+				if (mfname === 'magicdefence') {
+					for (var i in allElements) {
+						state.modify[allElements[i] + 'magicdefence'] += o.modify[mfname];
+					}
+				} else if (mfname === 'emagicdefence') {
+					if (isDarkLightElements) {
+						state.modify.magicdefence += o.modify[mfname];
+						schools = allElements;
+					} else {
+						schools = naturalElements;
+					}
+
+					for (var i in schools) {
+						state.modify[schools[i] + 'magicdefence'] += o.modify[mfname];
+					}
+				}
 			}
 		}
 	}
@@ -7432,6 +7448,23 @@ function recalcDresserState(state)
 					continue;
 				}
 				state.modify[mfname] += parseInt(set.modify[mfname]);
+
+				if (mfname === 'magicdefence') {
+					for (var i in allElements) {
+						state.modify[allElements[i] + 'magicdefence'] += set.modify[mfname];
+					}
+				} else if (mfname === 'emagicdefence') {
+					if (isDarkLightElements) {
+						state.modify.magicdefence += set.modify[mfname];
+						schools = allElements;
+					} else {
+						schools = naturalElements;
+					}
+
+					for (var i in schools) {
+						state.modify[schools[i] + 'magicdefence'] += set.modify[mfname];
+					}
+				}
 			}
 		}
 	}
@@ -7471,7 +7504,8 @@ function recalcDresserState(state)
 		{			
 			if (knownECRPowerUps[powerupn].modifyExt !== undefined) {
 				for (var epowerup in knownECRPowerUps[powerupn].modifyExt) {
-					state.modify[epowerup] += knownECRPowerUps[powerupn].modifyExt[epowerup];
+					//	state.modify[epowerup] += knownECRPowerUps[powerupn].modifyExt[epowerup];
+					changeModifier(state, epowerup, knownECRPowerUps[powerupn].modifyExt[epowerup]);
 				}
 			} else {			
 				var epowerup = knownECRPowerUps[powerupn];
@@ -7479,7 +7513,8 @@ function recalcDresserState(state)
 				{
 					if (!(epowerup.modify in knownWeaponModifiersHash))
 					{
-						state.modify[epowerup.modify] += epowerup.v;
+						//state.modify[epowerup.modify] += epowerup.v;
+						changeModifier(state, epowerup.modify, epowerup.v);
 					}
 				}
 			}
@@ -7613,6 +7648,23 @@ function recalcDresserState(state)
 			if (('modify' in strg) && (mfname in strg.modify))
 			{
 				mfvalue += parseInt(strg.modify[mfname]);
+
+				if (mfname === 'magicdefence') {
+					for (var i in allElements) {
+						state.modify[allElements[i] + 'magicdefence'] += parseInt(strg.modify[mfname]);
+					}
+				} else if (mfname === 'emagicdefence') {
+					if (isDarkLightElements) {
+						state.modify.magicdefence += parseInt(strg.modify[mfname]);
+						schools = allElements;
+					} else {
+						schools = naturalElements;
+					}
+
+					for (var i in schools) {
+						state.modify[schools[i] + 'magicdefence'] += parseInt(strg.modify[mfname]);
+					}
+				}
 			}
 		}
 		state.modify[mfname] = mfvalue;
@@ -7700,11 +7752,11 @@ function recalcDresserState(state)
 	{
 		var delix = knownDefElix[delixn];
 		var v = state.defElixes[delixn];
-		applyDefElix(state, delix.makeUp, v);
+		changeModifier(state, delix.makeUp, v);
 		if ('makeUp2' in delix)
 		{
 			var v2 = getDefElixSecondValue(delix, v);
-			applyDefElix(state, delix.makeUp2, v2);
+			changeModifier(state, delix.makeUp2, v2);
 		}
 	}
 	

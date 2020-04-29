@@ -5637,7 +5637,7 @@ upgrade: {
 		setlink: {name:'scorpion10'},
 		defences: {crush:'good',thrust:'mediocre',cut:'mediocre',sabre:'good'}
 	 },
-	armor109_ppwa: {id:'armor109_ppwa',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Повелителя',fixless:true,binding:'boe',
+	armor109_ppwa: {id:'armor109_ppwa',category:'heavyarmors',slot:'w4',width:60,height:80,caption:'Броня Повелителя',binding:'boe',
 		common: {weight:45,price:525,durability:100},
 		required: {level:10,endurance:40,strength:45},
 		modify: {jumpaway:70,anticriticalhit:100,antijumpaway:65,magicdefence:50,hitpoints:200,strength:4,bodyarmor1:35,bodyarmor2:35,bodyarmorf:35,bodyarmorm:1,bodyarmord:0,weaponskill:2},

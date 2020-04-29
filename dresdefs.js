@@ -1217,7 +1217,7 @@ var knownECRPowerUps = {
 	spell_godstat_inst: {modify: 'intuition', v: 100},*/
 
 	spell_godprotect10: {places: new Array(), id: 'spell_godprotect10', caption: 'Неуязвимость Оружию', modify: 'defence', v: 300, legend: '<b>Неуязвимость Оружию</b> (заклятие)<br />Защита от урона: +300'},
-	spell_godprotect: {places: new Array(), id: 'spell_godprotect', caption: 'Неуязвимость Стихиям', modify: 'magicdefence', v: 300, legend: '<b>Неуязвимость Оружию</b> (заклятие)<br />Защита от магии: +300'},
+	spell_godprotect: {places: new Array(), id: 'spell_godprotect', caption: 'Неуязвимость Стихиям', modify: 'magicdefence', v: 300, legend: '<b>Неуязвимость Стихиям</b> (заклятие)<br />Защита от магии: +300'},
 
 	/*invoke_spell_godintel100: {modify: 'intellect', v: 100},
 	invoke_spell_godmana100: {modify: 'mana', v: 2000},

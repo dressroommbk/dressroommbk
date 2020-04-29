@@ -1188,9 +1188,9 @@ var knownDefElix = {
 	pot_base_150_waterproof: { places: new Array('emagic'), id: 'pot_base_150_waterproof', caption: 'Эликсир Океанов', makeUp: 'watermagicdefence', values: new Array(0, 75, 93) },
 	pot_base_150_earthproof: { places: new Array('emagic'), id: 'pot_base_150_earthproof', caption: 'Эликсир Недр', makeUp: 'earthmagicdefence', values: new Array(0, 75, 93) },
 	pot_base_200_allmag2: { places: new Array('emagic'), id: 'pot_base_200_allmag2', caption: 'Великое зелье Отрицания', makeUp: 'magicdefence', values: new Array(0, 75, 93) },*/
-	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'emagicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +{0}'},
-	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'emagicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +{0}'},
-	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'emagicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +{0}'}
+	pot_base_200_allmag3: { places: new Array('emagic'), id: 'pot_base_200_allmag3', caption: 'Нектар Отрицания', makeUp: 'magicdefence', values: new Array(0, 100, 125), legend: '<b>Нектар Отрицания</b> (эликсир)<br />Защита от магии: +{0}'},
+	pot_base_200_allmag2_p1k: { places: new Array('emagic'), id: 'pot_base_200_allmag2_p1k', caption: 'Зелье Стража Магии', makeUp: 'magicdefence', values: new Array(0, 120, 150), legend: '<b>Зелье Стража Магии</b> (эликсир)<br />Защита от магии: +{0}'},
+	pot_base_300_allmag: { places: new Array('emagic'), id: 'pot_base_300_allmag', caption: 'Древняя настойка Антимагии', makeUp: 'magicdefence', values: new Array(0, 170, 212), legend: '<b>Древняя настойка Антимагии</b> (эликсир)<br />Защита от магии: +{0}'}
 	};
 
 var knownApplicableSpells = {

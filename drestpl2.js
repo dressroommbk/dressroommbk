@@ -2941,10 +2941,10 @@ function getDresserInfoPaneHtml(state)
 					mvt = avt;
 				}
 			}
-			if (mvt === 0 && vn === 0 && vm === 0 && vr === 0)
+			/*if (mvt === 0 && vn === 0 && vm === 0 && vr === 0)
 			{
 				continue;
-			}
+			}*/
 			chapterHtml += '<tr><td valign="top">';
 			chapterHtml += getItemPropLabel(mfname);
 			chapterHtml += ': </td><td valign="top">';
@@ -6834,19 +6834,39 @@ function applyDefElix(state, makeUp, v)
 			state.results.crushdefence.all += v;
 			state.results.cutdefence.all += v;
 			break;
+
 		case 'emagicdefence':
-			state.natural.firemagicdefence += v;
-			state.natural.airmagicdefence += v;
-			state.natural.watermagicdefence += v;
-			state.natural.earthmagicdefence += v;
-			break;
-		default:
-			if (makeUp in knownZoneModifiers)
-			{
-				state.results[makeUp].all += v;
+			state.natural.emagicdefence += v;
+
+			var schools = [];
+
+			if (isDarkLightElements) {
+				state.natural.magicdefence += v;
+				schools = allElements;
+			} else {
+				schools = naturalElements;
 			}
-			else if (makeUp === 'magicdefence') {
-				state.natural[makeUp] += v;
+
+			for (var i in schools) {
+				state.natural[schools[i] + 'magicdefence'] += v;
+			}
+			
+			break;
+
+		case 'magicdefence':
+			state.natural.magicdefence += v;
+
+			var schools = isDarkLightElements ? allElements : naturalElements;
+
+			for (var i in schools) {
+				state.natural[schools[i] + 'magicdefence'] += v;
+			}
+
+			break;
+
+		default:
+			if (makeUp in knownZoneModifiers) {
+				state.results[makeUp].all += v;
 			} else {
 				state.modify[makeUp] += v;
 			}
@@ -7438,13 +7458,13 @@ function recalcDresserState(state)
 		if (powerupn in knownPowerUps)
 		{
 			var powerup = knownPowerUps[powerupn];
-			if (!powerup.damageup)
-			{
-				state.natural[powerup.element + 'magicdefence'] += state.spellPowerUps[powerupn];
-			}
-			else
-			{
-				state.modify[powerup.element + 'magicpower'] += state.spellPowerUps[powerupn];
+
+			if ('element' in powerup) {
+				if (!powerup.damageup) {
+					state.natural[powerup.element + 'magicdefence'] += state.spellPowerUps[powerupn];
+				} else {
+					state.modify[powerup.element + 'magicpower'] += state.spellPowerUps[powerupn];
+				}
 			}
 		}
 		if (powerupn in knownECRPowerUps)
@@ -7700,8 +7720,8 @@ function recalcDresserState(state)
 
 	// updating magics defense
 	for (let i = 0; i < allElements.length; i++) {
-		state.natural[allElements[i] + 'magicdefence'] += state.natural.magicdefence;
-		state.modify[allElements[i] + 'magicdefence'] += state.modify.magicdefence;
+		/*state.natural[allElements[i] + 'magicdefence'] += state.natural.magicdefence;
+		state.modify[allElements[i] + 'magicdefence'] += state.modify.magicdefence;*/
 	}
 
 	calcResults(state);

@@ -9125,7 +9125,7 @@ upgrade: {
 	clip93: {id:'clip93',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Мрачного Могущества',
 		common: {weight:1,price:300,durability:50},
 		required: {intellect:50,level:9,darkmagicskill:5,wisdom:50},
-		modify: {anticriticalhit:45,darkmagicpower:6,intellect:8,darkmagicskill:2,hitpoints:120,mana:75,magicdefence:20,defence:35},
+		modify: {anticriticalhit:45,/*darkmagicpower:6,*/intellect:8,darkmagicskill:2,hitpoints:120,mana:75/*,magicdefence:20,defence:35*/},
 		setlink: {name:'darkpower'}
 	},
 
@@ -9476,7 +9476,7 @@ upgrade: {
 	amulet105: {id:'amulet105',category:'necklaces',slot:'w2',width:60,height:20,caption:'Амулет Мрачного Могущества',
 		common: {weight:1,price:240,durability:50},
 		required: {intellect:50,level:9,darkmagicskill:5,wisdom:50},
-		modify: {anticriticalhit:55,intellect:7,darkmagicskill:2,defence:45,darkmagicpower:7,hitpoints:75,mana:30},
+		modify: {anticriticalhit:55,intellect:7,darkmagicskill:2,defence:45,/*darkmagicpower:7,*/hitpoints:75,mana:30},
 		setlink: {name:'darkpower'}
 	},
 
@@ -10619,7 +10619,7 @@ upgrade: {
 	ring137: {id:'ring137',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Мрачного Могущества',
 		common: {weight:1,price:162,durability:50},
 		required: {intellect:50,level:9,darkmagicskill:3,wisdom:50},
-		modify: {intellect:5,mana:50,darkmagicpower:4,hitpoints:96,darkmagicskill:1},
+		modify: {intellect:5,mana:50,/*darkmagicpower:4,*/hitpoints:96,darkmagicskill:1},
 		setlink: {name:'darkpower',count:3}
 	},
 
@@ -13945,7 +13945,7 @@ var dressSets = {
 	darkpower: {id: 'darkpower', caption: 'Комплект Мрачного Могущества', count: 5, noadjust:true,
 		required: {level:9},
 		details: {
-			darkpower5: {id: 'darkpower5', required: {itemscount:5}, modify: {hitpoints:120,darkmagicpower:7,intellect:7}}
+			darkpower5: {id: 'darkpower5', required: {itemscount:5}, modify: {hitpoints:120,/*darkmagicpower:7,*/intellect:7}}
 	}},
 
 	lighthope: {id: 'lighthope', caption: 'Комплект Светлой Надежды', count: 5, noadjust:true,

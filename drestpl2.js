@@ -7283,8 +7283,6 @@ function recalcDresserState(state)
 	state.natural.blockcount = 2;
 	state.modify.blockcount = getBlockCount(state) - 2;
 
-	processMagicPower(state.natural, 'magiccommonpower', Math.floor(state.natural.intellect * 0.5));
-
 	if ('spirituality' in state.natural)
 	{
 		state.natural.spiritlevel += state.natural.spirituality;
@@ -7837,20 +7835,8 @@ function recalcDresserState(state)
 		}
 	}
 	
-	// updating magic skills from natural intellect
-/*	for (var i = 0; i < allElements.length; i++)
-	{
-		var mfvalue = ((allElements[i]+'magicpower') in state.modify) ? state.modify[allElements[i] + 'magicpower'] : 0;
-		if ('intellect' in state.modify)  {
-			mfvalue += Math.floor(state.modify.intellect * 0.5);
-		}
-		state.modify[allElements[i]+'magicpower'] = mfvalue;
-	}*/
-
-	if ('intellect' in state.modify)  {
-		processMagicPower(state.modify, 'magiccommonpower', Math.floor(state.modify.intellect * 0.5));
-	}
-
+	processMagicPower(state.modify, 'magiccommonpower', Math.floor(((('intellect' in state.modify) ? state.modify.intellect : 0) + state.natural.intellect) * 0.5));
+	
 	calcResults(state);
 	applyCommonSkills(state);
 	recalcDresserCombatSpellsState(state);

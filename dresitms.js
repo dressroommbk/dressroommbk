@@ -9139,7 +9139,7 @@ upgrade: {
 	clip92: {id:'clip92',category:'earrings',slot:'w1',width:60,height:20,caption:'Серьги Светлой Надежды',
 		common: {weight:1,price:300,durability:50},
 		required: {intellect:50,level:9,lightmagicskill:5,wisdom:50},
-		modify: {manaconsumption:7,lightmagicpower:2,intellect:8,lightmagicskill:3,hitpoints:42,mana:100,magicdefence:30},
+		modify: {manaconsumption:7,/*lightmagicpower:2,*/intellect:8,lightmagicskill:3,hitpoints:42,mana:100,magicdefence:30},
 		setlink: {name:'lighthope'}
 	},
 
@@ -10626,7 +10626,7 @@ upgrade: {
 	ring139: {id:'ring139',category:'rings',slot:'w6',width:20,height:20,caption:'Кольцо Светлой Надежды',
 		common: {weight:1,price:160,durability:50},
 		required: {intellect:50,level:9,lightmagicskill:3,wisdom:50},
-		modify: {intellect:5,mana:80,lightmagicpower:3,lightmagicskill:1,hitpoints:30,manaconsumption:2},
+		modify: {intellect:5,mana:80,/*lightmagicpower:3,*/lightmagicskill:1,hitpoints:30,manaconsumption:2},
 		setlink: {name:'lighthope',count:3}
 	},
 

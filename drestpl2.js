@@ -7267,15 +7267,8 @@ function recalcDresserState(state)
 	state.natural.spiritlevel = 0;
 
 	var ls = state.natural.level;
+	state.natural.spiritlevel += ls >= 12 ? 50 : (ls == 11 ? 40 : Math.max((ls - 6) * 10, 0)); //need test for 1-6 levels
 
-	if (ls > 6)
-	{
-		if (ls > 10)
-		{
-			ls = 10;
-		}
-		state.natural.spiritlevel += (ls - 6) * 10;
-	}
 	state.natural.counterstroke = 10;
 	state.natural.piercearmor = 0;
 	state.natural.attackcount = 1;

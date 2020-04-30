@@ -767,6 +767,7 @@ var knownCleanModifiers = [
 	'greymagicdefence',
 	'-',
 	'magicpower',
+	'magiccommonpower',
 	'firemagicpower',
 	'airmagicpower',
 	'watermagicpower',
@@ -991,6 +992,7 @@ var item_props = {
 	darkmagicdefence: {lbl: 'Защита от магии Тьмы', maxvalue: 1600, view: true, inmfg: true},
 	greymagicdefence: {lbl: 'Защита от серой магии', maxvalue: 1600, view: false, inmfg: true},
 	magicpower: {lbl: 'Мф. мощности магии стихий', fmt: '{0}%', view: true, inmfg: true},
+	magiccommonpower: {lbl: 'Мф. мощности магии', fmt: '{0}%', view: false, inmfg: true},
 	firemagicpower: {lbl: 'Мф. мощности магии Огня', fmt: '{0}%', view: true, inmfg: true},
 	airmagicpower: {lbl: 'Мф. мощности магии Воздуха', fmt: '{0}%', view: true, inmfg: true},
 	watermagicpower: {lbl: 'Мф. мощности магии Воды', fmt: '{0}%', view: true, inmfg: true},
@@ -1144,7 +1146,7 @@ var knownElix = {
 	strength3: { id: 'pot_base_300_str', caption: 'Древняя настойка Свирепости', makeUp: 'strength', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'anticriticalhit', values2: [50], legend: '<b>Древняя настойка Свирепости</b> (эликсир)<br />Сила: +{0}<br />Мф. против крит. удара: +50'},
 	dexterity3: { id: 'pot_base_300_dex', caption: 'Древняя настойка Грации', makeUp: 'dexterity', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'jumpaway', values2: [50], legend: '<b>Древняя настойка Грации</b> (эликсир)<br />Ловкость: +{0}<br />Мф. увертливости: +50'},
 	intuition3: { id: 'pot_base_300_inst', caption: 'Древняя настойка Неукротимости', makeUp: 'intuition', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'criticalhit', values2: [50], legend: '<b>Древняя настойка Неукротимости</b> (эликсир)<br />Интуиция: +{0}<br />Мф. критического удара: +50'},
-	intellect3: { id: 'pot_base_300_intel', caption: 'Древняя настойка Просветления', makeUp: 'intellect', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2:'magicpower', values2: [5], legend: '<b>Древняя настойка Просветления</b> (эликсир)<br />Интеллект: +{0}<br />Мф. мощности магии: +5'}
+	intellect3: { id: 'pot_base_300_intel', caption: 'Древняя настойка Просветления', makeUp: 'intellect', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2:'magicpower', values2: [5], legend: '<b>Древняя настойка Просветления</b> (эликсир)<br />Интеллект: +{0}<br />Мф. мощности магии стихий: +5'}
 	/*intellect2: { id: 'pot_base_50_intel2', caption: 'Нектар Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },
 	separator0: null,
 	strength4: { id: 'pot_base_200_bot_pm1', caption: 'Эликсир Силы Предков', makeUp: 'strength', values: new Array(20, 37) },

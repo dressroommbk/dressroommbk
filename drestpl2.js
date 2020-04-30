@@ -6821,7 +6821,46 @@ function calcArmors(state)
 	}
 	state.results.avgarmor1 = avgarmor1 / 4.0;
 	state.results.avgarmor2 = avgarmor2 / 4.0;
+}
 
+function processMagicDefence(target, mfname, value) {
+	if (mfname === 'magicdefence') {
+		target[mfname] += value;
+
+		for (var i in allElements) {
+			target[allElements[i] + 'magicdefence'] += value;
+		}
+	} else if (mfname === 'emagicdefence') {
+		target[mfname] += value;
+
+		if (isDarkLightElements) {
+			target.magicdefence += value;
+			schools = allElements;
+		} else {
+			schools = naturalElements;
+		}
+
+		for (var i in schools) {
+			target[schools[i] + 'magicdefence'] += value;
+		}
+	}
+}
+
+function processMagicPower(target, mfname, value) {
+	if (mfname === 'magicpower') {
+		target.magicpower += value;
+		var schools = isDarkLightElements ? allElements : naturalElements;
+
+		for (let i in schools) {
+			target[schools[i] + 'magicpower'] += value;
+		}
+	} else if (mfname === 'magiccommonpower') {
+		target.magicpower += value;
+
+		for (let i in allElements) {
+			target[allElements[i] + 'magicpower'] += value;
+		}
+	}
 }
 
 function changeModifier(state, makeUp, v)
@@ -6835,31 +6874,12 @@ function changeModifier(state, makeUp, v)
 			state.results.cutdefence.all += v;
 			break;
 
-		case 'emagicdefence':
-			state.natural.emagicdefence += v;
-
-			var schools = [];
-
-			if (isDarkLightElements) {
-				state.natural.magicdefence += v;
-				schools = allElements;
-			} else {
-				schools = naturalElements;
-			}
-
-			for (var i in schools) {
-				state.natural[schools[i] + 'magicdefence'] += v;
-			}
-			
+		case 'magicdefence':
+			processMagicDefence(state.natural, 'magicdefence', v);
 			break;
 
-		case 'magicdefence':
-			state.natural.magicdefence += v;
-
-			for (var i in allElements) {
-				state.natural[allElements[i] + 'magicdefence'] += v;
-			}
-
+		case 'emagicdefence':
+			processMagicDefence(state.natural, 'emagicdefence', v);
 			break;
 
 		default:
@@ -7162,7 +7182,7 @@ function applyCommonSkillsTo(chapter)
 		}
 		chapter.magicskill = 0;
 	}
-	if ('magicpower' in chapter)
+/*	if ('magicpower' in chapter)
 	{
 		for (var i = 0; i < allElements.length;  i++)
 		{
@@ -7174,7 +7194,7 @@ function applyCommonSkillsTo(chapter)
 			chapter[powern] += chapter.magicpower;
 		}
 		chapter.magicpower = 0;
-	}
+	}*/
 }
 
 function applyCommonSkills(state)
@@ -7223,14 +7243,17 @@ function recalcDresserState(state)
 			state.modify[mfname] = 0;
 		}
 	}
-	state.natural.hitpoints = (state.natural.endurance * 6);
-	state.natural.knapsack = 40*(state.natural.level + 1) + state.natural.endurance;
-	
-	state.natural.magicdefence = (state.natural.endurance * 1.5);
+	state.natural.magicdefence = 0;
+	state.natural.emagicdefence = 0;
+	state.natural.magicpower = 0;
 	for (let i in allElements) {
-		state.natural[allElements[i] + 'magicdefence'] = state.natural.endurance * 1.5;
+		state.natural[allElements[i] + 'magicdefence'] = 0;
+		state.natural[allElements[i] + 'magicpower'] = 0;
 	}
 
+	state.natural.hitpoints = (state.natural.endurance * 6);
+	state.natural.knapsack = 40*(state.natural.level + 1) + state.natural.endurance;
+	processMagicDefence(state.natural, 'magicdefence', state.natural.endurance * 1.5);	
 	state.natural.defence = (state.natural.endurance * 1.5);
 	state.natural.mana = (state.natural.wisdom * 10);
 	state.natural.spiritlevel = 0;
@@ -7251,10 +7274,8 @@ function recalcDresserState(state)
 	state.modify.attackcount = getAttackCount(state) - 1;
 	state.natural.blockcount = 2;
 	state.modify.blockcount = getBlockCount(state) - 2;
-	for (var i = 0; i < allElements.length; i++)
-	{
-		state.natural[allElements[i] + 'magicpower'] = Math.floor(state.natural.intellect * 0.5);
-	}
+
+	processMagicPower(state.natural, 'magiccommonpower', Math.floor(state.natural.intellect * 0.5));
 
 	if ('spirituality' in state.natural)
 	{
@@ -7265,16 +7286,30 @@ function recalcDresserState(state)
 	{
 		var mf = knownElix[state.statElix.elixn].makeUp;
 		state.modify[mf] = state.statElix.v;
+		
 		if ('makeUp2' in knownElix[state.statElix.elixn])
 		{
-			var mf2 = knownElix[state.statElix.elixn].makeUp2;
-			if (['magicpower'].indexOf(mf2) != -1) {
-				state.modify.airmagicpower = knownElix[state.statElix.elixn].values2[0];
-				state.modify.watermagicpower = knownElix[state.statElix.elixn].values2[0];
-				state.modify.earthmagicpower = knownElix[state.statElix.elixn].values2[0];
-				state.modify.firemagicpower = knownElix[state.statElix.elixn].values2[0];
-			} else {
-				state.modify[mf2] = knownElix[state.statElix.elixn].values2[0];
+			var mf2 = knownElix[state.statElix.elixn].makeUp2;			
+
+			switch (mf2) {
+				case 'magicpower':
+					processMagicPower(state.natural, 'magicpower', knownElix[state.statElix.elixn].values2[0]);
+					break;
+
+				case 'magiccommonpower':
+					processMagicPower(state.natural, 'magiccommonpower', knownElix[state.statElix.elixn].values2[0]);
+					break;
+
+				case 'magicdefence':
+					processMagicDefence(state.natural, 'magicdefence', knownElix[state.statElix.elixn].values2[0]);
+					break;
+
+				case 'emagicdefence':
+					processMagicDefence(state.natural, 'emagicdefence', knownElix[state.statElix.elixn].values2[0]);
+					break;
+
+				default:
+					state.natural[mf2] += knownElix[state.statElix.elixn].values2[0];
 			}
 		}
 	}
@@ -7373,6 +7408,8 @@ function recalcDresserState(state)
 				}
 				state.modify[mfname] += parseInt(o.modify[mfname]);
 
+				// TODO
+
 				if (mfname === 'magicdefence') {
 					for (var i in allElements) {
 						state.modify[allElements[i] + 'magicdefence'] += o.modify[mfname];
@@ -7448,6 +7485,8 @@ function recalcDresserState(state)
 					continue;
 				}
 				state.modify[mfname] += parseInt(set.modify[mfname]);
+
+				// TODO
 
 				if (mfname === 'magicdefence') {
 					for (var i in allElements) {
@@ -7562,12 +7601,6 @@ function recalcDresserState(state)
 		{
 			state.modify.hitpoints += delix.modify.hitpoints;
 		}
-		if ('magicpower' in delix.modify) {
-			state.modify.airmagicpower += delix.modify.magicpower;
-			state.modify.watermagicpower += delix.modify.magicpower;
-			state.modify.earthmagicpower += delix.modify.magicpower;
-			state.modify.firemagicpower += delix.modify.magicpower;
-		}
 		if ('magicdefencereduce' in delix.modify) {
 			state.modify.magicdefencereduce += delix.modify.magicdefencereduce;
 		}
@@ -7583,8 +7616,17 @@ function recalcDresserState(state)
 			state.natural.defence += delix.modify.defence;
 		}
 		if ('magicdefence' in delix.modify) {
-			state.natural.magicdefence += delix.modify.magicdefence;
-		}		
+			processMagicDefence(state.natural, 'magicdefence', delix.modify.magicdefence);
+		}
+		if ('emagicdefence' in delix.modify) {
+			processMagicDefence(state.natural, 'emagicdefence', delix.modify.emagicdefence);
+		}
+		if ('magicpower' in delix.modify) {
+			processMagicPower(state.natural, 'magicpower', delix.modify.magicpower);
+		}
+		if ('magiccommonpower' in delix.modify) {
+			processMagicPower(state.natural, 'magiccommonpower', delix.modify.magiccommonpower);
+		}
 	}	
 	
 	for (var strgn in dressStrengthenings)
@@ -7647,27 +7689,32 @@ function recalcDresserState(state)
 			var strg = state.appliedStrengthenings[strgi];
 			if (('modify' in strg) && (mfname in strg.modify))
 			{
-				mfvalue += parseInt(strg.modify[mfname]);
+				switch (mfname) {
+					case 'magicpower':
+						processMagicPower(state.modify, 'magicpower', parseInt(strg.modify[mfname]));
+						break;
 
-				if (mfname === 'magicdefence') {
-					for (var i in allElements) {
-						state.modify[allElements[i] + 'magicdefence'] += parseInt(strg.modify[mfname]);
-					}
-				} else if (mfname === 'emagicdefence') {
-					if (isDarkLightElements) {
-						state.modify.magicdefence += parseInt(strg.modify[mfname]);
-						schools = allElements;
-					} else {
-						schools = naturalElements;
-					}
+					case 'magiccommonpower':
+						processMagicPower(state.modify, 'magiccommonpower', parseInt(strg.modify[mfname]));
+						break;
 
-					for (var i in schools) {
-						state.modify[schools[i] + 'magicdefence'] += parseInt(strg.modify[mfname]);
-					}
+					case 'magicdefence':
+						processMagicDefence(state.modify, 'magicdefence', parseInt(strg.modify[mfname]));
+						break;
+
+					case 'emagicdefence':
+						processMagicDefence(state.modify, 'emagicdefence', parseInt(strg.modify[mfname]));
+						break;
+
+					default:
+						mfvalue += parseInt(strg.modify[mfname]);
 				}
 			}
 		}
-		state.modify[mfname] = mfvalue;
+
+		if (['magicpower', 'magiccommonpower', 'magicdefence', 'emagicdefence'].indexOf(mfname) === -1) {
+			state.modify[mfname] = mfvalue;
+		}		
 	}
 	if ((w10o != null) && w10o.slot == slot_w10.id)
 	{
@@ -7761,19 +7808,17 @@ function recalcDresserState(state)
 	}
 	
 	// updating magic skills from natural intellect
-	for (var i = 0; i < allElements.length; i++)
+/*	for (var i = 0; i < allElements.length; i++)
 	{
-		var mfvalue= ((allElements[i]+'magicpower') in state.modify) ? state.modify[allElements[i] + 'magicpower'] : 0;
+		var mfvalue = ((allElements[i]+'magicpower') in state.modify) ? state.modify[allElements[i] + 'magicpower'] : 0;
 		if ('intellect' in state.modify)  {
 			mfvalue += Math.floor(state.modify.intellect * 0.5);
 		}
 		state.modify[allElements[i]+'magicpower'] = mfvalue;
-	}
+	}*/
 
-	// updating magics defense
-	for (let i = 0; i < allElements.length; i++) {
-		/*state.natural[allElements[i] + 'magicdefence'] += state.natural.magicdefence;
-		state.modify[allElements[i] + 'magicdefence'] += state.modify.magicdefence;*/
+	if ('intellect' in state.modify)  {
+		processMagicPower(state.modify, 'magiccommonpower', Math.floor(state.modify.intellect * 0.5));
 	}
 
 	calcResults(state);
@@ -8469,6 +8514,7 @@ function getSharpenWeapon(weaponObject, sharp)
 		}
 		else
 			{
+				// TODO
 				if (!('modify' in sharpenWeapon))
 				{
 					sharpenWeapon.modify = { magicpower: 0 };

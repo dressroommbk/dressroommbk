@@ -882,7 +882,7 @@ var knownArmorModifiers = {
 	avgarmor: 0
 	};
 
-var isDarkLightElements = false;
+var isDarkLightElements = true;
 
 var naturalElements = [
 	'fire',

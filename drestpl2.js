@@ -7528,7 +7528,27 @@ function recalcDresserState(state)
 				for (var mfname in pl.skill.modify)
 				{
 					state.battlemf[mfname] = pl.skill.modify[mfname];
-					state.modify[mfname] += pl.skill.modify[mfname];
+
+					switch (mfname) {
+						case 'magicpower':
+							processMagicPower(state.modify, 'magicpower', pl.skill.modify[mfname]);
+							break;
+
+						case 'magiccommonpower':
+							processMagicPower(state.modify, 'magiccommonpower', pl.skill.modify[mfname]);
+							break;
+
+						case 'magicdefence':
+							processMagicDefence(state.modify, 'magicdefence', pl.skill.modify[mfname]);
+							break;
+
+						case 'emagicdefence':
+							processMagicDefence(state.modify, 'emagicdefence', pl.skill.modify[mfname]);
+							break;
+
+						default:
+							state.modify[mfname] += pl.skill.modify[mfname];
+					}
 				}
 			}
 		}

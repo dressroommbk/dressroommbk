@@ -6882,6 +6882,14 @@ function changeModifier(state, makeUp, v)
 			processMagicDefence(state.natural, 'emagicdefence', v);
 			break;
 
+		case 'magicpower':
+			processMagicPower(state.natural, 'magicpower', v);
+			break;
+
+		case 'magiccommonpower':
+			processMagicPower(state.natural, 'magiccommonpower', v);
+			break;
+
 		default:
 			if (makeUp in knownZoneModifiers) {
 				state.results[makeUp].all += v;
@@ -7406,25 +7414,26 @@ function recalcDresserState(state)
 				{
 					continue;
 				}
-				state.modify[mfname] += parseInt(o.modify[mfname]);
 
-				// TODO
+				switch (mfname) {
+					case 'magicpower':
+						processMagicPower(state.modify, 'magicpower', parseInt(o.modify[mfname]));
+						break;
 
-				if (mfname === 'magicdefence') {
-					for (var i in allElements) {
-						state.modify[allElements[i] + 'magicdefence'] += o.modify[mfname];
-					}
-				} else if (mfname === 'emagicdefence') {
-					if (isDarkLightElements) {
-						state.modify.magicdefence += o.modify[mfname];
-						schools = allElements;
-					} else {
-						schools = naturalElements;
-					}
+					case 'magiccommonpower':
+						processMagicPower(state.modify, 'magiccommonpower', parseInt(o.modify[mfname]));
+						break;
 
-					for (var i in schools) {
-						state.modify[schools[i] + 'magicdefence'] += o.modify[mfname];
-					}
+					case 'magicdefence':
+						processMagicDefence(state.modify, 'magicdefence', parseInt(o.modify[mfname]));
+						break;
+
+					case 'emagicdefence':
+						processMagicDefence(state.modify, 'emagicdefence', parseInt(o.modify[mfname]));
+						break;
+
+					default:
+						state.modify[mfname] += parseInt(o.modify[mfname]);
 				}
 			}
 		}
@@ -7484,25 +7493,26 @@ function recalcDresserState(state)
 				{
 					continue;
 				}
-				state.modify[mfname] += parseInt(set.modify[mfname]);
 
-				// TODO
+				switch (mfname) {
+					case 'magicpower':
+						processMagicPower(state.modify, 'magicpower', parseInt(set.modify[mfname]));
+						break;
 
-				if (mfname === 'magicdefence') {
-					for (var i in allElements) {
-						state.modify[allElements[i] + 'magicdefence'] += set.modify[mfname];
-					}
-				} else if (mfname === 'emagicdefence') {
-					if (isDarkLightElements) {
-						state.modify.magicdefence += set.modify[mfname];
-						schools = allElements;
-					} else {
-						schools = naturalElements;
-					}
+					case 'magiccommonpower':
+						processMagicPower(state.modify, 'magiccommonpower', parseInt(set.modify[mfname]));
+						break;
 
-					for (var i in schools) {
-						state.modify[schools[i] + 'magicdefence'] += set.modify[mfname];
-					}
+					case 'magicdefence':
+						processMagicDefence(state.modify, 'magicdefence', parseInt(set.modify[mfname]));
+						break;
+
+					case 'emagicdefence':
+						processMagicDefence(state.modify, 'emagicdefence', parseInt(set.modify[mfname]));
+						break;
+
+					default:
+						state.modify[mfname] += parseInt(set.modify[mfname]);
 				}
 			}
 		}
@@ -8514,7 +8524,6 @@ function getSharpenWeapon(weaponObject, sharp)
 		}
 		else
 			{
-				// TODO
 				if (!('modify' in sharpenWeapon))
 				{
 					sharpenWeapon.modify = { magicpower: 0 };
@@ -8526,8 +8535,11 @@ function getSharpenWeapon(weaponObject, sharp)
 					sharpenWeapon.modify.magicpower = 0;
 					}
 				}
-				if (oldmode != 1) { sharpenWeapon.modify.magicpower += sharp*2; }
-					else { sharpenWeapon.modify.magicpower += sharp; }
+				if (oldmode != 1) {
+					sharpenWeapon.modify.magicpower += sharp*2;
+				} else {
+					sharpenWeapon.modify.magicpower += sharp;
+				}
 			}
 
 	if (oldmode==1) { sharpenWeapon.caption += ' +' + sharp + '[old]'; }

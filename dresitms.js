@@ -4628,7 +4628,7 @@ upgrade: {
 	roba_s6_level10: {id:'roba_s6_level10',price:400,level:10,
 		common: {weight:1,eprice:1100,durability:200},
 		required: {level:10},
-		modify: {anticriticalhit:250,magicdefencereduce:5,intellect:10,magicskill:2,staffskill:1,magicdefence:150,defence:90,hitpoints:120,manaspeed:100,bodyarmor1:4,bodyarmor2:18,bodyarmorf:3,bodyarmorm:1,bodyarmord:15}
+		modify: {anticriticalhit:250,magicdefencereduce:5,intellect:10,magicskill:2,staffskill:1,magicdefence:90,defence:150,hitpoints:120,manaspeed:100,bodyarmor1:4,bodyarmor2:18,bodyarmorf:3,bodyarmorm:1,bodyarmord:15}
 	}}
 
 	},

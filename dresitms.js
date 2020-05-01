@@ -6620,7 +6620,7 @@ upgrade: {
 	}
 	}},
 	ahelmet4: {id:'ahelmet4',category:'helmets',slot:'w9',width:60,height:60,caption:'Шлем Темной Власти [11]',artefact:true,/*old:true,*/
-		common: {weight:15,price:5000,durability:500},
+		common: {weight:15,eprice:5000,durability:500},
 		required: {dexterity:50,level:11,endurance:50,strength:50},
 		modify: {criticalhit:250,jumpaway:250,strength:5,dexterity:5,intuition:20,knifeskill:4,axeskill:4,clubskill:4,swordskill:4,magicdefence:70,hitpoints:200,headarmor1:17,headarmor2:64,headarmorf:16,headarmorm:1,headarmord:48},
 		properties: {defence:100}

@@ -1515,7 +1515,7 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 {
 	var html =  ((noLabel != null) && noLabel) ? '': (getItemPropLabel(mf) + ': ');
 	var hint = '';
-	if (natural !== 0 || modify !== 0)
+	/*if (natural !== 0 || modify !== 0)
 	{
 		if (natural !== 0)
 		{
@@ -1528,7 +1528,7 @@ function getItemPropTNMRBHtml(mf, total, natural, modify, maxv, req, noLabel, ba
 			hint += localizer.describeSetStats;
 		}
 		//hint += '.';
-	}
+	}*/
 	html += ' <span';
 	if (hint != '')
 	{
@@ -3544,6 +3544,39 @@ function onWAddMenu()
 	showMenu(menuHtml);
 }
 
+function onApplyBuffTemplate(template) {
+	alert(template);
+
+	if (!is.ie && e.stopPropagation)
+	{
+		e.stopPropagation();
+	}
+	if (is.ie)
+	{
+		window.event.cancelBubble = true;
+		window.event.returnValue = false;
+	}
+	return false;
+}
+
+function onBuffTemplateMenu() {
+	var state = activeState;
+	if (state == null) {
+		return;
+	}
+
+	var menuHtml = '';
+	menuHtml += '<table width="240" border="0">';
+	menuHtml += getRowMenuItemHtml('Силовик (свирепость)', 'onApplyBuffTemplate(event, 1)');
+	menuHtml += getRowMenuItemHtml('Крит (неукротимость)', 'onApplyBuffTemplate(event, 2)');
+	menuHtml += getRowMenuItemHtml('Уворот (грация)', 'onApplyBuffTemplate(event, 3)');
+	menuHtml += getRowMenuItemHtml('Маг (просветление)', 'onApplyBuffTemplate(event, 4)');
+	menuHtml += getRowMenuSeparatorHtml();
+	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
+	menuHtml += '</table>';
+	showMenu(menuHtml);
+}
+
 function onPowerUp(e, spellid)
 {
 	var state = activeState;
@@ -4191,6 +4224,7 @@ function getDresserCommands(state)
 	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
+//	html += getCell2MenuItemHtml('Шаблоны обкаста', 'onBuffTemplateMenu()');
 /*	html += getCell2MenuItemHtml(localizer.waddMenu, 'onWAddMenu()');	
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.spellMenu, 'onSpellMenu()');

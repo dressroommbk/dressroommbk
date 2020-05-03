@@ -5644,13 +5644,13 @@ upgrade: {
 		properties: {defence:125},
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'good'},
     upgrade: {
-    	/*armor109_ppwa_k1: {id:'armor109_ppwa_k1',caption:'Броня Повелителя (крит +65)',binding:'bop',
+    	armor109_ppwa_k1: {id:'armor109_ppwa_k1',caption:'Броня Повелителя (крит +65)',binding:'bop',
     		modify: {criticalhit:65}
-    	},*/
+    	},
     	armor109_ppwa_k2: {id:'armor109_ppwa_k2',caption:'Броня Повелителя (крит +70)',binding:'bop',
     		modify: {criticalhit:70,jumpaway:0}
     	},
-    	/*armor109_ppwa_k3: {id:'armor109_ppwa_k3',caption:'Броня Повелителя (крит +75)',binding:'bop',
+    	armor109_ppwa_k3: {id:'armor109_ppwa_k3',caption:'Броня Повелителя (крит +75)',binding:'bop',
     		modify: {criticalhit:75}
     	},
     	armor109_ppwa_j1: {id:'armor109_ppwa_j1',caption:'Броня Повелителя (уворот +60)',binding:'bop',
@@ -5658,13 +5658,13 @@ upgrade: {
     	},
     	armor109_ppwa_j2: {id:'armor109_ppwa_j2',caption:'Броня Повелителя (уворот +65)',binding:'bop',
     		modify: {criticalhit:0,jumpaway:65}
-    	},*/
+    	},
     	armor109_ppwa_j3: {id:'armor109_ppwa_j3',caption:'Броня Повелителя (уворот +70)',binding:'bop',
     		modify: {criticalhit:0,jumpaway:70}
     	},
-    	/*armor109_ppwa_j4: {id:'armor109_ppwa_j4',caption:'Броня Повелителя (уворот +75)',binding:'bop',
+    	armor109_ppwa_j4: {id:'armor109_ppwa_j4',caption:'Броня Повелителя (уворот +75)',binding:'bop',
     		modify: {criticalhit:0,jumpaway:75}
-    	}*/
+    	}
   }},
 
 	armor113: { id: 'armor113', category:'heavyarmors', slot:'w4', width:60, height:80, caption: 'Броня Неприступного Утеса', stats:true,binding: 'bop',

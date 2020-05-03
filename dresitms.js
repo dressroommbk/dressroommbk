@@ -5645,13 +5645,13 @@ upgrade: {
 		defences: {crush:'good',thrust:'weak',cut:'good',sabre:'good'},
     upgrade: {
     	armor109_ppwa_k1: {id:'armor109_ppwa_k1',caption:'Броня Повелителя (крит +65)',binding:'bop',
-    		modify: {criticalhit:65}
+    		modify: {criticalhit:65,jumpaway:0}
     	},
     	armor109_ppwa_k2: {id:'armor109_ppwa_k2',caption:'Броня Повелителя (крит +70)',binding:'bop',
     		modify: {criticalhit:70,jumpaway:0}
     	},
     	armor109_ppwa_k3: {id:'armor109_ppwa_k3',caption:'Броня Повелителя (крит +75)',binding:'bop',
-    		modify: {criticalhit:75}
+    		modify: {criticalhit:75,jumpaway:0}
     	},
     	armor109_ppwa_j1: {id:'armor109_ppwa_j1',caption:'Броня Повелителя (уворот +60)',binding:'bop',
     		modify: {criticalhit:0,jumpaway:60}

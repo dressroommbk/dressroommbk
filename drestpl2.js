@@ -3286,15 +3286,18 @@ function onApplyConcreteElix(e, elixn, v)
 	}
 	hardUpdateDresserState(state);
 
-	if (!is.ie && e.stopPropagation)
-	{
-		e.stopPropagation();
+	if (e !== null) {
+		if (!is.ie && e.stopPropagation)
+		{
+			e.stopPropagation();
+		}
+		if (is.ie)
+		{
+			window.event.cancelBubble = true;
+			window.event.returnValue = false;
+		}
 	}
-	if (is.ie)
-	{
-		window.event.cancelBubble = true;
-		window.event.returnValue = false;
-	}
+
 	return false;	
 }
 
@@ -3369,15 +3372,20 @@ function onConcreteElixMenu(event, elixn)
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
 	menuHtml += '</table>';
 	showMenu(menuHtml);
-	if (!is.ie && event.stopPropagation)
-	{
-		event.stopPropagation();
+
+	if (event !== null) {
+		if (!is.ie && event.stopPropagation)
+		{			
+			event.stopPropagation();
+		}
+		if (is.ie)
+		{
+			window.event.cancelBubble = true;
+			window.event.returnValue = false;
+		}
 	}
-	if (is.ie)
-	{
-		window.event.cancelBubble = true;
-		window.event.returnValue = false;
-	}
+
+	return false;
 }
 
 function onSwitchConcreteElix(e, elixn)
@@ -3501,15 +3509,19 @@ function onApplyWAdd(e, waddn)
 	state.objCache[slot_wadd.index] = null;
 	state.objects[slot_wadd.index] = waddn;
 	updateDresserState();
-	if (!is.ie && e.stopPropagation)
-	{
-		e.stopPropagation();
+
+	if (e !== null) {
+		if (!is.ie && e.stopPropagation)
+		{
+			e.stopPropagation();
+		}
+		if (is.ie)
+		{
+			window.event.cancelBubble = true;
+			window.event.returnValue = false;
+		}
 	}
-	if (is.ie)
-	{
-		window.event.cancelBubble = true;
-		window.event.returnValue = false;
-	}
+
 	return false;
 }
 
@@ -3544,18 +3556,128 @@ function onWAddMenu()
 	showMenu(menuHtml);
 }
 
-function onApplyBuffTemplate(template) {
-	alert(template);
+function onApplyBuffTemplate(e, template) {
+	var state = activeState;
+	if (state == null) {
+		return;
+	}	
 
-	if (!is.ie && e.stopPropagation)
-	{
-		e.stopPropagation();
+	state.spellPowerUps = {};
+	state.spellIntel = 0;
+	state.spellHitpoints = 0;
+	state.pet = null;
+	state.defElixes = {};
+	state.damageElixes = {};
+
+	let level = state.natural.level,
+		statElixType = (level >= 10) ? 3 : ((level >= 8) ? 2 : ''),
+		statElixPower = (level >= 10) ? 30 : ((level >= 8) ? 22 : 15),
+		defenceElixType = (level >= 10) ? 'pot_base_300_alldmg' : ((level >= 8) ? 'pot_base_200_allmag2_p1k' : 'pot_base_200_allmag3'),
+		magicdefenceElixType = (level >= 10) ? 'pot_base_300_allmag' : ((level >= 8) ? 'pot_base_200_alldmg2_p1k' : 'pot_base_200_alldmg3'),
+		defenceElixPower = (level >= 10) ? 212 : ((level >= 8) ? 150 : 125);
+
+	onApplyConcreteElix(null, defenceElixType, defenceElixPower); // от урона
+	onApplyConcreteElix(null, magicdefenceElixType, defenceElixPower); // магии
+	onApplyConcreteElix(null, 'spellHitpointsUp', 6); // жажда жизни
+	onPowerUp(null, 'spell_protect1'); // защиты от магий
+	onPowerUp(null, 'spell_protect2');
+	onPowerUp(null, 'spell_protect3');
+	onPowerUp(null, 'spell_protect4');
+
+	if (level >= 8) {
+		onECRPowerUp(null, 'standart_curse'); // баф кат
+		onECRPowerUp(null, 'spell_godprotect10'); // неуязы
+		onECRPowerUp(null, 'spell_godprotect'); 
+		onSwitchConcreteElix(null, 'pot_base_100_master'); // мастера
+	}/*, защита*/
+
+	onPowerUp(null, 'spell_protect10');
+
+	switch (template) {
+		case 1:
+			onPowerUp(null, 'spell_powerup10');
+			summonPet('demon', Math.min(level, 10));
+			onApplyConcreteElix(null, 'strength' + statElixType, statElixPower);			
+			onApplyWAdd(event, 'food_l11_e');
+
+			if (level >= 8) {
+				onECRPowerUp(null, 'gg_gribnica_reward');
+			}
+
+			if (level >= 10) {
+				onECRPowerUp(event, 'gl_npc_skeleton_buff1');
+			}
+
+			break;
+
+		case 2:
+			onPowerUp(null, 'spell_powerup10');
+			summonPet('cat', Math.min(level, 10));
+			onApplyConcreteElix(null, 'dexterity' + statElixType, statElixPower);			
+			onApplyWAdd(event, 'food_l11_e');
+
+			if (level >= 8) {
+				onECRPowerUp(null, 'gg_gribnica_reward');
+			}
+
+			if (level >= 10) {
+				onECRPowerUp(event, 'gl_npc_ghost_buff1');
+			}			
+
+			break;
+
+		case 3:
+			onPowerUp(null, 'spell_powerup10');
+			summonPet('owl', Math.min(level, 10));
+			onApplyConcreteElix(null, 'intuition' + statElixType, statElixPower);			
+			onApplyWAdd(event, 'food_l11_e');
+
+			if (level >= 8) {
+				onECRPowerUp(null, 'gg_gribnica_reward');
+			}
+
+			if (level >= 10) {
+				onECRPowerUp(event, 'gl_npc_ghost_buff2');
+			}
+
+			break;
+
+		case 4:
+			onApplyConcreteElix(null, 'spellIntel', 10);
+			onPowerUp(null, 'spell_powerup1');
+			onPowerUp(null, 'spell_powerup2');
+			onPowerUp(null, 'spell_powerup3');
+			onPowerUp(null, 'spell_powerup4');
+			summonPet('wisp', Math.min(level, 10))
+			onApplyConcreteElix(null, 'intellect' + statElixType, statElixPower);
+			onApplyWAdd(null, 'food_l10_e');
+
+			if (level >= 8) {
+				onECRPowerUp(null, 'gg_macropus_reward');
+			}
+
+			if (level >= 10) {
+				onECRPowerUp(event, 'gl_npc_skeleton_buff2');
+			}
+
+			break;
+
+		default:
+			break;
 	}
-	if (is.ie)
-	{
-		window.event.cancelBubble = true;
-		window.event.returnValue = false;
+
+	if (e !== null) {
+		if (!is.ie && e.stopPropagation)
+		{
+			e.stopPropagation();
+		}
+		if (is.ie)
+		{
+			window.event.cancelBubble = true;
+			window.event.returnValue = false;
+		}
 	}
+
 	return false;
 }
 
@@ -3568,8 +3690,8 @@ function onBuffTemplateMenu() {
 	var menuHtml = '';
 	menuHtml += '<table width="240" border="0">';
 	menuHtml += getRowMenuItemHtml('Силовик (свирепость)', 'onApplyBuffTemplate(event, 1)');
-	menuHtml += getRowMenuItemHtml('Крит (неукротимость)', 'onApplyBuffTemplate(event, 2)');
-	menuHtml += getRowMenuItemHtml('Уворот (грация)', 'onApplyBuffTemplate(event, 3)');
+	menuHtml += getRowMenuItemHtml('Уворот (грация)', 'onApplyBuffTemplate(event, 2)');
+	menuHtml += getRowMenuItemHtml('Крит (неукротимость)', 'onApplyBuffTemplate(event, 3)');	
 	menuHtml += getRowMenuItemHtml('Маг (просветление)', 'onApplyBuffTemplate(event, 4)');
 	menuHtml += getRowMenuSeparatorHtml();
 	menuHtml += getRowMenuItemHtml(localizer.closeMenu, "hideMenu()");
@@ -3625,13 +3747,15 @@ function onPowerUp(e, spellid)
 	}
 	updateDresserStateWanted();
 
-	if (!is.ie && e.stopPropagation) {
-		e.stopPropagation();
-	}
-	
-	if (is.ie) {
-		window.event.cancelBubble = true;
-		window.event.returnValue = false;
+	if (e != null) {
+		if (!is.ie && e.stopPropagation) {
+			e.stopPropagation();
+		}
+		
+		if (is.ie) {
+			window.event.cancelBubble = true;
+			window.event.returnValue = false;
+		}
 	}
 
 	return false;
@@ -3661,13 +3785,15 @@ function onECRPowerUp(e, spellid)
 	}
 	updateDresserStateWanted();
 
-	if (!is.ie && e.stopPropagation) {
-		e.stopPropagation();
-	}
-	
-	if (is.ie) {
-		window.event.cancelBubble = true;
-		window.event.returnValue = false;
+	if (e !== null) {
+		if (!is.ie && e.stopPropagation) {
+			e.stopPropagation();
+		}
+		
+		if (is.ie) {
+			window.event.cancelBubble = true;
+			window.event.returnValue = false;
+		}
 	}
 
 	return false;
@@ -4224,7 +4350,7 @@ function getDresserCommands(state)
 	html += getCell2MenuItemHtml(localizer.copyCab, format("onCopyCab('{0}')", state.id));
 	html += getCell2MenuSeparatorHtml();
 	html += '</tr></table><table cellpadding="0" cellspacing="0" border="0"><tr>';
-//	html += getCell2MenuItemHtml('Шаблоны обкаста', 'onBuffTemplateMenu()');
+	html += getCell2MenuItemHtml('Шаблоны обкаста', 'onBuffTemplateMenu()');
 /*	html += getCell2MenuItemHtml(localizer.waddMenu, 'onWAddMenu()');	
 	html += getCell2MenuSeparatorHtml();
 	html += getCell2MenuItemHtml(localizer.spellMenu, 'onSpellMenu()');

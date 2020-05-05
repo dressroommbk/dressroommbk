@@ -1141,7 +1141,7 @@ var knownElix = {
 	strength2: { id: 'pot_base_200_bot3', caption: 'Снадобье Великана', makeUp: 'strength', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Великана</b> (эликсир)<br />Сила: +{0}'},
 	dexterity2: { id: 'pot_base_200_bot2', caption: 'Снадобье Змеи', makeUp: 'dexterity', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Змеи</b> (эликсир)<br />Ловкость: +{0}'},
 	intuition2: { id: 'pot_base_200_bot1', caption: 'Снадобье Предчувствия', makeUp: 'intuition', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Предчувствия</b> (эликсир)<br />Интуиция: +{0}'},
-	intellect1: { id: 'pot_base_200_bot4', caption: 'Снадобье Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Разума</b> (эликсир)<br />Интеллект: +{0}'},	
+	intellect2: { id: 'pot_base_200_bot4', caption: 'Снадобье Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22), legend: '<b>Снадобье Разума</b> (эликсир)<br />Интеллект: +{0}'},	
 	separator2: null,
 	strength3: { id: 'pot_base_300_str', caption: 'Древняя настойка Свирепости', makeUp: 'strength', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'anticriticalhit', values2: [50], legend: '<b>Древняя настойка Свирепости</b> (эликсир)<br />Сила: +{0}<br />Мф. против крит. удара: +50'},
 	dexterity3: { id: 'pot_base_300_dex', caption: 'Древняя настойка Грации', makeUp: 'dexterity', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2: 'jumpaway', values2: [50], legend: '<b>Древняя настойка Грации</b> (эликсир)<br />Ловкость: +{0}<br />Мф. увертливости: +50'},

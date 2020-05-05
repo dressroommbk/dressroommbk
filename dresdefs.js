@@ -1239,9 +1239,8 @@ var knownECRPowerUps = {
 	plain_1s_intel10: {places: new Array('colorVolume'), id: 'plain_1s_intel10', caption: 'Синий Том Знаний', modify: 'intellect', v: 10, legend: '<b>Синий Том Знаний</b> (эффект)<br />Интеллект: +10'},
 	plain_1s_all5: {places: new Array('colorVolume'), id: 'plain_1s_all5', caption: 'Белый том знаний', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}, legend: '<b>Белый том знаний</b> (эффект)<br />Сила: +5<br />Ловкость: +5<br />Интуиция: +5<br />Интеллект: +5'},
 	plain_1s_spirit10: {places: new Array(), id:'plain_1s_spirit10', caption: 'Черный Том Знаний', modify: 'spirituality', v: 10, legend: '<b>Черный Том Знаний</b> (эффект)<br />Духовность: +10'},
-
-	/*club_defender: {places: new Array(), id: 'club_defender', caption: 'Знак Защитника Клуба', modify: 'hitpoints', v: 120}, 
-	quenching: {modify: 'hitpoints', v:120},
+	defender: {places: new Array(), id: 'defender', caption: 'Знак Защитника Клуба', modify: 'hitpoints', v: 120, legend: '<b>Знак защитника клуба</b> (награда)<br />Уровень жизни: +120'},
+	/*quenching: {modify: 'hitpoints', v:120},
 	bulls_breath_warrior: {modify: 'hitpoints', v:500},
 	bulls_breath_mage: {modify: 'hitpoints', v:200},
 	catbaff_strength: {modify: 'strength', v : 5},

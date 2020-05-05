@@ -3605,11 +3605,12 @@ function onApplyBuffTemplate(e, template) {
 	onPowerUp(null, 'spell_protect4');
 
 	if (level >= 8) {
+		onECRPowerUp(null, 'defender'); // знак защитнкика клуба
 		onECRPowerUp(null, 'standart_curse'); // баф кат
 		onECRPowerUp(null, 'spell_godprotect10'); // неуязы
 		onECRPowerUp(null, 'spell_godprotect'); 
-		onSwitchConcreteElix(null, 'pot_base_100_master'); // мастера
-	}/*, защита*/
+		onSwitchConcreteElix(null, 'pot_base_100_master'); // мастера		
+	}
 
 	onPowerUp(null, 'spell_protect10');
 

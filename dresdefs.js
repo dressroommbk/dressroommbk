@@ -905,8 +905,8 @@ var common_props = {
 	eprice: {lbl: 'Цена (екр.)', fmt: '<font color="brown">{0}&nbsp;екр.</font>', view: true},
 	price: {lbl: 'Цена', fmt: '{0}&nbsp;кр.', view: true},
 	weight: {lbl: 'Вес', view: true},
-	durability: {lbl: 'Долговечность', fmt: '0/{0}', view: false}
-	};
+	durability: {lbl: 'Долговечность', fmt: '0/{0}', view: true}
+};
 
 var item_props = {
 	sex: {lbl: 'Пол', view: true, nocharm: true},

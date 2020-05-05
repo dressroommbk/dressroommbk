@@ -4725,12 +4725,12 @@ upgrade: {
 		modify: {hitpoints:10,anticriticalhit:15,jumpaway:15}
 	},	
 	cloak301: {id:'cloak301',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного воина [10]',adjustment:true,binding:'boe',
-		common: {weight:1,durability:100,eprice:200},
+		common: {weight:1,durability:200,eprice:200},
 		required: {level:10},
 		modify: {stats:7,hitpoints:100,criticalhit:30,anticriticalhit:30,jumpaway:30,antijumpaway:30,defence:25,magicdefence:25,power:10}
 	},
 	cloak302: {id:'cloak302',category:'capes',slot:'wcape',width:60,height:80,caption:'Плащ легендарного мага [10]',adjustment:true,binding:'boe',
-		common: {weight:1,durability:100,eprice:200},
+		common: {weight:1,durability:200,eprice:200},
 		required: {level:10},
 		modify: {stats:7,mana:200,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:2,defence:25,magicdefence:25,magicpower:10}
 	},

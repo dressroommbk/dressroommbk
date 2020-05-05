@@ -8936,6 +8936,11 @@ function doCharm(sloti)
 	{
 		v += '#' + state.charmSlots[slot.index];
 	}*/
+
+	if (state.charmSlots[slot.index] != null && state.charmSlots[slot.index].indexOf('stats#') != -1) {
+		onUnaddStats(state.id, slot.id);
+	}
+
 	state.charmSlots[slot.index] = v;
 	updateDresserSlot(state, slot);
 }
@@ -9001,6 +9006,11 @@ function onUncharmObject(stateId, slotId)
 	{
 		return;
 	}
+
+	if (state.charmSlots[slot.index] != null && state.charmSlots[slot.index].indexOf('stats#') != -1) {
+		onUnaddStats(stateId, slotId);
+	}
+
 	state.charmSlots[slot.index] = null;
 	updateDresserSlot(state, slot);
 }

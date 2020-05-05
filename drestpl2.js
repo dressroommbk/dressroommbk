@@ -2495,6 +2495,24 @@ function getDresserComponentsPaneHtml(state)
 			chtml += '.';
 		}
 	}
+
+	// статовый элик (предки, рульф).
+	if (state.statElix != null) {
+		if (state.statElix.elixn in knownElix && 'id' in knownElix[state.statElix.elixn] && knownElix[state.statElix.elixn].id in dressItems) {
+			let elix = knownElix[state.statElix.elixn].id;
+
+			if (elix in dressItems) {
+				let elixObj = dressItems[elix];
+
+				if ('requireditems' in elixObj) { 
+					for (var oi in elixObj.requireditems) {
+						eps[oi].items.push({ id: elixObj.id, caption: elixObj.caption, items: elixObj.requireditems[oi].items});
+					}
+				}
+			}
+		}		
+	}
+
 	if (chtml != '')
 	{
 		html += '<br /><b><i>' + 'Создание' + '</i></b>';

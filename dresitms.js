@@ -12636,13 +12636,13 @@ upgrade: {
 
 	},
 	pot_base_200_bot_pm1: {id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',fixless:true,
-    clist:{_:{pot_base_150_fireproof:{id:'pot_base_150_fireproof',caption:'Эликсир Зарева',count:1},pot_base_150_airproof:{id:'pot_base_150_airproof',caption:'Эликсир Урагана',count:1},pot_base_150_waterproof:{id:'pot_base_150_waterproof',caption:'Эликсир Океанов',count:1},pot_base_150_earthproof:{id:'pot_base_150_earthproof',caption:'Эликсир Недр',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:5}}},
+    requireditems: {lab_sand: {exchanger: 'lab_sand', items: {pot_base_150_fireproof:{id:'pot_base_150_fireproof',caption:'Эликсир Зарева',count:1},pot_base_150_waterproof:{id:'pot_base_150_waterproof',caption:'Эликсир Океанов',count:1},pot_base_150_earthproof:{id:'pot_base_150_earthproof',caption:'Эликсир Недр',count:1},mater_shop7:{id:'mater_shop7',caption:'Сущность Ресурса',count:5}}}},
 		common: {weight:1,durability:1,expirationdate:30,duration:180},
 		required: {endurance:40},
 		modify: {strength:20}
 	},
 	pot_base_200_bot_pm2: {id:'pot_base_200_bot_pm2',caption:'Тайная Настойка Рульфа',fixless:true,
-    clist:{_:{pot_base_200_bot_pm1:{id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',count:10}}},
+    requireditems: {rulf_sand: {exchanger: 'rulf_sand', items: {pot_base_200_bot_pm1:{id:'pot_base_200_bot_pm1',caption:'Эликсир Силы Предков',count:10}}}},
 		common: {weight:1,durability:1,expirationdate:30,duration:180},
 		required: {endurance:45},
 		modify: {strength:25}
@@ -14398,6 +14398,8 @@ var dressExchangePoints = {
 	lab_ang: {id: 'lab_ang', caption: 'Лаборатория Бездны', description: 'Лаборатория. 1й Этаж. Бездна, Angels City'},
 	ks_dem: {id: 'ks_dem', caption: 'Рыцарский Магазин Demons City', description: 'Рыцарский магазин Катакомб. Demons City'},
 	ks_sand: {id: 'ks_sand', caption: 'Рыцарский Магазин Sand City', description: 'Рыцарский магазин Пещер Мглы. Sand City'},
+	rulf_sand: {id: 'rulf_sand', caption: 'Рульф Хрумпт в Пещерах Мглы', description: 'Рульф Хрумпт. 3й этаж Пещер Мглы. Sand City'},
+	lab_sand: {id: 'lab_sand', caption: 'Лаборатория в Пещерах Мглы', description: 'Лаборатория. 4й этаж Пещер Мглы. Sand City'},
 	luka: {id: 'luka', caption: 'Лука', description: 'Принимает гайки, болты и вентели и обменивает их на жетоны'},
 	s_luka: {id: 's_luka', caption: 'Каморка Луки', description: 'Находится в Заброшенной Канализации неподалеку от Луки'},
 	fps_dem: {id: 'fps_dem', caption: 'Фонтан Призрачной Силы', description: 'Фонтан Призрачной Силы находится в Катакомбах Demons City'},

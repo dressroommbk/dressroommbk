@@ -1133,6 +1133,9 @@ var knownNaturalEditors = new Array(
 	);
 
 var knownElix = {
+	strength4: { id: 'pot_base_200_bot_pm1', caption: 'Эликсир Силы Предков', makeUp: 'strength', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), legend: '<b>Эликсир Силы Предков</b> (эликсир)<br />Сила: +{0}'},
+	strength5: { id: 'pot_base_200_bot_pm2', caption: 'Тайная настойка Рульфа', makeUp: 'strength', values: new Array(0, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37), legend: '<b>Эликсир Силы Предков</b> (эликсир)<br />Сила: +{0}'},
+	separator0: null,
 	strength: { id: 'pot_base_50_str', caption: 'Зелье Могущества', makeUp: 'strength', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Могущества</b> (эликсир)<br />Сила: +{0}'},
 	dexterity: { id: 'pot_base_50_dex', caption: 'Зелье Стремительности', makeUp: 'dexterity', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Стремительности</b> (эликсир)<br />Ловкость: +{0}'},
 	intuition: { id: 'pot_base_50_inst', caption: 'Зелье Прозрения', makeUp: 'intuition', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Прозрения</b> (эликсир)<br />Интуиция: +{0}'},
@@ -1149,7 +1152,6 @@ var knownElix = {
 	intellect3: { id: 'pot_base_300_intel', caption: 'Древняя настойка Просветления', makeUp: 'intellect', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), makeUp2:'magicpower', values2: [5], legend: '<b>Древняя настойка Просветления</b> (эликсир)<br />Интеллект: +{0}<br />Мф. мощности магии стихий: +5'}
 	/*intellect2: { id: 'pot_base_50_intel2', caption: 'Нектар Разума', makeUp: 'intellect', values: new Array(0, 15, 16, 17, 18, 19, 20, 21, 22) },
 	separator0: null,
-	strength4: { id: 'pot_base_200_bot_pm1', caption: 'Эликсир Силы Предков', makeUp: 'strength', values: new Array(20, 37) },
 	strength6: { id: 'pot_base_1000_str', caption: 'Топливо для Големов', makeUp: 'strength', values: new Array(0, 12, 18) },
 	dexterity3: { id: 'pot_base_1000_dex', caption: 'Смазка для Големов', makeUp: 'dexterity', values: new Array(0, 12, 18) },
 	intuition3: { id: 'pot_base_1000_inst', caption: 'Ускоритель для Големов', makeUp: 'intuition', values: new Array(0, 12, 18) }*/

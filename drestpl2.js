@@ -2963,7 +2963,9 @@ function getDresserInfoPaneHtml(state)
 
 	var wo3 = getObjectByStateSlot(state, slot_w3);
 	var wo10 = getObjectByStateSlot(state, slot_w10);
-	html += getDresserInfoPaneWeaponHtml(state, slot_w3);
+	if (wo3 != null || wo10 == null) {
+		html += getDresserInfoPaneWeaponHtml(state, slot_w3);
+	}
 	if ((wo10 != null) && (wo10.slot == 'w3'))
 	{
 		if (!areSameObjectsWeared(state, slot_w3, slot_w10))

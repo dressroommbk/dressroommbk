@@ -170,12 +170,12 @@ var expd = {
 			U17: {id: 17, sexp: 180000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 241, astats: 1, scredits: 29222, acredits: 200},
 			U18: {id: 18, sexp: 200000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 242, astats: 1, scredits: 29422, acredits: 200},
 			U19: {id: 19, sexp: 210000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 243, astats: 1, scredits: 29622, acredits: 200},
-			U20: {id: 21, sexp: 220000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 244, astats: 1, scredits: 29822, acredits: 200},
+			U20: {id: 20, sexp: 220000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 244, astats: 1, scredits: 29822, acredits: 200},
 			U21: {id: 21, sexp: 230000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 245, astats: 1, scredits: 30022, acredits: 200},
 		}
 	},
 	L12: {
-		id: 12, count: 8, body: 'Мысли', baseExp: 12500 , ups: {
+		id: 12, count: 10, body: 'Мысли', baseExp: 12500 , ups: {
 			U0: {id: 0, sexp: 240000000, aendurance: 5, aspirituality: 5, amastery: 1, sstats: 260, astats: 5, scredits: 33022, acredits: 3000},
 			U1: {id: 1, sexp: 300000000, aendurance: 1, aspirituality: 0, amastery: 0, sstats: 262, astats: 1, scredits: 36022, acredits: 3000},
 			U2: {id: 2, sexp: 400000000, aendurance: 0, aspirituality: 0, amastery: 0, sstats: 263, astats: 1, scredits: 41022, acredits: 5000},

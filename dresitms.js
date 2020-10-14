@@ -1394,7 +1394,19 @@ upgrade: {
 		required: {strength:60,endurance:60,dexterity:60,intuition:50,level:11,knifeskill:5},
 		modify: {antijumpaway:100,jumpaway:300,criticalhit:350,parry:25,counterstroke:25,thrustpower:15,dexterity:30},
 		properties: {mindamage:12,maxdamage:30,knifeskill:5,piercearmor:100,secondweapon:'yes',blockzones:'+'}
-	}}
+	},
+  aknife1_level11_elit: {id:'aknife1_level11_elit',level:11,caption:'Элитный Кинжал Тысячи Ран',
+    common: {weight:5,durability:500,eprice:50000},
+    required: {strength:60,endurance:60,dexterity:60,intuition:50,level:11,knifeskill:5},
+    modify: {antijumpaway:100,jumpaway:350,criticalhit:425,parry:26,counterstroke:25,thrustpower:16,dexterity:32},
+    properties: {mindamage:14,maxdamage:32,knifeskill:5,piercearmor:100,secondweapon:'yes',blockzones:'+'}
+  },
+  aknife1_level12: {id:'aknife1_level12',level:12,
+    common: {weight:5,durability:500,eprice:100000},
+    required: {strength:60,endurance:60,dexterity:70,intuition:70,level:12,knifeskill:5},
+    modify: {antijumpaway:100,jumpaway:400,criticalhit:550,parry:27,counterstroke:30,thrustpower:17,dexterity:35},
+    properties: {mindamage:16,maxdamage:34,knifeskill:5,piercearmor:100,secondweapon:'yes',blockzones:'+'}
+  }}
 
 	},
 	aknife2: {id:'aknife2',category:'knives',slot:'w3',width:60,height:60,owner:'Stabilis in Mobile',caption:'Осколок Тьмы',alignment:'dark',old:true,
@@ -1788,7 +1800,19 @@ upgrade: {
 		required: {level:11,dexterity:150,strength:35,endurance:50},
 		modify: {parry:20,counterstroke:50,anticriticalhit:200,dexterity:35,jumpaway:350,antijumpaway:0,magicdefence:30,airmagicdefence:120,axeskill:5},
 		properties: {mindamage:55,maxdamage:60,antijumpaway:200}
-	}}
+	},
+  aaxe5_level11_elit: {id:'aaxe5_level11_elit',level:11,caption: 'Элитный Топор Вихря',
+    common: {eprice:50000},
+    required: {level:11,dexterity:150,strength:35,endurance:50},
+    modify: {parry:20,counterstroke:50,anticriticalhit:250,dexterity:35,jumpaway:450,antijumpaway:0,magicdefence:30,airmagicdefence:120,axeskill:5},
+    properties: {mindamage:60,maxdamage:65,antijumpaway:300}
+  },
+  aaxe5_level12: {id:'aaxe5_level12',level:12,
+    common: {eprice:100000},
+    required: {level:12,dexterity:175,strength:50,endurance:50},
+    modify: {parry:25,counterstroke:60,anticriticalhit:350,dexterity:45,jumpaway:600,antijumpaway:0,magicdefence:35,airmagicdefence:127,axeskill:5},
+    properties: {mindamage:70,maxdamage:78,antijumpaway:400}
+  }}
 
 	},
 	aaxe5_fmg: {id:'aaxe5_fmg',category:'axes',slot:'w3',width:60,height:60,owner:'Махмуд герой',caption:'Топор Одинокого Героя',old:true,
@@ -2329,11 +2353,25 @@ upgrade: {
 	},
 	amolot1_level11: {id:'amolot1_level11',level:11,
 		common: {eprice:7000},
-		required: {level:10,endurance:100,strength:100},
+		required: {level:11,endurance:100,strength:100},
 		modify: {strength:45,clubskill:5,crushpower:35},
 		properties: {mindamage:60,maxdamage:70,criticalpower:50,criticalhit:300,antijumpaway:750},
 		attacks: {thrust:'rare',crush:'often',cut:'none',light:'insignificant'}
-	}}
+	},
+  amolot1_level11_elit: {id:'amolot1_level11_elit',level:11,caption: 'Элитная Дубинка Радости',
+    common: {eprice:50000},
+    required: {level:11,endurance:100,strength:100},
+    modify: {strength:50,clubskill:5,crushpower:35},
+    properties: {mindamage:65,maxdamage:75,criticalpower:55,criticalhit:350,antijumpaway:850},
+    attacks: {thrust:'rare',crush:'often',cut:'none',light:'insignificant'}
+  },
+  amolot1_level12: {id:'amolot1_level12',level:12,
+    common: {eprice:100000},
+    required: {level:12,endurance:100,strength:125},
+    modify: {strength:55,clubskill:5,crushpower:40},
+    properties: {mindamage:70,maxdamage:80,criticalpower:55,criticalhit:400,antijumpaway:1000},
+    attacks: {thrust:'rare',crush:'often',cut:'none',light:'insignificant'}
+  }}
 
 	},
 	dmposoh: {id:'dmposoh',category:'clubs',slot:'w3',width:60,height:60,caption:'Посох Деда Мороза',artefact:true,old:true,
@@ -2974,7 +3012,7 @@ upgrade: {
 		properties: {mindamage:6,maxdamage:16,criticalhit:10,swordskill:2,blockzones:'+'},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
-	asword3: {id:'asword3',category:'swords',slot:'w3',width:60,height:60,caption:'Меч героев',artefact:true,
+	asword3: {id:'asword3',category:'swords',slot:'w3',width:60,height:60,caption:'Меч Героев',artefact:true,
 		common: {eprice:100,weight:5,durability:500},
 		required: {strength:24,endurance:27,level:8},
 		modify: {anticriticalhit:70,parry:15,strength:6,intuition:3,jumpaway:40,antijumpaway:35,swordskill:3},
@@ -3012,22 +3050,36 @@ upgrade: {
 	asword3_upgrade_9: {id:'asword3_upgrade_9',level:9,
 		common: {eprice:350},
 		required: {strength:26,endurance:27,level:9},
-		modify: {anticriticalhit:70,parry:20,strength:6,intuition:3,jumpaway:40},
+		modify: {anticriticalhit:70,parry:20,strength:6,intuition:3,jumpaway:40,swordskill:0,antijumpaway:0},
 		properties: {mindamage:25,maxdamage:36,piercearmor:20,swordskill:4,antijumpaway:45},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
 	asword3_upgrade_10: {id:'asword3_upgrade_10',level:10,
 		common: {eprice:1000},
 		required: {strength:75,dexterity:50,intuition:50,endurance:100,level:10},
-		modify: {anticriticalhit:200,parry:20,strength:10,dexterity:10,intuition:10,jumpaway:50},
+		modify: {anticriticalhit:200,parry:20,strength:10,dexterity:10,intuition:10,jumpaway:50,swordskill:0,antijumpaway:0},
 		properties: {mindamage:40,maxdamage:50,piercearmor:25,swordskill:4,antijumpaway:250,sabrepower:15},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	},
 	asword3_upgrade_11: {id:'asword3_upgrade_11',level:11,
 		common: {eprice:7000},
 		required: {strength:75,dexterity:75,intuition:75,endurance:75,level:11},
-		modify: {anticriticalhit:350,parry:20,strength:10,dexterity:15,intuition:15,jumpaway:50},
+		modify: {anticriticalhit:350,parry:20,strength:10,dexterity:15,intuition:15,jumpaway:50,swordskill:0,antijumpaway:0},
 		properties: {mindamage:45,maxdamage:55,piercearmor:25,swordskill:4,antijumpaway:500,sabrepower:25},
+		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
+	},
+    asword3_upgrade_11_elit: {id:'asword3_upgrade_11_elit',level:11,caption: 'Элитный Меч Героев',
+		common: {eprice:50000},
+		required: {strength:75,dexterity:75,intuition:75,endurance:75,level:11},
+		modify: {anticriticalhit:450,parry:20,strength:15,dexterity:20,intuition:20,jumpaway:50,swordskill:0,antijumpaway:0},
+		properties: {mindamage:55,maxdamage:65,piercearmor:25,swordskill:4,antijumpaway:650,sabrepower:28},
+		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
+	},
+	asword3_upgrade_12: {id:'asword3_upgrade_12',level:12,
+		common: {eprice:100000},
+		required: {strength:75,dexterity:75,intuition:75,endurance:75,level:12},
+		modify: {anticriticalhit:550,parry:20,strength:20,dexterity:20,intuition:25,jumpaway:50,swordskill:0,antijumpaway:0},
+		properties: {mindamage:60,maxdamage:65,piercearmor:25,swordskill:4,antijumpaway:800,sabrepower:30},
 		attacks: {thrust:'small',sabre:'sometimes',crush:'rare',cut:'small'}
 	}}
 
@@ -3086,7 +3138,21 @@ upgrade: {
 		modify: {strength:10,intuition:25,criticalpower:55,jumpaway:65,parry:20,cutpower:20},
 		properties: {mindamage:45,maxdamage:55,criticalhit:350,antijumpaway:150,piercearmor:30,swordskill:5},
 		attacks: {thrust:'small',sabre:'routinely',crush:'rare'}
-	}}
+	},
+  asword4_upgrade_11_elit: {id:'asword4_upgrade_11_elit',level:11,caption: 'Элитный Меч Кромуса',
+    common: {eprice:50000},
+    required: {level:11,strength:50,intuition:250,endurance:75},
+    modify: {strength:10,intuition:25,criticalpower:60,jumpaway:65,parry:20,cutpower:23},
+    properties: {mindamage:47,maxdamage:57,criticalhit:450,antijumpaway:175,piercearmor:30,swordskill:5},
+    attacks: {thrust:'small',sabre:'routinely',crush:'rare'}
+  },
+  asword4_upgrade_12: {id:'asword4_upgrade_12',level:12,
+    common: {eprice:100000},
+    required: {level:12,strength:50,intuition:250,endurance:75},
+    modify: {strength:10,intuition:25,criticalpower:65,jumpaway:65,parry:25,cutpower:25},
+    properties: {mindamage:50,maxdamage:60,criticalhit:550,antijumpaway:200,piercearmor:30,swordskill:5},
+    attacks: {thrust:'small',sabre:'routinely',crush:'rare'}
+  }}
 
 	},
 	asword7: {id:'asword7',category:'swords',slot:'w3',width:60,height:60,owner:'elis',caption:'Страж Закона',alignment:'light',old:true,
@@ -3380,13 +3446,25 @@ upgrade: {
 		common: {eprice:1400},
 		required: {wisdom:50,staffskill:1,level:10},
 		modify: {hitpoints:450,mana:600,magicskill:2,magicpower:45,magicdefencereduce:30,lightmagicskill:2,darkmagicskill:2,greymagicskill:2,manaconsumption:25},
-  properties: {blockzones:'++'}
+  		properties: {blockzones:'++'}
 	},
 	staff_chaos1_level_11: {id:'staff_chaos1_level_11',caption:'Посох Пламени Хаоса',level:11,
 		common: {eprice:10000},
 		required: {wisdom:125,staffskill:1,level:11},
 		modify: {hitpoints:600,mana:900,magicskill:3,magicpower:60,magicdefencereduce:35,lightmagicskill:3,darkmagicskill:3,greymagicskill:3,manaconsumption:25},
-  properties: {blockzones:'++'}
+  		properties: {blockzones:'++'}
+	},
+	staff_chaos1_level_11_elit: {id:'staff_chaos1_level_11_elit',caption:'Элитный Посох Пламени Хаоса',level:11,
+		common: {eprice:75000},
+		required: {wisdom:125,staffskill:1,level:11},
+		modify: {hitpoints:650,mana:1000,magicskill:4,magicpower:75,magicdefencereduce:37,lightmagicskill:4,darkmagicskill:4,greymagicskill:4,manaconsumption:26},
+  		properties: {blockzones:'++'}
+	},
+	staff_chaos1_level_12: {id:'staff_chaos1_level_12',caption:'Посох Пламени Хаоса',level:12,
+		common: {eprice:150000},
+		required: {wisdom:150,staffskill:1,level:12},
+		modify: {hitpoints:750,mana:1200,magicskill:5,magicpower:90,magicdefencereduce:40,lightmagicskill:5,darkmagicskill:5,greymagicskill:5,manaconsumption:28},
+  		properties: {blockzones:'++'}
 	}}
 
 	},

@@ -6420,8 +6420,8 @@ upgrade: {
 	},
 	helmet44: {id:'helmet44',category:'helmets',slot:'w9',width:60,height:60,caption:'Маска Палача',   stats:true,
 		common: {weight:10,price:167,durability:30},
-		required: {dexterity:25,intuition:25,level:8,endurance:25,strength:25},
-		modify: {axeskill:5,headarmor1:11,headarmor2:35,headarmorf:10,headarmorm:1,headarmord:25}
+		required: {level:8,endurance:25,strength:25},
+		modify: {axeskill:5,sabrepower:20,headarmor1:11,headarmor2:35,headarmorf:10,headarmorm:1,headarmord:25}
 	},
 	whelmet1: {id:'whelmet1',category:'helmets',slot:'w9',width:60,height:60,caption:'Шляпа Старого Волшебника',
 		common: {weight:2,price:189,durability:30},

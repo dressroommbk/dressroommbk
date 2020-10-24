@@ -3263,6 +3263,12 @@ function onApplyConcreteElix(e, elixn, v)
 				}
 			}
 
+			for (var delixn in state.damageElixes) {
+				if (areArraysIntersect(knownDamageElix[delixn].places, knownDamageElix[elixn].places)) {
+					delete state.damageElixes[delixn];
+				}
+			}
+
 			state.damageElixes[elixn] = v;
 		}
 		else if (elixn in state.damageElixes)
@@ -7802,6 +7808,9 @@ function recalcDresserState(state)
 		if ('hitpoints' in delix.modify)
 		{
 			state.modify.hitpoints += delix.modify.hitpoints;
+		}
+		if ('mana' in delix.modify) {
+			state.modify.mana += delix.modify.mana;
 		}
 		if ('magicdefencereduce' in delix.modify) {
 			state.modify.magicdefencereduce += delix.modify.magicdefencereduce;

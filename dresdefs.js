@@ -1167,7 +1167,12 @@ var knownDamageElix = {
 	pot_base_0_strup_1: {id: 'pot_base_0_strup', caption: 'Новогодний Эликсир', modify: {magicpower: 50, magicdefencereduce: 10}},
 	pot_base_0_ny3: {id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}},
 	pot_base_0_ny1: {id: 'pot_base_0_ny1', caption: 'Снадобье -Тарманка-', modify: {power: 15,hitpoints: 60}}*/
-	};
+	separator0: null,
+	pot_base_h1: {places: new Array('halloween'), id: 'pot_base_h1', caption: 'Эссенция Гнилого духа', modify: {mana: 300}, legend: '<b>Эссенция Гнилого духа</b><br />Уровень маны: +300'},
+	pot_base_h2: {places: new Array('emagic', 'halloween'), id: 'pot_base_h2', caption: 'Отвар Испепеления душ', modify: {magicdefence: 220}, legend: '<b>Отвар Испепеления душ</b><br />Защита от магии: +220'},
+	pot_base_h3: {places: new Array('eweapon', 'halloween'), id: 'pot_base_h3', caption: 'Настойка из Горькой дыньки', modify: {defence: 220}, legend: '<b>Настойка из Горькой дыньки</b><br />Защита от урона: +220'},
+	pot_base_h4: {places: new Array('halloween'), id: 'pot_base_h4', caption: 'Снадобье Икромсателя', modify: {hitpoints: 300}, legend: '<b>Снадобье Икромсателя</b><br />Уровень жизни: +300'},	
+};
 
 var knownDefElix = {
 	/*pot_base_50_kolproof: { places: new Array('eweapon'), id: 'pot_base_50_kolproof', caption: 'Зелье Пронзающих Игл', makeUp: 'thrustdefence', values: new Array(0, 50, 62) },

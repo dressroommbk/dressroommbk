@@ -6945,10 +6945,10 @@ upgrade: {
 		modify: {jumpaway:25,knifeskill:1}
 	},
   helmet_pumpkin_n : {
-    id:'helmet_pumpkin_n',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Тыквенный шлем',
+    id:'helmet_pumpkin_n',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Тыквенный шлем',adjustment:true,
     required: {level: 8},
     common: {weight: 10, price: 400, durability: 50},
-    modify: {stats: 15, mana: 100, hitpoints: 100, power: 10, defence: 25, magicdefence: 25, magicdefencereduce: 2},
+    modify: {stats: 20, mana: 400, hitpoints: 200, power: 10, magicpower:10, defence: 100, magicdefence: 100, magicdefencereduce: 2, criticalhit: 125, anticriticalhit: 75, jumpaway: 125, antijumpaway: 125, knifeskill:2,axeskill:2,clubskill:2,swordskill:2, firemagicskill:2,watermagicskill:2,airmagicskill:2,earthmagicskill:2, magicdefencereduce: 5, anticriticalpower: 25},
   },	
 	venok31: {id:'venok31',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Воина [10]',adjustment:true,
 		common: {weight:1,durability:200,eprice:400},
@@ -6958,7 +6958,7 @@ upgrade: {
 	venok32: {id:'venok32',category:'wreaths',slot:'wwreath',width:60,height:60,caption:'Капюшон Легендарного Мага [10]',adjustment:true,
 		common: {weight:1,durability:200,eprice:400},
 		required: {level:10},
-		modify: {stats:9,hitpoints:100,mana:500,anticriticalhit:100,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:4,defence:150,magicdefence:50,magicpower:10}
+		modify: {stats:9,hitpoints:100,mana:500,anticriticalhit:100,firemagicskill:1,watermagicskill:1,airmagicskill:1,earthmagicskill:1,magicdefencereduce:4,defence:150,magicdefence:50,magicpower:10, anticriticalpower: 25}
 	},	
 	braslet1: {id:'braslet1',category:'bracelets',slot:'w13',width:60,height:40,caption:'Браслет Укола',
 		common: {weight:2,price:5,durability:10},

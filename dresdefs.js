@@ -1136,6 +1136,12 @@ var knownElix = {
 	strength4: { id: 'pot_base_200_bot_pm1', caption: 'Эликсир Силы Предков', makeUp: 'strength', values: new Array(0, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30), legend: '<b>Эликсир Силы Предков</b> (эликсир)<br />Сила: +{0}'},
 	strength5: { id: 'pot_base_200_bot_pm2', caption: 'Тайная настойка Рульфа', makeUp: 'strength', values: new Array(0, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37), legend: '<b>Эликсир Силы Предков</b> (эликсир)<br />Сила: +{0}'},
 	separator0: null,
+	pot_base_h_1: { id: 'pot_base_h_1', caption: 'Экстракт Перегара Демида (Сила)', makeUp: 'strength', values: new Array(0, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63), legend: '<b>Экстракт Перегара Демида</b> (эликсир)<br />Сила: +{0}'},
+	pot_base_h_2: { id: 'pot_base_h_1', caption: 'Экстракт Перегара Демида (Ловкость)', makeUp: 'dexterity', values: new Array(0, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63), legend: '<b>Экстракт Перегара Демида</b> (эликсир)<br />Ловкость: +{0}'},
+	pot_base_h_3: { id: 'pot_base_h_1', caption: 'Экстракт Перегара Демида (Интуиция)', makeUp: 'intuition', values: new Array(0, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63), legend: '<b>Экстракт Перегара Демида</b> (эликсир)<br />Интуиция: +{0}'},
+	pot_base_h_4: { id: 'pot_base_h_1', caption: 'Экстракт Перегара Демида (Интеллект)', makeUp: 'intellect', values: new Array(0, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63), legend: '<b>Экстракт Перегара Демида</b> (эликсир)<br />Интеллект: +{0}'},
+	separator0: null,	
+
 	strength: { id: 'pot_base_50_str', caption: 'Зелье Могущества', makeUp: 'strength', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Могущества</b> (эликсир)<br />Сила: +{0}'},
 	dexterity: { id: 'pot_base_50_dex', caption: 'Зелье Стремительности', makeUp: 'dexterity', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Стремительности</b> (эликсир)<br />Ловкость: +{0}'},
 	intuition: { id: 'pot_base_50_inst', caption: 'Зелье Прозрения', makeUp: 'intuition', values: new Array(0, 10, 11, 12, 13, 14, 15), legend: '<b>Зелье Прозрения</b> (эликсир)<br />Интуиция: +{0}'},
@@ -1168,10 +1174,10 @@ var knownDamageElix = {
 	pot_base_0_ny3: {id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}},
 	pot_base_0_ny1: {id: 'pot_base_0_ny1', caption: 'Снадобье -Тарманка-', modify: {power: 15,hitpoints: 60}}*/
 	separator0: null,
-	pot_base_h1: {places: new Array('halloween'), id: 'pot_base_h1', caption: 'Эссенция Гнилого духа', modify: {mana: 300}, legend: '<b>Эссенция Гнилого духа</b><br />Уровень маны: +300'},
-	pot_base_h2: {places: new Array('emagic', 'halloween'), id: 'pot_base_h2', caption: 'Отвар Испепеления душ', modify: {magicdefence: 220}, legend: '<b>Отвар Испепеления душ</b><br />Защита от магии: +220'},
-	pot_base_h3: {places: new Array('eweapon', 'halloween'), id: 'pot_base_h3', caption: 'Настойка из Горькой дыньки', modify: {defence: 220}, legend: '<b>Настойка из Горькой дыньки</b><br />Защита от урона: +220'},
-	pot_base_h4: {places: new Array('halloween'), id: 'pot_base_h4', caption: 'Снадобье Икромсателя', modify: {hitpoints: 300}, legend: '<b>Снадобье Икромсателя</b><br />Уровень жизни: +300'},	
+	pot_base_h1: {places: new Array('halloween'), id: 'pot_base_h1', caption: 'Эссенция Гнилого духа', modify: {mana: 300}, legend: '<b>Эссенция Гнилого духа</b> (эликсир)<br />Уровень маны: +300'},
+	pot_base_h2: {places: new Array('emagic', 'halloween'), id: 'pot_base_h2', caption: 'Отвар Испепеления душ', modify: {magicdefence: 220}, legend: '<b>Отвар Испепеления душ</b> (эликсир)<br />Защита от магии: +220'},
+	pot_base_h3: {places: new Array('eweapon', 'halloween'), id: 'pot_base_h3', caption: 'Настойка из Горькой дыньки', modify: {defence: 220}, legend: '<b>Настойка из Горькой дыньки</b> (эликсир)<br />Защита от урона: +220'},
+	pot_base_h4: {places: new Array('halloween'), id: 'pot_base_h4', caption: 'Снадобье Икромсателя', modify: {hitpoints: 300}, legend: '<b>Снадобье Икромсателя</b (эликсир)><br />Уровень жизни: +300'},	
 };
 
 var knownDefElix = {

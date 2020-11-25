@@ -11249,21 +11249,24 @@ upgrade: {
 	},
   /*defender: {id:'defender',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Знак защитника клуба',fixless:true,
   modify: {hitpoints:120}
+  },*/
+  quenching: {id:'quenching',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Закалка',fixless:true,
+  modify: {hitpoints:120}
   },
-	spell_startenacity: {id:'spell_startenacity',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Звездная Тяжесть',fixless:true,
+	/*spell_startenacity: {id:'spell_startenacity',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Звездная Тяжесть',fixless:true,
 		common: {weight:1,eprice:9.95,durability:4,probability:99,duration:60},
 		required: {level:2},
   modify: {hitpoints:300}
 	},
 	quenching: {id:'quenching',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Закалка',fixless:true,
   modify: {hitpoints:120}
-	},
+	},*/
 	bulls_breath_warrior: {id:'bulls_breath_warrior',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Дыхание отмороженного Бугая (воин)',fixless:true,
-  modify: {hitpoints:500}
+  	modify: {hitpoints: 500, hpspeed: 200, strength: 3, dexterity: 3, intuition: 3, endurance: 3, intellect: 3}
   },
   bulls_breath_mage: {id:'bulls_breath_mage',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Дыхание отмороженного Бугая (маг)',fixless:true,
-  modify: {hitpoints:200}
-  },*/  
+  	modify: {hitpoints: 200, mana: 500, manaspeed: 200, intellect: 10}
+  },  
 	/*catbaff_strength: {id:'catbaff_strength',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Мощь',fixless:true,
   modify: {strength:5}
 	},

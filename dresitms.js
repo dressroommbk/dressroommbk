@@ -8659,6 +8659,16 @@ upgrade: {
 		common: {eprice:5000},
 		required: {level:11,strength:35,endurance:40},
 		modify: {hitpoints:150,anticriticalhit:150,antijumpaway:100,jumpaway:100,shieldblock:30,intuition:6,axeskill:4,strength:15,magicdefence:20,headarmor1:15,headarmor2:56,headarmorf:14,headarmorm:1,headarmord:42,bodyarmor1:15,bodyarmor2:56,bodyarmorf:14,bodyarmorm:1,bodyarmord:42,waistarmor1:15,waistarmor2:56,waistarmorf:14,waistarmorm:1,waistarmord:42,legarmor1:15,legarmor2:56,legarmorf:14,legarmorm:1,legarmord:42}
+	},
+	ashield1_upgrade_11_elit: {id:'ashield1_upgrade_11_elit',level:11,caption: 'Элитный щит откровения',
+		common: {eprice:25000},
+		required: {level:11,strength:35,endurance:40},
+		modify: {hitpoints:180,anticriticalhit:250,antijumpaway:150,jumpaway:150,shieldblock:32,intuition:7,axeskill:4,strength:17,dexterity:2,magicdefence:20,headarmor1:15,headarmor2:56,headarmorf:14,headarmorm:1,headarmord:42,bodyarmor1:15,bodyarmor2:56,bodyarmorf:14,bodyarmorm:1,bodyarmord:42,waistarmor1:15,waistarmor2:56,waistarmorf:14,waistarmorm:1,waistarmord:42,legarmor1:15,legarmor2:56,legarmorf:14,legarmorm:1,legarmord:42}
+	},
+	ashield1_upgrade_12: {id:'ashield1_upgrade_12',level:12,
+		common: {eprice:50000},
+		required: {level:12,strength:50,endurance:50},
+		modify: {hitpoints:230,anticriticalhit:350,antijumpaway:250,jumpaway:250,shieldblock:35,intuition:7,axeskill:5,strength:20,dexterity:7,magicdefence:40,headarmor1:15,headarmor2:56,headarmorf:14,headarmorm:1,headarmord:42,bodyarmor1:15,bodyarmor2:56,bodyarmorf:14,bodyarmorm:1,bodyarmord:42,waistarmor1:15,waistarmor2:56,waistarmorf:14,waistarmorm:1,waistarmord:42,legarmor1:15,legarmor2:56,legarmorf:14,legarmorm:1,legarmord:42}
 	}}
 
 	},
@@ -8702,6 +8712,16 @@ upgrade: {
 		common: {eprice:5000},
 		required: {level:11,strength:40,endurance:35},
 		modify: {intuition:10,intellect:5,criticalhit:100,anticriticalhit:150,jumpaway:45,antijumpaway:100,shieldblock:10,defence:50,magicdefence:40,hitpoints:150,knifeskill:4,axeskill:4,clubskill:4,swordskill:4,headarmor1:15,headarmor2:56,headarmorf:14,headarmorm:1,headarmord:42,bodyarmor1:15,bodyarmor2:56,bodyarmorf:14,bodyarmorm:1,bodyarmord:42,waistarmor1:15,waistarmor2:56,waistarmorf:14,waistarmorm:1,waistarmord:42,legarmor1:15,legarmor2:56,legarmorf:14,legarmorm:1,legarmord:42}
+	},
+	ashield4_upgrade_11_elit: {id:'ashield4_upgrade_11_elit',level:11,caption: 'Элитный Щит Пророчества',
+		common: {eprice:25000},
+		required: {level:11,strength:40,endurance:35},
+		modify: {intuition:12,intellect:5,criticalhit:125,anticriticalhit:175,jumpaway:45,antijumpaway:150,shieldblock:10,defence:60,magicdefence:55,hitpoints:200,knifeskill:4,axeskill:4,clubskill:4,swordskill:4,headarmor1:15,headarmor2:56,headarmorf:14,headarmorm:1,headarmord:42,bodyarmor1:15,bodyarmor2:56,bodyarmorf:14,bodyarmorm:1,bodyarmord:42,waistarmor1:15,waistarmor2:56,waistarmorf:14,waistarmorm:1,waistarmord:42,legarmor1:15,legarmor2:56,legarmorf:14,legarmorm:1,legarmord:42}
+	},
+	ashield4_upgrade_12: {id:'ashield4_upgrade_12',level:12,
+		common: {eprice:50000},
+		required: {level:12,strength:50,endurance:50},
+		modify: {intuition:15,intellect:5,criticalhit:150,anticriticalhit:200,jumpaway:45,antijumpaway:200,shieldblock:10,defence:75,magicdefence:75,hitpoints:250,knifeskill:5,axeskill:5,clubskill:5,swordskill:5,headarmor1:15,headarmor2:56,headarmorf:14,headarmorm:1,headarmord:42,bodyarmor1:15,bodyarmor2:56,bodyarmorf:14,bodyarmorm:1,bodyarmord:42,waistarmor1:15,waistarmor2:56,waistarmorf:14,waistarmorm:1,waistarmord:42,legarmor1:15,legarmor2:56,legarmorf:14,legarmorm:1,legarmord:42}
 	}}
 
 	},

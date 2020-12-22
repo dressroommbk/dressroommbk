@@ -792,6 +792,7 @@ var knownCleanModifiers = [
 	'-',
 	'totalprice',
 	'totaleprice',
+	'totalerprice',
 	'totalweight',
 	'consumed_reward'/*,
 	'-',
@@ -902,6 +903,7 @@ var allElements = [
 ];
 
 var common_props = {
+	erprice: {lbl: 'Цена (еврореалов)', fmt: '<font color="green">{0}</font>', view: true},
 	eprice: {lbl: 'Цена (екр.)', fmt: '<font color="brown">{0}&nbsp;екр.</font>', view: true},
 	price: {lbl: 'Цена', fmt: '{0}&nbsp;кр.', view: true},
 	weight: {lbl: 'Вес', view: true},
@@ -927,6 +929,7 @@ var item_props = {
 	spiritlevel: {lbl: 'Уровень духа', view: true, nocharm: true},
 	totalprice: {lbl: 'Стоимость предметов', fmt: '{0}&nbsp;кр.', view: true, nocharm: true},
 	totaleprice: {lbl: 'Стоимость предметов (екр.)', fmt: '{0}&nbsp;екр.', view: true, nocharm: true},
+	totalerprice: {lbl: 'Стоимость предметов (еврореалов)', fmt: '{0}&nbsp;еврореалов', view: true, nocharm: true},
 	totalweight: {lbl: 'Вес предметов', view: true, nocharm: true},
 	mana: {lbl: 'Уровень маны', required: true, view: true, inmfg: true},
 	weaponskill: {lbl: 'Владение оружием', view: false, inmfg: true, inprpg: true, nocharm: true},

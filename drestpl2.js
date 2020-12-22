@@ -7956,6 +7956,7 @@ function recalcDresserState(state)
 	}
 	state.modify.totalprice = 0;
 	state.modify.totaleprice = 0;
+	state.modify.totalerprice = 0;
 	state.modify.totalweight = 0;
 	for (sloti = 0; sloti < slots.length; sloti++)
 	{
@@ -7973,6 +7974,9 @@ function recalcDresserState(state)
 		{
 			state.modify.totaleprice += o.common.eprice;
 		}
+		if ('erprice' in o.common) {
+			state.modify.totalerprice += o.common.erprice;
+		}
 		if ('weight' in o.common)
 		{
 			state.modify.totalweight += o.common.weight;
@@ -7984,6 +7988,7 @@ function recalcDresserState(state)
 	}
 	state.modify.totalprice = Math.floor(state.modify.totalprice * 100.0 + 0.5) / 100.0;
 	state.modify.totaleprice = Math.floor(state.modify.totaleprice * 100.0 + 0.5) / 100.0;
+	state.modify.totalerprice = Math.floor(state.modify.totalerprice * 100.0 + 0.5) / 100.0;
 	state.modify.totalweight = Math.floor(state.modify.totalweight * 100.0 + 0.5) / 100.0;
 	var bothSkill = getWeaponSkillValue(state, slot_w3) + getWeaponSkillValue(state, slot_w10);
 	//state.natural.parry = (bothSkill * 0.5);

@@ -1250,10 +1250,17 @@ var knownECRPowerUps = {
 	plain_1s_intel10: {places: new Array('colorVolume'), id: 'plain_1s_intel10', caption: 'Синий Том Знаний', modify: 'intellect', v: 10, legend: '<b>Синий Том Знаний</b> (эффект)<br />Интеллект: +10'},
 	plain_1s_all5: {places: new Array('colorVolume'), id: 'plain_1s_all5', caption: 'Белый том знаний', v:'5+5+5+5', modifyExt: {strength: 5, dexterity:5, intuition: 5, intellect: 5}, legend: '<b>Белый том знаний</b> (эффект)<br />Сила: +5<br />Ловкость: +5<br />Интуиция: +5<br />Интеллект: +5'},
 	plain_1s_spirit10: {places: new Array(), id:'plain_1s_spirit10', caption: 'Черный Том Знаний', modify: 'spirituality', v: 10, legend: '<b>Черный Том Знаний</b> (эффект)<br />Духовность: +10'},
-	/*defender: {places: new Array(), id: 'defender', caption: 'Знак Защитника Клуба', modify: 'hitpoints', v: 120, legend: '<b>Знак защитника клуба</b> (награда)<br />Уровень жизни: +120'},*/
+	defender: {places: new Array(), id: 'defender', caption: 'Знак Защитника Клуба', modify: 'hitpoints', v: 120, legend: '<b>Знак защитника клуба</b> (награда)<br />Уровень жизни: +120'},
 	quenching: {places: new Array(), id:'quenching', caption: 'Закалка', modify: 'hitpoints', v: 120, legend: '<b>Закалка</b> (эффект)<br />Уровень жизни: +120'},
 	bulls_breath_warrior: {places: new Array('bulls_breath'), id:'bulls_breath_warrior', caption: 'Дыхание отмороженного Бугая', modify: 'hitpoints', v: 500, modifyExt: {hitpoints: 500, hpspeed: 200, strength: 3, dexterity: 3, intuition: 3, endurance: 3, intellect: 3}, legend: '<b>Дыхание отмороженного Бугая</b> (эффект)<br />Уровень жизни: +500<br />Восстановление HP: +200%<br />Сила: +3<br />Ловкость: +3<br />Интуиция: +3<br />Выносливость: +3<br />Интеллект: +3<br />Получаемый опыт: +25%'},
 	bulls_breath_mage: {places: new Array('bulls_breath'), id:'bulls_breath_mage', caption: 'Дыхание отмороженного Бугая', modify: 'hitpoints', v: 200, modifyExt: {hitpoints: 200, mana: 500, manaspeed: 200, intellect: 10}, legend: '<b>Дыхание отмороженного Бугая</b> (эффект)<br />Уровень жизни: +200<br />Уровень маны: +500<br />Восстановление маны (%): +200<br />Интеллект: +10<br />Получаемый опыт: +25%'},
+
+	spell_godstat_str: {places: new Array('century'), id:'spell_godstat_str', caption: 'Сила Великана', modify: 'strength', v: 100, legend: '<b>Сила Великана</b> (заклятие)<br />Сила: +100'},
+	spell_godstat_dex: {places: new Array('century'), id:'spell_godstat_dex', caption: 'Скорость Змеи', modify: 'dexterity', v: 100, legend: '<b>Скорость Змеи</b> (заклятие)<br />Ловкость: +100'},
+	spell_godstat_inst: {places: new Array('century'), id:'spell_godstat_inst', caption: 'Предчувствие', modify: 'intuition', v: 100, legend: '<b>Предчувствие</b> (заклятие)<br />Интуиция: +100'},
+	spell_godintel100: {places: new Array('century'), id:'spell_godintel100', caption: 'Ледяной Интеллект', modify: 'intellect', v: 100, legend: '<b>Ледяной Интеллект</b> (заклятие)<br />Интеллект: +100'},
+	spell_godmana100: {places: new Array('century'), id:'spell_godmana100', caption: 'Мудрость Веков', modify: 'mana', v: 2000, legend: '<b>Мудрость Веков</b> (заклятие)<br />Мана: +2000'},
+
 	/*catbaff_strength: {modify: 'strength', v : 5},
 	catbaff_dexterity: {modify: 'dexterity', v: 5},
 	catbaff_intuition: {modify: 'intuition', v: 5},

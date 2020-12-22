@@ -11247,9 +11247,9 @@ upgrade: {
 		required: {level:2},
   modify: {strength:10,dexterity:10,intuition:10}
 	},
-  /*defender: {id:'defender',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Знак защитника клуба',fixless:true,
+  defender: {id:'defender',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Знак защитника клуба',fixless:true,
   modify: {hitpoints:120}
-  },*/
+  },
   quenching: {id:'quenching',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Закалка',fixless:true,
   modify: {hitpoints:120}
   },
@@ -11267,6 +11267,22 @@ upgrade: {
   bulls_breath_mage: {id:'bulls_breath_mage',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Дыхание отмороженного Бугая (маг)',fixless:true,
   	modify: {hitpoints: 200, mana: 500, manaspeed: 200, intellect: 10}
   },  
+
+  spell_godstat_str: {id:'spell_godstat_str',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Сила Великана',fixless:true,
+  	modify: {strength: 100}
+  },
+  spell_godstat_dex: {id:'spell_godstat_dex',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Скорость Змеи',fixless:true,
+  	modify: {dexterity: 100}
+  },
+  spell_godstat_inst: {id:'spell_godstat_inst',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Предчувствие',fixless:true,
+    modify: {intuition: 100}
+  },
+  spell_godintel100: {id:'spell_godintel100',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Ледяной Интеллект',fixless:true,
+    modify: {intellect: 100}
+  },
+  spell_godmana100: {id:'spell_godmana100',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Мудрость Веков',fixless:true,
+    modify: {mana: 2000}
+  },
 	/*catbaff_strength: {id:'catbaff_strength',category:'auxiliaryscrolls',slot:'w100',width:40,height:25,caption:'Благословение Глубин: Мощь',fixless:true,
   modify: {strength:5}
 	},

@@ -1174,13 +1174,13 @@ var knownDamageElix = {
 	pot_base_1000_gl_absolute: {places: new Array('eweapon', 'emagic') ,id: 'pot_base_1000_gl_absolute', caption: 'Амброзия Скучающих Владык', modify: {hitpoints:250, anticriticalhit:250, antijumpaway:250, defence:312, magicdefence: 312}, legend: '<b>Снадобье Забытых Мастеров</b> (эликсир)<br />Уровень жизни: +250<br />Защита от урона: +312<br />Защита от магии: +312<br />Мф. против увертливости: +250<br/>Мф. против крит. удара: +250'},
 	pot_base_0_strup: {places: new Array('masters'), id: 'pot_base_0_strup', caption: 'Новогодний эликсир (воин)', modify: {power: 33, mindamage: 25, maxdamage: 50}, legend: '<b>Новогодний эликсир</b><br />Мф. мощности урона: +33<br />Минимальное наносимое повреждение: +25<br />Максимальное наносимое повреждение: +50'},
 	pot_base_0_magup: {places: new Array('masters'), id: 'pot_base_0_magup', caption: 'Новогодний эликсир (маг)', modify: {magicpower:50, magicdefencereduce:10}, legend: '<b>Новогодний эликсир</b><br />Подавление защиты от магии: +10<br/>Мф. мощности магии стихий: +50'},
-	pot_base_0_ny3: {places: new Array(), id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}, legend: '<b>Эссенция Здоровья</b> (эликсир)<br />Уровень жизни: +300'},
+	pot_base_0_ny3: {places: new Array('quest_hp'), id: 'pot_base_0_ny3', caption: 'Эссенция Здоровья', modify: {hitpoints: 300}, legend: '<b>Эссенция Здоровья</b> (эликсир)<br />Уровень жизни: +300'},
 	/*pot_base_0_ny1: {id: 'pot_base_0_ny1', caption: 'Снадобье -Тарманка-', modify: {power: 15,hitpoints: 60}}*/
 	separator0: null,
 	pot_base_h1: {places: new Array('halloween'), id: 'pot_base_h1', caption: 'Эссенция Гнилого духа', modify: {mana: 300}, legend: '<b>Эссенция Гнилого духа</b> (эликсир)<br />Уровень маны: +300'},
 	pot_base_h2: {places: new Array('emagic', 'halloween'), id: 'pot_base_h2', caption: 'Отвар Испепеления душ', modify: {magicdefence: 220}, legend: '<b>Отвар Испепеления душ</b> (эликсир)<br />Защита от магии: +220'},
 	pot_base_h3: {places: new Array('eweapon', 'halloween'), id: 'pot_base_h3', caption: 'Настойка из Горькой дыньки', modify: {defence: 220}, legend: '<b>Настойка из Горькой дыньки</b> (эликсир)<br />Защита от урона: +220'},
-	pot_base_h4: {places: new Array('halloween'), id: 'pot_base_h4', caption: 'Снадобье Икромсателя', modify: {hitpoints: 300}, legend: '<b>Снадобье Икромсателя</b> (эликсир)<br />Уровень жизни: +300'},	
+	pot_base_h4: {places: new Array('halloween', 'quest_hp'), id: 'pot_base_h4', caption: 'Снадобье Икромсателя', modify: {hitpoints: 300}, legend: '<b>Снадобье Икромсателя</b> (эликсир)<br />Уровень жизни: +300'},	
 };
 
 var knownDefElix = {

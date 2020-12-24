@@ -859,7 +859,7 @@ function getPersImageHtml(state)
 			spellHitpointsName = knownApplicableSpells.spellHitpointsDown.id;
 			spellHitpointsCaption = knownApplicableSpells.spellHitpointsDown.caption;
 		}
-		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + spellHitpointsId + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'applicable\', \'spellHitpointsUp\', [' + state.spellHitpoints +', ' + state.spellHitpoints * state.natural.endurance + ']));" onmouseout="hidePopup();">';
+		r += '<a onclick="onConcreteElixMenu(event, ' + "'" + spellHitpointsId + "'" + ')" href="javascript:;" onmouseover="showPopup(getLegend(\'applicable\', \'spellHitpointsUp\', [' + state.spellHitpoints +', ' + state.spellHitpoints * (state.natural.endurance + state.modify.endurance) + ']));" onmouseout="hidePopup();">';
 		r += '<img src="' + itemImgPath + format(spellHitpointsName, Math.abs(state.spellHitpoints)) + '.gif" width="36" height="23" border="0" />';
 		r += '</a>';
 	}
@@ -2860,7 +2860,7 @@ function getDresserInfoPaneHtml(state)
 	if (state.spellHitpoints != 0)
 	{
 		var sv = state.spellHitpoints.toString();
-		var shp = (state.spellHitpoints * state.natural.endurance).toString();
+		var shp = (state.spellHitpoints * (state.natural.endurance + state.modify.endurance)).toString();
 		if (state.spellHitpoints > 0)
 		{
 			sv = '+' + sv;
@@ -7077,6 +7077,15 @@ function changeModifier(state, makeUp, v)
 			processMagicPower(state.natural, 'magiccommonpower', v);
 			break;
 
+		case 'endurance':
+			state.modify.hitpoints += (v * 6);
+			
+			if (state.spellHitpoints != 0) {
+				state.modify.hitpoints += (v * state.spellHitpoints);
+			}
+
+			processMagicDefence(state.natural, 'emagicdefence', v * 1.5);
+
 		default:
 			if (makeUp in knownZoneModifiers) {
 				state.results[makeUp].all += v;
@@ -7093,7 +7102,7 @@ function precalcZoneModifiers(state)
 	{
 		state.results[mfname] = {all: 0, head: 0, body: 0, waist: 0, leg: 0, avg: 0, pants: 0};
 	}
-	state.results.defence.all = state.natural.endurance * 1.5;
+	state.results.defence.all = (state.natural.endurance + state.modify.endurance) * 1.5;
 }
 
 function calcZoneModifiers(state)
@@ -7446,10 +7455,10 @@ function recalcDresserState(state)
 		state.natural[allElements[i] + 'magicpower'] = 0;
 	}
 
-	state.natural.hitpoints = (state.natural.endurance * 6);
-	state.natural.knapsack = 40*(state.natural.level + 1) + state.natural.endurance;
-	processMagicDefence(state.natural, 'magicdefence', state.natural.endurance * 1.5);	
-	state.natural.defence = (state.natural.endurance * 1.5);
+	state.natural.hitpoints = (state.natural.endurance + state.modify.endurance) * 6;
+	state.natural.knapsack = 40*(state.natural.level + 1) + (state.natural.endurance + state.modify.endurance);
+	processMagicDefence(state.natural, 'magicdefence', (state.natural.endurance + state.modify.endurance) * 1.5);	
+	state.natural.defence = ((state.natural.endurance + state.modify.endurance)* 1.5);
 	state.natural.mana = (state.natural.wisdom * 10);
 	state.natural.spiritlevel = 0;
 
@@ -7514,7 +7523,7 @@ function recalcDresserState(state)
 	}
 	if (state.spellHitpoints != 0)
 	{
-		state.modify.hitpoints = (state.natural.endurance * state.spellHitpoints) + (('hitpoints' in state.modify) ? state.modify.hitpoints : 0);
+		state.modify.hitpoints = ((state.natural.endurance + state.modify.endurance) * state.spellHitpoints) + (('hitpoints' in state.modify) ? state.modify.hitpoints : 0);
 	}
 	var w3o = getObjectByStateSlot(state, slot_w3);
 	var w10o = getObjectByStateSlot(state, slot_w10);

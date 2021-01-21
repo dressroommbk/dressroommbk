@@ -3611,7 +3611,7 @@ function onApplyBuffTemplate(e, template) {
 	onPowerUp(null, 'spell_protect4');
 
 	if (level >= 8) {
-		/*onECRPowerUp(null, 'defender'); // знак защитника клуба*/
+		onECRPowerUp(null, 'defender'); // знак защитника клуба
 		onECRPowerUp(null, 'standart_curse'); // баф кат
 		onECRPowerUp(null, 'spell_godprotect10'); // неуязы
 		onECRPowerUp(null, 'spell_godprotect'); 
